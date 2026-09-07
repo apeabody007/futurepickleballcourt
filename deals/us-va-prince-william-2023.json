@@ -3,31 +3,120 @@
   "id": "us-va-prince-william-2023",
   "status": "terminated",
   "verification": "primary",
-  "jurisdiction": { "country": "US", "state": "VA", "locality": "Prince William County", "level": "county" },
+  "jurisdiction": {
+    "country": "US",
+    "state": "VA",
+    "locality": "Prince William County",
+    "level": "county"
+  },
   "operator": "QTS",
-  "developer": "GW Acquisition Co. LLC and GW Acquisition I LLC (QTS); Compass Datacenters with H&H Acquisitions LLC on the adjacent application",
+  "developer": "GW Acquisition Co., LLC and GW Acquisition I, LLC, QTS affiliates (the North statement names both, the South statement names GW Acquisition Co., LLC); H&H Capital Acquisitions, LLC with Compass Datacenters on the adjacent application REZ2022-00036",
   "project": "PW Digital Gateway (REZ2022-00032 North and REZ2022-00033 South)",
   "agreement_type": "proffer",
-  "dates": { "signed": "2023-12-10", "approved": "2023-12-13", "effective": null },
-  "scale": { "acres": 876, "mw": null, "capex_usd": null, "sqft": 11300000 },
+  "dates": {
+    "signed": "2023-12-10",
+    "approved": "2023-12-13",
+    "effective": null
+  },
+  "scale": {
+    "acres": 876,
+    "mw": null,
+    "capex_usd": null,
+    "sqft": 10700000
+  },
   "documents": [
-    { "title": "QTS Digital Gateway North proffer statement (REZ2022-00032)", "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "kind": "primary", "date": "2023-12-10" },
-    { "title": "QTS Digital Gateway South proffer statement (REZ2022-00033)", "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00033%20Proffers%20Packet%2020231210.pdf", "kind": "primary", "date": "2023-12-10" },
-    { "title": "County PW Digital Gateway page", "url": "https://www.pwcva.gov/department/planning-office/pw-digital-gateway", "kind": "government_page", "date": null },
-    { "title": "Virginia Lawyers Weekly: rezoning void for defective notice", "url": "https://valawyersweekly.com/2026/04/22/prince-william-county-data-center-rezoning-void/", "kind": "press", "date": "2026-04-22" }
+    {
+      "title": "QTS Digital Gateway North proffer statement (REZ2022-00032)",
+      "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+      "kind": "primary",
+      "date": "2023-12-10"
+    },
+    {
+      "title": "QTS Digital Gateway South proffer statement (REZ2022-00033)",
+      "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00033%20Proffers%20Packet%2020231210.pdf",
+      "kind": "primary",
+      "date": "2023-12-10"
+    },
+    {
+      "title": "County PW Digital Gateway page",
+      "url": "https://www.pwcva.gov/department/planning-office/pw-digital-gateway",
+      "kind": "government_page",
+      "date": null
+    },
+    {
+      "title": "Court of Appeals of Virginia opinion holding the three rezonings void ab initio (Record Nos. 1584-25-4, 1590-25-4, 1592-25-4)",
+      "url": "https://www.vacourts.gov/static/opinions/opncavwp/1584254.pdf",
+      "kind": "primary",
+      "date": "2026-03-31"
+    },
+    {
+      "title": "Virginia Lawyers Weekly: rezoning void for defective notice",
+      "url": "https://valawyersweekly.com/2026/04/22/prince-william-county-data-center-rezoning-void/",
+      "kind": "press",
+      "date": "2026-04-22"
+    },
+    {
+      "title": "Potomac Local: QTS withdraws Supreme Court of Virginia appeal, ending the project",
+      "url": "https://www.potomaclocal.com/2026/07/03/qts-withdraws-supreme-court-appeal-ending-proposed-digital-gateway-data-center-project/",
+      "kind": "press",
+      "date": "2026-07-03"
+    }
   ],
   "terms": {
     "community_fund": {
       "present": false,
       "amount_usd": null,
-      "cadence": "per_building",
+      "cadence": "mixed",
       "scales_with_project": true,
-      "controlled_by": "Board of County Supervisors",
+      "controlled_by": "Prince William Board of County Supervisors; the South forestry contribution goes to the Virginia Department of Forestry State Forest Mitigation and Acquisition Fund",
       "community_seat": false,
-      "notes": "No general community fund. Monetary proffers: $0.61 per square foot of building area for fire and rescue, $10,000 per building for trail maintenance, $75 per acre for water-quality monitoring, and on the South parcel $10,000 per building to the state forest mitigation fund. Land: a five-acre park, roughly nine acres offered to the National Park Service, and nine-plus miles of trails.",
+      "notes": "No general community fund. Monetary proffers in both North and South: $0.61 per square foot of nonresidential GFA for fire and rescue facilities, $10,000 per data center building as seed money for trail maintenance, and $75 per acre for water-quality monitoring, stream restoration, or offsite drainage. South only: $10,000 per data center building to the state forest mitigation fund, if the Department of Forestry can accept it. Amounts escalate with CPI-U if paid more than 18 months after approval, capped at 6 percent a year. Land: a roughly five-acre Unfinished Railroad park conveyed to the county (South 44(c)) and roughly nine acres inside the Manassas National Battlefield Park legislative boundary offered to the Department of the Interior (South 22). The applicant's cover letter counts 9-plus miles of trails across both QTS and Compass, not QTS alone.",
       "sources": [
-        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffers 41(c), 45, and 54" },
-        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00033%20Proffers%20Packet%2020231210.pdf", "where": "Proffers 22 and 60" }
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 45",
+          "quote": "$0.61 per square foot of nonresidential GFA constructed on the Property to be used for fire and rescue facilities"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 41(c)",
+          "quote": "$10,000 for each data center building constructed on the Property to be used as seed money"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 54",
+          "quote": "$75.00 per acre for County water quality monitoring, stream restoration projects, or offsite drainage improvements"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 62",
+          "quote": "subject to a cap of six percent (6%) per year, non-compounded"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00033%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 60",
+          "quote": "State Forest Mitigation and Acquisition Fund (SFMAF) in an amount of $10,000 for each data center building"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00033%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 44(c)",
+          "quote": "dedicate and convey the Interpretive Site and its associated approximately five-acre park in fee simple"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00033%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 22",
+          "quote": "if the Department of Interior declines to accept the approximately nine (9) acres of land"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00033%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffers 44(d), 48, and 56 repeat the trail, fire and rescue, and water-quality contributions",
+          "quote": null
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Applicant cover letter dated December 11, 2023, p. 20 of 21",
+          "quote": "9+ miles of pedestrian & equation trails will be constructed by the two applicants"
+        }
       ]
     },
     "clawbacks": {
@@ -44,9 +133,23 @@
       "present": false,
       "instrument": "none",
       "amount_usd": null,
-      "notes": "No decommissioning term. The only financial security is a reforestation bond, plus well-abandonment rules.",
+      "notes": "No decommissioning term. Financial security in the proffers is limited to a reforestation bond sized to the reforestation plan (Proffer 33(b)) and a letter of credit or cash deposit if the county condemns off-site right of way for the applicant (Proffer 56(a)(5)). Existing wells and drainfields must be abandoned before the first occupancy permit in each land bay (Proffer 52).",
       "sources": [
-        "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf"
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 33(b)",
+          "quote": "in an amount sufficient to cover the cost of implementing the Reforestation Plan"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 56(a)(5)",
+          "quote": "A letter of credit acceptable to the County, cash or equivalent"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 52",
+          "quote": "any existing wells and drainfields located on the Property within each Land Bay must be abandoned prior to approval of the first occupancy permit"
+        }
       ]
     },
     "grid_costs": {
@@ -55,10 +158,23 @@
       "minimum_bill": null,
       "term_years": null,
       "governed_by": null,
-      "notes": "Dominion said new transmission lines were required. The proffers allow substations in designated electric infrastructure areas with screening, and the applicant states it cannot dictate transmission routes. No cost allocation, minimum bill, or take-or-pay term.",
+      "notes": "Dominion told the Prince William Times in 2022 that new substations and transmission lines would be needed but that size, location, and timing were unknown. Proffer 44 makes NOVEC substations a permitted use in the Electric Infrastructure Areas on the MZP, with poles capped at 75 feet and, where visible from the battlefield park, homes, or roads, a 12-foot solid screen and 15-foot landscape buffer. The applicant's cover letter says Dominion was still engineering its infrastructure and commits only to work with Dominion to keep lines within the limits of disturbance where possible. No cost allocation, minimum bill, or take-or-pay term.",
       "sources": [
-        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffer 44" },
-        "https://www.princewilliamtimes.com/news/dominion-new-transmission-lines-needed-for-proposed-pw-digital-gateway/article_75cb1d9a-1288-11ed-926e-77decf3571c7.html"
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 44",
+          "quote": "An electric substation shall be deemed a permitted use in the locations identified as Electric Infrastructure Areas on the MZP"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Applicant cover letter dated December 11, 2023, p. 6 of 21",
+          "quote": "While Dominion is still engineering its infrastructure, we have included a series of unique proffers."
+        },
+        {
+          "url": "https://www.princewilliamtimes.com/news/dominion-new-transmission-lines-needed-for-proposed-pw-digital-gateway/article_75cb1d9a-1288-11ed-926e-77decf3571c7.html",
+          "where": "Dominion spokesperson statement by email, July 31, 2022; article dated August 2, 2022",
+          "quote": null
+        }
       ]
     },
     "water": {
@@ -67,19 +183,57 @@
       "reporting": false,
       "recycling_required": null,
       "cooling": "closed_loop",
-      "notes": "Air or closed-loop cooling only. No groundwater or surface-water withdrawals and no surface discharges for cooling; existing wells abandoned except for monitoring wells. No volume cap and no consumption reporting.",
+      "notes": "Air or closed-loop cooling, or 'other new, innovative technology', with no groundwater or surface-water withdrawals and no surface discharges for cooling. Existing wells and drainfields must be abandoned before the first occupancy permit in each land bay unless the Health Department agrees otherwise; wells may be kept only as groundwater monitoring wells. No volume cap and no consumption reporting. Same terms in South Proffers 42 and 54.",
       "sources": [
-        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffer 39" }
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 39",
+          "quote": "shall not use groundwater, surface water withdrawals, or surface water discharges for cooling purposes"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 39",
+          "quote": "air or closed-loop cooling systems for all data center buildings on the Property or other new, innovative technology"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 52",
+          "quote": "maintain one (1) or more existing wells in lieu of abandonment solely for the use of ongoing groundwater monitoring"
+        }
       ]
     },
     "noise": {
       "present": true,
       "limit_dba": 55,
-      "measured_at": "Boundary of residential or cultural-resource land. 60 dBA daytime, 55 dBA at night. Construction and emergency generator operation are exempt.",
-      "setback_ft": 50,
-      "notes": "Sound study required before permit release and one month after occupancy, with enclosures or walls if exceeded. 50-foot buffers along Pageland Lane.",
+      "measured_at": "Property boundary of any land planned, zoned, or used for residential use or as a Cultural Resource Historical Site. 60 dBA from 7 a.m. to 10 p.m. weekdays and 9 a.m. to 10 p.m. weekends and holidays, 55 dBA otherwise. Permitted construction, public-project and utility repair work, and emergency generator operation are exempt.",
+      "setback_ft": null,
+      "notes": "The Cultural Resource Historical Site receiver is defined differently by day (the contiguous Manassas National Battlefield Park) and night (the Thornton School site and Mt. Calvary Baptist Church). A sound study by a licensed acoustical consultant is due before the building permit release letter for each building and again one month after each occupancy permit, with enclosures or walls around generators and mechanical equipment if limits are exceeded; studies go to the county. No noise setback is proffered; the 50-foot buffers along Pageland Lane are a roadway landscape buffer under Proffer 49(a)(4).",
       "sources": [
-        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffer 43" }
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 43(a)",
+          "quote": "60 dBA when measured at the Property boundary of any land planned, zoned and/or used for Cultural Resource Historical Site"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 43(a)",
+          "quote": "55 dBA when measured at the property boundary of any land planned, zoned and/or used for Cultural Resource Historical Site"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 43(b)",
+          "quote": "conduct subsequent Sound Studies one (1) month after issuance of each occupancy permit"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 43(c)",
+          "quote": "Emergency operations shall not be subject to the limitations outlined in Proffer 43 above."
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 49(a)(4)",
+          "quote": "buffer along each side of the Pageland Lane along the Property"
+        }
       ]
     },
     "jobs": {
@@ -89,19 +243,52 @@
       "local_hire": false,
       "prevailing_wage": false,
       "enforceable": false,
-      "notes": "No job numbers in the proffers. The general contractor must meet county economic development and apprenticeship groups, certify payroll, track jobsite personnel, and bar assignment practices tied to wage theft. Press figures of 540 permanent jobs come from the county, not the proffers.",
+      "notes": "No job numbers in the proffers, so there is no jobs commitment to enforce. Proffer 61 requires the general contractor to meet with the county Department of Economic Development and invited workforce and apprenticeship groups before construction starts in each land bay; preferred strategies are contractor payroll certification, jobsite personnel tracking, and anti-assignment provisions against wage theft and worker misclassification, with evidence to Development Services before each certificate of occupancy. Press job figures vary widely and none appears in the proffers. No job number exists in the proffers, so there is nothing binding to enforce.",
       "sources": [
-        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffer 61, Workforce Strategies" }
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 61, Workforce Strategies",
+          "quote": "requirements for contractor payroll certification, jobsite personnel tracking, and anti-assignment provisions to prevent instances of wage theft"
+        }
       ]
     },
     "local_contracting": {
       "present": true,
       "local_subcontracting": false,
-      "road_repair": null,
-      "infrastructure_contribution_usd": 180000000,
-      "notes": "Goal language only for women, minority, and veteran-owned businesses. Road work is substantial: Pageland Lane widened to four lanes for about 3.5 miles with roundabouts and shared-use paths, Route 29 and Sudley Road improvements, right of way dedicated at no cost, phased against building area. The applicant's letter cites $180M to $200M in privately funded transportation improvements. No haul-route repair term as such.",
+      "road_repair": false,
+      "infrastructure_contribution_usd": null,
+      "notes": "No local subcontracting requirement; Proffer 61 lists increasing opportunities for women, minority, and veteran-owned businesses only as a discussion topic. Road work is in kind and substantial: Pageland Lane rebuilt as a four-lane divided road for roughly 3.5 miles with roundabouts, 10-foot shared-use paths, and 50-foot buffers, plus Route 29 and Sudley Road improvements, phased against cumulative data center floor area across the whole 2,139-acre CPA area, with on-site right of way dedicated at no cost. No dollar figure is proffered; the $180 million to $200 million figure appears only in applicant counsel's December 11, 2023 cover letter as an estimate of privately funded transportation improvements. No haul-route repair term; Proffer 9(c) requires only a construction truck routing plan.",
       "sources": [
-        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffers 46 and 61; applicant cover letter" }
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 46(a)",
+          "quote": "Pageland Lane (between Route 29 to the south and Sudley Road to the north, approximately 3.5+ miles)"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 46(d)(2)",
+          "quote": "Reconstruction of Pageland Lane as a four-lane divided section between Route 29 in the south and Artemus Road in the north"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 49(b)",
+          "quote": "shall dedicate in fee simple, at no cost to the County, sufficient"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 9(c)",
+          "quote": "The Applicant shall prepare a plan for the routing of construction trucks, in accordance with applicable law."
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 61",
+          "quote": "increase opportunities for women, minority, and veteran-owned businesses"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Applicant cover letter dated December 11, 2023, p. 18 of 21 (not a proffer)",
+          "quote": "$180-$200 million in major transportation improvements"
+        }
       ]
     },
     "transparency": {
@@ -111,10 +298,43 @@
       "public_dashboard": false,
       "audit_cadence": "none",
       "audit_independent": false,
-      "notes": "Proffers are posted on the county site. The rezoning was voided in 2025 because statutory public notice failed, affirmed on appeal March 31, 2026. Landowner sale contracts were private. Sound studies and workforce evidence go to county staff, not the public.",
+      "notes": "The signed proffer statements are posted on the county site. The Prince William Circuit Court held the rezonings void ab initio in a letter opinion on August 7, 2025 (final order effective September 15, 2025) because the hearing advertisement did not meet Va. Code 15.2-2204(A) and the county ordinance; the Court of Appeals of Virginia affirmed on March 31, 2026, and its July 29, 2026 order lifted the stay, after which the county reverted the zoning maps. Compass declined to appeal further in April 2026 and QTS withdrew its Supreme Court of Virginia petition on July 2, 2026, announcing termination of the project. Sound studies and workforce evidence go to county staff, not the public.",
       "sources": [
-        "https://www.pwcva.gov/department/planning-office/pw-digital-gateway",
-        "https://valawyersweekly.com/2026/04/22/prince-william-county-data-center-rezoning-void/"
+        {
+          "url": "https://www.pwcva.gov/department/planning-office/pw-digital-gateway",
+          "where": "Update: August 5, 2026",
+          "quote": "the zoning of the properties reverts back to the original zoning district immediately prior to the Board of County Supervisors approval of the rezonings"
+        },
+        {
+          "url": "https://www.vacourts.gov/static/opinions/opncavwp/1584254.pdf",
+          "where": "Opinion dated March 31, 2026, p. 14",
+          "quote": "all three rezoning ordinances were void ab initio because the Board violated the advertising requirements of both the statute and the ordinance"
+        },
+        {
+          "url": "https://northernvirginiamag.com/news/2025/08/11/judge-blocks-prince-william-digital-gateway-data-center-project/",
+          "where": "August 11, 2025 report of the August 7 ruling",
+          "quote": null
+        },
+        {
+          "url": "https://valawyersweekly.com/2026/04/22/prince-william-county-data-center-rezoning-void/",
+          "where": "April 22, 2026 case summary",
+          "quote": null
+        },
+        {
+          "url": "https://wtop.com/prince-william-county/2026/04/developers-drop-appeal-of-zoning-decision-on-digital-gateway-project/",
+          "where": "April 29, 2026: Compass will not contest the March 31 ruling",
+          "quote": null
+        },
+        {
+          "url": "https://www.potomaclocal.com/2026/07/03/qts-withdraws-supreme-court-appeal-ending-proposed-digital-gateway-data-center-project/",
+          "where": "July 3, 2026 report of the July 2 withdrawal",
+          "quote": null
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf",
+          "where": "Proffer 43(b) and Proffer 61",
+          "quote": "The Sound Study shall be provided to the County."
+        }
       ]
     },
     "tax": {
@@ -125,18 +345,37 @@
       "pilot": false,
       "estimated_forgone_usd": 0,
       "but_for_test": null,
-      "notes": "No abatement or PILOT. The county projected roughly $400M a year in tax revenue at buildout. Properties are being reassessed after the zoning reverted.",
+      "notes": "No abatement or PILOT. County finance officials estimated $24.7 billion of investment and $400.5 million in annual tax revenue for the project as approved. After the July 29, 2026 order the county reverted the zoning maps and said it would reassess each property and update tax bills.",
       "sources": [
-        "https://www.datacenterfrontier.com/site-selection/article/33016383/rezoning-for-pw-digital-gateway-data-centers-approved-by-virginias-prince-william-county-supervisors",
-        "https://www.pwcva.gov/department/planning-office/pw-digital-gateway"
+        {
+          "url": "https://www.datacenterfrontier.com/site-selection/article/33016383/rezoning-for-pw-digital-gateway-data-centers-approved-by-virginias-prince-william-county-supervisors",
+          "where": "County finance estimate paragraph, December 13, 2023",
+          "quote": null
+        },
+        {
+          "url": "https://www.pwcva.gov/department/planning-office/pw-digital-gateway",
+          "where": "Update: August 5, 2026",
+          "quote": "Real Estate Assessments will now work to reassess all the individual properties and update the tax bills."
+        }
       ]
     }
   },
   "criticisms": [
-    { "summary": "County staff recommended denial twice and the Planning Commission recommended denial. Approved 4-3 after a hearing of about 27 hours.", "source": "https://www.datacenterfrontier.com/site-selection/article/33016383/rezoning-for-pw-digital-gateway-data-centers-approved-by-virginias-prince-william-county-supervisors" },
-    { "summary": "Parks promised in the comprehensive plan amendment were missing from the rezoning applications; open space fell short of the 30 percent target.", "source": "https://www.princewilliamtimes.com/news/digital-gateway-plan-lacks-key-environmental-details-promised-parks-open-space/article_3dc57306-7e74-11ee-bdd6-57d98acf03ff.html" },
-    { "summary": "The approval was voided for defective public notice; the county spent $1.72M defending it, then withdrew. Both developers dropped out in 2026.", "source": "https://wtop.com/virginia/2026/04/prince-william-co-withdraws-from-digital-gateway-lawsuit-reversing-course-from-2023/" }
+    {
+      "summary": "County planning staff recommended denial and the Planning Commission voted to recommend denial; the board approved 4-3 with one abstention after a meeting of more than 27 hours.",
+      "source": "https://www.datacenterfrontier.com/site-selection/article/33016383/rezoning-for-pw-digital-gateway-data-centers-approved-by-virginias-prince-william-county-supervisors"
+    },
+    {
+      "summary": "Parks shown in the comprehensive plan amendment were missing from the rezoning applications, and natural open space in QTS North and South was 15.9 and 21.8 percent against a 30 percent target.",
+      "source": "https://www.princewilliamtimes.com/news/digital-gateway-plan-lacks-key-environmental-details-promised-parks-open-space/article_3dc57306-7e74-11ee-bdd6-57d98acf03ff.html"
+    },
+    {
+      "summary": "The approval was voided for defective public notice; the county spent $1.72 million defending it, then voted unanimously to withdraw from the appeals in April 2026.",
+      "source": "https://wtop.com/virginia/2026/04/prince-william-co-withdraws-from-digital-gateway-lawsuit-reversing-course-from-2023/"
+    }
   ],
-  "contributors": ["apeabody007"],
+  "contributors": [
+    "apeabody007"
+  ],
   "last_reviewed": "2026-09-07"
 }
