@@ -400,7 +400,7 @@
   var t = document.getElementById('matrix');
   var short = { community_fund: 'Fund', clawbacks: 'Claw', decommissioning: 'Decom', grid_costs: 'Grid', water: 'Water', noise: 'Noise', jobs: 'Jobs', local_contracting: 'Local', transparency: 'Transp', tax: 'Tax' };
   var head = '<colgroup><col class="c-name">' + floorKeys.map(function () { return '<col>'; }).join('') + '<col class="c-ver"></colgroup>';
-  var headLabel = { community_fund: 'Community fund', clawbacks: 'Claw&shy;backs', decommissioning: 'Decommis&shy;sioning', grid_costs: 'Grid costs', water: 'Water', noise: 'Noise', jobs: 'Jobs', local_contracting: 'Local contracting', transparency: 'Transpar&shy;ency', tax: 'Tax breaks' };
+  var headLabel = { community_fund: 'Community fund', clawbacks: 'Claw&shy;backs', decommissioning: 'Decommis&shy;sioning', grid_costs: 'Grid costs', water: 'Water', noise: 'Noise', jobs: 'Jobs', local_contracting: 'Local con&shy;tracting', transparency: 'Transpar&shy;ency', tax: 'Tax breaks' };
   head += '<thead><tr><th>Deal</th>' + floorKeys.map(function (k) { return '<th>' + (headLabel[k] || esc(data.floor[k].label)) + '</th>'; }).join('') + '<th>Source</th></tr></thead>';
   var rows = data.deals.map(function (d, i) {
     var j = d.jurisdiction;
