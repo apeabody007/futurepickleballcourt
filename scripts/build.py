@@ -174,6 +174,56 @@ def score(deal):
     return out
 
 
+def findings(deals):
+    """Sentences computed from the deal files, so they cannot drift from the data."""
+    n = len(deals)
+    if not n:
+        return []
+    out = []
+
+    def count(test):
+        return sum(1 for d in deals if test(d))
+
+    bond = count(lambda d: d["terms"]["decommissioning"].get("instrument")
+                 in ("bond", "escrow", "letter_of_credit"))
+    if bond == 0:
+        out.append(("Nobody posts a teardown bond.",
+                    f"Not one of the {n} agreements requires a bond, escrow, or letter of credit "
+                    "to pay for demolition and site restoration if the operator walks away. "
+                    "If a campus goes dark, the land is the community's problem."))
+
+    seat = count(lambda d: d["terms"]["community_fund"].get("community_seat") is True)
+    funded = count(lambda d: d["terms"]["community_fund"].get("present") is True)
+    if seat == 0 and funded:
+        out.append(("Community money, decided without the community.",
+                    f"{funded} of the {n} deals set up money for the community. In none of them does a "
+                    "resident or community organization hold a seat on the body that decides how it is spent."))
+
+    oper = count(lambda d: "operation" in (d["terms"]["clawbacks"].get("triggers") or []))
+    if oper == 0:
+        out.append(("Clawbacks cover broken promises, not abandonment.",
+                    "Where money can be taken back, the trigger is a missed job or investment target. "
+                    f"In none of the {n} deals does the money come back simply because the facility stops running."))
+
+    mb = [d for d in deals if d["terms"]["grid_costs"].get("minimum_bill") is True]
+    if mb:
+        from_state = [d for d in mb if d["terms"]["grid_costs"].get("governed_by")]
+        if len(from_state) == len(mb):
+            places = ", ".join(sorted(d["jurisdiction"]["locality"] for d in mb))
+            out.append(("The one real protection came from regulators, not negotiators.",
+                        f"{len(mb)} of the {n} deals carry a minimum electric bill that survives the tenant leaving "
+                        f"({places}). Every one of them comes from a state utility commission, not from anything "
+                        "the city or county negotiated."))
+
+    nda = count(lambda d: d["terms"]["transparency"].get("nda") is True)
+    if nda:
+        out.append(("Secrecy is normal.",
+                    f"{nda} of the {n} communities signed a nondisclosure agreement. Some barred officials from "
+                    "saying that talks were happening at all, and one required the city to destroy its own notes."))
+
+    return out
+
+
 # ------------------------------------------------------------------ rendering
 MARK = {"meets": "✅", "falls_short": "❌", "unknown": "❔", "n/a": "➖"}
 
@@ -216,6 +266,11 @@ def render_markdown(deals):
             + " | ".join(cells)
             + f" | {deal['verification']} |"
         )
+    f = findings(deals)
+    if f:
+        lines += ["", "## What the deals show", ""]
+        for title, body in f:
+            lines += [f"**{title}** {body}", ""]
     lines += ["", "## What the floor asks for", ""]
     for name, c in clauses.items():
         lines.append(f"- **{c['label']}**: {c['asks']}")
@@ -232,6 +287,7 @@ def render_html(deals):
     payload = json.dumps({
         "generated": date.today().isoformat(),
         "floor": FLOOR["clauses"],
+        "findings": [{"title": t, "body": x} for t, x in findings(deals)],
         "deals": [dict(deal, score=score(deal), _label=short_name(deal)) for deal in deals],
     }, ensure_ascii=False)
     # </script> inside JSON would end the tag early.

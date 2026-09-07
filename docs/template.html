@@ -170,6 +170,12 @@
   .close { position: absolute; top: 12px; right: 14px; font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; background: none; border: 1px solid var(--ink); color: var(--ink); padding: 6px 10px; cursor: pointer; }
   .close:hover { background: var(--ink); color: var(--paper); }
 
+  .findings { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 0; border: 1.5px solid var(--rule); }
+  .finding { padding: 16px 20px 18px; border-right: 1px solid var(--hair); border-bottom: 1px solid var(--hair); }
+  .finding h3 { margin: 0 0 6px; font-size: 21px; font-weight: 400; line-height: 1.15; }
+  .finding p { margin: 0; font-size: 16px; line-height: 1.45; color: var(--ink-2); }
+  @media (max-width: 700px) { .finding { border-right: 0; } }
+
   /* floor */
   .floor { columns: 2; column-gap: 48px; margin: 0; padding: 0; list-style: none; counter-reset: fl; }
   .floor li { break-inside: avoid; margin: 0 0 14px; padding-left: 44px; position: relative; font-size: 18px; line-height: 1.4; }
@@ -317,6 +323,9 @@
     </div>
   </section>
 
+  <h2>What the deals show <span>computed from the files below, not written by hand</span></h2>
+  <div class="findings" id="findings"></div>
+
   <h2>The scorecard <span id="count"></span></h2>
   <p class="intro">Each row is one signed deal. Each column is one term a good deal should include. The stamp says whether the deal clears the bar we set for that term. Tap a row to see exactly what the deal says and where it says it.</p>
   <div class="legend">
@@ -449,6 +458,13 @@
     panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   });
   panel.addEventListener('click', function (e) { if (e.target.closest('[data-close]')) closeSheet(); });
+
+  var fEl = document.getElementById('findings');
+  if (fEl) {
+    fEl.innerHTML = (data.findings || []).map(function (f) {
+      return '<div class="finding"><h3>' + esc(f.title) + '</h3><p>' + esc(f.body) + '</p></div>';
+    }).join('');
+  }
 
   document.getElementById('floor').innerHTML = floorKeys.map(function (k) { return '<li><b>' + esc(data.floor[k].label) + '.</b> ' + esc(data.floor[k].asks) + '</li>'; }).join('');
 })();
