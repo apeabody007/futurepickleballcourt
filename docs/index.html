@@ -4,158 +4,429 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Data Center Deals: what communities actually signed</title>
-<meta name="description" content="A clause-by-clause benchmark of signed data center agreements against what model templates ask for, with a receipt for every term.">
+<meta name="description" content="Signed data center agreements benchmarked clause by clause against what model templates ask for, with a receipt for every term.">
+<meta property="og:title" content="What communities actually signed">
+<meta property="og:description" content="Data center deals, clause by clause, with a receipt for every term.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-  :root { color-scheme: light dark;
-    --bg: #fbfaf7; --fg: #1c1b18; --muted: #6b675e; --line: #e2ded4; --card: #ffffff;
-    --ok: #1f7a3f; --bad: #b3261e; --unk: #8a8578; --accent: #1d4ed8; }
-  @media (prefers-color-scheme: dark) { :root {
-    --bg: #15140f; --fg: #ebe7dc; --muted: #a39d8f; --line: #2c2a23; --card: #1d1b15;
-    --ok: #5ec48a; --bad: #f08a83; --unk: #8a8578; --accent: #8ab4ff; } }
+  :root {
+    --paper: #efe9dc;
+    --paper-2: #e6dfd0;
+    --ink: #17140f;
+    --ink-2: #4a443b;
+    --ink-3: #8a8274;
+    --rule: #17140f;
+    --hair: rgba(23, 20, 15, .28);
+    --stamp: #c4281e;
+    --serif: "Instrument Serif", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    --mono: "Courier Prime", "Courier New", Courier, monospace;
+  }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg);
-    font: 16px/1.5 ui-serif, Georgia, "Times New Roman", serif; }
-  main { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
-  h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 .5rem; letter-spacing: -.01em; }
-  h2 { font-size: 1.25rem; margin: 2.5rem 0 .75rem; }
-  p.lede { font-size: 1.1rem; max-width: 60ch; margin: 0 0 1.25rem; }
-  .meta { color: var(--muted); font-size: .9rem; }
-  .legend { display: flex; gap: 1.25rem; flex-wrap: wrap; margin: 1rem 0 1.25rem; font-size: .9rem; color: var(--muted); }
-  .wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--card); }
-  table { border-collapse: collapse; width: 100%; min-width: 900px; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .9rem; }
-  th, td { padding: .6rem .55rem; border-bottom: 1px solid var(--line); text-align: center; vertical-align: middle; }
-  th { font-weight: 600; font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
-  th:first-child, td:first-child { text-align: left; position: sticky; left: 0; background: var(--card); min-width: 190px; }
-  tr.deal { cursor: pointer; }
-  tr.deal:hover td { background: color-mix(in srgb, var(--accent) 6%, var(--card)); }
-  tr.deal:hover td:first-child { background: color-mix(in srgb, var(--accent) 6%, var(--card)); }
-  .mark { display: inline-block; width: 1.6rem; height: 1.6rem; line-height: 1.6rem; border-radius: 50%; font-weight: 700; font-size: .8rem; }
-  .meets { background: color-mix(in srgb, var(--ok) 18%, transparent); color: var(--ok); }
-  .falls_short { background: color-mix(in srgb, var(--bad) 16%, transparent); color: var(--bad); }
-  .unknown { background: color-mix(in srgb, var(--unk) 18%, transparent); color: var(--unk); }
-  .na { background: transparent; color: var(--unk); border: 1px dashed var(--line); }
-  .name { font-weight: 600; }
-  .sub { display: block; color: var(--muted); font-size: .78rem; font-weight: 400; }
-  tr.deal.open td { background: color-mix(in srgb, var(--accent) 10%, var(--card)); }
-  .detail { margin-top: 1rem; border: 1px solid var(--line); border-radius: 8px; background: color-mix(in srgb, var(--fg) 3%, var(--card)); padding: 1rem 1rem 1.25rem; }
-  .detail h3 { margin: 0 0 .25rem; font-size: 1.15rem; }
-  .clauses { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: .75rem; margin-top: .75rem; }
-  .clause { border: 1px solid var(--line); border-radius: 6px; padding: .6rem .75rem; background: var(--card); font-family: ui-sans-serif, system-ui, sans-serif; }
-  .clause h4 { margin: 0 0 .25rem; font-size: .85rem; display: flex; align-items: center; gap: .5rem; }
-  .clause p { margin: .25rem 0; font-size: .85rem; }
-  .clause .asks { color: var(--muted); font-size: .78rem; }
-  .clause ul { margin: .35rem 0 0; padding-left: 1.1rem; font-size: .8rem; }
-  .docs { font-size: .85rem; margin: .5rem 0 0; }
-  a { color: var(--accent); }
-  .badge { font-size: .72rem; padding: .1rem .45rem; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; }
-  .floor { columns: 2; column-gap: 2rem; font-size: .95rem; }
-  .floor li { break-inside: avoid; margin-bottom: .4rem; }
-  @media (max-width: 700px) { .floor { columns: 1; } h1 { font-size: 1.6rem; } }
-  footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+  html { background: var(--paper); }
+  body {
+    margin: 0; color: var(--ink); background: var(--paper);
+    font-family: var(--serif); font-size: 19px; line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+  }
+  /* paper grain */
+  body::before {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: .5;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .06 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+  }
+  a { color: inherit; text-decoration-color: var(--hair); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--ink); }
+  .mono { font-family: var(--mono); }
+  .page { position: relative; z-index: 1; max-width: 1180px; margin: 0 auto; padding: 0 28px 96px; }
+
+  /* masthead */
+  .mast {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
+    padding: 18px 0 10px; border-bottom: 2px solid var(--rule);
+    font-family: var(--mono); font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2);
+  }
+  .mast b { color: var(--ink); font-weight: 700; }
+
+  /* title block */
+  .title {
+    display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, .9fr); gap: 32px 48px; align-items: end;
+    padding: 40px 0 28px; border-bottom: 1px solid var(--rule);
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 400; font-size: clamp(46px, 7.2vw, 96px); line-height: .96; letter-spacing: -.015em; margin: 0 0 22px;
+    text-wrap: balance;
+  }
+  h1 em { font-style: italic; }
+  .dek { font-size: 22px; line-height: 1.35; max-width: 34ch; margin: 0 0 18px; color: var(--ink); }
+  .why { font-size: 17px; line-height: 1.45; color: var(--ink-2); max-width: 46ch; margin: 0; }
+  .why a { color: var(--ink); }
+
+  /* plat drawing */
+  .plat { width: 100%; height: auto; display: block; }
+  .plat text { font-family: var(--mono); fill: var(--ink); }
+  .plat .hair { stroke: var(--ink); stroke-width: .6; fill: none; }
+  .plat .line { stroke: var(--ink); stroke-width: 1.1; fill: none; }
+  .plat .dash { stroke: var(--ink); stroke-width: .9; fill: none; stroke-dasharray: 5 3; }
+  .plat .court { stroke: var(--ink); stroke-width: 1.2; fill: var(--paper-2); }
+  .plat .red { stroke: var(--stamp); fill: none; stroke-width: 1.1; }
+  .plat .redt { fill: var(--stamp); }
+
+  /* section heads */
+  h2 {
+    font-family: var(--mono); font-weight: 700; font-size: 12.5px; letter-spacing: .14em; text-transform: uppercase;
+    margin: 48px 0 14px; padding-top: 10px; border-top: 2px solid var(--rule); display: flex; justify-content: space-between; gap: 16px;
+  }
+  .title + h2 { margin-top: 28px; }
+  h2 span { font-weight: 400; color: var(--ink-2); letter-spacing: .06em; }
+
+  /* legend */
+  .intro { font-size: 18px; line-height: 1.45; max-width: 62ch; margin: 0 0 16px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 0 0 20px; font-size: 16px; color: var(--ink-2); align-items: center; }
+  .legend .st { margin-right: 6px; }
+
+  /* the grid */
+  .grid-wrap { width: 100%; }
+  table.grid { border-collapse: collapse; width: 100%; table-layout: fixed; }
+  .grid col.c-name { width: 22%; } .grid col.c-ver { width: 8%; }
+  .grid th {
+    font-family: var(--mono); font-weight: 400; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2);
+    text-align: center; padding: 8px 3px 12px; border-bottom: 1px solid var(--rule); vertical-align: bottom; line-height: 1.25; white-space: normal; overflow-wrap: anywhere; hyphens: manual;
+  }
+  .grid th:first-child, .grid td:first-child { text-align: left; padding-left: 0; }
+  .grid td { padding: 14px 3px; border-bottom: 1px solid var(--hair); text-align: center; vertical-align: middle; }
+  .grid td .lbl { display: none; }
+  .grid tr.deal { cursor: pointer; }
+  .grid tr.deal:hover td { background: var(--paper-2); }
+  .grid tr.deal:hover td:first-child { background: var(--paper-2); }
+  .grid tr.deal.open td { background: var(--paper-2); }
+  .grid tr.deal.open td:first-child { background: var(--paper-2); }
+  .grid td:last-child { font-family: var(--mono); font-size: 12px; color: var(--ink-2); text-transform: uppercase; letter-spacing: .06em; }
+  .name { font-size: 21px; line-height: 1.1; display: block; overflow-wrap: anywhere; }
+  .who { font-family: var(--mono); font-size: 12px; color: var(--ink-2); display: block; margin-top: 4px; }
+  .idx { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); display: inline-block; width: 34px; }
+
+  /* row reveal */
+  .grid tr.deal { animation: rise .5s ease both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  /* stamps */
+  .st {
+    display: inline-block; font-family: var(--mono); font-weight: 700; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase;
+    line-height: 1; padding: 5px 5px 4px; border: 1.5px solid var(--ink); color: var(--ink); min-width: 46px; text-align: center;
+    transform: rotate(var(--tilt, 0deg));
+  }
+  .st.meets { background: var(--ink); color: var(--paper); }
+  .st.falls_short { border-color: var(--stamp); color: var(--stamp); background: transparent; }
+  .st.unknown { border-style: dashed; border-color: var(--ink-3); color: var(--ink-3); font-weight: 400; }
+  .st.na { border: 0; color: var(--ink-3); font-weight: 400; }
+  td:nth-child(3n) .st { --tilt: -1.6deg; } td:nth-child(3n+1) .st { --tilt: 1.2deg; } td:nth-child(5n) .st { --tilt: -.8deg; }
+  tr.open .st, .sheet .st { animation: stamp .28s cubic-bezier(.2,.9,.3,1.2) both; }
+  @keyframes stamp { from { transform: scale(1.25) rotate(var(--tilt, 0deg)); opacity: 0; } to { transform: scale(1) rotate(var(--tilt, 0deg)); opacity: 1; } }
+
+  /* exhibit sheet (detail) */
+  .sheet { margin-top: 26px; border: 1.5px solid var(--rule); background: var(--paper); padding: 0; position: relative; }
+  .sheet[hidden] { display: none; }
+  .sheet-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; align-items: baseline; padding: 16px 96px 14px 22px; border-bottom: 1px solid var(--rule); }
+  .sheet-head h3 { font-family: var(--serif); font-weight: 400; font-size: 34px; line-height: 1; margin: 0; }
+  .sheet-head .tag { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); }
+  .sheet-meta { padding: 14px 22px; border-bottom: 1px solid var(--hair); font-family: var(--mono); font-size: 13.5px; line-height: 1.6; color: var(--ink-2); }
+  .sheet-meta b { color: var(--ink); font-weight: 400; }
+  .sheet-meta a { color: var(--ink); }
+  .clauses { display: grid; grid-template-columns: 1fr 1fr; }
+  .clause { padding: 16px 22px 18px; border-bottom: 1px solid var(--hair); border-right: 1px solid var(--hair); }
+  .clause:nth-child(2n) { border-right: 0; }
+  .clause h4 { display: flex; align-items: center; gap: 12px; margin: 0 0 8px; font-family: var(--mono); font-weight: 700; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; }
+  .clause .asks { font-size: 15.5px; color: var(--ink-3); margin: 0 0 8px; line-height: 1.45; font-style: italic; }
+  .clause p { margin: 0 0 6px; font-size: 17.5px; line-height: 1.42; }
+  .clause .facts { font-family: var(--mono); font-size: 13.5px; color: var(--ink-2); line-height: 1.6; }
+  .clause sup { font-family: var(--mono); font-size: 11px; color: var(--stamp); margin-left: 2px; }
+  .foot { padding: 16px 22px 20px; font-family: var(--mono); font-size: 13px; line-height: 1.6; color: var(--ink-2); }
+  .foot h5 { margin: 0 0 8px; font-weight: 700; font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); }
+  .foot ol { margin: 0; padding-left: 26px; }
+  .foot li { margin: 0 0 4px; }
+  .foot li a { color: var(--ink); word-break: break-all; }
+  .foot .where { color: var(--ink); }
+  .foot .q { font-style: italic; }
+  .crit { padding: 14px 22px 18px; border-top: 1px solid var(--rule); font-size: 17px; line-height: 1.45; }
+  .crit h5 { font-family: var(--mono); font-weight: 700; font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 8px; }
+  .crit p { margin: 0 0 6px; }
+  .crit a { font-family: var(--mono); font-size: 12px; }
+  .close { position: absolute; top: 12px; right: 14px; font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; background: none; border: 1px solid var(--ink); color: var(--ink); padding: 6px 10px; cursor: pointer; }
+  .close:hover { background: var(--ink); color: var(--paper); }
+
+  /* floor */
+  .floor { columns: 2; column-gap: 48px; margin: 0; padding: 0; list-style: none; counter-reset: fl; }
+  .floor li { break-inside: avoid; margin: 0 0 14px; padding-left: 44px; position: relative; font-size: 18px; line-height: 1.4; }
+  .floor li::before { counter-increment: fl; content: counter(fl, decimal-leading-zero); position: absolute; left: 0; top: 3px; font-family: var(--mono); font-size: 12.5px; color: var(--stamp); }
+  .floor b { font-weight: 400; font-style: italic; }
+  .note { font-size: 17px; line-height: 1.45; color: var(--ink-2); max-width: 62ch; }
+
+  footer { margin-top: 64px; padding-top: 14px; border-top: 2px solid var(--rule); font-family: var(--mono); font-size: 13.5px; line-height: 1.7; color: var(--ink-2); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 32px; }
+  footer a { color: var(--ink); }
+  footer .sig { font-family: var(--serif); font-style: italic; font-size: 22px; letter-spacing: -.01em; text-decoration: none; border-bottom: 1.5px solid var(--ink); }
+
+  @media (max-width: 860px) {
+    body { font-size: 17px; }
+    .page { padding: 0 18px 72px; }
+    .title { grid-template-columns: 1fr; gap: 24px; padding-top: 28px; }
+    .plat { max-width: 420px; }
+    .dek { font-size: 19px; }
+    .clauses { grid-template-columns: 1fr; }
+    .clause { border-right: 0; }
+    .floor { columns: 1; }
+    .sheet-head h3 { font-size: 27px; }
+    .name { font-size: 20px; }
+  }
+  @media (max-width: 720px) {
+    .grid, .grid tbody { display: block; }
+    .grid colgroup, .grid thead { display: none; }
+    .grid tr.deal { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px 4px; padding: 16px 0 18px; border-bottom: 1px solid var(--hair); }
+    .grid td { display: block; padding: 0; border: 0; }
+    .grid td:first-child { grid-column: 1 / -1; padding-bottom: 4px; }
+    .grid td:last-child { grid-column: 1 / -1; text-align: left; padding-top: 2px; }
+    .grid td:last-child::before { content: "source: "; }
+    .grid td .lbl { display: block; font-family: var(--mono); font-size: 9.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 5px; }
+    .grid td .st { min-width: 0; width: 100%; padding: 6px 2px 5px; font-size: 10px; letter-spacing: .06em; --tilt: 0deg !important; }
+    .idx { width: 30px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .grid tr.deal, .st { animation: none !important; } }
 </style>
 </head>
 <body>
-<main>
-  <h1>Data center deals: what communities actually signed</h1>
-  <p class="lede">Model agreements say what a community should ask for. This is what signed deals delivered, clause by clause, with a link to the page or section that backs each term. Click a row to see the receipts.</p>
-  <p class="meta">Why the name: Mark Cuban has said a lot of data centers will end up as <a href="https://247wallst.com/investing/2026/07/22/mark-cuban-a-lot-of-data-centers-are-going-to-be-turned-into-pickleball-courts/" rel="noopener">pickleball courts</a> if efficiency gains continue. The terms that matter are the ones written for that day.</p>
-  <p class="meta">Generated <span id="generated"></span> from the deal files in the <a href="https://github.com/apeabody007/futurepickleballcourt">repository</a>. Anyone can add a deal or correct a term by pull request.</p>
-
-  <div class="legend">
-    <span><span class="mark meets">✓</span> meets the floor</span>
-    <span><span class="mark falls_short">✕</span> falls short</span>
-    <span><span class="mark unknown">?</span> not enough information yet</span>
-    <span><span class="mark na">–</span> not applicable</span>
+<div class="page">
+  <div class="mast">
+    <div><b>Exhibit A</b> &nbsp;·&nbsp; Data center agreements</div>
+    <div>futurepickleballcourt.com &nbsp;·&nbsp; <span id="generated"></span></div>
   </div>
 
-  <div class="wrap"><table id="matrix"></table></div>
-  <section id="detail" class="detail" hidden></section>
+  <section class="title">
+    <div>
+      <h1>What communities <em>actually</em> signed.</h1>
+      <p class="dek">Model agreements say what a town should ask a data center for. This is what signed deals delivered, clause by clause, with a receipt for every term.</p>
+      <p class="why">Why the name: Mark Cuban has said a lot of data centers will end up as <a href="https://247wallst.com/investing/2026/07/22/mark-cuban-a-lot-of-data-centers-are-going-to-be-turned-into-pickleball-courts/" rel="noopener">pickleball courts</a> if efficiency gains keep coming. The terms that matter are the ones written for that day.</p>
+    </div>
+    <div>
+      <svg class="plat" viewBox="0 0 440 330" role="img" aria-label="A site plan drawing of a data center parcel with four pickleball courts laid out over the proposed data hall, labeled future use.">
+        <!-- border + title block -->
+        <rect x="6" y="6" width="428" height="318" class="line"/>
+        <rect x="12" y="12" width="416" height="306" class="hair"/>
+        <line x1="12" y1="268" x2="428" y2="268" class="line"/>
+        <line x1="150" y1="268" x2="150" y2="318" class="hair"/>
+        <line x1="300" y1="268" x2="300" y2="318" class="hair"/>
+        <text x="20" y="284" font-size="8.5" font-weight="700">SITE PLAN · SHEET C-1</text>
+        <text x="20" y="297" font-size="7.5">PARCEL 03-114-002 · 150 AC ±</text>
+        <text x="20" y="309" font-size="7.5">SCALE AS SHOWN</text>
+        <text x="158" y="284" font-size="8.5" font-weight="700">FUTURE USE</text>
+        <text x="158" y="297" font-size="7.5">PICKLEBALL COURTS (4), TYP.</text>
+        <text x="158" y="309" font-size="7.5">PER OWNER OUTLOOK, JUL 2026</text>
+        <text x="308" y="284" font-size="8.5" font-weight="700" class="redt">NOT FOR CONSTRUCTION</text>
+        <text x="308" y="297" font-size="7.5">REV 0 · ISSUED FOR COMMENT</text>
+        <text x="308" y="309" font-size="7.5">DRAWN: AP · CHK'D: MC</text>
+        <!-- parcel -->
+        <polygon points="40,40 372,30 396,110 384,240 60,252 32,150" class="line"/>
+        <text x="44" y="34" font-size="7">N 88°12'40" E  1,204.6'</text>
+        <text x="392" y="176" font-size="7" transform="rotate(84 392 176)">S 04°01'10" W  620.2'</text>
+        <text x="24" y="98" font-size="7" transform="rotate(-76 24 98)">N 09°22'30" W  455.1'</text>
+        <!-- data hall footprint (proposed, dashed) -->
+        <rect x="92" y="78" width="256" height="128" class="dash"/>
+        <text x="100" y="72" font-size="7.5">DATA HALL 1 (PROPOSED) · 400,000 SF · 100 MW</text>
+        <line x1="92" y1="78" x2="348" y2="206" class="red"/>
+        <line x1="348" y1="78" x2="92" y2="206" class="red"/>
+        <!-- four courts, 20x44 ft at ~1.45 px/ft = 29 x 64 -->
+        <g id="courts">
+          <g transform="translate(112 110)">
+            <rect x="0" y="0" width="64" height="29" class="court"/>
+            <line x1="32" y1="0" x2="32" y2="29" class="hair" stroke-dasharray="2 1.5"/>
+            <line x1="22" y1="0" x2="22" y2="29" class="hair"/>
+            <line x1="42" y1="0" x2="42" y2="29" class="hair"/>
+            <line x1="0" y1="14.5" x2="22" y2="14.5" class="hair"/>
+            <line x1="42" y1="14.5" x2="64" y2="14.5" class="hair"/>
+          </g>
+          <g transform="translate(184 110)">
+            <rect x="0" y="0" width="64" height="29" class="court"/>
+            <line x1="32" y1="0" x2="32" y2="29" class="hair" stroke-dasharray="2 1.5"/>
+            <line x1="22" y1="0" x2="22" y2="29" class="hair"/>
+            <line x1="42" y1="0" x2="42" y2="29" class="hair"/>
+            <line x1="0" y1="14.5" x2="22" y2="14.5" class="hair"/>
+            <line x1="42" y1="14.5" x2="64" y2="14.5" class="hair"/>
+          </g>
+          <g transform="translate(112 150)">
+            <rect x="0" y="0" width="64" height="29" class="court"/>
+            <line x1="32" y1="0" x2="32" y2="29" class="hair" stroke-dasharray="2 1.5"/>
+            <line x1="22" y1="0" x2="22" y2="29" class="hair"/>
+            <line x1="42" y1="0" x2="42" y2="29" class="hair"/>
+            <line x1="0" y1="14.5" x2="22" y2="14.5" class="hair"/>
+            <line x1="42" y1="14.5" x2="64" y2="14.5" class="hair"/>
+          </g>
+          <g transform="translate(184 150)">
+            <rect x="0" y="0" width="64" height="29" class="court"/>
+            <line x1="32" y1="0" x2="32" y2="29" class="hair" stroke-dasharray="2 1.5"/>
+            <line x1="22" y1="0" x2="22" y2="29" class="hair"/>
+            <line x1="42" y1="0" x2="42" y2="29" class="hair"/>
+            <line x1="0" y1="14.5" x2="22" y2="14.5" class="hair"/>
+            <line x1="42" y1="14.5" x2="64" y2="14.5" class="hair"/>
+          </g>
+        </g>
+        <!-- leader + label -->
+        <polyline points="248,124 272,100 292,100" class="hair"/>
+        <text x="296" y="97" font-size="7">FUTURE PICKLEBALL</text>
+        <text x="296" y="106.5" font-size="7">COURT, 20' x 44' (TYP.)</text>
+        <!-- dimension: court run -->
+        <line x1="112" y1="190" x2="248" y2="190" class="hair"/>
+        <line x1="112" y1="186" x2="112" y2="194" class="hair"/>
+        <line x1="248" y1="186" x2="248" y2="194" class="hair"/>
+        <text x="160" y="199" font-size="7">94'-0"</text>
+        <!-- substation + easement -->
+        <rect x="300" y="150" width="34" height="22" class="hair"/>
+        <text x="303" y="164" font-size="6.5">SUBSTN</text>
+        <text x="272" y="232" font-size="7">50' UTILITY EASEMENT</text>
+        <line x1="96" y1="222" x2="380" y2="222" class="hair" stroke-dasharray="6 3 1 3"/>
+        <!-- north arrow -->
+        <g transform="translate(404 50)">
+          <line x1="0" y1="18" x2="0" y2="-14" class="line"/>
+          <polygon points="0,-18 -4,-8 4,-8" fill="#17140f"/>
+          <text x="-3.2" y="30" font-size="8" font-weight="700">N</text>
+        </g>
+        <!-- scale bar -->
+        <g transform="translate(40 246)">
+          <rect x="0" y="0" width="36" height="4" fill="#17140f"/>
+          <rect x="36" y="0" width="36" height="4" class="hair"/>
+          <rect x="72" y="0" width="36" height="4" fill="#17140f"/>
+          <text x="-2" y="-3" font-size="6.5">0</text>
+          <text x="31" y="-3" font-size="6.5">50</text>
+          <text x="66" y="-3" font-size="6.5">100</text>
+          <text x="98" y="-3" font-size="6.5">150 FT</text>
+        </g>
+      </svg>
+    </div>
+  </section>
 
-  <h2>What the floor asks for</h2>
+  <h2>The scorecard <span id="count"></span></h2>
+  <p class="intro">Each row is one signed deal. Each column is one term a good deal should include. The stamp says whether the deal clears the bar we set for that term. Tap a row to see exactly what the deal says and where it says it.</p>
+  <div class="legend">
+    <span><span class="st meets">Met</span> clears the bar</span>
+    <span><span class="st falls_short">Short</span> falls short</span>
+    <span><span class="st unknown">?</span> we could not find out yet</span>
+    <span><span class="st na">n/a</span> does not apply, for example no tax break was given so there is nothing to claw back</span>
+  </div>
+  <div class="grid-wrap"><table class="grid" id="matrix"></table></div>
+  <section id="sheet" class="sheet" hidden></section>
+
+  <h2>The bar <span>what each term has to include to count as met</span></h2>
   <ol class="floor" id="floor"></ol>
-  <p class="meta">The floor is a file in the repository, not an opinion baked into the page. If it is set wrong, change it by pull request and say why.</p>
+  <p class="note">These bars are a position, not a law. They live in a plain text file in the repository, and anyone can propose a change by pull request. Deals marked <em>not yet verified</em> were drafted from summaries and are waiting for someone to read the actual document.</p>
 
-  <footer>Data is CC BY 4.0. Terms marked <em>unverified</em> were drafted from secondary summaries and are waiting for someone to read the actual document. If that is you, open a pull request.</footer>
-</main>
+  <footer>
+    <div>Prepared by <a href="https://aaronpeabody.dev" class="sig">Aaron Peabody</a> · <a href="https://aaronpeabody.dev">aaronpeabody.dev</a><br>Data CC BY 4.0 · Code MIT · <a href="https://github.com/apeabody007/futurepickleballcourt">github.com/apeabody007/futurepickleballcourt</a></div>
+    <div>Know a deal that is missing, or a term we got wrong?<br>Add it or fix it by pull request. A source on every term, or it doesn't go in.</div>
+  </footer>
+</div>
 <script id="data" type="application/json">{"generated": "2026-09-07", "floor": {"community_fund": {"label": "Community fund", "asks": "A fund that scales with the project, with a community seat on the body that spends it", "rule": [["present", "eq", true], ["community_seat", "eq", true]]}, "clawbacks": {"label": "Clawbacks", "asks": "Incentives come back if the facility stops operating, not only if a jobs number is missed", "rule": [["present", "eq", true], ["triggers", "contains", "operation"]]}, "decommissioning": {"label": "Decommissioning", "asks": "A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks", "rule": [["present", "eq", true], ["instrument", "in", ["bond", "escrow", "letter_of_credit"]]]}, "grid_costs": {"label": "Grid costs", "asks": "The operator pays for its own interconnection and carries a minimum bill that survives it leaving", "rule": [["who_pays_interconnect", "eq", "operator"], ["minimum_bill", "eq", true]]}, "water": {"label": "Water", "asks": "A stated cap or closed-loop cooling, plus public reporting", "rule": [["present", "eq", true], ["reporting", "eq", true]]}, "noise": {"label": "Noise", "asks": "A numeric limit measured at the nearest residence or property line", "rule": [["present", "eq", true], ["limit_dba", "not_null"]]}, "jobs": {"label": "Jobs", "asks": "Binding job commitments with a consequence, not projections", "rule": [["present", "eq", true], ["enforceable", "eq", true]]}, "local_contracting": {"label": "Local contracting", "asks": "Local subcontracting goals and haul-route road repair paid by the operator", "rule": [["present", "eq", true], ["road_repair", "eq", true]]}, "transparency": {"label": "Transparency", "asks": "No NDA, the agreement is public, and an independent audit on a schedule", "rule": [["nda", "eq", false], ["agreement_public", "eq", true], ["audit_cadence", "in", ["annual", "biennial"]], ["audit_independent", "eq", true]]}, "tax": {"label": "Tax incentives", "asks": "A but-for test before any abatement, with the forgone revenue stated", "rule": [["but_for_test", "eq", true], ["estimated_forgone_usd", "not_null"]]}}, "deals": [{"$schema": "../schema/deal.schema.json", "id": "us-az-goodyear-2023", "status": "approved", "verification": "press", "jurisdiction": {"country": "US", "state": "AZ", "locality": "City of Goodyear", "level": "city"}, "operator": "Microsoft", "developer": "Microsoft Corporation", "project": "Microsoft Goodyear campus, Third Amendment to the 2019 Infrastructure Development Agreement", "agreement_type": "development_agreement", "dates": {"signed": null, "approved": "2023-03-06", "effective": null}, "scale": {"acres": 300, "mw": null, "capex_usd": null, "sqft": null}, "documents": [{"title": "ABC15: Microsoft agrees to make data centers air-cooled amid water infrastructure challenges", "url": "https://www.abc15.com/news/business/microsoft-agrees-to-make-data-centers-air-cooled-amid-water-infrastructure-challenges-in-goodyear", "kind": "press", "date": "2023-03-07"}, {"title": "AZBEX: Microsoft Goodyear update to development agreement", "url": "https://azbex.com/local-news/microsoft-goodyear-update-development-agreement/", "kind": "press", "date": null}, {"title": "Futurism summarizing The Atlantic on water use and redaction", "url": "https://futurism.com/the-byte/microsoft-arizona-water-ai", "kind": "press", "date": "2024-03-01"}], "terms": {"community_fund": {"present": false, "amount_usd": null, "cadence": null, "scales_with_project": null, "controlled_by": null, "community_seat": null, "notes": "No community fund. Microsoft funds $800,000 for a City staff coordinator dedicated to its projects.", "sources": ["https://www.abc15.com/news/business/microsoft-agrees-to-make-data-centers-air-cooled-amid-water-infrastructure-challenges-in-goodyear", "https://azbex.com/local-news/microsoft-goodyear-update-development-agreement/"]}, "clawbacks": {"present": null, "triggers": [], "proportional": null, "notes": null, "sources": []}, "decommissioning": {"present": null, "instrument": null, "amount_usd": null, "notes": null, "sources": []}, "grid_costs": {"present": null, "who_pays_interconnect": null, "minimum_bill": null, "term_years": null, "governed_by": null, "notes": "Microsoft contracted 150 MW from First Solar's Sun Streams 2 plant for its Arizona campuses. Substation and transmission cost allocation with the utility is unknown.", "sources": ["https://blogs.microsoft.com/on-the-issues/2019/07/30/building-world-class-sustainable-datacenters-and-investing-in-solar-power-in-arizona/"]}, "water": {"present": true, "limit_gpd": null, "reporting": false, "recycling_required": null, "cooling": "mixed", "notes": "The 2023 amendment has Microsoft pay $36M toward a $90M wastewater plant expansion, buying 1.2 million gallons per day of capacity, with $5M financial assurance for a new sewer line. Buildings 1 to 3 are water-cooled with recirculation; buildings 4 and 5 must be air-cooled. The 2019 plan to treat wastewater for city reuse was dropped as cost prohibitive. A Microsoft-commissioned estimate of about 56 million gallons a year was shared with council, but exact figures were redacted from city records as proprietary.", "sources": ["https://www.abc15.com/news/business/microsoft-agrees-to-make-data-centers-air-cooled-amid-water-infrastructure-challenges-in-goodyear", "https://azbex.com/local-news/microsoft-goodyear-update-development-agreement/", "https://futurism.com/the-byte/microsoft-arizona-water-ai"]}, "noise": {"present": null, "limit_dba": null, "measured_at": null, "setback_ft": null, "notes": "Goodyear's code uses a reasonable-person standard rather than decibel limits. No agreement term found.", "sources": []}, "jobs": {"present": true, "promised_permanent": 100, "promised_construction": 1000, "local_hire": null, "prevailing_wage": null, "enforceable": null, "notes": "Microsoft projected 100-plus permanent and 1,000-plus construction jobs across Goodyear and El Mirage combined. These are projections in a press release, not agreement terms.", "sources": ["https://blogs.microsoft.com/on-the-issues/2019/07/30/building-world-class-sustainable-datacenters-and-investing-in-solar-power-in-arizona/"]}, "local_contracting": {"present": null, "local_subcontracting": null, "road_repair": null, "infrastructure_contribution_usd": null, "notes": null, "sources": []}, "transparency": {"present": true, "nda": null, "agreement_public": null, "public_dashboard": false, "audit_cadence": null, "audit_independent": null, "notes": "Water-use figures were redacted from public records as proprietary. The 2019 agreement let Microsoft build under a self-certification process before site-plan adoption. The resolution text could not be fetched from the City's agenda archive.", "sources": ["https://futurism.com/the-byte/microsoft-arizona-water-ai", "https://www.abc15.com/news/region-west-valley/goodyear/goodyear-city-council-adopts-resolution-approving-development-agreement-for-microsoft"]}, "tax": {"present": null, "abatement_pct": null, "duration_years": null, "pilot": null, "estimated_forgone_usd": null, "but_for_test": null, "notes": "No city abatement or PILOT found. Arizona's state computer data center program exempts qualifying equipment from transaction and use tax for up to ten years; Microsoft's certification status is unknown.", "sources": []}}, "criticisms": [{"summary": "The Atlantic reported in March 2024 that the campus would use about 56 million gallons a year and that the City redacted the figures as proprietary.", "source": "https://futurism.com/the-byte/microsoft-arizona-water-ai"}, {"summary": "The 2019 agreement allowed construction to start under self-certification before the site plan was adopted.", "source": "https://www.abc15.com/news/region-west-valley/goodyear/goodyear-city-council-adopts-resolution-approving-development-agreement-for-microsoft"}], "contributors": ["apeabody007"], "last_reviewed": "2026-09-07", "score": {"community_fund": "falls_short", "clawbacks": "falls_short", "decommissioning": "unknown", "grid_costs": "unknown", "water": "falls_short", "noise": "unknown", "jobs": "unknown", "local_contracting": "unknown", "transparency": "unknown", "tax": "unknown"}}, {"$schema": "../schema/deal.schema.json", "id": "us-fl-fort-meade-2026", "status": "approved", "verification": "press", "jurisdiction": {"country": "US", "state": "FL", "locality": "City of Fort Meade", "level": "city"}, "operator": null, "developer": "Stonebridge, contracting as Fort Meade DC LLC", "project": "Fort Meade data center campus (former phosphate mine west of US 98)", "agreement_type": "development_agreement", "dates": {"signed": null, "approved": "2026-04-14", "effective": null}, "scale": {"acres": 1300, "mw": 1200, "capex_usd": 2600000000, "sqft": 4400000}, "documents": [{"title": "WUSF: Fort Meade one step closer to Florida's first hyperscale data center", "url": "https://www.wusf.org/environment/2026-04-08/fort-meade-is-one-step-closer-to-building-floridas-first-hysperscale-ai-data-center", "kind": "press", "date": "2026-04-08"}, {"title": "Bay News 9: approved despite residents' concerns", "url": "https://baynews9.com/fl/tampa/news/2026/04/15/fort-meade-data-center-approved-despite-residents-concerns", "kind": "press", "date": "2026-04-15"}, {"title": "Polk County 90 percent ad valorem exemption ordinance and performance agreement (summary)", "url": "https://citizenportal.ai/articles/6731770/florida/polk-county/polk-county-grants-10year-90-ad-valorem-tax-exemption-to-proposed-fort-meade-data-center", "kind": "analysis", "date": "2025-11-04"}, {"title": "LkldNow: Lakeland watching Fort Meade as water concerns grow", "url": "https://www.lkldnow.com/lakeland-watching-fort-meade-data-center-as-water-concerns-grow/", "kind": "press", "date": null}], "terms": {"community_fund": {"present": false, "amount_usd": null, "cadence": null, "scales_with_project": null, "controlled_by": null, "community_seat": null, "notes": "No community fund. The City gets a $10M upfront payment, which the state Commerce Secretary and The Ledger describe as an advance against future property taxes rather than new revenue, earmarked for water system and infrastructure upgrades, plus $300,000 to help secure additional water supply.", "sources": ["https://www.lkldnow.com/lakeland-watching-fort-meade-data-center-as-water-concerns-grow/", "https://www.aol.com/articles/lawyer-asks-fort-meade-revoke-090423000.html", "https://baynews9.com/fl/tampa/news/2026/04/15/fort-meade-data-center-approved-despite-residents-concerns"]}, "clawbacks": {"present": null, "triggers": [], "proportional": null, "notes": "The county's exemption came with a performance agreement, but its terms were not published in any source found. The mayor pledged legal action if performance falters.", "sources": []}, "decommissioning": {"present": null, "instrument": null, "amount_usd": null, "notes": "No bond, escrow, or restoration obligation reported anywhere.", "sources": []}, "grid_costs": {"present": null, "who_pays_interconnect": "unknown", "minimum_bill": null, "term_years": null, "governed_by": "Florida SB 484 (Chapter 2026-65) large-load tariff; Duke Energy Florida's first filing was pending at the Public Service Commission in August 2026", "notes": "Power would come from Duke Energy Florida; city residents are on a municipal power agency. The developer said the project will fund its own utility infrastructure, but no agreement-level term was published. Any minimum bill will come from the state tariff, not the city deal.", "sources": ["https://baynews9.com/fl/tampa/news/2026/02/11/fort-meade-residents-data-center-concern", "https://www.wusf.org/politics-issues/2026-08-26/new-state-law-protect-consumers-data-center-costs-faces-first-test"]}, "water": {"present": true, "limit_gpd": 50000, "reporting": null, "recycling_required": null, "cooling": "closed_loop", "notes": "City provides 50,000 gallons per day of potable water for restrooms and kitchens, down from an initial ask of 140,000 to 150,000, with closed-loop cooling and no new wells. The water management district wrote the City on the day of the vote that its existing permit cannot serve the project and that any data center water permit needs full board approval at a public meeting. The state called the 50,000 figure woefully underestimated.", "sources": ["https://www.wusf.org/environment/2026-04-08/fort-meade-is-one-step-closer-to-building-floridas-first-hysperscale-ai-data-center", "https://www.wusf.org/environment/2026-04-15/fort-meade-ai-data-center-project-hits-roadblock-over-new-water-rules", "https://www.fox13news.com/news/florida-secretary-commerce-concerns-fort-meade-data-center-plan"]}, "noise": {"present": null, "limit_dba": null, "measured_at": null, "setback_ft": null, "notes": "The developer projects 50 to 52 dB at a half mile with full backup generation permitted up to 100 hours a year. Whether the agreement sets a limit is unknown.", "sources": []}, "jobs": {"present": true, "promised_permanent": 450, "promised_construction": null, "local_hire": null, "prevailing_wage": null, "enforceable": null, "notes": "Three inconsistent numbers: the developer and City say 450-plus permanent jobs at about $107,000 average; the county tax-exemption filing says 50 full-time jobs; the state Commerce Secretary called the projections likely overstated.", "sources": ["https://www.fox13news.com/news/fort-meade-data-center-project-community-opposition", "https://dailyridge.com/2025/11/07/polk-county-commissioners-approve-tax-exemption-to-new-business-to-build-data-center/", "https://www.lkldnow.com/lakeland-watching-fort-meade-data-center-as-water-concerns-grow/"]}, "local_contracting": {"present": null, "local_subcontracting": null, "road_repair": null, "infrastructure_contribution_usd": null, "notes": null, "sources": []}, "transparency": {"present": null, "nda": null, "agreement_public": null, "public_dashboard": null, "audit_cadence": null, "audit_independent": null, "notes": "No NDA was confirmed, but the tenant is undisclosed, an interim city manager initially declined to name the company, and the June 2025 rezoning passed before most residents knew. The executed development agreement could not be located; the City's agenda archive links are broken.", "sources": ["https://www.wusf.org/environment/2026-02-16/proposals-massive-data-centers-across-florida-are-local-governments-prepared"]}, "tax": {"present": true, "abatement_pct": 90, "duration_years": 10, "pilot": false, "estimated_forgone_usd": 148375360, "but_for_test": null, "notes": "Polk County granted a 90 percent ad valorem exemption for 2029 to 2038, about $14.8M a year forgone; the school levy is not exempted. This is the widely quoted $150M over ten years. Whether the City granted its own exemption is unconfirmed.", "sources": ["https://dailyridge.com/2025/11/07/polk-county-commissioners-approve-tax-exemption-to-new-business-to-build-data-center/", "https://citizenportal.ai/articles/6731770/florida/polk-county/polk-county-grants-10year-90-ad-valorem-tax-exemption-to-proposed-fort-meade-data-center"]}}, "criticisms": [{"summary": "Florida's Commerce Secretary called the project fundamentally flawed and far from approved in an April 16, 2026 letter.", "source": "https://www.fox13news.com/news/florida-secretary-commerce-concerns-fort-meade-data-center-plan"}, {"summary": "Two lawsuits filed May 14, 2026 seek to void the approval; recall petitions against the mayor and two commissioners were submitted in July.", "source": "https://thecitrustea.com/2026/06/23/fort-meade-residents-file-two-lawsuits-to-block-stonebridge-data-center-as-watchdogs-launch-recall-push/"}, {"summary": "40 of 41 public commenters opposed the deal at the vote. The vice mayor called it a leap of faith.", "source": "https://www.aol.com/articles/lawyer-asks-fort-meade-revoke-090423000.html"}], "contributors": ["apeabody007"], "last_reviewed": "2026-09-07", "score": {"community_fund": "falls_short", "clawbacks": "falls_short", "decommissioning": "unknown", "grid_costs": "falls_short", "water": "unknown", "noise": "unknown", "jobs": "unknown", "local_contracting": "unknown", "transparency": "unknown", "tax": "unknown"}}, {"$schema": "../schema/deal.schema.json", "id": "us-ia-cedar-rapids-google-2024", "status": "signed", "verification": "primary", "jurisdiction": {"country": "US", "state": "IA", "locality": "City of Cedar Rapids", "level": "city"}, "operator": "Google", "developer": "Heaviside LLC (Google development entity); Google LLC on the state contract", "project": "Google Cedar Rapids campus, 76th Avenue SW and Edgewood Road SW", "agreement_type": "development_agreement", "dates": {"signed": "2024-02-29", "approved": "2024-02-27", "effective": null}, "scale": {"acres": 419.69, "mw": 300, "capex_usd": 576000000, "sqft": null}, "documents": [{"title": "Google Project Development Agreement (executed February 2024)", "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "kind": "primary", "date": "2024-02-29"}, {"title": "Iowa Economic Development Authority assistance contract 24-HQJP-014 (scanned)", "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-IEDA-Economic-Development-Assistance-Contract.pdf", "kind": "primary", "date": "2024-07-29"}, {"title": "The Gazette: council signs off on unnamed company's $576 million data center", "url": "https://www.thegazette.com/local-government/cedar-rapids-city-council-signs-off-on-unnamed-companys-historic-576-million-data-center/", "kind": "press", "date": "2024-02-27"}, {"title": "Business Record: IEDA approves $56M local tax break", "url": "https://www.businessrecord.com/ieda-approves-56m-local-tax-break-for-googles-576m-cedar-rapids-data-center/", "kind": "press", "date": "2024-03-22"}], "terms": {"community_fund": {"present": true, "amount_usd": 36000000, "cadence": "annual", "scales_with_project": true, "controlled_by": "The City, at its discretion; the company gets input.", "community_seat": false, "notes": "Community Betterment Fund: $400,000 a year per data center building from the January 1 after occupancy, for 15 years or $6M per building, capped at $36M in total. Press reports of $350,000 are wrong; the executed agreement says $400,000.", "sources": [{"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Section 6.7, p. 15"}]}, "clawbacks": {"present": true, "triggers": ["jobs", "investment"], "proportional": false, "notes": "The exemption ceases prospectively if conditions lapse after a 60-day cure, and the franchise-fee rebate is skipped for any year of job noncompliance. The state contract lets IEDA revoke or reduce incentives after a 30-day cure, with layoffs or Iowa closures as default triggers. Meeting the investment minimum is a condition precedent to the exemption. No trigger tied to the facility ceasing operation after the job-maintenance window closes in 2033.", "sources": [{"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Sections 6.2(a), 6.3, and 6.6"}, {"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-IEDA-Economic-Development-Assistance-Contract.pdf", "where": "Article 9.1(c) and 9.2, p. 19"}]}, "decommissioning": {"present": false, "instrument": "none", "amount_usd": null, "notes": "No decommissioning term.", "sources": ["https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf"]}, "grid_costs": {"present": false, "who_pays_interconnect": "unknown", "minimum_bill": null, "term_years": null, "governed_by": "Alliant Energy individual customer rate for 25 MW-plus customers; terms not public", "notes": "The agreement is silent on electric costs. Alliant's 2024 filings described up to 300 MW of new load potential.", "sources": ["https://www.thegazette.com/news/environment/google-data-center-would-be-among-cedar-rapids-largest-water-and-energy-users/article_70095b9e-c333-58c3-b664-b25ba3df016f.html"]}, "water": {"present": true, "limit_gpd": null, "reporting": false, "recycling_required": null, "cooling": "unknown", "notes": "The City reserves water capacity for the property per an exhibit that is not in the posted PDF. A gray-water credit of $1.30 per hundred cubic feet, escalating 2.5 percent a year and capped at 57 percent of the sewer rate, applies to separately piped cooling discharge between 0.1 and 1.5 million gallons a day, with monthly reporting only if the credit is claimed. The utilities director says Google plans no water for cooling; 2024 estimates ranged from 200,000 to 7.8 million gallons a day. Google gave $1.3M toward a $12M to $14M aquifer storage well.", "sources": [{"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Sections 6.8, 7.3, and 7.4, pp. 15 to 17"}, "https://www.thegazette.com/news/environment/google-data-center-would-be-among-cedar-rapids-largest-water-and-energy-users/article_70095b9e-c333-58c3-b664-b25ba3df016f.html", "https://www.kcrg.com/2026/06/09/cedar-rapids-drilling-new-storage-aquifer-stay-ahead-game-amidst-data-center-development/"]}, "noise": {"present": false, "limit_dba": null, "measured_at": null, "setback_ft": null, "notes": "No noise term.", "sources": ["https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf"]}, "jobs": {"present": true, "promised_permanent": 31, "promised_construction": null, "local_hire": false, "prevailing_wage": false, "enforceable": true, "notes": "31 full-time jobs at $31.44 an hour by March 31, 2031, maintained through March 31, 2033, enforceable through the state contract and the city exemption conditions. No local hire and no prevailing wage.", "sources": [{"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-IEDA-Economic-Development-Assistance-Contract.pdf", "where": "Exhibit D, p. 8"}, {"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Section 5.2, p. 10"}]}, "local_contracting": {"present": false, "local_subcontracting": false, "road_repair": false, "infrastructure_contribution_usd": null, "notes": "No local contracting or road repair term. A 75 percent rebate of electric franchise fees for 20 years per data center runs the other direction.", "sources": [{"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Section 6.4, p. 13"}]}, "transparency": {"present": true, "nda": true, "agreement_public": true, "public_dashboard": false, "audit_cadence": "none", "audit_independent": false, "notes": "The City signed a nondisclosure agreement with Google, disclosed through a records request in July 2026. The company was unnamed when the council approved the deal. The agreement has a confidentiality clause subject to open records law and a memorandum was recorded with the county. A council member complained little was shared on water, energy, or rate impacts.", "sources": ["https://www.kcrg.com/2026/07/24/cedar-rapids-mayor-defends-data-center-projects-amid-kickback-claims-nda-questions/", {"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Section 11.17"}, "https://www.thegazette.com/local-government/cedar-rapids-city-council-signs-off-on-unnamed-companys-historic-576-million-data-center/"]}, "tax": {"present": true, "abatement_pct": 70, "duration_years": 20, "pilot": false, "estimated_forgone_usd": 56000000, "but_for_test": false, "notes": "70 percent exemption on value added for 20 years under Iowa's High Quality Jobs program, starting the January 1 after the first building completes, plus a 75 percent franchise-fee rebate. The state contract estimates the local property tax exemption at $56,000,000 and awarded no state tax credits. No but-for analysis was found.", "sources": [{"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Sections 6.1(b) and 6.4, pp. 12 to 13"}, {"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-IEDA-Economic-Development-Assistance-Contract.pdf", "where": "Section 3.1, p. 7 and Exhibit B-1, p. 28"}]}}, "criticisms": [{"summary": "The company was not named when the council voted, and the City had signed an NDA.", "source": "https://www.thegazette.com/local-government/cedar-rapids-city-council-signs-off-on-unnamed-companys-historic-576-million-data-center/"}, {"summary": "Water-use estimates ranged from 200,000 to 7.8 million gallons a day at the time of approval.", "source": "https://www.thegazette.com/news/environment/google-data-center-would-be-among-cedar-rapids-largest-water-and-energy-users/article_70095b9e-c333-58c3-b664-b25ba3df016f.html"}], "contributors": ["apeabody007"], "last_reviewed": "2026-09-07", "score": {"community_fund": "falls_short", "clawbacks": "falls_short", "decommissioning": "falls_short", "grid_costs": "falls_short", "water": "falls_short", "noise": "falls_short", "jobs": "meets", "local_contracting": "falls_short", "transparency": "falls_short", "tax": "falls_short"}}, {"$schema": "../schema/deal.schema.json", "id": "us-ia-cedar-rapids-qts-2025", "status": "signed", "verification": "primary", "jurisdiction": {"country": "US", "state": "IA", "locality": "City of Cedar Rapids", "level": "city"}, "operator": "QTS", "developer": "QTS Cedar Rapids I, LLC", "project": "QTS Cedar Rapids campus at Big Cedar Industrial Center, 76th Avenue SW", "agreement_type": "development_agreement", "dates": {"signed": "2025-01-28", "approved": "2025-01-28", "effective": "2025-01-28"}, "scale": {"acres": 560, "mw": null, "capex_usd": 1750000000, "sqft": null}, "documents": [{"title": "QTS Project Development Agreement (executed, January 28, 2025)", "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf", "kind": "primary", "date": "2025-01-28"}, {"title": "City Council agenda, December 2, 2025 (amended and restated agreement, item 6)", "url": "https://cms8.revize.com/revize/cedarrapids/Council_Meetings/2025/2025-12-02_Agenda.pdf", "kind": "government_page", "date": "2025-12-02"}, {"title": "The Gazette: city would rebate $529 million to data center", "url": "https://www.thegazette.com/news/local/government-notes-under-development-agreement-cedar-rapids-would-rebate-529-million-to-data-center/article_2f95ff70-c29c-511e-a85a-b1b72205205c.html", "kind": "press", "date": null}, {"title": "KCRG: mayor defends data center projects amid NDA questions", "url": "https://www.kcrg.com/2026/07/24/cedar-rapids-mayor-defends-data-center-projects-amid-kickback-claims-nda-questions/", "kind": "press", "date": "2026-07-24"}], "terms": {"community_fund": {"present": true, "amount_usd": 18000000, "cadence": "annual", "scales_with_project": true, "controlled_by": "The City, for growth of amenities; the company gets input.", "community_seat": false, "notes": "Community Betterment Fund: $300,000 a year per phase for up to 20 years, starting the fiscal year the City first receives tax increment from that phase, capped at $6M per phase and $18M total. The developer may prepay at an 8 percent net present value discount, and may withhold payment if the City fails to appropriate the grants.", "sources": [{"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf", "where": "Section 6.10, pp. 21 to 22"}, {"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf", "where": "Section 6.3(d), p. 19"}]}, "clawbacks": {"present": true, "triggers": ["jobs"], "proportional": true, "notes": "Forward-looking only. If a phase has fewer than 15 full-time employees, the City skips the next grant and the next franchise-fee rebate for that phase. A job shortfall is expressly not an event of default. No repayment of grants already paid, and no trigger tied to the facility ceasing operation. Failure to build is an event of default allowing suspension or termination after a 60-day cure.", "sources": [{"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf", "where": "Sections 5.2(b), 6.5, 6.9, and 10.1 to 10.2"}]}, "decommissioning": {"present": false, "instrument": "none", "amount_usd": null, "notes": "No decommissioning term in the agreement.", "sources": ["https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf"]}, "grid_costs": {"present": false, "who_pays_interconnect": "unknown", "minimum_bill": null, "term_years": null, "governed_by": "Alliant Energy large-customer rate; terms not public", "notes": "The agreement is silent on electric costs and references a separate electrical service agreement only as a permitted excuse for delay. Alliant says data centers pay for their own equipment under a specific rate with long-term commitments, and QTS signed a federal ratepayer protection pledge. None of that is in the city deal.", "sources": [{"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf", "where": "Section 1.1, p. 7"}, "https://www.kcrg.com/2026/04/24/us-energy-secretary-tours-qts-data-center-addresses-utility-water-concerns/"]}, "water": {"present": false, "limit_gpd": null, "reporting": false, "recycling_required": null, "cooling": "closed_loop", "notes": "The agreement has no cap and no reporting. QTS states it uses closed-loop air-cooled chillers and consumes no water for cooling once operational. The City builds water main and sewer to the property and paves 76th Avenue; QTS pays about $13M in sewer and $3.8M in water connection costs. Linn County sought a $20,000 penalty from a contractor for 40 unpermitted dewatering wells at the site in 2025.", "sources": [{"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf", "where": "Sections 1.1(gg), 4.2, and 4.3"}, "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Water-Conservation-in-Cedar-Rapids.pdf", "https://www.thegazette.com/local-government/cedar-rapids-city-council-approves-data-center-agreement-calling-it-an-investment-in-the-future/"]}, "noise": {"present": false, "limit_dba": null, "measured_at": null, "setback_ft": null, "notes": "No noise term in the agreement.", "sources": ["https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf"]}, "jobs": {"present": true, "promised_permanent": 15, "promised_construction": 1200, "local_hire": false, "prevailing_wage": false, "enforceable": true, "notes": "At least 15 full-time employees per completed phase, where full time means 30 hours a week at the state laborshed wage. Certified annually each November 1 without names. The only consequence is a skipped grant. Construction job figures are projections.", "sources": [{"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf", "where": "Sections 1.1(x), 5.2(a), and 5.3"}]}, "local_contracting": {"present": true, "local_subcontracting": false, "road_repair": true, "infrastructure_contribution_usd": null, "notes": "A separate Linn County road-use agreement in October 2025 covers about $117,000 in back payment, paving of two rural roads, and a performance bond for two others. Also a 75 percent rebate of electric franchise fees for 20 years per data center, which runs the other direction.", "sources": ["https://www.thegazette.com/local-government/qts-to-pay-for-improvements-to-rural-roads-near-cedar-rapids-data-center-development/", {"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf", "where": "Section 6.7, p. 20"}]}, "transparency": {"present": true, "nda": true, "agreement_public": true, "public_dashboard": false, "audit_cadence": "none", "audit_independent": false, "notes": "The City signed nondisclosure agreements with QTS and Google, obtained by public records request in July 2026. The agreement has a confidentiality clause subject to Iowa open records law. The executed agreement is posted online. No dashboard and no audit; one annual meeting between City and developer.", "sources": ["https://www.kcrg.com/2026/07/24/cedar-rapids-mayor-defends-data-center-projects-amid-kickback-claims-nda-questions/", {"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf", "where": "Sections 5.4 and 11.17"}]}, "tax": {"present": true, "abatement_pct": 70, "duration_years": 20, "pilot": false, "estimated_forgone_usd": 529000000, "but_for_test": false, "notes": "Twenty annual economic development grants per phase equal to 70 percent of the tax increment, paid from TIF only and subject to annual appropriation. The owners may not seek other exemptions or convert to tax-exempt status. City estimate: about $1B in total property tax, about $529M rebated. No but-for analysis was found.", "sources": [{"url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf", "where": "Sections 6.1(a), 6.3, 5.1(e), and 9.3"}, "https://www.thegazette.com/news/local/government-notes-under-development-agreement-cedar-rapids-would-rebate-529-million-to-data-center/article_2f95ff70-c29c-511e-a85a-b1b72205205c.html"]}}, "criticisms": [{"summary": "The City signed NDAs with both data center companies, disclosed only through a records request; the mayor denied kickback accusations.", "source": "https://www.kcrg.com/2026/07/24/cedar-rapids-mayor-defends-data-center-projects-amid-kickback-claims-nda-questions/"}, {"summary": "The amended agreement passed in December 2025 with no public comment.", "source": "https://www.thegazette.com/news/cedar-rapids-city-council-oks-amended-qts-development-agreement/article_37c979ab-0bdf-52bd-9e2d-9ee403f0ac36.html"}, {"summary": "Energy advocates raised unanswered questions on water and power impacts.", "source": "https://dailyiowan.com/2025/12/09/cedar-rapids-data-centers-ignite-concern-from-energy-advocates-excitement-from-officials/"}], "contributors": ["apeabody007"], "last_reviewed": "2026-09-07", "score": {"community_fund": "falls_short", "clawbacks": "falls_short", "decommissioning": "falls_short", "grid_costs": "falls_short", "water": "falls_short", "noise": "falls_short", "jobs": "meets", "local_contracting": "meets", "transparency": "falls_short", "tax": "falls_short"}}, {"$schema": "../schema/deal.schema.json", "id": "us-mo-st-louis-2026", "status": "approved", "verification": "primary", "jurisdiction": {"country": "US", "state": "MO", "locality": "City of St. Louis", "level": "city"}, "operator": null, "developer": "Contour, TerraWatt, THO Investments, Steadfast City, ARCO Construction (Armory Innovation District team)", "project": "Armory Innovation Data Center, 3728 Market Street", "agreement_type": "other", "dates": {"signed": null, "approved": "2026-04-21", "effective": null}, "scale": {"acres": null, "mw": 120, "capex_usd": 3000000000, "sqft": 525000}, "documents": [{"title": "Community Benefits Agreement term sheet (City of St. Louis). The recorded CBA with the Land Clearance for Redevelopment Authority had not been executed as of late August 2026.", "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "kind": "primary", "date": "2026-04-21"}, {"title": "Conditional use permit provisions (City summary of the nine conditions)", "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Conditional-Use-provisions.pdf", "kind": "primary", "date": "2026-04-21"}, {"title": "City page: Armory data center conditional use", "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/armory-data-center-conditional-use.cfm", "kind": "government_page", "date": null}, {"title": "STLPR: Board of Adjustment upholds permit with new rules after 11-hour hearing", "url": "https://www.stlpr.org/health-science-environment/2026-07-30/st-louis-board-allows-data-center-near-armory-to-move-forward-with-new-rules", "kind": "press", "date": "2026-07-30"}], "terms": {"community_fund": {"present": true, "amount_usd": 15750000, "cadence": "one_time", "scales_with_project": true, "controlled_by": "A fund at the City's direction, for multimodal improvements such as the Brickline Greenway, a digital access plan, and economic and environmental justice programs.", "community_seat": false, "notes": "$30 per square foot of approved data center development, estimated at $15,750,000. Timing of payment is not stated. This is a term sheet commitment; the recorded agreement that would make it binding was not yet executed as of August 28, 2026.", "sources": [{"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "p. 2", "quote": "$30 per square foot of approved data center development, an estimated $15,750,000"}]}, "clawbacks": {"present": true, "triggers": ["jobs", "other"], "proportional": true, "notes": "Liquidated damages rather than incentive repayment, since no incentives were given. Revenue: $15,000 per $100,000 shortfall against projected annual tax revenue if not met by 2029. Jobs: $2,000 per job short of 25, 50, then 100 median-wage jobs, for 20 years. No trigger tied to the facility ceasing operation.", "sources": [{"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "p. 1, Liquidated Damages"}]}, "decommissioning": {"present": true, "instrument": "covenant_only", "amount_usd": null, "notes": "A decommissioning plan to remove and recycle e-waste must be filed if the facility is vacant for more than a year. No bond, escrow, or letter of credit.", "sources": [{"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "p. 3"}]}, "grid_costs": {"present": true, "who_pays_interconnect": "operator", "minimum_bill": null, "term_years": null, "governed_by": "Ameren Missouri large-load tariff approved by the Missouri Public Service Commission in November 2025 (75 MW and up; 12-year minimum term; exit fees)", "notes": "The permit requires the petitioner to fund any project-specific additional electrical infrastructure. Any minimum bill comes from the Ameren tariff, not the city deal. Reasonable efforts to reach 50 percent renewable within five years with RECs as fallback; PUE of 1.25 or better with annual reporting; generators Tier 4 and never for general power. The Board of Adjustment added an on-site renewable requirement and a ban on generator testing on bad-air days.", "sources": [{"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Conditional-Use-provisions.pdf", "where": "p. 2", "quote": "must fund any project-specific additional electrical infrastructure"}, "https://www.stlpr.org/health-science-environment/2025-11-24/missouri-utility-regulators-approve-ameren-rates-data-centers", "https://www.stlpr.org/health-science-environment/2026-07-30/st-louis-board-allows-data-center-near-armory-to-move-forward-with-new-rules"]}, "water": {"present": true, "limit_gpd": null, "reporting": true, "recycling_required": null, "cooling": "closed_loop", "notes": "Closed-loop system with air-cooled chillers required. Written agreement with the Water Division to pay all fees and impact fees, fund a hydraulic model study, and rectify impacts on existing customers. Annual water-usage reporting, which may be made public. No volume cap.", "sources": [{"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Conditional-Use-provisions.pdf", "where": "p. 2"}, {"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "p. 2, annual water reporting"}]}, "noise": {"present": true, "limit_dba": null, "measured_at": "All adjoining parcel lines, measured in an annual third-party noise report to the Health Director and Zoning Administrator. The standard is the City noise ordinance, not a number in the deal.", "setback_ft": null, "notes": "Equipment must sit in acoustically treated enclosures away from street frontages. Generator testing only on weekdays from 10 to 12 and 2 to 5. A university acoustics researcher testified that low-frequency noise cannot be absorbed at feasible wall thicknesses.", "sources": [{"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Conditional-Use-provisions.pdf", "where": "pp. 1 to 2"}, "https://www.yahoo.com/news/us/articles/st-louis-board-upholds-armory-202506410.html"]}, "jobs": {"present": true, "promised_permanent": 100, "promised_construction": 1050, "local_hire": true, "prevailing_wage": true, "enforceable": true, "notes": "Enforceable minimums of 25 median-wage jobs in year one, 50 in year two, and 100 after, for 20 years, backed by $2,000 per job in liquidated damages. First-source hiring for entry-level jobs. Prevailing wage and M/WBE compliance for the developer and contractors. Construction under a project labor agreement with the St. Louis Building Trades. Enforceability depends on the recorded CBA being executed.", "sources": [{"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "pp. 1 to 2"}, {"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Details-on-Project-Conditions-Components-and-Benefits.pdf", "where": "p. 3"}]}, "local_contracting": {"present": true, "local_subcontracting": true, "road_repair": false, "infrastructure_contribution_usd": null, "notes": "M/WBE participation, prevailing wage, and a project labor agreement. The developer builds Market Street sidewalks and a pathway to the Grand MetroLink station. No haul-route repair term.", "sources": [{"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "pp. 2 to 3"}]}, "transparency": {"present": true, "nda": false, "agreement_public": true, "public_dashboard": false, "audit_cadence": "annual", "audit_independent": true, "notes": "Tenant must be disclosed unless commercially unreasonable due to national security. Annual reports on electricity, waste heat, water, PUE, noise, and e-waste. The noise report is by a third party. No NDA found. The process drew criticism: aldermen were told hours before a virtual vote, and 13 appeals plus a circuit court suit followed.", "sources": [{"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "pp. 2 to 3"}, {"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Conditional-Use-provisions.pdf", "where": "pp. 1 to 2"}, "https://www.stlpr.org/news-briefs/2026-04-24/board-approved-st-louis-data-center-project"]}, "tax": {"present": false, "not_applicable": true, "abatement_pct": 0, "duration_years": null, "pilot": false, "estimated_forgone_usd": 0, "but_for_test": null, "notes": "The developer committed not to seek local tax abatement or other financial incentives and to cooperate in terminating the existing Armory TIF. The City projects $432M in taxes and fees over ten years.", "sources": [{"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "p. 1, No Local Incentives", "quote": "will not seek local tax abatement or other financial incentives"}, {"url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Details-on-Project-Conditions-Components-and-Benefits.pdf", "where": "pp. 2 to 3"}]}}, "criticisms": [{"summary": "The recorded community benefits agreement is still a term sheet. Until it is executed, the liquidated damages and job minimums are promises, not obligations.", "source": "https://www.stlouis-mo.gov/government/departments/mayor/documents/armory-data-center-conditional-use.cfm"}, {"summary": "Aldermen were notified hours before a virtual vote; 13 appeals were filed and a judicial-review petition followed on August 28, 2026.", "source": "https://www.firstalert4.com/2026/08/29/residents-organizations-file-lawsuit-against-proposed-midtown-data-center/"}, {"summary": "Air quality and low-frequency noise concerns near a children's hospital about a quarter mile away.", "source": "https://www.stlpr.org/health-science-environment/2026-07-30/st-louis-board-allows-data-center-near-armory-to-move-forward-with-new-rules"}], "contributors": ["apeabody007"], "last_reviewed": "2026-09-07", "score": {"community_fund": "falls_short", "clawbacks": "falls_short", "decommissioning": "falls_short", "grid_costs": "unknown", "water": "meets", "noise": "unknown", "jobs": "meets", "local_contracting": "falls_short", "transparency": "meets", "tax": "n/a"}}, {"$schema": "../schema/deal.schema.json", "id": "us-pa-lancaster-2025", "status": "approved", "verification": "primary", "jurisdiction": {"country": "US", "state": "PA", "locality": "City of Lancaster", "level": "city"}, "operator": "CoreWeave (initial tenant, Building 1)", "developer": "Chirisa Technology Parks affiliates (LPE 01 PROPCO LLC, Greenfield Road Owner LLC, Harrisburg Place Owner LLC) with Machine Investment Group; financed by Blue Owl Capital", "project": "Lancaster AI Hub (216 Greenfield Road and 1375 Harrisburg Pike)", "agreement_type": "community_benefits_agreement", "dates": {"signed": null, "approved": "2025-11-20", "effective": null}, "scale": {"acres": 150, "mw": 300, "capex_usd": 10000000000, "sqft": 2050000}, "documents": [{"title": "Community Benefits Agreement (posted by the City as a draft; signature pages blank)", "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "kind": "primary", "date": "2025-11-20"}, {"title": "City of Lancaster CBA summary", "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Community-Benefits-Agreement-Summary-1-1.pdf", "kind": "government_page", "date": null}, {"title": "LancasterOnline: council approves agreement 6-1", "url": "https://lancasteronline.com/news/local/lancaster-city-council-votes-to-approve-data-center-benefits-agreement/article_b05cb1fd-a585-4c4f-8945-c96ada3172ad.html", "kind": "press", "date": "2025-11-20"}, {"title": "Sabin Center: Community Benefits Agreements and Data Center Development", "url": "https://blogs.law.columbia.edu/climatechange/2026/05/28/community-benefits-agreements-and-data-center-development/", "kind": "analysis", "date": "2026-05-28"}], "terms": {"community_fund": {"present": true, "amount_usd": 20000000, "cadence": "one_time", "scales_with_project": false, "controlled_by": "Foundation fund: a committee of the City's Director of Community Planning and Economic Development, one representative from each of two owner entities, an EDC Lancaster County board member, a Lancaster County Community Foundation representative, and a mayoral appointee confirmed by Council. City fund: the City, in consultation with the owners.", "community_seat": false, "notes": "$10M to the Lancaster County Community Foundation economic development fund and $10M to the City's Sustainable Development and Clean Energy Fund, paid in $2.5M installments tied to construction financing and operations start of the two East campus units. Secured by a $20M letter of credit or a guarantee from an entity with $100M net worth. The $250,000 strategic-plan payment is credited against the $10M, so the total is $20M, not $20.25M as some summaries say. No payment schedule is written for the Harrisburg Pike building. Committee meetings are not public.", "sources": [{"url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Article 8, Sections 8.1 to 8.3", "quote": "shall be credited against any amount required by 8.1.1"}, {"url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Section 8.1.3(a), committee composition"}, "https://lancasteronline.com/news/local/heres-when-lancaster-city-will-see-payments-from-data-center-agreement/article_49eb8780-5784-442a-afa4-778f5f73bd80.html", "https://blogs.law.columbia.edu/climatechange/2026/05/28/community-benefits-agreements-and-data-center-development/"]}, "clawbacks": {"present": false, "not_applicable": true, "triggers": [], "proportional": null, "notes": "The City gave no tax incentives, so there is nothing to claw back. The closest instrument is a $10M contingent clean energy letter of credit: if a building's power contract falls short of clean-energy thresholds the owner pays $2.5M to $10M per building, and below 60 percent clean the City can seek injunctive relief up to discontinuance of operations.", "sources": [{"url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Sections 3.3.5 and 3.3.6; Article 9"}]}, "decommissioning": {"present": true, "instrument": "covenant_only", "amount_usd": null, "notes": "An e-waste management plan is required and tenant equipment must be removed on decommissioning, but there is no bond, escrow, or site-restoration fund.", "sources": [{"url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Section 5.3"}, "https://pastandsup.org/lancaster/2025/10/28/lancaster-stands-up-data-center-community-conversation/"]}, "grid_costs": {"present": false, "who_pays_interconnect": "operator", "minimum_bill": null, "term_years": null, "governed_by": null, "notes": "The agreement is silent on transmission and substation cost. Press reports the developer partners intend to fund about $200M of PPL Electric grid improvements including a new substation. That commitment lives outside the CBA.", "sources": ["https://chirisatechnologyparks.com/blue-owl-and-chirisa-technology-parks-close-4-billion-joint-venture-partnership-including-machine-investment-group-for-lancaster-campus/", "https://www.witf.org/2025/10/19/data-centers-second-phase-expected-to-cost-up-to-2-5-billion-in-lancaster-county/"]}, "water": {"present": true, "limit_gpd": 20000, "reporting": false, "recycling_required": null, "cooling": "closed_loop", "notes": "Hard cap of 20,000 gallons per day of municipal water per campus, closed-loop cooling with no added chemicals. The prior printing plant used 100,000 to 125,000 gallons per day. The annual report to Council covers clean energy only; water use is not reported.", "sources": [{"url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Section 3.4", "quote": "shall not exceed twenty thousand (20,000) gallons per day"}, {"url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Sections 3.5 and 7.1"}, "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Community-Benefits-Agreement-Summary-1-1.pdf"]}, "noise": {"present": true, "limit_dba": null, "measured_at": "Nearest residential or park-zoned receivers. The standard is pre-construction ambient (lowest one-hour LEQ, day and night), not a number.", "setback_ft": 100, "notes": "Magnetic-bearing chillers and sound-attenuated generator enclosures required. Generator testing daytime only, never Sundays or federal holidays. Certified noise mitigation plan due within 60 days, post-construction testing required. The City may demand a compliance re-check on complaint only once every two years. 100-foot buffers along streets and residential edges, 50 feet elsewhere.", "sources": [{"url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Sections 3.1, 4.1.2, and 5.2"}]}, "jobs": {"present": true, "promised_permanent": 300, "promised_construction": null, "local_hire": true, "prevailing_wage": false, "enforceable": false, "notes": "The agreement says approximately 150 people at each campus. Local hiring is a good-faith effort with percentage goals to be set in a plan that had not been released as of April 2026. No prevailing wage; only a worker-misclassification clause. Press figures range from 70 full-time at launch to 350 permanent.", "sources": [{"url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Background G; Sections 6.2 and 6.3"}, "https://lancasteronline.com/news/local/lancaster-data-center-agreement-s-benefit-to-community-questioned/article_b2654db6-c6e3-4719-8a0e-1f839c1e325e.html"]}, "local_contracting": {"present": false, "local_subcontracting": false, "road_repair": false, "infrastructure_contribution_usd": null, "notes": "No local subcontracting requirement and no road repair term. Owners reimburse City emergency-response costs above $25,000 per incident. Press reports $149M in contracts awarded with over half to local firms, which is practice, not obligation.", "sources": [{"url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Section 5.1.3"}, "https://lancasteronline.com/news/local/lancaster-data-center-agreement-s-benefit-to-community-questioned/article_b2654db6-c6e3-4719-8a0e-1f839c1e325e.html"]}, "transparency": {"present": true, "nda": false, "agreement_public": true, "public_dashboard": false, "audit_cadence": "annual", "audit_independent": false, "notes": "The agreement is a public record under Pennsylvania's Right-to-Know Law with carve-outs for proprietary and security submissions. Owners must keep a public website and complaint portal and report to Council each April on clean-energy percentage and sourcing. The only audit right written runs the other way: the owners may audit the two funds annually. Residents are not third-party beneficiaries and cannot enforce the agreement. Fund committee meetings are not public.", "sources": [{"url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Sections 6.1, 7.1, 8.1.3(c), 13.3, and 13.17"}, "https://lancasteronline.com/news/local/heres-when-lancaster-city-will-see-payments-from-data-center-agreement/article_49eb8780-5784-442a-afa4-778f5f73bd80.html"]}, "tax": {"present": false, "not_applicable": true, "abatement_pct": 0, "duration_years": null, "pilot": false, "estimated_forgone_usd": 0, "but_for_test": null, "notes": "No tax breaks, including no LERTA abatement, and no PILOT. The City received about $7.8M in permit fees and a $327,345 transfer tax.", "sources": ["https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Community-Benefits-Agreement-Summary-1-1.pdf", "https://lancasteronline.com/news/local/heres-when-lancaster-city-will-see-payments-from-data-center-agreement/article_49eb8780-5784-442a-afa4-778f5f73bd80.html"]}}, "criticisms": [{"summary": "Lancaster Stands Up received the agreement two days before the vote, asked for a seat at the table, and got no response; developers would not accept changes.", "source": "https://blogs.law.columbia.edu/climatechange/2026/05/28/community-benefits-agreements-and-data-center-development/"}, {"summary": "Only the City can enforce the agreement. Residents affected by noise cannot sue under it.", "source": "https://lancasteronline.com/news/local/lancaster-data-center-agreement-s-benefit-to-community-questioned/article_b2654db6-c6e3-4719-8a0e-1f839c1e325e.html"}, {"summary": "Negotiation began after the zoning opinion and demolition permit had issued, so leverage was already spent.", "source": "https://fas.org/publication/community-benefit-agreements-data-center-development/"}, {"summary": "The clean-energy penalty structure was described by a resident as pay to pollute.", "source": "https://lancasteronline.com/news/local/lancaster-city-council-votes-to-approve-data-center-benefits-agreement/article_b05cb1fd-a585-4c4f-8945-c96ada3172ad.html"}], "contributors": ["apeabody007"], "last_reviewed": "2026-09-07", "score": {"community_fund": "falls_short", "clawbacks": "n/a", "decommissioning": "falls_short", "grid_costs": "falls_short", "water": "falls_short", "noise": "unknown", "jobs": "falls_short", "local_contracting": "falls_short", "transparency": "falls_short", "tax": "n/a"}}, {"$schema": "../schema/deal.schema.json", "id": "us-va-prince-william-2023", "status": "terminated", "verification": "primary", "jurisdiction": {"country": "US", "state": "VA", "locality": "Prince William County", "level": "county"}, "operator": "QTS", "developer": "GW Acquisition Co. LLC and GW Acquisition I LLC (QTS); Compass Datacenters with H&H Acquisitions LLC on the adjacent application", "project": "PW Digital Gateway (REZ2022-00032 North and REZ2022-00033 South)", "agreement_type": "proffer", "dates": {"signed": "2023-12-10", "approved": "2023-12-13", "effective": null}, "scale": {"acres": 876, "mw": null, "capex_usd": null, "sqft": 11300000}, "documents": [{"title": "QTS Digital Gateway North proffer statement (REZ2022-00032)", "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "kind": "primary", "date": "2023-12-10"}, {"title": "QTS Digital Gateway South proffer statement (REZ2022-00033)", "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00033%20Proffers%20Packet%2020231210.pdf", "kind": "primary", "date": "2023-12-10"}, {"title": "County PW Digital Gateway page", "url": "https://www.pwcva.gov/department/planning-office/pw-digital-gateway", "kind": "government_page", "date": null}, {"title": "Virginia Lawyers Weekly: rezoning void for defective notice", "url": "https://valawyersweekly.com/2026/04/22/prince-william-county-data-center-rezoning-void/", "kind": "press", "date": "2026-04-22"}], "terms": {"community_fund": {"present": false, "amount_usd": null, "cadence": "per_building", "scales_with_project": true, "controlled_by": "Board of County Supervisors", "community_seat": false, "notes": "No general community fund. Monetary proffers: $0.61 per square foot of building area for fire and rescue, $10,000 per building for trail maintenance, $75 per acre for water-quality monitoring, and on the South parcel $10,000 per building to the state forest mitigation fund. Land: a five-acre park, roughly nine acres offered to the National Park Service, and nine-plus miles of trails.", "sources": [{"url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffers 41(c), 45, and 54"}, {"url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00033%20Proffers%20Packet%2020231210.pdf", "where": "Proffers 22 and 60"}]}, "clawbacks": {"present": false, "not_applicable": true, "triggers": [], "proportional": null, "notes": "Proffers are land-use conditions, not incentives. No county incentive package was identified, so there is nothing to claw back.", "sources": ["https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf"]}, "decommissioning": {"present": false, "instrument": "none", "amount_usd": null, "notes": "No decommissioning term. The only financial security is a reforestation bond, plus well-abandonment rules.", "sources": ["https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf"]}, "grid_costs": {"present": false, "who_pays_interconnect": null, "minimum_bill": null, "term_years": null, "governed_by": null, "notes": "Dominion said new transmission lines were required. The proffers allow substations in designated electric infrastructure areas with screening, and the applicant states it cannot dictate transmission routes. No cost allocation, minimum bill, or take-or-pay term.", "sources": [{"url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffer 44"}, "https://www.princewilliamtimes.com/news/dominion-new-transmission-lines-needed-for-proposed-pw-digital-gateway/article_75cb1d9a-1288-11ed-926e-77decf3571c7.html"]}, "water": {"present": true, "limit_gpd": null, "reporting": false, "recycling_required": null, "cooling": "closed_loop", "notes": "Air or closed-loop cooling only. No groundwater or surface-water withdrawals and no surface discharges for cooling; existing wells abandoned except for monitoring wells. No volume cap and no consumption reporting.", "sources": [{"url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffer 39"}]}, "noise": {"present": true, "limit_dba": 55, "measured_at": "Boundary of residential or cultural-resource land. 60 dBA daytime, 55 dBA at night. Construction and emergency generator operation are exempt.", "setback_ft": 50, "notes": "Sound study required before permit release and one month after occupancy, with enclosures or walls if exceeded. 50-foot buffers along Pageland Lane.", "sources": [{"url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffer 43"}]}, "jobs": {"present": true, "promised_permanent": null, "promised_construction": null, "local_hire": false, "prevailing_wage": false, "enforceable": false, "notes": "No job numbers in the proffers. The general contractor must meet county economic development and apprenticeship groups, certify payroll, track jobsite personnel, and bar assignment practices tied to wage theft. Press figures of 540 permanent jobs come from the county, not the proffers.", "sources": [{"url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffer 61, Workforce Strategies"}]}, "local_contracting": {"present": true, "local_subcontracting": false, "road_repair": null, "infrastructure_contribution_usd": 180000000, "notes": "Goal language only for women, minority, and veteran-owned businesses. Road work is substantial: Pageland Lane widened to four lanes for about 3.5 miles with roundabouts and shared-use paths, Route 29 and Sudley Road improvements, right of way dedicated at no cost, phased against building area. The applicant's letter cites $180M to $200M in privately funded transportation improvements. No haul-route repair term as such.", "sources": [{"url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffers 46 and 61; applicant cover letter"}]}, "transparency": {"present": true, "nda": null, "agreement_public": true, "public_dashboard": false, "audit_cadence": "none", "audit_independent": false, "notes": "Proffers are posted on the county site. The rezoning was voided in 2025 because statutory public notice failed, affirmed on appeal March 31, 2026. Landowner sale contracts were private. Sound studies and workforce evidence go to county staff, not the public.", "sources": ["https://www.pwcva.gov/department/planning-office/pw-digital-gateway", "https://valawyersweekly.com/2026/04/22/prince-william-county-data-center-rezoning-void/"]}, "tax": {"present": false, "not_applicable": true, "abatement_pct": 0, "duration_years": null, "pilot": false, "estimated_forgone_usd": 0, "but_for_test": null, "notes": "No abatement or PILOT. The county projected roughly $400M a year in tax revenue at buildout. Properties are being reassessed after the zoning reverted.", "sources": ["https://www.datacenterfrontier.com/site-selection/article/33016383/rezoning-for-pw-digital-gateway-data-centers-approved-by-virginias-prince-william-county-supervisors", "https://www.pwcva.gov/department/planning-office/pw-digital-gateway"]}}, "criticisms": [{"summary": "County staff recommended denial twice and the Planning Commission recommended denial. Approved 4-3 after a hearing of about 27 hours.", "source": "https://www.datacenterfrontier.com/site-selection/article/33016383/rezoning-for-pw-digital-gateway-data-centers-approved-by-virginias-prince-william-county-supervisors"}, {"summary": "Parks promised in the comprehensive plan amendment were missing from the rezoning applications; open space fell short of the 30 percent target.", "source": "https://www.princewilliamtimes.com/news/digital-gateway-plan-lacks-key-environmental-details-promised-parks-open-space/article_3dc57306-7e74-11ee-bdd6-57d98acf03ff.html"}, {"summary": "The approval was voided for defective public notice; the county spent $1.72M defending it, then withdrew. Both developers dropped out in 2026.", "source": "https://wtop.com/virginia/2026/04/prince-william-co-withdraws-from-digital-gateway-lawsuit-reversing-course-from-2023/"}], "contributors": ["apeabody007"], "last_reviewed": "2026-09-07", "score": {"community_fund": "falls_short", "clawbacks": "n/a", "decommissioning": "falls_short", "grid_costs": "falls_short", "water": "falls_short", "noise": "meets", "jobs": "falls_short", "local_contracting": "unknown", "transparency": "falls_short", "tax": "n/a"}}]}</script>
 <script>
 (function () {
   var data = JSON.parse(document.getElementById('data').textContent);
-  var glyph = { meets: '✓', falls_short: '✕', unknown: '?', 'n/a': '–' };
   var floorKeys = Object.keys(data.floor);
+  var label = { meets: 'Met', falls_short: 'Short', unknown: '?', 'n/a': 'n/a' };
+  var verified = { primary: 'read from the signed document', press: 'from news reports', unverified: 'not yet verified' };
+  var cls = function (s) { return s === 'n/a' ? 'na' : s; };
   document.getElementById('generated').textContent = data.generated;
+  document.getElementById('count').textContent = data.deals.length + ' deals · ' + floorKeys.length + ' terms';
 
-  function cls(s) { return s === 'n/a' ? 'na' : s; }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function usd(n) { return n == null ? null : '$' + Number(n).toLocaleString('en-US'); }
-  function srcLink(s) {
-    if (typeof s === 'string') return '<a href="' + esc(s) + '" rel="noopener">' + esc(s.replace(/^https?:\/\//, '').slice(0, 60)) + '</a>';
-    var label = s.where ? esc(s.where) : esc(s.url.replace(/^https?:\/\//, '').slice(0, 60));
-    return '<a href="' + esc(s.url) + '" rel="noopener">' + label + '</a>' + (s.quote ? ' <span class="meta">“' + esc(s.quote) + '”</span>' : '');
-  }
+  function yn(v) { return v === true ? 'yes' : v === false ? 'no' : null; }
   function facts(key, c) {
     var f = [];
-    var add = function (label, v) { if (v !== null && v !== undefined && v !== '' && !(Array.isArray(v) && !v.length)) f.push(label + ': ' + esc(Array.isArray(v) ? v.join(', ') : v)); };
-    if (key === 'community_fund') { add('Amount', usd(c.amount_usd)); add('Cadence', c.cadence); add('Controlled by', c.controlled_by); add('Community seat', c.community_seat); add('Scales with project', c.scales_with_project); }
-    if (key === 'clawbacks') { add('Triggers', c.triggers); add('Proportional', c.proportional); }
-    if (key === 'decommissioning') { add('Instrument', c.instrument); add('Amount', usd(c.amount_usd)); }
-    if (key === 'grid_costs') { add('Interconnect paid by', c.who_pays_interconnect); add('Minimum bill', c.minimum_bill); add('Term (years)', c.term_years); add('Governed by', c.governed_by); }
-    if (key === 'water') { add('Cap (gal/day)', c.limit_gpd == null ? null : Number(c.limit_gpd).toLocaleString('en-US')); add('Reporting', c.reporting); add('Recycling required', c.recycling_required); add('Cooling', c.cooling); }
-    if (key === 'noise') { add('Limit (dBA)', c.limit_dba); add('Measured at', c.measured_at); add('Setback (ft)', c.setback_ft); }
-    if (key === 'jobs') { add('Permanent', c.promised_permanent); add('Construction', c.promised_construction); add('Local hire', c.local_hire); add('Prevailing wage', c.prevailing_wage); add('Enforceable', c.enforceable); }
-    if (key === 'local_contracting') { add('Local subcontracting', c.local_subcontracting); add('Road repair', c.road_repair); add('Infrastructure contribution', usd(c.infrastructure_contribution_usd)); }
-    if (key === 'transparency') { add('NDA', c.nda); add('Agreement public', c.agreement_public); add('Public dashboard', c.public_dashboard); add('Audit', c.audit_cadence); add('Independent audit', c.audit_independent); }
-    if (key === 'tax') { add('Abatement %', c.abatement_pct); add('Years', c.duration_years); add('PILOT', c.pilot); add('Forgone revenue', usd(c.estimated_forgone_usd)); add('But-for test', c.but_for_test); }
+    var add = function (k, v) { if (v !== null && v !== undefined && v !== '' && !(Array.isArray(v) && !v.length)) f.push(k + ': ' + esc(Array.isArray(v) ? v.join(', ') : v)); };
+    if (key === 'community_fund') { add('amount', usd(c.amount_usd)); add('cadence', c.cadence && c.cadence.replace(/_/g, ' ')); add('scales with project', yn(c.scales_with_project)); add('community seat', yn(c.community_seat)); }
+    if (key === 'clawbacks') { add('triggers', c.triggers); add('proportional', yn(c.proportional)); }
+    if (key === 'decommissioning') { add('instrument', c.instrument && c.instrument.replace(/_/g, ' ')); add('amount', usd(c.amount_usd)); }
+    if (key === 'grid_costs') { add('interconnect paid by', c.who_pays_interconnect); add('minimum bill', yn(c.minimum_bill)); add('term', c.term_years && c.term_years + ' yrs'); add('governed by', c.governed_by); }
+    if (key === 'water') { add('cap', c.limit_gpd == null ? null : Number(c.limit_gpd).toLocaleString('en-US') + ' gal/day'); add('reporting', yn(c.reporting)); add('recycling required', yn(c.recycling_required)); add('cooling', c.cooling && c.cooling.replace(/_/g, ' ')); }
+    if (key === 'noise') { add('limit', c.limit_dba && c.limit_dba + ' dBA'); add('measured at', c.measured_at); add('setback', c.setback_ft && c.setback_ft + ' ft'); }
+    if (key === 'jobs') { add('permanent', c.promised_permanent); add('construction', c.promised_construction); add('local hire', yn(c.local_hire)); add('prevailing wage', yn(c.prevailing_wage)); add('enforceable', yn(c.enforceable)); }
+    if (key === 'local_contracting') { add('local subcontracting', yn(c.local_subcontracting)); add('road repair', yn(c.road_repair)); add('infrastructure', usd(c.infrastructure_contribution_usd)); }
+    if (key === 'transparency') { add('NDA', yn(c.nda)); add('agreement public', yn(c.agreement_public)); add('dashboard', yn(c.public_dashboard)); add('audit', c.audit_cadence && c.audit_cadence.replace(/_/g, ' ')); add('independent', yn(c.audit_independent)); }
+    if (key === 'tax') { add('abatement', c.abatement_pct != null ? c.abatement_pct + '%' : null); add('years', c.duration_years); add('PILOT', yn(c.pilot)); add('forgone', usd(c.estimated_forgone_usd)); add('but-for test', yn(c.but_for_test)); }
     return f;
   }
-  function detail(d) {
-    var h = '<div class="meta">' + esc(d.agreement_type.replace(/_/g, ' ')) + ' · ' + esc(d.status)
-      + (d.dates.signed ? ' · signed ' + esc(d.dates.signed) : d.dates.approved ? ' · approved ' + esc(d.dates.approved) : '')
-      + (d.scale && d.scale.mw ? ' · ' + esc(d.scale.mw) + ' MW' : '') + (d.scale && d.scale.acres ? ' · ' + esc(d.scale.acres) + ' acres' : '')
-      + ' · <span class="badge">' + esc(d.verification) + '</span></div>';
-    h += '<p class="docs">Documents: ' + d.documents.map(function (x) { return '<a href="' + esc(x.url) + '" rel="noopener">' + esc(x.title) + '</a> <span class="meta">(' + esc(x.kind.replace(/_/g, ' ')) + ')</span>'; }).join(' · ') + '</p>';
+  function srcKey(s) { return typeof s === 'string' ? s : s.url + '|' + (s.where || ''); }
+
+  function sheet(d, n) {
+    var j = d.jurisdiction;
+    var notes = [], noteIndex = {};
+    var cite = function (s) {
+      var k = srcKey(s); if (!(k in noteIndex)) { noteIndex[k] = notes.length + 1; notes.push(s); } return noteIndex[k];
+    };
+    var h = '<button class="close" type="button" data-close>Close</button>';
+    h += '<div class="sheet-head"><h3>' + esc(j.locality) + ', ' + esc(j.state) + '</h3><span class="tag">Deal ' + n + ' · ' + esc(verified[d.verification] || d.verification) + '</span></div>';
+    var meta = [];
+    meta.push('<b>' + esc(d.project) + '</b>');
+    var when = d.dates.signed ? 'signed ' + d.dates.signed : d.dates.approved ? 'approved ' + d.dates.approved : d.status;
+    if (d.status !== 'signed' && d.status !== 'approved') when = d.status + (d.dates.signed || d.dates.approved ? ' (' + when + ')' : '');
+    meta.push(esc(d.agreement_type.replace(/_/g, ' ')) + ', ' + esc(when));
+    var who = []; if (d.operator) who.push('operator ' + esc(d.operator)); if (d.developer) who.push('developer ' + esc(d.developer)); if (who.length) meta.push(who.join(' · '));
+    var sc = []; if (d.scale) { if (d.scale.mw) sc.push(d.scale.mw + ' MW'); if (d.scale.acres) sc.push(d.scale.acres + ' acres'); if (d.scale.sqft) sc.push(Number(d.scale.sqft).toLocaleString('en-US') + ' sf'); if (d.scale.capex_usd) sc.push(usd(d.scale.capex_usd)); } if (sc.length) meta.push(esc(sc.join(' · ')));
+    meta.push('documents: ' + d.documents.map(function (x) { return '<a href="' + esc(x.url) + '" rel="noopener">' + esc(x.title) + '</a> (' + esc(x.kind.replace(/_/g, ' ')) + ')'; }).join('; '));
+    h += '<div class="sheet-meta">' + meta.join('<br>') + '</div>';
     h += '<div class="clauses">';
     floorKeys.forEach(function (k) {
       var c = d.terms[k], s = d.score[k];
-      h += '<div class="clause"><h4><span class="mark ' + cls(s) + '">' + glyph[s] + '</span>' + esc(data.floor[k].label) + '</h4>';
-      h += '<p class="asks">Floor: ' + esc(data.floor[k].asks) + '</p>';
+      var refs = (c.sources || []).map(cite);
+      h += '<div class="clause"><h4><span class="st ' + cls(s) + '">' + label[s] + '</span>' + esc(data.floor[k].label) + '</h4>';
+      h += '<p class="asks">A good deal has: ' + esc(data.floor[k].asks).replace(/^./, function (c) { return c.toLowerCase(); }) + '.</p>';
+      if (c.not_applicable) h += '<p>Not applicable.</p>';
+      else if (c.present === false) h += '<p>Not addressed in the agreement.</p>';
       var f = facts(k, c);
-      if (c.not_applicable) f.unshift('Not applicable');
-      else if (c.present === false) f.unshift('Not addressed in the agreement');
-      if (f.length) h += '<p>' + f.join(' · ') + '</p>';
-      if (c.notes) h += '<p>' + esc(c.notes) + '</p>';
-      if (c.sources && c.sources.length) h += '<ul>' + c.sources.map(function (x) { return '<li>' + srcLink(x) + '</li>'; }).join('') + '</ul>';
+      if (f.length) h += '<p class="facts">' + f.join(' · ') + '</p>';
+      if (c.notes) h += '<p>' + esc(c.notes) + (refs.length ? '<sup>' + refs.join(',') + '</sup>' : '') + '</p>';
+      else if (refs.length) h += '<p class="facts">receipts<sup>' + refs.join(',') + '</sup></p>';
       h += '</div>';
     });
     h += '</div>';
-    if (d.criticisms && d.criticisms.length) h += '<p class="docs"><strong>Reported criticisms:</strong> ' + d.criticisms.map(function (x) { return esc(x.summary) + ' (<a href="' + esc(x.source) + '" rel="noopener">source</a>)'; }).join(' ') + '</p>';
+    if (notes.length) {
+      h += '<div class="foot"><h5>Receipts</h5><ol>' + notes.map(function (s) {
+        if (typeof s === 'string') return '<li><a href="' + esc(s) + '" rel="noopener">' + esc(s.replace(/^https?:\/\//, '')) + '</a></li>';
+        return '<li>' + (s.where ? '<span class="where">' + esc(s.where) + '.</span> ' : '') + '<a href="' + esc(s.url) + '" rel="noopener">' + esc(s.url.replace(/^https?:\/\//, '')) + '</a>' + (s.quote ? ' <span class="q">“' + esc(s.quote) + '”</span>' : '') + '</li>';
+      }).join('') + '</ol></div>';
+    }
+    if (d.criticisms && d.criticisms.length) {
+      h += '<div class="crit"><h5>Reported criticisms</h5>' + d.criticisms.map(function (x) { return '<p>' + esc(x.summary) + ' <a href="' + esc(x.source) + '" rel="noopener">source</a></p>'; }).join('') + '</div>';
+    }
     return h;
   }
 
   var t = document.getElementById('matrix');
-  var head = '<tr><th>Deal</th>' + floorKeys.map(function (k) { return '<th>' + esc(data.floor[k].label) + '</th>'; }).join('') + '</tr>';
+  var short = { community_fund: 'Fund', clawbacks: 'Claw', decommissioning: 'Decom', grid_costs: 'Grid', water: 'Water', noise: 'Noise', jobs: 'Jobs', local_contracting: 'Local', transparency: 'Transp', tax: 'Tax' };
+  var head = '<colgroup><col class="c-name">' + floorKeys.map(function () { return '<col>'; }).join('') + '<col class="c-ver"></colgroup>';
+  var headLabel = { community_fund: 'Community fund', clawbacks: 'Claw&shy;backs', decommissioning: 'Decommis&shy;sioning', grid_costs: 'Grid costs', water: 'Water', noise: 'Noise', jobs: 'Jobs', local_contracting: 'Local contracting', transparency: 'Transpar&shy;ency', tax: 'Tax breaks' };
+  head += '<thead><tr><th>Deal</th>' + floorKeys.map(function (k) { return '<th>' + (headLabel[k] || esc(data.floor[k].label)) + '</th>'; }).join('') + '<th>Source</th></tr></thead>';
   var rows = data.deals.map(function (d, i) {
     var j = d.jurisdiction;
-    var r = '<tr class="deal" data-i="' + i + '"><td><span class="name">' + esc(j.locality) + ', ' + esc(j.state) + '</span><span class="sub">' + esc(d.operator || d.developer || d.project) + '</span></td>';
-    r += floorKeys.map(function (k) { return '<td><span class="mark ' + cls(d.score[k]) + '" title="' + esc(data.floor[k].label) + '">' + glyph[d.score[k]] + '</span></td>'; }).join('');
-    return r + '</tr>';
+    var r = '<tr class="deal" data-i="' + i + '" style="animation-delay:' + (i * 60) + 'ms"><td><span class="name"><span class="idx">A-' + (i + 1) + '</span>' + esc(j.locality) + ', ' + esc(j.state) + '</span><span class="who"><span class="idx"></span>' + esc((d.operator || d.developer || d.project).split(' (')[0]) + '</span></td>';
+    r += floorKeys.map(function (k) { return '<td><span class="lbl">' + (short[k] || k) + '</span><span class="st ' + cls(d.score[k]) + '" title="' + esc(data.floor[k].label) + ': ' + esc(d.score[k].replace('_', ' ')) + '">' + label[d.score[k]] + '</span></td>'; }).join('');
+    r += '<td>' + esc({ primary: 'document', press: 'press', unverified: 'unverified' }[d.verification] || d.verification) + '</td></tr>';
+    return r;
   }).join('');
-  t.innerHTML = head + rows;
-  var panel = document.getElementById('detail');
+  t.innerHTML = head + '<tbody>' + rows + '</tbody>';
+
+  var panel = document.getElementById('sheet');
+  function closeSheet() { panel.hidden = true; Array.prototype.forEach.call(t.querySelectorAll('tr.open'), function (r) { r.classList.remove('open'); }); }
   t.addEventListener('click', function (e) {
-    var tr = e.target.closest('tr.deal');
-    if (!tr) return;
+    var tr = e.target.closest('tr.deal'); if (!tr) return;
     var wasOpen = tr.classList.contains('open');
-    Array.prototype.forEach.call(t.querySelectorAll('tr.open'), function (r) { r.classList.remove('open'); });
-    if (wasOpen) { panel.hidden = true; return; }
+    closeSheet();
+    if (wasOpen) return;
     tr.classList.add('open');
-    var d = data.deals[Number(tr.getAttribute('data-i'))];
-    panel.innerHTML = '<h3>' + esc(d.jurisdiction.locality) + ', ' + esc(d.jurisdiction.state) + ' <span class="meta">' + esc(d.project) + '</span></h3>' + detail(d);
+    var i = Number(tr.getAttribute('data-i'));
+    panel.innerHTML = sheet(data.deals[i], i + 1);
     panel.hidden = false;
     panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   });
+  panel.addEventListener('click', function (e) { if (e.target.closest('[data-close]')) closeSheet(); });
 
-  document.getElementById('floor').innerHTML = floorKeys.map(function (k) { return '<li><strong>' + esc(data.floor[k].label) + '.</strong> ' + esc(data.floor[k].asks) + '</li>'; }).join('');
+  document.getElementById('floor').innerHTML = floorKeys.map(function (k) { return '<li><b>' + esc(data.floor[k].label) + '.</b> ' + esc(data.floor[k].asks) + '</li>'; }).join('');
 })();
 </script>
 </body>
