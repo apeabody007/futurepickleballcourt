@@ -1,0 +1,180 @@
+{
+  "description": "The floor each clause has to clear to count as meeting what the model templates ask for. Each rule is a list of field checks that must all pass. Change the floor by pull request, with a reason.",
+  "clauses": {
+    "community_fund": {
+      "label": "Community fund",
+      "asks": "A fund that scales with the project, with a community seat on the body that spends it",
+      "rule": [
+        [
+          "present",
+          "eq",
+          true
+        ],
+        [
+          "community_seat",
+          "eq",
+          true
+        ]
+      ]
+    },
+    "clawbacks": {
+      "label": "Clawbacks",
+      "asks": "Incentives come back if the facility stops operating, not only if a jobs number is missed",
+      "rule": [
+        [
+          "present",
+          "eq",
+          true
+        ],
+        [
+          "triggers",
+          "contains",
+          "operation"
+        ]
+      ]
+    },
+    "decommissioning": {
+      "label": "Decommissioning",
+      "asks": "A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks",
+      "rule": [
+        [
+          "present",
+          "eq",
+          true
+        ],
+        [
+          "instrument",
+          "in",
+          [
+            "bond",
+            "escrow",
+            "letter_of_credit"
+          ]
+        ]
+      ]
+    },
+    "grid_costs": {
+      "label": "Grid costs",
+      "asks": "The operator pays for its own interconnection and carries a minimum bill that survives it leaving",
+      "rule": [
+        [
+          "who_pays_interconnect",
+          "eq",
+          "operator"
+        ],
+        [
+          "minimum_bill",
+          "eq",
+          true
+        ]
+      ]
+    },
+    "water": {
+      "label": "Water",
+      "asks": "A stated cap or closed-loop cooling, plus public reporting",
+      "rule": [
+        [
+          "present",
+          "eq",
+          true
+        ],
+        [
+          "reporting",
+          "eq",
+          true
+        ]
+      ]
+    },
+    "noise": {
+      "label": "Noise",
+      "asks": "A numeric limit measured at the nearest residence or property line",
+      "rule": [
+        [
+          "present",
+          "eq",
+          true
+        ],
+        [
+          "limit_dba",
+          "not_null"
+        ]
+      ]
+    },
+    "jobs": {
+      "label": "Jobs",
+      "asks": "Binding job commitments with a consequence, not projections",
+      "rule": [
+        [
+          "present",
+          "eq",
+          true
+        ],
+        [
+          "enforceable",
+          "eq",
+          true
+        ]
+      ]
+    },
+    "local_contracting": {
+      "label": "Local contracting",
+      "asks": "Local subcontracting goals and haul-route road repair paid by the operator",
+      "rule": [
+        [
+          "present",
+          "eq",
+          true
+        ],
+        [
+          "road_repair",
+          "eq",
+          true
+        ]
+      ]
+    },
+    "transparency": {
+      "label": "Transparency",
+      "asks": "No NDA, the agreement is public, and an independent audit on a schedule",
+      "rule": [
+        [
+          "nda",
+          "eq",
+          false
+        ],
+        [
+          "agreement_public",
+          "eq",
+          true
+        ],
+        [
+          "audit_cadence",
+          "in",
+          [
+            "annual",
+            "biennial"
+          ]
+        ],
+        [
+          "audit_independent",
+          "eq",
+          true
+        ]
+      ]
+    },
+    "tax": {
+      "label": "Tax incentives",
+      "asks": "A but-for test before any abatement, with the forgone revenue stated",
+      "rule": [
+        [
+          "but_for_test",
+          "eq",
+          true
+        ],
+        [
+          "estimated_forgone_usd",
+          "not_null"
+        ]
+      ]
+    }
+  }
+}

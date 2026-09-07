@@ -1,0 +1,888 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/apeabody007/datacenter-deals/schema/deal.schema.json",
+  "title": "Data center community agreement",
+  "description": "One signed, approved, or proposed agreement between a data center developer or operator and a public body. Use null for anything unknown. Every clause carries its own sources.",
+  "type": "object",
+  "required": [
+    "id",
+    "status",
+    "verification",
+    "jurisdiction",
+    "operator",
+    "project",
+    "agreement_type",
+    "dates",
+    "documents",
+    "terms",
+    "last_reviewed"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z]{2}-[a-z]{2}-[a-z0-9-]+-[0-9]{4}$",
+      "description": "country-state-locality-year, lowercase, hyphens. Example: us-pa-lancaster-2025"
+    },
+    "status": {
+      "enum": [
+        "signed",
+        "approved",
+        "proposed",
+        "withdrawn",
+        "terminated"
+      ]
+    },
+    "verification": {
+      "enum": [
+        "unverified",
+        "press",
+        "primary"
+      ],
+      "description": "unverified: drafted from memory or secondary summaries. press: every term traced to a news report. primary: a contributor read the actual agreement or ordinance."
+    },
+    "jurisdiction": {
+      "type": "object",
+      "required": [
+        "country",
+        "state",
+        "locality",
+        "level"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "country": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 2
+        },
+        "state": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 2
+        },
+        "locality": {
+          "type": "string"
+        },
+        "level": {
+          "enum": [
+            "city",
+            "town",
+            "township",
+            "county",
+            "state",
+            "utility",
+            "other"
+          ]
+        }
+      }
+    },
+    "operator": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Who will run the data center, if known"
+    },
+    "developer": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Who signed, if different from the operator (LLC names are common)"
+    },
+    "project": {
+      "type": "string"
+    },
+    "agreement_type": {
+      "enum": [
+        "community_benefits_agreement",
+        "proffer",
+        "development_agreement",
+        "host_community_agreement",
+        "tax_abatement",
+        "pilot",
+        "water_agreement",
+        "land_sale",
+        "rezoning",
+        "utility_contract",
+        "other"
+      ]
+    },
+    "dates": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "signed": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "approved": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "effective": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        }
+      }
+    },
+    "scale": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "acres": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "mw": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "Planned IT or utility load in megawatts, whichever the document states"
+        },
+        "capex_usd": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "sqft": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "documents": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "url",
+          "kind"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "kind": {
+            "enum": [
+              "primary",
+              "press",
+              "analysis",
+              "government_page"
+            ]
+          },
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          }
+        }
+      }
+    },
+    "terms": {
+      "type": "object",
+      "required": [
+        "community_fund",
+        "clawbacks",
+        "decommissioning",
+        "grid_costs",
+        "water",
+        "noise",
+        "jobs",
+        "local_contracting",
+        "transparency",
+        "tax"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "community_fund": {
+          "type": "object",
+          "required": [
+            "present",
+            "sources"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "present": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "amount_usd": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "cadence": {
+              "enum": [
+                "one_time",
+                "annual",
+                "per_mw",
+                "per_building",
+                "mixed",
+                null
+              ]
+            },
+            "scales_with_project": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "Does the amount grow with MW, buildings, or phases?"
+            },
+            "controlled_by": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "Who decides how the money is spent"
+            },
+            "community_seat": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "Does a resident or community organization hold a seat on the body that controls the fund?"
+            },
+            "notes": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sources": {
+              "$ref": "#/$defs/sources"
+            },
+            "not_applicable": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            }
+          }
+        },
+        "clawbacks": {
+          "type": "object",
+          "required": [
+            "present",
+            "sources"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "present": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "triggers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "jobs",
+                  "investment",
+                  "operation",
+                  "abandonment",
+                  "sale",
+                  "other"
+                ]
+              },
+              "description": "operation means the money comes back if the facility stops running, not just if a jobs promise is missed"
+            },
+            "proportional": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "Is the repayment scaled to the shortfall rather than all-or-nothing?"
+            },
+            "notes": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sources": {
+              "$ref": "#/$defs/sources"
+            },
+            "not_applicable": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            }
+          }
+        },
+        "decommissioning": {
+          "type": "object",
+          "required": [
+            "present",
+            "sources"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "present": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "instrument": {
+              "enum": [
+                "bond",
+                "escrow",
+                "letter_of_credit",
+                "covenant_only",
+                "none",
+                null
+              ]
+            },
+            "amount_usd": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "notes": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sources": {
+              "$ref": "#/$defs/sources"
+            },
+            "not_applicable": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            }
+          }
+        },
+        "grid_costs": {
+          "type": "object",
+          "required": [
+            "present",
+            "sources"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "present": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "Does the agreement or a governing tariff address who pays for grid buildout at all?"
+            },
+            "who_pays_interconnect": {
+              "enum": [
+                "operator",
+                "ratepayers",
+                "shared",
+                "unknown",
+                null
+              ]
+            },
+            "minimum_bill": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "Is there a take-or-pay or minimum demand charge that survives the tenant leaving?"
+            },
+            "term_years": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "governed_by": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "Name the tariff or statute if the protection comes from the state or utility rather than the local deal"
+            },
+            "notes": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sources": {
+              "$ref": "#/$defs/sources"
+            },
+            "not_applicable": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            }
+          }
+        },
+        "water": {
+          "type": "object",
+          "required": [
+            "present",
+            "sources"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "present": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "limit_gpd": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "Gallons per day cap, if any"
+            },
+            "reporting": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "recycling_required": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "cooling": {
+              "enum": [
+                "evaporative",
+                "closed_loop",
+                "air",
+                "mixed",
+                "unknown",
+                null
+              ]
+            },
+            "notes": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sources": {
+              "$ref": "#/$defs/sources"
+            },
+            "not_applicable": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            }
+          }
+        },
+        "noise": {
+          "type": "object",
+          "required": [
+            "present",
+            "sources"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "present": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "limit_dba": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "measured_at": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "Property line, nearest residence, etc."
+            },
+            "setback_ft": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "notes": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sources": {
+              "$ref": "#/$defs/sources"
+            },
+            "not_applicable": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            }
+          }
+        },
+        "jobs": {
+          "type": "object",
+          "required": [
+            "present",
+            "sources"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "present": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "promised_permanent": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "promised_construction": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "local_hire": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "prevailing_wage": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "enforceable": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "Is the jobs number a binding commitment with a consequence, or a projection?"
+            },
+            "notes": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sources": {
+              "$ref": "#/$defs/sources"
+            },
+            "not_applicable": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            }
+          }
+        },
+        "local_contracting": {
+          "type": "object",
+          "required": [
+            "present",
+            "sources"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "present": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "local_subcontracting": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "road_repair": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "Does the operator pay for haul-route damage during construction?"
+            },
+            "infrastructure_contribution_usd": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "notes": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sources": {
+              "$ref": "#/$defs/sources"
+            },
+            "not_applicable": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            }
+          }
+        },
+        "transparency": {
+          "type": "object",
+          "required": [
+            "present",
+            "sources"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "present": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "nda": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "Did the public body sign a nondisclosure agreement at any stage?"
+            },
+            "agreement_public": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "public_dashboard": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "audit_cadence": {
+              "enum": [
+                "annual",
+                "biennial",
+                "on_request",
+                "none",
+                null
+              ]
+            },
+            "audit_independent": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "notes": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sources": {
+              "$ref": "#/$defs/sources"
+            },
+            "not_applicable": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            }
+          }
+        },
+        "tax": {
+          "type": "object",
+          "required": [
+            "present",
+            "sources"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "present": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "abatement_pct": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "duration_years": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "pilot": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "estimated_forgone_usd": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "but_for_test": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "Did anyone have to show the project would not happen without the incentive?"
+            },
+            "notes": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sources": {
+              "$ref": "#/$defs/sources"
+            },
+            "not_applicable": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            }
+          }
+        }
+      }
+    },
+    "criticisms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "summary",
+          "source"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "summary": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "contributors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "$defs": {
+    "sources": {
+      "type": "array",
+      "description": "Receipts for this clause. Prefer objects that point at the page or section of the executed document. Empty is allowed only when present is null.",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string",
+            "format": "uri"
+          },
+          {
+            "type": "object",
+            "required": [
+              "url"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "where": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Page, section, or exhibit. Example: Section 7.2, p. 14"
+              },
+              "quote": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 200,
+                "description": "Short verbatim excerpt, under 25 words, so a reader can Ctrl-F it"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

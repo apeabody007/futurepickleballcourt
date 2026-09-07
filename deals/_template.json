@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-xx-locality-2026",
+  "status": "signed",
+  "verification": "press",
+  "jurisdiction": { "country": "US", "state": "XX", "locality": "Locality Name", "level": "county" },
+  "operator": null,
+  "developer": null,
+  "project": "Project name as it appears in the documents",
+  "agreement_type": "development_agreement",
+  "dates": { "signed": null, "approved": null, "effective": null },
+  "scale": { "acres": null, "mw": null, "capex_usd": null, "sqft": null },
+  "documents": [
+    { "title": "Executed agreement or ordinance", "url": "https://example.gov/agreement.pdf", "kind": "primary", "date": null }
+  ],
+  "terms": {
+    "community_fund": { "present": null, "amount_usd": null, "cadence": null, "scales_with_project": null, "controlled_by": null, "community_seat": null, "notes": null, "sources": [] },
+    "clawbacks": { "present": null, "triggers": [], "proportional": null, "notes": null, "sources": [] },
+    "decommissioning": { "present": null, "instrument": null, "amount_usd": null, "notes": null, "sources": [] },
+    "grid_costs": { "present": null, "who_pays_interconnect": null, "minimum_bill": null, "term_years": null, "governed_by": null, "notes": null, "sources": [] },
+    "water": { "present": null, "limit_gpd": null, "reporting": null, "recycling_required": null, "cooling": null, "notes": null, "sources": [] },
+    "noise": { "present": null, "limit_dba": null, "measured_at": null, "setback_ft": null, "notes": null, "sources": [] },
+    "jobs": { "present": null, "promised_permanent": null, "promised_construction": null, "local_hire": null, "prevailing_wage": null, "enforceable": null, "notes": null, "sources": [] },
+    "local_contracting": { "present": null, "local_subcontracting": null, "road_repair": null, "infrastructure_contribution_usd": null, "notes": null, "sources": [] },
+    "transparency": { "present": null, "nda": null, "agreement_public": null, "public_dashboard": null, "audit_cadence": null, "audit_independent": null, "notes": null, "sources": [] },
+    "tax": { "present": null, "abatement_pct": null, "duration_years": null, "pilot": null, "estimated_forgone_usd": null, "but_for_test": null, "notes": null, "sources": [] }
+  },
+  "criticisms": [],
+  "contributors": ["your-github-handle"],
+  "last_reviewed": "2026-09-07"
+}

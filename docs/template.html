@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Center Deals: what communities actually signed</title>
+<meta name="description" content="A clause-by-clause benchmark of signed data center agreements against what model templates ask for, with a receipt for every term.">
+<style>
+  :root { color-scheme: light dark;
+    --bg: #fbfaf7; --fg: #1c1b18; --muted: #6b675e; --line: #e2ded4; --card: #ffffff;
+    --ok: #1f7a3f; --bad: #b3261e; --unk: #8a8578; --accent: #1d4ed8; }
+  @media (prefers-color-scheme: dark) { :root {
+    --bg: #15140f; --fg: #ebe7dc; --muted: #a39d8f; --line: #2c2a23; --card: #1d1b15;
+    --ok: #5ec48a; --bad: #f08a83; --unk: #8a8578; --accent: #8ab4ff; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.5 ui-serif, Georgia, "Times New Roman", serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 .5rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.25rem; margin: 2.5rem 0 .75rem; }
+  p.lede { font-size: 1.1rem; max-width: 60ch; margin: 0 0 1.25rem; }
+  .meta { color: var(--muted); font-size: .9rem; }
+  .legend { display: flex; gap: 1.25rem; flex-wrap: wrap; margin: 1rem 0 1.25rem; font-size: .9rem; color: var(--muted); }
+  .wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--card); }
+  table { border-collapse: collapse; width: 100%; min-width: 900px; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .9rem; }
+  th, td { padding: .6rem .55rem; border-bottom: 1px solid var(--line); text-align: center; vertical-align: middle; }
+  th { font-weight: 600; font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  th:first-child, td:first-child { text-align: left; position: sticky; left: 0; background: var(--card); min-width: 190px; }
+  tr.deal { cursor: pointer; }
+  tr.deal:hover td { background: color-mix(in srgb, var(--accent) 6%, var(--card)); }
+  tr.deal:hover td:first-child { background: color-mix(in srgb, var(--accent) 6%, var(--card)); }
+  .mark { display: inline-block; width: 1.6rem; height: 1.6rem; line-height: 1.6rem; border-radius: 50%; font-weight: 700; font-size: .8rem; }
+  .meets { background: color-mix(in srgb, var(--ok) 18%, transparent); color: var(--ok); }
+  .falls_short { background: color-mix(in srgb, var(--bad) 16%, transparent); color: var(--bad); }
+  .unknown { background: color-mix(in srgb, var(--unk) 18%, transparent); color: var(--unk); }
+  .na { background: transparent; color: var(--unk); border: 1px dashed var(--line); }
+  .name { font-weight: 600; }
+  .sub { display: block; color: var(--muted); font-size: .78rem; font-weight: 400; }
+  tr.deal.open td { background: color-mix(in srgb, var(--accent) 10%, var(--card)); }
+  .detail { margin-top: 1rem; border: 1px solid var(--line); border-radius: 8px; background: color-mix(in srgb, var(--fg) 3%, var(--card)); padding: 1rem 1rem 1.25rem; }
+  .detail h3 { margin: 0 0 .25rem; font-size: 1.15rem; }
+  .clauses { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: .75rem; margin-top: .75rem; }
+  .clause { border: 1px solid var(--line); border-radius: 6px; padding: .6rem .75rem; background: var(--card); font-family: ui-sans-serif, system-ui, sans-serif; }
+  .clause h4 { margin: 0 0 .25rem; font-size: .85rem; display: flex; align-items: center; gap: .5rem; }
+  .clause p { margin: .25rem 0; font-size: .85rem; }
+  .clause .asks { color: var(--muted); font-size: .78rem; }
+  .clause ul { margin: .35rem 0 0; padding-left: 1.1rem; font-size: .8rem; }
+  .docs { font-size: .85rem; margin: .5rem 0 0; }
+  a { color: var(--accent); }
+  .badge { font-size: .72rem; padding: .1rem .45rem; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; }
+  .floor { columns: 2; column-gap: 2rem; font-size: .95rem; }
+  .floor li { break-inside: avoid; margin-bottom: .4rem; }
+  @media (max-width: 700px) { .floor { columns: 1; } h1 { font-size: 1.6rem; } }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Data center deals: what communities actually signed</h1>
+  <p class="lede">Model agreements say what a community should ask for. This is what signed deals delivered, clause by clause, with a link to the page or section that backs each term. Click a row to see the receipts.</p>
+  <p class="meta">Generated <span id="generated"></span> from the deal files in the <a href="https://github.com/apeabody007/datacenter-deals">repository</a>. Anyone can add a deal or correct a term by pull request.</p>
+
+  <div class="legend">
+    <span><span class="mark meets">✓</span> meets the floor</span>
+    <span><span class="mark falls_short">✕</span> falls short</span>
+    <span><span class="mark unknown">?</span> not enough information yet</span>
+    <span><span class="mark na">–</span> not applicable</span>
+  </div>
+
+  <div class="wrap"><table id="matrix"></table></div>
+  <section id="detail" class="detail" hidden></section>
+
+  <h2>What the floor asks for</h2>
+  <ol class="floor" id="floor"></ol>
+  <p class="meta">The floor is a file in the repository, not an opinion baked into the page. If it is set wrong, change it by pull request and say why.</p>
+
+  <footer>Data is CC BY 4.0. Terms marked <em>unverified</em> were drafted from secondary summaries and are waiting for someone to read the actual document. If that is you, open a pull request.</footer>
+</main>
+<script id="data" type="application/json">/*DATA*/</script>
+<script>
+(function () {
+  var data = JSON.parse(document.getElementById('data').textContent);
+  var glyph = { meets: '✓', falls_short: '✕', unknown: '?', 'n/a': '–' };
+  var floorKeys = Object.keys(data.floor);
+  document.getElementById('generated').textContent = data.generated;
+
+  function cls(s) { return s === 'n/a' ? 'na' : s; }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function usd(n) { return n == null ? null : '$' + Number(n).toLocaleString('en-US'); }
+  function srcLink(s) {
+    if (typeof s === 'string') return '<a href="' + esc(s) + '" rel="noopener">' + esc(s.replace(/^https?:\/\//, '').slice(0, 60)) + '</a>';
+    var label = s.where ? esc(s.where) : esc(s.url.replace(/^https?:\/\//, '').slice(0, 60));
+    return '<a href="' + esc(s.url) + '" rel="noopener">' + label + '</a>' + (s.quote ? ' <span class="meta">“' + esc(s.quote) + '”</span>' : '');
+  }
+  function facts(key, c) {
+    var f = [];
+    var add = function (label, v) { if (v !== null && v !== undefined && v !== '' && !(Array.isArray(v) && !v.length)) f.push(label + ': ' + esc(Array.isArray(v) ? v.join(', ') : v)); };
+    if (key === 'community_fund') { add('Amount', usd(c.amount_usd)); add('Cadence', c.cadence); add('Controlled by', c.controlled_by); add('Community seat', c.community_seat); add('Scales with project', c.scales_with_project); }
+    if (key === 'clawbacks') { add('Triggers', c.triggers); add('Proportional', c.proportional); }
+    if (key === 'decommissioning') { add('Instrument', c.instrument); add('Amount', usd(c.amount_usd)); }
+    if (key === 'grid_costs') { add('Interconnect paid by', c.who_pays_interconnect); add('Minimum bill', c.minimum_bill); add('Term (years)', c.term_years); add('Governed by', c.governed_by); }
+    if (key === 'water') { add('Cap (gal/day)', c.limit_gpd == null ? null : Number(c.limit_gpd).toLocaleString('en-US')); add('Reporting', c.reporting); add('Recycling required', c.recycling_required); add('Cooling', c.cooling); }
+    if (key === 'noise') { add('Limit (dBA)', c.limit_dba); add('Measured at', c.measured_at); add('Setback (ft)', c.setback_ft); }
+    if (key === 'jobs') { add('Permanent', c.promised_permanent); add('Construction', c.promised_construction); add('Local hire', c.local_hire); add('Prevailing wage', c.prevailing_wage); add('Enforceable', c.enforceable); }
+    if (key === 'local_contracting') { add('Local subcontracting', c.local_subcontracting); add('Road repair', c.road_repair); add('Infrastructure contribution', usd(c.infrastructure_contribution_usd)); }
+    if (key === 'transparency') { add('NDA', c.nda); add('Agreement public', c.agreement_public); add('Public dashboard', c.public_dashboard); add('Audit', c.audit_cadence); add('Independent audit', c.audit_independent); }
+    if (key === 'tax') { add('Abatement %', c.abatement_pct); add('Years', c.duration_years); add('PILOT', c.pilot); add('Forgone revenue', usd(c.estimated_forgone_usd)); add('But-for test', c.but_for_test); }
+    return f;
+  }
+  function detail(d) {
+    var h = '<div class="meta">' + esc(d.agreement_type.replace(/_/g, ' ')) + ' · ' + esc(d.status)
+      + (d.dates.signed ? ' · signed ' + esc(d.dates.signed) : d.dates.approved ? ' · approved ' + esc(d.dates.approved) : '')
+      + (d.scale && d.scale.mw ? ' · ' + esc(d.scale.mw) + ' MW' : '') + (d.scale && d.scale.acres ? ' · ' + esc(d.scale.acres) + ' acres' : '')
+      + ' · <span class="badge">' + esc(d.verification) + '</span></div>';
+    h += '<p class="docs">Documents: ' + d.documents.map(function (x) { return '<a href="' + esc(x.url) + '" rel="noopener">' + esc(x.title) + '</a> <span class="meta">(' + esc(x.kind.replace(/_/g, ' ')) + ')</span>'; }).join(' · ') + '</p>';
+    h += '<div class="clauses">';
+    floorKeys.forEach(function (k) {
+      var c = d.terms[k], s = d.score[k];
+      h += '<div class="clause"><h4><span class="mark ' + cls(s) + '">' + glyph[s] + '</span>' + esc(data.floor[k].label) + '</h4>';
+      h += '<p class="asks">Floor: ' + esc(data.floor[k].asks) + '</p>';
+      var f = facts(k, c);
+      if (c.not_applicable) f.unshift('Not applicable');
+      else if (c.present === false) f.unshift('Not addressed in the agreement');
+      if (f.length) h += '<p>' + f.join(' · ') + '</p>';
+      if (c.notes) h += '<p>' + esc(c.notes) + '</p>';
+      if (c.sources && c.sources.length) h += '<ul>' + c.sources.map(function (x) { return '<li>' + srcLink(x) + '</li>'; }).join('') + '</ul>';
+      h += '</div>';
+    });
+    h += '</div>';
+    if (d.criticisms && d.criticisms.length) h += '<p class="docs"><strong>Reported criticisms:</strong> ' + d.criticisms.map(function (x) { return esc(x.summary) + ' (<a href="' + esc(x.source) + '" rel="noopener">source</a>)'; }).join(' ') + '</p>';
+    return h;
+  }
+
+  var t = document.getElementById('matrix');
+  var head = '<tr><th>Deal</th>' + floorKeys.map(function (k) { return '<th>' + esc(data.floor[k].label) + '</th>'; }).join('') + '</tr>';
+  var rows = data.deals.map(function (d, i) {
+    var j = d.jurisdiction;
+    var r = '<tr class="deal" data-i="' + i + '"><td><span class="name">' + esc(j.locality) + ', ' + esc(j.state) + '</span><span class="sub">' + esc(d.operator || d.developer || d.project) + '</span></td>';
+    r += floorKeys.map(function (k) { return '<td><span class="mark ' + cls(d.score[k]) + '" title="' + esc(data.floor[k].label) + '">' + glyph[d.score[k]] + '</span></td>'; }).join('');
+    return r + '</tr>';
+  }).join('');
+  t.innerHTML = head + rows;
+  var panel = document.getElementById('detail');
+  t.addEventListener('click', function (e) {
+    var tr = e.target.closest('tr.deal');
+    if (!tr) return;
+    var wasOpen = tr.classList.contains('open');
+    Array.prototype.forEach.call(t.querySelectorAll('tr.open'), function (r) { r.classList.remove('open'); });
+    if (wasOpen) { panel.hidden = true; return; }
+    tr.classList.add('open');
+    var d = data.deals[Number(tr.getAttribute('data-i'))];
+    panel.innerHTML = '<h3>' + esc(d.jurisdiction.locality) + ', ' + esc(d.jurisdiction.state) + ' <span class="meta">' + esc(d.project) + '</span></h3>' + detail(d);
+    panel.hidden = false;
+    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+
+  document.getElementById('floor').innerHTML = floorKeys.map(function (k) { return '<li><strong>' + esc(data.floor[k].label) + '.</strong> ' + esc(data.floor[k].asks) + '</li>'; }).join('');
+})();
+</script>
+</body>
+</html>

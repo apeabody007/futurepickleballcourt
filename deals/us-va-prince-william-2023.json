@@ -1,0 +1,142 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-va-prince-william-2023",
+  "status": "terminated",
+  "verification": "primary",
+  "jurisdiction": { "country": "US", "state": "VA", "locality": "Prince William County", "level": "county" },
+  "operator": "QTS",
+  "developer": "GW Acquisition Co. LLC and GW Acquisition I LLC (QTS); Compass Datacenters with H&H Acquisitions LLC on the adjacent application",
+  "project": "PW Digital Gateway (REZ2022-00032 North and REZ2022-00033 South)",
+  "agreement_type": "proffer",
+  "dates": { "signed": "2023-12-10", "approved": "2023-12-13", "effective": null },
+  "scale": { "acres": 876, "mw": null, "capex_usd": null, "sqft": 11300000 },
+  "documents": [
+    { "title": "QTS Digital Gateway North proffer statement (REZ2022-00032)", "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "kind": "primary", "date": "2023-12-10" },
+    { "title": "QTS Digital Gateway South proffer statement (REZ2022-00033)", "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00033%20Proffers%20Packet%2020231210.pdf", "kind": "primary", "date": "2023-12-10" },
+    { "title": "County PW Digital Gateway page", "url": "https://www.pwcva.gov/department/planning-office/pw-digital-gateway", "kind": "government_page", "date": null },
+    { "title": "Virginia Lawyers Weekly: rezoning void for defective notice", "url": "https://valawyersweekly.com/2026/04/22/prince-william-county-data-center-rezoning-void/", "kind": "press", "date": "2026-04-22" }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": false,
+      "amount_usd": null,
+      "cadence": "per_building",
+      "scales_with_project": true,
+      "controlled_by": "Board of County Supervisors",
+      "community_seat": false,
+      "notes": "No general community fund. Monetary proffers: $0.61 per square foot of building area for fire and rescue, $10,000 per building for trail maintenance, $75 per acre for water-quality monitoring, and on the South parcel $10,000 per building to the state forest mitigation fund. Land: a five-acre park, roughly nine acres offered to the National Park Service, and nine-plus miles of trails.",
+      "sources": [
+        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffers 41(c), 45, and 54" },
+        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00033%20Proffers%20Packet%2020231210.pdf", "where": "Proffers 22 and 60" }
+      ]
+    },
+    "clawbacks": {
+      "present": false,
+      "not_applicable": true,
+      "triggers": [],
+      "proportional": null,
+      "notes": "Proffers are land-use conditions, not incentives. No county incentive package was identified, so there is nothing to claw back.",
+      "sources": [
+        "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf"
+      ]
+    },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "No decommissioning term. The only financial security is a reforestation bond, plus well-abandonment rules.",
+      "sources": [
+        "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf"
+      ]
+    },
+    "grid_costs": {
+      "present": false,
+      "who_pays_interconnect": null,
+      "minimum_bill": null,
+      "term_years": null,
+      "governed_by": null,
+      "notes": "Dominion said new transmission lines were required. The proffers allow substations in designated electric infrastructure areas with screening, and the applicant states it cannot dictate transmission routes. No cost allocation, minimum bill, or take-or-pay term.",
+      "sources": [
+        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffer 44" },
+        "https://www.princewilliamtimes.com/news/dominion-new-transmission-lines-needed-for-proposed-pw-digital-gateway/article_75cb1d9a-1288-11ed-926e-77decf3571c7.html"
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": null,
+      "reporting": false,
+      "recycling_required": null,
+      "cooling": "closed_loop",
+      "notes": "Air or closed-loop cooling only. No groundwater or surface-water withdrawals and no surface discharges for cooling; existing wells abandoned except for monitoring wells. No volume cap and no consumption reporting.",
+      "sources": [
+        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffer 39" }
+      ]
+    },
+    "noise": {
+      "present": true,
+      "limit_dba": 55,
+      "measured_at": "Boundary of residential or cultural-resource land. 60 dBA daytime, 55 dBA at night. Construction and emergency generator operation are exempt.",
+      "setback_ft": 50,
+      "notes": "Sound study required before permit release and one month after occupancy, with enclosures or walls if exceeded. 50-foot buffers along Pageland Lane.",
+      "sources": [
+        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffer 43" }
+      ]
+    },
+    "jobs": {
+      "present": true,
+      "promised_permanent": null,
+      "promised_construction": null,
+      "local_hire": false,
+      "prevailing_wage": false,
+      "enforceable": false,
+      "notes": "No job numbers in the proffers. The general contractor must meet county economic development and apprenticeship groups, certify payroll, track jobsite personnel, and bar assignment practices tied to wage theft. Press figures of 540 permanent jobs come from the county, not the proffers.",
+      "sources": [
+        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffer 61, Workforce Strategies" }
+      ]
+    },
+    "local_contracting": {
+      "present": true,
+      "local_subcontracting": false,
+      "road_repair": null,
+      "infrastructure_contribution_usd": 180000000,
+      "notes": "Goal language only for women, minority, and veteran-owned businesses. Road work is substantial: Pageland Lane widened to four lanes for about 3.5 miles with roundabouts and shared-use paths, Route 29 and Sudley Road improvements, right of way dedicated at no cost, phased against building area. The applicant's letter cites $180M to $200M in privately funded transportation improvements. No haul-route repair term as such.",
+      "sources": [
+        { "url": "https://www.pwcva.gov/assets/2023-12/REZ2022-00032%20Proffers%20Packet%2020231210.pdf", "where": "Proffers 46 and 61; applicant cover letter" }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": null,
+      "agreement_public": true,
+      "public_dashboard": false,
+      "audit_cadence": "none",
+      "audit_independent": false,
+      "notes": "Proffers are posted on the county site. The rezoning was voided in 2025 because statutory public notice failed, affirmed on appeal March 31, 2026. Landowner sale contracts were private. Sound studies and workforce evidence go to county staff, not the public.",
+      "sources": [
+        "https://www.pwcva.gov/department/planning-office/pw-digital-gateway",
+        "https://valawyersweekly.com/2026/04/22/prince-william-county-data-center-rezoning-void/"
+      ]
+    },
+    "tax": {
+      "present": false,
+      "not_applicable": true,
+      "abatement_pct": 0,
+      "duration_years": null,
+      "pilot": false,
+      "estimated_forgone_usd": 0,
+      "but_for_test": null,
+      "notes": "No abatement or PILOT. The county projected roughly $400M a year in tax revenue at buildout. Properties are being reassessed after the zoning reverted.",
+      "sources": [
+        "https://www.datacenterfrontier.com/site-selection/article/33016383/rezoning-for-pw-digital-gateway-data-centers-approved-by-virginias-prince-william-county-supervisors",
+        "https://www.pwcva.gov/department/planning-office/pw-digital-gateway"
+      ]
+    }
+  },
+  "criticisms": [
+    { "summary": "County staff recommended denial twice and the Planning Commission recommended denial. Approved 4-3 after a hearing of about 27 hours.", "source": "https://www.datacenterfrontier.com/site-selection/article/33016383/rezoning-for-pw-digital-gateway-data-centers-approved-by-virginias-prince-william-county-supervisors" },
+    { "summary": "Parks promised in the comprehensive plan amendment were missing from the rezoning applications; open space fell short of the 30 percent target.", "source": "https://www.princewilliamtimes.com/news/digital-gateway-plan-lacks-key-environmental-details-promised-parks-open-space/article_3dc57306-7e74-11ee-bdd6-57d98acf03ff.html" },
+    { "summary": "The approval was voided for defective public notice; the county spent $1.72M defending it, then withdrew. Both developers dropped out in 2026.", "source": "https://wtop.com/virginia/2026/04/prince-william-co-withdraws-from-digital-gateway-lawsuit-reversing-course-from-2023/" }
+  ],
+  "contributors": ["apeabody007"],
+  "last_reviewed": "2026-09-07"
+}

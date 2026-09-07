@@ -1,0 +1,123 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-fl-fort-meade-2026",
+  "status": "approved",
+  "verification": "press",
+  "jurisdiction": { "country": "US", "state": "FL", "locality": "City of Fort Meade", "level": "city" },
+  "operator": null,
+  "developer": "Stonebridge, contracting as Fort Meade DC LLC",
+  "project": "Fort Meade data center campus (former phosphate mine west of US 98)",
+  "agreement_type": "development_agreement",
+  "dates": { "signed": null, "approved": "2026-04-14", "effective": null },
+  "scale": { "acres": 1300, "mw": 1200, "capex_usd": 2600000000, "sqft": 4400000 },
+  "documents": [
+    { "title": "WUSF: Fort Meade one step closer to Florida's first hyperscale data center", "url": "https://www.wusf.org/environment/2026-04-08/fort-meade-is-one-step-closer-to-building-floridas-first-hysperscale-ai-data-center", "kind": "press", "date": "2026-04-08" },
+    { "title": "Bay News 9: approved despite residents' concerns", "url": "https://baynews9.com/fl/tampa/news/2026/04/15/fort-meade-data-center-approved-despite-residents-concerns", "kind": "press", "date": "2026-04-15" },
+    { "title": "Polk County 90 percent ad valorem exemption ordinance and performance agreement (summary)", "url": "https://citizenportal.ai/articles/6731770/florida/polk-county/polk-county-grants-10year-90-ad-valorem-tax-exemption-to-proposed-fort-meade-data-center", "kind": "analysis", "date": "2025-11-04" },
+    { "title": "LkldNow: Lakeland watching Fort Meade as water concerns grow", "url": "https://www.lkldnow.com/lakeland-watching-fort-meade-data-center-as-water-concerns-grow/", "kind": "press", "date": null }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": false,
+      "amount_usd": null,
+      "cadence": null,
+      "scales_with_project": null,
+      "controlled_by": null,
+      "community_seat": null,
+      "notes": "No community fund. The City gets a $10M upfront payment, which the state Commerce Secretary and The Ledger describe as an advance against future property taxes rather than new revenue, earmarked for water system and infrastructure upgrades, plus $300,000 to help secure additional water supply.",
+      "sources": [
+        "https://www.lkldnow.com/lakeland-watching-fort-meade-data-center-as-water-concerns-grow/",
+        "https://www.aol.com/articles/lawyer-asks-fort-meade-revoke-090423000.html",
+        "https://baynews9.com/fl/tampa/news/2026/04/15/fort-meade-data-center-approved-despite-residents-concerns"
+      ]
+    },
+    "clawbacks": {
+      "present": null,
+      "triggers": [],
+      "proportional": null,
+      "notes": "The county's exemption came with a performance agreement, but its terms were not published in any source found. The mayor pledged legal action if performance falters.",
+      "sources": []
+    },
+    "decommissioning": { "present": null, "instrument": null, "amount_usd": null, "notes": "No bond, escrow, or restoration obligation reported anywhere.", "sources": [] },
+    "grid_costs": {
+      "present": null,
+      "who_pays_interconnect": "unknown",
+      "minimum_bill": null,
+      "term_years": null,
+      "governed_by": "Florida SB 484 (Chapter 2026-65) large-load tariff; Duke Energy Florida's first filing was pending at the Public Service Commission in August 2026",
+      "notes": "Power would come from Duke Energy Florida; city residents are on a municipal power agency. The developer said the project will fund its own utility infrastructure, but no agreement-level term was published. Any minimum bill will come from the state tariff, not the city deal.",
+      "sources": [
+        "https://baynews9.com/fl/tampa/news/2026/02/11/fort-meade-residents-data-center-concern",
+        "https://www.wusf.org/politics-issues/2026-08-26/new-state-law-protect-consumers-data-center-costs-faces-first-test"
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": 50000,
+      "reporting": null,
+      "recycling_required": null,
+      "cooling": "closed_loop",
+      "notes": "City provides 50,000 gallons per day of potable water for restrooms and kitchens, down from an initial ask of 140,000 to 150,000, with closed-loop cooling and no new wells. The water management district wrote the City on the day of the vote that its existing permit cannot serve the project and that any data center water permit needs full board approval at a public meeting. The state called the 50,000 figure woefully underestimated.",
+      "sources": [
+        "https://www.wusf.org/environment/2026-04-08/fort-meade-is-one-step-closer-to-building-floridas-first-hysperscale-ai-data-center",
+        "https://www.wusf.org/environment/2026-04-15/fort-meade-ai-data-center-project-hits-roadblock-over-new-water-rules",
+        "https://www.fox13news.com/news/florida-secretary-commerce-concerns-fort-meade-data-center-plan"
+      ]
+    },
+    "noise": {
+      "present": null,
+      "limit_dba": null,
+      "measured_at": null,
+      "setback_ft": null,
+      "notes": "The developer projects 50 to 52 dB at a half mile with full backup generation permitted up to 100 hours a year. Whether the agreement sets a limit is unknown.",
+      "sources": []
+    },
+    "jobs": {
+      "present": true,
+      "promised_permanent": 450,
+      "promised_construction": null,
+      "local_hire": null,
+      "prevailing_wage": null,
+      "enforceable": null,
+      "notes": "Three inconsistent numbers: the developer and City say 450-plus permanent jobs at about $107,000 average; the county tax-exemption filing says 50 full-time jobs; the state Commerce Secretary called the projections likely overstated.",
+      "sources": [
+        "https://www.fox13news.com/news/fort-meade-data-center-project-community-opposition",
+        "https://dailyridge.com/2025/11/07/polk-county-commissioners-approve-tax-exemption-to-new-business-to-build-data-center/",
+        "https://www.lkldnow.com/lakeland-watching-fort-meade-data-center-as-water-concerns-grow/"
+      ]
+    },
+    "local_contracting": { "present": null, "local_subcontracting": null, "road_repair": null, "infrastructure_contribution_usd": null, "notes": null, "sources": [] },
+    "transparency": {
+      "present": null,
+      "nda": null,
+      "agreement_public": null,
+      "public_dashboard": null,
+      "audit_cadence": null,
+      "audit_independent": null,
+      "notes": "No NDA was confirmed, but the tenant is undisclosed, an interim city manager initially declined to name the company, and the June 2025 rezoning passed before most residents knew. The executed development agreement could not be located; the City's agenda archive links are broken.",
+      "sources": [
+        "https://www.wusf.org/environment/2026-02-16/proposals-massive-data-centers-across-florida-are-local-governments-prepared"
+      ]
+    },
+    "tax": {
+      "present": true,
+      "abatement_pct": 90,
+      "duration_years": 10,
+      "pilot": false,
+      "estimated_forgone_usd": 148375360,
+      "but_for_test": null,
+      "notes": "Polk County granted a 90 percent ad valorem exemption for 2029 to 2038, about $14.8M a year forgone; the school levy is not exempted. This is the widely quoted $150M over ten years. Whether the City granted its own exemption is unconfirmed.",
+      "sources": [
+        "https://dailyridge.com/2025/11/07/polk-county-commissioners-approve-tax-exemption-to-new-business-to-build-data-center/",
+        "https://citizenportal.ai/articles/6731770/florida/polk-county/polk-county-grants-10year-90-ad-valorem-tax-exemption-to-proposed-fort-meade-data-center"
+      ]
+    }
+  },
+  "criticisms": [
+    { "summary": "Florida's Commerce Secretary called the project fundamentally flawed and far from approved in an April 16, 2026 letter.", "source": "https://www.fox13news.com/news/florida-secretary-commerce-concerns-fort-meade-data-center-plan" },
+    { "summary": "Two lawsuits filed May 14, 2026 seek to void the approval; recall petitions against the mayor and two commissioners were submitted in July.", "source": "https://thecitrustea.com/2026/06/23/fort-meade-residents-file-two-lawsuits-to-block-stonebridge-data-center-as-watchdogs-launch-recall-push/" },
+    { "summary": "40 of 41 public commenters opposed the deal at the vote. The vice mayor called it a leap of faith.", "source": "https://www.aol.com/articles/lawyer-asks-fort-meade-revoke-090423000.html" }
+  ],
+  "contributors": ["apeabody007"],
+  "last_reviewed": "2026-09-07"
+}

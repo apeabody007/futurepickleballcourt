@@ -1,0 +1,145 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-mo-st-louis-2026",
+  "status": "approved",
+  "verification": "primary",
+  "jurisdiction": { "country": "US", "state": "MO", "locality": "City of St. Louis", "level": "city" },
+  "operator": null,
+  "developer": "Contour, TerraWatt, THO Investments, Steadfast City, ARCO Construction (Armory Innovation District team)",
+  "project": "Armory Innovation Data Center, 3728 Market Street",
+  "agreement_type": "other",
+  "dates": { "signed": null, "approved": "2026-04-21", "effective": null },
+  "scale": { "acres": null, "mw": 120, "capex_usd": 3000000000, "sqft": 525000 },
+  "documents": [
+    { "title": "Community Benefits Agreement term sheet (City of St. Louis). The recorded CBA with the Land Clearance for Redevelopment Authority had not been executed as of late August 2026.", "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "kind": "primary", "date": "2026-04-21" },
+    { "title": "Conditional use permit provisions (City summary of the nine conditions)", "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Conditional-Use-provisions.pdf", "kind": "primary", "date": "2026-04-21" },
+    { "title": "City page: Armory data center conditional use", "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/armory-data-center-conditional-use.cfm", "kind": "government_page", "date": null },
+    { "title": "STLPR: Board of Adjustment upholds permit with new rules after 11-hour hearing", "url": "https://www.stlpr.org/health-science-environment/2026-07-30/st-louis-board-allows-data-center-near-armory-to-move-forward-with-new-rules", "kind": "press", "date": "2026-07-30" }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": true,
+      "amount_usd": 15750000,
+      "cadence": "one_time",
+      "scales_with_project": true,
+      "controlled_by": "A fund at the City's direction, for multimodal improvements such as the Brickline Greenway, a digital access plan, and economic and environmental justice programs.",
+      "community_seat": false,
+      "notes": "$30 per square foot of approved data center development, estimated at $15,750,000. Timing of payment is not stated. This is a term sheet commitment; the recorded agreement that would make it binding was not yet executed as of August 28, 2026.",
+      "sources": [
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "p. 2", "quote": "$30 per square foot of approved data center development, an estimated $15,750,000" }
+      ]
+    },
+    "clawbacks": {
+      "present": true,
+      "triggers": ["jobs", "other"],
+      "proportional": true,
+      "notes": "Liquidated damages rather than incentive repayment, since no incentives were given. Revenue: $15,000 per $100,000 shortfall against projected annual tax revenue if not met by 2029. Jobs: $2,000 per job short of 25, 50, then 100 median-wage jobs, for 20 years. No trigger tied to the facility ceasing operation.",
+      "sources": [
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "p. 1, Liquidated Damages" }
+      ]
+    },
+    "decommissioning": {
+      "present": true,
+      "instrument": "covenant_only",
+      "amount_usd": null,
+      "notes": "A decommissioning plan to remove and recycle e-waste must be filed if the facility is vacant for more than a year. No bond, escrow, or letter of credit.",
+      "sources": [
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "p. 3" }
+      ]
+    },
+    "grid_costs": {
+      "present": true,
+      "who_pays_interconnect": "operator",
+      "minimum_bill": null,
+      "term_years": null,
+      "governed_by": "Ameren Missouri large-load tariff approved by the Missouri Public Service Commission in November 2025 (75 MW and up; 12-year minimum term; exit fees)",
+      "notes": "The permit requires the petitioner to fund any project-specific additional electrical infrastructure. Any minimum bill comes from the Ameren tariff, not the city deal. Reasonable efforts to reach 50 percent renewable within five years with RECs as fallback; PUE of 1.25 or better with annual reporting; generators Tier 4 and never for general power. The Board of Adjustment added an on-site renewable requirement and a ban on generator testing on bad-air days.",
+      "sources": [
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Conditional-Use-provisions.pdf", "where": "p. 2", "quote": "must fund any project-specific additional electrical infrastructure" },
+        "https://www.stlpr.org/health-science-environment/2025-11-24/missouri-utility-regulators-approve-ameren-rates-data-centers",
+        "https://www.stlpr.org/health-science-environment/2026-07-30/st-louis-board-allows-data-center-near-armory-to-move-forward-with-new-rules"
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": null,
+      "reporting": true,
+      "recycling_required": null,
+      "cooling": "closed_loop",
+      "notes": "Closed-loop system with air-cooled chillers required. Written agreement with the Water Division to pay all fees and impact fees, fund a hydraulic model study, and rectify impacts on existing customers. Annual water-usage reporting, which may be made public. No volume cap.",
+      "sources": [
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Conditional-Use-provisions.pdf", "where": "p. 2" },
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "p. 2, annual water reporting" }
+      ]
+    },
+    "noise": {
+      "present": true,
+      "limit_dba": null,
+      "measured_at": "All adjoining parcel lines, measured in an annual third-party noise report to the Health Director and Zoning Administrator. The standard is the City noise ordinance, not a number in the deal.",
+      "setback_ft": null,
+      "notes": "Equipment must sit in acoustically treated enclosures away from street frontages. Generator testing only on weekdays from 10 to 12 and 2 to 5. A university acoustics researcher testified that low-frequency noise cannot be absorbed at feasible wall thicknesses.",
+      "sources": [
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Conditional-Use-provisions.pdf", "where": "pp. 1 to 2" },
+        "https://www.yahoo.com/news/us/articles/st-louis-board-upholds-armory-202506410.html"
+      ]
+    },
+    "jobs": {
+      "present": true,
+      "promised_permanent": 100,
+      "promised_construction": 1050,
+      "local_hire": true,
+      "prevailing_wage": true,
+      "enforceable": true,
+      "notes": "Enforceable minimums of 25 median-wage jobs in year one, 50 in year two, and 100 after, for 20 years, backed by $2,000 per job in liquidated damages. First-source hiring for entry-level jobs. Prevailing wage and M/WBE compliance for the developer and contractors. Construction under a project labor agreement with the St. Louis Building Trades. Enforceability depends on the recorded CBA being executed.",
+      "sources": [
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "pp. 1 to 2" },
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Details-on-Project-Conditions-Components-and-Benefits.pdf", "where": "p. 3" }
+      ]
+    },
+    "local_contracting": {
+      "present": true,
+      "local_subcontracting": true,
+      "road_repair": false,
+      "infrastructure_contribution_usd": null,
+      "notes": "M/WBE participation, prevailing wage, and a project labor agreement. The developer builds Market Street sidewalks and a pathway to the Grand MetroLink station. No haul-route repair term.",
+      "sources": [
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "pp. 2 to 3" }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": false,
+      "agreement_public": true,
+      "public_dashboard": false,
+      "audit_cadence": "annual",
+      "audit_independent": true,
+      "notes": "Tenant must be disclosed unless commercially unreasonable due to national security. Annual reports on electricity, waste heat, water, PUE, noise, and e-waste. The noise report is by a third party. No NDA found. The process drew criticism: aldermen were told hours before a virtual vote, and 13 appeals plus a circuit court suit followed.",
+      "sources": [
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "pp. 2 to 3" },
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Conditional-Use-provisions.pdf", "where": "pp. 1 to 2" },
+        "https://www.stlpr.org/news-briefs/2026-04-24/board-approved-st-louis-data-center-project"
+      ]
+    },
+    "tax": {
+      "present": false,
+      "not_applicable": true,
+      "abatement_pct": 0,
+      "duration_years": null,
+      "pilot": false,
+      "estimated_forgone_usd": 0,
+      "but_for_test": null,
+      "notes": "The developer committed not to seek local tax abatement or other financial incentives and to cooperate in terminating the existing Armory TIF. The City projects $432M in taxes and fees over ten years.",
+      "sources": [
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf", "where": "p. 1, No Local Incentives", "quote": "will not seek local tax abatement or other financial incentives" },
+        { "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Details-on-Project-Conditions-Components-and-Benefits.pdf", "where": "pp. 2 to 3" }
+      ]
+    }
+  },
+  "criticisms": [
+    { "summary": "The recorded community benefits agreement is still a term sheet. Until it is executed, the liquidated damages and job minimums are promises, not obligations.", "source": "https://www.stlouis-mo.gov/government/departments/mayor/documents/armory-data-center-conditional-use.cfm" },
+    { "summary": "Aldermen were notified hours before a virtual vote; 13 appeals were filed and a judicial-review petition followed on August 28, 2026.", "source": "https://www.firstalert4.com/2026/08/29/residents-organizations-file-lawsuit-against-proposed-midtown-data-center/" },
+    { "summary": "Air quality and low-frequency noise concerns near a children's hospital about a quarter mile away.", "source": "https://www.stlpr.org/health-science-environment/2026-07-30/st-louis-board-allows-data-center-near-armory-to-move-forward-with-new-rules" }
+  ],
+  "contributors": ["apeabody007"],
+  "last_reviewed": "2026-09-07"
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-az-goodyear-2023",
+  "status": "approved",
+  "verification": "press",
+  "jurisdiction": { "country": "US", "state": "AZ", "locality": "City of Goodyear", "level": "city" },
+  "operator": "Microsoft",
+  "developer": "Microsoft Corporation",
+  "project": "Microsoft Goodyear campus, Third Amendment to the 2019 Infrastructure Development Agreement",
+  "agreement_type": "development_agreement",
+  "dates": { "signed": null, "approved": "2023-03-06", "effective": null },
+  "scale": { "acres": 300, "mw": null, "capex_usd": null, "sqft": null },
+  "documents": [
+    { "title": "ABC15: Microsoft agrees to make data centers air-cooled amid water infrastructure challenges", "url": "https://www.abc15.com/news/business/microsoft-agrees-to-make-data-centers-air-cooled-amid-water-infrastructure-challenges-in-goodyear", "kind": "press", "date": "2023-03-07" },
+    { "title": "AZBEX: Microsoft Goodyear update to development agreement", "url": "https://azbex.com/local-news/microsoft-goodyear-update-development-agreement/", "kind": "press", "date": null },
+    { "title": "Futurism summarizing The Atlantic on water use and redaction", "url": "https://futurism.com/the-byte/microsoft-arizona-water-ai", "kind": "press", "date": "2024-03-01" }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": false,
+      "amount_usd": null,
+      "cadence": null,
+      "scales_with_project": null,
+      "controlled_by": null,
+      "community_seat": null,
+      "notes": "No community fund. Microsoft funds $800,000 for a City staff coordinator dedicated to its projects.",
+      "sources": [
+        "https://www.abc15.com/news/business/microsoft-agrees-to-make-data-centers-air-cooled-amid-water-infrastructure-challenges-in-goodyear",
+        "https://azbex.com/local-news/microsoft-goodyear-update-development-agreement/"
+      ]
+    },
+    "clawbacks": { "present": null, "triggers": [], "proportional": null, "notes": null, "sources": [] },
+    "decommissioning": { "present": null, "instrument": null, "amount_usd": null, "notes": null, "sources": [] },
+    "grid_costs": {
+      "present": null,
+      "who_pays_interconnect": null,
+      "minimum_bill": null,
+      "term_years": null,
+      "governed_by": null,
+      "notes": "Microsoft contracted 150 MW from First Solar's Sun Streams 2 plant for its Arizona campuses. Substation and transmission cost allocation with the utility is unknown.",
+      "sources": [
+        "https://blogs.microsoft.com/on-the-issues/2019/07/30/building-world-class-sustainable-datacenters-and-investing-in-solar-power-in-arizona/"
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": null,
+      "reporting": false,
+      "recycling_required": null,
+      "cooling": "mixed",
+      "notes": "The 2023 amendment has Microsoft pay $36M toward a $90M wastewater plant expansion, buying 1.2 million gallons per day of capacity, with $5M financial assurance for a new sewer line. Buildings 1 to 3 are water-cooled with recirculation; buildings 4 and 5 must be air-cooled. The 2019 plan to treat wastewater for city reuse was dropped as cost prohibitive. A Microsoft-commissioned estimate of about 56 million gallons a year was shared with council, but exact figures were redacted from city records as proprietary.",
+      "sources": [
+        "https://www.abc15.com/news/business/microsoft-agrees-to-make-data-centers-air-cooled-amid-water-infrastructure-challenges-in-goodyear",
+        "https://azbex.com/local-news/microsoft-goodyear-update-development-agreement/",
+        "https://futurism.com/the-byte/microsoft-arizona-water-ai"
+      ]
+    },
+    "noise": { "present": null, "limit_dba": null, "measured_at": null, "setback_ft": null, "notes": "Goodyear's code uses a reasonable-person standard rather than decibel limits. No agreement term found.", "sources": [] },
+    "jobs": {
+      "present": true,
+      "promised_permanent": 100,
+      "promised_construction": 1000,
+      "local_hire": null,
+      "prevailing_wage": null,
+      "enforceable": null,
+      "notes": "Microsoft projected 100-plus permanent and 1,000-plus construction jobs across Goodyear and El Mirage combined. These are projections in a press release, not agreement terms.",
+      "sources": [
+        "https://blogs.microsoft.com/on-the-issues/2019/07/30/building-world-class-sustainable-datacenters-and-investing-in-solar-power-in-arizona/"
+      ]
+    },
+    "local_contracting": { "present": null, "local_subcontracting": null, "road_repair": null, "infrastructure_contribution_usd": null, "notes": null, "sources": [] },
+    "transparency": {
+      "present": true,
+      "nda": null,
+      "agreement_public": null,
+      "public_dashboard": false,
+      "audit_cadence": null,
+      "audit_independent": null,
+      "notes": "Water-use figures were redacted from public records as proprietary. The 2019 agreement let Microsoft build under a self-certification process before site-plan adoption. The resolution text could not be fetched from the City's agenda archive.",
+      "sources": [
+        "https://futurism.com/the-byte/microsoft-arizona-water-ai",
+        "https://www.abc15.com/news/region-west-valley/goodyear/goodyear-city-council-adopts-resolution-approving-development-agreement-for-microsoft"
+      ]
+    },
+    "tax": {
+      "present": null,
+      "abatement_pct": null,
+      "duration_years": null,
+      "pilot": null,
+      "estimated_forgone_usd": null,
+      "but_for_test": null,
+      "notes": "No city abatement or PILOT found. Arizona's state computer data center program exempts qualifying equipment from transaction and use tax for up to ten years; Microsoft's certification status is unknown.",
+      "sources": []
+    }
+  },
+  "criticisms": [
+    { "summary": "The Atlantic reported in March 2024 that the campus would use about 56 million gallons a year and that the City redacted the figures as proprietary.", "source": "https://futurism.com/the-byte/microsoft-arizona-water-ai" },
+    { "summary": "The 2019 agreement allowed construction to start under self-certification before the site plan was adopted.", "source": "https://www.abc15.com/news/region-west-valley/goodyear/goodyear-city-council-adopts-resolution-approving-development-agreement-for-microsoft" }
+  ],
+  "contributors": ["apeabody007"],
+  "last_reviewed": "2026-09-07"
+}

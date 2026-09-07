@@ -1,0 +1,125 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-ia-cedar-rapids-google-2024",
+  "status": "signed",
+  "verification": "primary",
+  "jurisdiction": { "country": "US", "state": "IA", "locality": "City of Cedar Rapids", "level": "city" },
+  "operator": "Google",
+  "developer": "Heaviside LLC (Google development entity); Google LLC on the state contract",
+  "project": "Google Cedar Rapids campus, 76th Avenue SW and Edgewood Road SW",
+  "agreement_type": "development_agreement",
+  "dates": { "signed": "2024-02-29", "approved": "2024-02-27", "effective": null },
+  "scale": { "acres": 419.69, "mw": 300, "capex_usd": 576000000, "sqft": null },
+  "documents": [
+    { "title": "Google Project Development Agreement (executed February 2024)", "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "kind": "primary", "date": "2024-02-29" },
+    { "title": "Iowa Economic Development Authority assistance contract 24-HQJP-014 (scanned)", "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-IEDA-Economic-Development-Assistance-Contract.pdf", "kind": "primary", "date": "2024-07-29" },
+    { "title": "The Gazette: council signs off on unnamed company's $576 million data center", "url": "https://www.thegazette.com/local-government/cedar-rapids-city-council-signs-off-on-unnamed-companys-historic-576-million-data-center/", "kind": "press", "date": "2024-02-27" },
+    { "title": "Business Record: IEDA approves $56M local tax break", "url": "https://www.businessrecord.com/ieda-approves-56m-local-tax-break-for-googles-576m-cedar-rapids-data-center/", "kind": "press", "date": "2024-03-22" }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": true,
+      "amount_usd": 36000000,
+      "cadence": "annual",
+      "scales_with_project": true,
+      "controlled_by": "The City, at its discretion; the company gets input.",
+      "community_seat": false,
+      "notes": "Community Betterment Fund: $400,000 a year per data center building from the January 1 after occupancy, for 15 years or $6M per building, capped at $36M in total. Press reports of $350,000 are wrong; the executed agreement says $400,000.",
+      "sources": [
+        { "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Section 6.7, p. 15" }
+      ]
+    },
+    "clawbacks": {
+      "present": true,
+      "triggers": ["jobs", "investment"],
+      "proportional": false,
+      "notes": "The exemption ceases prospectively if conditions lapse after a 60-day cure, and the franchise-fee rebate is skipped for any year of job noncompliance. The state contract lets IEDA revoke or reduce incentives after a 30-day cure, with layoffs or Iowa closures as default triggers. Meeting the investment minimum is a condition precedent to the exemption. No trigger tied to the facility ceasing operation after the job-maintenance window closes in 2033.",
+      "sources": [
+        { "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Sections 6.2(a), 6.3, and 6.6" },
+        { "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-IEDA-Economic-Development-Assistance-Contract.pdf", "where": "Article 9.1(c) and 9.2, p. 19" }
+      ]
+    },
+    "decommissioning": { "present": false, "instrument": "none", "amount_usd": null, "notes": "No decommissioning term.", "sources": ["https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf"] },
+    "grid_costs": {
+      "present": false,
+      "who_pays_interconnect": "unknown",
+      "minimum_bill": null,
+      "term_years": null,
+      "governed_by": "Alliant Energy individual customer rate for 25 MW-plus customers; terms not public",
+      "notes": "The agreement is silent on electric costs. Alliant's 2024 filings described up to 300 MW of new load potential.",
+      "sources": [
+        "https://www.thegazette.com/news/environment/google-data-center-would-be-among-cedar-rapids-largest-water-and-energy-users/article_70095b9e-c333-58c3-b664-b25ba3df016f.html"
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": null,
+      "reporting": false,
+      "recycling_required": null,
+      "cooling": "unknown",
+      "notes": "The City reserves water capacity for the property per an exhibit that is not in the posted PDF. A gray-water credit of $1.30 per hundred cubic feet, escalating 2.5 percent a year and capped at 57 percent of the sewer rate, applies to separately piped cooling discharge between 0.1 and 1.5 million gallons a day, with monthly reporting only if the credit is claimed. The utilities director says Google plans no water for cooling; 2024 estimates ranged from 200,000 to 7.8 million gallons a day. Google gave $1.3M toward a $12M to $14M aquifer storage well.",
+      "sources": [
+        { "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Sections 6.8, 7.3, and 7.4, pp. 15 to 17" },
+        "https://www.thegazette.com/news/environment/google-data-center-would-be-among-cedar-rapids-largest-water-and-energy-users/article_70095b9e-c333-58c3-b664-b25ba3df016f.html",
+        "https://www.kcrg.com/2026/06/09/cedar-rapids-drilling-new-storage-aquifer-stay-ahead-game-amidst-data-center-development/"
+      ]
+    },
+    "noise": { "present": false, "limit_dba": null, "measured_at": null, "setback_ft": null, "notes": "No noise term.", "sources": ["https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf"] },
+    "jobs": {
+      "present": true,
+      "promised_permanent": 31,
+      "promised_construction": null,
+      "local_hire": false,
+      "prevailing_wage": false,
+      "enforceable": true,
+      "notes": "31 full-time jobs at $31.44 an hour by March 31, 2031, maintained through March 31, 2033, enforceable through the state contract and the city exemption conditions. No local hire and no prevailing wage.",
+      "sources": [
+        { "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-IEDA-Economic-Development-Assistance-Contract.pdf", "where": "Exhibit D, p. 8" },
+        { "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Section 5.2, p. 10" }
+      ]
+    },
+    "local_contracting": {
+      "present": false,
+      "local_subcontracting": false,
+      "road_repair": false,
+      "infrastructure_contribution_usd": null,
+      "notes": "No local contracting or road repair term. A 75 percent rebate of electric franchise fees for 20 years per data center runs the other direction.",
+      "sources": [
+        { "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Section 6.4, p. 13" }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": true,
+      "agreement_public": true,
+      "public_dashboard": false,
+      "audit_cadence": "none",
+      "audit_independent": false,
+      "notes": "The City signed a nondisclosure agreement with Google, disclosed through a records request in July 2026. The company was unnamed when the council approved the deal. The agreement has a confidentiality clause subject to open records law and a memorandum was recorded with the county. A council member complained little was shared on water, energy, or rate impacts.",
+      "sources": [
+        "https://www.kcrg.com/2026/07/24/cedar-rapids-mayor-defends-data-center-projects-amid-kickback-claims-nda-questions/",
+        { "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Section 11.17" },
+        "https://www.thegazette.com/local-government/cedar-rapids-city-council-signs-off-on-unnamed-companys-historic-576-million-data-center/"
+      ]
+    },
+    "tax": {
+      "present": true,
+      "abatement_pct": 70,
+      "duration_years": 20,
+      "pilot": false,
+      "estimated_forgone_usd": 56000000,
+      "but_for_test": false,
+      "notes": "70 percent exemption on value added for 20 years under Iowa's High Quality Jobs program, starting the January 1 after the first building completes, plus a 75 percent franchise-fee rebate. The state contract estimates the local property tax exemption at $56,000,000 and awarded no state tax credits. No but-for analysis was found.",
+      "sources": [
+        { "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-Project-Development-Agreement.pdf", "where": "Sections 6.1(b) and 6.4, pp. 12 to 13" },
+        { "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/Google-IEDA-Economic-Development-Assistance-Contract.pdf", "where": "Section 3.1, p. 7 and Exhibit B-1, p. 28" }
+      ]
+    }
+  },
+  "criticisms": [
+    { "summary": "The company was not named when the council voted, and the City had signed an NDA.", "source": "https://www.thegazette.com/local-government/cedar-rapids-city-council-signs-off-on-unnamed-companys-historic-576-million-data-center/" },
+    { "summary": "Water-use estimates ranged from 200,000 to 7.8 million gallons a day at the time of approval.", "source": "https://www.thegazette.com/news/environment/google-data-center-would-be-among-cedar-rapids-largest-water-and-energy-users/article_70095b9e-c333-58c3-b664-b25ba3df016f.html" }
+  ],
+  "contributors": ["apeabody007"],
+  "last_reviewed": "2026-09-07"
+}
