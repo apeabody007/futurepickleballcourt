@@ -165,9 +165,11 @@ def score(deal):
             out[name] = "falls_short"
             continue
         rules = [(r[0], r[1], r[2] if len(r) > 2 else None) for r in spec["rule"]]
-        failed = any(clause.get(f) is not None and not _check(clause, f, op, arg)
+        # null, an empty list, and the literal "unknown" all mean nobody knows yet
+        unknown = lambda v: v is None or v == [] or v == "unknown"
+        failed = any(not unknown(clause.get(f)) and not _check(clause, f, op, arg)
                      for f, op, arg in rules)
-        missing = any(clause.get(f) is None for f, _, _ in rules)
+        missing = any(unknown(clause.get(f)) for f, _, _ in rules)
         out[name] = "falls_short" if failed else ("unknown" if missing else "meets")
     return out
 
