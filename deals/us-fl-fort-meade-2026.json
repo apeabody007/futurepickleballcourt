@@ -2,19 +2,33 @@
   "$schema": "../schema/deal.schema.json",
   "id": "us-fl-fort-meade-2026",
   "status": "approved",
-  "verification": "press",
+  "verification": "primary",
   "jurisdiction": { "country": "US", "state": "FL", "locality": "City of Fort Meade", "level": "city" },
   "operator": null,
-  "developer": "Stonebridge, contracting as Fort Meade DC LLC",
-  "project": "Fort Meade data center campus (former phosphate mine west of US 98)",
+  "developer": "Fort Meade, LLC (Delaware), doing business as Fort Meade DC, LLC, c/o Stonebridge Associates, Inc., Bethesda MD; landowners Florida Ecopark LLC and Polk Industrial Park LLC (developer under contract to buy); Bohler Places LLC filed the 2025 rezoning",
+  "project": "Fort Meade data center campus, Project Stonebridge (county filing: Project Cumulus), reclaimed phosphate land west of US 17/98 in the city's northwest quadrant; Development Agreement under F.S. 163.3220-163.3243 plus a Polk County ad valorem exemption",
   "agreement_type": "development_agreement",
   "dates": { "signed": null, "approved": "2026-04-14", "effective": null },
-  "scale": { "acres": 1300, "mw": 1200, "capex_usd": 2600000000, "sqft": 4400000 },
+  "scale": { "acres": 1163.67, "mw": 1200, "capex_usd": 2840000000, "sqft": 4400000 },
   "documents": [
+    { "title": "City of Fort Meade, April 14, 2026 (Newly) Amended Regular City Commission agenda packet: staff memorandum (pp. 5-8) and Development Agreement between Fort Meade, LLC d/b/a Fort Meade DC, LLC and the City (pp. 9-30), Exhibits A-C (pp. 31-59)", "url": "https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf", "kind": "primary", "date": "2026-04-14" },
+    { "title": "Polk County Ordinance No. 25-062, Economic Development Ad Valorem Tax Exemption for Fort Meade LLC (agenda copy, final 10-24-25, with Property Appraiser's report as Exhibit A), adopted November 4, 2025", "url": "https://polkcountyfl.legistar1.com/polkcountyfl/attachments/ac02059f-2c47-47c8-bede-7d33fab30048.pdf", "kind": "primary", "date": "2025-11-04" },
+    { "title": "Ad Valorem Tax Exemption Performance Agreement between Polk County and Fort Meade DC LLC (Project Cumulus), signed by Doug Firstenberg, Manager, October 21, 2025", "url": "https://polkcountyfl.legistar1.com/polkcountyfl/attachments/67224c75-3c9b-4320-87f2-683543813e80.pdf", "kind": "primary", "date": "2025-10-21" },
+    { "title": "Polk County resolution recognizing Ordinance No. 25-062 as the exemption for Fort Meade DC, LLC (name correction), adopted November 18, 2025", "url": "https://polkcountyfl.legistar1.com/polkcountyfl/attachments/5b6f6f06-d166-4f0c-801d-ec9e4dce1df7.pdf", "kind": "primary", "date": "2025-11-18" },
+    { "title": "Florida Secretary of Commerce J. Alex Kelly, letter to Mayor Jaret Landon Williams, April 15, 2026 (4 pp., hosted by WUSF/NPR)", "url": "https://npr.brightspotcdn.com/c1/05/48b3f71a4de98d2aa86e5dede270/fort-meade-data-center-4-15-26.pdf", "kind": "primary", "date": "2026-04-15" },
+    { "title": "City of Fort Meade, June 10, 2025 Regular City Commission minutes (Ordinances 2025-08 and 2025-09 adopted 5-0)", "url": "https://www.cityoffortmeade.org/June%2010%2C%202025%20Regular%20City%20Commission%20minutes.pdf", "kind": "primary", "date": "2025-06-10" },
+    { "title": "Polk County Legistar record, file 25-1989 (Nov. 4, 2025 public hearing) via the Legistar web API", "url": "https://webapi.legistar.com/v1/polkcountyfl/matters/19889/attachments", "kind": "government_page", "date": "2025-11-04" },
+    { "title": "Florida Senate, CS/CS/SB 484 (2026) Data Centers, Chapter 2026-65", "url": "https://www.flsenate.gov/Session/Bill/2026/484", "kind": "government_page", "date": "2026-05-08" },
     { "title": "WUSF: Fort Meade one step closer to Florida's first hyperscale data center", "url": "https://www.wusf.org/environment/2026-04-08/fort-meade-is-one-step-closer-to-building-floridas-first-hysperscale-ai-data-center", "kind": "press", "date": "2026-04-08" },
     { "title": "Bay News 9: approved despite residents' concerns", "url": "https://baynews9.com/fl/tampa/news/2026/04/15/fort-meade-data-center-approved-despite-residents-concerns", "kind": "press", "date": "2026-04-15" },
-    { "title": "Polk County 90 percent ad valorem exemption ordinance and performance agreement (summary)", "url": "https://citizenportal.ai/articles/6731770/florida/polk-county/polk-county-grants-10year-90-ad-valorem-tax-exemption-to-proposed-fort-meade-data-center", "kind": "analysis", "date": "2025-11-04" },
-    { "title": "LkldNow: Lakeland watching Fort Meade as water concerns grow", "url": "https://www.lkldnow.com/lakeland-watching-fort-meade-data-center-as-water-concerns-grow/", "kind": "press", "date": null }
+    { "title": "The Ledger via AOL: Lawyer asks Fort Meade to revoke data center (Gary White)", "url": "https://www.aol.com/articles/lawyer-asks-fort-meade-revoke-090423000.html", "kind": "press", "date": "2026-04-30" },
+    { "title": "LkldNow: Lakeland watching Fort Meade as water concerns grow (Cindy Glover)", "url": "https://www.lkldnow.com/lakeland-watching-fort-meade-data-center-as-water-concerns-grow/", "kind": "press", "date": "2026-04-22" },
+    { "title": "Propmodo: Florida data center plan advances amid local backlash", "url": "https://propmodo.com/florida-data-center-plan-advances-amid-local-backlash/", "kind": "press", "date": "2026-04-16" },
+    { "title": "The Ledger via Yahoo: Fort Meade residents hurl skepticism at massive data center during forum (Gary White)", "url": "https://www.yahoo.com/news/fort-meade-residents-hurl-skepticism-223635924.html", "kind": "press", "date": "2026-01-30" },
+    { "title": "DCD: 4.4 million sq ft data center campus gets zoning approval in Fort Meade (Dan Swinhoe)", "url": "https://www.datacenterdynamics.com/en/news/44-million-sq-ft-data-center-campus-gets-zoning-approval-in-fort-meade-florida/", "kind": "press", "date": "2025-06-17" },
+    { "title": "Daily Ridge: Polk County commissioners approve tax exemption (James Coulter)", "url": "https://dailyridge.com/2025/11/07/polk-county-commissioners-approve-tax-exemption-to-new-business-to-build-data-center/", "kind": "press", "date": "2025-11-07" },
+    { "title": "Citizen Portal summary of the Nov. 4, 2025 county hearing", "url": "https://citizenportal.ai/articles/6731770/florida/polk-county/polk-county-grants-10year-90-ad-valorem-tax-exemption-to-proposed-fort-meade-data-center", "kind": "analysis", "date": "2025-11-04" },
+    { "title": "FloridaDataCenters.org opposition tracker, Polk County page", "url": "https://floridadatacenters.org/polk-county", "kind": "analysis", "date": null }
   ],
   "terms": {
     "community_fund": {
@@ -24,78 +38,122 @@
       "scales_with_project": null,
       "controlled_by": null,
       "community_seat": null,
-      "notes": "No community fund. The City gets a $10M upfront payment, which the state Commerce Secretary and The Ledger describe as an advance against future property taxes rather than new revenue, earmarked for water system and infrastructure upgrades, plus $300,000 to help secure additional water supply.",
+      "notes": "No community fund. The agreement's $10,000,000 Developer Funding Advance (Sec. 3.d) pays for City Work (fire station, library, communications and asset-management systems, future water supplies, vertipad/vertiport facilities, planning, staff or consultants) in two $5M installments, and is repaid to the developer through credits against City ad valorem taxes (Sec. 4.d), so it is an advance on taxes, as the Commerce Secretary's April 15, 2026 letter states, not new revenue. Separately the developer covers up to $300,000 of PRWC or other water-rights charges (Sec. 3.b). Press reports of $10M for water-system upgrades describe one permitted use of the advance.",
       "sources": [
-        "https://www.lkldnow.com/lakeland-watching-fort-meade-data-center-as-water-concerns-grow/",
-        "https://www.aol.com/articles/lawyer-asks-fort-meade-revoke-090423000.html",
-        "https://baynews9.com/fl/tampa/news/2026/04/15/fort-meade-data-center-approved-despite-residents-concerns"
+        { "url": "https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf", "where": "Development Agreement recitals and Sec. 3.d, packet pp. 11, 13-14", "quote": "advance funds in the total amount of Ten Million Dollars ($10,000,000.00 USD) towards the City Work" },
+        { "url": "https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf", "where": "Sec. 3.b, packet p. 13", "quote": "In no event shall the DEVELOPER be required to pay more than $300,000.00 to the CITY" },
+        { "url": "https://npr.brightspotcdn.com/c1/05/48b3f71a4de98d2aa86e5dede270/fort-meade-data-center-4-15-26.pdf", "where": "p. 3, Additional Considerations item 2", "quote": "is not new revenue—it is simply an advanced payment of property taxes as part of an agreement to provide tax credits" },
+        "https://www.aol.com/articles/lawyer-asks-fort-meade-revoke-090423000.html"
       ]
     },
     "clawbacks": {
-      "present": null,
-      "triggers": [],
-      "proportional": null,
-      "notes": "The county's exemption came with a performance agreement, but its terms were not published in any source found. The mayor pledged legal action if performance falters.",
-      "sources": []
+      "present": true,
+      "triggers": ["jobs", "investment", "other"],
+      "proportional": false,
+      "notes": "The county performance agreement conditions the exemption on investing at least $125,000,000 by the end of the second exemption year and creating at least 50 full-time jobs at an average wage of at least $106,498 by the end of the third (Sec. 2.a-b). On failure, after written notice and a cure period of at least 30 days, the County may revoke the exemption by ordinance and recover all taxes exempted for any year the company was not entitled (Sec. 5.a, 5.c); recovery is per year, not scaled to the shortfall. Affiliates may satisfy the obligations (Sec. 2.e). The City agreement has no clawback; its only protection is that if the project is not built before the agreement expires, the City keeps the $10M advance (Sec. 3.d). No source supports the earlier note that the mayor pledged legal action.",
+      "sources": [
+        { "url": "https://polkcountyfl.legistar1.com/polkcountyfl/attachments/67224c75-3c9b-4320-87f2-683543813e80.pdf", "where": "Sec. 5.a and 5.c, pp. 5-6", "quote": "the Company shall be subject to payment of all taxes exempted for such year(s)" },
+        { "url": "https://polkcountyfl.legistar1.com/polkcountyfl/attachments/67224c75-3c9b-4320-87f2-683543813e80.pdf", "where": "Sec. 2.a-b, pp. 2-3", "quote": "create, by the end of the third (3rd) year of the Exemption Period, at least fifty (50) new full-time jobs" },
+        { "url": "https://polkcountyfl.legistar1.com/polkcountyfl/attachments/ac02059f-2c47-47c8-bede-7d33fab30048.pdf", "where": "Article III, para. 3-4, pp. 3-4", "quote": "the Board may, in its discretion, revoke the Fort Meade LLC Exemption and recover any taxes exempted" },
+        { "url": "https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf", "where": "Sec. 3.d, packet p. 14", "quote": "the CITY shall have no obligation to repay, reimburse, or otherwise compensate the DEVELOPER for the Developer Funding Advance" }
+      ]
     },
-    "decommissioning": { "present": null, "instrument": null, "amount_usd": null, "notes": "No bond, escrow, or restoration obligation reported anywhere.", "sources": [] },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "Neither the City agreement nor the county ordinance or performance agreement contains a decommissioning, restoration, or end-of-life obligation. The only surety is a construction bond of 110 percent of the engineer's estimate for the water and wastewater improvements (Sec. 3.a).",
+      "sources": [
+        { "url": "https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf", "where": "Sec. 3.a, packet p. 12; no decommissioning clause in Secs. 1-35", "quote": "furnish a bond or other surety in a form acceptable to the CITY in the amount of one hundred ten (110%) percent" }
+      ]
+    },
     "grid_costs": {
-      "present": null,
+      "present": true,
       "who_pays_interconnect": "unknown",
       "minimum_bill": null,
       "term_years": null,
-      "governed_by": "Florida SB 484 (Chapter 2026-65) large-load tariff; Duke Energy Florida's first filing was pending at the Public Service Commission in August 2026",
-      "notes": "Power would come from Duke Energy Florida; city residents are on a municipal power agency. The developer said the project will fund its own utility infrastructure, but no agreement-level term was published. Any minimum bill will come from the state tariff, not the city deal.",
+      "governed_by": "Florida CS/CS/SB 484 (2026), Data Centers, Chapter 2026-65, approved May 7, 2026; Duke Energy Florida's first large-load tariff petition under it was heard by the Public Service Commission in August 2026 and not yet approved",
+      "notes": "The City agreement is silent on electricity. The site is in Duke Energy Florida's investor-owned territory, not the City's municipal electric system (Fort Meade is an FMPA member), which the Commerce Secretary's letter cites as a risk because no PSC-approved large-load rate structure existed. SB 484 requires utilities to ensure each large-load customer bears its full cost of service; Duke's pending petition proposes a 20-year minimum term, minimum monthly bills, and exit fees, so any minimum bill will come from that tariff. The developer told residents it will fund its own utility infrastructure.",
       "sources": [
+        { "url": "https://npr.brightspotcdn.com/c1/05/48b3f71a4de98d2aa86e5dede270/fort-meade-data-center-4-15-26.pdf", "where": "p. 1, Energy Capacity", "quote": "within the territory of an Investor-Owned Utility that has not received approval from the Florida Public Service Commission on a rate structure" },
+        "https://www.flsenate.gov/Session/Bill/2026/484",
+        "https://www.wusf.org/politics-issues/2026-08-26/new-state-law-protect-consumers-data-center-costs-faces-first-test",
         "https://baynews9.com/fl/tampa/news/2026/02/11/fort-meade-residents-data-center-concern",
-        "https://www.wusf.org/politics-issues/2026-08-26/new-state-law-protect-consumers-data-center-costs-faces-first-test"
+        "https://floridadatacenters.org/polk-county"
       ]
     },
     "water": {
       "present": true,
       "limit_gpd": 50000,
-      "reporting": null,
-      "recycling_required": null,
+      "reporting": false,
+      "recycling_required": false,
       "cooling": "closed_loop",
-      "notes": "City provides 50,000 gallons per day of potable water for restrooms and kitchens, down from an initial ask of 140,000 to 150,000, with closed-loop cooling and no new wells. The water management district wrote the City on the day of the vote that its existing permit cannot serve the project and that any data center water permit needs full board approval at a public meeting. The state called the 50,000 figure woefully underestimated.",
+      "notes": "The City reserves up to 50,000 GPD of potable water and 50,000 GPD of sewer capacity at full buildout (Sec. 3.a, 4.a.i) for 20 years, with no vested right to more (Sec. 4.a.iv) and no City obligation to expand or join the Polk Regional Water Cooperative (Sec. 4.a.ii); drought restrictions apply to the developer like other commercial customers. The developer designs, builds, bonds, and dedicates the water and wastewater lines within five years, reimbursed 100 percent through impact-fee credits (Sec. 8). The agreement does not specify cooling technology or require recycling; reclaimed water is optional (Sec. 10). The only reporting duty is copies of regulatory filings to the City within 10 days (Sec. 3.e). The whole agreement is contingent on SWFWMD approving a modification of the City's Water Use Permit No. 20000645.008, which also sets the Effective Date (Sec. 35); SWFWMD wrote the City on April 14, 2026 that the demand is not in the existing permit and needs governing-board approval at a noticed meeting. Closed-loop cooling and the reduction from an initial 140,000 to 150,000 GPD are developer statements reported by WUSF and FOX 13. The state called 50,000 GPD woefully underestimated.",
       "sources": [
+        { "url": "https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf", "where": "Sec. 3.a, packet p. 12", "quote": "necessitates up to 50,000 gallons per day (\"GPD\") of potable water service at full buildout of the Property" },
+        { "url": "https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf", "where": "Sec. 35, packet pp. 28-29", "quote": "this AGREEMENT is contingent on the City obtaining approval from SWFWMD" },
+        { "url": "https://npr.brightspotcdn.com/c1/05/48b3f71a4de98d2aa86e5dede270/fort-meade-data-center-4-15-26.pdf", "where": "p. 2, Water Resources", "quote": "the projected demand for potable water appears woefully underestimated for a 4,400,000ft2 data center" },
         "https://www.wusf.org/environment/2026-04-08/fort-meade-is-one-step-closer-to-building-floridas-first-hysperscale-ai-data-center",
         "https://www.wusf.org/environment/2026-04-15/fort-meade-ai-data-center-project-hits-roadblock-over-new-water-rules",
-        "https://www.fox13news.com/news/florida-secretary-commerce-concerns-fort-meade-data-center-plan"
+        "https://news.wfsu.org/state-news/2026-04-20/floridas-commerce-secretary-comes-out-against-a-proposed-ai-data-center",
+        "https://www.fox13news.com/news/fort-meade-data-center-project-community-opposition"
       ]
     },
     "noise": {
-      "present": null,
+      "present": false,
       "limit_dba": null,
       "measured_at": null,
       "setback_ft": null,
-      "notes": "The developer projects 50 to 52 dB at a half mile with full backup generation permitted up to 100 hours a year. Whether the agreement sets a limit is unknown.",
-      "sources": []
+      "notes": "The agreement sets no noise limit; Sec. 14.a only requires compliance with laws on noise and emissions. Stonebridge told the planning board that generators would register 50 to 52 dB a half mile away, run about 40 hours in a typical year, and be permitted for no more than 100 hours a year (WUSF); at a January 2026 forum it said equipment produces about 85 dB and generators would run about an hour a week (The Ledger).",
+      "sources": [
+        { "url": "https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf", "where": "Sec. 14.a, packet p. 23", "quote": "relating to: environmental protection; water use and wastewater disposal; noise and emissions" },
+        "https://www.wusf.org/environment/2026-04-08/fort-meade-is-one-step-closer-to-building-floridas-first-hysperscale-ai-data-center",
+        "https://www.yahoo.com/news/fort-meade-residents-hurl-skepticism-223635924.html"
+      ]
     },
     "jobs": {
       "present": true,
-      "promised_permanent": 450,
+      "promised_permanent": 50,
       "promised_construction": null,
-      "local_hire": null,
-      "prevailing_wage": null,
-      "enforceable": null,
-      "notes": "Three inconsistent numbers: the developer and City say 450-plus permanent jobs at about $107,000 average; the county tax-exemption filing says 50 full-time jobs; the state Commerce Secretary called the projections likely overstated.",
+      "local_hire": true,
+      "prevailing_wage": false,
+      "enforceable": true,
+      "notes": "The only binding jobs number is in the county performance agreement: at least 50 new full-time jobs at an average wage of at least $106,498 (200 percent of the 2025 Polk County average) by the end of the third exemption year, with commercially reasonable efforts to hire Polk County residents, enforced by revocation and recovery of exempted taxes. The City agreement contains no jobs term. The developer's 450-plus figure (Propmodo; at least 456 by 2031 per The Ledger's forum coverage, with construction peaking at 3,960 in 2028) is a projection the Commerce Secretary called a severe over projection with no supporting data in the City staff report.",
       "sources": [
-        "https://www.fox13news.com/news/fort-meade-data-center-project-community-opposition",
-        "https://dailyridge.com/2025/11/07/polk-county-commissioners-approve-tax-exemption-to-new-business-to-build-data-center/",
-        "https://www.lkldnow.com/lakeland-watching-fort-meade-data-center-as-water-concerns-grow/"
+        { "url": "https://polkcountyfl.legistar1.com/polkcountyfl/attachments/67224c75-3c9b-4320-87f2-683543813e80.pdf", "where": "Sec. 2.b-c, p. 3", "quote": "paying an average annual wage equal to or in excess of $106,498, which is 200% of the 2025 average annual wage" },
+        { "url": "https://polkcountyfl.legistar1.com/polkcountyfl/attachments/ac02059f-2c47-47c8-bede-7d33fab30048.pdf", "where": "Article I, para. 4.b, p. 2", "quote": "The Company will create at least 50 new full-time jobs in Polk County" },
+        { "url": "https://npr.brightspotcdn.com/c1/05/48b3f71a4de98d2aa86e5dede270/fort-meade-data-center-4-15-26.pdf", "where": "p. 3, item 3", "quote": "projected creation of more than 450 jobs employed directly at the data center" },
+        "https://propmodo.com/florida-data-center-plan-advances-amid-local-backlash/",
+        "https://www.yahoo.com/news/fort-meade-residents-hurl-skepticism-223635924.html",
+        "https://dailyridge.com/2025/11/07/polk-county-commissioners-approve-tax-exemption-to-new-business-to-build-data-center/"
       ]
     },
-    "local_contracting": { "present": null, "local_subcontracting": null, "road_repair": null, "infrastructure_contribution_usd": null, "notes": null, "sources": [] },
-    "transparency": {
-      "present": null,
-      "nda": null,
-      "agreement_public": null,
-      "public_dashboard": null,
-      "audit_cadence": null,
-      "audit_independent": null,
-      "notes": "No NDA was confirmed, but the tenant is undisclosed, an interim city manager initially declined to name the company, and the June 2025 rezoning passed before most residents knew. The executed development agreement could not be located; the City's agenda archive links are broken.",
+    "local_contracting": {
+      "present": true,
+      "local_subcontracting": true,
+      "road_repair": false,
+      "infrastructure_contribution_usd": 300000,
+      "notes": "County performance agreement Sec. 2.c: commercially reasonable efforts to use local suppliers where practicable. The City agreement has no local-contracting term; the City Manager approves the developer's contractors for the water and wastewater work (Sec. 6.a). No haul-route repair obligation; a construction traffic plan is to be set at permitting (Sec. 6.g). The developer builds and dedicates public water, wastewater, and roadway improvements, but the utility work is repaid in full through impact-fee credits (Sec. 8.b), and the $10M advance is repaid through tax credits, so the only unreimbursed cash contribution is up to $300,000 toward water rights (Sec. 3.b).",
       "sources": [
+        { "url": "https://polkcountyfl.legistar1.com/polkcountyfl/attachments/67224c75-3c9b-4320-87f2-683543813e80.pdf", "where": "Sec. 2.c, p. 3", "quote": "use local suppliers for its goods and services where practicable" },
+        { "url": "https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf", "where": "Sec. 8.b, packet pp. 20-21", "quote": "provide one hundred percent (100%) of the Reimbursement Amount in the form of Impact Fee Credits" },
+        { "url": "https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf", "where": "Sec. 6.g, packet p. 20", "quote": "memorialize a construction access agreement or construction management plan, which among other items, shall detail a construction traffic plan" }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": null,
+      "agreement_public": true,
+      "public_dashboard": false,
+      "audit_cadence": "on_request",
+      "audit_independent": false,
+      "notes": "The agreement text is public in the City's April 14, 2026 agenda packet; the county ordinance and signed performance agreement are on Polk County's Legistar. The City may audit the developer's payment records at its headquarters on five business days' notice for the term plus 10 years (Sec. 16); the county gets annual reports, DOR Form 418 filings, and an on-site inspection with 10 business days' notice (performance agreement Sec. 3). No NDA appears in either document, but the tenant is undisclosed (the state letter notes no operator has been named), interim city manager Alis Drumgo declined to name the company at the June 2025 rezoning (DCD), and the Ledger reported many residents were unaware of that 5-0 vote. The staff memo says the P&Z hearing was April 7, 2026; the agreement's recital says April 9. The executed and recorded agreement was not located; the Effective Date is to be set by a recorded document once SWFWMD acts (Sec. 35).",
+      "sources": [
+        { "url": "https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf", "where": "Sec. 16, packet p. 25", "quote": "for ten (10) years from the date of final payment under this AGREEMENT for audit or inspection by the CITY" },
+        { "url": "https://polkcountyfl.legistar1.com/polkcountyfl/attachments/67224c75-3c9b-4320-87f2-683543813e80.pdf", "where": "Sec. 3.c(3), p. 4", "quote": "allow the Program Administrator to conduct an on-site inspection of the Facility" },
+        { "url": "https://npr.brightspotcdn.com/c1/05/48b3f71a4de98d2aa86e5dede270/fort-meade-data-center-4-15-26.pdf", "where": "p. 1", "quote": "especially given that a data center operator has not yet been disclosed" },
+        "https://www.datacenterdynamics.com/en/news/44-million-sq-ft-data-center-campus-gets-zoning-approval-in-fort-meade-florida/",
+        "https://www.yahoo.com/news/fort-meade-residents-hurl-skepticism-223635924.html",
         "https://www.wusf.org/environment/2026-02-16/proposals-massive-data-centers-across-florida-are-local-governments-prepared"
       ]
     },
@@ -105,18 +163,25 @@
       "duration_years": 10,
       "pilot": false,
       "estimated_forgone_usd": 148375360,
-      "but_for_test": null,
-      "notes": "Polk County granted a 90 percent ad valorem exemption for 2029 to 2038, about $14.8M a year forgone; the school levy is not exempted. This is the widely quoted $150M over ten years. Whether the City granted its own exemption is unconfirmed.",
+      "but_for_test": false,
+      "notes": "Polk County Ordinance 25-062 (adopted Nov. 4, 2025, unanimous; recognized for Fort Meade DC, LLC on Nov. 18) exempts 90 percent of the assessed value of qualifying new improvements and tangible personal property from countywide levies for tax years 2029 through 2038, expiring Dec. 31, 2038; it does not apply to municipal, school, MSTU, water-management-district, or voted-debt taxes, or to land. The Property Appraiser's report (Exhibit A) estimates $14,837,536 of county revenue lost in a full year on $918M of real improvements and $1,318,320,000 of equipment, with the school board still collecting about $13,159,501; the widely quoted $150M is that annual figure times ten (148,375,360), which is not in the ordinance and overstates the total because equipment depreciates. The ordinance makes no but-for finding. The City granted no exemption; instead it repays the $10M advance through credits against City ad valorem taxes, capped at 40 percent of the City levy on the property per year, carried forward, subject to annual appropriation, and running with the land (Sec. 4.d); the project is also grandfathered into the current impact-fee schedule and receives 100 percent impact-fee credits for the utility work.",
       "sources": [
+        { "url": "https://polkcountyfl.legistar1.com/polkcountyfl/attachments/ac02059f-2c47-47c8-bede-7d33fab30048.pdf", "where": "Article III para. 1-2 and Article IV, pp. 3-4", "quote": "for a period of ten (10) tax years (the \"Exemption Period\") commencing with Tax Year 2029 through Tax Year 2038" },
+        { "url": "https://polkcountyfl.legistar1.com/polkcountyfl/attachments/ac02059f-2c47-47c8-bede-7d33fab30048.pdf", "where": "Article I para. 4.g.iii, p. 3, and Exhibit A totals", "quote": "if the exemption applied for was granted is $14,837,536" },
+        { "url": "https://polkcountyfl.legistar1.com/polkcountyfl/attachments/5b6f6f06-d166-4f0c-801d-ec9e4dce1df7.pdf", "where": "recitals, p. 1", "quote": "adopted Ordinance No. 25-062 (the \"Ordinance\") establishing an exemption from certain ad valorem taxation" },
+        { "url": "https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf", "where": "Sec. 4.d.ii and 4.d.vi, packet pp. 15-16", "quote": "In no event shall the Tax Credits applied in any single tax year exceed forty percent (40%)" },
         "https://dailyridge.com/2025/11/07/polk-county-commissioners-approve-tax-exemption-to-new-business-to-build-data-center/",
-        "https://citizenportal.ai/articles/6731770/florida/polk-county/polk-county-grants-10year-90-ad-valorem-tax-exemption-to-proposed-fort-meade-data-center"
+        "https://propmodo.com/florida-data-center-plan-advances-amid-local-backlash/"
       ]
     }
   },
   "criticisms": [
-    { "summary": "Florida's Commerce Secretary called the project fundamentally flawed and far from approved in an April 16, 2026 letter.", "source": "https://www.fox13news.com/news/florida-secretary-commerce-concerns-fort-meade-data-center-plan" },
-    { "summary": "Two lawsuits filed May 14, 2026 seek to void the approval; recall petitions against the mayor and two commissioners were submitted in July.", "source": "https://thecitrustea.com/2026/06/23/fort-meade-residents-file-two-lawsuits-to-block-stonebridge-data-center-as-watchdogs-launch-recall-push/" },
-    { "summary": "40 of 41 public commenters opposed the deal at the vote. The vice mayor called it a leap of faith.", "source": "https://www.aol.com/articles/lawyer-asks-fort-meade-revoke-090423000.html" }
+    { "summary": "Florida Commerce Secretary J. Alex Kelly's April 15, 2026 letter to the mayor called the project fundamentally flawed and far from approved, said the $10M is an advance on property taxes, called the 450-jobs projection a severe over projection, and said the 50,000 GPD water demand is woefully underestimated.", "source": "https://npr.brightspotcdn.com/c1/05/48b3f71a4de98d2aa86e5dede270/fort-meade-data-center-4-15-26.pdf" },
+    { "summary": "The Southwest Florida Water Management District wrote the City on April 14, 2026 that the project's demand is not in the City's existing permit and needs governing-board approval at a noticed meeting; the agreement is contingent on that approval.", "source": "https://news.wfsu.org/state-news/2026-04-20/floridas-commerce-secretary-comes-out-against-a-proposed-ai-data-center" },
+    { "summary": "Two lawsuits filed May 14, 2026 by Lakeland attorney A. Brent Geohagan for five residents ask a judge to void the approval and block construction permits.", "source": "https://thecitrustea.com/2026/06/23/fort-meade-residents-file-two-lawsuits-to-block-stonebridge-data-center-as-watchdogs-launch-recall-push/" },
+    { "summary": "The Fort Meade Recall Committee delivered petitions with more than 1,000 signatures to City Hall in mid-July 2026 seeking to remove Mayor Jaret Williams, Vice Mayor Petrina McCutchen, and Commissioner Matthew Taylor.", "source": "https://baynews9.com/fl/tampa/news/2026/07/17/fort-meade-recall-committee-submits-petitions-to-remove-city-leaders" },
+    { "summary": "Forty of 41 public commenters opposed the deal at the April 14 vote, per the FloridaDataCenters.org tracker; the vice mayor defended the vote as taking a leap of faith.", "source": "https://www.aol.com/articles/lawyer-asks-fort-meade-revoke-090423000.html" },
+    { "summary": "The Planning and Zoning Board recommended that the mayor and commissioners visit a comparable data center before approving the agreement; the commission approved it a week later without doing so.", "source": "https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf" }
   ],
   "contributors": ["apeabody007"],
   "last_reviewed": "2026-09-07"

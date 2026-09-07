@@ -2,18 +2,31 @@
   "$schema": "../schema/deal.schema.json",
   "id": "us-az-goodyear-2023",
   "status": "approved",
-  "verification": "press",
+  "verification": "primary",
   "jurisdiction": { "country": "US", "state": "AZ", "locality": "City of Goodyear", "level": "city" },
   "operator": "Microsoft",
   "developer": "Microsoft Corporation",
-  "project": "Microsoft Goodyear campus, Third Amendment to the 2019 Infrastructure Development Agreement",
+  "project": "Microsoft PHX 10-11 campus (Project 10-11), 279 acres between Broadway Road and MC-85; Third Amendment to the Infrastructure Development Agreement for Project 10-11 (IDA recorded June 27, 2019, Maricopa County no. 2019-0486224), approved by Resolution No. 2023-2295",
   "agreement_type": "development_agreement",
   "dates": { "signed": null, "approved": "2023-03-06", "effective": null },
-  "scale": { "acres": 300, "mw": null, "capex_usd": null, "sqft": null },
+  "scale": { "acres": 279, "mw": null, "capex_usd": null, "sqft": 790000 },
   "documents": [
-    { "title": "ABC15: Microsoft agrees to make data centers air-cooled amid water infrastructure challenges", "url": "https://www.abc15.com/news/business/microsoft-agrees-to-make-data-centers-air-cooled-amid-water-infrastructure-challenges-in-goodyear", "kind": "press", "date": "2023-03-07" },
-    { "title": "AZBEX: Microsoft Goodyear update to development agreement", "url": "https://azbex.com/local-news/microsoft-goodyear-update-development-agreement/", "kind": "press", "date": null },
-    { "title": "Futurism summarizing The Atlantic on water use and redaction", "url": "https://futurism.com/the-byte/microsoft-arizona-water-ai", "kind": "press", "date": "2024-03-01" }
+    { "title": "City of Goodyear, March 6, 2023 City Council Regular Meeting agenda packet: Item 7 Council Action Report (pp. 41-46), Resolution No. 2023-2295 (pp. 47-50), Exhibit 1 Third Amendment to Infrastructure Development Agreement for Project 10-11, 24 pp. (packet pp. 51-74), exhibits (pp. 75-113)", "url": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf", "kind": "primary", "date": "2023-03-06" },
+    { "title": "City of Goodyear, March 6, 2023 City Council Regular Meeting minutes (Item 7 adopted, unanimous)", "url": "https://public.destinyhosted.com/agenda_publish.cfm?id=46639&mt=ALL&get_month=3&get_year=2023&dsp=min&seq=1463", "kind": "primary", "date": "2023-03-06" },
+    { "title": "Development Agreement for Project 10-11 (self-certification agreement), Exhibit B to Resolution No. 2019-1942, adopted February 25, 2019 (Legistar file 2019-6594)", "url": "https://legistar.granicus.com/Goodyear/attachments/90a3cd1d-c351-4a3f-add0-c8c22bb6f04a.pdf", "kind": "primary", "date": "2019-02-25" },
+    { "title": "Infrastructure Development Agreement for Project 10-11, Exhibit 2 to Resolution No. 2019-1959, adopted June 24, 2019 (Legistar file 2019-6636, .docx)", "url": "https://legistar.granicus.com/Goodyear/attachments/c8f78edc-0d76-4a80-ad3a-330c5960afb4.docx", "kind": "primary", "date": "2019-06-24" },
+    { "title": "First Amendment to the Infrastructure Development Agreement for PHX 10-11, Resolution No. 2020-2077, July 6, 2020 (Legistar file 2020-6994)", "url": "https://legistar.granicus.com/Goodyear/attachments/c62e6e50-547f-4502-810e-189214e86da3.pdf", "kind": "primary", "date": "2020-07-06" },
+    { "title": "Goodyear Code of Ordinances Sec. 11-1-8 Noise", "url": "https://goodyear.municipal.codes/Code/11-1-8", "kind": "government_page", "date": null },
+    { "title": "A.R.S. 41-1519, Computer data center tax relief", "url": "https://www.azleg.gov/ars/41/01519.htm", "kind": "government_page", "date": null },
+    { "title": "Phoenix Business Journal via Arizona Technology Council: Microsoft agrees to make data centers air-cooled amid water infrastructure challenges (Audrey Jensen)", "url": "https://www.aztechcouncil.org/microsoft-agrees-to-make-data-centers-air-cooled-amid-water-infrastructure-challenges-in-goodyear/", "kind": "press", "date": "2023-03-14" },
+    { "title": "ABC15 (Phoenix Business Journal): Microsoft agrees to make data centers air-cooled", "url": "https://www.abc15.com/news/business/microsoft-agrees-to-make-data-centers-air-cooled-amid-water-infrastructure-challenges-in-goodyear", "kind": "press", "date": "2023-03-07" },
+    { "title": "AZBEX: Microsoft, Goodyear update development agreement", "url": "https://azbex.com/local-news/microsoft-goodyear-update-development-agreement/", "kind": "press", "date": "2023-03-17" },
+    { "title": "The Atlantic: AI Is Taking Water From the Desert (Karen Hao)", "url": "https://www.theatlantic.com/technology/archive/2024/03/ai-water-climate-microsoft/677602/", "kind": "press", "date": "2024-03-01" },
+    { "title": "Futurism summarizing The Atlantic on water use and redaction", "url": "https://futurism.com/the-byte/microsoft-arizona-water-ai", "kind": "press", "date": "2024-03-02" },
+    { "title": "The Open Notebook: Karen Hao on how the Goodyear water figure was found", "url": "https://www.theopennotebook.com/2024/05/28/karen-hao-combats-company-stonewalling-about-ais-resource-demands/", "kind": "analysis", "date": "2024-05-28" },
+    { "title": "ABC15: Goodyear City Council adopts resolution approving development agreement for Microsoft (Arizona Republic)", "url": "https://www.abc15.com/news/region-west-valley/goodyear/goodyear-city-council-adopts-resolution-approving-development-agreement-for-microsoft", "kind": "press", "date": "2019-02-25" },
+    { "title": "West Valley View: Microsoft reveals Goodyear plans, purchases more land", "url": "https://www.westvalleyview.com/news/microsoft-reveals-goodyear-plans-purchases-more-land/article_461ce5a6-6b8d-11e9-8d40-fbe26d862a33.html", "kind": "press", "date": null },
+    { "title": "Microsoft: Building world-class sustainable datacenters and investing in solar power in Arizona", "url": "https://blogs.microsoft.com/on-the-issues/2019/07/30/building-world-class-sustainable-datacenters-and-investing-in-solar-power-in-arizona/", "kind": "press", "date": "2019-07-30" }
   ],
   "terms": {
     "community_fund": {
@@ -23,79 +36,130 @@
       "scales_with_project": null,
       "controlled_by": null,
       "community_seat": null,
-      "notes": "No community fund. Microsoft funds $800,000 for a City staff coordinator dedicated to its projects.",
+      "notes": "No community fund. Before the Phase Three (PHX 12) building permit, Microsoft deposits $800,000 with the City to pay a City-retained designated representative who coordinates Microsoft's PHX 10-11 and PHX-70 projects for two years; unused funds are returned and any excess cost is invoiced to Microsoft (Sec. 6.3.5 and new Sec. 33).",
       "sources": [
-        "https://www.abc15.com/news/business/microsoft-agrees-to-make-data-centers-air-cooled-amid-water-infrastructure-challenges-in-goodyear",
+        { "url": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf", "where": "Third Amendment Sec. 6.3.5, p. 12 of 24 (packet p. 62)", "quote": "Owner shall deposit with the City a cash deposit of $800,000 for the estimated costs the City will incur" },
         "https://azbex.com/local-news/microsoft-goodyear-update-development-agreement/"
       ]
     },
-    "clawbacks": { "present": null, "triggers": [], "proportional": null, "notes": null, "sources": [] },
-    "decommissioning": { "present": null, "instrument": null, "amount_usd": null, "notes": null, "sources": [] },
+    "clawbacks": {
+      "present": false,
+      "triggers": [],
+      "proportional": null,
+      "not_applicable": true,
+      "notes": "No public incentive to claw back; the money flows from Microsoft to the City. The $36M in-lieu payment is trued up in both directions after the updated Carollo study (Sec. 6.3.3). Remedies for non-performance are permit and certificate-of-occupancy holds (Secs. 6.3.6-6.3.11, 16.2), $5,000 per day for discharges over 500,000 gpd and $10,000 per day for discharges through the old line after the deadline, plus water shut-off after five days of violation (Secs. 6.4.7-6.4.8), and a 30-business-day cure period before default (new Sec. 31).",
+      "sources": [
+        { "url": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf", "where": "Third Amendment Sec. 6.4.7-6.4.8, p. 16 of 24 (packet p. 66)", "quote": "Owner shall pay the City the sum of $10,000 per day on which any Discharge Violation occurs" },
+        { "url": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf", "where": "Third Amendment Sec. 6.3.3, pp. 10-11 of 24 (packet pp. 60-61)", "quote": "the City agrees to reimburse Owner the difference between what was paid and what was owed" }
+      ]
+    },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "No decommissioning, restoration, or end-of-life obligation in the Third Amendment; none found in the 2019 IDA or the 2019 self-certification agreement. Off-site infrastructure is dedicated to the City with a two-year warranty (Sec. 16.3).",
+      "sources": [
+        { "url": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf", "where": "Third Amendment Secs. 1-28 (packet pp. 51-74); no decommissioning clause", "quote": "Owner shall warrant the infrastructure improvements for two (2) years following the City's acceptance" }
+      ]
+    },
     "grid_costs": {
-      "present": null,
-      "who_pays_interconnect": null,
+      "present": false,
+      "who_pays_interconnect": "unknown",
       "minimum_bill": null,
       "term_years": null,
       "governed_by": null,
-      "notes": "Microsoft contracted 150 MW from First Solar's Sun Streams 2 plant for its Arizona campuses. Substation and transmission cost allocation with the utility is unknown.",
+      "notes": "The agreement covers water and wastewater only; electricity is not addressed. Microsoft announced in 2019 that it contracted output from First Solar's 150 MW Sun Streams 2 plant for its Arizona campuses. Substation and transmission cost allocation with the utility is unknown.",
       "sources": [
         "https://blogs.microsoft.com/on-the-issues/2019/07/30/building-world-class-sustainable-datacenters-and-investing-in-solar-power-in-arizona/"
       ]
     },
     "water": {
       "present": true,
-      "limit_gpd": null,
-      "reporting": false,
-      "recycling_required": null,
+      "limit_gpd": 5000000,
+      "reporting": true,
+      "recycling_required": false,
       "cooling": "mixed",
-      "notes": "The 2023 amendment has Microsoft pay $36M toward a $90M wastewater plant expansion, buying 1.2 million gallons per day of capacity, with $5M financial assurance for a new sewer line. Buildings 1 to 3 are water-cooled with recirculation; buildings 4 and 5 must be air-cooled. The 2019 plan to treat wastewater for city reuse was dropped as cost prohibitive. A Microsoft-commissioned estimate of about 56 million gallons a year was shared with council, but exact figures were redacted from city records as proprietary.",
+      "notes": "The City's obligation to serve up to 5 MGD of potable water applies only to data center use (Sec. 5.1; original IDA planned five water-cooled buildings at no more than 1 MGD each). Only Phases One to Three (PHX 10, 11, 12; about 290,000, 250,000, and 250,000 sq ft) may use direct evaporative cooling; all later buildings must use air-cooled chillers (Recital E, Secs. 2.11, 5.1). Before the PHX 12 permit Microsoft pays a $36,000,000 in-lieu payment toward the City's programmed $90,000,000 expansion of the 157th Ave. wastewater plant (3,000,000 gpd added; Microsoft needs 1,200,000 gpd at full build-out), trued up after an updated engineering study; wastewater impact fees for the plant are waived and those already collected are refunded (Sec. 6.3.3). Microsoft deposits $5,000,000 as financial assurance for a dedicated discharge line (about 12,000 linear feet) and water lines, escrowed against an engineer's estimate (Sec. 6.3.4), and must finish the line by August 31, 2024 (Sec. 6.3.6). Until the plant expands, discharge is capped at 500,000 gpd with TDS temporarily raised to 2,853 mg/L; afterward TDS may not exceed the greater of 1,400 mg/L or double the incoming water (Secs. 6.4.3, 6.4.5). Microsoft installs flow meters and the City installs its own with real-time electronic access (Sec. 6.4.4). A Water Resources Fee applies if full build-out demand exceeds Microsoft's Type 1 grandfathered right, waived only if 50 percent of potable water is returned as treated discharge usable as raw water; the 2019 plan to treat discharge for the City's surface-water plant was abandoned (Recital I, Secs. 5.8, 6.3.12). Water is billed at the commercial large-user rate of $10.19 per thousand gallons, CPI-adjusted (Sec. 17.8.3). The Atlantic's Karen Hao found a pre-construction estimate of about 56 million gallons a year at full build-out in a publicly available document Microsoft supplied to the City, after the City's records response redacted water figures as proprietary.",
       "sources": [
-        "https://www.abc15.com/news/business/microsoft-agrees-to-make-data-centers-air-cooled-amid-water-infrastructure-challenges-in-goodyear",
-        "https://azbex.com/local-news/microsoft-goodyear-update-development-agreement/",
+        { "url": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf", "where": "Third Amendment Sec. 6.3.3, p. 10 of 24 (packet p. 60)", "quote": "an in-lieu payment of thirty-six million dollars ($36,000,000), which represents an estimated cost on a per gallon basis" },
+        { "url": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf", "where": "Third Amendment Sec. 5.1, p. 5 of 24 (packet p. 55)", "quote": "all additional buildings developed on the Property will use air-cooled chillers (non-water cooled)" },
+        { "url": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf", "where": "Third Amendment Sec. 6.3.4, p. 11 of 24 (packet p. 61)", "quote": "a cash deposit of $5,000,000 for the estimated costs of the Dedicated Discharge Line and water lines" },
+        { "url": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf", "where": "Third Amendment Sec. 6.4.4, p. 15 of 24 (packet p. 65)", "quote": "provide the City real-time electronic access to the instantaneous and aggregate daily flows of discharge" },
+        { "url": "https://legistar.granicus.com/Goodyear/attachments/c8f78edc-0d76-4a80-ad3a-330c5960afb4.docx", "where": "IDA recitals and Sec. 2, Full Build-Out definition", "quote": "five (5) buildings, each of which would require no more than, 1 MGD (million gallons per day) of water" },
+        "https://www.aztechcouncil.org/microsoft-agrees-to-make-data-centers-air-cooled-amid-water-infrastructure-challenges-in-goodyear/",
+        "https://www.theatlantic.com/technology/archive/2024/03/ai-water-climate-microsoft/677602/",
+        "https://www.theopennotebook.com/2024/05/28/karen-hao-combats-company-stonewalling-about-ais-resource-demands/",
         "https://futurism.com/the-byte/microsoft-arizona-water-ai"
       ]
     },
-    "noise": { "present": null, "limit_dba": null, "measured_at": null, "setback_ft": null, "notes": "Goodyear's code uses a reasonable-person standard rather than decibel limits. No agreement term found.", "sources": [] },
+    "noise": {
+      "present": false,
+      "limit_dba": null,
+      "measured_at": null,
+      "setback_ft": null,
+      "notes": "No noise term. Goodyear's code section 11-1-8 uses an unreasonably-loud standard with no decibel limits. The amendment does extend the berming and landscaping mitigation on the east and west property lines 100 feet north of the northern boundary before PHX 12 occupancy (Sec. 6.3.13).",
+      "sources": [
+        "https://goodyear.municipal.codes/Code/11-1-8",
+        { "url": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf", "where": "Third Amendment Sec. 6.3.13, p. 14 of 24 (packet p. 64)", "quote": "the berming and landscaping mitigation on the east and west property lines of the Property" }
+      ]
+    },
     "jobs": {
-      "present": true,
+      "present": false,
       "promised_permanent": 100,
       "promised_construction": 1000,
       "local_hire": null,
       "prevailing_wage": null,
-      "enforceable": null,
-      "notes": "Microsoft projected 100-plus permanent and 1,000-plus construction jobs across Goodyear and El Mirage combined. These are projections in a press release, not agreement terms.",
+      "enforceable": false,
+      "notes": "The agreement contains no jobs term. Microsoft's July 30, 2019 announcement projected more than 100 permanent and more than 1,000 construction jobs across its Goodyear and El Mirage campuses combined. Microsoft's counsel told council each building represents more than a $300 million investment.",
       "sources": [
-        "https://blogs.microsoft.com/on-the-issues/2019/07/30/building-world-class-sustainable-datacenters-and-investing-in-solar-power-in-arizona/"
+        "https://blogs.microsoft.com/on-the-issues/2019/07/30/building-world-class-sustainable-datacenters-and-investing-in-solar-power-in-arizona/",
+        "https://www.aztechcouncil.org/microsoft-agrees-to-make-data-centers-air-cooled-amid-water-infrastructure-challenges-in-goodyear/"
       ]
     },
-    "local_contracting": { "present": null, "local_subcontracting": null, "road_repair": null, "infrastructure_contribution_usd": null, "notes": null, "sources": [] },
+    "local_contracting": {
+      "present": false,
+      "local_subcontracting": null,
+      "road_repair": null,
+      "infrastructure_contribution_usd": 36000000,
+      "notes": "No local-contracting or haul-route term. Microsoft designs and builds all on-site and off-site water and wastewater infrastructure at its sole cost, acquires easements, and dedicates off-site work to the City (Secs. 5.3, 13.2, 16.3); the $36M in-lieu payment replaces wastewater impact fees rather than adding to them.",
+      "sources": [
+        { "url": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf", "where": "Third Amendment Sec. 5.3, pp. 6-7 of 24 (packet pp. 56-57)", "quote": "Owner shall either design and construct, at Owner's sole cost, all Necessary Utility Infrastructure Improvements or make an in-lieu payment" }
+      ]
+    },
     "transparency": {
       "present": true,
       "nda": null,
-      "agreement_public": null,
+      "agreement_public": true,
       "public_dashboard": false,
       "audit_cadence": null,
       "audit_independent": null,
-      "notes": "Water-use figures were redacted from public records as proprietary. The 2019 agreement let Microsoft build under a self-certification process before site-plan adoption. The resolution text could not be fetched from the City's agenda archive.",
+      "notes": "The full Third Amendment (executed by Microsoft CVP Aditya Dalmia on February 27, 2023; City signature blank in the packet) is in the public March 6, 2023 agenda packet, and the 2019 agreements are on the City's Legistar. The City's own action report records that Microsoft had not built the TDS-treatment, storage, and discharge-control improvements that were conditions of PHX 11's certificate of occupancy, and that the amendment supplied a temporary fix. When The Atlantic requested water-use records in 2023-24 the City produced documents with the figures blacked out as proprietary to Microsoft; the 56 million gallon estimate came from a footnoted pre-construction document. The 2019 self-certification agreement let Microsoft start two buildings before re-platting or site plan approval. The City's recorded copy of the Third Amendment and its execution date were not located.",
       "sources": [
+        { "url": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf", "where": "Council Action Report, Staff Analysis, packet p. 43", "quote": "Microsoft has not completed the construction of the improvements that would limit the level of TDS" },
+        "https://www.theopennotebook.com/2024/05/28/karen-hao-combats-company-stonewalling-about-ais-resource-demands/",
         "https://futurism.com/the-byte/microsoft-arizona-water-ai",
-        "https://www.abc15.com/news/region-west-valley/goodyear/goodyear-city-council-adopts-resolution-approving-development-agreement-for-microsoft"
+        { "url": "https://legistar.granicus.com/Goodyear/attachments/90a3cd1d-c351-4a3f-add0-c8c22bb6f04a.pdf", "where": "Recitals I-K and Sec. 10", "quote": "desirous of pursuing development through a self-certification type process" }
       ]
     },
     "tax": {
-      "present": null,
+      "present": false,
       "abatement_pct": null,
       "duration_years": null,
       "pilot": null,
       "estimated_forgone_usd": null,
       "but_for_test": null,
-      "notes": "No city abatement or PILOT found. Arizona's state computer data center program exempts qualifying equipment from transaction and use tax for up to ten years; Microsoft's certification status is unknown.",
-      "sources": []
+      "not_applicable": true,
+      "notes": "No city abatement or PILOT. The City stops charging the 157th Ave. plant's share of wastewater impact fees and refunds those collected, in exchange for the $36M in-lieu payment (Sec. 6.3.3); all other impact fees remain payable (Sec. 5.7). Arizona's Computer Data Center program (A.R.S. 41-1519) exempts certified data center equipment from state, county, and city transaction privilege and use tax for ten full calendar years after certification (twenty for a sustainable redevelopment project), with a $50M minimum investment in Maricopa County; whether Microsoft certified this campus is unknown.",
+      "sources": [
+        { "url": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf", "where": "Third Amendment Sec. 6.3.3, p. 11 of 24 (packet p. 61)", "quote": "The City shall not charge the portion of wastewater development impact fees attributable to the 157th Ave. WWTP" },
+        "https://www.azleg.gov/ars/41/01519.htm"
+      ]
     }
   },
   "criticisms": [
-    { "summary": "The Atlantic reported in March 2024 that the campus would use about 56 million gallons a year and that the City redacted the figures as proprietary.", "source": "https://futurism.com/the-byte/microsoft-arizona-water-ai" },
-    { "summary": "The 2019 agreement allowed construction to start under self-certification before the site plan was adopted.", "source": "https://www.abc15.com/news/region-west-valley/goodyear/goodyear-city-council-adopts-resolution-approving-development-agreement-for-microsoft" }
+    { "summary": "The Atlantic reported in March 2024 that the campus would use about 56 million gallons of drinking water a year at full build-out, a figure the City had redacted from public records as proprietary to Microsoft.", "source": "https://www.theatlantic.com/technology/archive/2024/03/ai-water-climate-microsoft/677602/" },
+    { "summary": "The City's March 6, 2023 action report states Microsoft sought a permanent certificate of occupancy for its second building without having built the TDS treatment, storage, and discharge-control improvements that were conditions of occupancy, and that the existing Broadway Road sewer was never intended to carry its industrial discharge.", "source": "https://public.destinyhosted.com/goodydocs/2023/CC/20230306_1463/AGENDApacket__03-06-23_0558_1463.pdf" },
+    { "summary": "The February 25, 2019 development agreement (Resolution 2019-1942) let Microsoft build its first two buildings through a self-certification process before re-platting or site plan approval, with Microsoft bearing the risk of rework.", "source": "https://legistar.granicus.com/Goodyear/attachments/90a3cd1d-c351-4a3f-add0-c8c22bb6f04a.pdf" }
   ],
   "contributors": ["apeabody007"],
   "last_reviewed": "2026-09-07"
