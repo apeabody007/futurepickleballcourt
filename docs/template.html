@@ -142,6 +142,7 @@
   .sheet-meta { padding: 14px 22px; border-bottom: 1px solid var(--hair); font-family: var(--mono); font-size: 13.5px; line-height: 1.6; color: var(--ink-2); }
   .sheet-meta b { color: var(--ink); font-weight: 400; }
   .sheet-meta a { color: var(--ink); }
+  .sheet-meta .meta-note { color: var(--ink-3); }
   .clauses { display: grid; grid-template-columns: 1fr 1fr; }
   .clause { padding: 16px 22px 18px; border-bottom: 1px solid var(--hair); border-right: 1px solid var(--hair); }
   .clause:nth-child(2n) { border-right: 0; }
@@ -385,7 +386,7 @@
     if (d.status !== 'signed' && d.status !== 'approved') when = d.status + (d.dates.signed || d.dates.approved ? ' (' + when + ')' : '');
     meta.push(esc(d.agreement_type.replace(/_/g, ' ')) + ', ' + esc(when));
     var who = []; if (d.operator) who.push('operator ' + esc(d.operator)); if (d.developer) who.push('developer ' + esc(d.developer)); if (who.length) meta.push(who.join(' · '));
-    var sc = []; if (d.scale) { if (d.scale.mw) sc.push(d.scale.mw + ' MW'); if (d.scale.acres) sc.push(d.scale.acres + ' acres'); if (d.scale.sqft) sc.push(Number(d.scale.sqft).toLocaleString('en-US') + ' sf'); if (d.scale.capex_usd) sc.push(usd(d.scale.capex_usd)); } if (sc.length) meta.push(esc(sc.join(' · ')));
+    var sc = []; if (d.scale) { if (d.scale.mw) sc.push(d.scale.mw + ' MW'); if (d.scale.acres) sc.push(d.scale.acres + ' acres'); if (d.scale.sqft) sc.push(Number(d.scale.sqft).toLocaleString('en-US') + ' sf'); if (d.scale.capex_usd) sc.push(usd(d.scale.capex_usd)); } if (sc.length) meta.push(esc(sc.join(' · ')) + (d.scale.notes ? ' <span class="meta-note">(' + esc(d.scale.notes) + ')</span>' : ''));
     meta.push('documents: ' + d.documents.map(function (x) { return '<a href="' + esc(x.url) + '" rel="noopener">' + esc(x.title) + '</a> (' + esc(x.kind.replace(/_/g, ' ')) + ')'; }).join('; '));
     h += '<div class="sheet-meta">' + meta.join('<br>') + '</div>';
     h += '<div class="clauses">';

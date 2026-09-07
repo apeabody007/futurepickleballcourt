@@ -167,6 +167,13 @@
             "number",
             "null"
           ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Where the scale figures come from, especially when they are press figures in a document-verified record"
         }
       }
     },

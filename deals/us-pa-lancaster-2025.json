@@ -3,18 +3,59 @@
   "id": "us-pa-lancaster-2025",
   "status": "approved",
   "verification": "primary",
-  "jurisdiction": { "country": "US", "state": "PA", "locality": "City of Lancaster", "level": "city" },
+  "jurisdiction": {
+    "country": "US",
+    "state": "PA",
+    "locality": "City of Lancaster",
+    "level": "city"
+  },
   "operator": "CoreWeave (initial tenant, Building 1)",
   "developer": "Chirisa Technology Parks affiliates (LPE 01 PROPCO LLC, Greenfield Road Owner LLC, Harrisburg Place Owner LLC) with Machine Investment Group; financed by Blue Owl Capital",
   "project": "Lancaster AI Hub (216 Greenfield Road and 1375 Harrisburg Pike)",
   "agreement_type": "community_benefits_agreement",
-  "dates": { "signed": null, "approved": "2025-11-20", "effective": null },
-  "scale": { "acres": 150, "mw": 300, "capex_usd": 10000000000, "sqft": 2050000 },
+  "dates": {
+    "signed": null,
+    "approved": "2025-11-20",
+    "effective": null
+  },
+  "scale": {
+    "acres": 150,
+    "mw": 300,
+    "capex_usd": 10000000000,
+    "sqft": 2050000,
+    "notes": "Acres and square footage are derived from the agreement (two campuses of about 75 acres; buildings of about 400,000, 650,000, and 1,000,000 sq ft). MW and cost are press figures: CoreWeave described an initial 100 MW with potential to expand to 300 MW, and LancasterOnline and WITF reported about $10 billion combined."
+  },
   "documents": [
-    { "title": "Community Benefits Agreement (posted by the City as a draft; signature pages blank)", "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "kind": "primary", "date": "2025-11-20" },
-    { "title": "City of Lancaster CBA summary", "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Community-Benefits-Agreement-Summary-1-1.pdf", "kind": "government_page", "date": null },
-    { "title": "LancasterOnline: council approves agreement 6-1", "url": "https://lancasteronline.com/news/local/lancaster-city-council-votes-to-approve-data-center-benefits-agreement/article_b05cb1fd-a585-4c4f-8945-c96ada3172ad.html", "kind": "press", "date": "2025-11-20" },
-    { "title": "Sabin Center: Community Benefits Agreements and Data Center Development", "url": "https://blogs.law.columbia.edu/climatechange/2026/05/28/community-benefits-agreements-and-data-center-development/", "kind": "analysis", "date": "2026-05-28" }
+    {
+      "title": "Community Benefits Agreement (posted by the City as a draft; signature pages and effective date blank)",
+      "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+      "kind": "primary",
+      "date": "2025-11-18"
+    },
+    {
+      "title": "City of Lancaster CBA summary",
+      "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Community-Benefits-Agreement-Summary-1-1.pdf",
+      "kind": "government_page",
+      "date": "2025-11-18"
+    },
+    {
+      "title": "City of Lancaster data center FAQ",
+      "url": "https://www.cityoflancasterpa.gov/data-center/frequently-asked-questions/",
+      "kind": "government_page",
+      "date": null
+    },
+    {
+      "title": "LancasterOnline: council approves agreement 6-1",
+      "url": "https://lancasteronline.com/news/local/lancaster-city-council-votes-to-approve-data-center-benefits-agreement/article_b05cb1fd-a585-4c4f-8945-c96ada3172ad.html",
+      "kind": "press",
+      "date": "2025-11-21"
+    },
+    {
+      "title": "Sabin Center: Community Benefits Agreements and Data Center Development",
+      "url": "https://blogs.law.columbia.edu/climatechange/2026/05/28/community-benefits-agreements-and-data-center-development/",
+      "kind": "analysis",
+      "date": "2026-05-28"
+    }
   ],
   "terms": {
     "community_fund": {
@@ -22,13 +63,40 @@
       "amount_usd": 20000000,
       "cadence": "one_time",
       "scales_with_project": false,
-      "controlled_by": "Foundation fund: a committee of the City's Director of Community Planning and Economic Development, one representative from each of two owner entities, an EDC Lancaster County board member, a Lancaster County Community Foundation representative, and a mayoral appointee confirmed by Council. City fund: the City, in consultation with the owners.",
+      "controlled_by": "Foundation fund: a six-member committee deciding by majority: the City's Director of Community Planning and Economic Development, one representative each of LPE 1 Owner and Greenfield Owner, a board member or officer of the Lancaster County Economic Development Company, a board member or representative of the Lancaster County Community Foundation, and a mayoral appointee with City Council consent. City fund: the City, in consultation with the two owners.",
       "community_seat": false,
-      "notes": "$10M to the Lancaster County Community Foundation economic development fund and $10M to the City's Sustainable Development and Clean Energy Fund, paid in $2.5M installments tied to construction financing and operations start of the two East campus units. Secured by a $20M letter of credit or a guarantee from an entity with $100M net worth. The $250,000 strategic-plan payment is credited against the $10M, so the total is $20M, not $20.25M as some summaries say. No payment schedule is written for the Harrisburg Pike building. Committee meetings are not public.",
+      "notes": "$10M to the Lancaster County Community Foundation and $10M to the City's Sustainable Development and Clean Energy Fund, paid in $2.5M installments at construction financing and within 30 days of operations start for each of the two East campus units. Secured by a $20M letter of credit or a corporate guarantee from an entity with $100M net worth (8.3). The $250,000 strategic-plan payment is credited against the $10M foundation contribution, so the total is $20M, not $20.25M as the Sabin Center summary says. No payment is written for the Harrisburg Pike (West) building. Under Section 10.2.1 no obligation attaches to a campus until its owner has all approvals and closes a construction loan; only the $250,000 is due automatically. The Community Foundation told LancasterOnline the committee's meetings will not be public.",
       "sources": [
-        { "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Article 8, Sections 8.1 to 8.3", "quote": "shall be credited against any amount required by 8.1.1" },
-        { "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Section 8.1.3(a), committee composition" },
-        "https://lancasteronline.com/news/local/heres-when-lancaster-city-will-see-payments-from-data-center-agreement/article_49eb8780-5784-442a-afa4-778f5f73bd80.html",
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Sections 8.1.1, 8.1.2, 8.2.1, 8.2.2",
+          "quote": "a contribution of $2,500,000.00 to the Lancaster County Community Foundation"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 8.1.3(b)",
+          "quote": "shall be credited against any amount required by 8.1.1 above"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 8.1.3(a), committee composition",
+          "quote": "A committee consisting of the City’s Director of the Department of Community Planning and Economic Development"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 8.3",
+          "quote": "a Letter of Credit for $20,000,000 securing their obligations under this Article 8"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 10.2.1 and 10.2.2",
+          "quote": "the provisions of Section 8.1.3(b) above shall be effective automatically as of the Effective Date"
+        },
+        {
+          "url": "https://lancasteronline.com/news/local/heres-when-lancaster-city-will-see-payments-from-data-center-agreement/article_49eb8780-5784-442a-afa4-778f5f73bd80.html",
+          "where": "article of 2026-02-13",
+          "quote": "The committee's meetings won't be public because the fund is managed by the Community Foundation"
+        },
         "https://blogs.law.columbia.edu/climatechange/2026/05/28/community-benefits-agreements-and-data-center-development/"
       ]
     },
@@ -37,18 +105,31 @@
       "not_applicable": true,
       "triggers": [],
       "proportional": null,
-      "notes": "The City gave no tax incentives, so there is nothing to claw back. The closest instrument is a $10M contingent clean energy letter of credit: if a building's power contract falls short of clean-energy thresholds the owner pays $2.5M to $10M per building, and below 60 percent clean the City can seek injunctive relief up to discontinuance of operations.",
+      "notes": "The City gave no tax incentives, so there is nothing to claw back. The closest instrument is the $10M Contingent Clean Energy Fund letter of credit: a building whose ten-year power contract is only 80 percent clean pays $2.5M (East) or $5M (West); at 60 percent it pays $5M (East) or $10M (West). Without at least a 60 percent contract the owner must run on 100 percent clean energy or face Article 9 enforcement, which is injunctive relief and specific performance. The phrase 'discontinuance of operations' appears only in the City's summary, not in the agreement.",
       "sources": [
-        { "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Sections 3.3.5 and 3.3.6; Article 9" }
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Sections 3.3.3 to 3.3.6 and 9.4",
+          "quote": "a Letter of Credit for $10,000,000 (the “Contingent Clean Energy Fund”)"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Community-Benefits-Agreement-Summary-1-1.pdf",
+          "where": "Enforcement & Accountability",
+          "quote": "including discontinuance of operations (this is the strongest remedy available)"
+        }
       ]
     },
     "decommissioning": {
       "present": true,
       "instrument": "covenant_only",
       "amount_usd": null,
-      "notes": "An e-waste management plan is required and tenant equipment must be removed on decommissioning, but there is no bond, escrow, or site-restoration fund.",
+      "notes": "An E-Waste Management Plan is required and tenant-installed equipment must be promptly removed when a building is decommissioned, but there is no bond, escrow, or site-restoration fund.",
       "sources": [
-        { "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Section 5.3" },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 5.3",
+          "quote": "all tenant installed data center equipment shall be promptly removed from the Property"
+        },
         "https://pastandsup.org/lancaster/2025/10/28/lancaster-stands-up-data-center-community-conversation/"
       ]
     },
@@ -58,10 +139,18 @@
       "minimum_bill": null,
       "term_years": null,
       "governed_by": null,
-      "notes": "The agreement is silent on transmission and substation cost. Press reports the developer partners intend to fund about $200M of PPL Electric grid improvements including a new substation. That commitment lives outside the CBA.",
+      "notes": "The agreement is silent on transmission, substation, and interconnection cost. Press reports the developer partners intend to fund about $200M of PPL Electric grid improvements, including a new substation and switchyard near Pitney Road. That commitment lives outside the CBA.",
       "sources": [
-        "https://chirisatechnologyparks.com/blue-owl-and-chirisa-technology-parks-close-4-billion-joint-venture-partnership-including-machine-investment-group-for-lancaster-campus/",
-        "https://www.witf.org/2025/10/19/data-centers-second-phase-expected-to-cost-up-to-2-5-billion-in-lancaster-county/"
+        {
+          "url": "https://chirisatechnologyparks.com/blue-owl-and-chirisa-technology-parks-close-4-billion-joint-venture-partnership-including-machine-investment-group-for-lancaster-campus/",
+          "where": "press release of 2025-08-25",
+          "quote": "intend to fund approximately $200 million for local power grid infrastructure improvements in partnership with PPL Electric Utilities"
+        },
+        {
+          "url": "https://www.witf.org/2025/10/19/data-centers-second-phase-expected-to-cost-up-to-2-5-billion-in-lancaster-county/",
+          "where": "article of 2025-10-19",
+          "quote": "A new PPL substation and switchyard are proposed west of the buildings, near Pitney Road"
+        }
       ]
     },
     "water": {
@@ -70,21 +159,57 @@
       "reporting": false,
       "recycling_required": null,
       "cooling": "closed_loop",
-      "notes": "Hard cap of 20,000 gallons per day of municipal water per campus, closed-loop cooling with no added chemicals. The prior printing plant used 100,000 to 125,000 gallons per day. The annual report to Council covers clean energy only; water use is not reported.",
+      "notes": "Hard cap of 20,000 gallons per day of municipal water at either campus, closed-loop cooling with minimal municipal water and no added chemicals. Rainwater and gray water capture for irrigation is only 'reasonably maximize' (4.6.1). The City's summary says the prior printing plant used 100,000 to 125,000 gallons per day. The annual report to Council covers clean energy only; water use is not reported.",
       "sources": [
-        { "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Section 3.4", "quote": "shall not exceed twenty thousand (20,000) gallons per day" },
-        { "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Sections 3.5 and 7.1" },
-        "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Community-Benefits-Agreement-Summary-1-1.pdf"
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 3.4",
+          "quote": "shall not exceed twenty thousand (20,000) gallons per day at either of the Campuses"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 4.5.1",
+          "quote": "closed-loop cooling system which will be used to the maximum extent possible"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 7.1, report contents (clean energy only)",
+          "quote": "percentage usage of Clean Energy for the preceding year"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Community-Benefits-Agreement-Summary-1-1.pdf",
+          "where": "Water & Wastewater",
+          "quote": "the previous user consumed on average 100,000-125,000 gallons per day"
+        }
       ]
     },
     "noise": {
       "present": true,
       "limit_dba": null,
-      "measured_at": "Nearest residential or park-zoned receivers. The standard is pre-construction ambient (lowest one-hour LEQ, day and night), not a number.",
+      "measured_at": "Property line of the nearest residential-zoned property or residence, or a location deemed essential in park (PO) districts, as existing on the Effective Date. The standard is pre-construction ambient (lowest one-hour LEQ; day and night for residential, day only for parks), not a number.",
       "setback_ft": 100,
-      "notes": "Magnetic-bearing chillers and sound-attenuated generator enclosures required. Generator testing daytime only, never Sundays or federal holidays. Certified noise mitigation plan due within 60 days, post-construction testing required. The City may demand a compliance re-check on complaint only once every two years. 100-foot buffers along streets and residential edges, 50 feet elsewhere.",
+      "notes": "Magnetic levitation chillers and sound-attenuated generator enclosures required. Generator testing daytime only, never Sundays or federal holidays. A noise mitigation plan certified by a professional acoustic engineer is due within 60 days of the Effective Date for the East campus and within 60 days of a tenant lease for the West campus (11.1); post-construction testing required (5.2.2). The City may demand a compliance re-check on complaint only once every two years (5.2.1). The 100-foot figure is a landscaped buffer yard along streets and residential or park edges, 50 feet elsewhere (4.1.2), not a building setback.",
       "sources": [
-        { "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Sections 3.1, 4.1.2, and 5.2" }
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 3.1.1",
+          "quote": "exceeding the ambient noise levels at those receiving properties measured at pre-construction of the Project"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Sections 3.1.3, 5.2.1, 5.2.2 and 11.1.1",
+          "quote": "the City may only make one such request every two (2) years"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 4.1.2",
+          "quote": "a minimum one hundred (100) foot wide buffer yard"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 4.5.2",
+          "quote": "will only run at short intervals for monthly testing and maintenance"
+        }
       ]
     },
     "jobs": {
@@ -94,10 +219,33 @@
       "local_hire": true,
       "prevailing_wage": false,
       "enforceable": false,
-      "notes": "The agreement says approximately 150 people at each campus. Local hiring is a good-faith effort with percentage goals to be set in a plan that had not been released as of April 2026. No prevailing wage; only a worker-misclassification clause. Press figures range from 70 full-time at launch to 350 permanent.",
+      "notes": "The agreement says the owners expect approximately 150 people at each campus (300 total); it is an expectation, not a commitment. Local hiring is a good-faith effort with percentage goals to be set in a Local Hiring Plan; as of April 2026 the City had a draft but had not released it. No prevailing wage; only a worker-misclassification clause. Press figures range from 70 full-time at launch (CoreWeave, July 2025) to 350 permanent (LancasterOnline and the City FAQ); construction estimates range from 600 to 2,000.",
       "sources": [
-        { "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Background G; Sections 6.2 and 6.3" },
-        "https://lancasteronline.com/news/local/lancaster-data-center-agreement-s-benefit-to-community-questioned/article_b2654db6-c6e3-4719-8a0e-1f839c1e325e.html"
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Background G",
+          "quote": "employ approximately one hundred fifty (150) people at each Campus"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Sections 6.2.2 and 6.2.3",
+          "quote": "use good faith efforts to hire local residents for both construction and permanent positions"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 6.3",
+          "quote": "shall avoid misclassifying employees as independent contractors"
+        },
+        {
+          "url": "https://lancasteronline.com/news/local/lancaster-data-center-agreement-s-benefit-to-community-questioned/article_b2654db6-c6e3-4719-8a0e-1f839c1e325e.html",
+          "where": "article of 2026-04-04",
+          "quote": "2,000 construction and 350 permanent jobs"
+        },
+        {
+          "url": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx",
+          "where": "press release of 2025-07-15",
+          "quote": "approximately 70 full-time technical and operational roles at launch"
+        }
       ]
     },
     "local_contracting": {
@@ -105,22 +253,59 @@
       "local_subcontracting": false,
       "road_repair": false,
       "infrastructure_contribution_usd": null,
-      "notes": "No local subcontracting requirement and no road repair term. Owners reimburse City emergency-response costs above $25,000 per incident. Press reports $149M in contracts awarded with over half to local firms, which is practice, not obligation.",
+      "notes": "No local subcontracting requirement and no haul-route or road-damage term; Section 4.6.3 only requires restoring pavements, curbs, sidewalks and other features disturbed by construction. Owners reimburse City emergency-response costs above $25,000 per response. Press reports $149M in contracts awarded with over half to local firms, which is practice, not obligation.",
       "sources": [
-        { "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Section 5.1.3" },
-        "https://lancasteronline.com/news/local/lancaster-data-center-agreement-s-benefit-to-community-questioned/article_b2654db6-c6e3-4719-8a0e-1f839c1e325e.html"
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 5.1.3",
+          "quote": "in excess of Twenty-Five Thousand Dollars ($25,000.00)"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 4.6.3",
+          "quote": "restore all areas, pavements, curbs, driveways, sidewalks"
+        },
+        {
+          "url": "https://lancasteronline.com/news/local/lancaster-data-center-agreement-s-benefit-to-community-questioned/article_b2654db6-c6e3-4719-8a0e-1f839c1e325e.html",
+          "where": "article of 2026-04-04",
+          "quote": "Over half of the $149 million in contracts awarded for the project so far have gone to local firms"
+        }
       ]
     },
     "transparency": {
       "present": true,
-      "nda": false,
+      "nda": null,
       "agreement_public": true,
       "public_dashboard": false,
       "audit_cadence": "annual",
       "audit_independent": false,
-      "notes": "The agreement is a public record under Pennsylvania's Right-to-Know Law with carve-outs for proprietary and security submissions. Owners must keep a public website and complaint portal and report to Council each April on clean-energy percentage and sourcing. The only audit right written runs the other way: the owners may audit the two funds annually. Residents are not third-party beneficiaries and cannot enforce the agreement. Fund committee meetings are not public.",
+      "notes": "The agreement is a public record under Pennsylvania's Right-to-Know Law with carve-outs for proprietary and security submissions. Owners must keep a public website and complaint portal and present a report to Council each April on clean-energy percentage and sourcing; that self-report is the only recurring accountability, and it is not audited. The only audit right written runs the other way: the owners may audit both funds annually. Residents are not third-party beneficiaries and cannot enforce the agreement. The Community Foundation told LancasterOnline the fund committee's meetings will not be public. No source addresses whether the City signed a nondisclosure agreement at any stage.",
       "sources": [
-        { "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf", "where": "Sections 6.1, 7.1, 8.1.3(c), 13.3, and 13.17" },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 13.17",
+          "quote": "shall be deemed public records of the City of Lancaster and disclosable to the public"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 6.1",
+          "quote": "the Owners shall maintain a publicly accessible website(s)"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 7.1",
+          "quote": "present to City Council at its first regularly scheduled meeting in the month of April"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Sections 8.1.3(c) and 8.2.3(b)",
+          "quote": "shall each have a right to audit the distribution, usage and effectiveness of contributions"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
+          "where": "Section 13.3",
+          "quote": "shall not be deemed for the benefit or enforcement by any third party"
+        },
         "https://lancasteronline.com/news/local/heres-when-lancaster-city-will-see-payments-from-data-center-agreement/article_49eb8780-5784-442a-afa4-778f5f73bd80.html"
       ]
     },
@@ -132,19 +317,50 @@
       "pilot": false,
       "estimated_forgone_usd": 0,
       "but_for_test": null,
-      "notes": "No tax breaks, including no LERTA abatement, and no PILOT. The City received about $7.8M in permit fees and a $327,345 transfer tax.",
+      "notes": "No tax breaks: the City says no incentives are offered and the project is not eligible for LERTA or CRIZ; the CBA itself is silent on taxes. No PILOT. The City received about $7.8M in building permit fees for the first building and $327,345 in realty transfer tax on the purchase.",
       "sources": [
-        "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Community-Benefits-Agreement-Summary-1-1.pdf",
-        "https://lancasteronline.com/news/local/heres-when-lancaster-city-will-see-payments-from-data-center-agreement/article_49eb8780-5784-442a-afa4-778f5f73bd80.html"
+        {
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Community-Benefits-Agreement-Summary-1-1.pdf",
+          "where": "Other",
+          "quote": "not receiving any tax breaks from the City of Lancaster, including Local Economic Revitalization Tax Assistance (LERTA)"
+        },
+        {
+          "url": "https://www.cityoflancasterpa.gov/data-center/frequently-asked-questions/",
+          "where": "FAQ",
+          "quote": "the City received $327,345 from the real estate transfer tax"
+        },
+        {
+          "url": "https://lancasteronline.com/news/local/heres-when-lancaster-city-will-see-payments-from-data-center-agreement/article_49eb8780-5784-442a-afa4-778f5f73bd80.html",
+          "where": "article of 2026-02-13",
+          "quote": "the city received $7.8 million in building permit fees from the developer"
+        }
       ]
     }
   },
   "criticisms": [
-    { "summary": "Lancaster Stands Up received the agreement two days before the vote, asked for a seat at the table, and got no response; developers would not accept changes.", "source": "https://blogs.law.columbia.edu/climatechange/2026/05/28/community-benefits-agreements-and-data-center-development/" },
-    { "summary": "Only the City can enforce the agreement. Residents affected by noise cannot sue under it.", "source": "https://lancasteronline.com/news/local/lancaster-data-center-agreement-s-benefit-to-community-questioned/article_b2654db6-c6e3-4719-8a0e-1f839c1e325e.html" },
-    { "summary": "Negotiation began after the zoning opinion and demolition permit had issued, so leverage was already spent.", "source": "https://fas.org/publication/community-benefit-agreements-data-center-development/" },
-    { "summary": "The clean-energy penalty structure was described by a resident as pay to pollute.", "source": "https://lancasteronline.com/news/local/lancaster-city-council-votes-to-approve-data-center-benefits-agreement/article_b05cb1fd-a585-4c4f-8945-c96ada3172ad.html" }
+    {
+      "summary": "Lancaster Stands Up reported it received a version of the agreement only two days before the council vote, and the fund committee has no direct community representative.",
+      "source": "https://blogs.law.columbia.edu/climatechange/2026/05/28/community-benefits-agreements-and-data-center-development/"
+    },
+    {
+      "summary": "Council was told the agreement was the final offer negotiated by city staff and Chirisa Technology Parks and could not be amended.",
+      "source": "https://lancasteronline.com/news/local/lancaster-city-council-votes-to-approve-data-center-benefits-agreement/article_b05cb1fd-a585-4c4f-8945-c96ada3172ad.html"
+    },
+    {
+      "summary": "Only the City can enforce the agreement. Residents affected by noise cannot sue under it.",
+      "source": "https://lancasteronline.com/news/local/lancaster-data-center-agreement-s-benefit-to-community-questioned/article_b2654db6-c6e3-4719-8a0e-1f839c1e325e.html"
+    },
+    {
+      "summary": "Negotiation came after the February 2025 zoning opinions and the June 2025 demolition permit (recited in Section 12.1), so the City's leverage was limited.",
+      "source": "https://fas.org/publication/community-benefit-agreements-data-center-development/"
+    },
+    {
+      "summary": "The clean-energy penalty structure was described by resident Darrell Lagace as pay to pollute.",
+      "source": "https://lancasteronline.com/news/local/lancaster-city-council-votes-to-approve-data-center-benefits-agreement/article_b05cb1fd-a585-4c4f-8945-c96ada3172ad.html"
+    }
   ],
-  "contributors": ["apeabody007"],
+  "contributors": [
+    "apeabody007"
+  ],
   "last_reviewed": "2026-09-07"
 }
