@@ -2,7 +2,7 @@
 
 **What communities actually signed, clause by clause, with a receipt for every term.**
 
-Live benchmark: https://apeabody007.github.io/datacenter-deals/
+Live benchmark: https://futurepickleballcourt.com (the name is Mark Cuban's line about what overbuilt data centers become; the terms that matter are the ones written for that day)
 
 ## The problem this solves
 
