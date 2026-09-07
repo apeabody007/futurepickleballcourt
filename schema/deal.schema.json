@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/apeabody007/datacenter-deals/schema/deal.schema.json",
+  "$id": "https://github.com/apeabody007/futurepickleballcourt/schema/deal.schema.json",
   "title": "Data center community agreement",
   "description": "One signed, approved, or proposed agreement between a data center developer or operator and a public body. Use null for anything unknown. Every clause carries its own sources.",
   "type": "object",
