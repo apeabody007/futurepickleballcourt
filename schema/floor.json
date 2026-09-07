@@ -15,7 +15,11 @@
           "eq",
           true
         ]
-      ]
+      ],
+      "strongest": {
+        "deal": "us-mo-st-louis-2026",
+        "why": "$30 per square foot of approved data center, so the fund scales with what actually gets built instead of being a flat headline number."
+      }
     },
     "clawbacks": {
       "label": "Clawbacks",
@@ -31,7 +35,11 @@
           "contains",
           "operation"
         ]
-      ]
+      ],
+      "strongest": {
+        "deal": "us-mo-st-louis-2026",
+        "why": "Liquidated damages of $2,000 per job short of a 25, 50, then 100 job ladder for 20 years, plus $15,000 for every $100,000 of tax revenue missed. Money, per unit missed, not an all-or-nothing default."
+      }
     },
     "decommissioning": {
       "label": "Decommissioning",
@@ -51,7 +59,11 @@
             "letter_of_credit"
           ]
         ]
-      ]
+      ],
+      "strongest": {
+        "deal": "us-az-pima-county-2025",
+        "why": "No deal on record posts a bond. The closest is the neighboring town of Marana, which conditioned its approval of the same developer on removing all hardware and securing the property if the use stops."
+      }
     },
     "grid_costs": {
       "label": "Grid costs",
@@ -67,7 +79,11 @@
           "eq",
           true
         ]
-      ]
+      ],
+      "strongest": {
+        "deal": "us-oh-new-albany-2025",
+        "why": "Billing demand of at least 85 percent of peak for a twelve year term, an exit fee of 36 months of minimum charges, and collateral of half the total minimum charges unless the customer is investment grade."
+      }
     },
     "water": {
       "label": "Water",
@@ -83,7 +99,11 @@
           "eq",
           true
         ]
-      ]
+      ],
+      "strongest": {
+        "deal": "us-pa-lancaster-2025",
+        "why": "A hard cap of 20,000 gallons a day per campus written into the agreement, against a prior industrial user on the same site that drew 100,000 to 125,000."
+      }
     },
     "noise": {
       "label": "Noise",
@@ -98,7 +118,11 @@
           "limit_dba",
           "not_null"
         ]
-      ]
+      ],
+      "strongest": {
+        "deal": "us-va-loudoun-county-2025",
+        "why": "55 dBA at the residential lot line, a study before the first site plan and again within six months of every occupancy permit, mitigation within 60 days of an exceedance, all certified by an acoustical engineer."
+      }
     },
     "jobs": {
       "label": "Jobs",
@@ -114,7 +138,11 @@
           "eq",
           true
         ]
-      ]
+      ],
+      "strongest": {
+        "deal": "us-la-richland-parish-2025",
+        "why": "A job ladder of 100 by 2028 rising to 500 by 2032 at 150 percent of the state average wage, secured by the state's right to raise the purchase price or take the land back."
+      }
     },
     "local_contracting": {
       "label": "Local contracting",
@@ -130,7 +158,11 @@
           "eq",
           true
         ]
-      ]
+      ],
+      "strongest": {
+        "deal": "us-ia-cedar-rapids-qts-2025",
+        "why": "A separate county road-use agreement covering back payment, repaving two rural roads, and a performance bond for two more."
+      }
     },
     "transparency": {
       "label": "Transparency",
@@ -159,7 +191,11 @@
           "eq",
           true
         ]
-      ]
+      ],
+      "strongest": {
+        "deal": "us-va-loudoun-county-2025",
+        "why": "No NDA anywhere in the record, the whole file public, and compliance verified by outside professionals rather than self-certified."
+      }
     },
     "tax": {
       "label": "Tax incentives",
@@ -174,7 +210,12 @@
           "estimated_forgone_usd",
           "not_null"
         ]
-      ]
+      ],
+      "strongest": {
+        "deal": "us-va-loudoun-county-2025",
+        "why": "No abatement at all. Full real property tax plus $4.15 per $100 on computer equipment, which funds roughly $1.3 billion of a $2.9 billion budget, banked against a stabilization fund."
+      }
     }
-  }
+  },
+  "strongest_note": "The strongest version of each term that someone has actually signed, or the closest thing to it. These are judgment calls about real documents, not invented language, and they change by pull request like everything else here."
 }

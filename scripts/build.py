@@ -108,6 +108,17 @@ def check_repo_rules(deal, errors):
         errors.append("last_reviewed is in the future")
 
 
+def check_floor(deals):
+    """The floor may point at a strongest example; make sure it exists."""
+    ids = {d["id"] for d in deals}
+    bad = []
+    for name, spec in FLOOR["clauses"].items():
+        s = spec.get("strongest")
+        if s and s.get("deal") not in ids:
+            bad.append(f"floor.json: {name}.strongest names unknown deal {s.get('deal')!r}")
+    return bad
+
+
 def load_deals():
     deals, failed = [], False
     for path in sorted(DEALS_DIR.glob("*.json")):
@@ -221,6 +232,41 @@ def findings(deals):
                     f"{nda} of the {n} communities signed a nondisclosure agreement. Some barred officials from "
                     "saying that talks were happening at all, and one required the city to destroy its own notes."))
 
+    hedged = [(d, k) for d in deals for k in FLOOR["clauses"]
+              if d["terms"][k].get("hedge")]
+    if hedged:
+        out.append(("Present is not the same as binding.",
+                    f"{len(hedged)} terms across these agreements exist but are softened by language like "
+                    "good faith, commercially reasonable, or sole discretion. A term with an escape hatch "
+                    "reads as a protection and functions as a preference."))
+
+    return out
+
+
+def strongest_examples(deals):
+    """Pair each clause with the deal the floor names as the strongest real example."""
+    by_id = {d["id"]: d for d in deals}
+    out = []
+    for name, spec in FLOOR["clauses"].items():
+        s = spec.get("strongest")
+        if not s or s["deal"] not in by_id:
+            continue
+        d = by_id[s["deal"]]
+        clause = d["terms"][name]
+        cites = [x for x in (clause.get("sources") or []) if isinstance(x, dict)]
+        out.append({
+            "clause": name,
+            "label": spec["label"],
+            "asks": spec["asks"],
+            "why": s["why"],
+            "deal_id": d["id"],
+            "where": f"{d['jurisdiction']['locality']}, {d['jurisdiction']['state']}",
+            "who": short_name(d),
+            "meets": score(d)[name] == "meets",
+            "cite": (cites[0].get("where") if cites else None),
+            "quote": next((c.get("quote") for c in cites if c.get("quote")), None),
+            "url": (cites[0]["url"] if cites else (d["documents"][0]["url"] if d["documents"] else None)),
+        })
     return out
 
 
@@ -271,6 +317,14 @@ def render_markdown(deals):
         lines += ["", "## What the deals show", ""]
         for title, body in f:
             lines += [f"**{title}** {body}", ""]
+    se = strongest_examples(deals)
+    if se:
+        lines += ["", "## The strongest terms anyone has actually signed", "",
+                  FLOOR.get("strongest_note", ""), ""]
+        for e in se:
+            lines.append(f"**{e['label']}** ({e['where']}{', ' + e['who'] if e['who'] else ''}). {e['why']}"
+                         + (f" [{e['cite']}]({e['url']})" if e.get("cite") and e.get("url") else ""))
+            lines.append("")
     lines += ["", "## What the floor asks for", ""]
     for name, c in clauses.items():
         lines.append(f"- **{c['label']}**: {c['asks']}")
@@ -288,6 +342,8 @@ def render_html(deals):
         "generated": date.today().isoformat(),
         "floor": FLOOR["clauses"],
         "findings": [{"title": t, "body": x} for t, x in findings(deals)],
+        "strongest": strongest_examples(deals),
+        "strongest_note": FLOOR.get("strongest_note", ""),
         "deals": [dict(deal, score=score(deal), _label=short_name(deal)) for deal in deals],
     }, ensure_ascii=False)
     # </script> inside JSON would end the tag early.
@@ -298,6 +354,11 @@ def render_html(deals):
 def main():
     check = "--check" in sys.argv
     deals, failed = load_deals()
+    if failed:
+        sys.exit(1)
+    for problem in check_floor(deals):
+        print(problem)
+        failed = True
     if failed:
         sys.exit(1)
     outputs = {

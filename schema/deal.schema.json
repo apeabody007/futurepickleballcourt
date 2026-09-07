@@ -296,6 +296,13 @@
                 "null"
               ],
               "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            },
+            "hedge": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The exact softening language that lets the operator out of this term, quoted. Examples: 'good faith efforts', 'commercially reasonable', 'at the company's sole discretion'. Null when the term is hard."
             }
           }
         },
@@ -349,6 +356,13 @@
                 "null"
               ],
               "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            },
+            "hedge": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The exact softening language that lets the operator out of this term, quoted. Examples: 'good faith efforts', 'commercially reasonable', 'at the company's sole discretion'. Null when the term is hard."
             }
           }
         },
@@ -397,6 +411,13 @@
                 "null"
               ],
               "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            },
+            "hedge": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The exact softening language that lets the operator out of this term, quoted. Examples: 'good faith efforts', 'commercially reasonable', 'at the company's sole discretion'. Null when the term is hard."
             }
           }
         },
@@ -459,6 +480,13 @@
                 "null"
               ],
               "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            },
+            "hedge": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The exact softening language that lets the operator out of this term, quoted. Examples: 'good faith efforts', 'commercially reasonable', 'at the company's sole discretion'. Null when the term is hard."
             }
           }
         },
@@ -520,6 +548,13 @@
                 "null"
               ],
               "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            },
+            "hedge": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The exact softening language that lets the operator out of this term, quoted. Examples: 'good faith efforts', 'commercially reasonable', 'at the company's sole discretion'. Null when the term is hard."
             }
           }
         },
@@ -571,6 +606,13 @@
                 "null"
               ],
               "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            },
+            "hedge": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The exact softening language that lets the operator out of this term, quoted. Examples: 'good faith efforts', 'commercially reasonable', 'at the company's sole discretion'. Null when the term is hard."
             }
           }
         },
@@ -634,6 +676,13 @@
                 "null"
               ],
               "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            },
+            "hedge": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The exact softening language that lets the operator out of this term, quoted. Examples: 'good faith efforts', 'commercially reasonable', 'at the company's sole discretion'. Null when the term is hard."
             }
           }
         },
@@ -685,6 +734,13 @@
                 "null"
               ],
               "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            },
+            "hedge": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The exact softening language that lets the operator out of this term, quoted. Examples: 'good faith efforts', 'commercially reasonable', 'at the company's sole discretion'. Null when the term is hard."
             }
           }
         },
@@ -751,6 +807,13 @@
                 "null"
               ],
               "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            },
+            "hedge": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The exact softening language that lets the operator out of this term, quoted. Examples: 'good faith efforts', 'commercially reasonable', 'at the company's sole discretion'. Null when the term is hard."
             }
           }
         },
@@ -814,6 +877,13 @@
                 "null"
               ],
               "description": "true when the clause cannot apply, for example clawbacks or tax terms on a deal that gave no public incentives. Explain in notes."
+            },
+            "hedge": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The exact softening language that lets the operator out of this term, quoted. Examples: 'good faith efforts', 'commercially reasonable', 'at the company's sole discretion'. Null when the term is hard."
             }
           }
         }
