@@ -3,21 +3,71 @@
   "id": "us-wi-mount-pleasant-2023",
   "status": "signed",
   "verification": "press",
-  "jurisdiction": { "country": "US", "state": "WI", "locality": "Village of Mount Pleasant", "level": "town" },
+  "jurisdiction": {
+    "country": "US",
+    "state": "WI",
+    "locality": "Village of Mount Pleasant",
+    "level": "town"
+  },
   "operator": "Microsoft",
   "developer": "Microsoft Corporation",
   "project": "Microsoft Fairwater campus on the former Foxconn land, Tax Increment District 5",
   "agreement_type": "development_agreement",
-  "dates": { "signed": null, "approved": "2023-03-30", "effective": null },
-  "scale": { "acres": 1345, "mw": null, "capex_usd": 7300000000, "sqft": null, "notes": "Acreage is the total Microsoft would own after the November 2023 expansion package per WisBusiness; WPR reported 1,346 for the same package, and the county development corporation now lists 1,575 acres after a later purchase. The $7.3 billion figure is the county development corporation's stated planned investment and matches the $3.3 billion first building plus the $4 billion second building recorded in the TID 5 Joint Review Board report. A further $13.3 billion, 15 data centers and about 8.7 million sq ft (5.2 million on Durand Avenue, 3.5 million on International Drive) received site-plan approval on January 26, 2026. No megawatt figure appears in the agreements; WPR reported Microsoft told the January 2026 meeting the campuses would use roughly 2 gigawatts when fully developed, and WEC Energy Group has told investors it expects 2.6 gigawatts of new demand from Microsoft's I-94 corridor buildout." },
+  "dates": {
+    "signed": null,
+    "approved": "2023-03-30",
+    "effective": null
+  },
+  "scale": {
+    "acres": 1345,
+    "mw": null,
+    "capex_usd": 7300000000,
+    "sqft": null,
+    "notes": "Acreage is the total Microsoft would own after the November 2023 expansion package per WisBusiness; WPR reported 1,346 for the same package, and the county development corporation now lists 1,575 acres after a later purchase. The $7.3 billion figure is the county development corporation's stated planned investment and matches the $3.3 billion first building plus the $4 billion second building recorded in the TID 5 Joint Review Board report. A further $13.3 billion, 15 data centers and about 8.7 million sq ft (5.2 million on Durand Avenue, 3.5 million on International Drive) received site-plan approval on January 26, 2026. No megawatt figure appears in the agreements; WPR reported Microsoft told the January 2026 meeting the campuses would use roughly 2 gigawatts when fully developed, and WEC Energy Group has told investors it expects 2.6 gigawatts of new demand from Microsoft's I-94 corridor buildout."
+  },
   "documents": [
-    { "title": "Village of Mount Pleasant and Racine County announcement of the Microsoft land purchase agreement", "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/3131/03282023---Microsoft-Press-Release", "kind": "government_page", "date": "2023-03-27" },
-    { "title": "TID 5 Joint Review Board annual report, November 10, 2025 (value guarantee, land sales, make-up payments, projected developer incentives)", "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10", "kind": "primary", "date": "2025-11-10" },
-    { "title": "Wisconsin PSC final decision, docket 6630-TE-113, We Energies very large customer and bespoke resources tariffs", "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873", "kind": "primary", "date": "2026-05-21" },
-    { "title": "PSC of Wisconsin comments to FERC in docket ER26-3265 on ATC zonal cost allocation", "url": "https://www.wpr.org/wp-content/uploads/2026/08/20260814-5240_PSCW-Comment-and-Attachments-ER26-3265.pdf", "kind": "primary", "date": "2026-08-14" },
-    { "title": "Racine County Eye: village approves Microsoft agreements (repurchase rights, 42 percent rebate)", "url": "https://racinecountyeye.com/2023/03/30/microsoft-data-center-mt-pleasant/", "kind": "press", "date": "2023-03-30" },
-    { "title": "WPR: expansion deal includes no public financial incentives", "url": "https://www.wpr.org/economy/mount-pleasant-deal-microsoft-will-include-no-public-financial-incentives-under-agreement", "kind": "press", "date": null },
-    { "title": "WPR: records show up to 8.4 million gallons a year of water", "url": "https://www.wpr.org/news/microsoft-data-centers-8-million-gallons-water-each-year", "kind": "press", "date": null }
+    {
+      "title": "Village of Mount Pleasant and Racine County announcement of the Microsoft land purchase agreement",
+      "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/3131/03282023---Microsoft-Press-Release",
+      "kind": "government_page",
+      "date": "2023-03-27"
+    },
+    {
+      "title": "TID 5 Joint Review Board annual report, November 10, 2025 (value guarantee, land sales, make-up payments, projected developer incentives)",
+      "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10",
+      "kind": "primary",
+      "date": "2025-11-10"
+    },
+    {
+      "title": "Wisconsin PSC final decision, docket 6630-TE-113, We Energies very large customer and bespoke resources tariffs",
+      "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873",
+      "kind": "primary",
+      "date": "2026-05-21"
+    },
+    {
+      "title": "PSC of Wisconsin comments to FERC in docket ER26-3265 on ATC zonal cost allocation",
+      "url": "https://www.wpr.org/wp-content/uploads/2026/08/20260814-5240_PSCW-Comment-and-Attachments-ER26-3265.pdf",
+      "kind": "primary",
+      "date": "2026-08-14"
+    },
+    {
+      "title": "Racine County Eye: village approves Microsoft agreements (repurchase rights, 42 percent rebate)",
+      "url": "https://racinecountyeye.com/2023/03/30/microsoft-data-center-mt-pleasant/",
+      "kind": "press",
+      "date": "2023-03-30"
+    },
+    {
+      "title": "WPR: expansion deal includes no public financial incentives",
+      "url": "https://www.wpr.org/economy/mount-pleasant-deal-microsoft-will-include-no-public-financial-incentives-under-agreement",
+      "kind": "press",
+      "date": null
+    },
+    {
+      "title": "WPR: records show up to 8.4 million gallons a year of water",
+      "url": "https://www.wpr.org/news/microsoft-data-centers-8-million-gallons-water-each-year",
+      "kind": "press",
+      "date": null
+    }
   ],
   "terms": {
     "community_fund": {
@@ -35,17 +85,34 @@
     },
     "clawbacks": {
       "present": true,
-      "triggers": ["investment", "other"],
+      "triggers": [
+        "investment",
+        "other"
+      ],
       "proportional": null,
       "notes": "The village and county may repurchase the land at Microsoft's original per-acre price if Microsoft fails to commence construction by the stated deadlines, reported as not later than July 1, 2026 for phase 1 and July 1, 2033 for phase 2. Under the November 2023 expansion Microsoft must build a minimum of four buildings or repurchase rights activate, and guaranteed a minimum assessed value of $1.4 billion on its Areas II and III investments by January 1, 2028 (the Joint Review Board report states the guarantee as $1.4 billion by 2028). A village spokesperson said in 2026 that the value had already been surpassed. The make-up payment column in the TID cash flow belongs to the Area I (Foxconn) guarantee, not to Microsoft. Nothing is tied to the facility ceasing operation.",
       "sources": [
         "https://racinecountyeye.com/2023/03/30/microsoft-data-center-mt-pleasant/",
         "https://www.wpr.org/economy/mount-pleasant-deal-microsoft-will-include-no-public-financial-incentives-under-agreement",
-        { "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10", "where": "PDF p. 3 (report page 2), value guarantee", "quote": "Under these agreements, Microsoft guarantees additional property valuation of $1.4 billion by 2028." },
-        { "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10", "where": "PDF p. 7 (report page 6), cash flow note 1, make-up payments", "quote": "Make-up payments will terminate once incremental value of Areas I, II and III is $2 billion or greater." }
+        {
+          "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10",
+          "where": "PDF p. 3 (report page 2), value guarantee",
+          "quote": "Under these agreements, Microsoft guarantees additional property valuation of $1.4 billion by 2028."
+        },
+        {
+          "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10",
+          "where": "PDF p. 7 (report page 6), cash flow note 1, make-up payments",
+          "quote": "Make-up payments will terminate once incremental value of Areas I, II and III is $2 billion or greater."
+        }
       ]
     },
-    "decommissioning": { "present": null, "instrument": null, "amount_usd": null, "notes": "Nothing found in any source. The executed agreements are not posted.", "sources": [] },
+    "decommissioning": {
+      "present": null,
+      "instrument": null,
+      "amount_usd": null,
+      "notes": "Nothing found in any source. The executed agreements are not posted.",
+      "sources": []
+    },
     "grid_costs": {
       "present": true,
       "who_pays_interconnect": "shared",
@@ -54,13 +121,37 @@
       "governed_by": "Wisconsin PSC decision in docket 6630-TE-113 (April 24, 2026; final May 21, 2026), We Energies very large customer tariff",
       "notes": "The strongest tariff in this set, and it came from the regulator, not the village. The tariff is mandatory for customers with an aggregate load forecast of 100 MW or more and carries an initial term of 15 years. Customers must subscribe to bespoke resources; the commission refused to approve the proposed capacity-only option, under which non-participating customers would have covered 25 percent of facility costs and all fuel, leaving full-benefits resources (all costs, all attributes) as the only option. A minimum billing demand equals 100 percent of initially forecasted load or actual demand during the billing period, whichever is higher. Terminating after commercial operation means reimbursing the net book value of resources that cannot be repurposed. Financial security is required unless the customer holds ratings of at least A-minus from S&P and A3 from Moody's and meets a tangible net worth or liquidity test. What is still open: how network upgrade costs on the regional transmission system are allocated, which the commission told federal regulators in August 2026 still shifts large-load costs onto other wholesale customers.",
       "sources": [
-        { "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873", "where": "p. 4 finding 2 and p. 53 ordering paragraphs 3 to 5, term and threshold", "quote": "It is reasonable to require the applicant to modify the VLC tariff to include an initial term length of 15 years." },
-        { "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873", "where": "p. 33 full-benefits and capacity-only definitions; p. 37 capacity-only rejected", "quote": "reasonable to not approve the inclusion of capacity-only resources in the Bespoke Resources tariff and to only authorize full-benefits resources" },
-        { "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873", "where": "pp. 25 to 26 discussion; p. 54 ordering paragraph 16, minimum billing demand", "quote": "a minimum billing demand equal to 100 percent of the customer's initially forecasted load or actual demand during billing period, whichever is higher" },
-        { "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873", "where": "p. 41, termination after commercial operation", "quote": "responsible for reimbursing the applicant for the net-book value of the Bespoke Resource, to the extent that the resource cannot be repurposed" },
-        { "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873", "where": "pp. 43 to 44, financial security exemption", "quote": "credit ratings with respect to customer's long-term, senior, unsecured, non-credit enhanced indebtedness of not lower than \"A-\" from Standard & Poor's" },
+        {
+          "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873",
+          "where": "p. 4 finding 2 and p. 53 ordering paragraphs 3 to 5, term and threshold",
+          "quote": "It is reasonable to require the applicant to modify the VLC tariff to include an initial term length of 15 years."
+        },
+        {
+          "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873",
+          "where": "p. 33 full-benefits and capacity-only definitions; p. 37 capacity-only rejected",
+          "quote": "reasonable to not approve the inclusion of capacity-only resources in the Bespoke Resources tariff and to only authorize full-benefits resources"
+        },
+        {
+          "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873",
+          "where": "pp. 25 to 26 discussion; p. 54 ordering paragraph 16, minimum billing demand",
+          "quote": "a minimum billing demand equal to 100 percent of the customer's initially forecasted load or actual demand during billing period, whichever is higher"
+        },
+        {
+          "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873",
+          "where": "p. 41, termination after commercial operation",
+          "quote": "responsible for reimbursing the applicant for the net-book value of the Bespoke Resource, to the extent that the resource cannot be repurposed"
+        },
+        {
+          "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873",
+          "where": "pp. 43 to 44, financial security exemption",
+          "quote": "credit ratings with respect to customer's long-term, senior, unsecured, non-credit enhanced indebtedness of not lower than \"A-\" from Standard & Poor's"
+        },
         "https://psc.wi.gov/Documents/PressReleases/04.24.2026PressRelease.PDF",
-        { "url": "https://www.wpr.org/wp-content/uploads/2026/08/20260814-5240_PSCW-Comment-and-Attachments-ER26-3265.pdf", "where": "p. 1, heading I", "quote": "ATC's Existing Zonal Cost Allocation Method Shifts Large Load Interconnection Costs to Other Wholesale Customers." }
+        {
+          "url": "https://www.wpr.org/wp-content/uploads/2026/08/20260814-5240_PSCW-Comment-and-Attachments-ER26-3265.pdf",
+          "where": "p. 1, heading I",
+          "quote": "ATC's Existing Zonal Cost Allocation Method Shifts Large Load Interconnection Costs to Other Wholesale Customers."
+        }
       ]
     },
     "water": {
@@ -110,7 +201,11 @@
       "infrastructure_contribution_usd": null,
       "notes": "Microsoft's land payments retired Foxconn-era public debt: the county refunding bonds tied to Areas II and III were defeased in 2023 with land sale revenue paid by Microsoft, and WPR reported the expansion required no additional borrowing by the village or the county. Proceeds of the original 2023 sale went to Foxconn as partial reimbursement of the funds it advanced in 2017 to acquire the land. No local-subcontracting or road-repair obligation was found.",
       "sources": [
-        { "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10", "where": "PDF p. 7 (report page 6), cash flow note 2", "quote": "Bonds associated with Area II and III were defeased in 2023 with land sale revenue paid by Microsoft." },
+        {
+          "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10",
+          "where": "PDF p. 7 (report page 6), cash flow note 2",
+          "quote": "Bonds associated with Area II and III were defeased in 2023 with land sale revenue paid by Microsoft."
+        },
         "https://www.wpr.org/economy/mount-pleasant-deal-microsoft-will-include-no-public-financial-incentives-under-agreement",
         "https://racinecountyeye.com/2023/03/30/microsoft-data-center-mt-pleasant/"
       ]
@@ -126,31 +221,57 @@
       "sources": [
         "https://wisconsinwatch.org/2026/01/wisconsin-data-center-secrecy-deals-nda-nondisclosure-agreement/",
         "https://midwestadvocates.org/our-work/legal-action/demanding-transparency-about-the-environmental-impacts-of-data-centers/",
-        { "url": "https://www.wpr.org/wp-content/uploads/2026/08/20260814-5240_PSCW-Comment-and-Attachments-ER26-3265.pdf", "where": "p. 10, PSCW description of its own order condition", "quote": "ordered additional reporting on the impact large load network upgrades have on ATC's revenue requirement" }
+        {
+          "url": "https://www.wpr.org/wp-content/uploads/2026/08/20260814-5240_PSCW-Comment-and-Attachments-ER26-3265.pdf",
+          "where": "p. 10, PSCW description of its own order condition",
+          "quote": "ordered additional reporting on the impact large load network upgrades have on ATC's revenue requirement"
+        }
       ]
     },
     "tax": {
       "present": true,
-      "abatement_pct": null,
-      "duration_years": null,
+      "abatement_pct": 42,
+      "duration_years": 13,
       "pilot": false,
-      "estimated_forgone_usd": null,
+      "estimated_forgone_usd": 115000000,
       "but_for_test": null,
-      "notes": "No abatement. The March 2023 agreement lets Microsoft recoup 42 percent of the annual incremental property taxes on its improvements, not to exceed $5 million a year for the duration of the agreement and the district, and contingent on the village first meeting all other TID obligations. The November 2023 expansion was described as requiring no additional financial incentives, but the rebate was not withdrawn: the TID 5 cash flow projects developer incentives to Microsoft of $5,000,000 a year from 2027 through 2038 plus $55,000,000 in 2039, $115,000,000 in total. The only developer grant actually paid as of the 2024 state filing was $370,433 to Foxconn. Microsoft has said Wisconsin's sales and use tax exemption for data centers was one factor in choosing the site.",
+      "notes": "No exemption from the tax roll, but a rebate of it. The March 2023 agreement lets Microsoft recoup 42 percent of the annual incremental property taxes on its improvements, not to exceed $5 million a year for the duration of the agreement and the district, and contingent on the village first meeting all other TID obligations. The November 2023 expansion was described as requiring no additional financial incentives, but the rebate was not withdrawn: the TID 5 cash flow projects developer incentives to Microsoft of $5,000,000 a year from 2027 through 2038 plus $55,000,000 in 2039, $115,000,000 in total. The only developer grant actually paid as of the 2024 state filing was $370,433 to Foxconn. Microsoft has said Wisconsin's sales and use tax exemption for data centers was one factor in choosing the site.",
       "sources": [
         "https://racinecountyeye.com/2023/03/30/microsoft-data-center-mt-pleasant/",
         "https://www.wpr.org/economy/mount-pleasant-deal-microsoft-will-include-no-public-financial-incentives-under-agreement",
-        { "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10", "where": "PDF p. 7 (report page 6), cash flow column Develop. Incentives Microsoft", "quote": "Develop. Incentives Microsoft" },
-        { "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10", "where": "PDF p. 9 (report page 8), DOR Form PE-300 for 2024, developer grants", "quote": "Developer grants Developer name FOXCONN $370,433" }
+        {
+          "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10",
+          "where": "PDF p. 7 (report page 6), cash flow column Develop. Incentives Microsoft",
+          "quote": "Develop. Incentives Microsoft"
+        },
+        {
+          "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10",
+          "where": "PDF p. 9 (report page 8), DOR Form PE-300 for 2024, developer grants",
+          "quote": "Developer grants Developer name FOXCONN $370,433"
+        }
       ]
     }
   },
   "criticisms": [
-    { "summary": "Three Sturtevant residents filed a federal class action in July 2026 over low-frequency noise from the first building.", "source": "https://www.wpr.org/news/microsoft-sued-noise-complaints-at-new-mount-pleasant-data-center" },
-    { "summary": "Water projections were released only after environmental groups sued for the records, 210 days after the request.", "source": "https://midwestadvocates.org/our-work/legal-action/demanding-transparency-about-the-environmental-impacts-of-data-centers/" },
-    { "summary": "Residents at the January 2026 site-plan hearing raised transparency, energy use, water consumption, electronic waste, and long-term employment concerns.", "source": "https://racinecountyeye.com/2026/01/27/microsoft-site-plans-approved-data/" },
-    { "summary": "Statewide opposition has grown: a Marquette Law School poll found 70 percent of Wisconsin voters thought data center costs outweigh benefits in February 2026, rising to 78 percent in August 2026.", "source": "https://www.wispolitics.com/2026/marquette-poll-shows-further-drop-in-voters-data-center-views/" }
+    {
+      "summary": "Three Sturtevant residents filed a federal class action in July 2026 over low-frequency noise from the first building.",
+      "source": "https://www.wpr.org/news/microsoft-sued-noise-complaints-at-new-mount-pleasant-data-center"
+    },
+    {
+      "summary": "Water projections were released only after environmental groups sued for the records, 210 days after the request.",
+      "source": "https://midwestadvocates.org/our-work/legal-action/demanding-transparency-about-the-environmental-impacts-of-data-centers/"
+    },
+    {
+      "summary": "Residents at the January 2026 site-plan hearing raised transparency, energy use, water consumption, electronic waste, and long-term employment concerns.",
+      "source": "https://racinecountyeye.com/2026/01/27/microsoft-site-plans-approved-data/"
+    },
+    {
+      "summary": "Statewide opposition has grown: a Marquette Law School poll found 70 percent of Wisconsin voters thought data center costs outweigh benefits in February 2026, rising to 78 percent in August 2026.",
+      "source": "https://www.wispolitics.com/2026/marquette-poll-shows-further-drop-in-voters-data-center-views/"
+    }
   ],
-  "contributors": ["apeabody007"],
+  "contributors": [
+    "apeabody007"
+  ],
   "last_reviewed": "2026-09-07"
 }

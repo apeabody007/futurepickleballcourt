@@ -4853,12 +4853,12 @@
         },
         "tax": {
           "present": true,
-          "abatement_pct": null,
-          "duration_years": null,
+          "abatement_pct": 42,
+          "duration_years": 13,
           "pilot": false,
-          "estimated_forgone_usd": null,
+          "estimated_forgone_usd": 115000000,
           "but_for_test": null,
-          "notes": "No abatement. The March 2023 agreement lets Microsoft recoup 42 percent of the annual incremental property taxes on its improvements, not to exceed $5 million a year for the duration of the agreement and the district, and contingent on the village first meeting all other TID obligations. The November 2023 expansion was described as requiring no additional financial incentives, but the rebate was not withdrawn: the TID 5 cash flow projects developer incentives to Microsoft of $5,000,000 a year from 2027 through 2038 plus $55,000,000 in 2039, $115,000,000 in total. The only developer grant actually paid as of the 2024 state filing was $370,433 to Foxconn. Microsoft has said Wisconsin's sales and use tax exemption for data centers was one factor in choosing the site.",
+          "notes": "No exemption from the tax roll, but a rebate of it. The March 2023 agreement lets Microsoft recoup 42 percent of the annual incremental property taxes on its improvements, not to exceed $5 million a year for the duration of the agreement and the district, and contingent on the village first meeting all other TID obligations. The November 2023 expansion was described as requiring no additional financial incentives, but the rebate was not withdrawn: the TID 5 cash flow projects developer incentives to Microsoft of $5,000,000 a year from 2027 through 2038 plus $55,000,000 in 2039, $115,000,000 in total. The only developer grant actually paid as of the 2024 state filing was $370,433 to Foxconn. Microsoft has said Wisconsin's sales and use tax exemption for data centers was one factor in choosing the site.",
           "sources": [
             "https://racinecountyeye.com/2023/03/30/microsoft-data-center-mt-pleasant/",
             "https://www.wpr.org/economy/mount-pleasant-deal-microsoft-will-include-no-public-financial-incentives-under-agreement",
