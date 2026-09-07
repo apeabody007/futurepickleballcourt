@@ -270,6 +270,112 @@ def strongest_examples(deals):
     return out
 
 
+def render_prompt(deals):
+    """A ready-to-paste review prompt. Cuban told people to ask an LLM the questions;
+    this ships the questions."""
+    lines = [
+        "You are reviewing a proposed data center agreement on behalf of the community that would host it.",
+        "You are not the developer's lawyer. Be concrete and quote the document.",
+        "",
+        "Attached or pasted below is the agreement under negotiation.",
+        "Benchmark data on what other communities actually signed is at https://futurepickleballcourt.com/all.md",
+        "",
+        "Answer these, in order:",
+        "",
+        "1. For each of the terms below, quote the exact language in this agreement, or write NOT PRESENT.",
+    ]
+    for i, (name, spec) in enumerate(FLOOR["clauses"].items(), 1):
+        lines.append(f"   {i}. {spec['label']}. A strong version: {spec['asks']}.")
+    lines += [
+        "",
+        "2. For every term that is present, quote any language that softens it: good faith, commercially",
+        "   reasonable, best efforts, sole discretion, subject to availability, as determined by the company,",
+        "   or similar. For each one, say plainly whether it is an obligation or a preference. A term that",
+        "   sounds protective and cannot be enforced is worse than no term, because it ends the conversation.",
+        "",
+        "3. Which terms here are weaker than what other communities have already signed? Name the comparison.",
+        "",
+        "4. Walk through what happens if this facility is built and then stops operating in year six.",
+        "   Who pays to tear it down. Who pays for the grid capacity built to serve it. What happens to the",
+        "   tax revenue the budget now depends on. Point to the clause that answers each, or say there is none.",
+        "",
+        "5. Who can enforce each promise, and how. If only the local government can sue, say so. If residents",
+        "   are excluded as third party beneficiaries, say so.",
+        "",
+        "6. List the three changes that would most improve this deal for the community, in priority order,",
+        "   with specific language to propose for each.",
+        "",
+        "Do not soften your answer to be agreeable. If the deal is good, say that too.",
+    ]
+    return "\n".join(lines) + "\n"
+
+
+def render_all_markdown(deals):
+    """Every deal in one file, shaped for pasting into a chat window."""
+    L = [f"# Data center agreements: what communities actually signed",
+         "",
+         f"Generated {date.today().isoformat()} from https://futurepickleballcourt.com",
+         f"{len(deals)} agreements, scored against {len(FLOOR['clauses'])} terms. "
+         "Every term below carries the document and section it came from.",
+         "",
+         "Verification levels: primary means a person read the executed document; press means every term "
+         "traces to reporting; unverified means it came from a secondary summary and is waiting on a reader.",
+         ""]
+    for title, body in findings(deals):
+        L += [f"**{title}** {body}", ""]
+    L += ["---", ""]
+    for d in deals:
+        j = d["jurisdiction"]
+        s = score(d)
+        L += [f"## {j['locality']}, {j['state']}" + (f" ({short_name(d)})" if short_name(d) else ""), ""]
+        L.append(f"- Project: {d['project']}")
+        if d.get("operator"):
+            L.append(f"- Operator: {d['operator']}")
+        if d.get("developer"):
+            L.append(f"- Developer: {d['developer']}")
+        L.append(f"- Agreement: {d['agreement_type'].replace('_', ' ')}, {d['status']}"
+                 + (f", signed {d['dates']['signed']}" if d["dates"].get("signed")
+                    else f", approved {d['dates']['approved']}" if d["dates"].get("approved") else ""))
+        sc = d.get("scale") or {}
+        bits = [f"{sc[k]:,} {u}" if isinstance(sc.get(k), (int, float)) else None
+                for k, u in (("mw", "MW"), ("acres", "acres"), ("sqft", "sq ft"), ("capex_usd", "USD"))]
+        bits = [x for x in bits if x]
+        if bits:
+            L.append(f"- Scale: {', '.join(bits)}")
+        if sc.get("notes"):
+            L.append(f"  - {sc['notes']}")
+        L.append(f"- Verification: {d['verification']}")
+        L.append("- Documents:")
+        for x in d["documents"]:
+            L.append(f"  - [{x['kind']}] {x['title']}: {x['url']}")
+        L.append("")
+        for name, spec in FLOOR["clauses"].items():
+            c = d["terms"][name]
+            verdict = {"meets": "MEETS", "falls_short": "FALLS SHORT",
+                       "unknown": "UNKNOWN", "n/a": "NOT APPLICABLE"}[s[name]]
+            L.append(f"### {spec['label']}: {verdict}")
+            L.append(f"Floor: {spec['asks']}")
+            if c.get("hedge"):
+                L.append(f"SOFTENING LANGUAGE: \"{c['hedge']}\"")
+            if c.get("notes"):
+                L.append(c["notes"])
+            for x in (c.get("sources") or []):
+                if isinstance(x, dict):
+                    q = f' "{x["quote"]}"' if x.get("quote") else ""
+                    L.append(f"- {x.get('where') or 'source'}:{q} {x['url']}")
+                else:
+                    L.append(f"- {x}")
+            L.append("")
+        if d.get("criticisms"):
+            L.append("### Reported criticisms")
+            for x in d["criticisms"]:
+                L.append(f"- {x['summary']} ({x['source']})")
+            L.append("")
+        L += ["---", ""]
+    return "\n".join(L)
+
+
+
 # ------------------------------------------------------------------ rendering
 MARK = {"meets": "✅", "falls_short": "❌", "unknown": "❔", "n/a": "➖"}
 
@@ -364,6 +470,17 @@ def main():
     outputs = {
         ROOT / "BENCHMARK.md": render_markdown(deals),
         ROOT / "docs" / "index.html": render_html(deals),
+        ROOT / "docs" / "all.md": render_all_markdown(deals),
+        ROOT / "docs" / "prompt.txt": render_prompt(deals),
+        ROOT / "docs" / "all.json": json.dumps({
+            "generated": date.today().isoformat(),
+            "source": "https://futurepickleballcourt.com",
+            "license": "CC BY 4.0",
+            "floor": FLOOR["clauses"],
+            "findings": [{"title": t, "body": x} for t, x in findings(deals)],
+            "strongest": strongest_examples(deals),
+            "deals": [dict(d, score=score(d)) for d in deals],
+        }, indent=2, ensure_ascii=False) + "\n",
     }
     stale = []
     for path, content in outputs.items():

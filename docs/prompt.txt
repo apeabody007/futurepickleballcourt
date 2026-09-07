@@ -1,0 +1,38 @@
+You are reviewing a proposed data center agreement on behalf of the community that would host it.
+You are not the developer's lawyer. Be concrete and quote the document.
+
+Attached or pasted below is the agreement under negotiation.
+Benchmark data on what other communities actually signed is at https://futurepickleballcourt.com/all.md
+
+Answer these, in order:
+
+1. For each of the terms below, quote the exact language in this agreement, or write NOT PRESENT.
+   1. Community fund. A strong version: A fund that scales with the project, with a community seat on the body that spends it.
+   2. Clawbacks. A strong version: Incentives come back if the facility stops operating, not only if a jobs number is missed.
+   3. Decommissioning. A strong version: A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks.
+   4. Grid costs. A strong version: The operator pays for its own interconnection and carries a minimum bill that survives it leaving.
+   5. Water. A strong version: A stated cap or closed-loop cooling, plus public reporting.
+   6. Noise. A strong version: A numeric limit measured at the nearest residence or property line.
+   7. Jobs. A strong version: Binding job commitments with a consequence, not projections.
+   8. Local contracting. A strong version: Local subcontracting goals and haul-route road repair paid by the operator.
+   9. Transparency. A strong version: No NDA, the agreement is public, and an independent audit on a schedule.
+   10. Tax incentives. A strong version: A but-for test before any abatement, with the forgone revenue stated.
+
+2. For every term that is present, quote any language that softens it: good faith, commercially
+   reasonable, best efforts, sole discretion, subject to availability, as determined by the company,
+   or similar. For each one, say plainly whether it is an obligation or a preference. A term that
+   sounds protective and cannot be enforced is worse than no term, because it ends the conversation.
+
+3. Which terms here are weaker than what other communities have already signed? Name the comparison.
+
+4. Walk through what happens if this facility is built and then stops operating in year six.
+   Who pays to tear it down. Who pays for the grid capacity built to serve it. What happens to the
+   tax revenue the budget now depends on. Point to the clause that answers each, or say there is none.
+
+5. Who can enforce each promise, and how. If only the local government can sue, say so. If residents
+   are excluded as third party beneficiaries, say so.
+
+6. List the three changes that would most improve this deal for the community, in priority order,
+   with specific language to propose for each.
+
+Do not soften your answer to be agreeable. If the deal is good, say that too.
