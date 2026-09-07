@@ -1,0 +1,138 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-tx-abilene-2025",
+  "status": "signed",
+  "verification": "primary",
+  "jurisdiction": { "country": "US", "state": "TX", "locality": "City of Abilene", "level": "city" },
+  "operator": "Oracle and OpenAI (Stargate); Crusoe builds and operates the campus",
+  "developer": "Lancium LLC (landowner) with Abilene DC 1 through 8 LLC (Crusoe entities) as lessees",
+  "project": "Lancium Clean Campus, Stargate Site 1",
+  "agreement_type": "tax_abatement",
+  "dates": { "signed": "2025-03-17", "approved": "2025-02-13", "effective": "2025-03-17" },
+  "scale": { "acres": 941, "mw": 1200, "capex_usd": 3400000000, "sqft": 4000000, "notes": "Acreage is the reinvestment zone (about 941 acres); the campus is reported at 1,100 acres. Eight buildings of about 4 million sq ft and 1.2 GW per Crusoe. The agreement floor is $350 million of investment per facility, $2.8 billion across eight; the Development Corporation of Abilene cited $3.4 billion. Taylor County has a parallel agreement at a reported 80 percent, not read." },
+  "documents": [
+    { "title": "Second Amended and Restated Tax Abatement Agreement, City of Abilene, Lancium LLC, and Abilene DC 1 through 8 LLC (effective March 17, 2025)", "url": "https://abilenetx.gov/DocumentCenter/View/39456", "kind": "primary", "date": "2025-03-17" },
+    { "title": "Second Amended and Restated Second Tax Abatement Agreement (later-added improvements and equipment)", "url": "https://abilenetx.gov/DocumentCenter/View/39455", "kind": "primary", "date": "2025-03-17" },
+    { "title": "City Resolution 171-2025 (August 28, 2025) and Resolution 249-2025 (December 4, 2025) approving further agreements including an electricity generation plant", "url": "https://abilenetx.gov/DocumentCenter/View/39459", "kind": "primary", "date": "2025-08-28" },
+    { "title": "Taylor County Resolution 22-25", "url": "https://www.taylorcounty.texas.gov/DocumentCenter/View/4818/Resolution-22-25-Lancium", "kind": "primary", "date": "2025-09-09" },
+    { "title": "City of Abilene tax abatements index", "url": "https://abilenetx.gov/2476/Tax-Abatements", "kind": "government_page", "date": null },
+    { "title": "Texas Tribune: on-site gas turbines and permits", "url": "https://www.texastribune.org/2026/07/09/texas-data-centers-ai-power-plants-pollution-state-permits/", "kind": "press", "date": "2026-07-09" }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": false,
+      "amount_usd": null,
+      "cadence": null,
+      "scales_with_project": null,
+      "controlled_by": null,
+      "community_seat": null,
+      "notes": "No community fund in any of the agreements. Crusoe says it has paid for fire trucks, school expansions, and road improvements; those are voluntary and unquantified in the documents.",
+      "sources": [
+        { "url": "https://abilenetx.gov/DocumentCenter/View/39456", "where": "full agreement, no fund provision" },
+        "https://www.texastribune.org/2026/07/09/texas-data-centers-ai-power-plants-pollution-state-permits/"
+      ]
+    },
+    "clawbacks": {
+      "present": true,
+      "triggers": ["investment", "jobs", "other"],
+      "proportional": false,
+      "notes": "Default includes failure to commence or complete, delinquent taxes, bankruptcy, or breach, with a 30-day cure. On termination the city recaptures all taxes that would have been paid without the abatement, plus interest at the delinquent-tax rate, as liquidated damages secured by a tax lien, due within 30 days. Recapture is all-or-nothing for the defaulting parcel and there are no cross-defaults between parcels. A jobs shortfall ends that facility's abatement rather than triggering recapture. Nothing is tied to the facility ceasing operation after completion.",
+      "sources": [
+        { "url": "https://abilenetx.gov/DocumentCenter/View/39456", "where": "Section 6(a) to 6(e), pp. 11 to 13" },
+        { "url": "https://abilenetx.gov/DocumentCenter/View/39456", "where": "Section 3.8(d), pp. 8 to 9, jobs shortfall" }
+      ]
+    },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "No decommissioning term of any kind.",
+      "sources": [ { "url": "https://abilenetx.gov/DocumentCenter/View/39456", "where": "full agreement" } ]
+    },
+    "grid_costs": {
+      "present": false,
+      "who_pays_interconnect": "unknown",
+      "minimum_bill": null,
+      "term_years": null,
+      "governed_by": "Texas SB 6 (2025) large-load interconnection rules; implementing rule proposed March 2026",
+      "notes": "The agreements are silent on grid cost. Lancium builds the substation and electrical improvements on its own land. The campus also runs 360 MW of on-site gas turbines plus 62 diesel generators, with 41 more turbines proposed, and the generation plant itself is abated under a December 2025 agreement.",
+      "sources": [
+        { "url": "https://abilenetx.gov/DocumentCenter/View/39456", "where": "Section 2, definition of Improvements, p. 5" },
+        "https://abilenetx.gov/DocumentCenter/View/39460",
+        "https://www.texastribune.org/2026/07/09/texas-data-centers-ai-power-plants-pollution-state-permits/"
+      ]
+    },
+    "water": {
+      "present": false,
+      "limit_gpd": null,
+      "reporting": false,
+      "recycling_required": null,
+      "cooling": "closed_loop",
+      "notes": "No water terms in the abatement agreements. The mayor has said usage is under 1 percent of the city's daily consumption. Crusoe describes direct-to-chip liquid cooling in a closed loop with no evaporation. No separate water agreement was located.",
+      "sources": [
+        { "url": "https://abilenetx.gov/DocumentCenter/View/39456", "where": "full agreement" },
+        "https://ktxs.com/news/local/abilene-city-council-discusses-multiple-largely-talked-about-items-in-meeting",
+        "https://www.crusoe.ai/resources/newsroom/crusoe-expands-ai-data-center-campus-in-abilene-to-1-2-gigawatts"
+      ]
+    },
+    "noise": { "present": null, "limit_dba": null, "measured_at": null, "setback_ft": null, "notes": "No noise term found. Homes sit within half a mile of the turbines.", "sources": [ "https://www.texasobserver.org/abilene-texas-stargate-natural-gas-plant-harms/" ] },
+    "jobs": {
+      "present": true,
+      "promised_permanent": 357,
+      "promised_construction": 9000,
+      "local_hire": false,
+      "prevailing_wage": false,
+      "enforceable": true,
+      "notes": "57 full-time jobs at the first parcel by the end of 2026 and 50 at each of six more, 357 total, which may be filled by contractors, tenants, or subtenants, at an average wage of at least $57,600 or $72,000 with benefits. Verified each February 1 with payroll filings. Missing the number ends that facility's abatement. City policy asks only for reasonable efforts to hire residents. The construction figure is press-reported peak headcount.",
+      "sources": [
+        { "url": "https://abilenetx.gov/DocumentCenter/View/39456", "where": "Section 2 definitions, pp. 4 to 5; Section 3.8(d), pp. 8 to 9" },
+        "https://ktxs.com/news/local/lancium-crusoe-executives-brief-abilene-leaders-on-major-northside-investment"
+      ]
+    },
+    "local_contracting": {
+      "present": true,
+      "local_subcontracting": false,
+      "road_repair": null,
+      "infrastructure_contribution_usd": null,
+      "notes": "Contracts must be separated so that incorporated materials carry city sales tax, which is a revenue term rather than a local-hire term. The city waives building permit fees. No road repair or local subcontracting requirement.",
+      "sources": [
+        { "url": "https://abilenetx.gov/DocumentCenter/View/39456", "where": "Section 3.8(e), p. 9; Section 10(o), p. 18" }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": null,
+      "agreement_public": true,
+      "public_dashboard": false,
+      "audit_cadence": "annual",
+      "audit_independent": false,
+      "notes": "All agreements, resolutions, and ordinances are posted on the city website. Compliance is self-certified in filings each May 1 and February 1, with a city inspection right and no independent audit. No NDA was found; none is confirmed either way.",
+      "sources": [
+        "https://abilenetx.gov/2476/Tax-Abatements",
+        { "url": "https://abilenetx.gov/DocumentCenter/View/39456", "where": "Sections 3.5, 3.8(d), and 7" }
+      ]
+    },
+    "tax": {
+      "present": true,
+      "abatement_pct": 85,
+      "duration_years": 10,
+      "pilot": false,
+      "estimated_forgone_usd": null,
+      "but_for_test": null,
+      "notes": "City abates 85 percent of taxable value above the 2024 base for ten consecutive years per facility, and a companion agreement gives the same on later-added equipment, with no property abated more than ten years in total. Taylor County's parallel agreement is reported at 80 percent. The school district abates nothing. The city expects $70 to $90 million in revenue over 20 years; the county expects $18 million a year at full buildout. Oracle protested its $200 million 2025 appraisal after receiving the abatement. No formal but-for analysis was found; the city manager said the tenants could not pay the full tax burden.",
+      "sources": [
+        { "url": "https://abilenetx.gov/DocumentCenter/View/39456", "where": "Sections 4.2 to 4.5, pp. 10 to 11" },
+        { "url": "https://abilenetx.gov/DocumentCenter/View/39455", "where": "Sections 4.2 to 4.4" },
+        "https://finance.yahoo.com/news/taylor-county-estimated-see-18-222915156.html",
+        "https://www.aol.com/oracle-got-big-tax-breaks-090001667.html"
+      ]
+    }
+  },
+  "criticisms": [
+    { "summary": "Rents doubled and tripled during construction, with residents reporting displacement.", "source": "https://www.kacu.org/local-news/2026-09-02/panel-tackles-persistent-concerns-around-abilenes-ai-boom" },
+    { "summary": "The on-site turbines and diesel generators are permitted for about 1.6 million tons of greenhouse gases a year and roughly 1,000 tons of pollutants, with an expansion sought.", "source": "https://www.texastribune.org/2026/07/09/texas-data-centers-ai-power-plants-pollution-state-permits/" },
+    { "summary": "Oracle protested its property appraisal after receiving an 85 percent abatement, with an estimated $3 million a year at stake for the county.", "source": "https://www.aol.com/oracle-got-big-tax-breaks-090001667.html" }
+  ],
+  "contributors": ["apeabody007"],
+  "last_reviewed": "2026-09-07"
+}
