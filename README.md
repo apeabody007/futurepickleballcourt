@@ -22,6 +22,14 @@ Community fund · Clawbacks · Decommissioning · Grid costs · Water · Noise �
 
 The exact bar for each is in [`schema/floor.json`](schema/floor.json) and on the site. The model documents it was drawn from are listed in [`templates/README.md`](templates/README.md), and the state laws that set a floor above the local deal are summarized in [`STATE_RULES.md`](STATE_RULES.md).
 
+## Limits, read before you quote it
+
+- **Small sample.** A handful of deals is a start, not a survey. Do not read a pattern here as the national picture until the count is much higher.
+- **One reader per document.** "Read from the signed document" means a person read it and cited sections. It does not mean two people agreed. Corrections are welcome and expected.
+- **Deals change.** Agreements get amended, voided, and superseded. Each record carries the date it was last reviewed. Check the primary document before you act on a term.
+- **The bar is an opinion.** A deal that falls short here may still be a good deal for that town. The stamps say whether a term is present, not whether the whole deal was wise.
+- **Unknown is not a failure.** A question mark means nobody has found the answer yet. Many terms live in tariffs, side letters, or records requests, not the headline agreement.
+
 ## Add a deal or fix one
 
 If you know of a signed data center agreement that is not here, have a public records response, or have a page number for a term currently marked unknown, that is the most useful thing you can contribute.
