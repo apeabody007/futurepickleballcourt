@@ -428,7 +428,7 @@
   head += '<thead><tr><th>Deal</th>' + floorKeys.map(function (k) { return '<th>' + (headLabel[k] || esc(data.floor[k].label)) + '</th>'; }).join('') + '<th>Source</th></tr></thead>';
   var rows = data.deals.map(function (d, i) {
     var j = d.jurisdiction;
-    var r = '<tr class="deal" data-i="' + i + '" style="animation-delay:' + (i * 60) + 'ms"><td><span class="name"><span class="idx">A-' + (i + 1) + '</span>' + esc(j.locality) + ', ' + esc(j.state) + '</span><span class="who"><span class="idx"></span>' + esc((d.operator || d.developer || d.project).split(' (')[0]) + '</span></td>';
+    var r = '<tr class="deal" data-i="' + i + '" style="animation-delay:' + (i * 60) + 'ms"><td><span class="name"><span class="idx">A-' + (i + 1) + '</span>' + esc(j.locality) + ', ' + esc(j.state) + '</span><span class="who"><span class="idx"></span>' + esc(d._label || d.project.split(',')[0]) + '</span></td>';
     r += floorKeys.map(function (k) { return '<td><span class="lbl">' + (short[k] || k) + '</span><span class="st ' + cls(d.score[k]) + '" title="' + esc(data.floor[k].label) + ': ' + esc(d.score[k].replace('_', ' ')) + '">' + label[d.score[k]] + '</span></td>'; }).join('');
     r += '<td>' + esc({ primary: 'document', press: 'press', unverified: 'unverified' }[d.verification] || d.verification) + '</td></tr>';
     return r;

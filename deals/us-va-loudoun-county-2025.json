@@ -1,0 +1,146 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-va-loudoun-county-2025",
+  "status": "approved",
+  "verification": "primary",
+  "short_name": "Cross Mill",
+  "jurisdiction": { "country": "US", "state": "VA", "locality": "Loudoun County", "level": "county" },
+  "operator": null,
+  "developer": "Sycolin Rd Assemblage LLC",
+  "project": "Cross Mill Center (ZMAP-2023-0002 and SPEX-2023-0007), Leesburg district",
+  "agreement_type": "proffer",
+  "dates": { "signed": "2025-05-06", "approved": "2025-07-15", "effective": null },
+  "scale": { "acres": 22.73, "mw": 300, "capex_usd": null, "sqft": 556746, "notes": "The 300 MW figure is not a project size, it is a proffered ceiling on grid draw during peak periods for the first five years. Square footage is the maximum data center use allowed; the same approval permits smaller warehouse or flex alternatives." },
+  "documents": [
+    { "title": "Staff report with proffer statement (Attachment 1) and conditions of approval (Attachment 2)", "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768", "kind": "primary", "date": "2025-05-06" },
+    { "title": "Board of Supervisors action report, July 15, 2025 (item 9, approved 5 to 4)", "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266940", "kind": "primary", "date": "2025-07-15" },
+    { "title": "Loudoun County FY2027 adopted budget (data center tax rates and revenue share, stabilization fund)", "url": "https://www.loudoun.gov/DocumentCenter/View/221475/FY-2027-Adopted-Budget-Document", "kind": "government_page", "date": null },
+    { "title": "County data center program page (233 buildings, 56.5 million sq ft, application pipeline)", "url": "https://www.loudoun.gov/6408/Data-Centers-The-Loudoun-Story", "kind": "government_page", "date": null },
+    { "title": "LoudounNow: supervisors narrowly approve data center near Leesburg", "url": "https://www.loudounnow.com/news/supervisors-narrowly-approve-data-center-near-leesburg/article_3e355c29-4dbc-42df-bdb9-37d86f3013ad.html", "kind": "press", "date": "2025-07-15" }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": true,
+      "amount_usd": 10000,
+      "cadence": "one_time",
+      "scales_with_project": true,
+      "controlled_by": "The county and the volunteer fire and rescue companies; there is no committee and no fund to administer.",
+      "community_seat": false,
+      "notes": "Loudoun does not do community funds, because it does not need to trade for revenue. The only cash proffers here are a $10,000 historic preservation contribution and a fire and rescue contribution of $0.28 per gross square foot per zoning permit, adjusted for inflation from 2024. The fire and rescue amount scales with the building, which is why this is marked as scaling.",
+      "sources": [
+        { "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768", "where": "Proffer VII.A, fire and rescue contribution" },
+        { "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768", "where": "Lower Sycolin historic preservation proffer" }
+      ]
+    },
+    "clawbacks": {
+      "present": false,
+      "not_applicable": true,
+      "triggers": [],
+      "proportional": null,
+      "notes": "No incentive was given, so there is nothing to claw back. Virginia proffers are enforced by withholding zoning permits and certificates of occupancy rather than by repayment.",
+      "sources": [
+        { "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768", "where": "full proffer statement" }
+      ]
+    },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "No decommissioning term. The county with the largest concentration of data centers in the world has no teardown security in this approval.",
+      "sources": [
+        { "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768", "where": "full proffer statement and conditions" }
+      ]
+    },
+    "grid_costs": {
+      "present": false,
+      "who_pays_interconnect": "unknown",
+      "minimum_bill": null,
+      "term_years": null,
+      "governed_by": "Dominion Energy tariffs at the Virginia State Corporation Commission, which the county does not control",
+      "notes": "Cost allocation is a state matter and is not addressed. What the county did get is unusual and worth copying: a proffered ceiling of 300 MW of grid draw during peak grid periods for five years, with quarter-hour metering of withdrawals reported annually to the zoning administrator for three years. That is a load-management term, not a cost term.",
+      "sources": [
+        { "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768", "where": "Proffer V.A.f and V.A.g, full power cap and metering" }
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": null,
+      "reporting": false,
+      "recycling_required": null,
+      "cooling": "closed_loop",
+      "notes": "The proffer requires low water usage or liquid cooling systems, meaning air-cooled or adiabatic chillers or closed-loop liquid-to-chip, plus low-flow fixtures. No treated discharge may reach Sycolin Creek without treatment and the stream buffer is preserved. There is no volume cap and no reporting requirement.",
+      "sources": [
+        { "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768", "where": "Proffer V.A.a, cooling systems; Proffer V.C, Sycolin Creek" }
+      ]
+    },
+    "noise": {
+      "present": true,
+      "limit_dba": 55,
+      "measured_at": "The lot line of any contiguous lot that permits a single-family dwelling, counting lots across Crosstrail Boulevard and Sycolin Road as contiguous.",
+      "setback_ft": 95,
+      "notes": "The strongest noise term in this set. A 55 dBA cap at the residential lot line, a noise study before the first site plan, another within six months of every certificate of occupancy, mitigation within 60 days of any exceedance and a follow-up study, all certified by an acoustical consultant or professional engineer. Generators must be EPA Tier 4, or Tier 2 with selective catalytic reduction, placed at ground level only with opaque screening. Compare the Zebra East approval four months earlier in the same county, which allowed 70 dBA at the property line.",
+      "sources": [
+        { "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768", "where": "Proffer II.E, noise; Proffer III.C.b, generators; staff report p. 2 item 6, setback" },
+        { "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7909&meta_id=260500", "where": "Zebra East Proffer II.B, 70 dBA comparison" }
+      ]
+    },
+    "jobs": {
+      "present": false,
+      "promised_permanent": null,
+      "promised_construction": null,
+      "local_hire": null,
+      "prevailing_wage": null,
+      "enforceable": false,
+      "notes": "Jobs are not a proffer subject in Virginia land-use approvals. No number was promised and none can be enforced.",
+      "sources": [
+        { "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768", "where": "full proffer statement" }
+      ]
+    },
+    "local_contracting": {
+      "present": false,
+      "local_subcontracting": false,
+      "road_repair": false,
+      "infrastructure_contribution_usd": null,
+      "notes": "No local contracting or road repair term in this approval. Other Loudoun approvals do carry road cash: the Zebra East approval included $63,000 for a median and $142,000 for pedestrian improvements.",
+      "sources": [
+        { "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768", "where": "full proffer statement" },
+        { "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7909&meta_id=260500", "where": "Zebra East cash proffers" }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": false,
+      "agreement_public": true,
+      "public_dashboard": false,
+      "audit_cadence": "annual",
+      "audit_independent": true,
+      "notes": "The application, staff report, proffers and the recorded vote are all public. No nondisclosure agreement appears anywhere in the record, which is the norm for a Virginia legislative land-use case and the opposite of how these deals are done in most states. Compliance is verified by outside professionals: noise studies certified by an acoustical consultant or engineer, and annual reporting of metered grid withdrawals to the zoning administrator for three years.",
+      "sources": [
+        { "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768", "where": "Proffer II.E noise studies; Proffer V.A.g annual metering reports" },
+        { "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266940", "where": "action report, recorded vote" }
+      ]
+    },
+    "tax": {
+      "present": false,
+      "not_applicable": true,
+      "abatement_pct": 0,
+      "duration_years": null,
+      "pilot": false,
+      "estimated_forgone_usd": 0,
+      "but_for_test": null,
+      "notes": "No abatement and no payment in lieu. This is the point of Loudoun. Data centers pay full real property tax and a computer equipment tax of $4.15 per $100 of assessed value, a rate the county has held while cutting the vehicle rate. Data center computer equipment alone is budgeted at $879 million in FY2027, and data center real plus personal property tax is about $1.3 billion of roughly $2.9 billion in local tax funding. The county banks against the concentration risk through a revenue stabilization fund targeted at 10 percent of budgeted data center tax revenue, holding about $119.7 million. Every other community in this benchmark is negotiating for a fraction of what Loudoun simply charges.",
+      "sources": [
+        { "url": "https://www.loudoun.gov/DocumentCenter/View/221475/FY-2027-Adopted-Budget-Document", "where": "pp. 34 to 35, tax rates and computer equipment revenue; p. 363, stabilization fund" },
+        { "url": "https://www.loudoun.gov/6301/Business-Personal-Property-Tax-Assessmen", "where": "computer equipment depreciation schedule" },
+        "https://www.loudoun.gov/6408/Data-Centers-The-Loudoun-Story"
+      ]
+    }
+  },
+  "criticisms": [
+    { "summary": "Approved 5 to 4. Distribution lines will be buried but transmission lines stay overhead.", "source": "https://www.loudounnow.com/news/supervisors-narrowly-approve-data-center-near-leesburg/article_3e355c29-4dbc-42df-bdb9-37d86f3013ad.html" },
+    { "summary": "Loudoun ended by-right data centers in March 2025 but grandfathered 22 pending applications, and supervisors moved in 2026 to revoke that grandfathering and to draft a temporary moratorium.", "source": "https://virginiabusiness.com/loudoun-supervisors-propose-terminating-data-centers-grandfather-provisions/" },
+    { "summary": "Sterling residents report 70 to 80 decibels from an off-grid campus running gas turbines against a 55 decibel rule, and the county has never issued a noise violation against the operator.", "source": "https://virginiamercury.com/2026/08/25/the-thousand-dollar-line/" }
+  ],
+  "contributors": ["apeabody007"],
+  "last_reviewed": "2026-09-07"
+}

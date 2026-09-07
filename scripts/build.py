@@ -180,8 +180,20 @@ MARK = {"meets": "✅", "falls_short": "❌", "unknown": "❔", "n/a": "➖"}
 
 def deal_label(deal):
     j = deal["jurisdiction"]
-    who = deal.get("operator") or deal.get("developer")
-    return f"{j['locality']}, {j['state']}" + (f" ({who.split(' (')[0].split(',')[0]})" if who else "")
+    who = short_name(deal)
+    return f"{j['locality']}, {j['state']}" + (f" ({who})" if who else "")
+
+
+def short_name(deal):
+    """A short label for the row. Blank when it would just echo the place name."""
+    who = deal.get("short_name") or deal.get("operator") or deal.get("developer")
+    if not who:
+        return ""
+    who = who.split(" (")[0].split(",")[0].strip()
+    place = deal["jurisdiction"]["locality"].lower()
+    if who.lower() in place or place.replace("city of ", "").replace("village of ", "") in who.lower():
+        return ""
+    return who
 
 
 def render_markdown(deals):
@@ -220,7 +232,7 @@ def render_html(deals):
     payload = json.dumps({
         "generated": date.today().isoformat(),
         "floor": FLOOR["clauses"],
-        "deals": [dict(deal, score=score(deal)) for deal in deals],
+        "deals": [dict(deal, score=score(deal), _label=short_name(deal)) for deal in deals],
     }, ensure_ascii=False)
     # </script> inside JSON would end the tag early.
     payload = payload.replace("</", "<\\/")

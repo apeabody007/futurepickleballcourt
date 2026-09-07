@@ -848,6 +848,13 @@
     "last_reviewed": {
       "type": "string",
       "format": "date"
+    },
+    "short_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Short display name for the matrix row, usually the operator or the parent company. Defaults to the operator or developer when omitted."
     }
   },
   "$defs": {
