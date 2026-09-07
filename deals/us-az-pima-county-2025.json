@@ -1,0 +1,146 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-az-pima-county-2025",
+  "status": "signed",
+  "verification": "primary",
+  "jurisdiction": { "country": "US", "state": "AZ", "locality": "Pima County", "level": "county" },
+  "operator": null,
+  "developer": "Beale Infrastructure, through Humphrey's Peak Properties LLC and Bobcat B1 LLC",
+  "project": "Project Blue, Houghton data center campus at 11295 S. Harrison Road (the City of Tucson rejected annexation 7 to 0; the county sold the land and signed a memorandum of agreement instead)",
+  "agreement_type": "land_sale",
+  "dates": { "signed": "2025-12-16", "approved": "2025-06-17", "effective": "2025-12-24" },
+  "scale": { "acres": 290.31, "mw": 286, "capex_usd": 3600000000, "sqft": 2250000, "notes": "Acreage and square footage from the purchase agreement. MW is the first-phase electric service agreement; the city's analysis put full build at 400 to 600 MW. Cost is the developer's first-phase figure of $1.2 billion construction plus $2.4 billion equipment." },
+  "documents": [
+    { "title": "Pima County acquisition agreement CT2500000038 (scanned; land sale with jobs floor and reversion)", "url": "https://content.civicplus.com/api/assets/7477affb-e443-412c-b8db-1bc3bb3794f6", "kind": "primary", "date": "2025-06-17" },
+    { "title": "Memorandum of agreement, Pima County and Beale, December 16, 2025 ($15 million commitment, renewable match)", "url": "https://pima.legistar.com/View.ashx?M=F&ID=15028221&GUID=E5EA6EE3-DB51-4208-9E3D-3BB4A42A4B8E", "kind": "primary", "date": "2025-12-16" },
+    { "title": "County nondisclosure agreement with Amazon Web Services, March 1, 2023", "url": "https://azluminaria.org/wp-content/uploads/2025/10/PO_-_Non-Disclosure_Agreements_-_AMAZON_WEB_SERVICES_-_AWS_-__-_3-1-2023_-_3-1-2028_-_Project_Blue_-__-_Enabled_-_3-9-2023.pdf", "kind": "primary", "date": "2023-03-01" },
+    { "title": "Board of Supervisors meeting summary, June 17, 2025 (3 to 2 votes)", "url": "https://pima.legistar.com/View.ashx?M=M&ID=1235766&GUID=61220EC9-F31F-48E0-9520-70FAFB492606", "kind": "government_page", "date": "2025-06-17" },
+    { "title": "City of Tucson draft development agreement, July 14, 2025 (never adopted; contained the water penalties)", "url": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/government/city-manager-office/documents/2025-7-14-project-blue-da-final-draft-for-mc-review-clean.pdf", "kind": "government_page", "date": "2025-07-14" },
+    { "title": "County Project Blue document index", "url": "https://www.pima.gov/3552/Project-Blue-FAQ", "kind": "government_page", "date": null },
+    { "title": "Tucson Sentinel: council votes 7 to 0 to end talks", "url": "https://www.tucsonsentinel.com/local/report/080625_project_blue/", "kind": "press", "date": "2025-08-06" }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": true,
+      "amount_usd": 15000000,
+      "cadence": "mixed",
+      "scales_with_project": true,
+      "controlled_by": "Beale, at its sole discretion, under the memorandum of agreement.",
+      "community_seat": false,
+      "notes": "A $15 million community donation over the project life, paid per phase after certificates of occupancy: $5 million for STEM scholarships and trade schools after phase one, $10 million later for digital equity and fiber. Distribution is at the developer's sole discretion. The memorandum bars consequential damages and specific performance, so the county's remedy if it is not paid is limited. The rejected city agreement had no cash fund; it had an oversized reclaimed-water pipeline and a recharge facility instead.",
+      "sources": [
+        { "url": "https://pima.legistar.com/View.ashx?M=F&ID=15028221&GUID=E5EA6EE3-DB51-4208-9E3D-3BB4A42A4B8E", "where": "Section 4 and Section 6(c)" },
+        "https://azluminaria.org/2025/12/16/pima-county-supervisors-approve-agreement-outlining-beales-commitments-on-project-blue/"
+      ]
+    },
+    "clawbacks": {
+      "present": true,
+      "triggers": ["jobs", "investment"],
+      "proportional": true,
+      "notes": "The purchase agreement sets a jobs floor of 75 full-time positions at an average base salary of at least $75,000 by month 84, maintained two years, with liquidated damages of $12,500 per missing position, capped at $250,000 per certificate and $1 million in total, as the county's sole remedy. If construction does not start within 24 months the county may buy the land back at $71,905.89 an acre. Nothing is tied to the facility ceasing operation after it is built.",
+      "sources": [
+        { "url": "https://content.civicplus.com/api/assets/7477affb-e443-412c-b8db-1bc3bb3794f6", "where": "Sections 17.2, 17.6.1, 17.6.3, and 17.7" }
+      ]
+    },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "Nothing in the purchase agreement or memorandum. The neighboring Town of Marana, approving Beale's second campus in January 2026, added a condition requiring removal of all hardware and security for the property if the use is discontinued, which is more than the county got.",
+      "sources": [
+        { "url": "https://content.civicplus.com/api/assets/7477affb-e443-412c-b8db-1bc3bb3794f6", "where": "full agreement" },
+        "https://news.azpm.org/p/newsheadlines/2026/1/8/227908-marana-town-council-approves-rezoning-for-luckett-road-project-600-acre-hyperscale-data-center/"
+      ]
+    },
+    "grid_costs": {
+      "present": true,
+      "who_pays_interconnect": "operator",
+      "minimum_bill": true,
+      "term_years": 10,
+      "governed_by": "Tucson Electric Power energy service agreement approved by the Arizona Corporation Commission 4 to 1 on December 3, 2025; under appeal by the state Attorney General",
+      "notes": "Up to 286 MW on a ten-year term at an approved large-customer rate with no discounts, minimum monthly bills, termination only on multi-year notice with a fee backed by financial security, and the customer paying interconnection. The utility said no new generation is required. The dissenting commissioner called the contract shorter and weaker than other states'; the Attorney General appealed, arguing a provision lets the utility and developer set rate schedules between themselves. The 100 percent renewable match is met with certificates, and the utility told regulators the power will not come from renewable sources.",
+      "sources": [
+        { "url": "https://content.civicplus.com/api/assets/6b2dfc39-d95c-4377-a177-b52d05985e5d", "where": "County memo of August 25, 2025 summarizing the energy service agreement" },
+        "https://azluminaria.org/2025/12/03/arizona-corporation-commission-gives-green-light-to-project-blue-power-agreement/",
+        "https://www.azag.gov/press-release/attorney-general-mayes-appeals-arizona-corporation-commissions-approval-tucson"
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": null,
+      "reporting": null,
+      "recycling_required": null,
+      "cooling": "air",
+      "notes": "After the city refused water, the developer switched to closed-loop air cooling and two on-site wells permitted by the state at 96.5 acre-feet a year combined, about 31 million gallons; the developer estimates 15,000 to 20,000 gallons a day. No cap or reporting term sits in the county documents. The rejected city agreement was the strongest water paper in this set: allocations of 1,910 acre-feet a year, a net water positive requirement, penalty rates of 150 and 200 percent over limits, and $500,000 in liquidated damages if a ten-year rolling average exceeded allocations by 10 percent. In May 2026 the city revoked a construction meter after a contractor drew about 652,000 gallons of potable water outside the service area.",
+      "sources": [
+        { "url": "https://pima.legistar.com/View.ashx?M=F&ID=15028221&GUID=E5EA6EE3-DB51-4208-9E3D-3BB4A42A4B8E", "where": "Section 1" },
+        "https://news.azpm.org/p/environmentnews/2026/5/28/229919-arizona-water-officials-approve-wells-tied-to-project-blue-data-center/",
+        { "url": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/government/city-manager-office/documents/2025-7-14-project-blue-da-final-draft-for-mc-review-clean.pdf", "where": "Section III.g, pp. 11 to 12; Exhibit E; Exhibit G" },
+        "https://www.tucsonsentinel.com/local/report/050526_project_blue_water/"
+      ]
+    },
+    "noise": { "present": null, "limit_dba": null, "measured_at": null, "setback_ft": null, "notes": "No noise term in the purchase agreement or memorandum. Conditions in the county specific plan were not retrieved.", "sources": [] },
+    "jobs": {
+      "present": true,
+      "promised_permanent": 75,
+      "promised_construction": 3024,
+      "local_hire": false,
+      "prevailing_wage": null,
+      "enforceable": true,
+      "notes": "The binding floor is 75 full-time jobs at $75,000 average base salary by month 84 after closing, certified twice a year, with capped liquidated damages. The county's economic study projected 180 direct jobs by 2029 at $64,000 average and 3,024 construction jobs over 2026 to 2028. Local union labor is an emphasis in the developer's letters, not a requirement.",
+      "sources": [
+        { "url": "https://content.civicplus.com/api/assets/7477affb-e443-412c-b8db-1bc3bb3794f6", "where": "Sections 17.6.1 and 17.6.3" },
+        { "url": "https://content.civicplus.com/api/assets/c389f127-6e01-48fc-b258-68508aa1841a", "where": "County memo of June 10, 2025, economic impact analysis" },
+        { "url": "https://content.civicplus.com/api/assets/2192e865-fe7e-48f4-8a0c-7c1c8b5cd32c", "where": "Beale letter of September 17, 2025" }
+      ]
+    },
+    "local_contracting": {
+      "present": false,
+      "local_subcontracting": false,
+      "road_repair": false,
+      "infrastructure_contribution_usd": null,
+      "notes": "Aspirational language only. By contrast, Marana's approval of Beale's second campus has the developer funding a $15 to $20 million electrical connection, a $20 million road, a $15 to $20 million water line, and 30 percent of a $66 million drainage channel.",
+      "sources": [
+        { "url": "https://content.civicplus.com/api/assets/2192e865-fe7e-48f4-8a0c-7c1c8b5cd32c", "where": "Beale letter of September 17, 2025" },
+        "https://www.tucsonsentinel.com/local/report/010726_marana_project_blue/"
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": true,
+      "agreement_public": true,
+      "public_dashboard": false,
+      "audit_cadence": "annual",
+      "audit_independent": true,
+      "notes": "The county signed a five-year nondisclosure agreement with Amazon Web Services in March 2023 covering even the existence of the relationship, with ten days' notice before any records release. A second, broader NDA followed in 2024. Supervisors said they voted without knowing an NDA existed. The purchase agreement and memorandum are posted. The annual third-party verification covers only the renewable-energy match, and that clause is void if it jeopardizes utility approval. The county adopted an NDA policy in September 2025 capping terms at two years and barring water and power use from being treated as proprietary; the city adopted its own template in December 2025.",
+      "sources": [
+        { "url": "https://azluminaria.org/wp-content/uploads/2025/10/PO_-_Non-Disclosure_Agreements_-_AMAZON_WEB_SERVICES_-_AWS_-__-_3-1-2023_-_3-1-2028_-_Project_Blue_-__-_Enabled_-_3-9-2023.pdf", "where": "Sections 2, 6, 9, and 11" },
+        "https://azluminaria.org/2025/08/04/project-blue-nda-policy-secrecy/",
+        { "url": "https://pima.legistar.com/View.ashx?M=F&ID=15028221&GUID=E5EA6EE3-DB51-4208-9E3D-3BB4A42A4B8E", "where": "Section 3" },
+        "https://azluminaria.org/2025/12/17/the-lasting-legacy-of-project-blue-tucson-approves-new-non-disclosure-agreement/"
+      ]
+    },
+    "tax": {
+      "present": false,
+      "not_applicable": true,
+      "abatement_pct": 0,
+      "duration_years": null,
+      "pilot": false,
+      "estimated_forgone_usd": null,
+      "but_for_test": null,
+      "notes": "No county property-tax incentive; the developer stated it was not asking for one. Arizona's statutory data center program exempts equipment from transaction and use tax for up to ten years; a councilmember's question during city review put the first-phase forgone revenue at about $62 million. The county paid a $626,250 broker commission out of the $20.875 million sale, and received $6.5 million in additional consideration for relocating a trap and skeet range.",
+      "sources": [
+        { "url": "https://content.civicplus.com/api/assets/93418380-b75f-4118-a254-04d7511f4a74", "where": "County memo of December 29, 2025, settlement statement" },
+        { "url": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/government/city-manager-office/documents/project-blue_faq-responses_final.pdf", "where": "Q22" }
+      ]
+    }
+  },
+  "criticisms": [
+    { "summary": "A supervisor said it was challenging and shocking to vote under an NDA; another later said the built project is not what was approved.", "source": "https://azluminaria.org/2025/08/04/project-blue-nda-policy-secrecy/" },
+    { "summary": "The dissenting supervisor called the $15 million memorandum a press release with an exit door, since it bars damages and specific performance.", "source": "https://www.calonews.com/arizona/pima-officials-demand-contracts-after-project-blue-developer-pledges-15m-in-local-investments/article_c2c9f1a0-f7dd-475a-9a17-4d46c8bd0832.html" },
+    { "summary": "The Attorney General appealed the power contract, saying rates were set behind closed doors.", "source": "https://www.azag.gov/press-release/attorney-general-mayes-appeals-arizona-corporation-commissions-approval-tucson" },
+    { "summary": "Researchers disputed the water-positive claim and warned miles of the Santa Cruz River could dry.", "source": "https://www.kjzz.org/fronteras-desk/2025-08-11/project-blue-would-have-used-millions-of-gallons-of-tucson-water-residents-city-leaders-said-no" }
+  ],
+  "contributors": ["apeabody007"],
+  "last_reviewed": "2026-09-07"
+}

@@ -1,0 +1,191 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-al-bessemer-2025",
+  "status": "approved",
+  "verification": "press",
+  "jurisdiction": {
+    "country": "US",
+    "state": "AL",
+    "locality": "City of Bessemer",
+    "level": "city"
+  },
+  "operator": "QTS (confirmed July 2026)",
+  "developer": "Logistics Land Investment LLC (TPA Group)",
+  "project": "Project Marvel hyperscale campus off Rock Mountain Lake Road",
+  "agreement_type": "rezoning",
+  "dates": {
+    "signed": null,
+    "approved": "2025-11-18",
+    "effective": null
+  },
+  "scale": {
+    "acres": 1600,
+    "mw": 1200,
+    "capex_usd": 14500000000,
+    "sqft": 4500000,
+    "notes": "About 700 acres rezoned in November 2025 plus 914 acres in April 2026. Eighteen buildings of about 250,000 sq ft. Cost and 1,200 MW are the developer's figures."
+  },
+  "documents": [
+    {
+      "title": "Mutual nondisclosure agreement between the City and Logistics Land Investment LLC, February 5, 2025, with the February 2026 amendment (released June 18, 2026 after a legal demand)",
+      "url": "https://www.selc.org/wp-content/uploads/2026/07/Southern-Environmental-Law-Center-Ryan-Anderson.pdf",
+      "kind": "primary",
+      "date": "2025-02-05"
+    },
+    {
+      "title": "Inside Climate News: council approves rezoning 5 to 2",
+      "url": "https://insideclimatenews.org/news/18112025/alabama-city-council-approves-rezoning-for-massive-data-center/",
+      "kind": "press",
+      "date": "2025-11-18"
+    },
+    {
+      "title": "WBRC: QTS confirms plans, commits not to seek local property tax incentives",
+      "url": "https://www.wbrc.com/2026/07/02/qts-confirms-plans-proposed-data-center-campus-bessemer/",
+      "kind": "press",
+      "date": "2026-07-02"
+    },
+    {
+      "title": "WBHM: NDA required officials to destroy records",
+      "url": "https://www.wbhm.org/local-news/2026-07-14/document-shows-bessemer-data-center-non-disclosure-agreement-required-officials-to-destroy-records",
+      "kind": "press",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "Alabama Reflector: how the data center could affect Bessemer (water authority capacity)",
+      "url": "https://alabamareflector.com/2025/07/27/how-could-a-proposed-hyperscale-data-center-affect-bessemer/",
+      "kind": "press",
+      "date": "2025-07-27"
+    }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": null,
+      "amount_usd": null,
+      "cadence": null,
+      "scales_with_project": null,
+      "controlled_by": null,
+      "community_seat": null,
+      "notes": "No development, incentive, or community benefits agreement has been made public. The approvals are zoning ordinances only. A $14.5 billion project has been approved with no published terms.",
+      "sources": []
+    },
+    "clawbacks": {
+      "present": null,
+      "triggers": [],
+      "proportional": null,
+      "notes": "None found; no agreement exists to hold one.",
+      "sources": []
+    },
+    "decommissioning": {
+      "present": null,
+      "instrument": null,
+      "amount_usd": null,
+      "notes": null,
+      "sources": []
+    },
+    "grid_costs": {
+      "present": null,
+      "who_pays_interconnect": "unknown",
+      "minimum_bill": null,
+      "term_years": null,
+      "governed_by": null,
+      "notes": "The developer said Alabama Power confirmed 1.2 GW; the utility says large loads pay the full cost to serve with minimum-bill provisions, but no agreement has been published. Bessemer's own residents are served by a different utility, so any cost falls on Alabama Power's customers elsewhere. Backup would be several hundred diesel generators.",
+      "sources": [
+        "https://www.wbrc.com/2025/11/18/bessemer-data-center-project-will-move-forward/",
+        "https://www.alreporter.com/2025/08/05/bessemer-city-government-clashes-with-residents-over-proposed-hyperscale-data-center/",
+        "https://alabamareflector.com/2025/07/27/how-could-a-proposed-hyperscale-data-center-affect-bessemer/"
+      ]
+    },
+    "water": {
+      "present": null,
+      "limit_gpd": null,
+      "reporting": null,
+      "recycling_required": null,
+      "cooling": "closed_loop",
+      "notes": "The developer asked the Warrior River Water Authority for 2 million gallons a day; the authority, with about 6 million gallons a day of capacity, wrote that it could not serve the project without significant upgrades the developer would fund. QTS later said closed-loop cooling would consume no water once operating. The city's own utility said it will not supply the site.",
+      "sources": [
+        "https://alabamareflector.com/2025/07/27/how-could-a-proposed-hyperscale-data-center-affect-bessemer/",
+        "https://www.wbrc.com/2026/07/02/qts-confirms-plans-proposed-data-center-campus-bessemer/"
+      ]
+    },
+    "noise": {
+      "present": null,
+      "limit_dba": null,
+      "measured_at": null,
+      "setback_ft": 100,
+      "notes": "The only known term is a setback of at least 100 feet, which the developer said exceeds the zoning minimum. No noise limit has been published.",
+      "sources": [
+        "https://www.wbrc.com/2025/11/18/bessemer-data-center-project-will-move-forward/"
+      ]
+    },
+    "jobs": {
+      "present": true,
+      "promised_permanent": 330,
+      "promised_construction": 1000,
+      "local_hire": null,
+      "prevailing_wage": null,
+      "enforceable": false,
+      "notes": "330 permanent jobs at an average of about $112,500 and roughly 1,000 construction jobs a year over seven to eight years, all developer claims with no agreement to enforce them.",
+      "sources": [
+        "https://www.wbrc.com/2025/11/19/bessemer-city-council-approves-149-billion-data-center-project-despite-transparency-concerns/",
+        "https://www.alreporter.com/2025/11/20/bessemer-city-council-approves-data-center-construction-despite-public-concerns/"
+      ]
+    },
+    "local_contracting": {
+      "present": null,
+      "local_subcontracting": null,
+      "road_repair": null,
+      "infrastructure_contribution_usd": null,
+      "notes": null,
+      "sources": []
+    },
+    "transparency": {
+      "present": true,
+      "nda": true,
+      "agreement_public": false,
+      "public_dashboard": false,
+      "audit_cadence": "none",
+      "audit_independent": false,
+      "notes": "The mayor, chief of staff, and city attorney signed a mutual NDA in February 2025 that bars disclosing that discussions are underway, requires the city to destroy its notes on request, and carries a non-circumvention clause; a February 2026 amendment added the identity of the parties and any prospective operator to the confidential list. It was released only after a public-records request and a legal demand. Council members who voted said they had not seen the agreement. The developer's environmental studies were never released. There is no development or incentive agreement to publish.",
+      "sources": [
+        {
+          "url": "https://www.selc.org/wp-content/uploads/2026/07/Southern-Environmental-Law-Center-Ryan-Anderson.pdf",
+          "where": "Sections 1, 4, 6, 7, 8, and 13; First Amendment"
+        },
+        "https://insideclimatenews.org/news/13072026/alabama-data-center-non-disclosure-agreement/",
+        "https://www.wbhm.org/local-news/2026-07-14/document-shows-bessemer-data-center-non-disclosure-agreement-required-officials-to-destroy-records"
+      ]
+    },
+    "tax": {
+      "present": null,
+      "abatement_pct": null,
+      "duration_years": null,
+      "pilot": null,
+      "estimated_forgone_usd": null,
+      "but_for_test": null,
+      "notes": "Nothing has been adopted. A councilman said abatements will be offered as the norm; state law allows a 30-year abatement of non-school property taxes worth potentially more than $500 million. In July 2026 the city attorney said QTS committed not to seek local property tax incentives from the City. The economic study the city relied on assumed no abatements.",
+      "sources": [
+        "https://insideclimatenews.org/news/11052025/bessemer-alabama-proposed-data-center/",
+        "https://www.wbrc.com/2026/07/02/qts-confirms-plans-proposed-data-center-campus-bessemer/",
+        "https://www.wbrc.com/2025/11/19/bessemer-city-council-approves-149-billion-data-center-project-despite-transparency-concerns/"
+      ]
+    }
+  },
+  "criticisms": [
+    {
+      "summary": "A councilman who voted no called the approval a grave mistake and said somebody is going to front the bill.",
+      "source": "https://insideclimatenews.org/news/18112025/alabama-city-council-approves-rezoning-for-massive-data-center/"
+    },
+    {
+      "summary": "The county commission president expected the city to abate more than it collects.",
+      "source": "https://alabamareflector.com/2025/07/27/how-could-a-proposed-hyperscale-data-center-affect-bessemer/"
+    },
+    {
+      "summary": "The NAACP demanded copies of the NDAs and revocation of the approvals; police removed an 80-year-old resident's protest sign outside City Hall.",
+      "source": "https://naacp.org/sites/default/files/documents/Final%20NAACP%20Opposition%20Letter%20to%20Project%20Marvel.pdf"
+    }
+  ],
+  "contributors": [
+    "apeabody007"
+  ],
+  "last_reviewed": "2026-09-07"
+}
