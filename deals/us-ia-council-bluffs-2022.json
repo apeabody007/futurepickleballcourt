@@ -1,0 +1,126 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-ia-council-bluffs-2022",
+  "status": "signed",
+  "verification": "press",
+  "jurisdiction": { "country": "US", "state": "IA", "locality": "City of Council Bluffs", "level": "city" },
+  "operator": "Google",
+  "developer": "Google LLC",
+  "project": "Google Council Bluffs campus, 2022 expansion (state contract 23-HQJPTC-005) with earlier 2007, 2012, and 2015 awards",
+  "agreement_type": "tax_abatement",
+  "dates": { "signed": null, "approved": "2022-10-21", "effective": null },
+  "scale": { "acres": 2200, "mw": null, "capex_usd": 600000000, "sqft": 3000000, "notes": "Acreage combines the original site (about 1,200 acres) and the Southlands campus (about 1,000). Cost is the 2022 state contract amount; cumulative investment since 2007 exceeds $6 billion, with a further $1 billion announced in July 2024 that appears in no state contract record. No MW figure has been published; power use has been confidential since 2007." },
+  "documents": [
+    { "title": "Iowa Economic Development Authority 2025 annual report (contract 23-HQJPTC-005: $600 million, 31 jobs, $0 state tax benefit, completion 2029)", "url": "https://www.legis.iowa.gov/docs/publications/DF/1600580.pdf", "kind": "primary", "date": null },
+    { "title": "Iowa Administrative Code 261 chapter 68, High Quality Jobs rules (proportional repayment)", "url": "https://www.legis.iowa.gov/docs/iac/chapter/01-07-2026.261.68.pdf", "kind": "primary", "date": null },
+    { "title": "Council Bluffs City Council record, April 20, 2015, Resolution 15-104 amending the Google master contract", "url": "https://www.councilbluffs-ia.gov/Archive/ViewFile/Item/323", "kind": "primary", "date": "2015-04-20" },
+    { "title": "Bisnow: Google planning $600M expansion (local tax break figure)", "url": "https://www.bisnow.com/national/news/data-center/google-planning-600m-expansion-of-key-midwest-data-center-hub-116008", "kind": "press", "date": "2022-10-24" },
+    { "title": "KMAland: council rejects moratorium, capacity and demolition-cost concerns", "url": "https://www.kmaland.com/news/council-bluffs-council-denies-proposed-moratorium-on-new-data-centers/article_57610dda-a991-41c5-99a5-d4bd772cd936.html", "kind": "press", "date": "2026-06-16" }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": false,
+      "amount_usd": null,
+      "cadence": null,
+      "scales_with_project": null,
+      "controlled_by": null,
+      "community_seat": null,
+      "notes": "No community betterment payment, unlike Google's Cedar Rapids deal. Voluntary giving: more than $3 million to local schools and nonprofits since 2009, free citywide Wi-Fi, $250,000 to a regional development group in 2023, and $1.3 million for river-basin stabilization in 2024.",
+      "sources": [
+        "https://www.datacenterfrontier.com/cloud/article/11427613/google-has-invested-5-billion-in-its-iowa-data-centers",
+        "https://www.datacenterfrontier.com/hyperscale/article/55093750/google-continues-to-invest-in-iowa-with-another-1-billion-planned-for-its-council-bluffs-campus"
+      ]
+    },
+    "clawbacks": {
+      "present": true,
+      "triggers": ["jobs", "investment"],
+      "proportional": true,
+      "notes": "Iowa's High Quality Jobs rules require repayment in the same proportion as the job or capital shortfall, whichever is greater, and full repayment if eligibility fails. The 2022 contract carried no state tax benefit, so the state clawback has little to bite on; whether the city's abatement has its own clawback is unknown because the city agreement is not posted.",
+      "sources": [
+        { "url": "https://www.legis.iowa.gov/docs/iac/chapter/01-07-2026.261.68.pdf", "where": "261 IAC 68.6(9)(c), p. 8" },
+        { "url": "https://www.legis.iowa.gov/docs/publications/DF/1600580.pdf", "where": "p. 38" }
+      ]
+    },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "None found. In June 2026 the mayor named the cost of site demolition if data centers leave as an issue the city has not addressed.",
+      "sources": [
+        "https://www.kmaland.com/news/council-bluffs-council-denies-proposed-moratorium-on-new-data-centers/article_57610dda-a991-41c5-99a5-d4bd772cd936.html"
+      ]
+    },
+    "grid_costs": {
+      "present": null,
+      "who_pays_interconnect": "unknown",
+      "minimum_bill": null,
+      "term_years": null,
+      "governed_by": null,
+      "notes": "Served by MidAmerican Energy. Google's consumption has been confidential under an agreement with the utility since 2007. Google contracted up to 407 MW of MidAmerican wind in 2014. Who pays for interconnection and whether any minimum bill applies is unknown.",
+      "sources": [
+        "https://www.nbcnews.com/news/amp/wbna19592197",
+        "https://www.datacenterknowledge.com/sustainability/google-we-ve-bought-1-gigawatt-of-renewable-energy"
+      ]
+    },
+    "water": {
+      "present": null,
+      "limit_gpd": null,
+      "reporting": null,
+      "recycling_required": null,
+      "cooling": "unknown",
+      "notes": "Google's own 2025 environmental report lists Council Bluffs as its largest water user: 1,410 million gallons withdrawn and 1,010 million consumed in 2024. That reporting is voluntary. The city's public works director said data centers need 1 to 2 million gallons a day, that water and sewer are running near capacity, and that a treatment plant expansion could cost $200 to $300 million. No cap or reporting requirement in a city agreement was found.",
+      "sources": [
+        { "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf", "where": "p. 110, water by site" },
+        "https://www.kmaland.com/news/council-bluffs-council-denies-proposed-moratorium-on-new-data-centers/article_57610dda-a991-41c5-99a5-d4bd772cd936.html"
+      ]
+    },
+    "noise": { "present": null, "limit_dba": null, "measured_at": null, "setback_ft": null, "notes": null, "sources": [] },
+    "jobs": {
+      "present": true,
+      "promised_permanent": 31,
+      "promised_construction": null,
+      "local_hire": null,
+      "prevailing_wage": null,
+      "enforceable": true,
+      "notes": "The 2022 state contract requires 31 jobs at a qualifying wage of $28.73 an hour, enforceable through the proportional clawback. Earlier contracts required 60 jobs in 2007 and 35 in 2012. Google reports more than 900 full-time and supplier roles on site.",
+      "sources": [
+        { "url": "https://www.legis.iowa.gov/docs/publications/DF/1600580.pdf", "where": "p. 38" },
+        { "url": "https://www.legis.iowa.gov/docs/publications/SD/435115.pdf", "where": "p. 2, 2007 and 2012 awards" }
+      ]
+    },
+    "local_contracting": { "present": null, "local_subcontracting": null, "road_repair": null, "infrastructure_contribution_usd": null, "notes": null, "sources": [] },
+    "transparency": {
+      "present": true,
+      "nda": null,
+      "agreement_public": false,
+      "public_dashboard": false,
+      "audit_cadence": "none",
+      "audit_independent": false,
+      "notes": "State awards and contract status are public in the annual report and the state's open dataset. The city's own agreements were approved in open session but could not be located online. Power use has been confidential since the first agreement.",
+      "sources": [
+        "https://www.legis.iowa.gov/docs/publications/DF/1600580.pdf",
+        "https://www.nbcnews.com/news/amp/wbna19592197"
+      ]
+    },
+    "tax": {
+      "present": true,
+      "abatement_pct": null,
+      "duration_years": null,
+      "pilot": false,
+      "estimated_forgone_usd": 16600000,
+      "but_for_test": null,
+      "notes": "The city granted a reported $16.6 million property-tax break for the 2022 expansion; its percentage and term are not published. State benefits across the 2007, 2012, and 2015 awards totaled about $36.6 million; the 2022 award carried none. Iowa also grants a permanent sales and use tax exemption to data centers investing $200 million or more.",
+      "sources": [
+        "https://www.bisnow.com/national/news/data-center/google-planning-600m-expansion-of-key-midwest-data-center-hub-116008",
+        "https://www.datacenterknowledge.com/hyperscalers/iowa-officials-approve-tax-breaks-for-google-data-center-expansion",
+        { "url": "https://www.legis.iowa.gov/docs/publications/SD/435115.pdf", "where": "p. 2" }
+      ]
+    }
+  },
+  "criticisms": [
+    { "summary": "The mayor proposed a one-year moratorium in June 2026 over sewer and water capacity, missing community benefits, and unaddressed demolition costs; the council rejected it 5 to 0.", "source": "https://www.kmaland.com/news/council-bluffs-council-denies-proposed-moratorium-on-new-data-centers/article_57610dda-a991-41c5-99a5-d4bd772cd936.html" },
+    { "summary": "A 2026 gubernatorial candidate's plan would end state data center incentives, ban NDAs, and require full payment of utility upgrades with public water and energy disclosure.", "source": "https://www.thegazette.com/news/elections/sand-unveils-plan-to-end-iowa-data-center-tax-breaks/article_8eb1a97a-db27-4dad-9b17-50a9a9de6c9c.html" }
+  ],
+  "contributors": ["apeabody007"],
+  "last_reviewed": "2026-09-07"
+}

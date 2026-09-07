@@ -1,0 +1,142 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-wi-mount-pleasant-2023",
+  "status": "signed",
+  "verification": "press",
+  "jurisdiction": { "country": "US", "state": "WI", "locality": "Village of Mount Pleasant", "level": "town" },
+  "operator": "Microsoft",
+  "developer": "Microsoft Corporation",
+  "project": "Microsoft Fairwater campus on the former Foxconn land, Tax Increment District 5",
+  "agreement_type": "development_agreement",
+  "dates": { "signed": null, "approved": "2023-03-30", "effective": null },
+  "scale": { "acres": 1345, "mw": null, "capex_usd": 7300000000, "sqft": null, "notes": "Acreage per the November 2023 expansion package (a regional agency now lists 1,575 acres after a 2025 purchase). Cost is the $3.3 billion first building plus the $4 billion second; a further $13.3 billion, 15 buildings and about 8.7 million sq ft, was approved by site plan in January 2026. The utility told investors it expects 2.6 GW from Microsoft along the corridor; no MW figure appears in any village document." },
+  "documents": [
+    { "title": "Village and County announcement of the three agreements (purchase and sale, development, implementation), March 2023", "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/3131/03282023---Microsoft-Press-Release", "kind": "government_page", "date": "2023-03-27" },
+    { "title": "TID 5 Joint Review Board annual report, November 10, 2025 (value guarantee, land sales, make-up payments)", "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10", "kind": "primary", "date": "2025-11-10" },
+    { "title": "Wisconsin PSC final decision, docket 6630-TE-113, We Energies very large customer and bespoke resources tariffs", "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873", "kind": "primary", "date": "2026-05-21" },
+    { "title": "Racine County Eye: village approves Microsoft agreements (repurchase rights, 42 percent rebate)", "url": "https://racinecountyeye.com/2023/03/30/microsoft-data-center-mt-pleasant/", "kind": "press", "date": "2023-03-30" },
+    { "title": "WPR: expansion deal includes no public financial incentives", "url": "https://www.wpr.org/economy/mount-pleasant-deal-microsoft-will-include-no-public-financial-incentives-under-agreement", "kind": "press", "date": null },
+    { "title": "WPR: records show 8 million gallons a year of water", "url": "https://www.wpr.org/news/microsoft-data-centers-8-million-gallons-water-each-year", "kind": "press", "date": null }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": false,
+      "amount_usd": null,
+      "cadence": "one_time",
+      "scales_with_project": false,
+      "controlled_by": null,
+      "community_seat": null,
+      "notes": "No standing community fund. The November 2023 package included $4.2 million to restore about 1.5 miles of Lamparek Creek, $100,000 for county water-restoration projects, and $200,000 to United Way of Racine County, which runs a $140,000 technology grants fund. Whether these sit in the executed agreement or alongside it is not confirmed; the agreements are not posted.",
+      "sources": [
+        "https://www.wisbusiness.com/2023/village-of-mount-pleasant-racine-county-to-consider-expansion-of-microsoft-datacenter-footprint/",
+        "https://biztimes.com/united-way-of-racine-county-to-partner-with-microsoft-on-new-technology-fund/"
+      ]
+    },
+    "clawbacks": {
+      "present": true,
+      "triggers": ["investment", "other"],
+      "proportional": null,
+      "notes": "The village and county may repurchase land at Microsoft's original per-acre price if construction does not begin by set deadlines, and the expansion agreement requires a minimum of four buildings or repurchase rights activate. Microsoft guaranteed a minimum assessed value of $1.4 billion by January 1, 2028 for the expansion areas, backed by make-up payments if short; the village said in 2026 the value had already been surpassed. Nothing is tied to the facility ceasing operation.",
+      "sources": [
+        "https://racinecountyeye.com/2023/03/30/microsoft-data-center-mt-pleasant/",
+        "https://www.wuwm.com/2023-11-29/microsofts-plans-for-a-huge-data-center-complex-in-racine-county-clicks-with-local-boards",
+        { "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10", "where": "pp. 1 to 2 and 6, value guarantee and make-up payments" }
+      ]
+    },
+    "decommissioning": { "present": null, "instrument": null, "amount_usd": null, "notes": "Nothing found in any source. The executed agreements are not posted.", "sources": [] },
+    "grid_costs": {
+      "present": true,
+      "who_pays_interconnect": "shared",
+      "minimum_bill": true,
+      "term_years": 15,
+      "governed_by": "Wisconsin PSC decision in docket 6630-TE-113 (April 24, 2026; final May 21, 2026), We Energies very large customer tariff",
+      "notes": "The strongest tariff in this set, and it came from the regulator, not the village. Customers of 100 MW or more must take a minimum 15-year term, subscribe to new generation under a full-benefits model paying 100 percent of its cost (the commission struck a 75/25 option), and carry a minimum billing demand of 100 percent of forecast load or actual demand, whichever is higher. Termination after commercial operation means paying the net book value of resources that cannot be repurposed. Financial security is required unless rated A-minus or better. What is still open: how network upgrade costs on the regional transmission system are allocated, which the commission told federal regulators in August 2026 still shifts large-load costs onto others.",
+      "sources": [
+        { "url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=591873", "where": "pp. 25 to 26 minimum billing demand; p. 33 full-benefits model; pp. 39 to 44 termination and security; ordering paragraphs 3 to 17, pp. 53 to 54" },
+        "https://psc.wi.gov/Documents/PressReleases/04.24.2026PressRelease.PDF",
+        "https://www.wpr.org/wp-content/uploads/2026/08/20260814-5240_PSCW-Comment-and-Attachments-ER26-3265.pdf"
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": null,
+      "reporting": false,
+      "recycling_required": null,
+      "cooling": "closed_loop",
+      "notes": "Water comes from the Racine utility under a Racine and Mount Pleasant agreement whose terms are not public, drawn from Lake Michigan under a 2018 diversion approval of up to 7 million gallons a day. Records released only after a public-records lawsuit show a first-phase peak of 234,000 gallons a day, rising to 702,000 with later phases, about 8.4 million gallons a year across the sites. Microsoft says more than 90 percent of the facility uses closed-loop cooling that consumes no water. No cap or reporting requirement was found; the city withheld the projections for about seven months until sued.",
+      "sources": [
+        "https://www.wpr.org/news/microsoft-data-centers-8-million-gallons-water-each-year",
+        "https://midwestadvocates.org/our-work/legal-action/demanding-transparency-about-the-environmental-impacts-of-data-centers/",
+        "https://local.microsoft.com/blog/understanding-microsoft-datacenters-in-racine-county/"
+      ]
+    },
+    "noise": {
+      "present": null,
+      "limit_dba": null,
+      "measured_at": null,
+      "setback_ft": null,
+      "notes": "Governed by village ordinance rather than the deal; the ordinance text was not retrieved. Residents reported noise from cooling fans in spring 2026, Microsoft added fan limits and sound components, and three residents filed a federal class action in July 2026 alleging low-frequency noise that decibel metering does not capture. The January 2026 site-plan approvals added sound-wall and lighting conditions.",
+      "sources": [
+        "https://www.wpr.org/news/microsoft-sued-noise-complaints-at-new-mount-pleasant-data-center",
+        "https://local.microsoft.com/blog/testing-underway-to-understand-noise-at-our-mount-pleasant-datacenter/"
+      ]
+    },
+    "jobs": {
+      "present": false,
+      "promised_permanent": null,
+      "promised_construction": null,
+      "local_hire": null,
+      "prevailing_wage": null,
+      "enforceable": false,
+      "notes": "The agreements do not state how many people Microsoft will employ; the binding metric is assessed value, not jobs. Projections have ranged from 200 at the first building to 800 with the second; Microsoft reported 375 hired by May 2026 and about 550 employees and vendors at opening. Construction peaked above 3,000 workers.",
+      "sources": [
+        "https://racinecountyeye.com/2023/03/30/microsoft-data-center-mt-pleasant/",
+        "https://urbanmilwaukee.com/2026/05/12/microsoft-says-375-workers-hired-for-mount-pleasant-data-center/"
+      ]
+    },
+    "local_contracting": {
+      "present": null,
+      "local_subcontracting": null,
+      "road_repair": null,
+      "infrastructure_contribution_usd": null,
+      "notes": "Land-sale proceeds fund completion of Wisconn Valley Way and retire county debt from the Foxconn era, and the village says no new public borrowing is needed. No local-subcontracting or road-repair obligation was found.",
+      "sources": [
+        { "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10", "where": "p. 6, use of land-sale proceeds" }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": false,
+      "agreement_public": false,
+      "public_dashboard": false,
+      "audit_cadence": "none",
+      "audit_independent": false,
+      "notes": "The village told Wisconsin Watch it signed no nondisclosure agreement. The agreements were approved in open meetings but are not posted online; the TID's annual reports are. Water projections were withheld until a lawsuit. The regulator ordered additional reporting on utility agreements with large customers.",
+      "sources": [
+        "https://wisconsinwatch.org/2026/01/wisconsin-data-center-secrecy-deals-nda-nondisclosure-agreement/",
+        "https://midwestadvocates.org/our-work/legal-action/demanding-transparency-about-the-environmental-impacts-of-data-centers/"
+      ]
+    },
+    "tax": {
+      "present": true,
+      "abatement_pct": null,
+      "duration_years": null,
+      "pilot": false,
+      "estimated_forgone_usd": null,
+      "but_for_test": null,
+      "notes": "No abatement. The March 2023 agreement let Microsoft recoup 42 percent of the incremental property taxes on its improvements, capped at $5 million a year and contingent on district revenues after other obligations; the November 2023 expansion was described as carrying no public financial incentives, and district filings through 2024 show developer payments only to Foxconn. Whether the rebate survives in the amended agreement is not confirmed. Microsoft cites Wisconsin's state sales-tax exemption for data centers as a siting factor.",
+      "sources": [
+        "https://racinecountyeye.com/2023/03/30/microsoft-data-center-mt-pleasant/",
+        "https://www.wpr.org/economy/mount-pleasant-deal-microsoft-will-include-no-public-financial-incentives-under-agreement",
+        { "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10", "where": "pp. 8 to 9, developer grants paid" }
+      ]
+    }
+  },
+  "criticisms": [
+    { "summary": "A federal class action over low-frequency noise from the first building was filed in July 2026.", "source": "https://www.wpr.org/news/microsoft-sued-noise-complaints-at-new-mount-pleasant-data-center" },
+    { "summary": "Water projections were released only after environmental groups sued for the records.", "source": "https://midwestadvocates.org/our-work/legal-action/demanding-transparency-about-the-environmental-impacts-of-data-centers/" },
+    { "summary": "Residents at the January 2026 hearing raised energy, water, e-waste, and non-local labor concerns; a statewide poll found about 70 percent believe costs outweigh benefits.", "source": "https://www.wpr.org/news/mount-pleasant-approves-site-plans-microsoft-data-center-expansion" }
+  ],
+  "contributors": ["apeabody007"],
+  "last_reviewed": "2026-09-07"
+}
