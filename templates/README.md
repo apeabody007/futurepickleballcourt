@@ -1,6 +1,6 @@
 # Model templates and guides
 
-What the benchmark compares signed deals against. Links only; we do not copy the documents. Clause names are summarized from the documents themselves.
+What the benchmark compares signed deals against. Links only; I do not copy the documents. Clause names are summarized from the documents themselves.
 
 | Template | Publisher, date | What it asks for |
 |---|---|---|

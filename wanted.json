@@ -1,0 +1,13 @@
+{
+  "note": "Deals worth adding next, and the exact document that would settle them. Claim one by opening an issue or just send the document. Requests from readers get added here.",
+  "wanted": [
+    { "place": "New Mexico (statewide)", "what": "Any executed data center agreement in New Mexico. A reader raised the state's lack of transparency in the thread that started this list and no New Mexico deal is in here yet.", "document": "A development agreement, industrial revenue bond package, or utility special contract." },
+    { "place": "Memphis, Tennessee", "what": "xAI Colossus. A large campus with on-site gas turbines and a live permitting fight.", "document": "The Memphis Light Gas and Water service agreement and any city or county incentive." },
+    { "place": "Mount Pleasant, Wisconsin", "what": "The executed Microsoft development agreements. This record is built from the district's filings and press because the agreements themselves are not posted.", "document": "The March 2023 and November 2023 development agreements from the village clerk." },
+    { "place": "Council Bluffs, Iowa", "what": "The city's own abatement agreements. The state contracts are public but the local terms are not.", "document": "The city development agreements behind the reported $16.6 million break." },
+    { "place": "New Albany, Ohio", "what": "The community reinvestment area agreement text. Only the authorizing resolutions are published.", "document": "The fourth amended and restated CRA agreement on file with the clerk of council." },
+    { "place": "Fort Meade, Florida", "what": "The executed city development agreement, as signed rather than as proposed in the April 2026 packet.", "document": "The signed agreement and any amendment since April 14, 2026." },
+    { "place": "Bessemer, Alabama", "what": "Any economic terms at all. A $14.5 billion project was approved on zoning alone with nothing published.", "document": "An incentive, abatement, or development agreement, if one exists." },
+    { "place": "Northern Virginia beyond Loudoun", "what": "Prince William and Fauquier approvals since the 2026 legislation.", "document": "Proffer statements with the new sound-profile assessments." }
+  ]
+}

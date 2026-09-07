@@ -176,6 +176,26 @@
   .finding p { margin: 0; font-size: 16px; line-height: 1.45; color: var(--ink-2); }
   @media (max-width: 700px) { .finding { border-right: 0; } }
 
+  .promptbox { border: 1.5px solid var(--rule); background: var(--card, var(--paper)); }
+  .promptbar { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; padding: 10px 14px; border-bottom: 1px solid var(--hair); }
+  .promptbar button { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; background: var(--ink); color: var(--paper); border: 1.5px solid var(--ink); padding: 8px 14px; cursor: pointer; }
+  .promptbar button:hover { background: var(--paper); color: var(--ink); }
+  .promptbar .dl { font-family: var(--mono); font-size: 12.5px; color: var(--ink-2); }
+  .promptbox pre { margin: 0; padding: 14px; max-height: 300px; overflow: auto; font-family: var(--mono); font-size: 12.5px; line-height: 1.55; white-space: pre-wrap; color: var(--ink-2); }
+
+  .strong { border: 1.5px solid var(--rule); }
+  .strongrow { display: grid; grid-template-columns: 190px 1fr; gap: 0 20px; padding: 14px 18px; border-bottom: 1px solid var(--hair); }
+  .strongrow:last-child { border-bottom: 0; }
+  .strongrow > div:first-child { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
+  .strongrow .place { display: block; margin-top: 4px; color: var(--ink); font-size: 13px; letter-spacing: 0; text-transform: none; }
+  .strongrow p { margin: 0 0 5px; font-size: 17px; line-height: 1.4; }
+  .strongrow .src { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+  .strongrow .src a { color: var(--ink-2); }
+  @media (max-width: 700px) { .strongrow { grid-template-columns: 1fr; gap: 6px; } }
+
+  .hedge { margin: 6px 0 0; padding: 7px 10px; border-left: 3px solid var(--stamp); background: color-mix(in srgb, var(--stamp) 6%, transparent); font-size: 15px; line-height: 1.4; }
+  .hedge b { font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--stamp); display: block; margin-bottom: 2px; }
+
   /* floor */
   .floor { columns: 2; column-gap: 48px; margin: 0; padding: 0; list-style: none; counter-reset: fl; }
   .floor li { break-inside: avoid; margin: 0 0 14px; padding-left: 44px; position: relative; font-size: 18px; line-height: 1.4; }
@@ -327,15 +347,28 @@
   <div class="findings" id="findings"></div>
 
   <h2>The scorecard <span id="count"></span></h2>
-  <p class="intro">Each row is one signed deal. Each column is one term a good deal should include. The stamp says whether the deal clears the bar we set for that term. Tap a row to see exactly what the deal says and where it says it.</p>
+  <p class="intro">Each row is one signed deal. Each column is one term a good deal should include. The stamp says whether the deal clears the bar I set for that term. Tap a row to see exactly what the deal says and where it says it.</p>
   <div class="legend">
     <span><span class="st meets">Met</span> clears the bar</span>
     <span><span class="st falls_short">Short</span> falls short</span>
-    <span><span class="st unknown">?</span> we could not find out yet</span>
+    <span><span class="st unknown">?</span> I could not find out yet</span>
     <span><span class="st na">n/a</span> does not apply, for example no tax break was given so there is nothing to claw back</span>
   </div>
   <div class="grid-wrap"><table class="grid" id="matrix"></table></div>
   <section id="sheet" class="sheet" hidden></section>
+
+  <h2>Use this on your own deal <span>the questions, already written</span></h2>
+  <p class="intro">Mark Cuban's advice was to load these agreements into an AI and ask where the community is getting hurt. Here is that prompt, written out, with the ten terms built in. Paste it into any chat tool along with the agreement you are looking at.</p>
+  <div class="promptbox">
+    <div class="promptbar">
+      <button type="button" id="copyprompt">Copy the prompt</button>
+      <span class="dl">or take the data: <a href="/prompt.txt">prompt.txt</a> · <a href="/all.md">all.md</a> · <a href="/all.json">all.json</a></span>
+    </div>
+    <pre id="prompttext"></pre>
+  </div>
+
+  <h2>The strongest terms anyone has actually signed <span id="strongnote"></span></h2>
+  <div class="strong" id="strongest"></div>
 
   <h2>The bar <span>what each term has to include to count as met</span></h2>
   <ol class="floor" id="floor"></ol>
@@ -350,9 +383,14 @@
     <li><b>Unknown is not a failure.</b> A question mark means nobody has found the answer yet. Many terms live in tariffs, side letters, or records requests, not the headline agreement.</li>
   </ol>
 
+  <h2>Wanted <span>what would make this better</span></h2>
+  <p class="intro" id="wantednote"></p>
+  <ol class="floor" id="wanted"></ol>
+  <p class="note">Corrections already made are listed in <a href="https://github.com/apeabody007/futurepickleballcourt/blob/main/CORRECTIONS.md">CORRECTIONS.md</a>. If a number here is wrong, that file is where the fix gets recorded.</p>
+
   <footer>
     <div>Prepared by <a href="https://aaronpeabody.dev" class="sig">Aaron Peabody</a><br>Data CC BY 4.0 · Code MIT · <a href="https://github.com/apeabody007/futurepickleballcourt">github.com/apeabody007/futurepickleballcourt</a></div>
-    <div>Know a deal that is missing, or a term we got wrong?<br>Add it or fix it by pull request. A source on every term, or it doesn't go in.</div>
+    <div>Know a deal that is missing, or a term I got wrong?<br>Add it or fix it by pull request. A source on every term, or it doesn't go in.</div>
   </footer>
 </div>
 <script id="data" type="application/json">/*DATA*/</script>
@@ -414,6 +452,7 @@
       var f = facts(k, c);
       if (f.length) h += '<p class="facts">' + f.join(' · ') + '</p>';
       if (c.notes) h += '<p>' + esc(c.notes) + (refs.length ? '<sup>' + refs.join(',') + '</sup>' : '') + '</p>';
+      if (c.hedge) h += '<p class="hedge"><b>Softening language</b>' + esc(c.hedge) + '</p>';
       else if (refs.length) h += '<p class="facts">receipts<sup>' + refs.join(',') + '</sup></p>';
       h += '</div>';
     });
@@ -463,6 +502,46 @@
   if (fEl) {
     fEl.innerHTML = (data.findings || []).map(function (f) {
       return '<div class="finding"><h3>' + esc(f.title) + '</h3><p>' + esc(f.body) + '</p></div>';
+    }).join('');
+  }
+
+  var pt = document.getElementById('prompttext');
+  if (pt) {
+    pt.textContent = data.prompt || '';
+    var btn = document.getElementById('copyprompt');
+    btn.addEventListener('click', function () {
+      var done = function () { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy the prompt'; }, 1800); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(data.prompt).then(done, function () { fallback(); });
+      } else { fallback(); }
+      function fallback() {
+        var r = document.createRange(); r.selectNodeContents(pt);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        try { document.execCommand('copy'); done(); } catch (e) { btn.textContent = 'Select and copy'; }
+      }
+    });
+  }
+
+  var sn = document.getElementById('strongnote');
+  if (sn) sn.textContent = data.strongest_note ? '' : '';
+  var strongEl = document.getElementById('strongest');
+  if (strongEl) {
+    strongEl.innerHTML = (data.strongest || []).map(function (e) {
+      var src = '';
+      if (e.cite && e.url) src = '<div class="src">' + esc(e.cite) + (e.quote ? ' &ldquo;' + esc(e.quote) + '&rdquo;' : '') + ' &middot; <a href="' + esc(e.url) + '" rel="noopener">document</a></div>';
+      else if (e.url) src = '<div class="src"><a href="' + esc(e.url) + '" rel="noopener">document</a></div>';
+      return '<div class="strongrow"><div>' + esc(e.label) +
+        '<span class="place">' + esc(e.where) + (e.who ? ', ' + esc(e.who) : '') + '</span></div>' +
+        '<div><p>' + esc(e.why) + '</p>' + src + '</div></div>';
+    }).join('');
+  }
+
+  var wn = document.getElementById('wantednote');
+  if (wn) wn.textContent = data.wanted_note || '';
+  var wEl = document.getElementById('wanted');
+  if (wEl) {
+    wEl.innerHTML = (data.wanted || []).map(function (w) {
+      return '<li><b>' + esc(w.place) + '.</b> ' + esc(w.what) + ' <span class="meta">Needed: ' + esc(w.document) + '</span></li>';
     }).join('');
   }
 

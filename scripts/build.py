@@ -16,6 +16,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMA = json.loads((ROOT / "schema" / "deal.schema.json").read_text())
 FLOOR = json.loads((ROOT / "schema" / "floor.json").read_text())
+WANTED_PATH = ROOT / "wanted.json"
+WANTED = json.loads(WANTED_PATH.read_text()) if WANTED_PATH.exists() else {"wanted": []}
 DEALS_DIR = ROOT / "deals"
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 URL_RE = re.compile(r"^https?://\S+$")
@@ -450,6 +452,9 @@ def render_html(deals):
         "findings": [{"title": t, "body": x} for t, x in findings(deals)],
         "strongest": strongest_examples(deals),
         "strongest_note": FLOOR.get("strongest_note", ""),
+        "prompt": render_prompt(deals),
+        "wanted": WANTED.get("wanted", []),
+        "wanted_note": WANTED.get("note", ""),
         "deals": [dict(deal, score=score(deal), _label=short_name(deal)) for deal in deals],
     }, ensure_ascii=False)
     # </script> inside JSON would end the tag early.

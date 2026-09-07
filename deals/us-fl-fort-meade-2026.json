@@ -298,7 +298,8 @@
         "https://propmodo.com/florida-data-center-plan-advances-amid-local-backlash/",
         "https://www.yahoo.com/news/fort-meade-residents-hurl-skepticism-223635924.html",
         "https://dailyridge.com/2025/11/07/polk-county-commissioners-approve-tax-exemption-to-new-business-to-build-data-center/"
-      ]
+      ],
+      "hedge": "Hiring Polk County residents is a \"commercially reasonable efforts\" obligation, not a quota."
     },
     "local_contracting": {
       "present": true,
@@ -322,7 +323,8 @@
           "where": "Sec. 6.g, packet p. 20",
           "quote": "memorialize a construction access agreement or construction management plan, which among other items, shall detail a construction traffic plan"
         }
-      ]
+      ],
+      "hedge": "Using local suppliers is \"commercially reasonable efforts ... where practicable.\""
     },
     "transparency": {
       "present": true,

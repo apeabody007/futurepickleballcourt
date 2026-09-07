@@ -35,7 +35,7 @@ The exact bar for each is in [`schema/floor.json`](schema/floor.json) and on the
 If you know of a signed data center agreement that is not here, have a public records response, or have a page number for a term currently marked unknown, that is the most useful thing you can contribute.
 
 1. Copy `deals/_template.json` to a new file named `country-state-locality-year.json`.
-2. Fill in what you can prove. Leave the rest `null`. A `null` shows up as "we could not find out," which is honest. A guess shows up as a fact, which is not.
+2. Fill in what you can prove. Leave the rest `null`. A `null` shows up as "I could not find out," which is honest. A guess shows up as a fact, which is not.
 3. Cite every term, ideally with the section or page: `{ "url": "...", "where": "Section 7.2, p. 14" }`.
 4. Run `python3 scripts/build.py` (no dependencies, only Python 3) and commit the regenerated `BENCHMARK.md` and `docs/index.html` along with your file.
 5. Open a pull request and say what you read and what you could not find.
@@ -53,3 +53,17 @@ Prepared by [Aaron Peabody](https://aaronpeabody.dev). I run technology for a pa
 ## License
 
 Code is MIT. Deal records and the generated scorecard are CC BY 4.0. See [LICENSE](LICENSE).
+
+## Use it on your own deal
+
+- **[The prompt](https://futurepickleballcourt.com/prompt.txt)** — the questions to ask, already written, with the ten terms built in. Paste it into any chat tool along with the agreement you are looking at.
+- **[all.md](https://futurepickleballcourt.com/all.md)** — every deal in one file, shaped for pasting into a chat window.
+- **[all.json](https://futurepickleballcourt.com/all.json)** — the same thing structured, for anything that reads JSON.
+
+## Wanted
+
+The deals worth adding next, and the exact document that would settle each one, are in [wanted.json](wanted.json) and on the site. If you have one of those documents, that is the single most useful thing you can send.
+
+## Corrections
+
+Every change to a published number is logged in [CORRECTIONS.md](CORRECTIONS.md).

@@ -32,9 +32,9 @@ Same process. Change the field, change or add the source, rebuild, explain in th
 
 ## Add a clause
 
-Adding a field to `schema/deal.schema.json` means every existing deal file needs that field. Open an issue first so we can agree it earns its place.
+Adding a field to `schema/deal.schema.json` means every existing deal file needs that field. Open an issue first so I can agree it earns its place.
 
-## What we do not accept
+## What I do not accept
 
 - Numbers without a source.
 - Copies of the agreements themselves. Link to where they are hosted, or to the public records request that produced them.

@@ -15,6 +15,8 @@ Verification levels: primary means a person read the executed document; press me
 
 **Secrecy is normal.** 5 of the 15 communities signed a nondisclosure agreement. Some barred officials from saying that talks were happening at all, and one required the city to destroy its own notes.
 
+**Present is not the same as binding.** 14 terms across these agreements exist but are softened by language like good faith, commercially reasonable, or sole discretion. A term with an escape hatch reads as a protection and functions as a preference.
+
 ---
 
 ## City of Bessemer, AL (QTS)
@@ -66,6 +68,7 @@ The only known term is a 100-foot buffer between buildings and homes, described 
 
 ### Jobs: FALLS SHORT
 Floor: Binding job commitments with a consequence, not projections
+SOFTENING LANGUAGE: "Every job figure is a developer claim. No agreement exists that could require any of them."
 330 permanent jobs at an average salary reported as $112,550 by WBRC and as $115,000 by the Alabama Political Reporter, which quoted the developer's representative. WBRC put construction at 1,000 jobs over a seven to eight year build; the Alabama Political Reporter reported about 1,000 temporary jobs each year. All are developer claims with no agreement to enforce them.
 - https://www.wbrc.com/2025/11/19/bessemer-city-council-approves-149-billion-data-center-project-despite-transparency-concerns/
 - https://www.alreporter.com/2025/11/20/bessemer-city-council-approves-data-center-construction-despite-public-concerns/
@@ -214,6 +217,7 @@ No city abatement or PILOT. The City stops charging the 157th Ave. plant's share
 
 ### Community fund: FALLS SHORT
 Floor: A fund that scales with the project, with a community seat on the body that spends it
+SOFTENING LANGUAGE: "Beale consults the county, but distributions of the $15 million are "at its sole discretion," and the memorandum bars both consequential damages and specific performance."
 A $15 million community donation over the life of the project, paid per phase after Beale obtains certificates of occupancy for that phase, with no payment for undeveloped portions: $5 million for STEM scholarships and trade schools in phase one, $10 million in later phases for community benefit initiatives that may include digital equity and fiber infrastructure. Beale consults the county but any decisions on distributions are at its sole discretion. Section 6(c) bars either party from seeking consequential, incidental, punitive or special damages or compelling specific performance, so the county's remedy if it is not paid is limited. The rejected city agreement had no cash fund; it had an oversized reclaimed-water pipeline and a recharge facility instead.
 - Section 4 and Section 6(c): "a total of $15 million community donation over the life of the Project, with payments occurring commensurate with each phase of the Project" https://pima.legistar.com/View.ashx?M=F&ID=15028221&GUID=E5EA6EE3-DB51-4208-9E3D-3BB4A42A4B8E
 - https://azluminaria.org/2025/12/16/pima-county-supervisors-approve-agreement-outlining-beales-commitments-on-project-blue/
@@ -251,6 +255,7 @@ No noise term in the purchase agreement or memorandum. Conditions in the county 
 
 ### Jobs: MEETS
 Floor: Binding job commitments with a consequence, not projections
+SOFTENING LANGUAGE: "Local union labor is an emphasis in the developer's letters, not a requirement in the agreement."
 The binding floor is 75 full-time employees at the premises with an average base salary of at least $75,000 by month 84 after closing, certified in January and July for two years, with capped liquidated damages. The county's economic study projected 180 direct jobs by 2029 at a $64,000 average and 3,024 direct construction jobs over 2026 to 2028. Local union labor is an emphasis in the developer's letters, not a requirement.
 - Sections 17.6.1 and 17.6.3: "employ at least 75 FTE employees at the Premises with an average base salary of at least $75,000 (U.S.) per year" https://content.civicplus.com/api/assets/7477affb-e443-412c-b8db-1bc3bb3794f6
 - County memo of June 10, 2025, economic impact analysis: "Estimated 3,024 direct construction jobs and 2,049 additional indirect jobs forecasted" https://content.civicplus.com/api/assets/c389f127-6e01-48fc-b258-68508aa1841a
@@ -258,6 +263,7 @@ The binding floor is 75 full-time employees at the premises with an average base
 
 ### Local contracting: FALLS SHORT
 Floor: Local subcontracting goals and haul-route road repair paid by the operator
+SOFTENING LANGUAGE: "Aspirational language only."
 Aspirational language only. By contrast, Marana's approval of Beale's second campus has the developer funding a $15 to $20 million electrical connection, a $20 million road, a $15 to $20 million water line, and 30 percent of the construction cost of a $66 million drainage channel plus about $2 million for its design.
 - Beale letter of September 17, 2025: "with an emphasis on sourcing local skilled union and trade labor and partnering with local workforce development programs" https://content.civicplus.com/api/assets/2192e865-fe7e-48f4-8a0c-7c1c8b5cd32c
 - https://www.tucsonsentinel.com/local/report/010726_marana_project_blue/
@@ -362,6 +368,7 @@ The agreement sets no noise limit; Sec. 14.a only requires compliance with laws 
 
 ### Jobs: MEETS
 Floor: Binding job commitments with a consequence, not projections
+SOFTENING LANGUAGE: "Hiring Polk County residents is a "commercially reasonable efforts" obligation, not a quota."
 The only binding jobs number is in the county performance agreement: at least 50 new full-time jobs at an average wage of at least $106,498 (200 percent of the 2025 Polk County average) by the end of the third exemption year, with commercially reasonable efforts to hire Polk County residents, enforced by revocation and recovery of exempted taxes. The City agreement contains no jobs term. The developer's 450-plus figure (Propmodo; at least 456 by 2031 per The Ledger's forum coverage, with construction peaking at 3,960 in 2028) is a projection the Commerce Secretary called a severe over projection with no supporting data in the City staff report.
 - Sec. 2.b-c, p. 3: "paying an average annual wage equal to or in excess of $106,498, which is 200% of the 2025 average annual wage" https://polkcountyfl.legistar1.com/polkcountyfl/attachments/67224c75-3c9b-4320-87f2-683543813e80.pdf
 - Article I, para. 4.b, p. 2: "The Company will create at least 50 new full-time jobs in Polk County" https://polkcountyfl.legistar1.com/polkcountyfl/attachments/ac02059f-2c47-47c8-bede-7d33fab30048.pdf
@@ -372,6 +379,7 @@ The only binding jobs number is in the county performance agreement: at least 50
 
 ### Local contracting: FALLS SHORT
 Floor: Local subcontracting goals and haul-route road repair paid by the operator
+SOFTENING LANGUAGE: "Using local suppliers is "commercially reasonable efforts ... where practicable.""
 County performance agreement Sec. 2.c: commercially reasonable efforts to use local suppliers where practicable. The City agreement has no local-contracting term; the City Manager approves the developer's contractors for the water and wastewater work (Sec. 6.a). No haul-route repair obligation; a construction traffic plan is to be set at permitting (Sec. 6.g). The developer builds and dedicates public water, wastewater, and roadway improvements, but the utility work is repaid in full through impact-fee credits (Sec. 8.b), and the $10M advance is repaid through tax credits, so the only unreimbursed cash contribution is up to $300,000 toward water rights (Sec. 3.b).
 - Sec. 2.c, p. 3: "use local suppliers for its goods and services where practicable" https://polkcountyfl.legistar1.com/polkcountyfl/attachments/67224c75-3c9b-4320-87f2-683543813e80.pdf
 - Sec. 8.b, packet pp. 20-21: "provide one hundred percent (100%) of the Reimbursement Amount in the form of Impact Fee Credits" https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf
@@ -526,6 +534,7 @@ Community Betterment Fund: $300,000 a year per phase for up to 20 years, startin
 
 ### Clawbacks: FALLS SHORT
 Floor: Incentives come back if the facility stops operating, not only if a jobs number is missed
+SOFTENING LANGUAGE: "A job shortfall is expressly not an event of default. The only consequence is skipping the next grant, and nothing already paid comes back."
 Forward-looking only. If, on or after the first anniversary of a phase's completion, fewer than 15 full-time employees are maintained there, the City skips the next grant and the next franchise-fee rebate for that phase. A job shortfall is expressly not an event of default. No repayment of grants already paid, and no trigger tied to the facility ceasing operation. Failure to build the initial phases is an event of default allowing suspension, termination, or withholding of certificates after a 60-day cure.
 - Section 5.2(b), PDF p. 15: "shall not constitute an Event of Default under Section 10.1" https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf
 - Section 6.5(a), PDF p. 19: "fewer than 15 Full Time Employees are maintained at a Project Phase" https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf
@@ -614,6 +623,7 @@ Up to twenty annual economic development grants per phase equal to 70 percent of
 
 ### Community fund: FALLS SHORT
 Floor: A fund that scales with the project, with a community seat on the body that spends it
+SOFTENING LANGUAGE: "All community giving is voluntary, with no agreement obligating any of it."
 No community betterment payment, unlike Google's Cedar Rapids deal. Voluntary giving: more than $3 million to local schools and nonprofits since 2009, the BLink free Wi-Fi partnership with the city, $250,000 to Advance Southwest Iowa in 2023, and a $1.3 million grant to the Great Outdoors Foundation in 2024 for Missouri River basin grade stabilization at 47 locations.
 - https://www.datacenterfrontier.com/cloud/article/11427613/google-has-invested-5-billion-in-its-iowa-data-centers
 - https://www.datacenterfrontier.com/hyperscale/article/55093750/google-continues-to-invest-in-iowa-with-another-1-billion-planned-for-its-council-bluffs-campus
@@ -639,6 +649,7 @@ Served by MidAmerican Energy. In 2007 MidAmerican would not say how much electri
 
 ### Water: UNKNOWN
 Floor: A stated cap or closed-loop cooling, plus public reporting
+SOFTENING LANGUAGE: "The only water reporting is Google's own voluntary corporate disclosure; no agreement requires it."
 Google's own 2025 environmental report lists Council Bluffs as the highest-withdrawal and highest-consumption site in its data center table: 1,410.3 million gallons withdrawn, 400.1 discharged and 1,010.2 consumed in 2024. That reporting is voluntary. The city's public works director said data center requests run about a million to two million gallons a day, that water and sewer are operating at very high capacity, and that expanding wastewater infrastructure could cost $200 million to $300 million. No cap or reporting requirement in a city agreement was found.
 - p. 110, water use by data center location, 2024: "Council Bluffs, IA Million gallons 1,410.3 400.1 1,010.2" https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf
 - https://www.kmaland.com/news/council-bluffs-council-denies-proposed-moratorium-on-new-data-centers/article_57610dda-a991-41c5-99a5-d4bd772cd936.html
@@ -682,10 +693,10 @@ The city granted a reported $16.6 million property-tax break for the 2022 expans
 
 - Project: Meta Hyperion data center, Franklin Farm megasite near Holly Ridge
 - Operator: Meta
-- Developer: Laidley LLC (Meta subsidiary; since October 2025 owned by Beignet Investor LLC, 80 percent Blue Owl and 20 percent Meta)
+- Developer: Laidley LLC (Meta subsidiary; since October 2025 owned by Beignet Investor LLC, a Blue Owl and Meta joint venture in which Blue Owl holds 80 percent and Meta 20 percent)
 - Agreement: pilot, signed, approved 2025-08-20
 - Scale: 2,000 MW, 2,250 acres, 4,000,000 sq ft, 10,000,000,000 USD
-  - Figures as announced in December 2024 (about 2 GW, $10 billion, 4 million sq ft, 2,250 acres). The project was expanded to $27 billion in October 2025 and to more than $50 billion, about 5 GW, and 3,200-plus acres in July 2026. Entergy's certified generation for the site totals 2,262 MW across three gas plants.
+  - Figures as announced in December 2024. The governor's announcement states 2,250 acres, 4 million square feet and $10 billion; it does not state a megawatt figure, and the 2 GW number comes from trade press coverage of the same announcement. The project was expanded to $27 billion in October 2025 and to more than $50 billion, about 5 GW, and 3,200-plus acres in July 2026. Entergy's certified generation for the site totals 2,262 MW across three combined cycle plants, two in Richland Parish and one at Killona.
 - Verification: primary
 - Documents:
   - [primary] Louisiana Public Service Commission Order U-37425 with the stipulated settlement term sheet (Entergy generation and transmission for the Meta site): https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D
@@ -697,34 +708,36 @@ The city granted a reported $16.6 million property-tax break for the 2022 expans
 
 ### Community fund: FALLS SHORT
 Floor: A fund that scales with the project, with a community seat on the body that spends it
-No community fund under parish control. Meta-directed giving includes a grants fund of more than $1 million, $300,000 to the Richland Revitalization Board, $5 million to Louisiana Delta Community College, and scholarships for Richland High graduates. Entergy's bill-assistance program gets $1 million a year from Meta, matched by Entergy, for the 15-year term, and a March 2026 agreement added further customer-savings commitments.
+No community fund under parish control. Meta-directed giving includes more than $1 million in community grants through its Future is for Everyone Fund, $300,000 to the Richland Revitalization Board, $5 million to Louisiana Delta Community College, and full scholarships for graduates of Richland Parish's high schools beginning with the class of 2026. At the August 2025 session Entergy committed $1 million a year to its Power to Care bill-assistance program over the 15-year term, matched by Meta, about $30 million in total. A March 2026 agreement expanded this to $120 million for Power to Care including matching funds, $140 million for energy efficiency for vulnerable customers, and $2 billion in projected customer savings over 20 years.
 - https://datacenters.atmeta.com/asset/richland-parish-data-center-info-sheet/
-- p. 30, Power to Care commitment: https://www.lpsc.louisiana.gov/docs/transcripts/August-20-2025-BE.pdf
+- p. 26, Power to Care commitment: "over the 15-year term, we will contribute an additional $1 million to the Power to Care that will be matched by Meta" https://www.lpsc.louisiana.gov/docs/transcripts/August-20-2025-BE.pdf
 - https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings
 
 ### Clawbacks: FALLS SHORT
 Floor: Incentives come back if the facility stops operating, not only if a jobs number is missed
-Under the state ground lease, the purchase price rises if capital and employment targets are missed by December 3, 2028, and the state may take the property back if the lessee falls below 75 percent of both the capital and employment requirements. PILOT payments step through four levels tied to investment and jobs. On the utility side, an early-termination fee is backed by a Meta Platforms parent guaranty; after the October 2025 ownership change, advocates argue the guaranty no longer reaches an entity with assets. No trigger is tied simply to the facility ceasing operation.
+Under the state ground lease the base purchase price for the site rises if the project fails to meet the capital and employment goals, and the state may redeem ownership if the lessee falls below 75 percent of both the capital requirement and the employment requirement by December 3, 2028. PILOT payments step through four levels tied to investment and jobs. On the utility side an early-termination fee is backed by a Meta Platforms parent guaranty; after the October 2025 ownership change advocates argue the guaranty no longer reaches an entity with assets, because Laidley's new parent Beignet has not signed one and holds no assets beyond the data center. No trigger is tied simply to the facility ceasing operation.
 - https://www.shreveportbossieradvocate.com/business/a-first-look-at-lease-terms-tax-benefits-for-richland-meta-ai-data-center/article_037b70ea-c6dc-11ef-b454-1331871da095.html
-- Term Sheet IV.B and IV.C, parent guaranty and early termination fee: https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D
-- pp. 4 to 5 and 10 to 12, Beignet ownership: https://www.all4energy.org/wp-content/uploads/2026/01/2026-01-14-U-37425-AAE-UCS-Mtn-for-Investigation.pdf
+- Term Sheet IV.B.3 and IV.C, parent guaranty and early termination fee: "ELL will ensure that all Parent Guaranty agreements are obtained and fully executed timely" https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D
+- pp. 4 to 5 and 10 to 12, Beignet ownership and parent guaranty: "Beignet now owns an 80% stake in the data center, while Meta retains only a 20% stake" https://www.all4energy.org/wp-content/uploads/2026/01/2026-01-14-U-37425-AAE-UCS-Mtn-for-Investigation.pdf
 
 ### Decommissioning: FALLS SHORT
 Floor: A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks
-No bond, escrow, or letter of credit. The only fallback is the state's right to take the leased land back if investment and jobs fall short.
+No bond, escrow, or letter of credit. The only fallback is the state's right to redeem the leased land if investment and jobs fall short.
 - https://www.shreveportbossieradvocate.com/business/a-first-look-at-lease-terms-tax-benefits-for-richland-meta-ai-data-center/article_037b70ea-c6dc-11ef-b454-1331871da095.html
 
 ### Grid costs: FALLS SHORT
 Floor: The operator pays for its own interconnection and carries a minimum bill that survives it leaving
-Meta pays directly, through contributions in aid of construction, for interim transmission, six customer substations, point-of-delivery lines, and the 500 kV lines to the site, so those carry no rate base. The three new gas plants (2,262 MW) go into all customers' rates through Entergy's formula rate plan, with Meta's minimum monthly charges sized to cover 100 percent of their cost, including overruns, for the 15-year term. The plants are expected to run 30 to 40 years. The Mount Olive to Sarepta 500 kV line and Sterlington upgrades are recovered from all ratepayers after a prudence review; Entergy listed the line at about $358 million in March 2026. Collateral is a Meta Platforms parent guaranty plus credit insurance.
-- Term Sheet I.A.2 to I.A.5, I.B.4 to I.B.8, III.A, IV.B: https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D
-- pp. 16 to 17 and 43 to 47, minimum charges cover the generators: https://www.lpsc.louisiana.gov/docs/transcripts/August-20-2025-BE.pdf
+Meta pays directly, through contributions in aid of construction, for interim transmission, the customer-paid substations including six customer substations, the point-of-delivery lines, and the Smalling to Car Gas 500 kV line, and the order books those at a zero plant-in-service balance so they carry no rate base. The three new combined cycle plants (2,262 MW) go into all customers' rates through Entergy's formula rate plan, and Staff told the commission Meta's minimum monthly charges are sized to cover 100 percent of their cost including overruns over the 15-year initial ESA term. Intervenor testimony puts the generators' depreciable life at 30 years, twice that term. The Mount Olive to Sarepta 500 kV line and the Sterlington upgrades are recovered from all ratepayers after a prudence review; Entergy listed that line at approximately $358 million as of March 2026. Collateral is a Meta Platforms parent guaranty plus credit insurance.
+- Term Sheet I.A.2 to I.A.5, I.B.4 to I.B.8, III.A, IV.B: "offset the full amount of transmission capital additions for the Interim Transmission Facilities, the Customer-Paid Substations, Point-of-delivery Transmission Facilities" https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D
+- pp. 16 to 17 and 43 to 44, minimum bill and 15-year term: "Meta's minimum bill will cover 100% of the cost of the three new generators and that includes any cost overruns" https://www.lpsc.louisiana.gov/docs/transcripts/August-20-2025-BE.pdf
+- p. 10, ESA term against depreciable life: "the initial term of the ESA (15 years) is significantly shorter than the depreciable life of the Planned Generators (30 years)" https://www.all4energy.org/wp-content/uploads/2026/01/2026-01-14-U-37425-AAE-UCS-Mtn-for-Investigation.pdf
 - https://www.entergylouisiana.com/transmission
 - https://blog.ucs.org/paul-arbaje/whats-next-after-louisianas-gas-plant-approval-for-meta-data-center/
 
 ### Water: FALLS SHORT
 Floor: A stated cap or closed-loop cooling, plus public reporting
-No enforceable cap. The state well registration allows up to about 23 million gallons a day from six wells; Meta projects 500 to 600 million gallons a year once running. Meta says it will voluntarily submit annual water-use reports to the state for the first five years; no state body monitors usage or aquifer condition. Cooling is closed-loop glycol, described as using no water for most of the year. Two of the Entergy plants will draw water from Delhi.
+SOFTENING LANGUAGE: "Annual water-use reporting is voluntary, offered for the first five years, and no state body monitors usage or aquifer condition."
+No enforceable cap. The state registered six wells for the site at a combined rate of about 23 million gallons a day; Meta projects 500 to 600 million gallons a year once running. Meta has agreed to voluntarily submit annual water-use reports to the state for its first five years of operation; no state body monitors usage or aquifer condition. Cooling is a closed-loop glycol system that Meta says needs no water for a majority of the year. Two of the Entergy plants will draw water from Delhi.
 - https://www.therichlandbeaconnews.com/article/1024,how-much-water-will-data-center-use
 - https://datacenters.atmeta.com/asset/richland-parish-data-center-info-sheet/
 - https://www.wwno.org/public-health/2026-04-13/were-monitoring-the-air-and-water-around-metas-data-center-in-louisiana-heres-why
@@ -734,40 +747,40 @@ Floor: A numeric limit measured at the nearest residence or property line
 
 ### Jobs: MEETS
 Floor: Binding job commitments with a consequence, not projections
-The state lease steps up required full-time jobs: 100 by the end of 2028, 300 to 450 by 2029, 450 to 475 by 2030, 500 by 2032, at wages of at least 150 percent of the state average, about $82,000. Missing the targets raises the purchase price or lets the state take the land back, so the numbers are binding. Meta now claims 1,000 operational and 7,500 peak construction jobs. A June 2025 regional analysis projected about 326 stable local jobs and a construction workforce roughly 75 percent from out of the area. Actual job counts became confidential after the commission voted in August 2026 to quash subpoenas seeking them.
+The state lease and PILOT step up required full-time jobs alongside capital: at least 100 by December 31, 2028 with $5 billion invested, then 300, then $8 billion and 450, then $9.5 billion and 475, then $10 billion and 500 by December 31, 2032. The Advocate's account of the middle steps carries inconsistent year labels, so only the first and last rungs are firm. The PILOT requires an average wage of at least 150 percent of the statewide annual average, which against the Louisiana Workforce Commission's $58,614.92 is roughly $88,000; the separate $82,000 figure is the average salary stated in Entergy's application and repeated in the LPSC order. Missing the targets raises the purchase price or lets the state redeem the land, so the numbers are binding. Meta now claims 1,000 operational and 7,500-plus peak construction jobs. Actual job counts became confidential after the commission voted in August 2026 to quash subpoenas seeking them.
 - https://www.shreveportbossieradvocate.com/business/a-first-look-at-lease-terms-tax-benefits-for-richland-meta-ai-data-center/article_037b70ea-c6dc-11ef-b454-1331871da095.html
-- p. 1, more than 500 permanent employees at an average salary of $82,000: https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D
+- p. 1, project description: "expected to employ more than 500 permanent employees with an average salary of $82,000" https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D
 - https://datacenters.atmeta.com/asset/richland-parish-data-center-info-sheet/
 - https://thelensnola.org/2026/08/31/metas-data-center-will-be-the-biggest-in-the-u-s-but-no-one-knows-who-theyre-hiring/
 
 ### Local contracting: UNKNOWN
 Floor: Local subcontracting goals and haul-route road repair paid by the operator
-No local-contracting requirement. Meta claims more than $1.6 billion in contracts to Louisiana businesses and an infrastructure pledge that grew from $200 million to more than $1 billion, including Delhi utility upgrades and a new industrial wastewater plant. Meta paid the parish a flat $10 million permit fee instead of the standard 1 percent of construction cost. Pledges are not contract terms and are not counted here.
+No local-contracting requirement. Meta claims more than $1.6 billion in contracts to Louisiana businesses and an infrastructure pledge that grew from more than $200 million at the December 2024 announcement to more than $1 billion, including Delhi utility upgrades and a new industrial wastewater plant. Meta balked at the standard 1 percent of construction cost and paid the parish a flat $10 million permit fee instead of about $100 million. Pledges are not contract terms and are not counted here.
 - https://datacenters.atmeta.com/asset/richland-parish-data-center-info-sheet/
 - https://www.govtech.com/artificial-intelligence/louisiana-town-transformed-by-meta-data-center-interest
 - https://gov.louisiana.gov/news/4697
 
 ### Transparency: FALLS SHORT
 Floor: No NDA, the agreement is public, and an independent audit on a schedule
-The governor personally signed a mutual nondisclosure agreement with Laidley in April 2024, and state records show at least 50 public officials signed NDAs. The electric service agreement, contributions in aid of construction, and parent guaranty were filed under seal. The lease and PILOT were obtained by reporters through records requests, not posted. Entergy files quarterly monitoring reports to the commission in redacted form; annual usage and billing reports are confidential under the order. In August 2026 the commission voted 3 to 1 to quash subpoenas that would have required Meta to substantiate its job, economic, and load claims. Reporters found an Entergy executive drafted a commission motion supporting the project.
+The governor personally signed a mutual nondisclosure agreement with Laidley LLC on April 23, 2024, and records obtained from Louisiana Economic Development show at least 50 public officials signed NDAs since he took office. The electric service agreement, contributions in aid of construction, and parent guaranty were filed under seal, and the settlement itself is posted only as a public redacted version. The lease and PILOT were obtained by reporters through records requests, not posted. Entergy files quarterly monitoring reports to Commission Staff in the form of Attachment 1; annual reporting of customer usage, demand and billing is confidential under the order. On August 12, 2026 the commission voted 3 to 1 to quash subpoenas that would have required Meta to substantiate its job, economic, and load claims. Reporters later found that Entergy's vice president for regulatory and public affairs drafted a commission motion supporting the project.
 - https://www.wwno.org/politics/2026-07-24/gov-jeff-landry-personally-signed-an-nda-with-meta-heres-what-it-says
 - https://www.mpbonline.org/blogs/news/a-muzzle-on-elected-officials-ndas-cloak-louisianas-biggest-business-developments/
-- Term Sheet IV.D.2 and Attachment 1, monitoring procedures: https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D
+- Term Sheet IV.D.2 and Attachment 1, monitoring procedures: "annual reporting of Customer usage, demand and billing. All such information shall remain confidential" https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D
 - https://www.wwno.org/politics/2026-08-12/louisiana-psc-kills-ruling-that-would-force-meta-to-turn-over-key-data-center-information
 - https://www.wwno.org/local-regional-news/2026-08-11/tracked-changes-an-entergy-exec-ghostwrote-louisiana-psc-motions-supporting-meta-hyundai
 
 ### Tax incentives: UNKNOWN
 Floor: A but-for test before any abatement, with the forgone revenue stated
-A 30-year PILOT under which Meta pays 20 to 40 percent of what property taxes would otherwise be, depending on investment and job levels, with a 20 percent floor once $10 billion and 500 jobs are reached; the abatement figure here is the midpoint. Payments split 53 percent to the school board, 35 percent to the police jury, 12 percent to the sheriff. Construction materials are taxed at 1 percent. A separate 20-year state and local sales tax exemption on data center equipment was estimated by Sherwood News at $3.3 billion forgone, which Good Jobs First called conservative; that is the forgone figure here. State lease rent is $732,000 a year for 30 years. The first PILOT sales-tax deposit was about $22.4 million.
+A 30-year PILOT under which Meta pays 20 to 40 percent of what ad valorem taxes would otherwise be, depending on investment and job levels, pegging at 20 percent once PILOT Level 4 of $10 billion invested and 500 jobs is reached. Paying 20 to 40 percent means abating 60 to 80 percent, so 70 is the midpoint of the abatement range; the long-run rate at full performance is 80 percent. Payments split 53 percent to the school board, 35 percent to the police jury, 12 percent to the parish law enforcement district. The PILOT also collects 1 percent on construction materials, furniture and fixtures. Separately, Louisiana exempts the site's data center equipment, including GPUs, from state and local sales and use tax for 20 years; Sherwood News estimated the break on GPU purchases alone at more than $3.3 billion, which a Good Jobs First analyst called conservative, and that is the forgone figure used here. State lease rent is $732,000 a year for the 30-year primary term, dropping to $120 a year in a 69-year renewal term with a $12 million purchase option. The parish sales and use tax office received a single sales tax payment of $22,406,676.75; the PILOT itself starts at the initial certificate of occupancy and had not begun.
 - https://www.shreveportbossieradvocate.com/business/a-first-look-at-lease-terms-tax-benefits-for-richland-meta-ai-data-center/article_037b70ea-c6dc-11ef-b454-1331871da095.html
 - https://www.shreveportbossieradvocate.com/business/meta-data-center-in-richland-parish-sends-a-big-sales-tax-check/article_e7dede0f-fc21-4c5b-b341-207b1ca7c238.html
 - https://sherwood.news/tech/hyperion/
 - https://fortune.com/2026/05/14/meta-data-center-tax-break-hyperion-louisiana/
 
 ### Reported criticisms
-- Advocates argue the parent guaranty no longer reaches an entity with assets after ownership moved to a Blue Owl joint venture, and that ratepayers carry the stranded-cost risk when the 15-year term ends on plants built to run 30 to 40 years. (https://www.all4energy.org/wp-content/uploads/2026/01/2026-01-14-U-37425-AAE-UCS-Mtn-for-Investigation.pdf)
+- Advocates argue the parent guaranty no longer reaches an entity with assets after ownership moved to a Blue Owl joint venture, and that ratepayers carry the stranded-cost risk when the 15-year term ends on generators with a 30-year depreciable life. (https://www.all4energy.org/wp-content/uploads/2026/01/2026-01-14-U-37425-AAE-UCS-Mtn-for-Investigation.pdf)
 - The dissenting commissioner said there was a lot he could not verify; the commission later killed subpoenas that would have tested the job and load claims. (https://www.wwno.org/politics/2026-08-12/louisiana-psc-kills-ruling-that-would-force-meta-to-turn-over-key-data-center-information)
-- Researchers warn maximum pumping could affect shallow domestic wells; residents have reported discolored tap water and LSU is monitoring air and water. (https://www.wwno.org/public-health/2026-04-13/were-monitoring-the-air-and-water-around-metas-data-center-in-louisiana-heres-why)
+- Researchers warn maximum pumping could affect shallow domestic wells; residents have reported discolored tap water and LSU researchers are analyzing community air and water samples. (https://www.wwno.org/public-health/2026-04-13/were-monitoring-the-air-and-water-around-metas-data-center-in-louisiana-heres-why)
 
 ---
 
@@ -807,6 +820,7 @@ A decommissioning plan to remove and recycle e-waste must be filed if the facili
 
 ### Grid costs: UNKNOWN
 Floor: The operator pays for its own interconnection and carries a minimum bill that survives it leaving
+SOFTENING LANGUAGE: "Reaching 50 percent renewable within five years is a "reasonable efforts" obligation with certificates as the fallback."
 The permit requires the petitioner to fund any project-specific additional electrical infrastructure. Any minimum bill comes from the Ameren tariff, not the city deal. Reasonable efforts to reach 50 percent renewable within five years with localized RECs as fallback; PUE of 1.25 or better (1.35 if reusing an existing building) with annual reporting; generators Tier 4 and never a general operating power source; no generator testing on bad air quality days is already among the April 21, 2026 conditions. Press reports that the Board of Adjustment, after an 11-hour hearing that began July 29, 2026, added a requirement for at least 2.4 MW of on-site solar or wind generation.
 - p. 2, Energy, Efficiency & Infrastructure Standards: "Petitioner must fund any project-specific additional electrical infrastructure" https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Conditional-Use-provisions.pdf
 - p. 2, Backup Generators: "No testing of backup generators on bad air quality days" https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/Conditional-Use-provisions.pdf
@@ -1010,6 +1024,7 @@ Magnetic levitation chillers and sound-attenuated generator enclosures required.
 
 ### Jobs: FALLS SHORT
 Floor: Binding job commitments with a consequence, not projections
+SOFTENING LANGUAGE: "The owners "expect" approximately 150 people at each campus, and local hiring is a "good faith" effort with percentage goals to be set later in a plan that had not been released."
 The agreement says the owners expect approximately 150 people at each campus (300 total); it is an expectation, not a commitment. Local hiring is a good-faith effort with percentage goals to be set in a Local Hiring Plan; as of April 2026 the City had a draft but had not released it. No prevailing wage; only a worker-misclassification clause. Press figures range from 70 full-time at launch (CoreWeave, July 2025) to 350 permanent (LancasterOnline and the City FAQ); construction estimates range from 600 to 2,000.
 - Background G: "employ approximately one hundred fifty (150) people at each Campus" https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf
 - Sections 6.2.2 and 6.2.3: "use good faith efforts to hire local residents for both construction and permanent positions" https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf
@@ -1057,80 +1072,88 @@ No tax breaks: the City says no incentives are offered and the project is not el
 - Developer: Lancium LLC (landowner) with Abilene DC 1 through 8 LLC (Crusoe entities) as lessees
 - Agreement: tax abatement, signed, signed 2025-03-17
 - Scale: 1,200 MW, 941 acres, 4,000,000 sq ft, 3,400,000,000 USD
-  - Acreage is the reinvestment zone (about 941 acres); the campus is reported at 1,100 acres. Eight buildings of about 4 million sq ft and 1.2 GW per Crusoe. The agreement floor is $350 million of investment per facility, $2.8 billion across eight; the Development Corporation of Abilene cited $3.4 billion. Taylor County has a parallel agreement at a reported 80 percent, not read.
+  - Acreage is the reinvestment zone: the nine tracts in Exhibit A total about 941 acres, matching the recital. The campus itself is reported at 1,100 acres. Eight buildings of about 4 million sq ft and 1.2 GW per Crusoe. The agreement floor is $350 million of capital investment per Facility across seven leased parcels, with a stated target of as much as $500 million each; the Development Corporation of Abilene cited an initial $3.4 billion investment. Taylor County has a parallel agreement reported at 80 percent; the county resolution approving it was read, the county agreements themselves were not.
 - Verification: primary
 - Documents:
   - [primary] Second Amended and Restated Tax Abatement Agreement, City of Abilene, Lancium LLC, and Abilene DC 1 through 8 LLC (effective March 17, 2025): https://abilenetx.gov/DocumentCenter/View/39456
   - [primary] Second Amended and Restated Second Tax Abatement Agreement (later-added improvements and equipment): https://abilenetx.gov/DocumentCenter/View/39455
-  - [primary] City Resolution 171-2025 (August 28, 2025) and Resolution 249-2025 (December 4, 2025) approving further agreements including an electricity generation plant: https://abilenetx.gov/DocumentCenter/View/39459
+  - [primary] City Resolution 171-2025 approving per-phase agreements for Phases 5 through 8 and Amendment No. 1 to both Second Amended and Restated agreements: https://abilenetx.gov/DocumentCenter/View/39459
+  - [primary] City Resolution 249-2025 approving Phase 9, Phase 10, and Electricity Generation Plant tax abatement agreements in Reinvestment Zone RZ25-1: https://abilenetx.gov/DocumentCenter/View/39460
   - [primary] Taylor County Resolution 22-25: https://www.taylorcounty.texas.gov/DocumentCenter/View/4818/Resolution-22-25-Lancium
   - [government_page] City of Abilene tax abatements index: https://abilenetx.gov/2476/Tax-Abatements
   - [press] Texas Tribune: on-site gas turbines and permits: https://www.texastribune.org/2026/07/09/texas-data-centers-ai-power-plants-pollution-state-permits/
 
 ### Community fund: FALLS SHORT
 Floor: A fund that scales with the project, with a community seat on the body that spends it
-No community fund in any of the agreements. Crusoe says it has paid for fire trucks, school expansions, and road improvements; those are voluntary and unquantified in the documents.
+SOFTENING LANGUAGE: "The community spending the developer cites is voluntary and unquantified in the documents."
+No community fund in either agreement. Crusoe says its investments have funded new fire trucks, school expansions, and road improvements; those are voluntary and appear nowhere in the documents.
 - full agreement, no fund provision: https://abilenetx.gov/DocumentCenter/View/39456
 - https://www.texastribune.org/2026/07/09/texas-data-centers-ai-power-plants-pollution-state-permits/
 
 ### Clawbacks: FALLS SHORT
 Floor: Incentives come back if the facility stops operating, not only if a jobs number is missed
-Default includes failure to commence or complete, delinquent taxes, bankruptcy, or breach, with a 30-day cure. On termination the city recaptures all taxes that would have been paid without the abatement, plus interest at the delinquent-tax rate, as liquidated damages secured by a tax lien, due within 30 days. Recapture is all-or-nothing for the defaulting parcel and there are no cross-defaults between parcels. A jobs shortfall ends that facility's abatement rather than triggering recapture. Nothing is tied to the facility ceasing operation after completion.
-- Section 6(a) to 6(e), pp. 11 to 13: https://abilenetx.gov/DocumentCenter/View/39456
-- Section 3.8(d), pp. 8 to 9, jobs shortfall: https://abilenetx.gov/DocumentCenter/View/39456
+Default includes failure to commence or complete construction, delinquent ad valorem taxes, bankruptcy or insolvency, or breach of any term, with a 30-day cure that extends while the party diligently pursues a fix. On termination the city recaptures all taxes that would have been paid without the abatement, plus interest at the statutory delinquent-tax rate, as liquidated damages secured by a tax lien and due within 30 days. Recapture is all-or-nothing for the defaulting parcel and the agreement states there are no cross-defaults between parties or phases. A jobs shortfall ends that facility's abatement rather than triggering recapture, and a force majeure shortfall against the $350 million floor is not a default. Nothing is tied to the facility ceasing operation after completion.
+- Section 6(a) to 6(e), pp. 11 to 13: "pay to the City all taxes which would otherwise been paid by the Defaulting Party to City without the benefit of a tax abatement" https://abilenetx.gov/DocumentCenter/View/39456
+- Section 6(b), p. 12, no cross-defaults: "it is the intent of the Parties that there be no cross-defaults between Parties or phases of development" https://abilenetx.gov/DocumentCenter/View/39456
+- Section 3.8(d), pp. 8 to 9, jobs shortfall: "the Facility (and applicable Lessee) will no longer be eligible to receive the abatement, but such failure shall not affect the abatements" https://abilenetx.gov/DocumentCenter/View/39456
 
 ### Decommissioning: FALLS SHORT
 Floor: A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks
-No decommissioning term of any kind.
+No decommissioning term of any kind. A full-text search of both agreements returns no occurrence of decommission.
 - full agreement: https://abilenetx.gov/DocumentCenter/View/39456
 
 ### Grid costs: FALLS SHORT
 Floor: The operator pays for its own interconnection and carries a minimum bill that survives it leaving
-The agreements are silent on grid cost. Lancium builds the substation and electrical improvements on its own land. The campus also runs 360 MW of on-site gas turbines plus 62 diesel generators, with 41 more turbines proposed, and the generation plant itself is abated under a December 2025 agreement.
-- Section 2, definition of Improvements, p. 5: https://abilenetx.gov/DocumentCenter/View/39456
-- https://abilenetx.gov/DocumentCenter/View/39460
+The agreements are silent on grid cost, and a full-text search of both returns no occurrence of interconnect. Lancium builds the substation and other electrical infrastructure on its own land, which the agreement defines as the Improvements. The campus also runs a 360 MW on-site gas plant and 62 diesel generators, with 41 more turbines and 18 more generators proposed, and the generation plant itself is abated under a December 2025 agreement approved by Resolution 249-2025.
+- Section 2, definition of Improvements, p. 5: "a substation and other electrical infrastructure improvements to be constructed by Developer on Developer Land" https://abilenetx.gov/DocumentCenter/View/39456
+- Part 1, items 5 and 6: "Tax Abatement Agreement (Electricity Generation Plant); and Second Tax Abatement Agreement (Electricity Generation Plant)" https://abilenetx.gov/DocumentCenter/View/39460
 - https://www.texastribune.org/2026/07/09/texas-data-centers-ai-power-plants-pollution-state-permits/
 
 ### Water: FALLS SHORT
 Floor: A stated cap or closed-loop cooling, plus public reporting
-No water terms in the abatement agreements. The mayor has said usage is under 1 percent of the city's daily consumption. Crusoe describes direct-to-chip liquid cooling in a closed loop with no evaporation. No separate water agreement was located.
+No water terms in either abatement agreement. A full-text search returns water only inside the force majeure list and in an exhibit listing water and sewer tap fees as capital-investment categories. The mayor has said the facilities will use less than 1 percent of Abilene's daily water consumption. Crusoe describes direct-to-chip liquid cooling with a zero-water evaporation system that recirculates through a closed loop. No separate water agreement was located.
 - full agreement: https://abilenetx.gov/DocumentCenter/View/39456
 - https://ktxs.com/news/local/abilene-city-council-discusses-multiple-largely-talked-about-items-in-meeting
 - https://www.crusoe.ai/resources/newsroom/crusoe-expands-ai-data-center-campus-in-abilene-to-1-2-gigawatts
 
 ### Noise: UNKNOWN
 Floor: A numeric limit measured at the nearest residence or property line
-No noise term found. Homes sit within half a mile of the turbines.
+No noise term. A full-text search of both agreements returns no occurrence of noise or sound. Some homes and buildings sit within half a mile of the turbines.
+- full agreement, no noise or sound provision: https://abilenetx.gov/DocumentCenter/View/39456
 - https://www.texasobserver.org/abilene-texas-stargate-natural-gas-plant-harms/
 
 ### Jobs: MEETS
 Floor: Binding job commitments with a consequence, not projections
-57 full-time jobs at the first parcel by the end of 2026 and 50 at each of six more, 357 total, which may be filled by contractors, tenants, or subtenants, at an average wage of at least $57,600 or $72,000 with benefits. Verified each February 1 with payroll filings. Missing the number ends that facility's abatement. City policy asks only for reasonable efforts to hire residents. The construction figure is press-reported peak headcount.
-- Section 2 definitions, pp. 4 to 5; Section 3.8(d), pp. 8 to 9: https://abilenetx.gov/DocumentCenter/View/39456
+SOFTENING LANGUAGE: "City policy asks only for "reasonable efforts" to hire residents, and the required jobs may be filled by contractors, tenants, or subtenants rather than the operator."
+57 full-time equivalent positions at Leased Parcel 1/2 by December 31, 2026 and 50 at each of the six remaining leased parcels, 357 in total, which may be filled by the lessee's contractors, tenants, or subtenants. The average wage across those positions must be at least $57,600 a year excluding benefits, or at least $72,000 a year including benefits. Compliance is self-certified each February 1 with quarterly IRS 941 returns or Texas Workforce Commission employer quarterly reports. Missing the number ends that facility's abatement only. City abatement policy asks only for reasonable efforts to hire city residents. The 9,000 figure is the press-reported count of craft workers on site each day, not a contractual commitment.
+- Section 2 definitions, pp. 4 to 5: "the average wage (excluding benefits) of all Full-Time Equivalent Employment Positions shall be at least $57,600.00 per year" https://abilenetx.gov/DocumentCenter/View/39456
+- Section 3.8(d), pp. 8 to 9: "a minimum of Fifty-Seven (57) Full-Time Equivalent Employment Positions working at Leased Parcel 1/2" https://abilenetx.gov/DocumentCenter/View/39456
 - https://ktxs.com/news/local/lancium-crusoe-executives-brief-abilene-leaders-on-major-northside-investment
 
 ### Local contracting: UNKNOWN
 Floor: Local subcontracting goals and haul-route road repair paid by the operator
-Contracts must be separated so that incorporated materials carry city sales tax, which is a revenue term rather than a local-hire term. The city waives building permit fees. No road repair or local subcontracting requirement.
-- Section 3.8(e), p. 9; Section 10(o), p. 18: https://abilenetx.gov/DocumentCenter/View/39456
+Contracts must be separated so that incorporated materials carry city sales tax, which is a revenue term rather than a local-hire term. The city waives applicable building permit fees and agrees to act on permit requests within 45 days. No road repair or local subcontracting requirement.
+- Section 3.8(e), p. 9: "enter into Separated Contracts with their respective prime construction contractors for the purchase of materials and equipment" https://abilenetx.gov/DocumentCenter/View/39456
+- Section 10(o), p. 18: "the City agrees to waive applicable building permit fees related to the Facilities and Improvements" https://abilenetx.gov/DocumentCenter/View/39456
 
 ### Transparency: FALLS SHORT
 Floor: No NDA, the agreement is public, and an independent audit on a schedule
-All agreements, resolutions, and ordinances are posted on the city website. Compliance is self-certified in filings each May 1 and February 1, with a city inspection right and no independent audit. No NDA was found; none is confirmed either way.
+All agreements, resolutions, and ordinances are posted on the city website. Compliance is self-certified in filings each May 1 and February 1, with a city right of access for inspection and no independent audit. No NDA was found; none is confirmed either way.
 - https://abilenetx.gov/2476/Tax-Abatements
-- Sections 3.5, 3.8(d), and 7: https://abilenetx.gov/DocumentCenter/View/39456
+- Section 3.5, p. 7: "certify in writing to the City that the respective Party is in compliance with each term of the Agreement" https://abilenetx.gov/DocumentCenter/View/39456
+- Section 7, p. 13: "shall have reasonable right to access to the Land, the Improvements, each Leased Parcel, each Facility" https://abilenetx.gov/DocumentCenter/View/39456
 
 ### Tax incentives: UNKNOWN
 Floor: A but-for test before any abatement, with the forgone revenue stated
-City abates 85 percent of taxable value above the 2024 base for ten consecutive years per facility, and a companion agreement gives the same on later-added equipment, with no property abated more than ten years in total. Taylor County's parallel agreement is reported at 80 percent. The school district abates nothing. The city expects $70 to $90 million in revenue over 20 years; the county expects $18 million a year at full buildout. Oracle protested its $200 million 2025 appraisal after receiving the abatement. No formal but-for analysis was found; the city manager said the tenants could not pay the full tax burden.
-- Sections 4.2 to 4.5, pp. 10 to 11: https://abilenetx.gov/DocumentCenter/View/39456
-- Sections 4.2 to 4.4: https://abilenetx.gov/DocumentCenter/View/39455
+City abates 85 percent of taxable value above the 2024 base year for ten consecutive years per facility, and a companion agreement gives the same 85 percent on later-added improvements and equipment while excluding anything already abated, so no property is abated more than ten years in total. Taylor County's parallel agreement is reported at 80 percent for ten years. Abilene ISD abates nothing and receives 100 percent of taxable value. The county expects about $18 million a year once all eight buildings are occupied. Oracle protested Taylor County's roughly $200 million 2025 appraisal of the site after receiving the abatement. No formal but-for analysis was located.
+- Sections 4.2 to 4.5, pp. 10 to 11: "an abatement of eighty five percent (85%) of the Taxable Value of the Land, Improvements, and any Tangible Personal Property owned by Developer" https://abilenetx.gov/DocumentCenter/View/39456
+- Sections 4.2 to 4.4, p. 9: "an abatement of eighty five percent (85%) of the Taxable Value of new improvements and additions constructed on such Lessee's Leased Parcel" https://abilenetx.gov/DocumentCenter/View/39455
 - https://finance.yahoo.com/news/taylor-county-estimated-see-18-222915156.html
 - https://www.aol.com/oracle-got-big-tax-breaks-090001667.html
 
 ### Reported criticisms
-- Rents doubled and tripled during construction, with residents reporting displacement. (https://www.kacu.org/local-news/2026-09-02/panel-tackles-persistent-concerns-around-abilenes-ai-boom)
-- The on-site turbines and diesel generators are permitted for about 1.6 million tons of greenhouse gases a year and roughly 1,000 tons of pollutants, with an expansion sought. (https://www.texastribune.org/2026/07/09/texas-data-centers-ai-power-plants-pollution-state-permits/)
+- Rents doubled and tripled across the area during construction, with residents reporting displacement. (https://www.kacu.org/local-news/2026-09-02/panel-tackles-persistent-concerns-around-abilenes-ai-boom)
+- The on-site turbines and diesel generators are permitted for more than 1.6 million tons of greenhouse gases a year and roughly 1,000 tons of other pollutants, with an expansion sought. (https://www.texastribune.org/2026/07/09/texas-data-centers-ai-power-plants-pollution-state-permits/)
 - Oracle protested its property appraisal after receiving an 85 percent abatement, with an estimated $3 million a year at stake for the county. (https://www.aol.com/oracle-got-big-tax-breaks-090001667.html)
 
 ---

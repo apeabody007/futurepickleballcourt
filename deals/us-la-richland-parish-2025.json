@@ -3,20 +3,65 @@
   "id": "us-la-richland-parish-2025",
   "status": "signed",
   "verification": "primary",
-  "jurisdiction": { "country": "US", "state": "LA", "locality": "Richland Parish", "level": "county" },
+  "jurisdiction": {
+    "country": "US",
+    "state": "LA",
+    "locality": "Richland Parish",
+    "level": "county"
+  },
   "operator": "Meta",
-  "developer": "Laidley LLC (Meta subsidiary; since October 2025 owned by Beignet Investor LLC, 80 percent Blue Owl and 20 percent Meta)",
+  "developer": "Laidley LLC (Meta subsidiary; since October 2025 owned by Beignet Investor LLC, a Blue Owl and Meta joint venture in which Blue Owl holds 80 percent and Meta 20 percent)",
   "project": "Meta Hyperion data center, Franklin Farm megasite near Holly Ridge",
   "agreement_type": "pilot",
-  "dates": { "signed": null, "approved": "2025-08-20", "effective": null },
-  "scale": { "acres": 2250, "mw": 2000, "capex_usd": 10000000000, "sqft": 4000000, "notes": "Figures as announced in December 2024 (about 2 GW, $10 billion, 4 million sq ft, 2,250 acres). The project was expanded to $27 billion in October 2025 and to more than $50 billion, about 5 GW, and 3,200-plus acres in July 2026. Entergy's certified generation for the site totals 2,262 MW across three gas plants." },
+  "dates": {
+    "signed": null,
+    "approved": "2025-08-20",
+    "effective": null
+  },
+  "scale": {
+    "acres": 2250,
+    "mw": 2000,
+    "capex_usd": 10000000000,
+    "sqft": 4000000,
+    "notes": "Figures as announced in December 2024. The governor's announcement states 2,250 acres, 4 million square feet and $10 billion; it does not state a megawatt figure, and the 2 GW number comes from trade press coverage of the same announcement. The project was expanded to $27 billion in October 2025 and to more than $50 billion, about 5 GW, and 3,200-plus acres in July 2026. Entergy's certified generation for the site totals 2,262 MW across three combined cycle plants, two in Richland Parish and one at Killona."
+  },
   "documents": [
-    { "title": "Louisiana Public Service Commission Order U-37425 with the stipulated settlement term sheet (Entergy generation and transmission for the Meta site)", "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D", "kind": "primary", "date": "2025-08-20" },
-    { "title": "Joint motion for approval of settlement, public redacted version", "url": "https://www.all4energy.org/wp-content/uploads/2025/08/2025-08-07-ELL-Joint-Mtn-for-Rule-57-Approval.pdf", "kind": "primary", "date": "2025-08-07" },
-    { "title": "LPSC business and executive session transcript, August 20, 2025", "url": "https://www.lpsc.louisiana.gov/docs/transcripts/August-20-2025-BE.pdf", "kind": "primary", "date": "2025-08-20" },
-    { "title": "Shreveport-Bossier Advocate: a first look at lease terms and tax benefits (from records-request copies of the state lease and PILOT, which are not posted)", "url": "https://www.shreveportbossieradvocate.com/business/a-first-look-at-lease-terms-tax-benefits-for-richland-meta-ai-data-center/article_037b70ea-c6dc-11ef-b454-1331871da095.html", "kind": "press", "date": null },
-    { "title": "Alliance for Affordable Energy and Union of Concerned Scientists motion for investigation", "url": "https://www.all4energy.org/wp-content/uploads/2026/01/2026-01-14-U-37425-AAE-UCS-Mtn-for-Investigation.pdf", "kind": "analysis", "date": "2026-01-14" },
-    { "title": "Governor's announcement, December 4, 2024", "url": "https://gov.louisiana.gov/news/4697", "kind": "government_page", "date": "2024-12-04" }
+    {
+      "title": "Louisiana Public Service Commission Order U-37425 with the stipulated settlement term sheet (Entergy generation and transmission for the Meta site)",
+      "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D",
+      "kind": "primary",
+      "date": "2025-08-20"
+    },
+    {
+      "title": "Joint motion for approval of settlement, public redacted version",
+      "url": "https://www.all4energy.org/wp-content/uploads/2025/08/2025-08-07-ELL-Joint-Mtn-for-Rule-57-Approval.pdf",
+      "kind": "primary",
+      "date": "2025-08-07"
+    },
+    {
+      "title": "LPSC business and executive session transcript, August 20, 2025",
+      "url": "https://www.lpsc.louisiana.gov/docs/transcripts/August-20-2025-BE.pdf",
+      "kind": "primary",
+      "date": "2025-08-20"
+    },
+    {
+      "title": "Shreveport-Bossier Advocate: a first look at lease terms and tax benefits (from records-request copies of the state lease and PILOT, which are not posted)",
+      "url": "https://www.shreveportbossieradvocate.com/business/a-first-look-at-lease-terms-tax-benefits-for-richland-meta-ai-data-center/article_037b70ea-c6dc-11ef-b454-1331871da095.html",
+      "kind": "press",
+      "date": null
+    },
+    {
+      "title": "Alliance for Affordable Energy and Union of Concerned Scientists motion for investigation",
+      "url": "https://www.all4energy.org/wp-content/uploads/2026/01/2026-01-14-U-37425-AAE-UCS-Mtn-for-Investigation.pdf",
+      "kind": "analysis",
+      "date": "2026-01-14"
+    },
+    {
+      "title": "Governor's announcement, December 4, 2024",
+      "url": "https://gov.louisiana.gov/news/4697",
+      "kind": "government_page",
+      "date": "2024-12-04"
+    }
   ],
   "terms": {
     "community_fund": {
@@ -26,29 +71,44 @@
       "scales_with_project": null,
       "controlled_by": "Meta and Entergy control the giving; no parish-controlled fund was found.",
       "community_seat": null,
-      "notes": "No community fund under parish control. Meta-directed giving includes a grants fund of more than $1 million, $300,000 to the Richland Revitalization Board, $5 million to Louisiana Delta Community College, and scholarships for Richland High graduates. Entergy's bill-assistance program gets $1 million a year from Meta, matched by Entergy, for the 15-year term, and a March 2026 agreement added further customer-savings commitments.",
+      "notes": "No community fund under parish control. Meta-directed giving includes more than $1 million in community grants through its Future is for Everyone Fund, $300,000 to the Richland Revitalization Board, $5 million to Louisiana Delta Community College, and full scholarships for graduates of Richland Parish's high schools beginning with the class of 2026. At the August 2025 session Entergy committed $1 million a year to its Power to Care bill-assistance program over the 15-year term, matched by Meta, about $30 million in total. A March 2026 agreement expanded this to $120 million for Power to Care including matching funds, $140 million for energy efficiency for vulnerable customers, and $2 billion in projected customer savings over 20 years.",
       "sources": [
         "https://datacenters.atmeta.com/asset/richland-parish-data-center-info-sheet/",
-        { "url": "https://www.lpsc.louisiana.gov/docs/transcripts/August-20-2025-BE.pdf", "where": "p. 30, Power to Care commitment" },
+        {
+          "url": "https://www.lpsc.louisiana.gov/docs/transcripts/August-20-2025-BE.pdf",
+          "where": "p. 26, Power to Care commitment",
+          "quote": "over the 15-year term, we will contribute an additional $1 million to the Power to Care that will be matched by Meta"
+        },
         "https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings"
       ]
     },
     "clawbacks": {
       "present": true,
-      "triggers": ["jobs", "investment"],
+      "triggers": [
+        "jobs",
+        "investment"
+      ],
       "proportional": null,
-      "notes": "Under the state ground lease, the purchase price rises if capital and employment targets are missed by December 3, 2028, and the state may take the property back if the lessee falls below 75 percent of both the capital and employment requirements. PILOT payments step through four levels tied to investment and jobs. On the utility side, an early-termination fee is backed by a Meta Platforms parent guaranty; after the October 2025 ownership change, advocates argue the guaranty no longer reaches an entity with assets. No trigger is tied simply to the facility ceasing operation.",
+      "notes": "Under the state ground lease the base purchase price for the site rises if the project fails to meet the capital and employment goals, and the state may redeem ownership if the lessee falls below 75 percent of both the capital requirement and the employment requirement by December 3, 2028. PILOT payments step through four levels tied to investment and jobs. On the utility side an early-termination fee is backed by a Meta Platforms parent guaranty; after the October 2025 ownership change advocates argue the guaranty no longer reaches an entity with assets, because Laidley's new parent Beignet has not signed one and holds no assets beyond the data center. No trigger is tied simply to the facility ceasing operation.",
       "sources": [
         "https://www.shreveportbossieradvocate.com/business/a-first-look-at-lease-terms-tax-benefits-for-richland-meta-ai-data-center/article_037b70ea-c6dc-11ef-b454-1331871da095.html",
-        { "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D", "where": "Term Sheet IV.B and IV.C, parent guaranty and early termination fee" },
-        { "url": "https://www.all4energy.org/wp-content/uploads/2026/01/2026-01-14-U-37425-AAE-UCS-Mtn-for-Investigation.pdf", "where": "pp. 4 to 5 and 10 to 12, Beignet ownership" }
+        {
+          "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D",
+          "where": "Term Sheet IV.B.3 and IV.C, parent guaranty and early termination fee",
+          "quote": "ELL will ensure that all Parent Guaranty agreements are obtained and fully executed timely"
+        },
+        {
+          "url": "https://www.all4energy.org/wp-content/uploads/2026/01/2026-01-14-U-37425-AAE-UCS-Mtn-for-Investigation.pdf",
+          "where": "pp. 4 to 5 and 10 to 12, Beignet ownership and parent guaranty",
+          "quote": "Beignet now owns an 80% stake in the data center, while Meta retains only a 20% stake"
+        }
       ]
     },
     "decommissioning": {
       "present": false,
       "instrument": "none",
       "amount_usd": null,
-      "notes": "No bond, escrow, or letter of credit. The only fallback is the state's right to take the leased land back if investment and jobs fall short.",
+      "notes": "No bond, escrow, or letter of credit. The only fallback is the state's right to redeem the leased land if investment and jobs fall short.",
       "sources": [
         "https://www.shreveportbossieradvocate.com/business/a-first-look-at-lease-terms-tax-benefits-for-richland-meta-ai-data-center/article_037b70ea-c6dc-11ef-b454-1331871da095.html"
       ]
@@ -59,10 +119,23 @@
       "minimum_bill": true,
       "term_years": 15,
       "governed_by": "Louisiana Public Service Commission Order U-37425 (August 20, 2025), approved 4 to 1",
-      "notes": "Meta pays directly, through contributions in aid of construction, for interim transmission, six customer substations, point-of-delivery lines, and the 500 kV lines to the site, so those carry no rate base. The three new gas plants (2,262 MW) go into all customers' rates through Entergy's formula rate plan, with Meta's minimum monthly charges sized to cover 100 percent of their cost, including overruns, for the 15-year term. The plants are expected to run 30 to 40 years. The Mount Olive to Sarepta 500 kV line and Sterlington upgrades are recovered from all ratepayers after a prudence review; Entergy listed the line at about $358 million in March 2026. Collateral is a Meta Platforms parent guaranty plus credit insurance.",
+      "notes": "Meta pays directly, through contributions in aid of construction, for interim transmission, the customer-paid substations including six customer substations, the point-of-delivery lines, and the Smalling to Car Gas 500 kV line, and the order books those at a zero plant-in-service balance so they carry no rate base. The three new combined cycle plants (2,262 MW) go into all customers' rates through Entergy's formula rate plan, and Staff told the commission Meta's minimum monthly charges are sized to cover 100 percent of their cost including overruns over the 15-year initial ESA term. Intervenor testimony puts the generators' depreciable life at 30 years, twice that term. The Mount Olive to Sarepta 500 kV line and the Sterlington upgrades are recovered from all ratepayers after a prudence review; Entergy listed that line at approximately $358 million as of March 2026. Collateral is a Meta Platforms parent guaranty plus credit insurance.",
       "sources": [
-        { "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D", "where": "Term Sheet I.A.2 to I.A.5, I.B.4 to I.B.8, III.A, IV.B" },
-        { "url": "https://www.lpsc.louisiana.gov/docs/transcripts/August-20-2025-BE.pdf", "where": "pp. 16 to 17 and 43 to 47, minimum charges cover the generators" },
+        {
+          "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D",
+          "where": "Term Sheet I.A.2 to I.A.5, I.B.4 to I.B.8, III.A, IV.B",
+          "quote": "offset the full amount of transmission capital additions for the Interim Transmission Facilities, the Customer-Paid Substations, Point-of-delivery Transmission Facilities"
+        },
+        {
+          "url": "https://www.lpsc.louisiana.gov/docs/transcripts/August-20-2025-BE.pdf",
+          "where": "pp. 16 to 17 and 43 to 44, minimum bill and 15-year term",
+          "quote": "Meta's minimum bill will cover 100% of the cost of the three new generators and that includes any cost overruns"
+        },
+        {
+          "url": "https://www.all4energy.org/wp-content/uploads/2026/01/2026-01-14-U-37425-AAE-UCS-Mtn-for-Investigation.pdf",
+          "where": "p. 10, ESA term against depreciable life",
+          "quote": "the initial term of the ESA (15 years) is significantly shorter than the depreciable life of the Planned Generators (30 years)"
+        },
         "https://www.entergylouisiana.com/transmission",
         "https://blog.ucs.org/paul-arbaje/whats-next-after-louisianas-gas-plant-approval-for-meta-data-center/"
       ]
@@ -73,14 +146,22 @@
       "reporting": false,
       "recycling_required": null,
       "cooling": "closed_loop",
-      "notes": "No enforceable cap. The state well registration allows up to about 23 million gallons a day from six wells; Meta projects 500 to 600 million gallons a year once running. Meta says it will voluntarily submit annual water-use reports to the state for the first five years; no state body monitors usage or aquifer condition. Cooling is closed-loop glycol, described as using no water for most of the year. Two of the Entergy plants will draw water from Delhi.",
+      "notes": "No enforceable cap. The state registered six wells for the site at a combined rate of about 23 million gallons a day; Meta projects 500 to 600 million gallons a year once running. Meta has agreed to voluntarily submit annual water-use reports to the state for its first five years of operation; no state body monitors usage or aquifer condition. Cooling is a closed-loop glycol system that Meta says needs no water for a majority of the year. Two of the Entergy plants will draw water from Delhi.",
       "sources": [
         "https://www.therichlandbeaconnews.com/article/1024,how-much-water-will-data-center-use",
         "https://datacenters.atmeta.com/asset/richland-parish-data-center-info-sheet/",
         "https://www.wwno.org/public-health/2026-04-13/were-monitoring-the-air-and-water-around-metas-data-center-in-louisiana-heres-why"
-      ]
+      ],
+      "hedge": "Annual water-use reporting is voluntary, offered for the first five years, and no state body monitors usage or aquifer condition."
     },
-    "noise": { "present": null, "limit_dba": null, "measured_at": null, "setback_ft": null, "notes": null, "sources": [] },
+    "noise": {
+      "present": null,
+      "limit_dba": null,
+      "measured_at": null,
+      "setback_ft": null,
+      "notes": null,
+      "sources": []
+    },
     "jobs": {
       "present": true,
       "promised_permanent": 500,
@@ -88,10 +169,14 @@
       "local_hire": false,
       "prevailing_wage": null,
       "enforceable": true,
-      "notes": "The state lease steps up required full-time jobs: 100 by the end of 2028, 300 to 450 by 2029, 450 to 475 by 2030, 500 by 2032, at wages of at least 150 percent of the state average, about $82,000. Missing the targets raises the purchase price or lets the state take the land back, so the numbers are binding. Meta now claims 1,000 operational and 7,500 peak construction jobs. A June 2025 regional analysis projected about 326 stable local jobs and a construction workforce roughly 75 percent from out of the area. Actual job counts became confidential after the commission voted in August 2026 to quash subpoenas seeking them.",
+      "notes": "The state lease and PILOT step up required full-time jobs alongside capital: at least 100 by December 31, 2028 with $5 billion invested, then 300, then $8 billion and 450, then $9.5 billion and 475, then $10 billion and 500 by December 31, 2032. The Advocate's account of the middle steps carries inconsistent year labels, so only the first and last rungs are firm. The PILOT requires an average wage of at least 150 percent of the statewide annual average, which against the Louisiana Workforce Commission's $58,614.92 is roughly $88,000; the separate $82,000 figure is the average salary stated in Entergy's application and repeated in the LPSC order. Missing the targets raises the purchase price or lets the state redeem the land, so the numbers are binding. Meta now claims 1,000 operational and 7,500-plus peak construction jobs. Actual job counts became confidential after the commission voted in August 2026 to quash subpoenas seeking them.",
       "sources": [
         "https://www.shreveportbossieradvocate.com/business/a-first-look-at-lease-terms-tax-benefits-for-richland-meta-ai-data-center/article_037b70ea-c6dc-11ef-b454-1331871da095.html",
-        { "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D", "where": "p. 1, more than 500 permanent employees at an average salary of $82,000" },
+        {
+          "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D",
+          "where": "p. 1, project description",
+          "quote": "expected to employ more than 500 permanent employees with an average salary of $82,000"
+        },
         "https://datacenters.atmeta.com/asset/richland-parish-data-center-info-sheet/",
         "https://thelensnola.org/2026/08/31/metas-data-center-will-be-the-biggest-in-the-u-s-but-no-one-knows-who-theyre-hiring/"
       ]
@@ -101,7 +186,7 @@
       "local_subcontracting": false,
       "road_repair": null,
       "infrastructure_contribution_usd": null,
-      "notes": "No local-contracting requirement. Meta claims more than $1.6 billion in contracts to Louisiana businesses and an infrastructure pledge that grew from $200 million to more than $1 billion, including Delhi utility upgrades and a new industrial wastewater plant. Meta paid the parish a flat $10 million permit fee instead of the standard 1 percent of construction cost. Pledges are not contract terms and are not counted here.",
+      "notes": "No local-contracting requirement. Meta claims more than $1.6 billion in contracts to Louisiana businesses and an infrastructure pledge that grew from more than $200 million at the December 2024 announcement to more than $1 billion, including Delhi utility upgrades and a new industrial wastewater plant. Meta balked at the standard 1 percent of construction cost and paid the parish a flat $10 million permit fee instead of about $100 million. Pledges are not contract terms and are not counted here.",
       "sources": [
         "https://datacenters.atmeta.com/asset/richland-parish-data-center-info-sheet/",
         "https://www.govtech.com/artificial-intelligence/louisiana-town-transformed-by-meta-data-center-interest",
@@ -115,11 +200,15 @@
       "public_dashboard": false,
       "audit_cadence": "annual",
       "audit_independent": false,
-      "notes": "The governor personally signed a mutual nondisclosure agreement with Laidley in April 2024, and state records show at least 50 public officials signed NDAs. The electric service agreement, contributions in aid of construction, and parent guaranty were filed under seal. The lease and PILOT were obtained by reporters through records requests, not posted. Entergy files quarterly monitoring reports to the commission in redacted form; annual usage and billing reports are confidential under the order. In August 2026 the commission voted 3 to 1 to quash subpoenas that would have required Meta to substantiate its job, economic, and load claims. Reporters found an Entergy executive drafted a commission motion supporting the project.",
+      "notes": "The governor personally signed a mutual nondisclosure agreement with Laidley LLC on April 23, 2024, and records obtained from Louisiana Economic Development show at least 50 public officials signed NDAs since he took office. The electric service agreement, contributions in aid of construction, and parent guaranty were filed under seal, and the settlement itself is posted only as a public redacted version. The lease and PILOT were obtained by reporters through records requests, not posted. Entergy files quarterly monitoring reports to Commission Staff in the form of Attachment 1; annual reporting of customer usage, demand and billing is confidential under the order. On August 12, 2026 the commission voted 3 to 1 to quash subpoenas that would have required Meta to substantiate its job, economic, and load claims. Reporters later found that Entergy's vice president for regulatory and public affairs drafted a commission motion supporting the project.",
       "sources": [
         "https://www.wwno.org/politics/2026-07-24/gov-jeff-landry-personally-signed-an-nda-with-meta-heres-what-it-says",
         "https://www.mpbonline.org/blogs/news/a-muzzle-on-elected-officials-ndas-cloak-louisianas-biggest-business-developments/",
-        { "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D", "where": "Term Sheet IV.D.2 and Attachment 1, monitoring procedures" },
+        {
+          "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D",
+          "where": "Term Sheet IV.D.2 and Attachment 1, monitoring procedures",
+          "quote": "annual reporting of Customer usage, demand and billing. All such information shall remain confidential"
+        },
         "https://www.wwno.org/politics/2026-08-12/louisiana-psc-kills-ruling-that-would-force-meta-to-turn-over-key-data-center-information",
         "https://www.wwno.org/local-regional-news/2026-08-11/tracked-changes-an-entergy-exec-ghostwrote-louisiana-psc-motions-supporting-meta-hyundai"
       ]
@@ -131,7 +220,7 @@
       "pilot": true,
       "estimated_forgone_usd": 3300000000,
       "but_for_test": null,
-      "notes": "A 30-year PILOT under which Meta pays 20 to 40 percent of what property taxes would otherwise be, depending on investment and job levels, with a 20 percent floor once $10 billion and 500 jobs are reached; the abatement figure here is the midpoint. Payments split 53 percent to the school board, 35 percent to the police jury, 12 percent to the sheriff. Construction materials are taxed at 1 percent. A separate 20-year state and local sales tax exemption on data center equipment was estimated by Sherwood News at $3.3 billion forgone, which Good Jobs First called conservative; that is the forgone figure here. State lease rent is $732,000 a year for 30 years. The first PILOT sales-tax deposit was about $22.4 million.",
+      "notes": "A 30-year PILOT under which Meta pays 20 to 40 percent of what ad valorem taxes would otherwise be, depending on investment and job levels, pegging at 20 percent once PILOT Level 4 of $10 billion invested and 500 jobs is reached. Paying 20 to 40 percent means abating 60 to 80 percent, so 70 is the midpoint of the abatement range; the long-run rate at full performance is 80 percent. Payments split 53 percent to the school board, 35 percent to the police jury, 12 percent to the parish law enforcement district. The PILOT also collects 1 percent on construction materials, furniture and fixtures. Separately, Louisiana exempts the site's data center equipment, including GPUs, from state and local sales and use tax for 20 years; Sherwood News estimated the break on GPU purchases alone at more than $3.3 billion, which a Good Jobs First analyst called conservative, and that is the forgone figure used here. State lease rent is $732,000 a year for the 30-year primary term, dropping to $120 a year in a 69-year renewal term with a $12 million purchase option. The parish sales and use tax office received a single sales tax payment of $22,406,676.75; the PILOT itself starts at the initial certificate of occupancy and had not begun.",
       "sources": [
         "https://www.shreveportbossieradvocate.com/business/a-first-look-at-lease-terms-tax-benefits-for-richland-meta-ai-data-center/article_037b70ea-c6dc-11ef-b454-1331871da095.html",
         "https://www.shreveportbossieradvocate.com/business/meta-data-center-in-richland-parish-sends-a-big-sales-tax-check/article_e7dede0f-fc21-4c5b-b341-207b1ca7c238.html",
@@ -141,10 +230,21 @@
     }
   },
   "criticisms": [
-    { "summary": "Advocates argue the parent guaranty no longer reaches an entity with assets after ownership moved to a Blue Owl joint venture, and that ratepayers carry the stranded-cost risk when the 15-year term ends on plants built to run 30 to 40 years.", "source": "https://www.all4energy.org/wp-content/uploads/2026/01/2026-01-14-U-37425-AAE-UCS-Mtn-for-Investigation.pdf" },
-    { "summary": "The dissenting commissioner said there was a lot he could not verify; the commission later killed subpoenas that would have tested the job and load claims.", "source": "https://www.wwno.org/politics/2026-08-12/louisiana-psc-kills-ruling-that-would-force-meta-to-turn-over-key-data-center-information" },
-    { "summary": "Researchers warn maximum pumping could affect shallow domestic wells; residents have reported discolored tap water and LSU is monitoring air and water.", "source": "https://www.wwno.org/public-health/2026-04-13/were-monitoring-the-air-and-water-around-metas-data-center-in-louisiana-heres-why" }
+    {
+      "summary": "Advocates argue the parent guaranty no longer reaches an entity with assets after ownership moved to a Blue Owl joint venture, and that ratepayers carry the stranded-cost risk when the 15-year term ends on generators with a 30-year depreciable life.",
+      "source": "https://www.all4energy.org/wp-content/uploads/2026/01/2026-01-14-U-37425-AAE-UCS-Mtn-for-Investigation.pdf"
+    },
+    {
+      "summary": "The dissenting commissioner said there was a lot he could not verify; the commission later killed subpoenas that would have tested the job and load claims.",
+      "source": "https://www.wwno.org/politics/2026-08-12/louisiana-psc-kills-ruling-that-would-force-meta-to-turn-over-key-data-center-information"
+    },
+    {
+      "summary": "Researchers warn maximum pumping could affect shallow domestic wells; residents have reported discolored tap water and LSU researchers are analyzing community air and water samples.",
+      "source": "https://www.wwno.org/public-health/2026-04-13/were-monitoring-the-air-and-water-around-metas-data-center-in-louisiana-heres-why"
+    }
   ],
-  "contributors": ["apeabody007"],
+  "contributors": [
+    "apeabody007"
+  ],
   "last_reviewed": "2026-09-07"
 }
