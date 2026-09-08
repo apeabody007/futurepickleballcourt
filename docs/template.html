@@ -196,6 +196,25 @@
   .hedge { margin: 6px 0 0; padding: 7px 10px; border-left: 3px solid var(--stamp); background: color-mix(in srgb, var(--stamp) 6%, transparent); font-size: 15px; line-height: 1.4; }
   .hedge b { font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--stamp); display: block; margin-bottom: 2px; }
 
+  .submit { border: 1.5px solid var(--rule); padding: 18px 20px 16px; }
+  .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; }
+  .submit label { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
+  .submit .req { color: var(--stamp); letter-spacing: .06em; }
+  .submit .opt { color: var(--ink-3); letter-spacing: .06em; }
+  .submit input[type=text], .submit input[type=url], .submit select {
+    display: block; width: 100%; margin-top: 5px; padding: 9px 10px; background: var(--paper);
+    border: 1.5px solid var(--hair); color: var(--ink); font-family: var(--mono); font-size: 14px;
+    letter-spacing: 0; text-transform: none; border-radius: 0; }
+  .submit input:focus, .submit select:focus { outline: none; border-color: var(--ink); }
+  .submit .gate { display: flex; align-items: center; gap: 9px; margin: 14px 0 0; text-transform: none; letter-spacing: 0; font-size: 14px; color: var(--ink); font-family: var(--serif); }
+  .submit .gate input { width: 16px; height: 16px; accent-color: var(--ink); }
+  .submitbar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 14px; }
+  .submitbar button { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; background: var(--ink); color: var(--paper); border: 1.5px solid var(--ink); padding: 9px 16px; cursor: pointer; }
+  .submitbar button:disabled { background: transparent; color: var(--ink-3); border-color: var(--hair); cursor: not-allowed; }
+  .submitbar button:not(:disabled):hover { background: var(--paper); color: var(--ink); }
+  .submitnote { margin: 14px 0 0; }
+  @media (max-width: 700px) { .fields { grid-template-columns: 1fr; } }
+
   /* floor */
   .floor { columns: 2; column-gap: 48px; margin: 0; padding: 0; list-style: none; counter-reset: fl; }
   .floor li { break-inside: avoid; margin: 0 0 14px; padding-left: 44px; position: relative; font-size: 18px; line-height: 1.4; }
@@ -383,6 +402,34 @@
     <li><b>Unknown is not a failure.</b> A question mark means nobody has found the answer yet. Many terms live in tariffs, side letters, or records requests, not the headline agreement.</li>
   </ol>
 
+  <h2>Add a deal <span>a link to the document, and the place. That is the whole ask.</span></h2>
+  <p class="intro">You do not need to know what a pull request is. Fill in the two required boxes and it opens an email, already written. Nothing here publishes automatically: every submission gets checked against the document first.</p>
+  <div class="submit">
+    <div class="fields">
+      <label>Place <span class="req">required</span>
+        <input type="text" id="f-place" placeholder="Kalamazoo County, MI" autocomplete="off"></label>
+      <label>Link to the document <span class="req">required</span>
+        <input type="url" id="f-url" placeholder="https://" autocomplete="off"></label>
+      <label>What kind of document is it?
+        <select id="f-kind">
+          <option>The executed agreement</option>
+          <option>An ordinance or resolution</option>
+          <option>A council or board agenda packet</option>
+          <option>A utility tariff or commission order</option>
+          <option>A news report about the deal</option>
+          <option>Something else</option>
+        </select></label>
+      <label>Operator or developer <span class="opt">optional</span>
+        <input type="text" id="f-who" placeholder="Who will run it, or who signed" autocomplete="off"></label>
+    </div>
+    <label class="gate"><input type="checkbox" id="f-ok"> The link is public and opens without a login.</label>
+    <div class="submitbar">
+      <button type="button" id="f-go" disabled>Open the email</button>
+      <span class="dl" id="f-hint">Add a place and a document link to continue.</span>
+    </div>
+    <p class="note submitnote">A link to the document is required, and submissions without one are closed unread. That is not gatekeeping, it is the only rule this whole list has: a source on every term, or it doesn't go in. Prefer GitHub? <a href="https://github.com/apeabody007/futurepickleballcourt/issues/new?template=add-a-deal.yml">Open an issue</a> or send a pull request.</p>
+  </div>
+
   <h2>Wanted <span>what would make this better</span></h2>
   <p class="intro" id="wantednote"></p>
   <ol class="floor" id="wanted"></ol>
@@ -535,6 +582,43 @@
         '<div><p>' + esc(e.why) + '</p>' + src + '</div></div>';
     }).join('');
   }
+
+  (function () {
+    var place = document.getElementById('f-place'), url = document.getElementById('f-url'),
+        kind = document.getElementById('f-kind'), who = document.getElementById('f-who'),
+        ok = document.getElementById('f-ok'), go = document.getElementById('f-go'),
+        hint = document.getElementById('f-hint');
+    if (!go) return;
+    function looksLikeUrl(v) { return /^https?:\/\/[^\s.]+\.[^\s]{2,}$/i.test(v.trim()); }
+    function check() {
+      var haveP = place.value.trim().length > 1, haveU = looksLikeUrl(url.value);
+      go.disabled = !(haveP && haveU && ok.checked);
+      hint.textContent = !haveP ? 'Add a place to continue.'
+        : !haveU ? 'That link does not look like a public URL yet.'
+        : !ok.checked ? 'Tick the box to confirm the link is public.'
+        : 'This opens your mail app with everything filled in.';
+    }
+    [place, url, who].forEach(function (el) { el.addEventListener('input', check); });
+    ok.addEventListener('change', check);
+    check();
+    go.addEventListener('click', function () {
+      if (go.disabled) return;
+      var body = [
+        'PLACE: ' + place.value.trim(),
+        'DOCUMENT URL: ' + url.value.trim(),
+        'DOCUMENT TYPE: ' + kind.value,
+        'OPERATOR OR DEVELOPER: ' + (who.value.trim() || '(not stated)'),
+        '',
+        'If you ran the review prompt at https://futurepickleballcourt.com/prompt.txt',
+        'against this document, paste the submission block it produced below this line.',
+        '',
+        ''
+      ].join('\r\n');
+      window.location.href = 'mailto:deals@futurepickleballcourt.com'
+        + '?subject=' + encodeURIComponent('[Deal] ' + place.value.trim())
+        + '&body=' + encodeURIComponent(body);
+    });
+  })();
 
   var wn = document.getElementById('wantednote');
   if (wn) wn.textContent = data.wanted_note || '';

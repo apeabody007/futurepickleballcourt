@@ -308,6 +308,30 @@ def render_prompt(deals):
         "   with specific language to propose for each.",
         "",
         "Do not soften your answer to be agreeable. If the deal is good, say that too.",
+        "",
+        "",
+        "OPTIONAL, IF YOU WANT THIS DEAL ADDED TO THE PUBLIC BENCHMARK",
+        "",
+        "Print the block below, filled in. Leave a line blank if the document does not answer it.",
+        "Do not guess. A blank is useful; a guess is not.",
+        "Then send it to deals@futurepickleballcourt.com with a link to the document.",
+        "",
+        "  PLACE:            (city or county, state)",
+        "  OPERATOR:         (who will run it, if named)",
+        "  DEVELOPER:        (who signed, if different)",
+        "  AGREEMENT TYPE:   (development agreement, proffer, tax abatement, land sale, other)",
+        "  DATE SIGNED:      (YYYY-MM-DD)",
+        "  DOCUMENT URL:     (a public link anyone can open)",
+        "  STATUS:           (signed, approved, proposed, withdrawn, terminated)",
+    ]
+    for name, spec in FLOOR["clauses"].items():
+        lines.append(f"  {spec['label'].upper()}:".ljust(22)
+                     + "(what the document says, and the section number)")
+    lines += [
+        "  SOFTENING LANGUAGE: (any good faith, reasonable efforts, or sole discretion wording, quoted)",
+        "",
+        "Accuracy matters more than completeness. Every line will be checked against the document",
+        "before it is published, and anything that cannot be found there will be removed.",
     ]
     return "\n".join(lines) + "\n"
 

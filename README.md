@@ -32,6 +32,9 @@ The exact bar for each is in [`schema/floor.json`](schema/floor.json) and on the
 
 ## Add a deal or fix one
 
+**You do not need a GitHub account.** Email `deals@futurepickleballcourt.com` with a link to the agreement and the name of the place; there is a form on the site that writes it for you. A public link to the document is required. Everything is checked against that document before it is published.
+
+
 If you know of a signed data center agreement that is not here, have a public records response, or have a page number for a term currently marked unknown, that is the most useful thing you can contribute.
 
 1. Copy `deals/_template.json` to a new file named `country-state-locality-year.json`.

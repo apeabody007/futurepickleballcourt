@@ -1,0 +1,61 @@
+name: Add a deal
+description: Submit a data center agreement for the benchmark
+title: "[Deal] "
+labels: ["deal submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A public link to the document is required. Submissions without one are closed unread, because the whole point of this list is that every term traces to a document anyone can open.
+
+        If you do not have GitHub, email the same information to deals@futurepickleballcourt.com instead.
+  - type: input
+    id: place
+    attributes:
+      label: Place
+      description: City or county, and state.
+      placeholder: Kalamazoo County, MI
+    validations:
+      required: true
+  - type: input
+    id: document
+    attributes:
+      label: Link to the document
+      description: An agreement, ordinance, proffer statement, agenda packet, or utility tariff. It must be public.
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of document is it?
+      options:
+        - The executed agreement
+        - An ordinance or resolution
+        - A council or board agenda packet
+        - A utility tariff or commission order
+        - A news report about the deal
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: operator
+    attributes:
+      label: Operator or developer
+      description: Who will run it, or who signed. Leave blank if the document does not say.
+  - type: textarea
+    id: findings
+    attributes:
+      label: Filled-in submission block, if you have one
+      description: |
+        If you ran https://futurepickleballcourt.com/prompt.txt against the document, paste the block it produced here. This is the most useful thing you can include, but it is optional.
+      render: text
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you submit
+      options:
+        - label: The link above is public and opens without a login.
+          required: true
+        - label: I am not quoting from a confidential or leaked document.
+          required: true

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Add a deal by email
+    url: mailto:deals@futurepickleballcourt.com
+    about: No GitHub account needed. Send the document and the place, and it gets added.
+  - name: Correct something
+    url: https://github.com/apeabody007/futurepickleballcourt/issues/new
+    about: If a number here is wrong, say which one and point at the document.

@@ -1,6 +1,20 @@
 # Contributing
 
-One pull request per deal. One file per deal. A receipt for every term.
+One file per deal. A receipt for every term. **You do not need to know what a pull request is.**
+
+## The easiest way: send the document
+
+Email **deals@futurepickleballcourt.com** with a link to the agreement and the name of the place. That is the whole ask. I do the extraction.
+
+There is a form on [the site](https://futurepickleballcourt.com) that writes the email for you, and a [GitHub issue form](https://github.com/apeabody007/futurepickleballcourt/issues/new?template=add-a-deal.yml) if you would rather use that.
+
+A public link to the document is required. Submissions without one are closed unread. That is the only rule this list has.
+
+## The most useful way: run the prompt first
+
+If you run [the review prompt](https://futurepickleballcourt.com/prompt.txt) against the document, it ends by printing a filled-in submission block. Paste that into your email along with the link. That produces a far better entry than a raw document, because the section numbers are already pulled.
+
+## The developer way: open a pull request
 
 ## Add a deal
 
