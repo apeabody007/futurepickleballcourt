@@ -541,7 +541,8 @@
         return '<li>' + (s.where ? '<span class="where">' + esc(s.where) + '.</span> ' : '') + '<a href="' + esc(s.url) + '" rel="noopener">' + esc(s.url.replace(/^https?:\/\//, '')) + '</a>' + (s.quote ? ' <span class="q">“' + esc(s.quote) + '”</span>' : '') + '</li>';
       }).join('') + '</ol></div>';
     }
-    h += '<div class="foot"><button type="button" class="permalink" data-permalink="' + esc(link) + '">Copy link to this deal</button> <span class="meta"> ' + esc(link) + '</span></div>';
+    h += '<div class="foot"><a class="permalink" href="/deals/' + esc(d.id) + '.html">Open this deal on its own page</a>'
+      + ' &nbsp; <button type="button" class="permalink" data-permalink="' + esc(link) + '">Copy link to this deal</button></div>';
     if (d.criticisms && d.criticisms.length) {
       h += '<div class="crit"><h5>Reported criticisms</h5>' + d.criticisms.map(function (x) { return '<p>' + esc(x.summary) + ' <a href="' + esc(x.source) + '" rel="noopener">source</a></p>'; }).join('') + '</div>';
     }

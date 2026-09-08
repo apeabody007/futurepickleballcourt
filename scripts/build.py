@@ -402,6 +402,228 @@ def render_all_markdown(deals):
 
 
 
+DEAL_CSS = """
+:root { --paper:#efe9dc; --paper-2:#e6dfd0; --ink:#17140f; --ink-2:#4a443b; --ink-3:#8a8274;
+  --rule:#17140f; --hair:rgba(23,20,15,.28); --stamp:#c4281e; --met:#1e6b3d;
+  --serif:"Instrument Serif","Iowan Old Style",Georgia,serif; --mono:"Courier Prime","Courier New",monospace; }
+*{box-sizing:border-box} html{background:var(--paper)}
+body{margin:0;color:var(--ink);background:var(--paper);font-family:var(--serif);font-size:19px;line-height:1.45;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .06 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>")}
+a{color:inherit;text-decoration-color:var(--hair);text-underline-offset:3px} a:hover{text-decoration-color:var(--ink)}
+.page{position:relative;z-index:1;max-width:920px;margin:0 auto;padding:0 28px 80px}
+.mast{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0 10px;border-bottom:2px solid var(--rule);
+  font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.mast b{color:var(--ink)} .mast a{color:var(--ink-2)}
+h1{font-weight:400;font-size:clamp(38px,6vw,64px);line-height:1;letter-spacing:-.015em;margin:34px 0 10px}
+.who{font-family:var(--mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);margin:0 0 18px}
+.facts{font-family:var(--mono);font-size:13.5px;line-height:1.7;color:var(--ink-2);margin:0 0 6px;padding-bottom:16px;border-bottom:1px solid var(--hair)}
+.facts b{color:var(--ink);font-weight:400} .facts a{color:var(--ink)}
+h2{font-family:var(--mono);font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;margin:38px 0 12px;padding-top:10px;border-top:2px solid var(--rule)}
+.strip{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 4px}
+.st{display:inline-block;font-family:var(--mono);font-weight:700;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;line-height:1;
+  padding:5px 6px 4px;border:1.5px solid var(--ink);color:var(--ink);min-width:52px;text-align:center}
+.st.meets{background:var(--met);border-color:var(--met);color:var(--paper)}
+.st.falls_short{border-color:var(--stamp);color:var(--stamp)}
+.st.unknown{border-style:dashed;border-color:var(--ink-3);color:var(--ink-3);font-weight:400}
+.st.na{border:0;color:var(--ink-3);font-weight:400}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.chip{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:78px}
+.chip span.n{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);text-align:center;line-height:1.2}
+.clause{padding:16px 0 18px;border-bottom:1px solid var(--hair)}
+.clause h3{display:flex;align-items:center;gap:12px;margin:0 0 6px;font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.clause .asks{font-family:var(--mono);font-size:12px;color:var(--ink-3);margin:0 0 8px;line-height:1.5}
+.clause p{margin:0 0 7px;font-size:17.5px;line-height:1.45}
+.clause .data{font-family:var(--mono);font-size:13px;color:var(--ink-2);line-height:1.6}
+.hedge{margin:8px 0 0;padding:8px 11px;border-left:3px solid var(--stamp);background:color-mix(in srgb,var(--stamp) 6%,transparent);font-size:16px}
+.hedge b{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--stamp);display:block;margin-bottom:2px}
+ol.src{margin:8px 0 0;padding-left:22px;font-family:var(--mono);font-size:12.5px;line-height:1.65;color:var(--ink-2)}
+ol.src a{color:var(--ink);word-break:break-word} ol.src .q{font-style:italic}
+.crit p{margin:0 0 8px;font-size:17px}
+.crit a{font-family:var(--mono);font-size:12px}
+.other{font-family:var(--mono);font-size:12.5px;line-height:1.9}
+.other a{color:var(--ink-2)} .other a:hover{color:var(--ink)}
+footer{margin-top:44px;padding-top:14px;border-top:2px solid var(--rule);font-family:var(--mono);font-size:12.5px;line-height:1.7;color:var(--ink-2)}
+footer a{color:var(--ink)}
+@media (max-width:700px){body{font-size:17px}.page{padding:0 18px 60px}.chip{min-width:64px}}
+"""
+
+VERDICT_WORD = {"meets": "Met", "falls_short": "Short", "unknown": "?", "n/a": "n/a"}
+VERDICT_SAID = {"meets": "meets the bar", "falls_short": "falls short",
+                "unknown": "not known", "n/a": "does not apply"}
+
+
+def esc(x):
+    return (str("" if x is None else x).replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def _cls(v):
+    return "na" if v == "n/a" else v
+
+
+def _facts_for(key, c):
+    """Same per-clause detail the main page shows, rendered server side."""
+    def usd(n):
+        return None if n is None else "$" + format(n, ",")
+    def yn(v):
+        return None if v is None else ("yes" if v else "no")
+    pairs = {
+        "community_fund": [("amount", usd(c.get("amount_usd"))), ("cadence", c.get("cadence")),
+                           ("scales with project", yn(c.get("scales_with_project"))),
+                           ("community seat", yn(c.get("community_seat")))],
+        "clawbacks": [("triggers", ", ".join(c.get("triggers") or []) or None),
+                      ("proportional", yn(c.get("proportional")))],
+        "decommissioning": [("instrument", c.get("instrument")), ("amount", usd(c.get("amount_usd")))],
+        "grid_costs": [("interconnect paid by", c.get("who_pays_interconnect")),
+                       ("minimum bill", yn(c.get("minimum_bill"))),
+                       ("term", f"{c['term_years']} yrs" if c.get("term_years") else None),
+                       ("governed by", c.get("governed_by"))],
+        "water": [("cap", f"{c['limit_gpd']:,} gal/day" if c.get("limit_gpd") else None),
+                  ("reporting", yn(c.get("reporting"))),
+                  ("recycling required", yn(c.get("recycling_required"))), ("cooling", c.get("cooling"))],
+        "noise": [("limit", f"{c['limit_dba']} dBA" if c.get("limit_dba") else None),
+                  ("measured at", c.get("measured_at")),
+                  ("setback", f"{c['setback_ft']} ft" if c.get("setback_ft") else None)],
+        "jobs": [("permanent", c.get("promised_permanent")), ("construction", c.get("promised_construction")),
+                 ("local hire", yn(c.get("local_hire"))), ("prevailing wage", yn(c.get("prevailing_wage"))),
+                 ("enforceable", yn(c.get("enforceable")))],
+        "local_contracting": [("local subcontracting", yn(c.get("local_subcontracting"))),
+                              ("road repair", yn(c.get("road_repair"))),
+                              ("infrastructure", usd(c.get("infrastructure_contribution_usd")))],
+        "transparency": [("NDA", yn(c.get("nda"))), ("agreement public", yn(c.get("agreement_public"))),
+                         ("dashboard", yn(c.get("public_dashboard"))), ("audit", c.get("audit_cadence")),
+                         ("independent", yn(c.get("audit_independent")))],
+        "tax": [("abatement", f"{c['abatement_pct']}%" if c.get("abatement_pct") is not None else None),
+                ("years", c.get("duration_years")), ("PILOT", yn(c.get("pilot"))),
+                ("forgone", usd(c.get("estimated_forgone_usd"))), ("but-for test", yn(c.get("but_for_test")))],
+    }.get(key, [])
+    out = [f"{k}: {str(v).replace('_', ' ')}" for k, v in pairs if v not in (None, "", [])]
+    return " · ".join(out)
+
+
+def render_deal_page(deal, deals):
+    j, s = deal["jurisdiction"], score(deal)
+    who = short_name(deal)
+    place = f"{j['locality']}, {j['state']}"
+    title = f"{place} data center agreement: what was actually signed"
+    met = sum(1 for v in s.values() if v == "meets")
+    short_n = sum(1 for v in s.values() if v == "falls_short")
+    desc = (f"{place}: {deal['project']}. Scored against ten terms a good data center agreement should "
+            f"include. {met} met, {short_n} fell short. Every term cited to the document.")
+    url = f"https://futurepickleballcourt.com/deals/{deal['id']}.html"
+
+    h = [f'<!doctype html><html lang="en"><head><meta charset="utf-8">',
+         '<meta name="viewport" content="width=device-width, initial-scale=1">',
+         f'<title>{esc(title)}</title>',
+         f'<meta name="description" content="{esc(desc)}">',
+         f'<link rel="canonical" href="{esc(url)}">',
+         f'<meta property="og:title" content="{esc(place)}: what was actually signed">',
+         f'<meta property="og:description" content="{esc(desc)}">',
+         '<meta property="og:type" content="article">',
+         f'<meta property="og:url" content="{esc(url)}">',
+         '<meta property="og:image" content="https://futurepickleballcourt.com/og.png">',
+         '<meta name="twitter:card" content="summary_large_image">',
+         '<link rel="icon" href="/favicon.svg" type="image/svg+xml">',
+         '<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">',
+         '<link rel="apple-touch-icon" href="/apple-touch-icon.png">',
+         '<link rel="preconnect" href="https://fonts.googleapis.com">',
+         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
+         '<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">',
+         "<style>" + DEAL_CSS.strip() + "</style>",
+         '</head><body><div class="page">',
+         '<div class="mast"><div><b>Exhibit A</b> &nbsp;·&nbsp; <a href="/">All 15 agreements</a></div>'
+         f'<div>futurepickleballcourt.com &nbsp;·&nbsp; {date.today().isoformat()}</div></div>',
+         f'<h1>{esc(place)}</h1>',
+         f'<p class="who">{esc(who) if who else esc(deal["project"])}</p>']
+
+    when = (f"signed {deal['dates']['signed']}" if deal["dates"].get("signed")
+            else f"approved {deal['dates']['approved']}" if deal["dates"].get("approved") else deal["status"])
+    facts = [f"<b>{esc(deal['project'])}</b>",
+             f"{esc(deal['agreement_type'].replace('_', ' '))}, {esc(deal['status'])}, {esc(when)}"]
+    if deal.get("operator"):
+        facts.append(f"Operator: {esc(deal['operator'])}")
+    if deal.get("developer"):
+        facts.append(f"Developer: {esc(deal['developer'])}")
+    sc = deal.get("scale") or {}
+    bits = []
+    for k, u in (("mw", "MW"), ("acres", "acres"), ("sqft", "sq ft"), ("capex_usd", "USD")):
+        if sc.get(k):
+            bits.append(f"{format(sc[k], ',')} {u}")
+    if bits:
+        facts.append("Scale: " + esc(" · ".join(bits)))
+    if sc.get("notes"):
+        facts.append(f"<span style='color:var(--ink-3)'>{esc(sc['notes'])}</span>")
+    facts.append("Verification: " + {"primary": "read from the signed document",
+                                     "press": "from news reports",
+                                     "unverified": "not yet verified"}.get(deal["verification"], deal["verification"]))
+    h.append('<p class="facts">' + "<br>".join(facts) + "</p>")
+
+    h.append('<h2>How it scores</h2><div class="strip">')
+    for name, spec in FLOOR["clauses"].items():
+        v = s[name]
+        h.append(f'<span class="chip"><span class="st {_cls(v)}">{VERDICT_WORD[v]}</span>'
+                 f'<span class="n">{esc(spec["label"])}</span></span>')
+    h.append("</div>")
+
+    h.append("<h2>Documents</h2><ol class=\"src\">")
+    for d in deal["documents"]:
+        h.append(f'<li><a href="{esc(d["url"])}" rel="noopener">{esc(d["title"])}</a> ({esc(d["kind"].replace("_", " "))})</li>')
+    h.append("</ol>")
+
+    h.append("<h2>Term by term</h2>")
+    for name, spec in FLOOR["clauses"].items():
+        c, v = deal["terms"][name], s[name]
+        h.append('<div class="clause">')
+        h.append(f'<h3><span class="st {_cls(v)}">{VERDICT_WORD[v]}</span>{esc(spec["label"])}'
+                 f'<span class="sr"> {VERDICT_SAID[v]}</span></h3>')
+        h.append(f'<p class="asks">A strong version: {esc(spec["asks"])}</p>')
+        if c.get("not_applicable"):
+            h.append("<p>Not applicable to this deal.</p>")
+        elif c.get("present") is False:
+            h.append("<p>Not addressed in the agreement.</p>")
+        f = _facts_for(name, c)
+        if f:
+            h.append(f'<p class="data">{esc(f)}</p>')
+        if c.get("notes"):
+            h.append(f"<p>{esc(c['notes'])}</p>")
+        if c.get("hedge"):
+            h.append(f'<p class="hedge"><b>Softening language</b>{esc(c["hedge"])}</p>')
+        srcs = c.get("sources") or []
+        if srcs:
+            h.append('<ol class="src">')
+            for x in srcs:
+                if isinstance(x, dict):
+                    where = f"<b>{esc(x['where'])}.</b> " if x.get("where") else ""
+                    quote = f' <span class="q">&ldquo;{esc(x["quote"])}&rdquo;</span>' if x.get("quote") else ""
+                    h.append(f'<li>{where}<a href="{esc(x["url"])}" rel="noopener">{esc(x["url"])}</a>{quote}</li>')
+                else:
+                    h.append(f'<li><a href="{esc(x)}" rel="noopener">{esc(x)}</a></li>')
+            h.append("</ol>")
+        h.append("</div>")
+
+    if deal.get("criticisms"):
+        h.append('<h2>Reported criticisms</h2><div class="crit">')
+        for x in deal["criticisms"]:
+            h.append(f'<p>{esc(x["summary"])} <a href="{esc(x["source"])}" rel="noopener">source</a></p>')
+        h.append("</div>")
+
+    others = [d for d in deals if d["id"] != deal["id"]]
+    h.append('<h2>The other agreements</h2><div class="other">')
+    h.append(" &nbsp;·&nbsp; ".join(
+        f'<a href="{o["id"]}.html">{esc(o["jurisdiction"]["locality"])}, {esc(o["jurisdiction"]["state"])}</a>'
+        for o in others))
+    h.append("</div>")
+
+    h.append(f'<footer>Last reviewed {esc(deal["last_reviewed"])}. '
+             'Prepared by <a href="https://aaronpeabody.dev">Aaron Peabody</a>.<br>'
+             'Data CC BY 4.0 · <a href="/">See all fifteen agreements side by side</a> · '
+             '<a href="https://github.com/apeabody007/futurepickleballcourt">Source and corrections</a><br>'
+             'Something wrong here? Email deals@futurepickleballcourt.com with the document.'
+             "</footer></div></body></html>")
+    return "\n".join(h) + "\n"
+
+
 # ------------------------------------------------------------------ rendering
 MARK = {"meets": "✅", "falls_short": "❌", "unknown": "❔", "n/a": "➖"}
 
@@ -512,7 +734,8 @@ def main():
                 f"  <url><loc>https://futurepickleballcourt.com{path}</loc>"
                 f"<lastmod>{date.today().isoformat()}</lastmod>"
                 f"<changefreq>weekly</changefreq><priority>{pri}</priority></url>\n"
-                for path, pri in (("/", "1.0"), ("/all.md", "0.6"), ("/prompt.txt", "0.6"))
+                for path, pri in ([("/", "1.0"), ("/all.md", "0.6"), ("/prompt.txt", "0.6")]
+                                  + [(f"/deals/{d['id']}.html", "0.8") for d in deals])
             )
             + "</urlset>\n"
         ),
@@ -527,12 +750,16 @@ def main():
             "deals": [dict(d, score=score(d)) for d in deals],
         }, indent=2, ensure_ascii=False) + "\n",
     }
+    for d in deals:
+        outputs[ROOT / "docs" / "deals" / f"{d['id']}.html"] = render_deal_page(d, deals)
+
     stale = []
     for path, content in outputs.items():
         if check:
             if not path.exists() or path.read_text() != content:
                 stale.append(path.relative_to(ROOT))
         else:
+            path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(content)
     if check and stale:
         print("Outputs are stale, run `python3 scripts/build.py` and commit:")
