@@ -500,6 +500,22 @@ def main():
         ROOT / "BENCHMARK.md": render_markdown(deals),
         ROOT / "docs" / "index.html": render_html(deals),
         ROOT / "docs" / "all.md": render_all_markdown(deals),
+        ROOT / "docs" / "robots.txt": (
+            "User-agent: *\n"
+            "Allow: /\n\n"
+            "Sitemap: https://futurepickleballcourt.com/sitemap.xml\n"
+        ),
+        ROOT / "docs" / "sitemap.xml": (
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            + "".join(
+                f"  <url><loc>https://futurepickleballcourt.com{path}</loc>"
+                f"<lastmod>{date.today().isoformat()}</lastmod>"
+                f"<changefreq>weekly</changefreq><priority>{pri}</priority></url>\n"
+                for path, pri in (("/", "1.0"), ("/all.md", "0.6"), ("/prompt.txt", "0.6"))
+            )
+            + "</urlset>\n"
+        ),
         ROOT / "docs" / "prompt.txt": render_prompt(deals),
         ROOT / "docs" / "all.json": json.dumps({
             "generated": date.today().isoformat(),

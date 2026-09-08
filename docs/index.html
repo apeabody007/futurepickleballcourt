@@ -16,6 +16,7 @@
 <meta name="twitter:title" content="What communities actually signed">
 <meta name="twitter:description" content="Data center deals, clause by clause, with a receipt for every term.">
 <meta name="twitter:image" content="https://futurepickleballcourt.com/og.png">
+<link rel="canonical" href="https://futurepickleballcourt.com/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
@@ -175,6 +176,17 @@
   .finding h3 { margin: 0 0 6px; font-size: 21px; font-weight: 400; line-height: 1.15; }
   .finding p { margin: 0; font-size: 16px; line-height: 1.45; color: var(--ink-2); }
   @media (max-width: 700px) { .finding { border-right: 0; } }
+
+  .jump { display: flex; flex-wrap: wrap; gap: 6px 22px; padding: 12px 0 0; margin-top: 14px; border-top: 1px solid var(--hair);
+    font-family: var(--mono); font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; }
+  .jump a { color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--hair); padding-bottom: 2px; }
+  .jump a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+  .noscript { border: 1.5px solid var(--stamp); padding: 14px 16px; margin-top: 22px; font-size: 16px; line-height: 1.5; }
+  .noscript b { display: block; margin-bottom: 4px; }
+  .sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  tr.deal:focus-visible { outline: 3px solid var(--stamp); outline-offset: -3px; }
+  .permalink { font-family: var(--mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  .permalink:hover { color: var(--ink); }
 
   .promptbox { border: 1.5px solid var(--rule); background: var(--card, var(--paper)); }
   .promptbar { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; padding: 10px 14px; border-bottom: 1px solid var(--hair); }
@@ -362,10 +374,28 @@
     </div>
   </section>
 
-  <h2>What the deals show <span>computed from the files below, not written by hand</span></h2>
+  <nav class="jump" aria-label="Jump to a section">
+    <a href="#scorecard">The scorecard</a>
+    <a href="#use-it">Use it on your own deal</a>
+    <a href="#strongest-sec">Strongest terms</a>
+    <a href="#add">Add a deal</a>
+  </nav>
+
+  <noscript>
+    <div class="noscript">
+      <b>This page builds its table with JavaScript, which is turned off.</b>
+      Everything is also published as plain files that need no scripting:
+      <a href="/all.md">all.md</a> has every deal and every citation in one document,
+      <a href="/all.json">all.json</a> has the same thing structured, and
+      <a href="/prompt.txt">prompt.txt</a> is the review prompt.
+      The source data is in the <a href="https://github.com/apeabody007/futurepickleballcourt">repository</a>.
+    </div>
+  </noscript>
+
+  <h2 id="findings-sec">What the deals show <span>computed from the files below, not written by hand</span></h2>
   <div class="findings" id="findings"></div>
 
-  <h2>The scorecard <span id="count"></span></h2>
+  <h2 id="scorecard">The scorecard <span id="count"></span></h2>
   <p class="intro">Each row is one signed deal. Each column is one term a good deal should include. The stamp says whether the deal clears the bar I set for that term. Tap a row to see exactly what the deal says and where it says it.</p>
   <div class="legend">
     <span><span class="st meets">Met</span> clears the bar</span>
@@ -376,7 +406,7 @@
   <div class="grid-wrap"><table class="grid" id="matrix"></table></div>
   <section id="sheet" class="sheet" hidden></section>
 
-  <h2>Use this on your own deal <span>the questions, already written</span></h2>
+  <h2 id="use-it">Use this on your own deal <span>the questions, already written</span></h2>
   <p class="intro">Mark Cuban's advice was to load these agreements into an AI and ask where the community is getting hurt. Here is that prompt, written out, with the ten terms built in. Paste it into any chat tool along with the agreement you are looking at.</p>
   <div class="promptbox">
     <div class="promptbar">
@@ -386,14 +416,14 @@
     <pre id="prompttext"></pre>
   </div>
 
-  <h2>The strongest terms anyone has actually signed <span id="strongnote"></span></h2>
+  <h2 id="strongest-sec">The strongest terms anyone has actually signed <span id="strongnote"></span></h2>
   <div class="strong" id="strongest"></div>
 
-  <h2>The bar <span>what each term has to include to count as met</span></h2>
+  <h2 id="bar">The bar <span>what each term has to include to count as met</span></h2>
   <ol class="floor" id="floor"></ol>
   <p class="note">These bars are a position, not a law. They live in a plain text file in the repository, and anyone can propose a change by pull request.</p>
 
-  <h2>Limits <span>read this before you quote it</span></h2>
+  <h2 id="limits">Limits <span>read this before you quote it</span></h2>
   <ol class="floor" id="limits">
     <li><b>Small sample.</b> A handful of deals is a start, not a survey. Do not read a pattern here as the national picture until the count is much higher.</li>
     <li><b>One reader per document.</b> "Read from the signed document" means a person read it and cited sections. It does not mean two people agreed. Corrections are welcome and expected.</li>
@@ -402,7 +432,7 @@
     <li><b>Unknown is not a failure.</b> A question mark means nobody has found the answer yet. Many terms live in tariffs, side letters, or records requests, not the headline agreement.</li>
   </ol>
 
-  <h2>Add a deal <span>a link to the document, and the place. That is the whole ask.</span></h2>
+  <h2 id="add">Add a deal <span>a link to the document, and the place. That is the whole ask.</span></h2>
   <p class="intro">You do not need to know what a pull request is. Fill in the two required boxes and it opens an email, already written. Nothing here publishes automatically: every submission gets checked against the document first.</p>
   <div class="submit">
     <div class="fields">
@@ -430,7 +460,7 @@
     <p class="note submitnote">A link to the document is required, and submissions without one are closed unread. That is not gatekeeping, it is the only rule this whole list has: a source on every term, or it doesn't go in. Prefer GitHub? <a href="https://github.com/apeabody007/futurepickleballcourt/issues/new?template=add-a-deal.yml">Open an issue</a> or send a pull request.</p>
   </div>
 
-  <h2>Wanted <span>what would make this better</span></h2>
+  <h2 id="wanted-sec">Wanted <span>what would make this better</span></h2>
   <p class="intro" id="wantednote"></p>
   <ol class="floor" id="wanted"></ol>
   <p class="note">Corrections already made are listed in <a href="https://github.com/apeabody007/futurepickleballcourt/blob/main/CORRECTIONS.md">CORRECTIONS.md</a>. If a number here is wrong, that file is where the fix gets recorded.</p>
@@ -477,6 +507,7 @@
     var cite = function (s) {
       var k = srcKey(s); if (!(k in noteIndex)) { noteIndex[k] = notes.length + 1; notes.push(s); } return noteIndex[k];
     };
+    var link = 'https://futurepickleballcourt.com/#' + d.id;
     var h = '<button class="close" type="button" data-close>Close</button>';
     h += '<div class="sheet-head"><h3>' + esc(j.locality) + ', ' + esc(j.state) + '</h3><span class="tag">Deal ' + n + ' · ' + esc(verified[d.verification] || d.verification) + '</span></div>';
     var meta = [];
@@ -510,6 +541,7 @@
         return '<li>' + (s.where ? '<span class="where">' + esc(s.where) + '.</span> ' : '') + '<a href="' + esc(s.url) + '" rel="noopener">' + esc(s.url.replace(/^https?:\/\//, '')) + '</a>' + (s.quote ? ' <span class="q">“' + esc(s.quote) + '”</span>' : '') + '</li>';
       }).join('') + '</ol></div>';
     }
+    h += '<div class="foot"><button type="button" class="permalink" data-permalink="' + esc(link) + '">Copy link to this deal</button> <span class="meta"> ' + esc(link) + '</span></div>';
     if (d.criticisms && d.criticisms.length) {
       h += '<div class="crit"><h5>Reported criticisms</h5>' + d.criticisms.map(function (x) { return '<p>' + esc(x.summary) + ' <a href="' + esc(x.source) + '" rel="noopener">source</a></p>'; }).join('') + '</div>';
     }
@@ -520,30 +552,76 @@
   var short = { community_fund: 'Fund', clawbacks: 'Claw', decommissioning: 'Decom', grid_costs: 'Grid', water: 'Water', noise: 'Noise', jobs: 'Jobs', local_contracting: 'Local', transparency: 'Transp', tax: 'Tax' };
   var head = '<colgroup><col class="c-name">' + floorKeys.map(function () { return '<col>'; }).join('') + '<col class="c-ver"></colgroup>';
   var headLabel = { community_fund: 'Community fund', clawbacks: 'Claw&shy;backs', decommissioning: 'Decommis&shy;sioning', grid_costs: 'Grid costs', water: 'Water', noise: 'Noise', jobs: 'Jobs', local_contracting: 'Local con&shy;tracting', transparency: 'Transpar&shy;ency', tax: 'Tax breaks' };
-  head += '<thead><tr><th>Deal</th>' + floorKeys.map(function (k) { return '<th>' + (headLabel[k] || esc(data.floor[k].label)) + '</th>'; }).join('') + '<th>Source</th></tr></thead>';
+  head += '<thead><tr><th scope="col">Deal</th>' + floorKeys.map(function (k) { return '<th scope="col">' + (headLabel[k] || esc(data.floor[k].label)) + '</th>'; }).join('') + '<th scope="col">Source</th></tr></thead>';
   var rows = data.deals.map(function (d, i) {
     var j = d.jurisdiction;
-    var r = '<tr class="deal" data-i="' + i + '" style="animation-delay:' + (i * 60) + 'ms"><td><span class="name"><span class="idx">A-' + (i + 1) + '</span>' + esc(j.locality) + ', ' + esc(j.state) + '</span><span class="who"><span class="idx"></span>' + esc(d._label || d.project.split(',')[0]) + '</span></td>';
-    r += floorKeys.map(function (k) { return '<td><span class="lbl">' + (short[k] || k) + '</span><span class="st ' + cls(d.score[k]) + '" title="' + esc(data.floor[k].label) + ': ' + esc(d.score[k].replace('_', ' ')) + '">' + label[d.score[k]] + '</span></td>'; }).join('');
+    var r = '<tr class="deal" id="' + esc(d.id) + '" data-i="' + i + '" tabindex="0" role="button" aria-expanded="false" aria-controls="sheet"'
+      + ' aria-label="' + esc(j.locality + ', ' + j.state + '. Show the terms of this agreement.') + '"'
+      + ' style="animation-delay:' + (i * 60) + 'ms"><td><span class="name"><span class="idx">A-' + (i + 1) + '</span>' + esc(j.locality) + ', ' + esc(j.state) + '</span><span class="who"><span class="idx"></span>' + esc(d._label || d.project.split(',')[0]) + '</span></td>';
+    r += floorKeys.map(function (k) {
+      var said = data.floor[k].label + ': ' + d.score[k].replace('_', ' ');
+      return '<td><span class="lbl" aria-hidden="true">' + (short[k] || k) + '</span>'
+        + '<span class="st ' + cls(d.score[k]) + '" aria-hidden="true">' + label[d.score[k]] + '</span>'
+        + '<span class="sr">' + esc(said) + '</span></td>';
+    }).join('');
     r += '<td>' + esc({ primary: 'document', press: 'press', unverified: 'unverified' }[d.verification] || d.verification) + '</td></tr>';
     return r;
   }).join('');
   t.innerHTML = head + '<tbody>' + rows + '</tbody>';
 
   var panel = document.getElementById('sheet');
-  function closeSheet() { panel.hidden = true; Array.prototype.forEach.call(t.querySelectorAll('tr.open'), function (r) { r.classList.remove('open'); }); }
-  t.addEventListener('click', function (e) {
-    var tr = e.target.closest('tr.deal'); if (!tr) return;
+  function closeSheet(keepHash) {
+    panel.hidden = true;
+    Array.prototype.forEach.call(t.querySelectorAll('tr.open'), function (r) {
+      r.classList.remove('open'); r.setAttribute('aria-expanded', 'false');
+    });
+    if (!keepHash && location.hash) history.replaceState(null, '', location.pathname);
+  }
+  function openDeal(tr, scroll) {
     var wasOpen = tr.classList.contains('open');
-    closeSheet();
-    if (wasOpen) return;
+    closeSheet(true);
+    if (wasOpen) { closeSheet(); return; }
     tr.classList.add('open');
+    tr.setAttribute('aria-expanded', 'true');
     var i = Number(tr.getAttribute('data-i'));
     panel.innerHTML = sheet(data.deals[i], i + 1);
     panel.hidden = false;
-    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    history.replaceState(null, '', '#' + tr.id);
+    if (scroll !== false) panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  t.addEventListener('click', function (e) {
+    var tr = e.target.closest('tr.deal'); if (tr) openDeal(tr);
   });
-  panel.addEventListener('click', function (e) { if (e.target.closest('[data-close]')) closeSheet(); });
+  t.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ' && e.key !== 'Spacebar') return;
+    var tr = e.target.closest('tr.deal'); if (!tr) return;
+    e.preventDefault(); openDeal(tr);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !panel.hidden) {
+      var open = t.querySelector('tr.open'); closeSheet(); if (open) open.focus();
+    }
+  });
+  panel.addEventListener('click', function (e) {
+    if (e.target.closest('[data-close]')) {
+      var open = t.querySelector('tr.open'); closeSheet(); if (open) open.focus();
+    }
+    var pl = e.target.closest('[data-permalink]');
+    if (pl) {
+      var href = pl.getAttribute('data-permalink');
+      var done = function () { pl.textContent = 'Link copied'; setTimeout(function () { pl.textContent = 'Copy link to this deal'; }, 1800); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(href).then(done, done);
+      else done();
+    }
+  });
+  function openFromHash() {
+    var id = (location.hash || '').replace(/^#/, '');
+    if (!id) return;
+    var tr = document.getElementById(id);
+    if (tr && tr.classList.contains('deal')) { openDeal(tr, false); tr.scrollIntoView({ block: 'center' }); }
+  }
+  openFromHash();
+  window.addEventListener('hashchange', openFromHash);
 
   var fEl = document.getElementById('findings');
   if (fEl) {
