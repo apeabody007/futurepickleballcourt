@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-07",
+  "generated": "2026-09-08",
   "source": "https://futurepickleballcourt.com",
   "license": "CC BY 4.0",
   "floor": {
@@ -377,6 +377,163 @@
       "url": "https://www.loudoun.gov/DocumentCenter/View/221475/FY-2027-Adopted-Budget-Document"
     }
   ],
+  "checklist": {
+    "title": "Cuban's checklist, answered",
+    "source": {
+      "who": "Mark Cuban",
+      "what": "a ten-point checklist for towns getting their first data center, posted to X on September 8, 2026",
+      "url": "https://jingletree.com/mark-cuban-shared-a-10-point-checklist-for-towns-getting-their-first-data-center-265528.html",
+      "rule": "His rule: every major promise should carry a measurable limit, independent oversight, financial backing, and a practical remedy if it is broken.",
+      "note": "Summarized from reporting on the thread rather than quoted. The asks below are paraphrases; follow the link for his own words."
+    },
+    "note": "He published what towns should demand. This is what towns actually got. Each row counts the signed agreements in this benchmark that clear the bar for that ask.",
+    "asks": [
+      {
+        "ask": "Put up decommissioning money before construction, not after",
+        "clause": "decommissioning"
+      },
+      {
+        "ask": "Do not get stuck with stranded infrastructure if the project is delayed or abandoned",
+        "clause": "grid_costs"
+      },
+      {
+        "ask": "Cap water use, including on the hot days when closed-loop systems still drink",
+        "clause": "water"
+      },
+      {
+        "ask": "Set a noise limit that addresses the low-frequency hum, the most common complaint after approval",
+        "clause": "noise"
+      },
+      {
+        "ask": "Require independent oversight rather than the developer's own word",
+        "clause": "transparency"
+      },
+      {
+        "ask": "Make every promise carry a practical remedy when it is broken",
+        "clause": "clawbacks"
+      },
+      {
+        "ask": "Tie the money the community is promised to something enforceable",
+        "clause": "community_fund"
+      },
+      {
+        "ask": "Know what the tax break actually costs before granting it",
+        "clause": "tax"
+      }
+    ],
+    "not_scored": [
+      {
+        "ask": "Hire your own lawyers and technical advisors",
+        "why": "This is a decision a town makes before it signs, not a term inside the agreement, so there is nothing in these documents to score. It may be the highest-value item on his list."
+      },
+      {
+        "ask": "Assess the entire planned build-out, not just phase one",
+        "why": "Also a process question. It does show up indirectly: several agreements here write payment schedules for the first buildings only and go quiet about the rest."
+      },
+      {
+        "ask": "Demand guarantees from a financially credible parent company",
+        "why": "No column tracks this yet because too few agreements address it to compare. Where it exists it is noted inside the deal, as in Richland Parish, where advocates argue the guarantee stopped reaching an entity with assets after the ownership changed."
+      }
+    ],
+    "rows": [
+      {
+        "ask": "Put up decommissioning money before construction, not after",
+        "clause": "decommissioning",
+        "label": "Decommissioning",
+        "met": 0,
+        "of": 15,
+        "unknown": 3,
+        "best_where": "Pima County, AZ",
+        "best_why": "No deal on record posts a bond. The closest is the neighboring town of Marana, which conditioned its approval of the same developer on removing all hardware and securing the property if the use stops.",
+        "best_id": "us-az-pima-county-2025",
+        "best_meets": false
+      },
+      {
+        "ask": "Do not get stuck with stranded infrastructure if the project is delayed or abandoned",
+        "clause": "grid_costs",
+        "label": "Grid costs",
+        "met": 2,
+        "of": 15,
+        "unknown": 4,
+        "best_where": "City of New Albany, OH",
+        "best_why": "Billing demand of at least 85 percent of peak for a twelve year term, an exit fee of 36 months of minimum charges, and collateral of half the total minimum charges unless the customer is investment grade.",
+        "best_id": "us-oh-new-albany-2025",
+        "best_meets": true
+      },
+      {
+        "ask": "Cap water use, including on the hot days when closed-loop systems still drink",
+        "clause": "water",
+        "label": "Water",
+        "met": 2,
+        "of": 15,
+        "unknown": 4,
+        "best_where": "City of Lancaster, PA",
+        "best_why": "A hard cap of 20,000 gallons a day per campus written into the agreement, against a prior industrial user on the same site that drew 100,000 to 125,000.",
+        "best_id": "us-pa-lancaster-2025",
+        "best_meets": false
+      },
+      {
+        "ask": "Set a noise limit that addresses the low-frequency hum, the most common complaint after approval",
+        "clause": "noise",
+        "label": "Noise",
+        "met": 2,
+        "of": 15,
+        "unknown": 8,
+        "best_where": "Loudoun County, VA",
+        "best_why": "55 dBA at the residential lot line, a study before the first site plan and again within six months of every occupancy permit, mitigation within 60 days of an exceedance, all certified by an acoustical engineer.",
+        "best_id": "us-va-loudoun-county-2025",
+        "best_meets": true
+      },
+      {
+        "ask": "Require independent oversight rather than the developer's own word",
+        "clause": "transparency",
+        "label": "Transparency",
+        "met": 2,
+        "of": 15,
+        "unknown": 1,
+        "best_where": "Loudoun County, VA",
+        "best_why": "No NDA anywhere in the record, the whole file public, and compliance verified by outside professionals rather than self-certified.",
+        "best_id": "us-va-loudoun-county-2025",
+        "best_meets": true
+      },
+      {
+        "ask": "Make every promise carry a practical remedy when it is broken",
+        "clause": "clawbacks",
+        "label": "Clawbacks",
+        "met": 0,
+        "of": 11,
+        "unknown": 1,
+        "best_where": "City of St. Louis, MO",
+        "best_why": "Liquidated damages of $2,000 per job short of a 25, 50, then 100 job ladder for 20 years, plus $15,000 for every $100,000 of tax revenue missed. Money, per unit missed, not an all-or-nothing default.",
+        "best_id": "us-mo-st-louis-2026",
+        "best_meets": false
+      },
+      {
+        "ask": "Tie the money the community is promised to something enforceable",
+        "clause": "community_fund",
+        "label": "Community fund",
+        "met": 0,
+        "of": 15,
+        "unknown": 1,
+        "best_where": "City of St. Louis, MO",
+        "best_why": "$30 per square foot of approved data center, so the fund scales with what actually gets built instead of being a flat headline number.",
+        "best_id": "us-mo-st-louis-2026",
+        "best_meets": false
+      },
+      {
+        "ask": "Know what the tax break actually costs before granting it",
+        "clause": "tax",
+        "label": "Tax incentives",
+        "met": 0,
+        "of": 9,
+        "unknown": 5,
+        "best_where": "Loudoun County, VA",
+        "best_why": "No abatement at all. Full real property tax plus $4.15 per $100 on computer equipment, which funds roughly $1.3 billion of a $2.9 billion budget, banked against a stabilization fund.",
+        "best_id": "us-va-loudoun-county-2025",
+        "best_meets": false
+      }
+    ]
+  },
   "deals": [
     {
       "$schema": "../schema/deal.schema.json",

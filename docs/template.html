@@ -177,6 +177,8 @@
   .finding p { margin: 0; font-size: 16px; line-height: 1.45; color: var(--ink-2); }
   @media (max-width: 700px) { .finding { border-right: 0; } }
 
+  .byline { font-family: var(--mono); font-size: 12.5px; line-height: 1.65; color: var(--ink-2); max-width: 78ch; margin: 20px 0 0; }
+  .byline a { color: var(--ink); }
   .jump { display: flex; flex-wrap: wrap; gap: 6px 22px; padding: 12px 0 0; margin-top: 14px; border-top: 1px solid var(--hair);
     font-family: var(--mono); font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; }
   .jump a { color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--hair); padding-bottom: 2px; }
@@ -194,6 +196,21 @@
   .promptbar button:hover { background: var(--paper); color: var(--ink); }
   .promptbar .dl { font-family: var(--mono); font-size: 12.5px; color: var(--ink-2); }
   .promptbox pre { margin: 0; padding: 14px; max-height: 300px; overflow: auto; font-family: var(--mono); font-size: 12.5px; line-height: 1.55; white-space: pre-wrap; color: var(--ink-2); }
+
+  .checklist { border: 1.5px solid var(--rule); }
+  .ckrow { display: grid; grid-template-columns: 1fr 96px 210px; gap: 0 18px; align-items: start; padding: 13px 18px; border-bottom: 1px solid var(--hair); }
+  .ckrow:last-child { border-bottom: 0; }
+  .ckrow .ask { font-size: 17px; line-height: 1.35; }
+  .ckrow .cnt { font-family: var(--mono); font-size: 15px; text-align: right; white-space: nowrap; }
+  .ckrow .cnt b { font-size: 21px; }
+  .ckrow .cnt.zero { color: var(--stamp); }
+  .ckrow .best { font-family: var(--mono); font-size: 12px; line-height: 1.5; color: var(--ink-2); }
+  .ckrow .best a { color: var(--ink); }
+  .ckrow .best .tag { display: block; color: var(--ink-3); }
+  .ckhead { display: grid; grid-template-columns: 1fr 96px 210px; gap: 0 18px; padding: 9px 18px; border-bottom: 1px solid var(--rule);
+    font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); }
+  .ckhead div:nth-child(2) { text-align: right; }
+  @media (max-width: 700px) { .ckrow, .ckhead { grid-template-columns: 1fr; gap: 5px; } .ckhead { display: none; } .ckrow .cnt { text-align: left; } }
 
   .strong { border: 1.5px solid var(--rule); }
   .strongrow { display: grid; grid-template-columns: 190px 1fr; gap: 0 20px; padding: 14px 18px; border-bottom: 1px solid var(--hair); }
@@ -374,10 +391,13 @@
     </div>
   </section>
 
+  <p class="byline">Scored by <a href="https://aaronpeabody.dev">Aaron Peabody</a>, who read the documents. I run technology for a paving and site-work contractor, so data centers are a customer for work like mine; the terms I rank highest, teardown bonds and minimum bills, do nothing for my company. The bar is my opinion and it lives in a file anyone can argue with. Corrections go in <a href="https://github.com/apeabody007/futurepickleballcourt/blob/main/CORRECTIONS.md">CORRECTIONS.md</a> and there are already ten.</p>
+
   <nav class="jump" aria-label="Jump to a section">
     <a href="#scorecard">The scorecard</a>
     <a href="#use-it">Use it on your own deal</a>
-    <a href="#strongest-sec">Strongest terms</a>
+    <a href="#checklist">Cuban's checklist</a>
+    <a href="#wanted-sec">What's missing</a>
     <a href="#add">Add a deal</a>
   </nav>
 
@@ -416,21 +436,13 @@
     <pre id="prompttext"></pre>
   </div>
 
+  <h2 id="checklist">Cuban's checklist, answered <span>what he asked for, against what got signed</span></h2>
+  <p class="intro" id="checklistnote"></p>
+  <div class="checklist" id="checklistrows"></div>
+  <p class="note" id="checklistgaps"></p>
+
   <h2 id="strongest-sec">The strongest terms anyone has actually signed <span id="strongnote"></span></h2>
   <div class="strong" id="strongest"></div>
-
-  <h2 id="bar">The bar <span>what each term has to include to count as met</span></h2>
-  <ol class="floor" id="floor"></ol>
-  <p class="note">These bars are a position, not a law. They live in a plain text file in the repository, and anyone can propose a change by pull request.</p>
-
-  <h2 id="limits">Limits <span>read this before you quote it</span></h2>
-  <ol class="floor" id="limits">
-    <li><b>Small sample.</b> A handful of deals is a start, not a survey. Do not read a pattern here as the national picture until the count is much higher.</li>
-    <li><b>One reader per document.</b> "Read from the signed document" means a person read it and cited sections. It does not mean two people agreed. Corrections are welcome and expected.</li>
-    <li><b>Deals change.</b> Agreements get amended, voided, and superseded. Each record carries the date it was last reviewed. Check the primary document before you act on a term.</li>
-    <li><b>The bar is an opinion.</b> A deal that falls short here may still be a good deal for that town. The stamps say whether a term is present, not whether the whole deal was wise.</li>
-    <li><b>Unknown is not a failure.</b> A question mark means nobody has found the answer yet. Many terms live in tariffs, side letters, or records requests, not the headline agreement.</li>
-  </ol>
 
   <h2 id="add">Add a deal <span>a link to the document, and the place. That is the whole ask.</span></h2>
   <p class="intro">You do not need to know what a pull request is. Fill in the two required boxes and it opens an email, already written. Nothing here publishes automatically: every submission gets checked against the document first.</p>
@@ -464,6 +476,19 @@
   <p class="intro" id="wantednote"></p>
   <ol class="floor" id="wanted"></ol>
   <p class="note">Corrections already made are listed in <a href="https://github.com/apeabody007/futurepickleballcourt/blob/main/CORRECTIONS.md">CORRECTIONS.md</a>. If a number here is wrong, that file is where the fix gets recorded.</p>
+
+  <h2 id="bar">The bar <span>what each term has to include to count as met</span></h2>
+  <ol class="floor" id="floor"></ol>
+  <p class="note">These bars are a position, not a law. They live in a plain text file in the repository, and anyone can propose a change by pull request.</p>
+
+  <h2 id="limits">Limits <span>read this before you quote it</span></h2>
+  <ol class="floor" id="limits">
+    <li><b>Small sample.</b> A handful of deals is a start, not a survey. Do not read a pattern here as the national picture until the count is much higher.</li>
+    <li><b>One reader per document.</b> "Read from the signed document" means a person read it and cited sections. It does not mean two people agreed. Corrections are welcome and expected.</li>
+    <li><b>Deals change.</b> Agreements get amended, voided, and superseded. Each record carries the date it was last reviewed. Check the primary document before you act on a term.</li>
+    <li><b>The bar is an opinion.</b> A deal that falls short here may still be a good deal for that town. The stamps say whether a term is present, not whether the whole deal was wise.</li>
+    <li><b>Unknown is not a failure.</b> A question mark means nobody has found the answer yet. Many terms live in tariffs, side letters, or records requests, not the headline agreement.</li>
+  </ol>
 
   <footer>
     <div>Prepared by <a href="https://aaronpeabody.dev" class="sig">Aaron Peabody</a><br>Data CC BY 4.0 · Code MIT · <a href="https://github.com/apeabody007/futurepickleballcourt">github.com/apeabody007/futurepickleballcourt</a></div>
@@ -646,6 +671,27 @@
         try { document.execCommand('copy'); done(); } catch (e) { btn.textContent = 'Select and copy'; }
       }
     });
+  }
+
+  var ck = data.checklist;
+  if (ck) {
+    document.getElementById('checklistnote').innerHTML = esc(ck.note) +
+      ' <a href="' + esc(ck.source.url) + '" rel="noopener">' + esc(ck.source.what) + '</a>. ' + esc(ck.source.rule);
+    document.getElementById('checklistrows').innerHTML =
+      '<div class="ckhead"><div>What he asked for</div><div>Clears it</div><div>Best on record</div></div>' +
+      (ck.rows || []).map(function (r) {
+        var best = r.best_where
+          ? '<a href="#' + esc(r.best_id) + '">' + esc(r.best_where) + '</a>'
+            + (r.best_meets ? '' : '<span class="tag">closest, still short</span>')
+          : 'none';
+        return '<div class="ckrow"><div class="ask">' + esc(r.ask) + '</div>'
+          + '<div class="cnt' + (r.met === 0 ? ' zero' : '') + '"><b>' + r.met + '</b> of ' + r.of + '</div>'
+          + '<div class="best">' + best + '</div></div>';
+      }).join('');
+    document.getElementById('checklistgaps').innerHTML =
+      (ck.not_scored || []).map(function (x) {
+        return '<b>Not scored: ' + esc(x.ask) + '.</b> ' + esc(x.why);
+      }).join('<br><br>') + '<br><br>' + esc(ck.source.note);
   }
 
   var sn = document.getElementById('strongnote');

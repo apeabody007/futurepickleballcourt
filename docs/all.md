@@ -1,6 +1,6 @@
 # Data center agreements: what communities actually signed
 
-Generated 2026-09-07 from https://futurepickleballcourt.com
+Generated 2026-09-08 from https://futurepickleballcourt.com
 15 agreements, scored against 10 terms. Every term below carries the document and section it came from.
 
 Verification levels: primary means a person read the executed document; press means every term traces to reporting; unverified means it came from a secondary summary and is waiting on a reader.

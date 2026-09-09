@@ -16,6 +16,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMA = json.loads((ROOT / "schema" / "deal.schema.json").read_text())
 FLOOR = json.loads((ROOT / "schema" / "floor.json").read_text())
+CHECKLIST_PATH = ROOT / "checklist.json"
+CHECKLIST = json.loads(CHECKLIST_PATH.read_text()) if CHECKLIST_PATH.exists() else None
 WANTED_PATH = ROOT / "wanted.json"
 WANTED = json.loads(WANTED_PATH.read_text()) if WANTED_PATH.exists() else {"wanted": []}
 DEALS_DIR = ROOT / "deals"
@@ -243,6 +245,38 @@ def findings(deals):
                     "reads as a protection and functions as a preference."))
 
     return out
+
+
+def checklist_rows(deals):
+    """Pair each of Cuban's asks with what the signed agreements actually did."""
+    if not CHECKLIST:
+        return []
+    scored = [score(d) for d in deals]
+    by_id = {d["id"]: d for d in deals}
+    rows = []
+    for a in CHECKLIST["asks"]:
+        k = a["clause"]
+        spec = FLOOR["clauses"].get(k)
+        if not spec:
+            continue
+        verdicts = [s[k] for s in scored]
+        applicable = [v for v in verdicts if v != "n/a"]
+        met = verdicts.count("meets")
+        best = spec.get("strongest") or {}
+        d = by_id.get(best.get("deal"))
+        rows.append({
+            "ask": a["ask"],
+            "clause": k,
+            "label": spec["label"],
+            "met": met,
+            "of": len(applicable),
+            "unknown": verdicts.count("unknown"),
+            "best_where": (f"{d['jurisdiction']['locality']}, {d['jurisdiction']['state']}" if d else None),
+            "best_why": best.get("why"),
+            "best_id": (d["id"] if d else None),
+            "best_meets": (score(d)[k] == "meets") if d else False,
+        })
+    return rows
 
 
 def strongest_examples(deals):
@@ -671,6 +705,18 @@ def render_markdown(deals):
         lines += ["", "## What the deals show", ""]
         for title, body in f:
             lines += [f"**{title}** {body}", ""]
+    cr = checklist_rows(deals)
+    if cr and CHECKLIST:
+        lines += ["", f"## {CHECKLIST['title']}", "", CHECKLIST["note"], ""]
+        lines += ["| What he asked for | Signed agreements that clear it | Best on record |", "|---|---|---|"]
+        for r in cr:
+            best = (f"{r['best_where']}" + ("" if r["best_meets"] else " (closest, still short)")) if r["best_where"] else "none"
+            lines.append(f"| {r['ask']} | {r['met']} of {r['of']} | {best} |")
+        lines.append("")
+        for x in CHECKLIST["not_scored"]:
+            lines.append(f"**Not scored: {x['ask']}.** {x['why']}")
+            lines.append("")
+
     se = strongest_examples(deals)
     if se:
         lines += ["", "## The strongest terms anyone has actually signed", "",
@@ -697,6 +743,7 @@ def render_html(deals):
         "floor": FLOOR["clauses"],
         "findings": [{"title": t, "body": x} for t, x in findings(deals)],
         "strongest": strongest_examples(deals),
+        "checklist": (dict(CHECKLIST, rows=checklist_rows(deals)) if CHECKLIST else None),
         "strongest_note": FLOOR.get("strongest_note", ""),
         "prompt": render_prompt(deals),
         "wanted": WANTED.get("wanted", []),
@@ -747,6 +794,7 @@ def main():
             "floor": FLOOR["clauses"],
             "findings": [{"title": t, "body": x} for t, x in findings(deals)],
             "strongest": strongest_examples(deals),
+        "checklist": (dict(CHECKLIST, rows=checklist_rows(deals)) if CHECKLIST else None),
             "deals": [dict(d, score=score(d)) for d in deals],
         }, indent=2, ensure_ascii=False) + "\n",
     }

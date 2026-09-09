@@ -1,0 +1,26 @@
+{
+  "title": "Cuban's checklist, answered",
+  "source": {
+    "who": "Mark Cuban",
+    "what": "a ten-point checklist for towns getting their first data center, posted to X on September 8, 2026",
+    "url": "https://jingletree.com/mark-cuban-shared-a-10-point-checklist-for-towns-getting-their-first-data-center-265528.html",
+    "rule": "His rule: every major promise should carry a measurable limit, independent oversight, financial backing, and a practical remedy if it is broken.",
+    "note": "Summarized from reporting on the thread rather than quoted. The asks below are paraphrases; follow the link for his own words."
+  },
+  "note": "He published what towns should demand. This is what towns actually got. Each row counts the signed agreements in this benchmark that clear the bar for that ask.",
+  "asks": [
+    { "ask": "Put up decommissioning money before construction, not after", "clause": "decommissioning" },
+    { "ask": "Do not get stuck with stranded infrastructure if the project is delayed or abandoned", "clause": "grid_costs" },
+    { "ask": "Cap water use, including on the hot days when closed-loop systems still drink", "clause": "water" },
+    { "ask": "Set a noise limit that addresses the low-frequency hum, the most common complaint after approval", "clause": "noise" },
+    { "ask": "Require independent oversight rather than the developer's own word", "clause": "transparency" },
+    { "ask": "Make every promise carry a practical remedy when it is broken", "clause": "clawbacks" },
+    { "ask": "Tie the money the community is promised to something enforceable", "clause": "community_fund" },
+    { "ask": "Know what the tax break actually costs before granting it", "clause": "tax" }
+  ],
+  "not_scored": [
+    { "ask": "Hire your own lawyers and technical advisors", "why": "This is a decision a town makes before it signs, not a term inside the agreement, so there is nothing in these documents to score. It may be the highest-value item on his list." },
+    { "ask": "Assess the entire planned build-out, not just phase one", "why": "Also a process question. It does show up indirectly: several agreements here write payment schedules for the first buildings only and go quiet about the rest." },
+    { "ask": "Demand guarantees from a financially credible parent company", "why": "No column tracks this yet because too few agreements address it to compare. Where it exists it is noted inside the deal, as in Richland Parish, where advocates argue the guarantee stopped reaching an entity with assets after the ownership changed." }
+  ]
+}
