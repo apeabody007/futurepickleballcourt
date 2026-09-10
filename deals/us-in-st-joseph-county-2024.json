@@ -1,0 +1,277 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-in-st-joseph-county-2024",
+  "status": "signed",
+  "verification": "primary",
+  "short_name": "Amazon",
+  "jurisdiction": {
+    "country": "US",
+    "state": "IN",
+    "locality": "St. Joseph County",
+    "level": "county"
+  },
+  "operator": "Amazon Web Services",
+  "developer": "Amazon Data Services, Inc.",
+  "project": "Amazon data center campus at the Indiana Enterprise Center, New Carlisle, Olive Township",
+  "agreement_type": "development_agreement",
+  "dates": {
+    "signed": "2024-08-13",
+    "approved": "2024-08-13",
+    "effective": "2024-08-13"
+  },
+  "scale": {
+    "acres": null,
+    "mw": null,
+    "capex_usd": 11000000000,
+    "sqft": null,
+    "notes": "About $11 billion of potential total project investment across three sites, with roughly 400 permanent positions described in an attachment. Acreage and megawatts appear in no county document; press puts the site at about 870 acres. On the utility side the regulator's record shows the serving utility's Indiana peak going from about 2,800 megawatts to more than 7,000, driven by loads of this kind."
+  },
+  "documents": [
+    {
+      "title": "Board of Commissioners agenda packet, August 13, 2024, containing the executed Economic Development Agreement at pages 33 to 61 and the Community Enhancement Agreement at pages 62 to 72",
+      "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+      "kind": "primary",
+      "date": "2024-08-13"
+    },
+    {
+      "title": "County Council agenda packet, August 13, 2024, containing the four adopted resolutions, the tax abatement memorandum of agreement and the amended Form SB-1",
+      "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2021",
+      "kind": "primary",
+      "date": "2024-08-13"
+    },
+    {
+      "title": "Indiana Utility Regulatory Commission final order in Cause No. 46097, approving the large load settlement among the utility, consumer advocates and the data center companies including Amazon",
+      "url": "https://www.in.gov/iurc/files/ord_46097_021925.pdf",
+      "kind": "primary",
+      "date": "2025-02-19"
+    }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": true,
+      "amount_usd": 1425600,
+      "cadence": "one_time",
+      "scales_with_project": true,
+      "controlled_by": "St. Joseph County Redevelopment Commission",
+      "community_seat": false,
+      "notes": "A community enhancement agreement that runs to the redevelopment commission rather than to any community body, and it is much smaller than the number in circulation. The itemised commitments are a fire services fee, a student success fee and a park fee at ten cents per square foot each, $25,000 for pollinator landscaping, $450,000 for professional services, $50 an acre for water quality, and $120,000 for the sheriff, each due once within 90 days of a certificate of occupancy. The only guaranteed floor in the whole document is $1,425,600 across the three per square foot fees, payable as a shortfall if the total falls under that by the termination date, and the agreement terminates on its fifth anniversary. A contingent $7 million for a highway interchange applies only if an interchange is built. The widely reported $143 million figure appears nowhere in the agreement, and I could not reconcile it to any document. Once paid, the company has no further responsibility for how the money is used, and no resident holds a seat.",
+      "hedge": "The agreement terminates on its fifth anniversary regardless of a 35 year exemption, and most line items are one time payments per building rather than recurring.",
+      "sources": [
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Community Enhancement Agreement, Exhibit A, itemised contributions"
+        },
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Community Enhancement Agreement, Section 1, the $1,425,600 floor, and Section 4, five year termination"
+        },
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Community Enhancement Agreement, Section 5.B, no further responsibility for the funds"
+        }
+      ]
+    },
+    "clawbacks": {
+      "present": true,
+      "triggers": [
+        "jobs",
+        "investment"
+      ],
+      "proportional": false,
+      "notes": "Present in form and firewalled in substance. Section 7 of the development agreement makes denial of the abatement the county's sole remedy for failing to substantially comply with the statement of benefits, and it is prospective only: nothing already abated comes back. The qualifiers do most of the work. Failure to meet county expectations on milestones, capital expenditure, jobs or salaries does not count as non-compliance if the figures fall reasonably near the stated parameters, or if a force majeure event caused the shortfall, and force majeure is defined to include inability to secure materials or labour through ordinary sources, any change in law, permit delays and insufficient utilities. Section 2(C) states plainly that the county has no right to compel construction, investment or job creation, and liability for breach is capped at the lesser of one year of incentives or $1,000,000. The sharpest term is elsewhere: breaching the community enhancement agreement expressly cannot be treated as a default under any other agreement, so failing to pay the community money cannot cost the company its tax abatement. The two instruments are deliberately insulated from each other, and that is the single most transferable lesson in this record.",
+      "hedge": "\"Failure to meet County expectations as to milestones, capital expenditures, jobs created, or salaries, will not constitute a failure to substantially comply.\"",
+      "sources": [
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Economic Development Agreement, Section 7, sole remedy and qualifiers"
+        },
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Economic Development Agreement, Section 2(C)",
+          "quote": "the County has no right to compel the Company to commence or complete construction of the Project, make investments, or create jobs"
+        },
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Community Enhancement Agreement, Section 1 and Section 5.A, firewall from other agreements"
+        }
+      ]
+    },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "No bond, escrow, letter of credit or covenant in either agreement or any of the four resolutions. The nearest analogue is environmental rather than structural, and it is genuinely good: the company must install at least two upgradient and two downgradient groundwater monitoring wells at each of the three sites, sample twice a year for at least five years from the start of production, pay all costs, and report depth quarterly and quality twice a year to the commissioners, the redevelopment commission and the town. After five years the cost shifts to the public bodies if they want it continued.",
+      "sources": [
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Community Enhancement Agreement, Exhibit A, paragraph J, groundwater monitoring"
+        }
+      ]
+    },
+    "grid_costs": {
+      "present": true,
+      "who_pays_interconnect": "unknown",
+      "minimum_bill": true,
+      "term_years": 12,
+      "governed_by": "Indiana Utility Regulatory Commission Cause No. 46097, the large load tariff settlement approved February 19, 2025",
+      "notes": "The strongest grid terms in this benchmark, and none of them were written by the county, whose agreement is silent on electricity entirely. The regulator approved a settlement among the utility, the state consumer counselor, a consumer advocacy group and the data center companies including this one. A minimum twelve year contract term after a ramp of up to five years. An eighty percent minimum monthly billing demand, which the consumer advocate's witness computed as an aggregate floor of $35.034 per kilowatt, roughly $492 million a year for a thousand megawatt customer against about $173 million under the old sixty percent floor. Collateral equal to twenty four months of the maximum expected non-fuel bill, recomputed annually. An exit fee equal to the remaining minimum charge, which the same witness testified would exceed $1 billion for a thousand megawatt customer leaving five or more years early, and forty two months' written notice to reduce or terminate, with any reduction beyond twenty percent having to come back to the commission for approval. That is what a minimum bill looks like when it is designed to survive departure. The unresolved piece is who pays for the wires: the consumer advocate's witness testified it is unlikely large load customers will be directly assigned direct connect facility costs, which could shift hundreds of millions of dollars, so I am leaving interconnection unknown rather than crediting it.",
+      "sources": [
+        {
+          "url": "https://www.in.gov/iurc/files/ord_46097_021925.pdf",
+          "where": "Final order, Cause No. 46097, settlement terms on contract term and minimum billing demand"
+        },
+        {
+          "url": "https://www.in.gov/iurc/files/ord_46097_021925.pdf",
+          "where": "Final order, Cause No. 46097, exit fee, collateral and 42 month notice"
+        },
+        {
+          "url": "https://www.in.gov/iurc/files/ord_46097_021925.pdf",
+          "where": "Final order, Cause No. 46097, testimony on direct connect facility cost assignment"
+        },
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Economic Development Agreement, full text, which contains no electricity provision"
+        }
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": null,
+      "reporting": true,
+      "recycling_required": false,
+      "cooling": "unknown",
+      "notes": "Real public reporting and no cap. There is no gallons per day limit, no recycling requirement and no cooling type in any county document. What exists is the groundwater monitoring programme: quarterly depth reporting and twice yearly quality reporting to three public bodies for at least five years, paid by the company, plus a one time fifty dollars an acre water quality fee. That is more public water data than most deals in this benchmark produce. The governing document for supply is missing: the community enhancement agreement recites a separate water and sewer infrastructure agreement with the redevelopment commission which is not attached to any retrievable packet, so the actual volumes and terms are unknown.",
+      "hedge": "The reporting obligation is real but covers groundwater conditions, not the company's own consumption, which no document requires it to disclose.",
+      "sources": [
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Community Enhancement Agreement, Exhibit A, paragraph J, monitoring and reporting cadence"
+        },
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Community Enhancement Agreement, Exhibit A, paragraphs F and H, water quality fee and the unattached water and sewer agreement"
+        }
+      ]
+    },
+    "noise": {
+      "present": false,
+      "limit_dba": null,
+      "measured_at": null,
+      "setback_ft": null,
+      "notes": "Nothing in either agreement. No limit, no measurement point, no setback. Worth noting that at the same August 13, 2024 meeting the council adopted a separate bill revising development standards for large scale solar energy systems, so it was actively writing performance standards for another land use on the same night without writing any for this one.",
+      "sources": [
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Economic Development Agreement and Community Enhancement Agreement, neither of which contains a noise provision"
+        }
+      ]
+    },
+    "jobs": {
+      "present": true,
+      "promised_permanent": null,
+      "promised_construction": null,
+      "local_hire": false,
+      "prevailing_wage": false,
+      "enforceable": true,
+      "notes": "A binding wage floor and no binding headcount, which is an unusual split and worth being precise about. Section 2(F) is a genuine covenant: the average wage of the company's employees engaged in operating the project will be at least 125% of the county average wage for as long as any qualified property holds an exemption. That is enforceable and the consequence is the exemption itself. The 400 jobs figure is not. It appears in a narrative attachment, while Section 3 of the binding statement of benefits form, headed Estimate of Employees and Salaries as Result of Proposed Project, is filled in as not applicable and zero. So the form that carries legal weight carries no number. There is no local hire requirement, no prevailing wage, and no construction job count anywhere.",
+      "hedge": "Section 2(C) calls the assumptions and estimates \"good faith estimates,\" and Section 7 separately excuses figures that fall reasonably near them.",
+      "sources": [
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Economic Development Agreement, Section 2(F), the 125% wage covenant"
+        },
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2021",
+          "where": "Amended Form SB-1, Section 3, employees and salaries entered as not applicable and zero"
+        },
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2021",
+          "where": "Attachment to the amended Form SB-1, the 400 position narrative"
+        }
+      ]
+    },
+    "local_contracting": {
+      "present": true,
+      "local_subcontracting": false,
+      "road_repair": null,
+      "infrastructure_contribution_usd": 7000000,
+      "notes": "No local subcontracting requirement. Road repair is promised but deferred to a document that does not exist in the record: the community enhancement agreement says the company will pay for pavement restoration and associated road improvements and donate easements as set forth in a separate road improvement agreement to be executed. That agreement is referenced, not attached, and I could not retrieve it, so I am scoring road repair as unknown rather than crediting an agreement to agree. The contingent $7 million for a highway interchange applies only if one is built. The company does agree to run annual fire department training with regional departments at its own expense.",
+      "hedge": "The road commitment is \"as set forth and agreed upon in a separate Road Improvement Agreement to be executed,\" which is an agreement to agree.",
+      "sources": [
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Community Enhancement Agreement, Exhibit A, paragraphs G, I and K"
+        }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": false,
+      "agreement_public": true,
+      "public_dashboard": false,
+      "audit_cadence": "annual",
+      "audit_independent": false,
+      "notes": "Both agreements are public and were published in agenda packets, and no non-disclosure agreement by a public body appears anywhere. Section 2(E) then builds a notification and consultation gate into the state public records act: the county must notify the company of any request relating to the project as far in advance as practicable, must consult with it on the extent to which records may be withheld, and to the extent disclosure is made will disclose only what the act requires. Reporting is the statutory annual compliance form plus an annual report to the redevelopment commission, both self certified by the company and neither independently audited. No dashboard. At the regulator, the executed electric service agreements and transmission letters are produced only on the commission's request and under confidential treatment the settling parties jointly asked for.",
+      "hedge": "The county keeps the last word but only after the company has been consulted: \"the final determination of whether a particular record is an exception to disclosure under APRA shall be in County's sole discretion.\"",
+      "sources": [
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Economic Development Agreement, Section 2(E), public records notification and consultation"
+        },
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Economic Development Agreement, Section 2(E) and Exhibit E, annual compliance filing"
+        },
+        {
+          "url": "https://www.in.gov/iurc/files/ord_46097_021925.pdf",
+          "where": "Final order, Cause No. 46097, confidential treatment of service agreements"
+        }
+      ]
+    },
+    "tax": {
+      "present": true,
+      "abatement_pct": 50,
+      "duration_years": 35,
+      "pilot": false,
+      "estimated_forgone_usd": null,
+      "but_for_test": false,
+      "notes": "Two stacked abatements and no substitute revenue at all. Real property gets a flat 50% deduction for ten years, inside an economic revitalisation area designated for fifty, with no dollar cap on the deduction. Personal property, which is where the money is in a data center, gets an 85% exemption for thirty five years, and each building starts its own thirty five year clock, so the agreement's own worked example runs a 2027 assessment out to 2062. The company may elect to delay the start of either clock on any building by giving notice within thirty days, without forfeiting a year, and transferees inherit the exemption. There is no payment in lieu of taxes and no fee in lieu of any kind, which is exactly why the community enhancement agreement exists and exactly why it is so small next to the abatement. No forgone revenue estimate appears in any document I read. The but for test is a finding that the benefits are sufficient to justify the deduction, which is not the same question, and the council separately waived, retroactively, non-compliance arising because redevelopment began before the statement of benefits was filed.",
+      "sources": [
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2021",
+          "where": "Resolution R11-24, economic revitalisation area, 50 year designation and no dollar cap"
+        },
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
+          "where": "Economic Development Agreement, Section 2(F) and Section 3, 35 year personal property exemption and election to delay"
+        },
+        {
+          "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2021",
+          "where": "Resolution R11-24, Section 2.g, benefits sufficient to justify, and Section 2.f, retroactive waiver"
+        }
+      ]
+    }
+  },
+  "criticisms": [
+    {
+      "summary": "Two of nine council members voted against the package. A taxpayer told the council that residents had seen their taxes double and triple while the largest corporation in America received a multibillion dollar tax cut.",
+      "source": "https://wsbt.com/news/local/amazon-data-center-final-vote-approve-buildings-jobs-construction-economy-revenue-funds-community-enhancement-agreement-redevelopment-commission-council-new-carlisle-st-joseph-county-indiana"
+    },
+    {
+      "summary": "In March 2026 four council members who had voted for the abatement asked the company to renegotiate it, citing another operator reopening its deal with a neighbouring county. The company declined to discuss it publicly.",
+      "source": "https://www.wvpe.org/wvpe-news/2026-03-31/amazon-declines-publicly-discussing-renegotiating-tax-break"
+    },
+    {
+      "summary": "In June 2026 the same members asked for a voluntary payment toward homeowner property tax relief after nearly $38 million was abated in the first half of that year alone.",
+      "source": "https://www.wvpe.org/wvpe-news/2026-06-24/council-members-asking-amazon-to-pay-despite-tax-abatement"
+    },
+    {
+      "summary": "In the utility proceeding, consumer advocates argued the originally proposed minimum billing demand and termination fee did not correspond to actual costs, and that load above 150 megawatts should be firewalled from existing ratepayers in cost allocation.",
+      "source": "https://www.in.gov/iurc/files/ord_46097_021925.pdf"
+    }
+  ],
+  "contributors": [
+    "apeabody007"
+  ],
+  "last_reviewed": "2026-09-10"
+}

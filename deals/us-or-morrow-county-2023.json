@@ -1,0 +1,269 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-or-morrow-county-2023",
+  "status": "signed",
+  "verification": "primary",
+  "short_name": "Amazon",
+  "jurisdiction": {
+    "country": "US",
+    "state": "OR",
+    "locality": "Morrow County",
+    "level": "county"
+  },
+  "operator": "Amazon Web Services",
+  "developer": "Amazon Data Services, Inc.",
+  "project": "Amazon data center campus near Boardman, under the Oregon Strategic Investment Program",
+  "agreement_type": "tax_abatement",
+  "dates": {
+    "signed": "2023-04-05",
+    "approved": "2023-06-09",
+    "effective": "2023-04-05"
+  },
+  "scale": {
+    "acres": null,
+    "mw": null,
+    "capex_usd": 2370000000,
+    "sqft": 230000,
+    "notes": "$2.37 billion of investment, of which $1.95 billion is servers and personal property and $320 million is construction and heavy equipment. About 230,000 square feet per main building. Acreage and megawatts appear in no document I read, which is itself worth noting for a project of this size."
+  },
+  "documents": [
+    {
+      "title": "Oregon Strategic Investment Program Agreement between Morrow County and Amazon Data Services, Inc., April 5, 2023, at pages 219 to 229 of the county commissioners' agenda packet, with Resolution R-2023-4 at pages 234 to 235",
+      "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+      "kind": "primary",
+      "date": "2023-04-05"
+    },
+    {
+      "title": "Board of Commissioners minutes, April 5, 2023, recording the 2 to 0 vote with one commissioner abstaining and no public testimony",
+      "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/16576/4-5-23_board_minutes_9-00_am.pdf",
+      "kind": "primary",
+      "date": "2023-04-05"
+    },
+    {
+      "title": "Business Oregon Commission agenda item and Resolution SIP-23-01, containing the state's own estimate of taxes forgone and net benefit",
+      "url": "https://www.oregon.gov/biz/Publications/Boards/Business%20Oregon%20Commission/2023/AmazonSIPAgendaItem.pdf",
+      "kind": "primary",
+      "date": "2023-06-09"
+    },
+    {
+      "title": "Columbia River Enterprise Zone III board packet, August 31, 2023, containing the county assessor's distribution worksheet for the $5,000,000 payment",
+      "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16706/8-31-23_crez_iii_meeting_agenda_packet.pdf",
+      "kind": "primary",
+      "date": "2023-08-31"
+    },
+    {
+      "title": "Oregon HB 3546 (2025), directing the utility commission to create a separate service classification for large energy use facilities",
+      "url": "https://olis.oregonlegislature.gov/liz/2025R1/Measures/Overview/HB3546",
+      "kind": "primary",
+      "date": "2025-06-01"
+    }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": true,
+      "amount_usd": 5000000,
+      "cadence": "mixed",
+      "scales_with_project": true,
+      "controlled_by": "Morrow County, which is solely responsible for allocation and disposition",
+      "community_seat": false,
+      "notes": "Three streams and the largest community money in this benchmark, all of it decided by the county. A community services fee of 25% of the taxes that would otherwise be due, capped at $2.5 million a year; an annual contribution of $850,000 for every year of the exemption; and a one time $5,000,000 community development contribution due within 60 days of the state determination. Section 6.3 puts the county solely in charge of allocation and disposition, and says the payments create no third party beneficiary rights. There is no committee, no advisory body and no resident seat. When the assessor laid out how a $5,000,000 payment would be split, the three government sponsors took $1,000,000 each, three fifths of it, before anything reached the remaining districts.",
+      "hedge": "The $5 million is \"intended to assist with costs of capital improvement projects,\" and the same section then disclaims any obligation on the company to fund them or on the county to spend it that way.",
+      "sources": [
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, Sections 5.1(b), 5.1(c) and 5.1(d)"
+        },
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, Section 6.3",
+          "quote": "The County is solely responsible for the allocation, budgeting, division, and disposition of any payment"
+        },
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16706/8-31-23_crez_iii_meeting_agenda_packet.pdf",
+          "where": "Morrow County Assessor distribution worksheet, August 22, 2023"
+        }
+      ]
+    },
+    "clawbacks": {
+      "present": false,
+      "triggers": [],
+      "proportional": null,
+      "notes": "None that reach performance. There is no jobs clawback, no investment clawback and no trigger if the facility stops running. The only enforcement is for not paying the fees: the county must give notice and 60 days to cure, the exemption is then lost prospectively, paying late restores it the following year, and only after two consecutive years of nonpayment may the county terminate. Nothing already received comes back. The asymmetry is the striking part: the company may terminate the agreement for any reason or no reason on written notice, and its total liability is capped at the lesser of the benefit realised or $3,000,000, with forgone tax revenue expressly excluded from recoverable damages. On a deal the state scores as $113 million of net benefit, the county's maximum recovery is three million dollars.",
+      "hedge": "Section 9.1 lets the company \"elect to terminate this Agreement for any reason or no reason.\"",
+      "sources": [
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, Section 9.2, nonpayment and revocation"
+        },
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, Section 9.1, termination for any reason or no reason"
+        },
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, Sections 11.7 and 11.13, liability and fee caps"
+        }
+      ]
+    },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "None. No bond, escrow, letter of credit or covenant appears in the agreement, the county resolution, or the state resolution. This is a confirmed absence, read against the full text.",
+      "sources": [
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, full text, which contains no decommissioning provision"
+        }
+      ]
+    },
+    "grid_costs": {
+      "present": false,
+      "who_pays_interconnect": "unknown",
+      "minimum_bill": null,
+      "term_years": null,
+      "governed_by": null,
+      "notes": "The agreement says nothing about electricity at all: no interconnection, no substation, no minimum bill, no take or pay, and it names no utility and no tariff. That is a remarkable silence for a $2.37 billion load. Oregon's answer arrived two years later, in 2025 legislation directing the utility commission to create a separate service classification for large energy users and to allocate costs so as to mitigate risks to other customers. Whether that reaches a load served by a consumer owned cooperative, which is largely outside commission rate regulation, is not something I could establish from a primary document.",
+      "sources": [
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, full text, which contains no electricity provision"
+        },
+        {
+          "url": "https://olis.oregonlegislature.gov/liz/2025R1/Measures/Overview/HB3546",
+          "where": "Oregon HB 3546 (2025), large energy use facilities"
+        }
+      ]
+    },
+    "water": {
+      "present": false,
+      "limit_gpd": null,
+      "reporting": false,
+      "recycling_required": false,
+      "cooling": "unknown",
+      "notes": "No cap, no reporting requirement, no recycling requirement and no cooling type. The only water reference in the entire agreement is descriptive: the project scope includes an industrial water building.",
+      "sources": [
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, Section 1.1, project description"
+        }
+      ]
+    },
+    "noise": {
+      "present": false,
+      "limit_dba": null,
+      "measured_at": null,
+      "setback_ft": null,
+      "notes": "Nothing in the agreement. No limit, no measurement point, no setback. Whether county zoning imposes one is a gap I have not closed.",
+      "sources": [
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, full text, which contains no noise provision"
+        }
+      ]
+    },
+    "jobs": {
+      "present": true,
+      "promised_permanent": null,
+      "promised_construction": null,
+      "local_hire": true,
+      "prevailing_wage": false,
+      "enforceable": false,
+      "notes": "One real hook and no number behind it. The 80 permanent jobs everyone cites is a recital, not a covenant, and the state program has no employment criteria at all, which Business Oregon says in its own memo. What is enforceable is narrower and more interesting: Section 5.3 requires the company to enter a first source hiring agreement with third parties acceptable to the county, and the county is to be designated a third party beneficiary entitled to enforce its terms. That is a genuine lever over how hiring happens. It says nothing about how many people get hired, and there is no consequence for missing 80.",
+      "hedge": "The headcount lives in a recital, which says the project \"is expected to include\" the jobs rather than committing to them.",
+      "sources": [
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, Section 5.3, first source hiring agreement"
+        },
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, recitals, the 80 jobs expectation"
+        },
+        {
+          "url": "https://www.oregon.gov/biz/Publications/Boards/Business%20Oregon%20Commission/2023/AmazonSIPAgendaItem.pdf",
+          "where": "Business Oregon memo, p. 2",
+          "quote": "No employment criteria"
+        }
+      ]
+    },
+    "local_contracting": {
+      "present": false,
+      "local_subcontracting": false,
+      "road_repair": false,
+      "infrastructure_contribution_usd": 5000000,
+      "notes": "No local subcontracting requirement and no haul route or road repair obligation. The infrastructure contribution is the $5,000,000 community development payment, which the agreement says is intended for capital improvements while disclaiming any obligation to fund bonded debt or any requirement that the county spend it that way. The company does agree to pay standard permit fees and, where it has a choice, to pull permits locally rather than from the state, and to pay 100% of what it would have owed on voter approved bonds passed after the agreement date.",
+      "sources": [
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, Sections 5.1(d), 5.1(f) and 5.1(h)"
+        }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": false,
+      "agreement_public": true,
+      "public_dashboard": false,
+      "audit_cadence": "annual",
+      "audit_independent": false,
+      "notes": "No non-disclosure agreement, and the agreement itself is published in a public packet. Section 10 then builds most of the same effect into the public records process. County staff commit to exercise the utmost discretion in oral and written communications. On any records request touching the company, the county must notify it within three business days, the company has nine business days to decide whether to fight release, and only if it does not respond may the county release. The company indemnifies the county's costs of fighting the request, including its attorney fees, which quietly removes the main practical reason a county would rather just disclose. Reporting is statutory only and self certified; there is no independent audit and no dashboard. The public hearing that preceded a fifteen year, nine figure exemption drew no testimony at all, for or against, in person or online.",
+      "hedge": "Section 10.1 commits county staff to \"exercise the utmost discretion in oral and written communications.\"",
+      "sources": [
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, Section 10, confidentiality and public records"
+        },
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, Sections 5.4 and 6.1, statutory annual report and invoice"
+        },
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/16576/4-5-23_board_minutes_9-00_am.pdf",
+          "where": "Board minutes, April 5, 2023, p. 6, public hearing with no testimony"
+        }
+      ]
+    },
+    "tax": {
+      "present": true,
+      "abatement_pct": null,
+      "duration_years": 15,
+      "pilot": true,
+      "estimated_forgone_usd": 113000000,
+      "but_for_test": false,
+      "notes": "Fifteen years of partial property tax exemption with a fee in lieu, and the state published the arithmetic, which almost nobody does. Business Oregon's own memo: about $195 million of property tax otherwise due, about $31 million paid on the non exempt portion, about $33 million in community service fees, and nearly $18 million in negotiated payments, leaving the company a net benefit of about $113 million. The taxable floor is $100 million of assessed value for a rural project over a billion dollars, escalating 3% a year. There is no but for test in the statute or the agreement. The state's findings are eligibility findings, that the project is traded sector, rural and over $25 million, which is a different question from whether the exemption changed the outcome.",
+      "sources": [
+        {
+          "url": "https://www.oregon.gov/biz/Publications/Boards/Business%20Oregon%20Commission/2023/AmazonSIPAgendaItem.pdf",
+          "where": "Business Oregon memo, p. 3, taxes otherwise due and net benefit"
+        },
+        {
+          "url": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf",
+          "where": "SIP Agreement, Sections 3 and 5.1, exemption period and fee structure"
+        }
+      ]
+    }
+  },
+  "criticisms": [
+    {
+      "summary": "Three former officials, a county commissioner and two port commissioners, owned a fiber company that sold services to the Amazon data centers while they voted on Amazon's incentives and land. State ethics staff recommended penalties against all three.",
+      "source": "https://www.governing.com/politics/oregon-county-officials-benefited-personally-from-amazon-deal"
+    },
+    {
+      "summary": "A sitting commissioner abstained on this very agreement, stating on the record that it could affect a business he was associated with and that he would not participate until an ethics complaint was resolved.",
+      "source": "https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/16576/4-5-23_board_minutes_9-00_am.pdf"
+    },
+    {
+      "summary": "County commissioners hired outside counsel in 2022 specifically to get a better deal, on the view that the existing agreements returned too little.",
+      "source": "https://www.opb.org/article/2022/05/23/morrow-county-seeks-better-data-center-tax-deal-with-amazon/"
+    },
+    {
+      "summary": "Asked how many permanent jobs six new data centers would create, the county chair said the company had not said yet and that he did not have the figure.",
+      "source": "https://www.opb.org/article/2023/05/19/amazon-data-center-oregon-morrow-county/"
+    }
+  ],
+  "contributors": [
+    "apeabody007"
+  ],
+  "last_reviewed": "2026-09-10"
+}

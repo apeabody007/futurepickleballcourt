@@ -1,19 +1,19 @@
 # Data center agreements: what communities actually signed
 
 Generated 2026-09-10 from https://futurepickleballcourt.com
-22 agreements, scored against 10 terms. Every term below carries the document and section it came from.
+24 agreements, scored against 10 terms. Every term below carries the document and section it came from.
 
 Verification levels: primary means a person read the executed document; press means every term traces to reporting; unverified means it came from a secondary summary and is waiting on a reader.
 
-**Nobody posts a teardown bond.** Not one of the 22 agreements requires a bond, escrow, or letter of credit to pay for demolition and site restoration if the operator walks away. If a campus goes dark, the land is the community's problem.
+**Nobody posts a teardown bond.** Not one of the 24 agreements requires a bond, escrow, or letter of credit to pay for demolition and site restoration if the operator walks away. If a campus goes dark, the land is the community's problem.
 
-**Community money, decided without the community.** 8 of the 22 deals set up money for the community. In none of them does a resident or community organization hold a seat on the body that decides how it is spent.
+**Community money, decided without the community.** 10 of the 24 deals set up money for the community. In none of them does a resident or community organization hold a seat on the body that decides how it is spent.
 
-**The one real protection was not negotiated locally.** 7 of the 22 deals carry a minimum electric bill, the term that keeps a tenant paying if it stops drawing power (City of New Albany, City of Papillion and Sarpy County, City of Port Washington, Pima County, Richland Parish, Village of Los Lunas, Village of Mount Pleasant). Every one of them comes from the utility's own rate structure, not from anything the city or county negotiated, and how far each survives an actual departure varies.
+**The one real protection was not negotiated locally.** 8 of the 24 deals carry a minimum electric bill, the term that keeps a tenant paying if it stops drawing power (City of New Albany, City of Papillion and Sarpy County, City of Port Washington, Pima County, Richland Parish, St. Joseph County, Village of Los Lunas, Village of Mount Pleasant). Every one of them comes from the utility's own rate structure, not from anything the city or county negotiated, and how far each survives an actual departure varies.
 
-**Secrecy is normal.** 8 of the 22 communities signed a nondisclosure agreement. Some barred officials from saying that talks were happening at all, and one required the city to destroy its own notes.
+**Secrecy is normal.** 8 of the 24 communities signed a nondisclosure agreement. Some barred officials from saying that talks were happening at all, and one required the city to destroy its own notes.
 
-**Present is not the same as binding.** 52 terms across these agreements exist but are softened by language like good faith, commercially reasonable, or sole discretion. A term with an escape hatch reads as a protection and functions as a preference.
+**Present is not the same as binding.** 62 terms across these agreements exist but are softened by language like good faith, commercially reasonable, or sole discretion. A term with an escape hatch reads as a protection and functions as a preference.
 
 ---
 
@@ -881,6 +881,98 @@ The city granted a reported $16.6 million property-tax break for the 2022 expans
 
 ---
 
+## St. Joseph County, IN (Amazon)
+
+- Project: Amazon data center campus at the Indiana Enterprise Center, New Carlisle, Olive Township
+- Operator: Amazon Web Services
+- Developer: Amazon Data Services, Inc.
+- Agreement: development agreement, signed, signed 2024-08-13
+- Scale: 11,000,000,000 USD
+  - About $11 billion of potential total project investment across three sites, with roughly 400 permanent positions described in an attachment. Acreage and megawatts appear in no county document; press puts the site at about 870 acres. On the utility side the regulator's record shows the serving utility's Indiana peak going from about 2,800 megawatts to more than 7,000, driven by loads of this kind.
+- Verification: primary
+- Documents:
+  - [primary] Board of Commissioners agenda packet, August 13, 2024, containing the executed Economic Development Agreement at pages 33 to 61 and the Community Enhancement Agreement at pages 62 to 72: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+  - [primary] County Council agenda packet, August 13, 2024, containing the four adopted resolutions, the tax abatement memorandum of agreement and the amended Form SB-1: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2021
+  - [primary] Indiana Utility Regulatory Commission final order in Cause No. 46097, approving the large load settlement among the utility, consumer advocates and the data center companies including Amazon: https://www.in.gov/iurc/files/ord_46097_021925.pdf
+
+### Community fund: FALLS SHORT
+Floor: A fund that scales with the project, with a community seat on the body that spends it
+SOFTENING LANGUAGE: "The agreement terminates on its fifth anniversary regardless of a 35 year exemption, and most line items are one time payments per building rather than recurring."
+A community enhancement agreement that runs to the redevelopment commission rather than to any community body, and it is much smaller than the number in circulation. The itemised commitments are a fire services fee, a student success fee and a park fee at ten cents per square foot each, $25,000 for pollinator landscaping, $450,000 for professional services, $50 an acre for water quality, and $120,000 for the sheriff, each due once within 90 days of a certificate of occupancy. The only guaranteed floor in the whole document is $1,425,600 across the three per square foot fees, payable as a shortfall if the total falls under that by the termination date, and the agreement terminates on its fifth anniversary. A contingent $7 million for a highway interchange applies only if an interchange is built. The widely reported $143 million figure appears nowhere in the agreement, and I could not reconcile it to any document. Once paid, the company has no further responsibility for how the money is used, and no resident holds a seat.
+- Community Enhancement Agreement, Exhibit A, itemised contributions: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+- Community Enhancement Agreement, Section 1, the $1,425,600 floor, and Section 4, five year termination: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+- Community Enhancement Agreement, Section 5.B, no further responsibility for the funds: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+
+### Clawbacks: FALLS SHORT
+Floor: Incentives come back if the facility stops operating, not only if a jobs number is missed
+SOFTENING LANGUAGE: ""Failure to meet County expectations as to milestones, capital expenditures, jobs created, or salaries, will not constitute a failure to substantially comply.""
+Present in form and firewalled in substance. Section 7 of the development agreement makes denial of the abatement the county's sole remedy for failing to substantially comply with the statement of benefits, and it is prospective only: nothing already abated comes back. The qualifiers do most of the work. Failure to meet county expectations on milestones, capital expenditure, jobs or salaries does not count as non-compliance if the figures fall reasonably near the stated parameters, or if a force majeure event caused the shortfall, and force majeure is defined to include inability to secure materials or labour through ordinary sources, any change in law, permit delays and insufficient utilities. Section 2(C) states plainly that the county has no right to compel construction, investment or job creation, and liability for breach is capped at the lesser of one year of incentives or $1,000,000. The sharpest term is elsewhere: breaching the community enhancement agreement expressly cannot be treated as a default under any other agreement, so failing to pay the community money cannot cost the company its tax abatement. The two instruments are deliberately insulated from each other, and that is the single most transferable lesson in this record.
+- Economic Development Agreement, Section 7, sole remedy and qualifiers: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+- Economic Development Agreement, Section 2(C): "the County has no right to compel the Company to commence or complete construction of the Project, make investments, or create jobs" https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+- Community Enhancement Agreement, Section 1 and Section 5.A, firewall from other agreements: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+
+### Decommissioning: FALLS SHORT
+Floor: A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks
+No bond, escrow, letter of credit or covenant in either agreement or any of the four resolutions. The nearest analogue is environmental rather than structural, and it is genuinely good: the company must install at least two upgradient and two downgradient groundwater monitoring wells at each of the three sites, sample twice a year for at least five years from the start of production, pay all costs, and report depth quarterly and quality twice a year to the commissioners, the redevelopment commission and the town. After five years the cost shifts to the public bodies if they want it continued.
+- Community Enhancement Agreement, Exhibit A, paragraph J, groundwater monitoring: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+
+### Grid costs: UNKNOWN
+Floor: The operator pays for its own interconnection and carries a minimum bill that survives it leaving
+The strongest grid terms in this benchmark, and none of them were written by the county, whose agreement is silent on electricity entirely. The regulator approved a settlement among the utility, the state consumer counselor, a consumer advocacy group and the data center companies including this one. A minimum twelve year contract term after a ramp of up to five years. An eighty percent minimum monthly billing demand, which the consumer advocate's witness computed as an aggregate floor of $35.034 per kilowatt, roughly $492 million a year for a thousand megawatt customer against about $173 million under the old sixty percent floor. Collateral equal to twenty four months of the maximum expected non-fuel bill, recomputed annually. An exit fee equal to the remaining minimum charge, which the same witness testified would exceed $1 billion for a thousand megawatt customer leaving five or more years early, and forty two months' written notice to reduce or terminate, with any reduction beyond twenty percent having to come back to the commission for approval. That is what a minimum bill looks like when it is designed to survive departure. The unresolved piece is who pays for the wires: the consumer advocate's witness testified it is unlikely large load customers will be directly assigned direct connect facility costs, which could shift hundreds of millions of dollars, so I am leaving interconnection unknown rather than crediting it.
+- Final order, Cause No. 46097, settlement terms on contract term and minimum billing demand: https://www.in.gov/iurc/files/ord_46097_021925.pdf
+- Final order, Cause No. 46097, exit fee, collateral and 42 month notice: https://www.in.gov/iurc/files/ord_46097_021925.pdf
+- Final order, Cause No. 46097, testimony on direct connect facility cost assignment: https://www.in.gov/iurc/files/ord_46097_021925.pdf
+- Economic Development Agreement, full text, which contains no electricity provision: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+
+### Water: MEETS
+Floor: A stated cap or closed-loop cooling, plus public reporting
+SOFTENING LANGUAGE: "The reporting obligation is real but covers groundwater conditions, not the company's own consumption, which no document requires it to disclose."
+Real public reporting and no cap. There is no gallons per day limit, no recycling requirement and no cooling type in any county document. What exists is the groundwater monitoring programme: quarterly depth reporting and twice yearly quality reporting to three public bodies for at least five years, paid by the company, plus a one time fifty dollars an acre water quality fee. That is more public water data than most deals in this benchmark produce. The governing document for supply is missing: the community enhancement agreement recites a separate water and sewer infrastructure agreement with the redevelopment commission which is not attached to any retrievable packet, so the actual volumes and terms are unknown.
+- Community Enhancement Agreement, Exhibit A, paragraph J, monitoring and reporting cadence: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+- Community Enhancement Agreement, Exhibit A, paragraphs F and H, water quality fee and the unattached water and sewer agreement: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+
+### Noise: FALLS SHORT
+Floor: A numeric limit measured at the nearest residence or property line
+Nothing in either agreement. No limit, no measurement point, no setback. Worth noting that at the same August 13, 2024 meeting the council adopted a separate bill revising development standards for large scale solar energy systems, so it was actively writing performance standards for another land use on the same night without writing any for this one.
+- Economic Development Agreement and Community Enhancement Agreement, neither of which contains a noise provision: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+
+### Jobs: MEETS
+Floor: Binding job commitments with a consequence, not projections
+SOFTENING LANGUAGE: "Section 2(C) calls the assumptions and estimates "good faith estimates," and Section 7 separately excuses figures that fall reasonably near them."
+A binding wage floor and no binding headcount, which is an unusual split and worth being precise about. Section 2(F) is a genuine covenant: the average wage of the company's employees engaged in operating the project will be at least 125% of the county average wage for as long as any qualified property holds an exemption. That is enforceable and the consequence is the exemption itself. The 400 jobs figure is not. It appears in a narrative attachment, while Section 3 of the binding statement of benefits form, headed Estimate of Employees and Salaries as Result of Proposed Project, is filled in as not applicable and zero. So the form that carries legal weight carries no number. There is no local hire requirement, no prevailing wage, and no construction job count anywhere.
+- Economic Development Agreement, Section 2(F), the 125% wage covenant: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+- Amended Form SB-1, Section 3, employees and salaries entered as not applicable and zero: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2021
+- Attachment to the amended Form SB-1, the 400 position narrative: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2021
+
+### Local contracting: UNKNOWN
+Floor: Local subcontracting goals and haul-route road repair paid by the operator
+SOFTENING LANGUAGE: "The road commitment is "as set forth and agreed upon in a separate Road Improvement Agreement to be executed," which is an agreement to agree."
+No local subcontracting requirement. Road repair is promised but deferred to a document that does not exist in the record: the community enhancement agreement says the company will pay for pavement restoration and associated road improvements and donate easements as set forth in a separate road improvement agreement to be executed. That agreement is referenced, not attached, and I could not retrieve it, so I am scoring road repair as unknown rather than crediting an agreement to agree. The contingent $7 million for a highway interchange applies only if one is built. The company does agree to run annual fire department training with regional departments at its own expense.
+- Community Enhancement Agreement, Exhibit A, paragraphs G, I and K: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+
+### Transparency: FALLS SHORT
+Floor: No NDA, the agreement is public, and an independent audit on a schedule
+SOFTENING LANGUAGE: "The county keeps the last word but only after the company has been consulted: "the final determination of whether a particular record is an exception to disclosure under APRA shall be in County's sole discretion.""
+Both agreements are public and were published in agenda packets, and no non-disclosure agreement by a public body appears anywhere. Section 2(E) then builds a notification and consultation gate into the state public records act: the county must notify the company of any request relating to the project as far in advance as practicable, must consult with it on the extent to which records may be withheld, and to the extent disclosure is made will disclose only what the act requires. Reporting is the statutory annual compliance form plus an annual report to the redevelopment commission, both self certified by the company and neither independently audited. No dashboard. At the regulator, the executed electric service agreements and transmission letters are produced only on the commission's request and under confidential treatment the settling parties jointly asked for.
+- Economic Development Agreement, Section 2(E), public records notification and consultation: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+- Economic Development Agreement, Section 2(E) and Exhibit E, annual compliance filing: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+- Final order, Cause No. 46097, confidential treatment of service agreements: https://www.in.gov/iurc/files/ord_46097_021925.pdf
+
+### Tax incentives: FALLS SHORT
+Floor: A but-for test before any abatement, with the forgone revenue stated
+Two stacked abatements and no substitute revenue at all. Real property gets a flat 50% deduction for ten years, inside an economic revitalisation area designated for fifty, with no dollar cap on the deduction. Personal property, which is where the money is in a data center, gets an 85% exemption for thirty five years, and each building starts its own thirty five year clock, so the agreement's own worked example runs a 2027 assessment out to 2062. The company may elect to delay the start of either clock on any building by giving notice within thirty days, without forfeiting a year, and transferees inherit the exemption. There is no payment in lieu of taxes and no fee in lieu of any kind, which is exactly why the community enhancement agreement exists and exactly why it is so small next to the abatement. No forgone revenue estimate appears in any document I read. The but for test is a finding that the benefits are sufficient to justify the deduction, which is not the same question, and the council separately waived, retroactively, non-compliance arising because redevelopment began before the statement of benefits was filed.
+- Resolution R11-24, economic revitalisation area, 50 year designation and no dollar cap: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2021
+- Economic Development Agreement, Section 2(F) and Section 3, 35 year personal property exemption and election to delay: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
+- Resolution R11-24, Section 2.g, benefits sufficient to justify, and Section 2.f, retroactive waiver: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2021
+
+### Reported criticisms
+- Two of nine council members voted against the package. A taxpayer told the council that residents had seen their taxes double and triple while the largest corporation in America received a multibillion dollar tax cut. (https://wsbt.com/news/local/amazon-data-center-final-vote-approve-buildings-jobs-construction-economy-revenue-funds-community-enhancement-agreement-redevelopment-commission-council-new-carlisle-st-joseph-county-indiana)
+- In March 2026 four council members who had voted for the abatement asked the company to renegotiate it, citing another operator reopening its deal with a neighbouring county. The company declined to discuss it publicly. (https://www.wvpe.org/wvpe-news/2026-03-31/amazon-declines-publicly-discussing-renegotiating-tax-break)
+- In June 2026 the same members asked for a voluntary payment toward homeowner property tax relief after nearly $38 million was abated in the first half of that year alone. (https://www.wvpe.org/wvpe-news/2026-06-24/council-members-asking-amazon-to-pay-despite-tax-abatement)
+- In the utility proceeding, consumer advocates argued the originally proposed minimum billing demand and termination fee did not correspond to actual costs, and that load above 150 megawatts should be firewalled from existing ratepayers in cost allocation. (https://www.in.gov/iurc/files/ord_46097_021925.pdf)
+
+---
+
 ## Richland Parish, LA (Meta)
 
 - Project: Meta Hyperion data center, Franklin Farm megasite near Holly Ridge
@@ -1447,6 +1539,94 @@ A complete exemption from real property tax on the new buildings for fifteen yea
 ### Reported criticisms
 - Reporting found the city gave up millions at one Meta data center, with fifteen-year exemptions for multiple hyperscalers, against a statewide tally of $282 million in data center tax breaks. (https://prospect.org/2026/03/05/ohio-tech-ai-data-centers-meta-amazon-google-energy/)
 - One operator's state sales tax exemption in New Albany was valued at $72.5 million over fifteen years against a twenty-job commitment. (https://signalohio.org/ohio-data-centers-tax-breaks/)
+
+---
+
+## Morrow County, OR (Amazon)
+
+- Project: Amazon data center campus near Boardman, under the Oregon Strategic Investment Program
+- Operator: Amazon Web Services
+- Developer: Amazon Data Services, Inc.
+- Agreement: tax abatement, signed, signed 2023-04-05
+- Scale: 230,000 sq ft, 2,370,000,000 USD
+  - $2.37 billion of investment, of which $1.95 billion is servers and personal property and $320 million is construction and heavy equipment. About 230,000 square feet per main building. Acreage and megawatts appear in no document I read, which is itself worth noting for a project of this size.
+- Verification: primary
+- Documents:
+  - [primary] Oregon Strategic Investment Program Agreement between Morrow County and Amazon Data Services, Inc., April 5, 2023, at pages 219 to 229 of the county commissioners' agenda packet, with Resolution R-2023-4 at pages 234 to 235: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+  - [primary] Board of Commissioners minutes, April 5, 2023, recording the 2 to 0 vote with one commissioner abstaining and no public testimony: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/16576/4-5-23_board_minutes_9-00_am.pdf
+  - [primary] Business Oregon Commission agenda item and Resolution SIP-23-01, containing the state's own estimate of taxes forgone and net benefit: https://www.oregon.gov/biz/Publications/Boards/Business%20Oregon%20Commission/2023/AmazonSIPAgendaItem.pdf
+  - [primary] Columbia River Enterprise Zone III board packet, August 31, 2023, containing the county assessor's distribution worksheet for the $5,000,000 payment: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16706/8-31-23_crez_iii_meeting_agenda_packet.pdf
+  - [primary] Oregon HB 3546 (2025), directing the utility commission to create a separate service classification for large energy use facilities: https://olis.oregonlegislature.gov/liz/2025R1/Measures/Overview/HB3546
+
+### Community fund: FALLS SHORT
+Floor: A fund that scales with the project, with a community seat on the body that spends it
+SOFTENING LANGUAGE: "The $5 million is "intended to assist with costs of capital improvement projects," and the same section then disclaims any obligation on the company to fund them or on the county to spend it that way."
+Three streams and the largest community money in this benchmark, all of it decided by the county. A community services fee of 25% of the taxes that would otherwise be due, capped at $2.5 million a year; an annual contribution of $850,000 for every year of the exemption; and a one time $5,000,000 community development contribution due within 60 days of the state determination. Section 6.3 puts the county solely in charge of allocation and disposition, and says the payments create no third party beneficiary rights. There is no committee, no advisory body and no resident seat. When the assessor laid out how a $5,000,000 payment would be split, the three government sponsors took $1,000,000 each, three fifths of it, before anything reached the remaining districts.
+- SIP Agreement, Sections 5.1(b), 5.1(c) and 5.1(d): https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+- SIP Agreement, Section 6.3: "The County is solely responsible for the allocation, budgeting, division, and disposition of any payment" https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+- Morrow County Assessor distribution worksheet, August 22, 2023: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16706/8-31-23_crez_iii_meeting_agenda_packet.pdf
+
+### Clawbacks: FALLS SHORT
+Floor: Incentives come back if the facility stops operating, not only if a jobs number is missed
+SOFTENING LANGUAGE: "Section 9.1 lets the company "elect to terminate this Agreement for any reason or no reason.""
+None that reach performance. There is no jobs clawback, no investment clawback and no trigger if the facility stops running. The only enforcement is for not paying the fees: the county must give notice and 60 days to cure, the exemption is then lost prospectively, paying late restores it the following year, and only after two consecutive years of nonpayment may the county terminate. Nothing already received comes back. The asymmetry is the striking part: the company may terminate the agreement for any reason or no reason on written notice, and its total liability is capped at the lesser of the benefit realised or $3,000,000, with forgone tax revenue expressly excluded from recoverable damages. On a deal the state scores as $113 million of net benefit, the county's maximum recovery is three million dollars.
+- SIP Agreement, Section 9.2, nonpayment and revocation: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+- SIP Agreement, Section 9.1, termination for any reason or no reason: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+- SIP Agreement, Sections 11.7 and 11.13, liability and fee caps: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+
+### Decommissioning: FALLS SHORT
+Floor: A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks
+None. No bond, escrow, letter of credit or covenant appears in the agreement, the county resolution, or the state resolution. This is a confirmed absence, read against the full text.
+- SIP Agreement, full text, which contains no decommissioning provision: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+
+### Grid costs: FALLS SHORT
+Floor: The operator pays for its own interconnection and carries a minimum bill that survives it leaving
+The agreement says nothing about electricity at all: no interconnection, no substation, no minimum bill, no take or pay, and it names no utility and no tariff. That is a remarkable silence for a $2.37 billion load. Oregon's answer arrived two years later, in 2025 legislation directing the utility commission to create a separate service classification for large energy users and to allocate costs so as to mitigate risks to other customers. Whether that reaches a load served by a consumer owned cooperative, which is largely outside commission rate regulation, is not something I could establish from a primary document.
+- SIP Agreement, full text, which contains no electricity provision: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+- Oregon HB 3546 (2025), large energy use facilities: https://olis.oregonlegislature.gov/liz/2025R1/Measures/Overview/HB3546
+
+### Water: FALLS SHORT
+Floor: A stated cap or closed-loop cooling, plus public reporting
+No cap, no reporting requirement, no recycling requirement and no cooling type. The only water reference in the entire agreement is descriptive: the project scope includes an industrial water building.
+- SIP Agreement, Section 1.1, project description: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+
+### Noise: FALLS SHORT
+Floor: A numeric limit measured at the nearest residence or property line
+Nothing in the agreement. No limit, no measurement point, no setback. Whether county zoning imposes one is a gap I have not closed.
+- SIP Agreement, full text, which contains no noise provision: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+
+### Jobs: FALLS SHORT
+Floor: Binding job commitments with a consequence, not projections
+SOFTENING LANGUAGE: "The headcount lives in a recital, which says the project "is expected to include" the jobs rather than committing to them."
+One real hook and no number behind it. The 80 permanent jobs everyone cites is a recital, not a covenant, and the state program has no employment criteria at all, which Business Oregon says in its own memo. What is enforceable is narrower and more interesting: Section 5.3 requires the company to enter a first source hiring agreement with third parties acceptable to the county, and the county is to be designated a third party beneficiary entitled to enforce its terms. That is a genuine lever over how hiring happens. It says nothing about how many people get hired, and there is no consequence for missing 80.
+- SIP Agreement, Section 5.3, first source hiring agreement: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+- SIP Agreement, recitals, the 80 jobs expectation: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+- Business Oregon memo, p. 2: "No employment criteria" https://www.oregon.gov/biz/Publications/Boards/Business%20Oregon%20Commission/2023/AmazonSIPAgendaItem.pdf
+
+### Local contracting: FALLS SHORT
+Floor: Local subcontracting goals and haul-route road repair paid by the operator
+No local subcontracting requirement and no haul route or road repair obligation. The infrastructure contribution is the $5,000,000 community development payment, which the agreement says is intended for capital improvements while disclaiming any obligation to fund bonded debt or any requirement that the county spend it that way. The company does agree to pay standard permit fees and, where it has a choice, to pull permits locally rather than from the state, and to pay 100% of what it would have owed on voter approved bonds passed after the agreement date.
+- SIP Agreement, Sections 5.1(d), 5.1(f) and 5.1(h): https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+
+### Transparency: FALLS SHORT
+Floor: No NDA, the agreement is public, and an independent audit on a schedule
+SOFTENING LANGUAGE: "Section 10.1 commits county staff to "exercise the utmost discretion in oral and written communications.""
+No non-disclosure agreement, and the agreement itself is published in a public packet. Section 10 then builds most of the same effect into the public records process. County staff commit to exercise the utmost discretion in oral and written communications. On any records request touching the company, the county must notify it within three business days, the company has nine business days to decide whether to fight release, and only if it does not respond may the county release. The company indemnifies the county's costs of fighting the request, including its attorney fees, which quietly removes the main practical reason a county would rather just disclose. Reporting is statutory only and self certified; there is no independent audit and no dashboard. The public hearing that preceded a fifteen year, nine figure exemption drew no testimony at all, for or against, in person or online.
+- SIP Agreement, Section 10, confidentiality and public records: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+- SIP Agreement, Sections 5.4 and 6.1, statutory annual report and invoice: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+- Board minutes, April 5, 2023, p. 6, public hearing with no testimony: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/16576/4-5-23_board_minutes_9-00_am.pdf
+
+### Tax incentives: FALLS SHORT
+Floor: A but-for test before any abatement, with the forgone revenue stated
+Fifteen years of partial property tax exemption with a fee in lieu, and the state published the arithmetic, which almost nobody does. Business Oregon's own memo: about $195 million of property tax otherwise due, about $31 million paid on the non exempt portion, about $33 million in community service fees, and nearly $18 million in negotiated payments, leaving the company a net benefit of about $113 million. The taxable floor is $100 million of assessed value for a rural project over a billion dollars, escalating 3% a year. There is no but for test in the statute or the agreement. The state's findings are eligibility findings, that the project is traded sector, rural and over $25 million, which is a different question from whether the exemption changed the outcome.
+- Business Oregon memo, p. 3, taxes otherwise due and net benefit: https://www.oregon.gov/biz/Publications/Boards/Business%20Oregon%20Commission/2023/AmazonSIPAgendaItem.pdf
+- SIP Agreement, Sections 3 and 5.1, exemption period and fee structure: https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/packets/16576/4-5-23_agenda_packet_redacted.pdf
+
+### Reported criticisms
+- Three former officials, a county commissioner and two port commissioners, owned a fiber company that sold services to the Amazon data centers while they voted on Amazon's incentives and land. State ethics staff recommended penalties against all three. (https://www.governing.com/politics/oregon-county-officials-benefited-personally-from-amazon-deal)
+- A sitting commissioner abstained on this very agreement, stating on the record that it could affect a business he was associated with and that he would not participate until an ethics complaint was resolved. (https://www.morrowcountyor.gov/sites/default/files/fileattachments/board_of_commissioners/meeting/16576/4-5-23_board_minutes_9-00_am.pdf)
+- County commissioners hired outside counsel in 2022 specifically to get a better deal, on the view that the existing agreements returned too little. (https://www.opb.org/article/2022/05/23/morrow-county-seeks-better-data-center-tax-deal-with-amazon/)
+- Asked how many permanent jobs six new data centers would create, the county chair said the company had not said yet and that he did not have the figure. (https://www.opb.org/article/2023/05/19/amazon-data-center-oregon-morrow-county/)
 
 ---
 
