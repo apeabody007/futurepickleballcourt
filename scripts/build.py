@@ -658,6 +658,177 @@ def render_deal_page(deal, deals):
     return "\n".join(h) + "\n"
 
 
+SHORT_LBL = {"community_fund": "Fund", "clawbacks": "Claw", "decommissioning": "Decom",
+             "grid_costs": "Grid", "water": "Water", "noise": "Noise", "jobs": "Jobs",
+             "local_contracting": "Local", "transparency": "Transp", "tax": "Tax"}
+HEAD_LBL = {"community_fund": "Community fund", "clawbacks": "Claw&shy;backs",
+            "decommissioning": "Decommis&shy;sioning", "grid_costs": "Grid costs",
+            "water": "Water", "noise": "Noise", "jobs": "Jobs",
+            "local_contracting": "Local con&shy;tracting", "transparency": "Transpar&shy;ency",
+            "tax": "Tax breaks"}
+STAMP_WORD = {"meets": "Met", "falls_short": "Short", "unknown": "?", "n/a": "n/a"}
+VERIF_SHORT = {"primary": "document", "press": "press", "unverified": "unverified"}
+
+
+def render_matrix(deals):
+    """The scorecard, in the HTML. JavaScript only attaches behaviour to it."""
+    keys = list(FLOOR["clauses"])
+    h = ['<colgroup><col class="c-name">' + "<col>" * len(keys) + '<col class="c-ver"></colgroup>']
+    h.append('<thead><tr><th scope="col">Deal</th>'
+             + "".join(f'<th scope="col">{HEAD_LBL.get(k, esc(FLOOR["clauses"][k]["label"]))}</th>' for k in keys)
+             + '<th scope="col">Source</th></tr></thead><tbody>')
+    for i, d in enumerate(deals):
+        j, s = d["jurisdiction"], score(d)
+        place = f"{j['locality']}, {j['state']}"
+        who = short_name(d) or d["project"].split(",")[0]
+        h.append(f'<tr class="deal" id="{esc(d["id"])}" data-i="{i}" tabindex="0" role="button"'
+                 f' aria-expanded="false" aria-controls="sheet"'
+                 f' aria-label="{esc(place)}. Show the terms of this agreement."'
+                 f' style="animation-delay:{i * 60}ms">'
+                 f'<td><span class="name"><span class="idx">A-{i + 1}</span>{esc(place)}</span>'
+                 f'<span class="who"><span class="idx"></span>{esc(who)}</span></td>')
+        for k in keys:
+            v = s[k]
+            said = f'{FLOOR["clauses"][k]["label"]}: {v.replace("_", " ")}'
+            h.append(f'<td><span class="lbl" aria-hidden="true">{SHORT_LBL[k]}</span>'
+                     f'<span class="st {_cls(v)}" aria-hidden="true">{STAMP_WORD[v]}</span>'
+                     f'<span class="sr">{esc(said)}</span></td>')
+        h.append(f'<td>{esc(VERIF_SHORT.get(d["verification"], d["verification"]))}</td></tr>')
+    h.append("</tbody>")
+    return "".join(h)
+
+
+def render_findings_cards(deals):
+    return "".join(f'<div class="finding"><h3>{esc(t)}</h3><p>{esc(body)}</p></div>'
+                   for t, body in findings(deals))
+
+
+def render_checklist_html(deals):
+    rows = checklist_rows(deals)
+    if not CHECKLIST or not rows:
+        return "", "", ""
+    src = CHECKLIST["source"]
+    note = (f'{esc(CHECKLIST["note"])} <a href="{esc(src["url"])}" rel="noopener">{esc(src["what"])}</a>. '
+            f'{esc(src["rule"])}')
+    body = ['<div class="ckhead"><div>What he asked for</div><div>Clears it</div><div>Best on record</div></div>']
+    for r in rows:
+        if r["best_where"]:
+            best = f'<a href="#{esc(r["best_id"])}">{esc(r["best_where"])}</a>'
+            if not r["best_meets"]:
+                best += '<span class="tag">closest, still short</span>'
+        else:
+            best = "none"
+        zero = " zero" if r["met"] == 0 else ""
+        body.append(f'<div class="ckrow"><div class="ask">{esc(r["ask"])}</div>'
+                    f'<div class="cnt{zero}"><b>{r["met"]}</b> of {r["of"]}</div>'
+                    f'<div class="best">{best}</div></div>')
+    gaps = "<br><br>".join(f'<b>Not scored: {esc(x["ask"])}.</b> {esc(x["why"])}'
+                           for x in CHECKLIST["not_scored"])
+    gaps += "<br><br>" + esc(src["note"])
+    return note, "".join(body), gaps
+
+
+def render_strongest_html(deals):
+    out = []
+    for e in strongest_examples(deals):
+        src = ""
+        if e.get("cite") and e.get("url"):
+            q = f' &ldquo;{esc(e["quote"])}&rdquo;' if e.get("quote") else ""
+            src = (f'<div class="src">{esc(e["cite"])}{q} &middot; '
+                   f'<a href="{esc(e["url"])}" rel="noopener">document</a></div>')
+        elif e.get("url"):
+            src = f'<div class="src"><a href="{esc(e["url"])}" rel="noopener">document</a></div>'
+        lang = ""
+        if e.get("language"):
+            lang = (f'<blockquote class="clause-text">{esc(e["language"])}'
+                    f'<cite>{esc(e["where"])}{", " + esc(e["who"]) if e.get("who") else ""}</cite></blockquote>')
+        who = f', {esc(e["who"])}' if e.get("who") else ""
+        out.append(f'<div class="strongrow"><div>{esc(e["label"])}'
+                   f'<span class="place">{esc(e["where"])}{who}</span></div>'
+                   f'<div><p>{esc(e["why"])}</p>{lang}{src}</div></div>')
+    return "".join(out)
+
+
+def render_wanted_html():
+    return "".join(f'<li><b>{esc(w["place"])}.</b> {esc(w["what"])} '
+                   f'<span class="meta">Needed: {esc(w["document"])}</span></li>'
+                   for w in WANTED.get("wanted", []))
+
+
+def render_floor_html():
+    return "".join(f'<li><b>{esc(c["label"])}.</b> {esc(c["asks"])}</li>'
+                   for c in FLOOR["clauses"].values())
+
+
+def head_to_head(deals):
+    """Best and worst on record, so a reader sees the spread instead of a wall of red.
+
+    Ranked by clauses met, then by how few are unknown, so a deal is not
+    rewarded for being unreadable. Deals with too little information to judge
+    are excluded from the worst slot.
+    """
+    if len(deals) < 2:
+        return None
+    scored = []
+    for d in deals:
+        s = score(d)
+        vals = list(s.values())
+        applicable = [v for v in vals if v != "n/a"]
+        scored.append({
+            "deal": d, "s": s,
+            "met": vals.count("meets"),
+            "short": vals.count("falls_short"),
+            "unknown": vals.count("unknown"),
+            "applicable": len(applicable),
+            "rate": (vals.count("meets") / len(applicable)) if applicable else 0.0,
+        })
+    judged = [x for x in scored if x["unknown"] <= 3]
+    if len(judged) < 2:
+        judged = scored
+    best = max(judged, key=lambda x: (x["rate"], x["met"], -x["unknown"]))
+    worst = min(judged, key=lambda x: (x["rate"], x["met"], -x["short"]))
+    if best["deal"]["id"] == worst["deal"]["id"]:
+        return None
+
+    def side(x):
+        d = x["deal"]
+        j = d["jurisdiction"]
+        return {
+            "id": d["id"],
+            "where": f"{j['locality']}, {j['state']}",
+            "who": short_name(d),
+            "met": x["met"], "short": x["short"], "unknown": x["unknown"],
+            "applicable": x["applicable"],
+            "verification": d["verification"],
+            "scores": x["s"],
+        }
+    return {
+        "best": side(best), "worst": side(worst),
+        "clauses": [{"key": k, "label": v["label"]} for k, v in FLOOR["clauses"].items()],
+    }
+
+
+def render_head_to_head(deals):
+    h2h = head_to_head(deals)
+    if not h2h:
+        return ""
+    b, w = h2h["best"], h2h["worst"]
+    out = ['<div class="h2h">']
+    out.append('<div class="h2hhead"><div></div>'
+               f'<div class="side ok"><a href="#{esc(b["id"])}">{esc(b["where"])}</a>'
+               f'<span>{esc(b["who"])}</span><b>{b["met"]} of {b["applicable"]} met</b></div>'
+               f'<div class="side bad"><a href="#{esc(w["id"])}">{esc(w["where"])}</a>'
+               f'<span>{esc(w["who"])}</span><b>{w["met"]} of {w["applicable"]} met</b></div></div>')
+    for c in h2h["clauses"]:
+        k = c["key"]
+        bv, wv = b["scores"][k], w["scores"][k]
+        out.append(f'<div class="h2hrow"><div class="term">{esc(c["label"])}</div>'
+                   f'<div><span class="st {_cls(bv)}">{STAMP_WORD[bv]}</span></div>'
+                   f'<div><span class="st {_cls(wv)}">{STAMP_WORD[wv]}</span></div></div>')
+    out.append("</div>")
+    return "".join(out)
+
+
 # ------------------------------------------------------------------ rendering
 MARK = {"meets": "✅", "falls_short": "❌", "unknown": "❔", "n/a": "➖"}
 
@@ -738,6 +909,23 @@ def render_markdown(deals):
 
 def render_html(deals):
     template = (ROOT / "docs" / "template.html").read_text()
+    ck_note, ck_rows, ck_gaps = render_checklist_html(deals)
+    for token, html in (
+        ("<!--FINDINGS-->", render_findings_cards(deals)),
+        ("<!--MATRIX-->", render_matrix(deals)),
+        ("<!--CHECKLIST_NOTE-->", ck_note),
+        ("<!--CHECKLIST_ROWS-->", ck_rows),
+        ("<!--CHECKLIST_GAPS-->", ck_gaps),
+        ("<!--STRONGEST-->", render_strongest_html(deals)),
+        ("<!--HEAD2HEAD-->", render_head_to_head(deals)),
+        ("<!--WANTED-->", render_wanted_html()),
+        ("<!--WANTED_NOTE-->", esc(WANTED.get("note", ""))),
+        ("<!--FLOOR-->", render_floor_html()),
+        ("<!--PROMPT-->", esc(render_prompt(deals))),
+        ("<!--COUNT-->", f"{len(deals)} deals &middot; {len(FLOOR['clauses'])} terms"),
+        ("<!--GENERATED-->", date.today().isoformat()),
+    ):
+        template = template.replace(token, html)
     payload = json.dumps({
         "generated": date.today().isoformat(),
         "floor": FLOOR["clauses"],

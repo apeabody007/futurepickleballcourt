@@ -197,6 +197,24 @@
   .promptbar .dl { font-family: var(--mono); font-size: 12.5px; color: var(--ink-2); }
   .promptbox pre { margin: 0; padding: 14px; max-height: 300px; overflow: auto; font-family: var(--mono); font-size: 12.5px; line-height: 1.55; white-space: pre-wrap; color: var(--ink-2); }
 
+  .h2h { border: 1.5px solid var(--rule); }
+  .h2hhead, .h2hrow { display: grid; grid-template-columns: 1fr 150px 150px; gap: 0 14px; align-items: center; }
+  .h2hhead { padding: 14px 18px; border-bottom: 1px solid var(--rule); align-items: end; }
+  .h2hhead .side { text-align: center; font-family: var(--mono); font-size: 12px; line-height: 1.45; }
+  .h2hhead .side a { display: block; font-family: var(--serif); font-size: 19px; letter-spacing: 0; text-decoration: none; border-bottom: 1px solid var(--hair); padding-bottom: 2px; }
+  .h2hhead .side span { display: block; color: var(--ink-3); text-transform: uppercase; letter-spacing: .06em; font-size: 10.5px; margin: 3px 0 5px; }
+  .h2hhead .side b { display: block; font-weight: 400; font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; }
+  .h2hhead .side.ok b { color: var(--met); }
+  .h2hhead .side.bad b { color: var(--stamp); }
+  .h2hrow { padding: 9px 18px; border-bottom: 1px solid var(--hair); }
+  .h2hrow:last-child { border-bottom: 0; }
+  .h2hrow .term { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+  .h2hrow > div:not(.term) { text-align: center; }
+  @media (max-width: 700px) { .h2hhead, .h2hrow { grid-template-columns: 1fr 74px 74px; gap: 0 8px; } .h2hhead .side a { font-size: 15px; } }
+
+  .clause-text { margin: 8px 0 6px; padding: 10px 13px; border-left: 3px solid var(--ink); background: color-mix(in srgb, var(--ink) 4%, transparent); font-family: var(--mono); font-size: 13px; line-height: 1.6; }
+  .clause-text cite { display: block; margin-top: 6px; font-style: normal; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+
   .checklist { border: 1.5px solid var(--rule); }
   .ckrow { display: grid; grid-template-columns: 1fr 96px 210px; gap: 0 18px; align-items: start; padding: 13px 18px; border-bottom: 1px solid var(--hair); }
   .ckrow:last-child { border-bottom: 0; }
@@ -286,7 +304,7 @@
 <div class="page">
   <div class="mast">
     <div><b>Exhibit A</b> &nbsp;·&nbsp; Data center agreements</div>
-    <div>futurepickleballcourt.com &nbsp;·&nbsp; <span id="generated"></span></div>
+    <div>futurepickleballcourt.com &nbsp;·&nbsp; <span id="generated"><!--GENERATED--></span></div>
   </div>
 
   <section class="title">
@@ -396,6 +414,7 @@
   <nav class="jump" aria-label="Jump to a section">
     <a href="#scorecard">The scorecard</a>
     <a href="#use-it">Use it on your own deal</a>
+    <a href="#h2h">Best vs worst</a>
     <a href="#checklist">Cuban's checklist</a>
     <a href="#wanted-sec">What's missing</a>
     <a href="#add">Add a deal</a>
@@ -413,9 +432,9 @@
   </noscript>
 
   <h2 id="findings-sec">What the deals show <span>computed from the files below, not written by hand</span></h2>
-  <div class="findings" id="findings"></div>
+  <div class="findings" id="findings"><!--FINDINGS--></div>
 
-  <h2 id="scorecard">The scorecard <span id="count"></span></h2>
+  <h2 id="scorecard">The scorecard <span id="count"><!--COUNT--></span></h2>
   <p class="intro">Each row is one signed deal. Each column is one term a good deal should include. The stamp says whether the deal clears the bar I set for that term. Tap a row to see exactly what the deal says and where it says it.</p>
   <div class="legend">
     <span><span class="st meets">Met</span> clears the bar</span>
@@ -423,8 +442,13 @@
     <span><span class="st unknown">?</span> I could not find out yet</span>
     <span><span class="st na">n/a</span> does not apply, for example no tax break was given so there is nothing to claw back</span>
   </div>
-  <div class="grid-wrap"><table class="grid" id="matrix"></table></div>
+  <div class="grid-wrap"><table class="grid" id="matrix"><!--MATRIX--></table></div>
   <section id="sheet" class="sheet" hidden></section>
+
+  <h2 id="h2h">Same country, same year, different deal <span>the best and the worst on record</span></h2>
+  <p class="intro">Both of these are signed, both were negotiated by people trying to do right by their town, and they are not close. Note which one is on the right: Lancaster is the agreement most often held up as the model, and it is written up as an example by the Sabin Center at Columbia. It is here because a bar applied evenly does not care who gets praised.</p>
+  <!--HEAD2HEAD-->
+  <p class="note">Ranked by the share of terms met, counting only the terms that apply. A deal that granted no tax break has nothing to claw back, so those clauses are excluded rather than counted against it. Deals with more than three unknown terms are left out of this comparison entirely, because being unreadable is not the same as being bad. That rule currently excludes Bessemer, where a $14.5 billion project was approved with no published economic terms at all.</p>
 
   <h2 id="use-it">Use this on your own deal <span>the questions, already written</span></h2>
   <p class="intro">Mark Cuban's advice was to load these agreements into an AI and ask where the community is getting hurt. Here is that prompt, written out, with the ten terms built in. Paste it into any chat tool along with the agreement you are looking at.</p>
@@ -433,19 +457,19 @@
       <button type="button" id="copyprompt">Copy the prompt</button>
       <span class="dl">or take the data: <a href="/prompt.txt">prompt.txt</a> · <a href="/all.md">all.md</a> · <a href="/all.json">all.json</a></span>
     </div>
-    <pre id="prompttext"></pre>
+    <pre id="prompttext"><!--PROMPT--></pre>
   </div>
 
   <h2 id="checklist">Cuban's checklist, answered <span>what he asked for, against what got signed</span></h2>
-  <p class="intro" id="checklistnote"></p>
-  <div class="checklist" id="checklistrows"></div>
-  <p class="note" id="checklistgaps"></p>
+  <p class="intro" id="checklistnote"><!--CHECKLIST_NOTE--></p>
+  <div class="checklist" id="checklistrows"><!--CHECKLIST_ROWS--></div>
+  <p class="note" id="checklistgaps"><!--CHECKLIST_GAPS--></p>
 
   <h2 id="strongest-sec">The strongest terms anyone has actually signed <span id="strongnote"></span></h2>
-  <div class="strong" id="strongest"></div>
+  <div class="strong" id="strongest"><!--STRONGEST--></div>
 
   <h2 id="add">Add a deal <span>a link to the document, and the place. That is the whole ask.</span></h2>
-  <p class="intro">You do not need to know what a pull request is. Fill in the two required boxes and it opens an email, already written. Nothing here publishes automatically: every submission gets checked against the document first.</p>
+  <p class="intro">Send the document and the place. I will read it and score it. You do not need to know what a pull request is, and you do not need to learn the schema: fill in the two boxes and it writes the email for you. Nothing publishes automatically, because every term gets checked against the document first.</p>
   <div class="submit">
     <div class="fields">
       <label>Place <span class="req">required</span>
@@ -473,16 +497,16 @@
   </div>
 
   <h2 id="wanted-sec">Wanted <span>what would make this better</span></h2>
-  <p class="intro" id="wantednote"></p>
-  <ol class="floor" id="wanted"></ol>
+  <p class="intro" id="wantednote"><!--WANTED_NOTE--></p>
+  <ol class="floor" id="wanted"><!--WANTED--></ol>
   <p class="note">Corrections already made are listed in <a href="https://github.com/apeabody007/futurepickleballcourt/blob/main/CORRECTIONS.md">CORRECTIONS.md</a>. If a number here is wrong, that file is where the fix gets recorded.</p>
 
   <h2 id="bar">The bar <span>what each term has to include to count as met</span></h2>
-  <ol class="floor" id="floor"></ol>
+  <ol class="floor" id="floor"><!--FLOOR--></ol>
   <p class="note">These bars are a position, not a law. They live in a plain text file in the repository, and anyone can propose a change by pull request.</p>
 
   <h2 id="limits">Limits <span>read this before you quote it</span></h2>
-  <ol class="floor" id="limits">
+  <ol class="floor">
     <li><b>Small sample.</b> A handful of deals is a start, not a survey. Do not read a pattern here as the national picture until the count is much higher.</li>
     <li><b>One reader per document.</b> "Read from the signed document" means a person read it and cited sections. It does not mean two people agreed. Corrections are welcome and expected.</li>
     <li><b>Deals change.</b> Agreements get amended, voided, and superseded. Each record carries the date it was last reviewed. Check the primary document before you act on a term.</li>
@@ -503,8 +527,6 @@
   var label = { meets: 'Met', falls_short: 'Short', unknown: '?', 'n/a': 'n/a' };
   var verified = { primary: 'read from the signed document', press: 'from news reports', unverified: 'not yet verified' };
   var cls = function (s) { return s === 'n/a' ? 'na' : s; };
-  document.getElementById('generated').textContent = data.generated;
-  document.getElementById('count').textContent = data.deals.length + ' deals · ' + floorKeys.length + ' terms';
 
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function usd(n) { return n == null ? null : '$' + Number(n).toLocaleString('en-US'); }
@@ -542,6 +564,9 @@
     meta.push(esc(d.agreement_type.replace(/_/g, ' ')) + ', ' + esc(when));
     var who = []; if (d.operator) who.push('operator ' + esc(d.operator)); if (d.developer) who.push('developer ' + esc(d.developer)); if (who.length) meta.push(who.join(' · '));
     var sc = []; if (d.scale) { if (d.scale.mw) sc.push(d.scale.mw + ' MW'); if (d.scale.acres) sc.push(d.scale.acres + ' acres'); if (d.scale.sqft) sc.push(Number(d.scale.sqft).toLocaleString('en-US') + ' sf'); if (d.scale.capex_usd) sc.push(usd(d.scale.capex_usd)); } if (sc.length) meta.push(esc(sc.join(' · ')) + (d.scale.notes ? ' <span class="meta-note">(' + esc(d.scale.notes) + ')</span>' : ''));
+    meta.push('Last reviewed ' + esc(d.last_reviewed)
+      + '. <a href="https://github.com/apeabody007/futurepickleballcourt/blob/main/STATE_RULES.md">State rules</a>'
+      + ' often set a floor this local deal did not.');
     meta.push('documents: ' + d.documents.map(function (x) { return '<a href="' + esc(x.url) + '" rel="noopener">' + esc(x.title) + '</a> (' + esc(x.kind.replace(/_/g, ' ')) + ')'; }).join('; '));
     h += '<div class="sheet-meta">' + meta.join('<br>') + '</div>';
     h += '<div class="clauses">';
@@ -575,25 +600,6 @@
   }
 
   var t = document.getElementById('matrix');
-  var short = { community_fund: 'Fund', clawbacks: 'Claw', decommissioning: 'Decom', grid_costs: 'Grid', water: 'Water', noise: 'Noise', jobs: 'Jobs', local_contracting: 'Local', transparency: 'Transp', tax: 'Tax' };
-  var head = '<colgroup><col class="c-name">' + floorKeys.map(function () { return '<col>'; }).join('') + '<col class="c-ver"></colgroup>';
-  var headLabel = { community_fund: 'Community fund', clawbacks: 'Claw&shy;backs', decommissioning: 'Decommis&shy;sioning', grid_costs: 'Grid costs', water: 'Water', noise: 'Noise', jobs: 'Jobs', local_contracting: 'Local con&shy;tracting', transparency: 'Transpar&shy;ency', tax: 'Tax breaks' };
-  head += '<thead><tr><th scope="col">Deal</th>' + floorKeys.map(function (k) { return '<th scope="col">' + (headLabel[k] || esc(data.floor[k].label)) + '</th>'; }).join('') + '<th scope="col">Source</th></tr></thead>';
-  var rows = data.deals.map(function (d, i) {
-    var j = d.jurisdiction;
-    var r = '<tr class="deal" id="' + esc(d.id) + '" data-i="' + i + '" tabindex="0" role="button" aria-expanded="false" aria-controls="sheet"'
-      + ' aria-label="' + esc(j.locality + ', ' + j.state + '. Show the terms of this agreement.') + '"'
-      + ' style="animation-delay:' + (i * 60) + 'ms"><td><span class="name"><span class="idx">A-' + (i + 1) + '</span>' + esc(j.locality) + ', ' + esc(j.state) + '</span><span class="who"><span class="idx"></span>' + esc(d._label || d.project.split(',')[0]) + '</span></td>';
-    r += floorKeys.map(function (k) {
-      var said = data.floor[k].label + ': ' + d.score[k].replace('_', ' ');
-      return '<td><span class="lbl" aria-hidden="true">' + (short[k] || k) + '</span>'
-        + '<span class="st ' + cls(d.score[k]) + '" aria-hidden="true">' + label[d.score[k]] + '</span>'
-        + '<span class="sr">' + esc(said) + '</span></td>';
-    }).join('');
-    r += '<td>' + esc({ primary: 'document', press: 'press', unverified: 'unverified' }[d.verification] || d.verification) + '</td></tr>';
-    return r;
-  }).join('');
-  t.innerHTML = head + '<tbody>' + rows + '</tbody>';
 
   var panel = document.getElementById('sheet');
   function closeSheet(keepHash) {
@@ -649,21 +655,14 @@
   openFromHash();
   window.addEventListener('hashchange', openFromHash);
 
-  var fEl = document.getElementById('findings');
-  if (fEl) {
-    fEl.innerHTML = (data.findings || []).map(function (f) {
-      return '<div class="finding"><h3>' + esc(f.title) + '</h3><p>' + esc(f.body) + '</p></div>';
-    }).join('');
-  }
 
   var pt = document.getElementById('prompttext');
   if (pt) {
-    pt.textContent = data.prompt || '';
     var btn = document.getElementById('copyprompt');
     btn.addEventListener('click', function () {
       var done = function () { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy the prompt'; }, 1800); };
       if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(data.prompt).then(done, function () { fallback(); });
+        navigator.clipboard.writeText(pt.textContent).then(done, function () { fallback(); });
       } else { fallback(); }
       function fallback() {
         var r = document.createRange(); r.selectNodeContents(pt);
@@ -671,41 +670,6 @@
         try { document.execCommand('copy'); done(); } catch (e) { btn.textContent = 'Select and copy'; }
       }
     });
-  }
-
-  var ck = data.checklist;
-  if (ck) {
-    document.getElementById('checklistnote').innerHTML = esc(ck.note) +
-      ' <a href="' + esc(ck.source.url) + '" rel="noopener">' + esc(ck.source.what) + '</a>. ' + esc(ck.source.rule);
-    document.getElementById('checklistrows').innerHTML =
-      '<div class="ckhead"><div>What he asked for</div><div>Clears it</div><div>Best on record</div></div>' +
-      (ck.rows || []).map(function (r) {
-        var best = r.best_where
-          ? '<a href="#' + esc(r.best_id) + '">' + esc(r.best_where) + '</a>'
-            + (r.best_meets ? '' : '<span class="tag">closest, still short</span>')
-          : 'none';
-        return '<div class="ckrow"><div class="ask">' + esc(r.ask) + '</div>'
-          + '<div class="cnt' + (r.met === 0 ? ' zero' : '') + '"><b>' + r.met + '</b> of ' + r.of + '</div>'
-          + '<div class="best">' + best + '</div></div>';
-      }).join('');
-    document.getElementById('checklistgaps').innerHTML =
-      (ck.not_scored || []).map(function (x) {
-        return '<b>Not scored: ' + esc(x.ask) + '.</b> ' + esc(x.why);
-      }).join('<br><br>') + '<br><br>' + esc(ck.source.note);
-  }
-
-  var sn = document.getElementById('strongnote');
-  if (sn) sn.textContent = data.strongest_note ? '' : '';
-  var strongEl = document.getElementById('strongest');
-  if (strongEl) {
-    strongEl.innerHTML = (data.strongest || []).map(function (e) {
-      var src = '';
-      if (e.cite && e.url) src = '<div class="src">' + esc(e.cite) + (e.quote ? ' &ldquo;' + esc(e.quote) + '&rdquo;' : '') + ' &middot; <a href="' + esc(e.url) + '" rel="noopener">document</a></div>';
-      else if (e.url) src = '<div class="src"><a href="' + esc(e.url) + '" rel="noopener">document</a></div>';
-      return '<div class="strongrow"><div>' + esc(e.label) +
-        '<span class="place">' + esc(e.where) + (e.who ? ', ' + esc(e.who) : '') + '</span></div>' +
-        '<div><p>' + esc(e.why) + '</p>' + src + '</div></div>';
-    }).join('');
   }
 
   (function () {
@@ -745,16 +709,7 @@
     });
   })();
 
-  var wn = document.getElementById('wantednote');
-  if (wn) wn.textContent = data.wanted_note || '';
-  var wEl = document.getElementById('wanted');
-  if (wEl) {
-    wEl.innerHTML = (data.wanted || []).map(function (w) {
-      return '<li><b>' + esc(w.place) + '.</b> ' + esc(w.what) + ' <span class="meta">Needed: ' + esc(w.document) + '</span></li>';
-    }).join('');
-  }
 
-  document.getElementById('floor').innerHTML = floorKeys.map(function (k) { return '<li><b>' + esc(data.floor[k].label) + '.</b> ' + esc(data.floor[k].asks) + '</li>'; }).join('');
 })();
 </script>
 </body>
