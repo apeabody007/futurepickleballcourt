@@ -20,7 +20,12 @@
       ],
       "strongest": {
         "deal": "us-mo-st-louis-2026",
-        "why": "$30 per square foot of approved data center, so the fund scales with what actually gets built instead of being a flat headline number."
+        "why": "$30 per square foot of approved data center, so the fund scales with what actually gets built instead of being a flat headline number.",
+        "language": {
+          "text": "$30 per square foot of approved data center development, an estimated $15,750,000, to a Fund.",
+          "cite": "St. Louis community benefits term sheet, p. 2",
+          "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf"
+        }
       }
     },
     "clawbacks": {
@@ -40,7 +45,12 @@
       ],
       "strongest": {
         "deal": "us-mo-st-louis-2026",
-        "why": "Liquidated damages of $2,000 per job short of a 25, 50, then 100 job ladder for 20 years, plus $15,000 for every $100,000 of tax revenue missed. Money, per unit missed, not an all-or-nothing default."
+        "why": "Liquidated damages of $2,000 per job short of a 25, 50, then 100 job ladder for 20 years, plus $15,000 for every $100,000 of tax revenue missed. Money, per unit missed, not an all-or-nothing default.",
+        "language": {
+          "text": "Pay $15,000 in liquidated damages for every $100,000 below the projected annual tax revenues if not met by 2029 ... pay $2,000 in liquidated damages for each job short of the required total.",
+          "cite": "St. Louis community benefits term sheet, p. 1",
+          "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf"
+        }
       }
     },
     "decommissioning": {
@@ -64,7 +74,12 @@
       ],
       "strongest": {
         "deal": "us-az-pima-county-2025",
-        "why": "No deal on record posts a bond. The closest is the neighboring town of Marana, which conditioned its approval of the same developer on removing all hardware and securing the property if the use stops."
+        "why": "No deal on record posts a bond. The closest is the neighboring town of Marana, which conditioned its approval of the same developer on removing all hardware and securing the property if the use stops.",
+        "language": {
+          "text": "If the data center use in the Rezoning Area is discontinued, the Property Owners must cause all data center hardware and infrastructure to be removed from the buildings' interior in compliance with all local, state, and federal regulations, and must establish and execute security protocols to ensure the safety and upkeep of the property.",
+          "cite": "Town of Marana Ordinance 2026.002, condition 19",
+          "url": "https://news.azpm.org/p/newsheadlines/2026/1/8/227908-marana-town-council-approves-rezoning-for-luckett-road-project-600-acre-hyperscale-data-center/"
+        }
       }
     },
     "grid_costs": {
@@ -84,7 +99,12 @@
       ],
       "strongest": {
         "deal": "us-oh-new-albany-2025",
-        "why": "Billing demand of at least 85 percent of peak for a twelve year term, an exit fee of 36 months of minimum charges, and collateral of half the total minimum charges unless the customer is investment grade."
+        "why": "Billing demand of at least 85 percent of peak for a twelve year term, an exit fee of 36 months of minimum charges, and collateral of half the total minimum charges unless the customer is investment grade.",
+        "language": {
+          "text": "After the Load Ramp Period, monthly billing demand established hereunder shall not be less than the greater of (a) 85% of the customer's highest previously established monthly billing demand during the past 11 months or (b) the customer's “Minimum Demand” as set forth below.",
+          "cite": "AEP Ohio Schedule DCT, Original Sheet No. 223-4 (PUCO case 24-508-EL-ATA)",
+          "url": "https://ohiocapitaljournal.com/wp-content/uploads/2025/11/modified-tariff-data-centers.pdf"
+        }
       }
     },
     "water": {
@@ -104,7 +124,12 @@
       ],
       "strongest": {
         "deal": "us-pa-lancaster-2025",
-        "why": "A hard cap of 20,000 gallons a day per campus written into the agreement, against a prior industrial user on the same site that drew 100,000 to 125,000."
+        "why": "A hard cap of 20,000 gallons a day per campus written into the agreement, against a prior industrial user on the same site that drew 100,000 to 125,000.",
+        "language": {
+          "text": "The Owners covenant and agree that their use of municipal water shall not exceed twenty thousand (20,000) gallons per day at either of the Campuses.",
+          "cite": "Lancaster AI Hub Community Benefits Agreement, Section 3.4",
+          "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf"
+        }
       }
     },
     "noise": {
@@ -123,7 +148,12 @@
       ],
       "strongest": {
         "deal": "us-va-loudoun-county-2025",
-        "why": "55 dBA at the residential lot line, a study before the first site plan and again within six months of every occupancy permit, mitigation within 60 days of an exceedance, all certified by an acoustical engineer."
+        "why": "55 dBA at the residential lot line, a study before the first site plan and again within six months of every occupancy permit, mitigation within 60 days of an exceedance, all certified by an acoustical engineer.",
+        "language": {
+          "text": "The maximum allowable sound emitted from a data center and its associated mechanical equipment on the Property, as measured at the lot line of any contiguous lot that permits a single-family dwelling as a principal use, shall be 55 dB(A).",
+          "cite": "Cross Mill Center proffer statement, Proffer II.E",
+          "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768"
+        }
       }
     },
     "jobs": {
@@ -255,6 +285,9 @@
       "where": "City of St. Louis, MO",
       "who": "Contour",
       "meets": false,
+      "language": "$30 per square foot of approved data center development, an estimated $15,750,000, to a Fund.",
+      "lang_cite": "St. Louis community benefits term sheet, p. 2",
+      "lang_url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf",
       "cite": "p. 2, Other Community Benefits (Financial)",
       "quote": "$30 per square foot of approved data center development, an estimated $15,750,000, to a Fund",
       "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf"
@@ -268,6 +301,9 @@
       "where": "City of St. Louis, MO",
       "who": "Contour",
       "meets": false,
+      "language": "Pay $15,000 in liquidated damages for every $100,000 below the projected annual tax revenues if not met by 2029 ... pay $2,000 in liquidated damages for each job short of the required total.",
+      "lang_cite": "St. Louis community benefits term sheet, p. 1",
+      "lang_url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf",
       "cite": "p. 1, Tax Revenue & Job Requirements",
       "quote": "pay $15,000 in liquidated damages for every $100,000 below the projected annual tax revenues if not met by 2029",
       "url": "https://www.stlouis-mo.gov/government/departments/mayor/documents/upload/CBA-provisions.pdf"
@@ -281,6 +317,9 @@
       "where": "Pima County, AZ",
       "who": "Beale Infrastructure",
       "meets": false,
+      "language": "If the data center use in the Rezoning Area is discontinued, the Property Owners must cause all data center hardware and infrastructure to be removed from the buildings' interior in compliance with all local, state, and federal regulations, and must establish and execute security protocols to ensure the safety and upkeep of the property.",
+      "lang_cite": "Town of Marana Ordinance 2026.002, condition 19",
+      "lang_url": "https://news.azpm.org/p/newsheadlines/2026/1/8/227908-marana-town-council-approves-rezoning-for-luckett-road-project-600-acre-hyperscale-data-center/",
       "cite": "full agreement",
       "quote": null,
       "url": "https://content.civicplus.com/api/assets/7477affb-e443-412c-b8db-1bc3bb3794f6"
@@ -294,6 +333,9 @@
       "where": "City of New Albany, OH",
       "who": "Meta",
       "meets": true,
+      "language": "After the Load Ramp Period, monthly billing demand established hereunder shall not be less than the greater of (a) 85% of the customer's highest previously established monthly billing demand during the past 11 months or (b) the customer's “Minimum Demand” as set forth below.",
+      "lang_cite": "AEP Ohio Schedule DCT, Original Sheet No. 223-4 (PUCO case 24-508-EL-ATA)",
+      "lang_url": "https://ohiocapitaljournal.com/wp-content/uploads/2025/11/modified-tariff-data-centers.pdf",
       "cite": "Schedule DCT, sheets 223-1 to 223-7",
       "quote": null,
       "url": "https://ohiocapitaljournal.com/wp-content/uploads/2025/11/modified-tariff-data-centers.pdf"
@@ -307,6 +349,9 @@
       "where": "City of Lancaster, PA",
       "who": "CoreWeave",
       "meets": false,
+      "language": "The Owners covenant and agree that their use of municipal water shall not exceed twenty thousand (20,000) gallons per day at either of the Campuses.",
+      "lang_cite": "Lancaster AI Hub Community Benefits Agreement, Section 3.4",
+      "lang_url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf",
       "cite": "Section 3.4",
       "quote": "shall not exceed twenty thousand (20,000) gallons per day at either of the Campuses",
       "url": "https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Lancaster-CBA-Draft.pdf"
@@ -320,6 +365,9 @@
       "where": "Loudoun County, VA",
       "who": "Cross Mill",
       "meets": true,
+      "language": "The maximum allowable sound emitted from a data center and its associated mechanical equipment on the Property, as measured at the lot line of any contiguous lot that permits a single-family dwelling as a principal use, shall be 55 dB(A).",
+      "lang_cite": "Cross Mill Center proffer statement, Proffer II.E",
+      "lang_url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768",
       "cite": "Proffer II.E, noise; Proffer III.C.b, generators; staff report p. 2 item 6, setback",
       "quote": null,
       "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768"
@@ -333,6 +381,9 @@
       "where": "Richland Parish, LA",
       "who": "Meta",
       "meets": true,
+      "language": null,
+      "lang_cite": null,
+      "lang_url": null,
       "cite": "p. 1, project description",
       "quote": "expected to employ more than 500 permanent employees with an average salary of $82,000",
       "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D"
@@ -346,6 +397,9 @@
       "where": "City of Cedar Rapids, IA",
       "who": "QTS",
       "meets": true,
+      "language": null,
+      "lang_cite": null,
+      "lang_url": null,
       "cite": "Section 6.7(a), PDF pp. 19 to 20",
       "quote": "75% of the electric franchise fee collected",
       "url": "https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf"
@@ -359,6 +413,9 @@
       "where": "Loudoun County, VA",
       "who": "Cross Mill",
       "meets": true,
+      "language": null,
+      "lang_cite": null,
+      "lang_url": null,
       "cite": "Proffer II.E noise studies; Proffer V.A.g annual metering reports",
       "quote": null,
       "url": "https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768"
@@ -372,6 +429,9 @@
       "where": "Loudoun County, VA",
       "who": "Cross Mill",
       "meets": false,
+      "language": null,
+      "lang_cite": null,
+      "lang_url": null,
       "cite": "pp. 34 to 35, tax rates and computer equipment revenue; p. 363, stabilization fund",
       "quote": null,
       "url": "https://www.loudoun.gov/DocumentCenter/View/221475/FY-2027-Adopted-Budget-Document"

@@ -299,6 +299,9 @@ def strongest_examples(deals):
             "where": f"{d['jurisdiction']['locality']}, {d['jurisdiction']['state']}",
             "who": short_name(d),
             "meets": score(d)[name] == "meets",
+            "language": (s.get("language") or {}).get("text"),
+            "lang_cite": (s.get("language") or {}).get("cite"),
+            "lang_url": (s.get("language") or {}).get("url"),
             "cite": (cites[0].get("where") if cites else None),
             "quote": next((c.get("quote") for c in cites if c.get("quote")), None),
             "url": (cites[0]["url"] if cites else (d["documents"][0]["url"] if d["documents"] else None)),
@@ -740,8 +743,13 @@ def render_strongest_html(deals):
             src = f'<div class="src"><a href="{esc(e["url"])}" rel="noopener">document</a></div>'
         lang = ""
         if e.get("language"):
+            cite = e.get("lang_cite") or e["where"]
+            if e.get("lang_url"):
+                cite = f'<a href="{esc(e["lang_url"])}" rel="noopener">{esc(cite)}</a>'
+            else:
+                cite = esc(cite)
             lang = (f'<blockquote class="clause-text">{esc(e["language"])}'
-                    f'<cite>{esc(e["where"])}{", " + esc(e["who"]) if e.get("who") else ""}</cite></blockquote>')
+                    f'<cite>{cite}</cite></blockquote>')
         who = f', {esc(e["who"])}' if e.get("who") else ""
         out.append(f'<div class="strongrow"><div>{esc(e["label"])}'
                    f'<span class="place">{esc(e["where"])}{who}</span></div>'
