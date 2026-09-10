@@ -153,7 +153,8 @@
           "url": "https://psc.wi.gov/Documents/PressReleases/04.24.2026PressRelease.PDF",
           "where": "PSC news release on docket 6630-TE-113 and transmission cost shifting"
         }
-      ]
+      ],
+      "minimum_bill_survives_exit": true
     },
     "water": {
       "present": false,

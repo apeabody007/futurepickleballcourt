@@ -93,6 +93,11 @@
           "minimum_bill",
           "eq",
           true
+        ],
+        [
+          "minimum_bill_survives_exit",
+          "eq",
+          true
         ]
       ],
       "strongest": {
@@ -118,6 +123,21 @@
           "reporting",
           "eq",
           true
+        ],
+        [
+          "any",
+          "any",
+          [
+            [
+              "limit_gpd",
+              "not_null"
+            ],
+            [
+              "cooling",
+              "eq",
+              "closed_loop"
+            ]
+          ]
         ]
       ],
       "strongest": {

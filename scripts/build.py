@@ -164,6 +164,30 @@ def _check(clause, field, op, arg):
     raise ValueError(op)
 
 
+def _unknown(v):
+    """null, an empty list, and the literal "unknown" all mean nobody knows yet."""
+    return v is None or v == [] or v == "unknown"
+
+
+def _rule_state(clause, rule):
+    """Return 'pass', 'fail', or 'unknown' for one rule against one clause.
+
+    The "any" op takes a list of sub-rules and holds if at least one of them
+    passes, which is how a floor says "a cap OR closed-loop cooling". A group
+    only fails once every sub-rule is known and none of them passed.
+    """
+    field, op = rule[0], rule[1]
+    arg = rule[2] if len(rule) > 2 else None
+    if op == "any":
+        states = [_rule_state(clause, sub) for sub in arg]
+        if "pass" in states:
+            return "pass"
+        return "unknown" if "unknown" in states else "fail"
+    if _unknown(clause.get(field)):
+        return "unknown"
+    return "pass" if _check(clause, field, op, arg) else "fail"
+
+
 def score(deal):
     """Return {clause: 'meets' | 'falls_short' | 'unknown' | 'n/a'} for one deal.
 
@@ -179,13 +203,10 @@ def score(deal):
         if clause.get("present") is False:
             out[name] = "falls_short"
             continue
-        rules = [(r[0], r[1], r[2] if len(r) > 2 else None) for r in spec["rule"]]
-        # null, an empty list, and the literal "unknown" all mean nobody knows yet
-        unknown = lambda v: v is None or v == [] or v == "unknown"
-        failed = any(not unknown(clause.get(f)) and not _check(clause, f, op, arg)
-                     for f, op, arg in rules)
-        missing = any(unknown(clause.get(f)) for f, _, _ in rules)
-        out[name] = "falls_short" if failed else ("unknown" if missing else "meets")
+        states = [_rule_state(clause, r) for r in spec["rule"]]
+        out[name] = ("falls_short" if "fail" in states
+                     else "unknown" if "unknown" in states
+                     else "meets")
     return out
 
 
@@ -221,16 +242,22 @@ def findings(deals):
                     f"In none of the {n} deals does the money come back simply because the facility stops running."))
 
     mb = [d for d in deals if d["terms"]["grid_costs"].get("minimum_bill") is True]
-    # A minimum bill is the term that keeps a tenant paying after it stops drawing power. Every one
-    # of these comes from the utility's rate structure, so we say that rather than guessing at which
-    # regulator wrote it: the governing bodies differ and their names do not parse reliably.
+    # A minimum bill only protects anyone if it survives the operator leaving, so count that
+    # separately rather than treating every minimum bill as the same thing.
     if mb and all(d["terms"]["grid_costs"].get("governed_by") for d in mb):
         places = ", ".join(sorted(d["jurisdiction"]["locality"] for d in mb))
+        surv = [d["terms"]["grid_costs"].get("minimum_bill_survives_exit") for d in mb]
+        lives, dies, murky = surv.count(True), surv.count(False), sum(1 for v in surv if v is None)
+        tail = f"{lives} of those keep the operator paying after it stops drawing power"
+        if dies:
+            tail += f", {dies} expressly does not" if dies == 1 else f", {dies} expressly do not"
+        if murky:
+            tail += f", and {murky} is not public enough to tell" if murky == 1 \
+                else f", and {murky} are not public enough to tell"
         out.append(("The one real protection was not negotiated locally.",
-                    f"{len(mb)} of the {n} deals carry a minimum electric bill, the term that keeps a tenant paying "
-                    f"if it stops drawing power ({places}). Every one of them comes from the utility's own rate "
-                    "structure, not from anything the city or county negotiated, and how far each survives an "
-                    "actual departure varies."))
+                    f"{len(mb)} of the {n} deals carry a minimum electric bill ({places}). {tail}. Every one of "
+                    "them comes from the utility's own rate structure, not from anything the city or county "
+                    "negotiated."))
 
     nda = count(lambda d: d["terms"]["transparency"].get("nda") is True)
     if nda:
@@ -516,6 +543,7 @@ def _facts_for(key, c):
         "decommissioning": [("instrument", c.get("instrument")), ("amount", usd(c.get("amount_usd")))],
         "grid_costs": [("interconnect paid by", c.get("who_pays_interconnect")),
                        ("minimum bill", yn(c.get("minimum_bill"))),
+                       ("survives exit", yn(c.get("minimum_bill_survives_exit"))),
                        ("term", f"{c['term_years']} yrs" if c.get("term_years") else None),
                        ("governed by", c.get("governed_by"))],
         "water": [("cap", f"{c['limit_gpd']:,} gal/day" if c.get("limit_gpd") else None),

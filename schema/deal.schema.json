@@ -452,6 +452,13 @@
               ],
               "description": "Is there a take-or-pay or minimum demand charge that survives the tenant leaving?"
             },
+            "minimum_bill_survives_exit": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "Does the minimum bill still have to be paid if the operator stops drawing power or leaves? A termination payment, exit fee, or a fixed term that runs regardless. A minimum bill that only applies while the facility is running protects nobody at the moment it matters."
+            },
             "term_years": {
               "type": [
                 "number",

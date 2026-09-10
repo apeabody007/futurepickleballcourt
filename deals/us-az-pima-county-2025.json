@@ -133,7 +133,8 @@
         "https://azluminaria.org/2025/12/03/arizona-corporation-commission-gives-green-light-to-project-blue-power-agreement/",
         "https://news.azpm.org/p/azpmnews/2025/12/10/227598-arizona-regulators-approve-tep-deal-to-power-controversial-pima-county-data-center",
         "https://www.azag.gov/press-release/attorney-general-mayes-appeals-arizona-corporation-commissions-approval-tucson"
-      ]
+      ],
+      "minimum_bill_survives_exit": true
     },
     "water": {
       "present": true,

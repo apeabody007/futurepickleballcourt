@@ -132,7 +132,8 @@
           "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
           "where": "Economic Development Agreement, full text, which contains no electricity provision"
         }
-      ]
+      ],
+      "minimum_bill_survives_exit": true
     },
     "water": {
       "present": true,

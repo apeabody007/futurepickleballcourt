@@ -534,7 +534,7 @@
     if (key === 'community_fund') { add('amount', usd(c.amount_usd)); add('cadence', c.cadence && c.cadence.replace(/_/g, ' ')); add('scales with project', yn(c.scales_with_project)); add('community seat', yn(c.community_seat)); }
     if (key === 'clawbacks') { add('triggers', c.triggers); add('proportional', yn(c.proportional)); }
     if (key === 'decommissioning') { add('instrument', c.instrument && c.instrument.replace(/_/g, ' ')); add('amount', usd(c.amount_usd)); }
-    if (key === 'grid_costs') { add('interconnect paid by', c.who_pays_interconnect); add('minimum bill', yn(c.minimum_bill)); add('term', c.term_years && c.term_years + ' yrs'); add('governed by', c.governed_by); }
+    if (key === 'grid_costs') { add('interconnect paid by', c.who_pays_interconnect); add('minimum bill', yn(c.minimum_bill)); add('survives exit', yn(c.minimum_bill_survives_exit)); add('term', c.term_years && c.term_years + ' yrs'); add('governed by', c.governed_by); }
     if (key === 'water') { add('cap', c.limit_gpd == null ? null : Number(c.limit_gpd).toLocaleString('en-US') + ' gal/day'); add('reporting', yn(c.reporting)); add('recycling required', yn(c.recycling_required)); add('cooling', c.cooling && c.cooling.replace(/_/g, ' ')); }
     if (key === 'noise') { add('limit', c.limit_dba && c.limit_dba + ' dBA'); add('measured at', c.measured_at); add('setback', c.setback_ft && c.setback_ft + ' ft'); }
     if (key === 'jobs') { add('permanent', c.promised_permanent); add('construction', c.promised_construction); add('local hire', yn(c.local_hire)); add('prevailing wage', yn(c.prevailing_wage)); add('enforceable', yn(c.enforceable)); }

@@ -150,7 +150,8 @@
           "url": "https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF",
           "where": "Sewer agreement, Section 13.3, no debt service charged to the customer"
         }
-      ]
+      ],
+      "minimum_bill_survives_exit": false
     },
     "water": {
       "present": true,

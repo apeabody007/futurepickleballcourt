@@ -161,7 +161,8 @@
           "where": "Direct testimony of Stephen Jenkins, Section III, p. 9",
           "quote": "The cost of the Network Upgrades, including station network upgrades, are recovered in base rates."
         }
-      ]
+      ],
+      "minimum_bill_survives_exit": true
     },
     "water": {
       "present": true,

@@ -9,7 +9,7 @@ Verification levels: primary means a person read the executed document; press me
 
 **Community money, decided without the community.** 10 of the 24 deals set up money for the community. In none of them does a resident or community organization hold a seat on the body that decides how it is spent.
 
-**The one real protection was not negotiated locally.** 8 of the 24 deals carry a minimum electric bill, the term that keeps a tenant paying if it stops drawing power (City of New Albany, City of Papillion and Sarpy County, City of Port Washington, Pima County, Richland Parish, St. Joseph County, Village of Los Lunas, Village of Mount Pleasant). Every one of them comes from the utility's own rate structure, not from anything the city or county negotiated, and how far each survives an actual departure varies.
+**The one real protection was not negotiated locally.** 8 of the 24 deals carry a minimum electric bill (City of New Albany, City of Papillion and Sarpy County, City of Port Washington, Pima County, Richland Parish, St. Joseph County, Village of Los Lunas, Village of Mount Pleasant). 6 of those keep the operator paying after it stops drawing power, 1 expressly does not, and 1 is not public enough to tell. Every one of them comes from the utility's own rate structure, not from anything the city or county negotiated.
 
 **Secrecy is normal.** 8 of the 24 communities signed a nondisclosure agreement. Some barred officials from saying that talks were happening at all, and one required the city to destroy its own notes.
 
@@ -458,7 +458,7 @@ The strongest published statement on ratepayer protection in this benchmark, liv
 - PSC news release on the large load rule adopted in Docket 55378: https://psc.ga.gov/site/assets/files/8617/media_advisory_data_centers_rule_1-23-2025.pdf
 - PSC data center fact sheet, minimum billing and contract term: https://psc.ga.gov/site/downloads/datacenterfactsheet.pdf
 
-### Water: MEETS
+### Water: UNKNOWN
 Floor: A stated cap or closed-loop cooling, plus public reporting
 SOFTENING LANGUAGE: ""A water and sewer usage agreement and/or drought management plan may be required." May."
 Wells are banned outright, which is rare and worth naming: the development shall not use wells to provide water for any purpose. The rezoning conditions require the developer to fund all water and sewer upgrades and, before any building permit, to file a five year water and sewer projection updated at minimum annually. That is a real reporting obligation and better than most places manage. What is missing is the number. There is no gallons per day cap anywhere. The closed loop description comes from the applicant speaking at the planning commission about a neighbouring case, not from a covenant. And the drought protection is optional by its own words.
@@ -924,7 +924,7 @@ The strongest grid terms in this benchmark, and none of them were written by the
 - Final order, Cause No. 46097, testimony on direct connect facility cost assignment: https://www.in.gov/iurc/files/ord_46097_021925.pdf
 - Economic Development Agreement, full text, which contains no electricity provision: https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022
 
-### Water: MEETS
+### Water: UNKNOWN
 Floor: A stated cap or closed-loop cooling, plus public reporting
 SOFTENING LANGUAGE: "The reporting obligation is real but covers groundwater conditions, not the company's own consumption, which no document requires it to disclose."
 Real public reporting and no cap. There is no gallons per day limit, no recycling requirement and no cooling type in any county document. What exists is the groundwater monitoring programme: quarterly depth reporting and twice yearly quality reporting to three public bodies for at least five years, paid by the company, plus a one time fifty dollars an acre water quality fee. That is more public water data than most deals in this benchmark produce. The governing document for supply is missing: the community enhancement agreement recites a separate water and sewer infrastructure agreement with the redevelopment commission which is not attached to any retrievable packet, so the actual volumes and terms are unknown.
@@ -1199,7 +1199,7 @@ None for the data center, and the omission is thrown into relief by what is cove
 - Mixed use development agreement, Exhibit F, Sections II(A)(4) and II(B)(6), accessory solar and wind: https://www.papillion.org/DocumentCenter/View/589
 - Sewer agreement, Section 15, disconnection on cessation of use: https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF
 
-### Grid costs: MEETS
+### Grid costs: FALLS SHORT
 Floor: The operator pays for its own interconnection and carries a minimum bill that survives it leaving
 SOFTENING LANGUAGE: "The tariff frames the duty as applying "during the operation of the Customer's facilities," which is the difference between a minimum bill and a commitment."
 A genuine minimum bill, set by a board rather than a regulator, with no obligation that survives departure. Rate Schedule 261M was approved unanimously in January 2017 and designed with the customer. It applies where the customer owns its own substation, requires at least 20 megawatts at 161 kilovolts, charges a $10,000 monthly service charge and $23.91 per kilowatt of demand, passes through hourly market energy, and carries a minimum monthly bill of $488,200 at 161 kilovolts with energy on top. A 5 percent gross revenue charge goes to the local government in lieu of taxes. Two caveats matter. Nebraska has no public utility commission reviewing these retail rates, so this tariff was never adversarially tested. And the obligation is framed as running during the operation of the customer's facilities: there is no term, no take or pay surviving exit and no stranded cost provision, so the minimum bill protects ratepayers while the campus runs and not after it stops. Any individual service contract, which the regulations permit, is not public. Separately the customer prepaid $13.2 million for the industrial sewer system and is contractually shielded from ever being charged its debt service.

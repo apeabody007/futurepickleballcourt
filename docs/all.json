@@ -95,6 +95,11 @@
           "minimum_bill",
           "eq",
           true
+        ],
+        [
+          "minimum_bill_survives_exit",
+          "eq",
+          true
         ]
       ],
       "strongest": {
@@ -120,6 +125,21 @@
           "reporting",
           "eq",
           true
+        ],
+        [
+          "any",
+          "any",
+          [
+            [
+              "limit_gpd",
+              "not_null"
+            ],
+            [
+              "cooling",
+              "eq",
+              "closed_loop"
+            ]
+          ]
         ]
       ],
       "strongest": {
@@ -265,7 +285,7 @@
     },
     {
       "title": "The one real protection was not negotiated locally.",
-      "body": "8 of the 24 deals carry a minimum electric bill, the term that keeps a tenant paying if it stops drawing power (City of New Albany, City of Papillion and Sarpy County, City of Port Washington, Pima County, Richland Parish, St. Joseph County, Village of Los Lunas, Village of Mount Pleasant). Every one of them comes from the utility's own rate structure, not from anything the city or county negotiated, and how far each survives an actual departure varies."
+      "body": "8 of the 24 deals carry a minimum electric bill (City of New Albany, City of Papillion and Sarpy County, City of Port Washington, Pima County, Richland Parish, St. Joseph County, Village of Los Lunas, Village of Mount Pleasant). 6 of those keep the operator paying after it stops drawing power, 1 expressly does not, and 1 is not public enough to tell. Every one of them comes from the utility's own rate structure, not from anything the city or county negotiated."
     },
     {
       "title": "Secrecy is normal.",
@@ -513,7 +533,7 @@
         "ask": "Do not get stuck with stranded infrastructure if the project is delayed or abandoned",
         "clause": "grid_costs",
         "label": "Grid costs",
-        "met": 3,
+        "met": 2,
         "of": 24,
         "unknown": 8,
         "best_where": "City of New Albany, OH",
@@ -525,9 +545,9 @@
         "ask": "Cap water use, including on the hot days when closed-loop systems still drink",
         "clause": "water",
         "label": "Water",
-        "met": 5,
+        "met": 3,
         "of": 24,
-        "unknown": 4,
+        "unknown": 6,
         "best_where": "City of Lancaster, PA",
         "best_why": "A hard cap of 20,000 gallons a day per campus written into the agreement, against a prior industrial user on the same site that drew 100,000 to 125,000.",
         "best_id": "us-pa-lancaster-2025",
@@ -1282,7 +1302,8 @@
             "https://azluminaria.org/2025/12/03/arizona-corporation-commission-gives-green-light-to-project-blue-power-agreement/",
             "https://news.azpm.org/p/azpmnews/2025/12/10/227598-arizona-regulators-approve-tep-deal-to-power-controversial-pima-county-data-center",
             "https://www.azag.gov/press-release/attorney-general-mayes-appeals-arizona-corporation-commissions-approval-tucson"
-          ]
+          ],
+          "minimum_bill_survives_exit": true
         },
         "water": {
           "present": true,
@@ -2034,7 +2055,7 @@
           "limit_gpd": null,
           "reporting": true,
           "recycling_required": false,
-          "cooling": "closed_loop",
+          "cooling": "unknown",
           "notes": "Wells are banned outright, which is rare and worth naming: the development shall not use wells to provide water for any purpose. The rezoning conditions require the developer to fund all water and sewer upgrades and, before any building permit, to file a five year water and sewer projection updated at minimum annually. That is a real reporting obligation and better than most places manage. What is missing is the number. There is no gallons per day cap anywhere. The closed loop description comes from the applicant speaking at the planning commission about a neighbouring case, not from a covenant. And the drought protection is optional by its own words.",
           "hedge": "\"A water and sewer usage agreement and/or drought management plan may be required.\" May.",
           "sources": [
@@ -2198,7 +2219,7 @@
         "clawbacks": "unknown",
         "decommissioning": "falls_short",
         "grid_costs": "unknown",
-        "water": "meets",
+        "water": "unknown",
         "noise": "meets",
         "jobs": "falls_short",
         "local_contracting": "falls_short",
@@ -3539,7 +3560,8 @@
               "url": "https://www.sjcindiana.gov/AgendaCenter/ViewFile/Agenda/_08132024-2022",
               "where": "Economic Development Agreement, full text, which contains no electricity provision"
             }
-          ]
+          ],
+          "minimum_bill_survives_exit": true
         },
         "water": {
           "present": true,
@@ -3686,7 +3708,7 @@
         "clawbacks": "falls_short",
         "decommissioning": "falls_short",
         "grid_costs": "unknown",
-        "water": "meets",
+        "water": "unknown",
         "noise": "falls_short",
         "jobs": "meets",
         "local_contracting": "unknown",
@@ -3834,7 +3856,8 @@
             },
             "https://www.entergylouisiana.com/transmission",
             "https://blog.ucs.org/paul-arbaje/whats-next-after-louisianas-gas-plant-approval-for-meta-data-center/"
-          ]
+          ],
+          "minimum_bill_survives_exit": null
         },
         "water": {
           "present": false,
@@ -4430,7 +4453,8 @@
               "url": "https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF",
               "where": "Sewer agreement, Section 13.3, no debt service charged to the customer"
             }
-          ]
+          ],
+          "minimum_bill_survives_exit": false
         },
         "water": {
           "present": true,
@@ -4587,7 +4611,7 @@
         "community_fund": "falls_short",
         "clawbacks": "falls_short",
         "decommissioning": "falls_short",
-        "grid_costs": "meets",
+        "grid_costs": "falls_short",
         "water": "falls_short",
         "noise": "meets",
         "jobs": "falls_short",
@@ -5093,7 +5117,8 @@
               "where": "Direct testimony of Stephen Jenkins, Section III, p. 9",
               "quote": "The cost of the Network Upgrades, including station network upgrades, are recovered in base rates."
             }
-          ]
+          ],
+          "minimum_bill_survives_exit": true
         },
         "water": {
           "present": true,
@@ -5395,7 +5420,8 @@
             },
             "https://puco.ohio.gov/news/puco-orders-aep-ohio-to-create-data-center-specific-tariff",
             "https://www.occ.ohio.gov/content/data-center-costs-24-0508-el-ata"
-          ]
+          ],
+          "minimum_bill_survives_exit": true
         },
         "water": {
           "present": null,
@@ -7617,7 +7643,8 @@
               "where": "p. 1, heading I",
               "quote": "ATC's Existing Zonal Cost Allocation Method Shifts Large Load Interconnection Costs to Other Wholesale Customers."
             }
-          ]
+          ],
+          "minimum_bill_survives_exit": true
         },
         "water": {
           "present": true,
@@ -7907,7 +7934,8 @@
               "url": "https://psc.wi.gov/Documents/PressReleases/04.24.2026PressRelease.PDF",
               "where": "PSC news release on docket 6630-TE-113 and transmission cost shifting"
             }
-          ]
+          ],
+          "minimum_bill_survives_exit": true
         },
         "water": {
           "present": false,

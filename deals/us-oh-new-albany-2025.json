@@ -4,21 +4,71 @@
   "status": "approved",
   "verification": "primary",
   "short_name": "Meta",
-  "jurisdiction": { "country": "US", "state": "OH", "locality": "City of New Albany", "level": "city" },
+  "jurisdiction": {
+    "country": "US",
+    "state": "OH",
+    "locality": "City of New Albany",
+    "level": "city"
+  },
   "operator": "Meta",
   "developer": "Sidecat LLC",
   "project": "Sidecat data center expansion, New Albany International Business Park (Licking County portion)",
   "agreement_type": "tax_abatement",
-  "dates": { "signed": null, "approved": "2025-12-16", "effective": null },
-  "scale": { "acres": 488, "mw": null, "capex_usd": 1500000000, "sqft": 900000, "notes": "Two 2025 restatements combined: 373.356 acres with about 450,000 sq ft and $750 million approved in September, plus 114.7 acres with about 450,000 sq ft and $750 million approved in December. Construction runs to December 2030. No megawatt figure appears in the public record." },
+  "dates": {
+    "signed": null,
+    "approved": "2025-12-16",
+    "effective": null
+  },
+  "scale": {
+    "acres": 488,
+    "mw": null,
+    "capex_usd": 1500000000,
+    "sqft": 900000,
+    "notes": "Two 2025 restatements combined: 373.356 acres with about 450,000 sq ft and $750 million approved in September, plus 114.7 acres with about 450,000 sq ft and $750 million approved in December. Construction runs to December 2030. No megawatt figure appears in the public record."
+  },
   "documents": [
-    { "title": "Resolution R-30-2025 in the September 2, 2025 council legislation packet, pp. 44 to 46 (third amended and restated CRA agreement)", "url": "https://newalbanyohio.org/wp-content/uploads/2025/08/Proposed-Legislation-9-2-25.pdf", "kind": "primary", "date": "2025-09-02" },
-    { "title": "Resolution R-46-2025 in the December 16, 2025 council legislation packet, pp. 76 to 78 (fourth amended and restated CRA agreement)", "url": "https://newalbanyohio.org/wp-content/uploads/2025/12/Proposed-Legislation-12-16-25-rev-O-45.pdf", "kind": "primary", "date": "2025-12-16" },
-    { "title": "Council minutes, December 16, 2025, pp. 9 to 10 (adopted 6 to 0, minimum service payment discussion)", "url": "https://newalbanyohio.org/wp-content/uploads/2026/01/Council-Minutes-12-16-25.pdf", "kind": "primary", "date": "2025-12-16" },
-    { "title": "Council minutes, September 2, 2025, pp. 6 to 8 (payment in lieu cures for prior shortfalls)", "url": "https://newalbanyohio.org/wp-content/uploads/2025/09/Council-Minutes-9-2-25.pdf", "kind": "primary", "date": "2025-09-02" },
-    { "title": "AEP Ohio Schedule DCT data center tariff, compliance filing (PUCO case 24-508-EL-ATA)", "url": "https://ohiocapitaljournal.com/wp-content/uploads/2025/11/modified-tariff-data-centers.pdf", "kind": "primary", "date": "2025-07-11" },
-    { "title": "Franklin County Tax Incentive Review Council 2025 report (forgone value across New Albany CRAs)", "url": "https://gis.franklincountyohio.gov/Assets/Documents/TIRCreports/2025-TIRC-Report.pdf", "kind": "primary", "date": null },
-    { "title": "City data center transparency site (community participation, finances)", "url": "https://datacenters.newalbanyohio.org/city-finances/", "kind": "government_page", "date": null }
+    {
+      "title": "Resolution R-30-2025 in the September 2, 2025 council legislation packet, pp. 44 to 46 (third amended and restated CRA agreement)",
+      "url": "https://newalbanyohio.org/wp-content/uploads/2025/08/Proposed-Legislation-9-2-25.pdf",
+      "kind": "primary",
+      "date": "2025-09-02"
+    },
+    {
+      "title": "Resolution R-46-2025 in the December 16, 2025 council legislation packet, pp. 76 to 78 (fourth amended and restated CRA agreement)",
+      "url": "https://newalbanyohio.org/wp-content/uploads/2025/12/Proposed-Legislation-12-16-25-rev-O-45.pdf",
+      "kind": "primary",
+      "date": "2025-12-16"
+    },
+    {
+      "title": "Council minutes, December 16, 2025, pp. 9 to 10 (adopted 6 to 0, minimum service payment discussion)",
+      "url": "https://newalbanyohio.org/wp-content/uploads/2026/01/Council-Minutes-12-16-25.pdf",
+      "kind": "primary",
+      "date": "2025-12-16"
+    },
+    {
+      "title": "Council minutes, September 2, 2025, pp. 6 to 8 (payment in lieu cures for prior shortfalls)",
+      "url": "https://newalbanyohio.org/wp-content/uploads/2025/09/Council-Minutes-9-2-25.pdf",
+      "kind": "primary",
+      "date": "2025-09-02"
+    },
+    {
+      "title": "AEP Ohio Schedule DCT data center tariff, compliance filing (PUCO case 24-508-EL-ATA)",
+      "url": "https://ohiocapitaljournal.com/wp-content/uploads/2025/11/modified-tariff-data-centers.pdf",
+      "kind": "primary",
+      "date": "2025-07-11"
+    },
+    {
+      "title": "Franklin County Tax Incentive Review Council 2025 report (forgone value across New Albany CRAs)",
+      "url": "https://gis.franklincountyohio.gov/Assets/Documents/TIRCreports/2025-TIRC-Report.pdf",
+      "kind": "primary",
+      "date": null
+    },
+    {
+      "title": "City data center transparency site (community participation, finances)",
+      "url": "https://datacenters.newalbanyohio.org/city-finances/",
+      "kind": "government_page",
+      "date": null
+    }
   ],
   "terms": {
     "community_fund": {
@@ -30,22 +80,39 @@
       "community_seat": false,
       "notes": "No community fund in this agreement. The city runs a separate city-wide mechanism: community development charges collected through a New Community Authority, which the city reports produced about $10 million from data centers in tax year 2024. Agreements also require an annual community participation statement and chamber membership. None of that is a fund with community control.",
       "sources": [
-        { "url": "https://newalbanyohio.org/wp-content/uploads/2025/12/Proposed-Legislation-12-16-25-rev-O-45.pdf", "where": "R-46-2025, pp. 76 to 78" },
+        {
+          "url": "https://newalbanyohio.org/wp-content/uploads/2025/12/Proposed-Legislation-12-16-25-rev-O-45.pdf",
+          "where": "R-46-2025, pp. 76 to 78"
+        },
         "https://datacenters.newalbanyohio.org/city-finances/",
         "https://datacenters.newalbanyohio.org/our-community/"
       ]
     },
     "clawbacks": {
       "present": true,
-      "triggers": ["other"],
+      "triggers": [
+        "other"
+      ],
       "proportional": true,
       "notes": "An unusual and worth-copying structure: instead of a jobs floor, the city sets a minimum annual service payment, and if the four revenue streams it tracks (increment financing, community authority charges, a 2 percent income tax withholding, and payments in lieu) fall short, the company must cure the gap with a payment in lieu or the tax incentive review council can recommend terminating the exemption. The cure is dollar for dollar, so it is proportional. Real examples from 2024: one company paid $134,568 to cure a $6.7 million payroll shortfall and another paid $48,166. For this agreement the minimum payment on additional advanced fabric structures rises from $1.11 to $2.50 per square foot. Nothing is tied to the facility ceasing operation.",
       "sources": [
-        { "url": "https://newalbanyohio.org/wp-content/uploads/2026/01/Council-Minutes-12-16-25.pdf", "where": "pp. 9 to 10, minimum payment per square foot" },
-        { "url": "https://newalbanyohio.org/wp-content/uploads/2025/09/Council-Minutes-9-2-25.pdf", "where": "pp. 6 to 8, payment in lieu cures" }
+        {
+          "url": "https://newalbanyohio.org/wp-content/uploads/2026/01/Council-Minutes-12-16-25.pdf",
+          "where": "pp. 9 to 10, minimum payment per square foot"
+        },
+        {
+          "url": "https://newalbanyohio.org/wp-content/uploads/2025/09/Council-Minutes-9-2-25.pdf",
+          "where": "pp. 6 to 8, payment in lieu cures"
+        }
       ]
     },
-    "decommissioning": { "present": null, "instrument": null, "amount_usd": null, "notes": "Nothing in the resolutions. The agreement text itself is on file with the clerk of council and is not published, so this cannot be ruled out.", "sources": [] },
+    "decommissioning": {
+      "present": null,
+      "instrument": null,
+      "amount_usd": null,
+      "notes": "Nothing in the resolutions. The agreement text itself is on file with the clerk of council and is not published, so this cannot be ruled out.",
+      "sources": []
+    },
     "grid_costs": {
       "present": true,
       "who_pays_interconnect": "operator",
@@ -54,10 +121,14 @@
       "governed_by": "AEP Ohio Schedule DCT, approved by the Public Utilities Commission of Ohio on July 9, 2025 in case 24-508-EL-ATA",
       "notes": "The protection here comes from the state, not the city, and it is the strongest minimum bill in this benchmark. New loads above 25 megawatts ramp at no less than 50, 65, 80 and 90 percent of contract capacity, then pay a billing demand of at least 85 percent of the highest demand in the prior eleven months. The initial term is the ramp plus eight years, so twelve years on a four-year ramp. Exit after year five costs 36 months of minimum charges. Collateral is 50 percent of total minimum charges unless the customer is rated A-minus or better. Interconnection is customer-specific through a letter of agreement or a contribution in aid of construction. Meta's contract capacity is not public. The tariff is under appeal at the Ohio Supreme Court.",
       "sources": [
-        { "url": "https://ohiocapitaljournal.com/wp-content/uploads/2025/11/modified-tariff-data-centers.pdf", "where": "Schedule DCT, sheets 223-1 to 223-7" },
+        {
+          "url": "https://ohiocapitaljournal.com/wp-content/uploads/2025/11/modified-tariff-data-centers.pdf",
+          "where": "Schedule DCT, sheets 223-1 to 223-7"
+        },
         "https://puco.ohio.gov/news/puco-orders-aep-ohio-to-create-data-center-specific-tariff",
         "https://www.occ.ohio.gov/content/data-center-costs-24-0508-el-ata"
-      ]
+      ],
+      "minimum_bill_survives_exit": true
     },
     "water": {
       "present": null,
@@ -67,7 +138,10 @@
       "cooling": "unknown",
       "notes": "Both resolutions authorize a water and sewer memorandum of understanding with the city, but its terms are not in the packet and no volumes are published.",
       "sources": [
-        { "url": "https://newalbanyohio.org/wp-content/uploads/2025/12/Proposed-Legislation-12-16-25-rev-O-45.pdf", "where": "R-46-2025, Section 2, water and sewer memorandum" }
+        {
+          "url": "https://newalbanyohio.org/wp-content/uploads/2025/12/Proposed-Legislation-12-16-25-rev-O-45.pdf",
+          "where": "R-46-2025, Section 2, water and sewer memorandum"
+        }
       ]
     },
     "noise": {
@@ -77,7 +151,10 @@
       "setback_ft": null,
       "notes": "No noise term in the agreement. The city falls back on a codified ordinance that compares facility noise to street traffic levels in the nearest residential district, which is not a number. Residents complained in July 2026 after a temporary sound wall came down, and a separate operator's cooling fans drew complaints in September 2025 with a permanent fix promised for December 2026.",
       "sources": [
-        { "url": "https://newalbanyohio.org/wp-content/uploads/2025/12/Proposed-Legislation-12-16-25-rev-O-45.pdf", "where": "R-46-2025, full text" },
+        {
+          "url": "https://newalbanyohio.org/wp-content/uploads/2025/12/Proposed-Legislation-12-16-25-rev-O-45.pdf",
+          "where": "R-46-2025, full text"
+        },
         "https://datacenters.newalbanyohio.org/"
       ]
     },
@@ -93,7 +170,19 @@
         "https://datacenters.newalbanyohio.org/city-finances/"
       ]
     },
-    "local_contracting": { "present": false, "local_subcontracting": false, "road_repair": false, "infrastructure_contribution_usd": null, "notes": "No local contracting term.", "sources": [ { "url": "https://newalbanyohio.org/wp-content/uploads/2025/12/Proposed-Legislation-12-16-25-rev-O-45.pdf", "where": "R-46-2025, full text" } ] },
+    "local_contracting": {
+      "present": false,
+      "local_subcontracting": false,
+      "road_repair": false,
+      "infrastructure_contribution_usd": null,
+      "notes": "No local contracting term.",
+      "sources": [
+        {
+          "url": "https://newalbanyohio.org/wp-content/uploads/2025/12/Proposed-Legislation-12-16-25-rev-O-45.pdf",
+          "where": "R-46-2025, full text"
+        }
+      ]
+    },
     "transparency": {
       "present": true,
       "nda": null,
@@ -103,9 +192,15 @@
       "audit_independent": true,
       "notes": "Split verdict. The resolutions, minutes and votes are public, and the city runs a genuine public data center site with its own finance figures, which almost nobody else in this benchmark does. But the CRA agreement itself is only on file with the clerk of council and is not posted, so the operative terms are not readable online. The annual review is by a tax incentive review council that statutorily includes the county auditor and school district officials, which makes it independent of the city. In July 2026 council noted a new state law making some economic development submissions confidential.",
       "sources": [
-        { "url": "https://newalbanyohio.org/wp-content/uploads/2025/09/Council-Minutes-9-2-25.pdf", "where": "pp. 6 to 8, tax incentive review council report" },
+        {
+          "url": "https://newalbanyohio.org/wp-content/uploads/2025/09/Council-Minutes-9-2-25.pdf",
+          "where": "pp. 6 to 8, tax incentive review council report"
+        },
         "https://datacenters.newalbanyohio.org/city-finances/",
-        { "url": "https://newalbanyohio.org/wp-content/uploads/2026/07/Council-Minutes-7-7-26.pdf", "where": "confidentiality of economic development submissions" }
+        {
+          "url": "https://newalbanyohio.org/wp-content/uploads/2026/07/Council-Minutes-7-7-26.pdf",
+          "where": "confidentiality of economic development submissions"
+        }
       ]
     },
     "tax": {
@@ -117,16 +212,33 @@
       "but_for_test": false,
       "notes": "A complete exemption from real property tax on the new buildings for fifteen years, with the land staying taxable and a payment in lieu owed only if the minimum service payment is missed. Both school districts, Johnstown-Monroe and the county career center, waived their statutory right to notice and to approve the agreement, and no compensation payment to the schools appears in the resolutions. The only finding the city had to make is that the company is qualified by financial responsibility and business experience, which is not a but-for test. Forgone revenue for this agreement is not published; the county review council put all twenty New Albany agreements at $6.2 million forgone in tax year 2024 on $225 million of abated value.",
       "sources": [
-        { "url": "https://newalbanyohio.org/wp-content/uploads/2025/12/Proposed-Legislation-12-16-25-rev-O-45.pdf", "where": "R-46-2025, exemption term and school district waiver recitals" },
-        { "url": "https://newalbanyohio.org/wp-content/uploads/2025/08/Proposed-Legislation-9-2-25.pdf", "where": "R-30-2025, pp. 44 to 46" },
-        { "url": "https://gis.franklincountyohio.gov/Assets/Documents/TIRCreports/2025-TIRC-Report.pdf", "where": "New Albany CRA totals, tax year 2024" }
+        {
+          "url": "https://newalbanyohio.org/wp-content/uploads/2025/12/Proposed-Legislation-12-16-25-rev-O-45.pdf",
+          "where": "R-46-2025, exemption term and school district waiver recitals"
+        },
+        {
+          "url": "https://newalbanyohio.org/wp-content/uploads/2025/08/Proposed-Legislation-9-2-25.pdf",
+          "where": "R-30-2025, pp. 44 to 46"
+        },
+        {
+          "url": "https://gis.franklincountyohio.gov/Assets/Documents/TIRCreports/2025-TIRC-Report.pdf",
+          "where": "New Albany CRA totals, tax year 2024"
+        }
       ]
     }
   },
   "criticisms": [
-    { "summary": "Reporting found the city gave up millions at one Meta data center, with fifteen-year exemptions for multiple hyperscalers, against a statewide tally of $282 million in data center tax breaks.", "source": "https://prospect.org/2026/03/05/ohio-tech-ai-data-centers-meta-amazon-google-energy/" },
-    { "summary": "One operator's state sales tax exemption in New Albany was valued at $72.5 million over fifteen years against a twenty-job commitment.", "source": "https://signalohio.org/ohio-data-centers-tax-breaks/" }
+    {
+      "summary": "Reporting found the city gave up millions at one Meta data center, with fifteen-year exemptions for multiple hyperscalers, against a statewide tally of $282 million in data center tax breaks.",
+      "source": "https://prospect.org/2026/03/05/ohio-tech-ai-data-centers-meta-amazon-google-energy/"
+    },
+    {
+      "summary": "One operator's state sales tax exemption in New Albany was valued at $72.5 million over fifteen years against a twenty-job commitment.",
+      "source": "https://signalohio.org/ohio-data-centers-tax-breaks/"
+    }
   ],
-  "contributors": ["apeabody007"],
+  "contributors": [
+    "apeabody007"
+  ],
   "last_reviewed": "2026-09-07"
 }

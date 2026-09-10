@@ -155,7 +155,7 @@
       "limit_gpd": null,
       "reporting": true,
       "recycling_required": false,
-      "cooling": "closed_loop",
+      "cooling": "unknown",
       "notes": "Wells are banned outright, which is rare and worth naming: the development shall not use wells to provide water for any purpose. The rezoning conditions require the developer to fund all water and sewer upgrades and, before any building permit, to file a five year water and sewer projection updated at minimum annually. That is a real reporting obligation and better than most places manage. What is missing is the number. There is no gallons per day cap anywhere. The closed loop description comes from the applicant speaking at the planning commission about a neighbouring case, not from a covenant. And the drought protection is optional by its own words.",
       "hedge": "\"A water and sewer usage agreement and/or drought management plan may be required.\" May.",
       "sources": [

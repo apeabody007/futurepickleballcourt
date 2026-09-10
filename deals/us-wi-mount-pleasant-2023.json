@@ -152,7 +152,8 @@
           "where": "p. 1, heading I",
           "quote": "ATC's Existing Zonal Cost Allocation Method Shifts Large Load Interconnection Costs to Other Wholesale Customers."
         }
-      ]
+      ],
+      "minimum_bill_survives_exit": true
     },
     "water": {
       "present": true,

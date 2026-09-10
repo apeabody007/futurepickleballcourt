@@ -2,6 +2,12 @@
 
 Every change to a published number or claim, newest first. A record that never posts corrections is a press release.
 
+## 2026-09-10
+
+- **Scoring, water.** The bar asked for "a stated cap or closed-loop cooling, plus public reporting," but the rule only tested reporting. Two deals were passing on reporting alone with no cap and no closed loop. The rule now tests the cap-or-cooling half as well. Columbia County, Georgia and St. Joseph County, Indiana drop from *meets* to *unknown*.
+- **Scoring, grid costs.** The bar asked for "a minimum bill that survives it leaving," but the rule only tested that a minimum bill existed. Those are different things, and the difference is the entire point of the term. Deals now record whether the obligation outlives the operator's departure. Papillion, Nebraska drops from *meets* to *falls short*: its rate schedule applies "during the operation of the Customer's facilities," with no term and no stranded-cost provision, so the bill stops exactly when it would start to matter. Of the eight minimum bills in the benchmark, six survive departure, one does not, and one is not public enough to tell.
+- **Columbia County, Georgia, cooling.** Recorded as closed loop. That description came from the applicant speaking at a planning commission hearing about a *neighbouring* application, not from any covenant governing this site. Now recorded as unknown.
+
 ## 2026-09-09
 
 - **Cedar Rapids, Iowa (QTS), local contracting.** Recorded only as "a separate county road-use agreement covering about $117,000 in back payment, paving of two rural roads, and a performance bond," sourced to news coverage. The executed agreement was located in the Linn County Board of Supervisors packet for October 27, 2025 and it is materially stronger than the summary: $117,099.90 for existing damage, roughly 2.6 miles of road rebuilt at the developer's sole cost, and a **$2,000,000** payment and performance bond naming the county as beneficiary, with a right to draw for non-visual damage at $3.86 per quarry truck trip. Now cited to the agreement's own sections. Note that local reporting quoted the per-trip rate as $4; the agreement says $3.86, and the agreement governs.

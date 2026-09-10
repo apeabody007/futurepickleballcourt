@@ -138,7 +138,8 @@
         },
         "https://www.entergylouisiana.com/transmission",
         "https://blog.ucs.org/paul-arbaje/whats-next-after-louisianas-gas-plant-approval-for-meta-data-center/"
-      ]
+      ],
+      "minimum_bill_survives_exit": null
     },
     "water": {
       "present": false,
