@@ -1,0 +1,318 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-wi-port-washington-2025",
+  "status": "signed",
+  "verification": "primary",
+  "short_name": "Vantage",
+  "jurisdiction": {
+    "country": "US",
+    "state": "WI",
+    "locality": "City of Port Washington",
+    "level": "city"
+  },
+  "operator": "Vantage Data Centers, with Oracle and OpenAI announced as tenants",
+  "developer": "Vantage Data Centers Management Company, LLC, successor to Red Granite DevCo LLC",
+  "project": "Port Washington data center campus, Stargate Wisconsin, in Tax Incremental District No. 5",
+  "agreement_type": "development_agreement",
+  "dates": {
+    "signed": "2025-08-19",
+    "approved": "2025-08-19",
+    "effective": "2025-08-19"
+  },
+  "scale": {
+    "acres": 672,
+    "mw": 1300,
+    "capex_usd": 8000000000,
+    "sqft": 2558000,
+    "notes": "672 acres in the south phase of a roughly 1,900 acre site, four buildings totalling about 2.56 million square feet plus a visitor centre and warehouse. The city puts total power capacity at 1.3 gigawatts. Capex is the only figure the agreement itself binds, not less than eight billion dollars of development costs; the company has since announced more than fifteen billion."
+  },
+  "documents": [
+    {
+      "title": "Executed Development Agreement between the City of Port Washington and Vantage Data Centers Management Company, LLC, August 19, 2025, 31 pages",
+      "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+      "kind": "primary",
+      "date": "2025-08-19"
+    },
+    {
+      "title": "Tax Incremental District No. 5 project plan, prepared by Ehlers, containing the project cost table and the calculation of revenue diverted from overlying jurisdictions",
+      "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000",
+      "kind": "primary",
+      "date": "2025-11-04"
+    },
+    {
+      "title": "We Energies presentation to the Common Council on the electric rate structure for this customer",
+      "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6424/638979313162970000",
+      "kind": "primary",
+      "date": "2025-11-04"
+    },
+    {
+      "title": "City frequently asked questions, January 21, 2025, including the statement that no one affiliated with the city signed a non-disclosure agreement",
+      "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/5201/638730468892070000",
+      "kind": "government_page",
+      "date": "2025-01-21"
+    },
+    {
+      "title": "We Energies Volume 19 electric rates, containing Rate Schedule VLC for very large customers and the bespoke resources tariff",
+      "url": "https://www.we-energies.com/pdfs/etariffs/wisconsin/elecrateswi.pdf",
+      "kind": "primary",
+      "date": "2026-06-01"
+    },
+    {
+      "title": "Wisconsin Public Service Commission news release on the large load tariff decided in docket 6630-TE-113",
+      "url": "https://psc.wi.gov/Documents/PressReleases/04.24.2026PressRelease.PDF",
+      "kind": "primary",
+      "date": "2026-04-24"
+    },
+    {
+      "title": "Wisconsin Department of Revenue fact sheet on the qualified data center sales and use tax exemption",
+      "url": "https://www.revenue.wi.gov/DOR%20Publications/2114QualifiedDataCenter.pdf",
+      "kind": "primary",
+      "date": null
+    }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": false,
+      "amount_usd": null,
+      "cadence": null,
+      "scales_with_project": null,
+      "controlled_by": null,
+      "community_seat": false,
+      "notes": "No community fund, no cadence, no seat. The one recurring payment that looks like one is not: the developer pays the city $150,000 a year for five years so the city can meet an obligation it already owed the neighbouring town under a 2004 agreement, and that $750,000 is itself listed as a reimbursable project cost, so the developer gets it back out of the tax increment. Corporate giving announced afterwards, including $225,000 to the schools foundation and $3 million to a natural resource partnership, sits outside the agreement.",
+      "sources": [
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, Article II.E, and Exhibit C item 3, which makes the payment reimbursable"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000",
+          "where": "TID No. 5 project plan, finding 9"
+        }
+      ]
+    },
+    "clawbacks": {
+      "present": false,
+      "triggers": [],
+      "proportional": null,
+      "notes": "None, and the agreement says the quiet part in Article II.A: it creates no obligation to construct, open or operate a data center campus on the north phase. No jobs trigger, no investment trigger, no cessation trigger. Three partial substitutes exist. If construction on the north phase has not begun by 2038 the city may elect after 2039 to buy that land back at what the developer paid plus inflation, once, and the option dies on any city misstep. On default the city may suspend reimbursement payments, but they are paid in full on cure. And structurally the district is pay as you go, so the city fronts no cash. That last point is the real protection here, and it is worth more than most clawbacks in this benchmark.",
+      "hedge": "Article II.A: the agreement \"creates no obligation for Developer or its successors or assigns to construct, open or operate a data center campus.\"",
+      "sources": [
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, Article II.A, no obligation to operate"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, Article II.C.1, repurchase option, and Article VII.C, payment suspension"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, Article III.C, reimbursement solely from tax increment and subject to annual appropriation"
+        }
+      ]
+    },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "None. The nearest provision runs the other way: Article II.I requires the developer to rebuild after a casualty to at least the prior equalized value, starting within 180 days, because the city's repayment depends on the assessed value staying up. There is a property use covenant barring uses that would make the land tax exempt. Insurance is required but may be self-insured at the developer's option. Nothing addresses removal or restoration at end of life.",
+      "sources": [
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, Articles II.H, II.I and VIII.B"
+        }
+      ]
+    },
+    "grid_costs": {
+      "present": true,
+      "who_pays_interconnect": "shared",
+      "minimum_bill": true,
+      "term_years": 15,
+      "governed_by": "Wisconsin PSC Rate Schedule VLC from docket 6630-TE-113, effective June 1, 2026",
+      "notes": "A strong state tariff sitting on top of a local deal that undoes part of it. The tariff is the good news and it is unusually good: mandatory for any eligible customer at 100 megawatts or more, a fifteen year minimum term, a minimum billed demand charge invoiced whenever actual load falls below the customer's own forecast, dedicated distribution and substation equipment directly assigned to the customer, financial security equal to net book value plus 1.3 times two years of charges, and reimbursement of net book value on early termination. The commission lowered the threshold from the utility's proposed 500 megawatts and ordered revisions to address transmission cost shifting. The local news is worse: the $91 million substation is a reimbursable project cost in the district, repaid out of tax increment with 7% annual interest, so the developer fronts it and the increment pays it back. And a separate 345 kilovolt transmission project, whose stated need is this load, is before the commission at $1.4 to $1.64 billion, which is not on this deal's ledger at all.",
+      "hedge": "The minimum billed demand is measured against the customer's own forecast, and overshooting in one month earns no credit against undershooting in another.",
+      "sources": [
+        {
+          "url": "https://www.we-energies.com/pdfs/etariffs/wisconsin/elecrateswi.pdf",
+          "where": "Rate Schedule VLC, availability and minimum billed demand charge"
+        },
+        {
+          "url": "https://www.we-energies.com/pdfs/etariffs/wisconsin/elecrateswi.pdf",
+          "where": "Rate Schedule VLC, term",
+          "quote": "a minimum term of fifteen (15) years with a one-year written cancellation notice"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, Exhibit C item 4, substation and transmission as reimbursable costs"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000",
+          "where": "TID No. 5 project plan, p. 20, $91,000,000 substation line"
+        },
+        {
+          "url": "https://psc.wi.gov/Documents/PressReleases/04.24.2026PressRelease.PDF",
+          "where": "PSC news release on docket 6630-TE-113 and transmission cost shifting"
+        }
+      ]
+    },
+    "water": {
+      "present": false,
+      "limit_gpd": null,
+      "reporting": false,
+      "recycling_required": false,
+      "cooling": "closed_loop",
+      "notes": "No cap, no reporting duty and no recycling requirement anywhere in the agreement. What the agreement does contain is the city promising to build water and wastewater improvements of sufficient quality and quantity to serve the project, with the district budgeting roughly $166 million of water and sewer work. The cooling description, a closed loop chiller with dry coolers using about 22,000 gallons on a peak day, comes from city and company fact sheets rather than from any binding instrument. That number may well be right. It is simply not a promise anyone can enforce.",
+      "hedge": "Every water figure for this project lives in a fact sheet. The agreement's only water language is the city's obligation to build capacity.",
+      "sources": [
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, Article III.E, public improvements, and Article II.K, stormwater"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000",
+          "where": "TID No. 5 project plan, water and wastewater cost lines"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/5201/638730468892070000",
+          "where": "City fact sheet describing the cooling design and daily water use"
+        }
+      ]
+    },
+    "noise": {
+      "present": null,
+      "limit_dba": null,
+      "measured_at": null,
+      "setback_ft": null,
+      "notes": "Unresolved rather than absent. The development agreement contains no decibel figure; the standard sits in the I-3 technology campus zoning district adopted in May 2025, whose text I could not retrieve because the code host blocks automated access. Press reports and the mayor describe 70 decibels, but I will not publish a number I have not read in the source. What is documented: in March 2026 the plan commission voted unanimously to cut outdoor construction from 24 hours on weekdays to 6 a.m. to 8 p.m. Monday through Saturday after resident pressure, and the site design uses 8 foot berms, setbacks over 300 feet and 2,345 native trees. If you have the ordinance text, that is a correction worth sending.",
+      "sources": [
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, full text, which contains no noise limit"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/5201/638730468892070000",
+          "where": "City materials on the site design and construction hours"
+        }
+      ]
+    },
+    "jobs": {
+      "present": false,
+      "promised_permanent": null,
+      "promised_construction": null,
+      "local_hire": false,
+      "prevailing_wage": false,
+      "enforceable": false,
+      "notes": "The agreement never mentions jobs, local hire, apprenticeship or prevailing wage. The figures in circulation, more than 4,000 construction jobs and more than 1,000 long term jobs, come from the companies' own announcement. The district's project plan says only that the project will generate economic activity and employment, with no number and no consequence.",
+      "sources": [
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, full text, which contains no employment provision"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000",
+          "where": "TID No. 5 project plan, finding 2"
+        }
+      ]
+    },
+    "local_contracting": {
+      "present": true,
+      "local_subcontracting": false,
+      "road_repair": true,
+      "infrastructure_contribution_usd": null,
+      "notes": "Road repair is a real, written obligation, which is rarer than it should be. On completion of each phase the developer at its cost must repair damage to any city, town or county road caused by its construction activities, and during construction must fix anything that renders those roads impassable. The developer also pays all fees, all city third party consultant costs, all land and easement acquisition for public improvements, dedicates the improvements at no cost with a two year defect warranty, and funds a sewer and water extension to a neighbouring community. There is no local subcontracting or local purchasing requirement of any kind.",
+      "hedge": "The repair duty is triggered only \"if, in the City's reasonable discretion, such damage was caused by Developer's construction activities.\"",
+      "sources": [
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, Article II.C.2(e), road repair",
+          "quote": "such damage was caused by Developer's construction activities"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, Articles II.D, II.F, II.G and Exhibit D"
+        }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": false,
+      "agreement_public": true,
+      "public_dashboard": false,
+      "audit_cadence": "none",
+      "audit_independent": false,
+      "notes": "The only deal in this benchmark where a city says plainly that it signed no non-disclosure agreement, and adds that the developer never asked for one. The draft agreement was posted eleven days before the vote and the executed agreement, the district plan, the utility presentation and a long run of fact sheets are all online. That is real and it deserves credit. But Article VIII.H then binds the city to a confidentiality regime anyway: it sweeps in all nonpublic information about the project, the developer, its tenants, customers, employees and finances, requires reasonable advance written notice before releasing anything, and gives the developer the right to sue to block a release with the city obliged to cooperate. No audit of any kind, no dashboard, no third party beneficiaries. Article III.F also bars the city for the whole term from supporting any new tax or fee that would apply solely to this project or to the data center industry.",
+      "hedge": "Article VIII.H requires \"reasonable advance written notice to the Developer prior to releasing\" records, and the developer \"shall have the right to take legal action to prohibit the release.\"",
+      "sources": [
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/5201/638730468892070000",
+          "where": "City FAQ, January 21, 2025",
+          "quote": "No one affiliated with the City has signed an NDA related to the proposed data center project"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, Article VIII.H, confidential information",
+          "quote": "reasonable advance written notice to the Developer prior to releasing"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, Article VIII.R",
+          "quote": "There are no third-party beneficiaries under this Agreement"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, Article III.F, no project-specific taxes"
+        }
+      ]
+    },
+    "tax": {
+      "present": true,
+      "abatement_pct": 0,
+      "duration_years": 20,
+      "pilot": false,
+      "estimated_forgone_usd": 541517664,
+      "but_for_test": true,
+      "notes": "No abatement at all, which is unusual here, and the arithmetic is published, which is rarer still. This is a pay as you go tax incremental district: the developer builds the infrastructure and is repaid solely from the increment its own buildings generate, so the city fronts nothing. The catch is the interest. Reimbursable costs carry 7% a year, budgeted at $187,515,144 over the district's life, on total project costs of $458,565,144 against about $175 million of actual infrastructure. And the district plan does the calculation most places never publish: $541,517,664 of revenue diverted from overlying jurisdictions between 2028 and 2047, of which $262,079,692 would otherwise have gone to the school district. A but for finding was made twice, in the agreement's recitals and in the plan, reasoning from infrastructure cost, from the developer considering other sites, and, circularly, from the fact that the state is already granting a sales tax exemption. On top of the district sits the state exemption under 2023 Wisconsin Act 19, covering servers, networking, substations, backup generation, cooling and electricity with no dollar cap, certified here to an Oracle entity in October 2025. Its value is not published per project.",
+      "hedge": "The but-for finding leans partly on the existence of another subsidy, reasoning that state support is itself evidence of the need for local support.",
+      "sources": [
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000",
+          "where": "TID No. 5 project plan, Section 17, revenue diverted from overlying jurisdictions"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000",
+          "where": "TID No. 5 project plan, detailed list of estimated project costs"
+        },
+        {
+          "url": "https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000",
+          "where": "Development Agreement, Recital F and Article III.C, but-for finding and 7% interest"
+        },
+        {
+          "url": "https://www.revenue.wi.gov/DOR%20Publications/2114QualifiedDataCenter.pdf",
+          "where": "Wisconsin DOR fact sheet 2114, qualified data center exemption"
+        }
+      ]
+    }
+  },
+  "criticisms": [
+    {
+      "summary": "Sierra Club Wisconsin and Midwest Environmental Advocates sued the state natural resources department in July 2026 after it dropped a required environmental impact statement. Emails showed a department attorney said an EIS would be required, then the agency reversed after the company said an EIS would kill the project.",
+      "source": "https://www.sierraclub.org/press-releases/2026/07/sierra-club-wisconsin-and-mea-file-lawsuit-after-state-regulators-abandon"
+    },
+    {
+      "summary": "Neighbours filed an open meetings complaint with the district attorney alleging the council deliberated the agreements in closed session. The city published a point by point rebuttal calling the claims false.",
+      "source": "https://www.wisn.com/article/port-washington-neighbors-file-complaint-over-data-center-approval-process/70424962"
+    },
+    {
+      "summary": "In April 2026 more than 66 percent of Port Washington voters approved a requirement that future tax incremental districts of $10 million or more go to referendum. It does not apply to this district, and business groups have challenged it.",
+      "source": "https://wisconsinwatch.org/2026/04/port-washington-data-center-project-voters-referendum-tif-district-wisconsin/"
+    },
+    {
+      "summary": "A $1.4 billion transmission project whose stated need is this load is before the state commission, and the state utility ratepayer advocate says eastern Wisconsin customers would eventually pay for it.",
+      "source": "https://urbanmilwaukee.com/2025/10/18/port-washington-data-center-requires-1-4-billion-transmission-line-project/"
+    }
+  ],
+  "contributors": [
+    "apeabody007"
+  ],
+  "last_reviewed": "2026-09-10"
+}

@@ -1,21 +1,19 @@
 # Data center agreements: what communities actually signed
 
-Generated 2026-09-09 from https://futurepickleballcourt.com
-15 agreements, scored against 10 terms. Every term below carries the document and section it came from.
+Generated 2026-09-10 from https://futurepickleballcourt.com
+22 agreements, scored against 10 terms. Every term below carries the document and section it came from.
 
 Verification levels: primary means a person read the executed document; press means every term traces to reporting; unverified means it came from a secondary summary and is waiting on a reader.
 
-**Nobody posts a teardown bond.** Not one of the 15 agreements requires a bond, escrow, or letter of credit to pay for demolition and site restoration if the operator walks away. If a campus goes dark, the land is the community's problem.
+**Nobody posts a teardown bond.** Not one of the 22 agreements requires a bond, escrow, or letter of credit to pay for demolition and site restoration if the operator walks away. If a campus goes dark, the land is the community's problem.
 
-**Community money, decided without the community.** 6 of the 15 deals set up money for the community. In none of them does a resident or community organization hold a seat on the body that decides how it is spent.
+**Community money, decided without the community.** 8 of the 22 deals set up money for the community. In none of them does a resident or community organization hold a seat on the body that decides how it is spent.
 
-**Clawbacks cover broken promises, not abandonment.** Where money can be taken back, the trigger is a missed job or investment target. In none of the 15 deals does the money come back simply because the facility stops running.
+**The one real protection was not negotiated locally.** 7 of the 22 deals carry a minimum electric bill, the term that keeps a tenant paying if it stops drawing power (City of New Albany, City of Papillion and Sarpy County, City of Port Washington, Pima County, Richland Parish, Village of Los Lunas, Village of Mount Pleasant). Every one of them comes from the utility's own rate structure, not from anything the city or county negotiated, and how far each survives an actual departure varies.
 
-**The one real protection came from regulators, not negotiators.** 4 of the 15 deals carry a minimum electric bill that survives the tenant leaving (City of New Albany, Pima County, Richland Parish, Village of Mount Pleasant). Every one of them comes from a state utility commission, not from anything the city or county negotiated.
+**Secrecy is normal.** 8 of the 22 communities signed a nondisclosure agreement. Some barred officials from saying that talks were happening at all, and one required the city to destroy its own notes.
 
-**Secrecy is normal.** 5 of the 15 communities signed a nondisclosure agreement. Some barred officials from saying that talks were happening at all, and one required the city to destroy its own notes.
-
-**Present is not the same as binding.** 14 terms across these agreements exist but are softened by language like good faith, commercially reasonable, or sole discretion. A term with an escape hatch reads as a protection and functions as a preference.
+**Present is not the same as binding.** 52 terms across these agreements exist but are softened by language like good faith, commercially reasonable, or sole discretion. A term with an escape hatch reads as a protection and functions as a preference.
 
 ---
 
@@ -412,6 +410,197 @@ Polk County Ordinance 25-062 (adopted Nov. 4, 2025, unanimous; recognized for Fo
 - The Fort Meade Recall Committee delivered petitions with more than 1,000 signatures to City Hall in mid-July 2026 seeking to remove Mayor Jaret Williams, Vice Mayor Petrina McCutchen, and Commissioner Matthew Taylor. (https://baynews9.com/fl/tampa/news/2026/07/17/fort-meade-recall-committee-submits-petitions-to-remove-city-leaders)
 - Forty of 41 public commenters opposed the deal at the April 14 vote, per the FloridaDataCenters.org tracker; the vice mayor defended the vote as taking a leap of faith. (https://www.aol.com/articles/lawyer-asks-fort-meade-revoke-090423000.html)
 - The Planning and Zoning Board recommended that the mayor and commissioners visit a comparable data center before approving the agreement; the commission approved it a week later without doing so. (https://www.cityoffortmeade.org/2026-04-14%20NEWLY%20AMENDED%20Agenda%20Regular%20City%20Commission%20meeting.pdf)
+
+---
+
+## Columbia County, GA (Google)
+
+- Project: Columbia County Data Center at White Oak Technology Park, Appling
+- Operator: Google LLC
+- Developer: Kinetic Infrastructure Solutions, an Alphabet subsidiary
+- Agreement: rezoning, approved, approved 2026-02-03
+- Scale: 3,140 acres, 8,004,000 sq ft, 17,000,000,000 USD
+  - 3,140 acres rezoned in February 2026, superseding an earlier approval over about 1,945 acres. The concept plan shows 29 buildings of roughly 276,000 square feet each plus an administration building and a 12 acre substation, and the county's own staff report calls that plan nonbinding. Capex is the figure in the development authority's announcement. No megawatt number exists: the staff report notes the utility will not run a power study until the land is zoned for data centers by right.
+- Verification: primary
+- Documents:
+  - [primary] Columbia County Board of Commissioners agenda packet, December 2, 2025, containing the full text of Ordinance 25-07 creating the data center zoning district, including the noise, decommissioning, buffer and utility provisions: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)
+  - [primary] Board minutes, December 2, 2025, recording unanimous adoption of Ordinance 25-07 on second reading: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11281,plainText=false)
+  - [primary] Board agenda packet, February 3, 2026, containing the staff report for the White Oak rezoning, the applicant narrative, the ambient sound study and citizen correspondence: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)
+  - [primary] Board minutes, February 3, 2026, recording the rezoning approval and the conditions attached to it: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11388,plainText=false)
+  - [government_page] Columbia County news release, July 23, 2026, stating the operator will pay 100 percent of energy costs associated with the project: https://www.columbiacountyga.gov/DocumentCenter/View/10095/Columbia-County-Google-and-Georgia-Power-Partner-to-Protect-Ratepayers-and-Make-Growth-Work-for-Residents
+  - [primary] Georgia Public Service Commission news release on the large load rule adopted January 23, 2025 in Docket 55378: https://psc.ga.gov/site/assets/files/8617/media_advisory_data_centers_rule_1-23-2025.pdf
+  - [primary] Georgia Public Service Commission data center fact sheet: https://psc.ga.gov/site/downloads/datacenterfactsheet.pdf
+  - [government_page] Columbia County legislation portal, where the agenda packets and minutes are published: https://columbiacoga.portal.civicclerk.com/
+
+### Community fund: FALLS SHORT
+Floor: A fund that scales with the project, with a community seat on the body that spends it
+No community fund in any document I can read. Local reporting describes $40 million a year to the county and $5 million a year to the development authority for seven years, first payment expected around the end of 2026, but those are payments to government, not a community controlled fund, and the memorandum of understanding that would contain them has never been published. Who disburses the money, on what criteria, and whether any resident sits anywhere near the decision, is unknown.
+- Ordinance 25-07, full text, which creates no community fund: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)
+- Development authority agenda for the meeting approving the MOU, which does not list the MOU as an item: https://columbiacoga.portal.civicclerk.com/
+
+### Clawbacks: UNKNOWN
+Floor: Incentives come back if the facility stops operating, not only if a jobs number is missed
+Unknown, and unknowable from the public record. The memorandum of understanding is not published, and no clawback appears in the ordinance or the rezoning conditions. Zoning conditions attach to the land, not to a performance promise, so they cannot do this work.
+- Ordinance 25-07 and the February 3, 2026 rezoning conditions, neither of which contains a clawback: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)
+
+### Decommissioning: FALLS SHORT
+Floor: A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks
+SOFTENING LANGUAGE: "The board may extend the compliance timeline "at its sole discretion.""
+The most detailed decommissioning language in this benchmark, and not a dollar behind it. The ordinance defines permanent cessation as zero electrical load to the primary use for 90 consecutive days or 180 days in any 365, requires notice to the county within 30 days, and then requires that within twelve months all structures be demolished or removed to grade and the site restored to agricultural viability, with soil tests and replanting to federal guidelines. That is a genuinely good covenant. There is no bond, no escrow and no letter of credit, so if the operator is gone or insolvent the county is holding a promise and a demolition bill. This is the clause other places should copy and then attach money to.
+- Ordinance 25-07, Sec. 90-147(h)(6)q, cessation of operations: "all structures on the site shall be demolished or removed to grade and the site restored to agricultural viability" https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)
+
+### Grid costs: UNKNOWN
+Floor: The operator pays for its own interconnection and carries a minimum bill that survives it leaving
+SOFTENING LANGUAGE: "The commitment is stated in a county news release. The instrument that would bind it, the service contract, is not published."
+The strongest published statement on ratepayer protection in this benchmark, living in the weakest kind of document. The county's news release says the operator has committed to paying 100 percent of all energy costs associated with the project and that ratepayers are safeguarded from any additional infrastructure, transmission or capacity expense. That is a press release, not an instrument. The ordinance does add a real gate: before any land disturbance or building permit, a letter from the utility must verify the developer is in compliance with the provider's policies. Behind both sits the state rule adopted in January 2025, which applies to new customers above 100 megawatts, allows minimum billing, extends contracts from five to fifteen years, requires the customer to pay upstream generation, transmission and distribution costs, and requires every such contract to go to the commission before execution. The actual contract and its minimum bill are not public, so the specific number here is unknown.
+- County news release, July 23, 2026, p. 1: "Google has committed to paying 100 percent of all energy costs associated with this project." https://www.columbiacountyga.gov/DocumentCenter/View/10095/Columbia-County-Google-and-Georgia-Power-Partner-to-Protect-Ratepayers-and-Make-Growth-Work-for-Residents
+- Ordinance 25-07, Sec. 90-147(h)(6)o, utility compliance letter: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)
+- PSC news release on the large load rule adopted in Docket 55378: https://psc.ga.gov/site/assets/files/8617/media_advisory_data_centers_rule_1-23-2025.pdf
+- PSC data center fact sheet, minimum billing and contract term: https://psc.ga.gov/site/downloads/datacenterfactsheet.pdf
+
+### Water: MEETS
+Floor: A stated cap or closed-loop cooling, plus public reporting
+SOFTENING LANGUAGE: ""A water and sewer usage agreement and/or drought management plan may be required." May."
+Wells are banned outright, which is rare and worth naming: the development shall not use wells to provide water for any purpose. The rezoning conditions require the developer to fund all water and sewer upgrades and, before any building permit, to file a five year water and sewer projection updated at minimum annually. That is a real reporting obligation and better than most places manage. What is missing is the number. There is no gallons per day cap anywhere. The closed loop description comes from the applicant speaking at the planning commission about a neighbouring case, not from a covenant. And the drought protection is optional by its own words.
+- Ordinance 25-07, Sec. 90-147(h)(6)c: "The development shall not utilize wells to provide water for any purpose" https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)
+- Board minutes, February 3, 2026, rezoning conditions, water and sewer: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11388,plainText=false)
+- Staff report and applicant narrative for the White Oak rezoning: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)
+
+### Noise: MEETS
+Floor: A numeric limit measured at the nearest residence or property line
+SOFTENING LANGUAGE: "Buffers must remain undisturbed "to the maximum extent practicable," and a berm can cut the 500 foot residential buffer to 250 at the planning director's determination."
+The clearest noise standard in this benchmark and the only one with a number the public argued down. The ordinance sets 70 decibels at the exterior property line, requires an ambient sound study at rezoning and a compliance study before each building's certificate of occupancy. For this site the commission then attached a stricter condition: sound from the project shall not exceed 65 decibels at the property line. Measured baseline across five locations on the site ran 36.8 to 46.9 dBA, so 65 is still well above what neighbours hear today, and residents asked for 50. Buffers are 250 feet on exterior property lines and 500 feet against residential or agricultural land, though a planted berm can halve either figure at a staff director's determination. Generator testing is limited to weekdays, 9 to 5, two hours a day, once a month, not on federal holidays.
+- Board minutes, February 3, 2026, rezoning condition: "Sound from the project shall not exceed 65 decibels at the property line" https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11388,plainText=false)
+- Ordinance 25-07, Sec. 90-147(h)(6)c.a: "Facilities may not emit noise that exceeds 70 decibels (db) measured at the exterior property line" https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)
+- Ordinance 25-07, Sec. 90-147(h)(6)f, buffers, and (h)(6)b, generator testing: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)
+- Staff report, p. 3, measured ambient sound levels: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)
+
+### Jobs: FALLS SHORT
+Floor: Binding job commitments with a consequence, not projections
+No job number appears in any primary document and there is no binding commitment, no local hire and no wage floor. Residents raised the limited number of jobs at the planning commission hearing. Trade press estimates exist but are tied to no instrument, so I am not carrying a number.
+- Ordinance 25-07 and the rezoning conditions, neither of which contains a job commitment: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)
+- Planning commission minutes in the February 3, 2026 packet, resident objections: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)
+
+### Local contracting: FALLS SHORT
+Floor: Local subcontracting goals and haul-route road repair paid by the operator
+Real road obligations, and a notable omission. The developer must design and construct every roadway improvement identified in the June 2025 traffic impact study, including dual northbound left turns, an additional through lane, and converting a single lane interstate roundabout to multilane. Any upgrade to county owned utilities is the applicant's sole responsibility. But haul route repair was not imposed here: a post construction haul route damage evaluation condition was drafted only for a different application, which the board denied, so the roads that carry the construction traffic to this site carry no such condition. No local subcontracting or local hire requirement.
+- Board minutes, February 3, 2026, rezoning conditions, transportation: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11388,plainText=false)
+- Ordinance 25-07, Sec. 90-147(h)(6)m, county utility upgrades: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)
+- Board minutes, February 3, 2026, showing the haul route condition attached only to the denied application: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11388,plainText=false)
+
+### Transparency: FALLS SHORT
+Floor: No NDA, the agreement is public, and an independent audit on a schedule
+SOFTENING LANGUAGE: "The staff report describes what was approved as "a nonbinding concept plan.""
+The zoning is exemplary and the deal is invisible. Anyone can read the ordinance, the staff reports, the sound study, the citizen correspondence and the recorded votes, and the hearings drew fifteen speakers in November and twenty five in January. The memorandum of understanding, which is the actual agreement, is not published, and the development authority agenda for the meeting that approved it does not list it as an item; the approval vote is not public either. Residents told the planning commission the project began in 2024 under non disclosure agreements, and a letter entered into the board's record says non disclosure agreements have concealed key details from residents for months. Whether the public body itself signed one is unknown. No audit, no dashboard, and the concept plan the county approved is expressly nonbinding.
+- Development authority agenda, August 26, 2026, which does not list the MOU: https://columbiacoga.portal.civicclerk.com/
+- Citizen correspondence in the February 3, 2026 packet: "Non-disclosure agreements (NDAs) have concealed key details from residents for months" https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)
+- Staff report for the White Oak rezoning, p. 1: "a nonbinding concept plan" https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)
+- Board minutes, February 3, 2026, recording the votes in open session: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11388,plainText=false)
+
+### Tax incentives: FALLS SHORT
+Floor: A but-for test before any abatement, with the forgone revenue stated
+A Georgia bond for title structure through the development authority, with the company rather than the county responsible for bonds that are non recourse to both. Beyond that the numbers are not public: no abatement percentage, no duration, no payment schedule, no forgone revenue estimate. Local reporting puts the payments at $40 million a year to the county plus $5 million to the authority for seven years. What is unusual here is the downstream plan: the county drafted state legislation, signed in May 2026, letting it set aside money for a homestead tax relief fund, subject to a November 2026 referendum, with the stated goal of eliminating the county's share of property tax. That is a real and specific way of returning the money to residents, and it is worth watching whether it survives the vote. No but for analysis appears in the authority's incentives committee minutes.
+- Development authority announcement of the bond for title structure and committee minutes containing no but-for analysis: https://columbiacoga.portal.civicclerk.com/
+- Ordinance 25-07, which contains no tax provision, the abatement sitting instead in the unpublished MOU: https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)
+
+### Reported criticisms
+- Fifteen residents spoke against the data center ordinance in November 2025 and twenty five against this rezoning in January 2026, raising noise, generator emissions, utility costs, well contamination, water use, limited jobs, traffic, and what happens if the AI buildout stalls. (https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false))
+- A letter entered into the board's record objects that non-disclosure agreements concealed key details from residents for months and that the county published no verified impact assessments for water tables, streams or wastewater capacity. (https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false))
+- A resident sued over the White Oak and neighbouring rezonings alleging procedural defects and conflict with the comprehensive plan. Both suits were dismissed with prejudice in March 2026 and appealed to the Georgia Court of Appeals in April. (https://www.wrdw.com/2026/04/16/citizen-appeals-dismissals-columbia-county-data-center-rezoning-lawsuits/)
+- The memorandum of understanding, the actual agreement, is not published, and the agenda of the authority meeting that approved it does not list it. (https://columbiacoga.portal.civicclerk.com/)
+
+---
+
+## Newton County, GA (Meta)
+
+- Project: Morning Hornet and Baymare data center campuses at Stanton Springs, near Social Circle
+- Operator: Meta
+- Developer: Morning Hornet LLC and Baymare LLC, both Delaware limited liability companies
+- Agreement: development agreement, signed, signed 2018-02-27
+- Scale: 416 acres, 2,000,000 sq ft
+  - The 2018 development agreement covers about 416 acres and caps the project at up to 2,000,000 square feet of finished interior space, 40% impervious, 75 feet tall. A second campus, Baymare, added roughly 612 to 628 acres across three counties in 2021; the county's own documents give both figures. Megawatts and capital investment appear in no primary document. The Baymare development agreement itself has never been published, so what follows is the 2018 agreement, which is the one you can actually read.
+- Verification: primary
+- Documents:
+  - [primary] Resolution R022718a and the executed Development Agreement between Newton County and Morning Hornet LLC, effective February 27, 2018, 53 pages including exhibits: https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF
+  - [primary] Resolution R022718b and the Water and Sewer Capacity and Service Agreement among the water authority, Morning Hornet LLC and Newton County: https://www.newtoncountyga.gov/DocumentCenter/View/339/R022718b-Approving-Authorization-PDF
+  - [primary] Newton County Board of Commissioners minutes, March 2, 2021, recording the 4 to 0 vote on the Baymare development agreement with one abstention: https://www.newtoncountyga.gov/DocumentCenter/View/3769/March-2-2021
+  - [primary] Intergovernmental contract on revenue sharing for Stanton Springs, which governs how all payments in lieu of taxes are split among the four counties: https://www.newtoncountyga.gov/DocumentCenter/View/431/R081616---IGC-re---Revenue-Sharing-Asgreement-for-Stanton-Springs-PDF
+  - [primary] Joint Development Authority meeting packet, January 29, 2026, containing the bond draw approvals and the payment in lieu of taxes schedules: https://www.i20jda.com/uploads/7/5/0/2/75024267/jda_meeting_packet_1.29.2026.pdf
+  - [primary] Joint Development Authority meeting packet, April 28, 2026, recording the $8,000,000 payment received and its distribution: https://www.i20jda.com/uploads/7/5/0/2/75024267/jda_meeting_packet_4.28.2026.pdf
+
+### Community fund: FALLS SHORT
+Floor: A fund that scales with the project, with a community seat on the body that spends it
+None, and a commissioner said so on the record. There is no community fund, no annual contribution and no seat anywhere in either agreement. Meta runs a voluntary grants program that has given a reported $2.4 million in money and services across the four counties since 2020, but it is not a term of anything. When the second campus came to a vote in March 2021, Commissioner J.C. Henderson abstained and the minutes record that he was disappointed the companies do not give more back to the county.
+- Development Agreement, full text, which contains no community fund provision: https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF
+- Board minutes, March 2, 2021, Baymare development agreement: "he was disappointed the companies do not give more back to the county, i.e. recreation" https://www.newtoncountyga.gov/DocumentCenter/View/3769/March-2-2021
+
+### Clawbacks: FALLS SHORT
+Floor: Incentives come back if the facility stops operating, not only if a jobs number is missed
+None, and the remedies section makes the asymmetry plain. On a default the non-defaulting party may seek damages or specific performance, but default does not entitle anyone to terminate the agreement. The company may terminate for convenience on thirty days notice. There is no jobs test, no investment test and no repayment trigger. The one obligation that survives non-performance runs toward the company's side of the ledger: a payment in lieu of taxes tied to a fifth building must be paid by April 2033 whether or not the building is ever built. For contrast, the same authority's agreement with a different manufacturer at the same park carries a minimum investment, a job count, a deadline, and clawbacks the authority itself calls more stringent than any earlier project.
+- Development Agreement, Section 6.4, remedies, and Section 6.1.3, termination for convenience: https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF
+- JDA minutes, January 29, 2026, PILOT schedule: "must be paid regardless of whether the building is actually constructed" https://www.i20jda.com/uploads/7/5/0/2/75024267/jda_meeting_packet_1.29.2026.pdf
+
+### Decommissioning: FALLS SHORT
+Floor: A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks
+None. Not a bond, not an escrow, not even a covenant. If the use changes from a data center, Section 6.1.2 says only that the parties shall meet and discuss to reasonably determine whether the agreement needs modifying.
+- Development Agreement, Section 6.1.2: "shall meet and discuss to reasonably determine if modifications to this Agreement are required" https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF
+
+### Grid costs: FALLS SHORT
+Floor: The operator pays for its own interconnection and carries a minimum bill that survives it leaving
+The county agreement does not address electricity at all beyond consenting to on-site solar, geothermal and wind. Power comes from an electric membership corporation and the transmission company built the substation and supply lines, with the development authority granting easements across the land it owns and Meta leases. Who paid for the interconnection, and whether any minimum bill exists, does not appear in any county or authority document I have read.
+- Development Agreement, Section 5.4.3, alternative energy sources: https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF
+- JDA minutes, April 28, 2026, transmission easement amendment: https://www.i20jda.com/uploads/7/5/0/2/75024267/jda_meeting_packet_4.28.2026.pdf
+
+### Water: MEETS
+Floor: A stated cap or closed-loop cooling, plus public reporting
+SOFTENING LANGUAGE: "Development Agreement Section 5.4.4: "The Company may access groundwater, by drilling well(s) or otherwise, to establish an alternative or redundant water supply.""
+Real numbers, phased, with the strongest enforcement mechanism in this benchmark. Water is reserved at a maximum 450,000 gallons a day, phased 180,000 then 360,000 then 450,000, with peak flow of 2,500 gallons a minute for no more than 180 minutes a day. Sewer is capped at 125,000 gallons a day. The sewer system is sized for an evaporative cooling system, so this is not closed loop. A baseline monitoring report was filed and routine monitoring continues, though the customer was determined not to be a significant industrial user. What makes it unusual is the remedy: a violation lasting more than two consecutive days sends the parties to a mutually agreeable independent third party, after which the utility may cut off sewer service on thirty days notice, or ten days if the overage is 50% or more. Two things cut the other way. The development agreement separately lets the company drill its own wells for an alternative or redundant supply, which sits outside these caps entirely. And in a declared shortage the project gets top priority below only hospitals and essential public safety, its monthly allocation shall not be lowered, and the utility waives any right to cut service or impose a penalty.
+- Water and Sewer Agreement, Section 4.2, water capacity reservation: https://www.newtoncountyga.gov/DocumentCenter/View/339/R022718b-Approving-Authorization-PDF
+- Water and Sewer Agreement, Section 4.1, sewer reservation and enforcement: https://www.newtoncountyga.gov/DocumentCenter/View/339/R022718b-Approving-Authorization-PDF
+- Water and Sewer Agreement, Section 2.1(b), cooling: "generated by an evaporative cooling system anticipated to be installed at the Project" https://www.newtoncountyga.gov/DocumentCenter/View/339/R022718b-Approving-Authorization-PDF
+- Water and Sewer Agreement, Section 5.3(a) and Section 11.1, shortage priority: "the monthly allocation of water to the Customer shall not be lowered" https://www.newtoncountyga.gov/DocumentCenter/View/339/R022718b-Approving-Authorization-PDF
+- Development Agreement, Section 5.4.4, groundwater: https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF
+
+### Noise: FALLS SHORT
+Floor: A numeric limit measured at the nearest residence or property line
+No numeric limit, no measurement point and no setback in any Newton County document. The only noise in the authority's record is two citizen complaints about truck traffic and a question about a highway sound barrier.
+- Development Agreement, full text, which contains no noise provision: https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF
+
+### Jobs: FALLS SHORT
+Floor: Binding job commitments with a consequence, not projections
+SOFTENING LANGUAGE: "Recital C anticipates jobs. Section 3.3 removes any obligation to do anything: "The Company is not required to make any on-site or off-site improvements.""
+No number anywhere, and the agreement says so twice over. The only employment language is a recital anticipating that the project will create jobs. Section 3.3, headed No Required Improvements, states that the company is not required to make any on-site or off-site improvements or perform any work under the agreement. The head of the company's community development for North America told the authority in 2023 that it prefers to hire local workers it can train, which is a preference, not a term. Again the contrast within the same park is instructive: the authority's agreement with a vehicle manufacturer there binds a minimum investment and thousands of jobs by a date certain.
+- Development Agreement, Recital C and Section 3.3, no required improvements: https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF
+
+### Local contracting: FALLS SHORT
+Floor: Local subcontracting goals and haul-route road repair paid by the operator
+The money mostly flows the other way. Article 4 waives, in their entirety, every county connection, permitting, plan inspection, land disturbance, building, electrical, plumbing, gas, mechanical, construction trailer and certificate of occupancy fee, and the county found the project worthy of a full exemption from impact fees. The only operator repair obligation is narrow: on a temporary closure of one parkway, restore any damaged road, curb, gutter or drainage to its previous condition. There is no haul route program. On the authority side the company contributed $1,500,000 of improvement funds, which the authority's own restated infrastructure agreement records as having been paid out of the bond issuance fee, plus up to $44,000 to reimburse repaving. The roads are owned and maintained by the authority as public rights of way.
+- Development Agreement, Sections 4.1, 4.1.2 and 4.2, fee and impact fee waivers: https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF
+- Development Agreement, Section 5.9, road restoration: https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF
+- JDA record of the amended and restated infrastructure agreement and improvement funds: https://www.i20jda.com/uploads/7/5/0/2/75024267/jda_meeting_packet_1.29.2026.pdf
+
+### Transparency: FALLS SHORT
+Floor: No NDA, the agreement is public, and an independent audit on a schedule
+SOFTENING LANGUAGE: "Section 8.4: the county "shall not make any public announcement... regarding the Parties entering into this Agreement" without the company's prior written consent."
+The agreement is public, and then does its best to make everything around it private. Section 8.1 acknowledges the agreement is a public record. Section 8.2 has the county covenant to hold confidential business information in strictest confidence, notify the company of any records request and give it two business days to respond before releasing anything. Section 8.4 goes further than any other deal here: the county shall not make a public announcement about entering into the agreement without the company's prior written consent, and on request must correct or disavow statements by people purporting to speak for the county. Section 9.3 provides no third party beneficiaries, so no resident can enforce a word of it, and Section 11.2 waives jury trial. There is no audit of any kind and no dashboard. At the authority, public comment is two minutes, must be signed up for in advance, must relate to an agenda item, and the minutes record that no response is required.
+- Development Agreement, Sections 8.1, 8.2 and 8.4, confidentiality and publicity: https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF
+- Development Agreement, Section 9.3, no third-party beneficiaries: "There are no third-party beneficiaries under this Agreement." https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF
+- JDA minutes, January 29, 2026, public comment protocol: "This is not a question-and-answer session and no response from the JDA is required" https://www.i20jda.com/uploads/7/5/0/2/75024267/jda_meeting_packet_1.29.2026.pdf
+
+### Tax incentives: FALLS SHORT
+Floor: A but-for test before any abatement, with the forgone revenue stated
+SOFTENING LANGUAGE: "Section 3.1 states the conclusion instead of testing it: "The Parties agree that the Company would not develop the Project without such confirmation from the County.""
+A Georgia bond for title abatement, described more candidly in the authority's own minutes than in any other document in this benchmark. The company draws on issued bonds to transfer the improvements and equipment it bought that year into the authority's name and pays rent back in the exact same amount, so no funds actually move; the minutes state plainly that property held in the authority's name is not subject to taxation, which is why the transfer is necessary. Two bond authorizations of $42,000,000,000 each, 2018 and 2021. The 2025 draws alone totalled $1,642,731,620. Against that, a twenty year payment in lieu of taxes: $2 million a year rising to $5 million for the first campus through 2042, and $3 million a year starting in 2026 for the second through 2046. The county actually received its share of an $8,000,000 payment in April 2026, $1,137,000 to the county and $1,863,000 to the school board, and that is real money. What is missing is the arithmetic: the valuation and tax savings methodology sits in an intergovernmental agreement among the tax assessors that has never been published, no forgone revenue estimate exists, and the but for test is an assertion in Section 3.1 rather than an analysis. The consideration for the whole agreement was ten dollars.
+- JDA minutes, January 29, 2026, item 7: "Property held in the name of the JDA is not subject to taxation which is why this title transfer is necessary." https://www.i20jda.com/uploads/7/5/0/2/75024267/jda_meeting_packet_1.29.2026.pdf
+- JDA minutes, January 29, 2026, bond draws and PILOT schedules: https://www.i20jda.com/uploads/7/5/0/2/75024267/jda_meeting_packet_1.29.2026.pdf
+- JDA packet, April 28, 2026, the $8,000,000 payment and its distribution: https://www.i20jda.com/uploads/7/5/0/2/75024267/jda_meeting_packet_4.28.2026.pdf
+- Development Agreement, Sections 3.1 and 4.4, consideration and no new taxes: https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF
+- Revenue sharing intergovernmental contract, Sections 3(i) and 6(g): https://www.newtoncountyga.gov/DocumentCenter/View/431/R081616---IGC-re---Revenue-Sharing-Asgreement-for-Stanton-Springs-PDF
+
+### Reported criticisms
+- A sitting commissioner abstained on the second campus, telling the board he was disappointed the companies do not give more back to the county. (https://www.newtoncountyga.gov/DocumentCenter/View/3769/March-2-2021)
+- The valuation and tax savings methodology sits in an intergovernmental agreement among the tax assessors of three counties that has never been published, which is the single largest documentary gap in this deal. (https://www.newtoncountyga.gov/DocumentCenter/View/3913/R030221)
+- Newton County adopted an emergency moratorium on data center applications in February 2026, finding that such development threatens its ability to provide adequate infrastructure, water and services, and extended it to October 2026. The 2018 agreement's own moratorium clause exempts this campus from it. (https://www.newtoncountyga.gov/DocumentCenter/View/344/R022718a---Resolution-Approving-and-Authorizing-Execution-of-a-Dvelopment-Agreement-between-NC-and-Morning-Hornet-LLC-PDF)
 
 ---
 
@@ -881,6 +1070,303 @@ The developer committed not to seek local tax abatement or other financial incen
 
 ---
 
+## City of Papillion and Sarpy County, NE (Meta)
+
+- Project: Sarpy County Power Park West and East, the Meta Sarpy data center campus
+- Operator: Meta Platforms, Inc.
+- Developer: Raven Northbrook LLC, a Delaware limited liability company
+- Agreement: development agreement, signed, signed 2016-12-20
+- Scale: 290 acres, 200,000,000 USD
+  - 290 acres across the two legal descriptions in the mixed use agreements, roughly 900 acres acquired in total with later additions. Capex is the planned investment in the state incentive agreement, not a local commitment; the company's own materials claim more than $2.5 billion. Megawatts appear in no primary document; the only figure anywhere is the 20 megawatt floor in the utility rate schedule. About four million square feet across nine buildings is reported in news coverage and appears in no agreement.
+- Verification: primary
+- Documents:
+  - [primary] Sarpy County Power Park West mixed use development agreement, executed December 20, 2016, including the Exhibit C noise standards: https://www.papillion.org/DocumentCenter/View/589
+  - [primary] Sarpy County Power Park East mixed use development agreement, executed December 20, 2016: https://www.papillion.org/DocumentCenter/View/586
+  - [primary] Sarpy County Power Park West subdivision agreement: https://www.papillion.org/DocumentCenter/View/591
+  - [primary] City staff report and redlined exhibit for the 2022 amendment that changed the east campus noise ceiling to the greater of 70 decibels or whatever the code allows: https://www.papillion.org/DocumentCenter/View/10549/SCPPE-MU-Amendment-Staff-Report
+  - [primary] Sewer connection and wastewater service agreement with the Sarpy County and Cities Wastewater Agency, resolution 2021-004: https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF
+  - [primary] First amendment to the sewer agreement, resolution 2024-039, setting the industrial sewer capital cost at $13.2 million: https://www.sarpy.gov/DocumentCenter/View/7266/2024-039-Approving-First-Amendment-to-Raven-Northbrook-Connection-Agreement-FINALpdf
+  - [primary] Omaha Public Power District service regulations and rate schedules, containing Rate Schedule 261M for large high-voltage market-energy customers: https://oppd.com/media/172612/oppd-rate-manual.pdf
+  - [primary] Nebraska tax incentives annual report 2024, which names Raven Northbrook and the credits and refunds approved: https://revenue.nebraska.gov/sites/default/files/doc/incentives/annual_report/2024_Incentives_Annual_Report.pdf
+
+### Community fund: FALLS SHORT
+Floor: A fund that scales with the project, with a community seat on the body that spends it
+None in any of the five local instruments. The company's own materials claim more than $5.7 million to area schools and nonprofits and 250 plus grants since 2019, all distributed through a program the company controls, with no public body choosing recipients and nothing obliging it to continue. The only agreement-based payment resembling a community contribution is $50,000 for a temporary street closure, which the city characterised partly as a device to discourage keeping the street closed.
+- Mixed use development agreement, full text, which contains no community fund: https://www.papillion.org/DocumentCenter/View/589
+
+### Clawbacks: FALLS SHORT
+Floor: Incentives come back if the facility stops operating, not only if a jobs number is missed
+SOFTENING LANGUAGE: "Section 12(I): "Developer may, at Developer's sole discretion, elect not to develop the Property or, if developed, cease the operation of its business on the Property.""
+None, and the agreement goes further than silence. Section 12(I), headed No Obligation to Construct or Operate, says nothing creates a covenant to begin construction, begin a business, or keep operating, and then states that the developer may at its sole discretion elect not to develop the property or, if developed, cease operating. That sits beside vested development rights and a clause preventing later city zoning from superseding the agreement. Recapture exists at the state level under the incentive act, but no local trigger appears anywhere.
+- Mixed use development agreement, Section 12(I), no obligation to construct or operate: https://www.papillion.org/DocumentCenter/View/589
+- Mixed use development agreement, Sections 6(A) and 6(B), vested rights and moratorium shield: https://www.papillion.org/DocumentCenter/View/589
+
+### Decommissioning: FALLS SHORT
+Floor: A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks
+None for the data center, and the omission is thrown into relief by what is covered. Exhibit F gives the owner six months to decommission a rooftop solar array or a wind turbine if it generates no electricity for twelve continuous months, with turbines to be removed to thirty six inches below grade. A hypothetical solar panel carries a removal covenant. Four million square feet of data center does not. The closest equivalent is a sewer clause requiring the customer to disconnect its lateral at its own expense if use ceases, which covers a pipe.
+- Mixed use development agreement, Exhibit F, Sections II(A)(4) and II(B)(6), accessory solar and wind: https://www.papillion.org/DocumentCenter/View/589
+- Sewer agreement, Section 15, disconnection on cessation of use: https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF
+
+### Grid costs: MEETS
+Floor: The operator pays for its own interconnection and carries a minimum bill that survives it leaving
+SOFTENING LANGUAGE: "The tariff frames the duty as applying "during the operation of the Customer's facilities," which is the difference between a minimum bill and a commitment."
+A genuine minimum bill, set by a board rather than a regulator, with no obligation that survives departure. Rate Schedule 261M was approved unanimously in January 2017 and designed with the customer. It applies where the customer owns its own substation, requires at least 20 megawatts at 161 kilovolts, charges a $10,000 monthly service charge and $23.91 per kilowatt of demand, passes through hourly market energy, and carries a minimum monthly bill of $488,200 at 161 kilovolts with energy on top. A 5 percent gross revenue charge goes to the local government in lieu of taxes. Two caveats matter. Nebraska has no public utility commission reviewing these retail rates, so this tariff was never adversarially tested. And the obligation is framed as running during the operation of the customer's facilities: there is no term, no take or pay surviving exit and no stranded cost provision, so the minimum bill protects ratepayers while the campus runs and not after it stops. Any individual service contract, which the regulations permit, is not public. Separately the customer prepaid $13.2 million for the industrial sewer system and is contractually shielded from ever being charged its debt service.
+- Rate Schedule 261M, minimum monthly bill and substation ownership: https://oppd.com/media/172612/oppd-rate-manual.pdf
+- Service regulations, individual service contracts at the utility's discretion: https://oppd.com/media/172612/oppd-rate-manual.pdf
+- First amendment to the sewer agreement, $13,200,000 capital cost: https://www.sarpy.gov/DocumentCenter/View/7266/2024-039-Approving-First-Amendment-to-Raven-Northbrook-Connection-Agreement-FINALpdf
+- Sewer agreement, Section 13.3, no debt service charged to the customer: https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF
+
+### Water: FALLS SHORT
+Floor: A stated cap or closed-loop cooling, plus public reporting
+SOFTENING LANGUAGE: "Capacity changes require consent "which may be granted or withheld in Customer's sole discretion," so the reservation cannot be trimmed without the company's agreement."
+No cap in gallons per day, no reporting duty to any public body, and the potable water provider is not even a party to these agreements: a separate utility district supplies the water and its service agreement is not published. Every hard number in the record is on the discharge side. The sewer agreement sizes a temporary evaporation pond for up to 22,250,000 gallons a year at a 1,250 gallon per minute peak, and reserves 2,500 gallons per minute of peak hour industrial sewer capacity out of 4,150 total. Quality reporting exists, with a constituent limits table and a right for the agency to inspect and sample. Quantity reporting does not. Actual withdrawals, disclosed by the company to a nonprofit newsroom rather than to a regulator, ran 26.7 to 37.5 million gallons a year from 2020 through 2024.
+- Sewer agreement, Section 4, temporary evaporation pond sizing: https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF
+- Sewer agreement, Sections 10.1 and 10.2, capacity reservations: https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF
+- Sewer agreement, Section 5.1(d), discharge table and sampling: https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF
+- Subdivision agreement, Section 1(I)(6), water distribution system built by the utility district: https://www.papillion.org/DocumentCenter/View/591
+
+### Noise: MEETS
+Floor: A numeric limit measured at the nearest residence or property line
+SOFTENING LANGUAGE: "The east campus limit is now "the greater of" a fixed number or the code, which converts a ceiling into a floor that can only rise."
+The best documented noise term in this benchmark, and a lesson in how a good one erodes. The west campus agreement has held since 2016 at a maximum one hour average of 65 decibels from 7 a.m. to 10 p.m. and 55 decibels overnight, measured at the property line with a specified meter class. The east campus started identical. In 2022 the company applied to change the east daytime ceiling to the greater of 70 decibels or whatever the code allows, and the nighttime ceiling likewise. The city's own senior planner wrote the consequence into the staff report: a greater of approach will entitle the campus to any future sound level increase. Staff recommended approval for consistency with the existing agreement. The city had already raised its code ceiling from 65 to 70 in 2017, so the code moved first and the agreement was then amended to track it upward permanently. Emergency operations are exempt from any limit; routine generator testing is not.
+- Mixed use development agreement, Exhibit C, Section 5(G), noise limits: "All measurements shall be taken at the property line" https://www.papillion.org/DocumentCenter/View/589
+- 2022 amendment staff report: "Using a 'greater of' approach will entitle Sarpy County Power Park East to any future sound level increase." https://www.papillion.org/DocumentCenter/View/10549/SCPPE-MU-Amendment-Staff-Report
+
+### Jobs: FALLS SHORT
+Floor: Binding job commitments with a consequence, not projections
+Nothing binding locally. No employment obligation, local hire or prevailing wage appears in any of the five local agreements. The only numbers are benefit thresholds in the state incentive agreements: two 2017 agreements for this entity list $200 million of planned investment against 30 planned full time employees, and $34 million against zero. The second carries no employment requirement at all. The company claims more than 300 operational jobs supported, which is neither a headcount nor enforceable.
+- Mixed use development agreement, full text, which contains no employment provision: https://www.papillion.org/DocumentCenter/View/589
+- Nebraska tax incentives annual report 2024, agreements in effect table: https://revenue.nebraska.gov/sites/default/files/doc/incentives/annual_report/2024_Incentives_Annual_Report.pdf
+
+### Local contracting: FALLS SHORT
+Floor: Local subcontracting goals and haul-route road repair paid by the operator
+No local subcontracting or hiring requirement anywhere. The developer is solely responsible for privately financing the entire cost of all private and public improvements, and pays a 1 percent review fee on dedicated infrastructure, a per acre fee the city agreed to remit entirely to road improvements, watershed and connection fees, and the $13.2 million industrial sewer capital cost. On road repair the only covenant found is narrow, tied to one temporary street closure, covering dust control, repairs and snow removal in the closure area with a $5 million cap on indemnity. The broader county road agreement is a defined term in both subdivision agreements but its text is not retrievable, so haul route obligations there are unknown.
+- Subdivision agreement, Section 4(A), developer financing, and Section 5, fees: https://www.papillion.org/DocumentCenter/View/591
+- First amendment to the sewer agreement, capital cost: https://www.sarpy.gov/DocumentCenter/View/7266/2024-039-Approving-First-Amendment-to-Raven-Northbrook-Connection-Agreement-FINALpdf
+
+### Transparency: FALLS SHORT
+Floor: No NDA, the agreement is public, and an independent audit on a schedule
+SOFTENING LANGUAGE: "The agency must redact "to the extent permitted by Applicable Law," which is the clause holding the state records act open."
+The most quotable adverse transparency clause in this benchmark. Sewer agreement Section 21.15 lets the company designate trade secrets, then deems water usage confidential by default: data on actual or projected consumption of the reserved capacity is confidential business information with no designation needed. The agency must redact it, and on any records request must notify the company and hold the records for ten business days while the company decides whether to sue to block release, at the company's cost. A separate clause bars the agency from sharing discharge permit information with anyone but the permitting authority without written consent. State records law is acknowledged as overriding, so this is delay and redact rather than an absolute bar, but a public body contracted away its default posture on how much water a private company uses. On the other side: no non-disclosure agreement by a public body appears in anything I read, the full agreement texts are posted, and the county's bond disclosures name the entity. There is no audit and no dashboard, and Section 12(H) means no resident can enforce the noise limit or anything else.
+- Sewer agreement, Section 21.15, confidential information and the ten business day hold: https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF
+- Sewer agreement, Section 5.1(b), discharge permit information: https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF
+- Mixed use development agreement, Section 12(H), no third party beneficiaries: https://www.papillion.org/DocumentCenter/View/589
+
+### Tax incentives: NOT APPLICABLE
+Floor: A but-for test before any abatement, with the forgone revenue stated
+Marked not applicable because there is genuinely no local tax break to score. No increment financing, no abatement, no payment in lieu of taxes appears in any of the five local agreements, and the city's only blighted area is downtown, miles away. The company pays full property tax and is the county's single largest taxpayer at $5,629,489 in 2023. That is what a data center looks like when the locality does not give the tax away. The money moved at the state level instead: the 2024 state incentives report lists $118,544,281 of credits used and refunds approved for this entity over two years, roughly five times the next largest line, and the state does not publish the value of the personal property exemption at all. In April 2026 the legislature repealed the standalone data center sales tax exemption, though not the incentive act tier this campus sits under.
+- Mixed use development agreement and subdivision agreement, neither of which contains an abatement, increment or PILOT: https://www.papillion.org/DocumentCenter/View/589
+- Nebraska tax incentives annual report 2024, project-specific disclosure: "Raven Northbrook, LLC — $118,544,281 — Papillion and Springfield" https://revenue.nebraska.gov/sites/default/files/doc/incentives/annual_report/2024_Incentives_Annual_Report.pdf
+
+### Reported criticisms
+- Data centers were 1 percent of the public utility's electricity sold in 2018 and 21 percent in 2024, projected to reach 41 percent by 2035, while the industrial customer count fell. (https://nebraskapublicmedia.org/en/news/news-articles/nebraskans-cope-with-rising-demand-prices-for-electricity/)
+- The utility board voted 6 to 2 in December 2025 to extend coal operations at the North Omaha station. A speaker told the board it seemed to be putting data centers ahead of the health of the community, and later board minutes record eight public comments tying data centers to that plant and to environmental justice. (https://www.wowt.com/2025/12/19/oppd-delays-closure-north-omaha-coal-plant-despite-community-opposition/)
+- The utility approved 6.3 percent average rate increases for both 2025 and 2026, and concedes in its own materials that rapid load growth including from large users makes its required planning reserve margin bigger. (https://www.oppdcommunityconnect.com/corporate-operating-plan-2026/widgets/108375/faqs)
+- Nonprofit reporting found this campus withdrew 26.7 to 37.5 million gallons a year from 2020 through 2024, a figure that exists only because the company volunteered it, since its water use is contractually confidential. (https://flatwaterfreepress.org/data-centers-can-guzzle-serious-water-as-some-nebraskans-worry-tech-giants-seek-solutions/)
+
+---
+
+## Dona Ana County, NM (Oracle and OpenAI)
+
+- Project: Project Jupiter, about 819 acres of private land near Santa Teresa
+- Operator: Oracle, running OpenAI workloads
+- Developer: Yucca Growth Infrastructure LLC (microgrid), Red Chiles A through D LLC (data centers), and Green Chile Ventures LLC (equipment), all Delaware entities
+- Agreement: community benefits agreement, signed, signed 2025-11-12
+- Scale: 819 acres, 50,000,000,000 USD
+  - The community benefits agreement recites approximately 819 acres of private land; the memorandum says about 1,400 acres including easements, which is the figure usually reported. Capex is the floor the participation agreement commits to within five years. The bond ordinance authorizes up to $165 billion across three series over thirty years. No megawatt figure appears in any document; the campus runs behind the meter on its own gas and battery microgrid.
+- Verification: primary
+- Documents:
+  - [primary] Ordinance 367-2025, authorizing up to $165 billion in industrial revenue bonds, adopted September 19, 2025 by a 4 to 1 vote, executed and recorded: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/Ordinance%20No.%20367-2025%20IRB%20Adoption_Executed&Recorded.pdf
+  - [primary] Executed memorandum of understanding between Dona Ana County and Project Jupiter: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/Executed%20Memorandum%20of%20Understanding%20(MOU).pdf
+  - [primary] LEDA Project Participation Agreement (gross receipts tax share), County, New Mexico Economic Development Department and the companies: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/LEDA%20PPA%20GRT%20Share_Executed.pdf
+  - [primary] IRB Series 2025B, executed and recorded, containing the four Red Chiles lease agreements and, inside it, the Project Jupiter Community Benefits Agreement signed November 12, 2025: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+  - [primary] IRB Series 2025A, executed and recorded, the Yucca Growth Infrastructure microgrid lease: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025A%20-%20Executed%20&%20Recorded.pdf
+  - [primary] IRB Series 2025C, executed and recorded, the $125 billion equipment tranche purchased by Oracle America, Inc., containing the Green Chile Ventures guaranty: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025C%20-%20Executed%20&%20Recorded.pdf
+  - [government_page] Dona Ana County economic development projects page, which publishes most but not all of the Project Jupiter documents: https://www.donaana.gov/about_us/economic_development_projects.php
+  - [analysis] New Mexico Legislative Finance Committee, Policy Spotlight on Industrial Revenue Bonds: https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf
+
+### Community fund: FALLS SHORT
+Floor: A fund that scales with the project, with a community seat on the body that spends it
+SOFTENING LANGUAGE: "The community benefits agreement's remedy clause is the whole story: "the County shall have no separate claim for damages or specific performance under this CBA.""
+Real money with real deadlines, and no community hand on the tap. The community benefits agreement lists $11.4 million: $4 million for workforce development including a career and technical education facility, $1.5 million toward community facilities, $1 million for habitat restoration, $250,000 for desalination research, $150,000 for community college connectivity, and $4.5 million of county project funds standing in for waived building permit fees. A separate guaranty caps the guarantor's exposure at exactly $11,400,000. Layered on top, the participation agreement dedicates the first $50 million of the companies' gross receipts tax share back to the County for water and wastewater work in the south county, of which $10 million goes out as grants and the County has sole discretion over the rest. A citizen monitoring committee was created nine months after closing, in August 2026, with eleven members and the power to hold information forums. It does not audit, inspect, or enforce, and the resolution creating it asks the companies for cooperation rather than requiring it.
+- Community Benefits Agreement, Exhibit B, financial commitments table: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+- Green Chile Ventures guaranty, Section 5.5, cap on guarantor liability: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025C%20-%20Executed%20&%20Recorded.pdf
+- LEDA Project Participation Agreement, Section 4.a, first $50 million of GRT share: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/LEDA%20PPA%20GRT%20Share_Executed.pdf
+- Community Benefits Agreement, Section III, sole and exclusive remedy: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+
+### Clawbacks: MEETS
+Floor: Incentives come back if the facility stops operating, not only if a jobs number is missed
+SOFTENING LANGUAGE: ""Continuously" is defined so that the company keeps operating unless it loses 75% or more of its non-construction jobs in a 90 day period. Losing 74% is not a trigger."
+Better than most on paper and time limited in a way that matters. Lease Section 4.16 repays abated property tax on a sliding scale if the project permanently ceases on or before November 1, 2030: 100% in the first three years, 70% in year four, 40% in year five, and zero from year six onward. So for the last twenty five years of a thirty year abatement there is no closure clawback at all. The other two triggers measure only the single year in which the failure occurs. All clawbacks are capped at cumulative abated tax less PILOT paid, and may only be assessed annually. On the gross receipts side the participation agreement threatens 100% repayment if construction investment misses $350 million by 2035, but Section 5.b waives every gross receipts clawback once investment passes $400 million after 2027, which on a project of this size happens almost immediately.
+- Lease Agreement, Section 4.16.D, permanent cessation sliding scale: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+- Lease Agreement, Section 4.20(B), cap on clawbacks: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+- LEDA Project Participation Agreement, Section 5.b: "the State and County will waive any and all Clawback penalties related to the GRT Share Distribution" https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/LEDA%20PPA%20GRT%20Share_Executed.pdf
+
+### Decommissioning: FALLS SHORT
+Floor: A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks
+None. The words decommission, letter of credit, surety and escrow appear nowhere in the nine executed leases, the ordinances, the community benefits agreement, or the participation agreement. The only removal promise in the record is a fuel cell vendor's slide, which the County cannot enforce.
+- Lease agreements, full text, which contain no decommissioning provision: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+
+### Grid costs: UNKNOWN
+Floor: The operator pays for its own interconnection and carries a minimum bill that survives it leaving
+The cleanest answer to the cost-shift question in this benchmark, and it comes from the design rather than a negotiation. The memorandum says the project powers itself with an on-site microgrid of natural gas generation and large-scale battery storage, that the project pays for the microgrid and the energy it uses, and that the campus will not affect existing customers' reliability or costs. Since approval the developers replaced gas turbines with natural-gas fuel cells. What is not resolved: whether the microgrid is fully islanded or keeps a utility connection, which is what would determine if any stranded cost could still land on other ratepayers.
+- Community benefits agreement, Section 8.4, onsite microgrid: https://cms2.revize.com/revize/donaanacounty/Documents/About%20Us/Economic%20Development%20Projects/Community%20Benefits%20Agreement%20(CBA)%20Executed.pdf
+- https://www.santafenewmexican.com/news/local_news/project-jupiter-developers-overhaul-data-centers-power-plan/article_d7bb0388-8382-4993-b1db-073d148379ac.html
+
+### Water: FALLS SHORT
+Floor: A stated cap or closed-loop cooling, plus public reporting
+SOFTENING LANGUAGE: "The cap covers potable water for the data center. The gas power blocks are a separate matter, and the county's own April 2026 resolution says it could not confirm the cooling premise still held."
+The tightest water number in this benchmark, sitting in the one document that cannot be enforced for damages. Section 8.1 of the community benefits agreement specifies closed loop cooling and caps potable use at an average of 20,000 gallons a day with a peak of 60,000. But the word gallons appears in no operative covenant of any of the nine leases, there is no meter, no reporting cadence, and no consequence for exceeding it. Exhibit A is prefaced as subject to change so long as the change is not a material deviation. The cap has already been tested: on April 14, 2026 the commission adopted a resolution noting press comments suggesting a tenant did not intend to use closed loop cooling for the power plants, and recording that the County had received no information from any developer or tenant about it. The County's stated leverage was the building permit process.
+- Community Benefits Agreement, Section 8.1, potable water: "an average of 20,000 gallons per day with a maximum peak use capped at 60,000 gallons per day" https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+- Community Benefits Agreement, Exhibit A, paragraph 7: "subject to change as the Project advances so long as any change does not represent a material deviation" https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+- Lease agreements, full text, in which no gallons figure appears as a covenant: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+
+### Noise: FALLS SHORT
+Floor: A numeric limit measured at the nearest residence or property line
+SOFTENING LANGUAGE: "Lease Section 4.8 defines compliance by reference to a local ordinance rather than by a number, so the clause is only as strong as whatever the county adopts later."
+No numeric limit in any agreement. Lease Section 4.8 instead deems compliance: keeping noise consistent with whatever local limits happen to be in place during the term counts as satisfying the clause. The developer's own slides cite about 35 dBA at the nearest home, which is a claim rather than a commitment.
+- Lease Agreement, Section 4.8, nuisance not permitted: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+
+### Jobs: MEETS
+Floor: Binding job commitments with a consequence, not projections
+SOFTENING LANGUAGE: "Lease Section 4.18: the company "agrees to use its best efforts" to offer positions to qualified county applicants. Shortfalls can also be deferred for an "Adverse Economic Event," and the county agrees such a request "will not unreasonably be denied.""
+The widest gap in this benchmark between the number everyone repeats and the number anyone can enforce. The community benefits agreement and the memorandum both speak of 750 full time jobs plus 50 part time at $75,000 to $100,000, and the participation agreement softens that to approximately 750 anticipated by the end of 2031. The executed leases carry the actual job targets, and they are campus wide: 37.5 by the end of 2029, 87.5 by 2030, and 175 by 2031. The consequence for missing them is not a clawback but a PILOT increase on a capped sliding scale, topping out at 60% for hiring under 30% of target, and only for the year after the cure period. Hiring nobody at all would cost roughly $7 million on a $12 million annual PILOT. There is no prevailing wage clause anywhere and local hiring is best efforts.
+- Lease Agreement, Section 4.20, job targets and PILOT increase schedule: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+- LEDA Project Participation Agreement, Section 2.c: "Approximately seven hundred fifty (750) total full-time employees... are anticipated as being employed" https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/LEDA%20PPA%20GRT%20Share_Executed.pdf
+- Community Benefits Agreement, Exhibit A, paragraphs 3, 5 and 6: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+
+### Local contracting: FALLS SHORT
+Floor: Local subcontracting goals and haul-route road repair paid by the operator
+SOFTENING LANGUAGE: ""to encourage participation by vendors based within Dona Ana County" is the whole of the obligation."
+A publicity requirement rather than a procurement requirement. Lease Section 4.19 asks the company to coordinate with the County to publicize its needs so as to encourage participation by county vendors. No percentage, no reporting, no consequence. The companies do fund a roadway extension at the Highway 136 and Highway 9 intersection under the community benefits agreement, but no road repair or haul route agreement exists in the county's published record.
+- Lease Agreement, Section 4.19, local purchasing: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+- Community Benefits Agreement, Section 8.3, roadway extension: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+
+### Transparency: FALLS SHORT
+Floor: No NDA, the agreement is public, and an independent audit on a schedule
+SOFTENING LANGUAGE: "Lease Section 4.24: "Only the minimum portion of information that is legally required to be disclosed shall be produced, and all legally permissible redactions shall be applied.""
+The county owns the property and signed confidentiality obligations to its own tenant. Lease Section 4.14 conditions county access and inspection on the company's security policies including the execution of non disclosure agreements by the County itself, with two weeks notice. Section 4.24 requires the County, on a public records request, to cooperate at the company's expense in asserting exemptions and to produce only the minimum legally required. Section 4.23 bars the County from providing covered data to any third party including a governmental entity, and from talking to the media about a security incident without the company's written consent. The annual performance review is done by county or state staff rather than an independent auditor, and the companies need not divulge what they consider proprietary. Most of the documents are published, which is genuinely better than average, but the community benefits agreement is not among them: it is findable only inside the recorded Series 2025B bond PDF.
+- Lease Agreement, Section 4.14, access and inspection: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+- Lease Agreement, Section 4.24(A)(iv), confidential information: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+- Lease Agreement, Section 4.23(A), data protection: "Under no circumstances may Issuer access and/or provide such Leased Property or Covered Data to any third party" https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+- LEDA Project Participation Agreement, Section 9, annual performance review: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/LEDA%20PPA%20GRT%20Share_Executed.pdf
+
+### Tax incentives: FALLS SHORT
+Floor: A but-for test before any abatement, with the forgone revenue stated
+A hundred percent abatement of real and personal property tax for thirty years, delivered by county title ownership under the industrial revenue bond act, with leases running to November 1, 2055. The payment in lieu of taxes is $12 million a year for thirty years, $360 million total, split among the county, three school districts and a flood district. The detail that matters: the Series 2025C tranche, the $125 billion of equipment purchased by Oracle America, carries no separate PILOT. Its lease says the combined obligation will not exceed the Series 2025B schedule, so the servers generate no incremental payment. The county's own staff report summarized the financial impact in a single sentence saying the abatement is recovered in part by the PILOT, with no forgone revenue estimate and no alternative site analysis. The state's Legislative Finance Committee produced the only number, ten months later: up to $3.3 billion in tax benefits against $360 million of PILOT, roughly nine to one.
+- Memorandum of understanding, Section 4.2: "a full (100%) abatement of real and personal property taxes associated with the Project for a term of 30 years" https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/Executed%20Memorandum%20of%20Understanding%20(MOU).pdf
+- Lease Agreement, Exhibit C, PILOT schedule through September 30, 2055: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf
+- Series 2025C Lease, Section 5.10, no incremental PILOT on the equipment tranche: https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025C%20-%20Executed%20&%20Recorded.pdf
+- LFC Policy Spotlight, p. 10, Dona Ana County estimate: https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf
+
+### Reported criticisms
+- Two suits seek to invalidate the bond ordinance, disclosed in an exhibit to every bond purchase agreement. The buyers acknowledged them and closed anyway. (https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf)
+- The commission itself adopted a resolution in April 2026 noting press reports that a tenant did not intend to use closed loop cooling, and recording that no developer or tenant had told the county anything about it. (https://www.donaana.gov/about_us/economic_development_projects.php)
+- The state Legislative Finance Committee estimates up to $3.3 billion in tax benefits for this project, and found that no state entity keeps a list of active industrial revenue bond projects. (https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf)
+- Local groups have objected on water quality grounds, citing a 2024 state finding that the local utility bypassed arsenic treatment for over a year, and called a commissioner's posting of opponents' names on social media an act of intimidation. (https://www.hcn.org/articles/resistance-to-data-centers-rises-on-the-border/)
+
+---
+
+## Village of Los Lunas, NM (Meta)
+
+- Project: Greater Kudu LLC 2025 Expansion Project, 4250 Messenger Loop NW, Los Lunas
+- Operator: Meta Platforms, Inc.
+- Developer: Greater Kudu LLC, a Meta affiliate
+- Agreement: tax abatement, approved, approved 2025-02-13
+- Scale: 346 MW, 738 acres, 350,000,000 USD
+  - Acreage is the merged 738.149 acre site in the lease exhibit. The megawatt figure is the estimated peak load after this expansion, from PNM testimony, not a contract term. Capex is the binding minimum in the 2026 state and local participation agreement; Meta says it has invested far more statewide. This is the third industrial revenue bond ordinance for the same campus, after 2016 and 2021.
+- Verification: primary
+- Documents:
+  - [primary] Village of Los Lunas council packet, February 13, 2025, containing adopted Ordinance 480, the Lease Agreement with the PILOT and clawback schedules, and the First Amended and Restated Water and Wastewater Service Agreement: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+  - [primary] Council packet containing the February 13, 2025 minutes, which record the 4 to 0 votes: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02272025-1228
+  - [primary] Council packet, March 12, 2026, containing Ordinance 486 and the LEDA Project Participation Agreement: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_03122026-1292
+  - [primary] Council packet, December 5, 2024, containing inducement Resolution 24-27: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_12052024-1219
+  - [analysis] New Mexico Legislative Finance Committee, Policy Spotlight on Industrial Revenue Bonds, which estimates the forgone revenue and finds no state oversight of taxable IRBs: https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf
+  - [primary] PNM 7th Revised Rate No. 36B, the special service rate under which this customer takes power: https://www.pnm.com/documents/d/pnm.com/7th-revised-rate-no-36b
+  - [primary] Direct testimony of Julio C. Aguirre, NMPRC Case 25-00048-UT, attaching the Third Amended and Restated Special Service Contract: https://www.pnm.com/documents/d/pnm.com/6-direct-testimony-of-julio-c-aguirre
+  - [primary] Direct testimony of Stephen Jenkins, NMPRC Case 25-00048-UT, on how network upgrade costs are recovered: https://www.pnm.com/documents/d/pnm.com/9-direct-testimony-of-stephen-jenkins
+
+### Community fund: FALLS SHORT
+Floor: A fund that scales with the project, with a community seat on the body that spends it
+Nothing contractual. Meta funds a community grants program and reports several million dollars given to Valencia County schools and nonprofits since 2019, but that program lives outside every instrument. The Village cannot enforce it, cannot compel it to continue, and gets no say in who receives it. A voluntary program is a good thing to have and a bad thing to count on.
+- Lease Agreement and Ordinance 480, neither of which contains a community fund provision: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+
+### Clawbacks: MEETS
+Floor: Incentives come back if the facility stops operating, not only if a jobs number is missed
+SOFTENING LANGUAGE: "Carve-outs excuse closure for holidays, maintenance and retooling, casualty, labor dispute, and "short-term slack demand or similar" not exceeding 120 days. A cured jobs shortfall is rebated."
+The best clawback in this benchmark, and the first one here that actually fires if the facility stops running rather than only if a jobs number is missed. Lease Section 5.9.B is a project closure clawback: if the company ceases operation within ten years of closing it repays the abated property, gross receipts and compensating taxes on a sliding scale, 100% before March 2030 stepping down to zero after March 2035, less PILOT already paid, due in 60 days. Section 5.9.C adds a jobs clawback measured every December 31 through 2055 against a 30 full time employee target. Two real caveats. The jobs scale is oddly shaped: missing the target by 21% costs 20% while missing by 31% costs 100%, so there is a cliff rather than a slope. And Section 5.9.D caps everything at the taxes actually abated, so the public can never come out ahead, only whole. What makes it credible is enforcement: the Village keeps Section 5.9 as a reserved right rather than assigning it to the bond purchaser, which is a Meta affiliate, and can terminate the lease and put the property back on the tax rolls.
+- Lease Agreement, Section 5.9.B, project closure clawback: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+- Lease Agreement, Section 5.9.C, performance clawback and cure: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+- Lease Agreement, Section 5.9.D and Section 7.4, cap and reserved rights: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+
+### Decommissioning: FALLS SHORT
+Floor: A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks
+None, and the ending is written the other way. At the end of the term the company buys the property back from the Village for one dollar under Lease Section 9.1. Nothing in any instrument addresses removal, site restoration, or abandonment. The environmental section only requires obeying laws that already exist.
+- Lease Agreement, Section 9.1, purchase option: "$1.00" https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+- Lease Agreement, Section 5.8, environmental matters: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+
+### Grid costs: FALLS SHORT
+Floor: The operator pays for its own interconnection and carries a minimum bill that survives it leaving
+SOFTENING LANGUAGE: "The No Net Adverse Impact covenant sounds absolute but is tested only during a general rate case, and against a revenue requirement reduced by a production cost offset subsidy."
+The most instructive grid arrangement in the benchmark, because it is the one place where you can see both halves of the bargain. In Meta's favour, and the public's: there is a real minimum bill, 10,000 kW of on-peak billable demand every month plus a 60% annual load factor floor, and a genuine early termination payment at Section 9.6 equal to the present value of every remaining year of the resources procured for this customer. That is what a take or pay looks like when someone writes one. On the customer's side of the ledger, the load-side connection is on the customer under Rate 36B, but the generator-side network upgrades for the solar and battery plants built for this customer are recovered in PNM's base rates, which every other ratepayer pays. So the honest answer to who pays for the grid is: both, and the split is only visible if you read the testimony. Worth noting separately that the renewable energy certificates go solely to the customer and are barred from counting toward New Mexico's renewable portfolio standard.
+- Rate No. 36B, determination of monthly on-peak billable demand: "in no event shall it be less than" https://www.pnm.com/documents/d/pnm.com/7th-revised-rate-no-36b
+- Rate No. 36B, substation equipment: "shall be installed, paid for, owned, operated, and maintained by the customer" https://www.pnm.com/documents/d/pnm.com/7th-revised-rate-no-36b
+- Third Amended and Restated Special Service Contract, Section 9.6 and Exhibit E, early termination payment: https://www.pnm.com/documents/d/pnm.com/6-direct-testimony-of-julio-c-aguirre
+- Direct testimony of Stephen Jenkins, Section III, p. 9: "The cost of the Network Upgrades, including station network upgrades, are recovered in base rates." https://www.pnm.com/documents/d/pnm.com/9-direct-testimony-of-stephen-jenkins
+
+### Water: FALLS SHORT
+Floor: A stated cap or closed-loop cooling, plus public reporting
+SOFTENING LANGUAGE: "Consumption data is contractually deemed confidential business information, so the Village must notify the company of any records request, give it three days to object, and redact what it designates."
+Large numbers and a confidentiality clause that makes them hard to check. The amended water agreement allocates up to 500 acre feet a year of consumptive use, caps diversion at 1,000 acre feet a year, and guarantees up to 3,000,000 gallons a day, reduced from 4,500,000. For scale, the Village's own permit allows about 5.6 million gallons a day for the entire Village, so the guarantee is roughly half of everything Los Lunas may divert. Above 1.5 million gallons a day the guarantee holds for no more than five days a month, after which the Village owes only best efforts. Water shortages are excluded from force majeure and Stage 3 restrictions apply, which are real protections. Recycled effluent use is only a reasonable effort, not a volume. The company may terminate on 30 days notice; the Village has no matching right.
+- Water and Wastewater Service Agreement, Section 4.1, water capacity guarantee: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+- Water and Wastewater Service Agreement, Sections 2.1(c) and Recital T, allocation and diversion limit: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+- Water and Wastewater Service Agreement, Section 11.14, confidentiality of consumption data: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+- Water and Wastewater Service Agreement, Section 8, termination on 30 days notice: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+
+### Noise: FALLS SHORT
+Floor: A numeric limit measured at the nearest residence or property line
+SOFTENING LANGUAGE: ""Data center use will not be a nuisance." A conclusion written into the contract in place of a limit."
+No number, and the lease closes the question before anyone can ask it. Section 4.7 is headed Nuisance Not Permitted and then states that data center use will not be a nuisance, and that keeping noise consistent with local limits in place as of the lease date counts as compliance. That freezes the standard at March 2025 and forecloses a future council from tightening it for this site.
+- Lease Agreement, Section 4.7, nuisance not permitted: "Data center use will not be a nuisance." https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+
+### Jobs: MEETS
+Floor: Binding job commitments with a consequence, not projections
+Small but real, which is unusual. The lease binds 30 full time employees attributable to this expansion, measured every December 31 from 2030 through 2055, with the performance clawback as the consequence. Counting the 2021 project the total contractual commitment across both is 60. Meta separately reports supporting several hundred operational roles, but only the 30 is enforceable. No local hire requirement. Whether the state prevailing wage rule for industrial revenue bond projects reaches this project is unresolved and I have not read the rule, so I am leaving it null rather than guessing.
+- Lease Agreement, Section 5.9.C and Exhibit D, employment target and annual performance report: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+- LEDA Project Participation Agreement, Sections 5 and 6, which set an investment minimum but no job number: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_03122026-1292
+
+### Local contracting: FALLS SHORT
+Floor: Local subcontracting goals and haul-route road repair paid by the operator
+SOFTENING LANGUAGE: "The infrastructure exhibit carries the bracketed note "[TO BE UPDATED; NEED TO DISCUSS PRIORITY]" and the parties' cost obligation is "expressly subject to appropriation.""
+Infrastructure money exists but it is public money, not the company's. Under the 2026 arrangement the Village, the county and the state each dedicate half of their gross receipts tax increment from construction for ten years to public infrastructure, which village staff estimated at $14 million to $33 million. The improvement list is real, covering highway intersections and loop roads, but the version in the packet is marked as still to be updated with priorities to discuss, and the proportionate shares are blank. The Village and county, not the company, contract for the work, and their obligation is expressly subject to appropriation. No local subcontracting requirement and no haul route repair covenant anywhere.
+- Ordinance 486 staff report, budget impact: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_03122026-1292
+- LEDA Project Participation Agreement, Exhibit A and Section 4.E: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_03122026-1292
+
+### Transparency: FALLS SHORT
+Floor: No NDA, the agreement is public, and an independent audit on a schedule
+SOFTENING LANGUAGE: "The oversight right exists but is gated: access is subject to the company's requirements "including, but not limited to, the execution of non-disclosure and confidentiality agreements by the Issuer.""
+Genuinely good on the front end and quietly closed on the back end. Every instrument was published in the council packet, the hearings were open, and the minutes record each vote, which is more than most places manage. But the Village's own right to inspect is conditioned on signing non-disclosure and confidentiality agreements under Lease Section 4.13; water consumption data is contractually confidential; the only audit is an annual self-certified letter from the company reporting its own headcount, with no independent verification and no dashboard; the bond documents confer no rights on any third party, so no resident can enforce anything; and the bond purchase agreement refers to side letter agreements that were never published.
+- Lease Agreement, Section 4.13, access and inspection: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+- Lease Agreement, Section 5.9.C and Exhibit D, annual performance report: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+- Bond Purchase Agreement, Section 8, referring to unpublished side letters: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+- Council minutes, February 13, 2025, recording the 4 to 0 votes with no public comment: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02272025-1228
+
+### Tax incentives: FALLS SHORT
+Floor: A but-for test before any abatement, with the forgone revenue stated
+An industrial revenue bond sale leaseback: the Village takes title, which takes the property off the tax rolls, and the company acts as the Village's agent to buy equipment free of gross receipts tax. Effectively 100% property tax abatement to March 2055. The payment in lieu of taxes is $500,000 a year until the first certificate of occupancy, then $1,500,000 escalating 2.5% every five years, roughly $45 million nominal across the term. The state's own Legislative Finance Committee estimates this expansion could receive up to $480 million in benefits. That is about 5.5 to 1 against the public, and there is no but for test anywhere in the record. The LFC found the same statewide: no mandatory reporting and no state oversight for taxable IRBs.
+- Ordinance 480, Section 6, and Lease Agreement Sections 4.4 and 4.5: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+- Lease Agreement, Section 5.9.A and Exhibit C, PILOT schedule: https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226
+- LFC Policy Spotlight, p. 10, estimate for the Los Lunas expansion: https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf
+- LFC Policy Spotlight, p. 18: "there are no mandatory state reporting requirements or state oversight for IRBs" https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf
+
+### Reported criticisms
+- Valencia County farmers and residents caravanned to the village offices over water and energy use, saying the company's efficiency claims had never been confirmed. (https://cloud.sustainability.watch/explore-issues/example-a-new-mexico-community-opposes-a-data-center/)
+- Residents have questioned the expansion and the transparency of the water figures behind it. (https://www.datacenterdynamics.com/en/news/los-lunas-locals-question-facebooks-data-center-expansion-worry-about-water-use/)
+- The state Legislative Finance Committee found industrial revenue bonds have cost state and local government $5.3 billion since 2000 with no mandatory reporting or oversight, and function as a general purpose giveaway rather than a targeted tool. (https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf)
+- A statewide moratorium on new data center construction is expected to come up in the 2027 legislative session. (https://www.kob.com/new-mexico/proposed-moratorium-on-data-centers-to-come-up-in-2027-legislative-session/)
+
+---
+
 ## City of New Albany, OH (Meta)
 
 - Project: Sidecat data center expansion, New Albany International Business Park (Licking County portion)
@@ -1065,6 +1551,104 @@ No tax breaks: the City says no incentives are offered and the project is not el
 - Only the City can enforce the agreement. Residents affected by noise cannot sue under it. (https://lancasteronline.com/news/local/lancaster-data-center-agreement-s-benefit-to-community-questioned/article_b2654db6-c6e3-4719-8a0e-1f839c1e325e.html)
 - Negotiation came after the February 2025 zoning opinions and the June 2025 demolition permit (recited in Section 12.1), so the City's leverage was limited. (https://fas.org/publication/community-benefit-agreements-data-center-development/)
 - The clean-energy penalty structure was described by resident Darrell Lagace as pay to pollute. (https://lancasteronline.com/news/local/lancaster-city-council-votes-to-approve-data-center-benefits-agreement/article_b05cb1fd-a585-4c4f-8945-c96ada3172ad.html)
+
+---
+
+## City of Memphis, TN (xAI)
+
+- Project: Colossus, 3231 Paul R. Lowry Road, with Colossus 2 and a paused water recycling plant
+- Operator: xAI
+- Developer: CTC Property LLC, an xAI subsidiary
+- Agreement: other, approved, approved 2025-08-19
+- Scale: 300 MW, 5,000,000,000 USD
+  - 300 MW of grid supply approved by the TVA board in two 150 MW steps, November 7, 2024 and February 11, 2026, plus on-site gas turbines permitted separately. Capex is the figure reported around the project; no capital figure appears in the city ordinance. Campus acreage and square footage are not stated in the documents I have. The ordinance identifies the site by metes and bounds in Exhibit A rather than by area.
+- Verification: primary
+- Documents:
+  - [primary] Memphis City Ordinance No. 5953, allocating a portion of city property tax revenue collected on artificial intelligence property to public purposes in the surrounding area: https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf
+  - [primary] Memphis City Council minutes, August 19, 2025, recording the third and final reading vote on Ordinance 5953: https://memphistn.gov/wp-content/uploads/2025/09/Minutes-08-19-2025.pdf
+  - [primary] MLGW xAI Update, May 5, 2025, the utility's own account of what xAI pays for and what was built at whose expense: https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf
+  - [primary] MLGW xAI Project Quick Facts (2024): https://www.mlgw.com/images/content/files/pdf/2024xAI%20and%20MLGW%20Quick%20Facts%201.pdf
+  - [government_page] MLGW xAI page, which publishes the utility's xAI documents: https://www.mlgw.com/xai
+  - [primary] TVA board minutes, November 7, 2024, approving 150 MW of firm power for CTC Property LLC through MLGW: https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/november--7-2024/2024-11072024-board-meeting-minutes-signed.pdf?sfvrsn=fde0917c_1
+  - [primary] TVA board resolution and memorandum, November 7, 2024, greater than 100 MW firm power arrangement with CTC Property LLC (xAI): https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/november--7-2024/resolutions/reading-room-11072024g-grtr-100mw-ctc-xai-reso-memo.pdf?sfvrsn=55653613_1
+  - [primary] TVA board minutes, February 11, 2026, approving a second 150 MW on a confidential memorandum: https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/february--11-2026/february-11-2026-board-meeting-minutes.pdf?sfvrsn=1658d52d_1
+
+### Community fund: FALLS SHORT
+Floor: A fund that scales with the project, with a community seat on the body that spends it
+SOFTENING LANGUAGE: "Section 2(a): "Subject to annual budgeting and appropriation by Council." The preamble adds that the Council intends to appropriate "so much of the Public Purpose Amount as it deems necessary and appropriate," "as the Council may in its discretion approve.""
+The most interesting community fund in this benchmark, and the one that shows how much work the word "allocate" can do. Ordinance 5953 sets a "Public Purpose Amount" equal to 25% of the city property tax revenue collected on the AI property, to be spent in a five mile radius on public projects, programs, and grants to nonprofits including affordable housing. It states an intent that $100 million be allocated in the aggregate, and once that is reached the Council is directed to review whether to keep going. Three things cut against it. The money is subject to annual budgeting and appropriation, so no year's payment is owed. The amount decreases by whatever other public entities allocate to the same area that year, so a county or state contribution reduces the city's rather than adding to it. And the $100 million target is inclusive of those other entities' money, so the city's own obligation is smaller than the headline. There is no community seat, no advisory board, and no reporting or audit requirement anywhere in the ordinance.
+- Ordinance 5953, Section 2(b): "lawfully available funds of the City equal in amount to 25% of the real and personal property tax revenues collected by the City on the AI Property" https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf
+- Ordinance 5953, Section 2(b), the offset sentence: "the Public Purpose Amount, as calculated above, to be allocated by the City to Public Purposes in any year shall decrease by that amount of money allocated by other public entities during such year" https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf
+- Ordinance 5953, Section 2(c): "It is the intent of the City that there be $100 million allocated in the aggregate, inclusive of the Public Purpose Amount allocated by the City and monies allocated by other public entities" https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf
+- Ordinance 5953, Section 1(f), defining the Surrounding Area: "those parcels of land in the City, or portions thereof, that are located within a five (5) mile radius of the AI Property" https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf
+- Council minutes, August 19, 2025, item 20, third and final reading: "APPROVED, on Third and Final Reading, as amended" https://memphistn.gov/wp-content/uploads/2025/09/Minutes-08-19-2025.pdf
+
+### Clawbacks: FALLS SHORT
+Floor: Incentives come back if the facility stops operating, not only if a jobs number is missed
+Nothing to claw back and nothing that triggers. Ordinance 5953 is the city allocating its own funds, not a subsidy to xAI, so it carries no performance conditions on the company at all. If the facility closes, the AI property simply stops being AI property under Section 1(h) and the allocation stops, which protects the city's money but returns nothing to the public for what has already been spent on the company's behalf. I have not located a payment in lieu of taxes agreement or an incentive agreement between xAI and EDGE in primary form, so I cannot say whether a clawback lives in a document I have not read.
+- Ordinance 5953, Section 1(h): "such parcels shall no longer constitute AI Real Property" https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf
+
+### Decommissioning: FALLS SHORT
+Floor: A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks
+No bond, escrow, letter of credit, or removal covenant appears in the ordinance or in the utility and TVA records.
+- Ordinance 5953, full text: https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf
+
+### Grid costs: UNKNOWN
+Floor: The operator pays for its own interconnection and carries a minimum bill that survives it leaving
+SOFTENING LANGUAGE: "TVA's own resolution language is conditional: firm power was approved "contingent on the new customer's agreement to certain demand response terms," with the terms themselves never described in public."
+On the part that is public, this is the strongest cost allocation in the benchmark: MLGW says in its own document that the transmission upgrades and both substations were built at xAI expense, and that xAI pays the prevailing industrial rate. What is not public is the contract. TVA approved the first 150 MW on a resolution contingent on the company agreeing to "certain demand response terms offered for similar customer loads," and approved the second 150 MW on February 11, 2026 on a confidential memorandum, delegating approval of the contractual, financial, and operational requirements to a single executive. So I can tell you who paid for the poles, and I cannot tell you whether there is a minimum bill, a term, or an exit charge if the load leaves.
+- MLGW xAI Update, May 5, 2025, electricity: "transmission system upgrades have been completed (at xAI expense), a substation to provide this power was constructed (at xAI expense)" https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf
+- MLGW xAI Update, May 5, 2025, electricity: "xAI is paying the prevailing industrial rate for electricity at this facility." https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf
+- MLGW xAI Update, May 5, 2025, electricity: "TVA/xAI/MLGW have a signed agreement requiring xAI to curtail their consumption of electricity from the grid when demand is high." https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf
+- TVA board resolution, November 7, 2024: "contingent on the new customer's agreement to certain demand response terms offered for similar customer loads" https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/november--7-2024/resolutions/reading-room-11072024g-grtr-100mw-ctc-xai-reso-memo.pdf?sfvrsn=55653613_1
+- TVA board minutes, February 11, 2026: "delegates authority to the Executive Vice President & Chief Business Officer to approve the contractual, financial, and operational requirements" https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/february--11-2026/february-11-2026-board-meeting-minutes.pdf?sfvrsn=1658d52d_1
+
+### Water: FALLS SHORT
+Floor: A stated cap or closed-loop cooling, plus public reporting
+SOFTENING LANGUAGE: "Every water number in the public record is framed as capacity available or volume expected, never as a limit the operator agreed not to exceed."
+A number that is a capacity, not a cap. MLGW's quick facts say the site draws up to 1 million gallons a day from an existing 20 inch main and pays the prevailing commercial rate. No document I have found sets an enforceable ceiling, requires reporting, or publishes actual consumption. The recycled water plant, which would produce 13 million gallons a day for xAI, TVA, Nucor and others, was offered and to be built at xAI expense rather than required by any agreement, and it has since been paused. As late as April 29, 2026 a coalition letter to the mayors was still asking, as an open question, how much aquifer water the facility uses per day. Figures circulating between 700,000 gallons and 5 million gallons a day come from advocacy estimates and from journalists reading billing records, not from a permit or a published meter.
+- MLGW xAI Project Quick Facts, water: "Water - Up to 1 MGD from an existing 20" water main serving the area." https://www.mlgw.com/images/content/files/pdf/2024xAI%20and%20MLGW%20Quick%20Facts%201.pdf
+- MLGW xAI Update, May 5, 2025, water: "xAI pays the prevailing commercial rate for consumption." https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf
+- MLGW xAI Update, May 5, 2025, recycled wastewater plant: "xAI offered to build a facility (at xAI expense) that uses discharged, treated wastewater from the Maxson Wastewater plant, to produce 13M gallons per day of recycled water" https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf
+- https://www.mlgw.com/xai
+
+### Noise: FALLS SHORT
+Floor: A numeric limit measured at the nearest residence or property line
+No noise limit, measurement point, or setback appears in the ordinance or the utility records. The contested environmental terms here are air emissions from the on-site turbines, litigated separately, not noise.
+- Ordinance 5953, full text: https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf
+
+### Jobs: FALLS SHORT
+Floor: Binding job commitments with a consequence, not projections
+SOFTENING LANGUAGE: "MLGW's own phrasing is a forecast: "The project is forecast to create ~300+ new, high paying jobs.""
+No job commitment exists in any document I have. MLGW's quick facts forecast "~300+ new, high paying jobs," which is a utility's projection of the project's effect, not a promise by the company and not enforceable by anyone. The ordinance says nothing about employment. Worth noting for context that the building itself was constructed with a 2010 state grant and a local abatement tied to an earlier tenant's job commitments, not xAI's.
+- MLGW xAI Project Quick Facts, value for MLGW customers: "The project is forecast to create ~300+ new, high paying jobs." https://www.mlgw.com/images/content/files/pdf/2024xAI%20and%20MLGW%20Quick%20Facts%201.pdf
+- Ordinance 5953, full text: https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf
+
+### Local contracting: FALLS SHORT
+Floor: Local subcontracting goals and haul-route road repair paid by the operator
+No local hiring or subcontracting preference and no road commitment. The one adjacent fact is that xAI paid for its own utility infrastructure, including a $1.7 million improvement to a 161 kV transmission line identified in MLGW's system impact study, which spares ratepayers but is not a contribution to the community.
+- MLGW xAI Project Quick Facts, conditions on the additional 100 MW: "$1.7M of improvements to a 161kV transmission line (per the MLGW electric system impact study)" https://www.mlgw.com/images/content/files/pdf/2024xAI%20and%20MLGW%20Quick%20Facts%201.pdf
+- Ordinance 5953, full text: https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf
+
+### Transparency: FALLS SHORT
+Floor: No NDA, the agreement is public, and an independent audit on a schedule
+SOFTENING LANGUAGE: "TVA's minutes describe the governing memorandum as containing "information that the customer considers confidential and business sensitive.""
+Split down the middle, and the public half is the half that matters least. The ordinance is public, readable, and was voted on in open session with residents speaking from the audience. The power arrangement, which is where the real money and the real risk sit, is not: TVA approved the second 150 MW on a confidential memorandum and delegated the terms to an executive, and the curtailment agreement among TVA, xAI and MLGW is described in public but never published. The ordinance itself sets no reporting, no audit, and no dashboard for the Public Purpose Amount, so there is no mechanism by which a resident can check whether the 25% was calculated correctly or spent nearby.
+- TVA board minutes, February 11, 2026: "a memorandum, which contains information that the customer considers confidential and business sensitive" https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/february--11-2026/february-11-2026-board-meeting-minutes.pdf?sfvrsn=1658d52d_1
+- Ordinance 5953, Sections 2 through 5, which contain no reporting or audit provision: https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf
+- Council minutes, August 19, 2025, item 20, speakers recognized from the audience: https://memphistn.gov/wp-content/uploads/2025/09/Minutes-08-19-2025.pdf
+
+### Tax incentives: UNKNOWN
+Floor: A but-for test before any abatement, with the forgone revenue stated
+Unresolved, and I would rather say so than guess. Ordinance 5953 assumes the city collects property tax on the AI property, since it allocates a share of that revenue, which implies the property is at least partly taxable. Separately, MLGW's own background says the building was constructed under a 2010 state grant and a 15 year local property tax abatement of 75%, but that abatement was granted to the earlier manufacturing tenant and I have not found a primary document establishing what xAI holds today. I have not located a payment in lieu of taxes agreement between xAI and EDGE. Until I read one, this clause stays unknown rather than being scored from a news summary.
+- MLGW xAI Update, background: "a 15-year local property tax abatement of 75%" https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf
+- Ordinance 5953, Section 2(b), which presumes property tax revenue is collected on the AI Property: https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf
+
+### Reported criticisms
+- Turbines ran without a permit from June 2024, at one point 35 units exceeding 420 MW, according to the NAACP appeal. (https://cdn.arstechnica.net/wp-content/uploads/2025/07/NAACP-and-YGGs-xAI-Air-Permit-Appeal-7-15-2025.pdf)
+- The permit allows 87 tons of nitrogen oxides a year in an area with ozone problems, in a historically Black neighborhood already carrying industrial pollution. (https://cleanenergy.org/wp-content/uploads/SACE-SCHD-xAI-Comments-2025-04-30.pdf)
+- The Justice Department moved to dismiss the NAACP Clean Air Act suit on national security grounds in June 2026, without disputing that the turbines lack permits. (https://www.utilitydive.com/news/doj-intervenes-xai-data-center-gas-turbine-lawsuit/823267/)
+- Boxtown residents say the tax reinvestment fund does not reach them and report fumes. (https://ncrc.org/south-memphis-residents-skeptical-of-musks-xai-economic-growth-claims-as-pollution-concerns-grow/)
 
 ---
 
@@ -1438,5 +2022,105 @@ No exemption from the tax roll, but a rebate of it. The March 2023 agreement let
 - Water projections were released only after environmental groups sued for the records, 210 days after the request. (https://midwestadvocates.org/our-work/legal-action/demanding-transparency-about-the-environmental-impacts-of-data-centers/)
 - Residents at the January 2026 site-plan hearing raised transparency, energy use, water consumption, electronic waste, and long-term employment concerns. (https://racinecountyeye.com/2026/01/27/microsoft-site-plans-approved-data/)
 - Statewide opposition has grown: a Marquette Law School poll found 70 percent of Wisconsin voters thought data center costs outweigh benefits in February 2026, rising to 78 percent in August 2026. (https://www.wispolitics.com/2026/marquette-poll-shows-further-drop-in-voters-data-center-views/)
+
+---
+
+## City of Port Washington, WI (Vantage)
+
+- Project: Port Washington data center campus, Stargate Wisconsin, in Tax Incremental District No. 5
+- Operator: Vantage Data Centers, with Oracle and OpenAI announced as tenants
+- Developer: Vantage Data Centers Management Company, LLC, successor to Red Granite DevCo LLC
+- Agreement: development agreement, signed, signed 2025-08-19
+- Scale: 1,300 MW, 672 acres, 2,558,000 sq ft, 8,000,000,000 USD
+  - 672 acres in the south phase of a roughly 1,900 acre site, four buildings totalling about 2.56 million square feet plus a visitor centre and warehouse. The city puts total power capacity at 1.3 gigawatts. Capex is the only figure the agreement itself binds, not less than eight billion dollars of development costs; the company has since announced more than fifteen billion.
+- Verification: primary
+- Documents:
+  - [primary] Executed Development Agreement between the City of Port Washington and Vantage Data Centers Management Company, LLC, August 19, 2025, 31 pages: https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+  - [primary] Tax Incremental District No. 5 project plan, prepared by Ehlers, containing the project cost table and the calculation of revenue diverted from overlying jurisdictions: https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000
+  - [primary] We Energies presentation to the Common Council on the electric rate structure for this customer: https://www.portwashingtonwi.gov/home/showpublisheddocument/6424/638979313162970000
+  - [government_page] City frequently asked questions, January 21, 2025, including the statement that no one affiliated with the city signed a non-disclosure agreement: https://www.portwashingtonwi.gov/home/showpublisheddocument/5201/638730468892070000
+  - [primary] We Energies Volume 19 electric rates, containing Rate Schedule VLC for very large customers and the bespoke resources tariff: https://www.we-energies.com/pdfs/etariffs/wisconsin/elecrateswi.pdf
+  - [primary] Wisconsin Public Service Commission news release on the large load tariff decided in docket 6630-TE-113: https://psc.wi.gov/Documents/PressReleases/04.24.2026PressRelease.PDF
+  - [primary] Wisconsin Department of Revenue fact sheet on the qualified data center sales and use tax exemption: https://www.revenue.wi.gov/DOR%20Publications/2114QualifiedDataCenter.pdf
+
+### Community fund: FALLS SHORT
+Floor: A fund that scales with the project, with a community seat on the body that spends it
+No community fund, no cadence, no seat. The one recurring payment that looks like one is not: the developer pays the city $150,000 a year for five years so the city can meet an obligation it already owed the neighbouring town under a 2004 agreement, and that $750,000 is itself listed as a reimbursable project cost, so the developer gets it back out of the tax increment. Corporate giving announced afterwards, including $225,000 to the schools foundation and $3 million to a natural resource partnership, sits outside the agreement.
+- Development Agreement, Article II.E, and Exhibit C item 3, which makes the payment reimbursable: https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+- TID No. 5 project plan, finding 9: https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000
+
+### Clawbacks: FALLS SHORT
+Floor: Incentives come back if the facility stops operating, not only if a jobs number is missed
+SOFTENING LANGUAGE: "Article II.A: the agreement "creates no obligation for Developer or its successors or assigns to construct, open or operate a data center campus.""
+None, and the agreement says the quiet part in Article II.A: it creates no obligation to construct, open or operate a data center campus on the north phase. No jobs trigger, no investment trigger, no cessation trigger. Three partial substitutes exist. If construction on the north phase has not begun by 2038 the city may elect after 2039 to buy that land back at what the developer paid plus inflation, once, and the option dies on any city misstep. On default the city may suspend reimbursement payments, but they are paid in full on cure. And structurally the district is pay as you go, so the city fronts no cash. That last point is the real protection here, and it is worth more than most clawbacks in this benchmark.
+- Development Agreement, Article II.A, no obligation to operate: https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+- Development Agreement, Article II.C.1, repurchase option, and Article VII.C, payment suspension: https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+- Development Agreement, Article III.C, reimbursement solely from tax increment and subject to annual appropriation: https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+
+### Decommissioning: FALLS SHORT
+Floor: A bond, escrow, or letter of credit that pays for teardown and site restoration if the operator walks
+None. The nearest provision runs the other way: Article II.I requires the developer to rebuild after a casualty to at least the prior equalized value, starting within 180 days, because the city's repayment depends on the assessed value staying up. There is a property use covenant barring uses that would make the land tax exempt. Insurance is required but may be self-insured at the developer's option. Nothing addresses removal or restoration at end of life.
+- Development Agreement, Articles II.H, II.I and VIII.B: https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+
+### Grid costs: FALLS SHORT
+Floor: The operator pays for its own interconnection and carries a minimum bill that survives it leaving
+SOFTENING LANGUAGE: "The minimum billed demand is measured against the customer's own forecast, and overshooting in one month earns no credit against undershooting in another."
+A strong state tariff sitting on top of a local deal that undoes part of it. The tariff is the good news and it is unusually good: mandatory for any eligible customer at 100 megawatts or more, a fifteen year minimum term, a minimum billed demand charge invoiced whenever actual load falls below the customer's own forecast, dedicated distribution and substation equipment directly assigned to the customer, financial security equal to net book value plus 1.3 times two years of charges, and reimbursement of net book value on early termination. The commission lowered the threshold from the utility's proposed 500 megawatts and ordered revisions to address transmission cost shifting. The local news is worse: the $91 million substation is a reimbursable project cost in the district, repaid out of tax increment with 7% annual interest, so the developer fronts it and the increment pays it back. And a separate 345 kilovolt transmission project, whose stated need is this load, is before the commission at $1.4 to $1.64 billion, which is not on this deal's ledger at all.
+- Rate Schedule VLC, availability and minimum billed demand charge: https://www.we-energies.com/pdfs/etariffs/wisconsin/elecrateswi.pdf
+- Rate Schedule VLC, term: "a minimum term of fifteen (15) years with a one-year written cancellation notice" https://www.we-energies.com/pdfs/etariffs/wisconsin/elecrateswi.pdf
+- Development Agreement, Exhibit C item 4, substation and transmission as reimbursable costs: https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+- TID No. 5 project plan, p. 20, $91,000,000 substation line: https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000
+- PSC news release on docket 6630-TE-113 and transmission cost shifting: https://psc.wi.gov/Documents/PressReleases/04.24.2026PressRelease.PDF
+
+### Water: FALLS SHORT
+Floor: A stated cap or closed-loop cooling, plus public reporting
+SOFTENING LANGUAGE: "Every water figure for this project lives in a fact sheet. The agreement's only water language is the city's obligation to build capacity."
+No cap, no reporting duty and no recycling requirement anywhere in the agreement. What the agreement does contain is the city promising to build water and wastewater improvements of sufficient quality and quantity to serve the project, with the district budgeting roughly $166 million of water and sewer work. The cooling description, a closed loop chiller with dry coolers using about 22,000 gallons on a peak day, comes from city and company fact sheets rather than from any binding instrument. That number may well be right. It is simply not a promise anyone can enforce.
+- Development Agreement, Article III.E, public improvements, and Article II.K, stormwater: https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+- TID No. 5 project plan, water and wastewater cost lines: https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000
+- City fact sheet describing the cooling design and daily water use: https://www.portwashingtonwi.gov/home/showpublisheddocument/5201/638730468892070000
+
+### Noise: UNKNOWN
+Floor: A numeric limit measured at the nearest residence or property line
+Unresolved rather than absent. The development agreement contains no decibel figure; the standard sits in the I-3 technology campus zoning district adopted in May 2025, whose text I could not retrieve because the code host blocks automated access. Press reports and the mayor describe 70 decibels, but I will not publish a number I have not read in the source. What is documented: in March 2026 the plan commission voted unanimously to cut outdoor construction from 24 hours on weekdays to 6 a.m. to 8 p.m. Monday through Saturday after resident pressure, and the site design uses 8 foot berms, setbacks over 300 feet and 2,345 native trees. If you have the ordinance text, that is a correction worth sending.
+- Development Agreement, full text, which contains no noise limit: https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+- City materials on the site design and construction hours: https://www.portwashingtonwi.gov/home/showpublisheddocument/5201/638730468892070000
+
+### Jobs: FALLS SHORT
+Floor: Binding job commitments with a consequence, not projections
+The agreement never mentions jobs, local hire, apprenticeship or prevailing wage. The figures in circulation, more than 4,000 construction jobs and more than 1,000 long term jobs, come from the companies' own announcement. The district's project plan says only that the project will generate economic activity and employment, with no number and no consequence.
+- Development Agreement, full text, which contains no employment provision: https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+- TID No. 5 project plan, finding 2: https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000
+
+### Local contracting: MEETS
+Floor: Local subcontracting goals and haul-route road repair paid by the operator
+SOFTENING LANGUAGE: "The repair duty is triggered only "if, in the City's reasonable discretion, such damage was caused by Developer's construction activities.""
+Road repair is a real, written obligation, which is rarer than it should be. On completion of each phase the developer at its cost must repair damage to any city, town or county road caused by its construction activities, and during construction must fix anything that renders those roads impassable. The developer also pays all fees, all city third party consultant costs, all land and easement acquisition for public improvements, dedicates the improvements at no cost with a two year defect warranty, and funds a sewer and water extension to a neighbouring community. There is no local subcontracting or local purchasing requirement of any kind.
+- Development Agreement, Article II.C.2(e), road repair: "such damage was caused by Developer's construction activities" https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+- Development Agreement, Articles II.D, II.F, II.G and Exhibit D: https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+
+### Transparency: FALLS SHORT
+Floor: No NDA, the agreement is public, and an independent audit on a schedule
+SOFTENING LANGUAGE: "Article VIII.H requires "reasonable advance written notice to the Developer prior to releasing" records, and the developer "shall have the right to take legal action to prohibit the release.""
+The only deal in this benchmark where a city says plainly that it signed no non-disclosure agreement, and adds that the developer never asked for one. The draft agreement was posted eleven days before the vote and the executed agreement, the district plan, the utility presentation and a long run of fact sheets are all online. That is real and it deserves credit. But Article VIII.H then binds the city to a confidentiality regime anyway: it sweeps in all nonpublic information about the project, the developer, its tenants, customers, employees and finances, requires reasonable advance written notice before releasing anything, and gives the developer the right to sue to block a release with the city obliged to cooperate. No audit of any kind, no dashboard, no third party beneficiaries. Article III.F also bars the city for the whole term from supporting any new tax or fee that would apply solely to this project or to the data center industry.
+- City FAQ, January 21, 2025: "No one affiliated with the City has signed an NDA related to the proposed data center project" https://www.portwashingtonwi.gov/home/showpublisheddocument/5201/638730468892070000
+- Development Agreement, Article VIII.H, confidential information: "reasonable advance written notice to the Developer prior to releasing" https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+- Development Agreement, Article VIII.R: "There are no third-party beneficiaries under this Agreement" https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+- Development Agreement, Article III.F, no project-specific taxes: https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+
+### Tax incentives: MEETS
+Floor: A but-for test before any abatement, with the forgone revenue stated
+SOFTENING LANGUAGE: "The but-for finding leans partly on the existence of another subsidy, reasoning that state support is itself evidence of the need for local support."
+No abatement at all, which is unusual here, and the arithmetic is published, which is rarer still. This is a pay as you go tax incremental district: the developer builds the infrastructure and is repaid solely from the increment its own buildings generate, so the city fronts nothing. The catch is the interest. Reimbursable costs carry 7% a year, budgeted at $187,515,144 over the district's life, on total project costs of $458,565,144 against about $175 million of actual infrastructure. And the district plan does the calculation most places never publish: $541,517,664 of revenue diverted from overlying jurisdictions between 2028 and 2047, of which $262,079,692 would otherwise have gone to the school district. A but for finding was made twice, in the agreement's recitals and in the plan, reasoning from infrastructure cost, from the developer considering other sites, and, circularly, from the fact that the state is already granting a sales tax exemption. On top of the district sits the state exemption under 2023 Wisconsin Act 19, covering servers, networking, substations, backup generation, cooling and electricity with no dollar cap, certified here to an Oracle entity in October 2025. Its value is not published per project.
+- TID No. 5 project plan, Section 17, revenue diverted from overlying jurisdictions: https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000
+- TID No. 5 project plan, detailed list of estimated project costs: https://www.portwashingtonwi.gov/home/showpublisheddocument/6274/638962047469930000
+- Development Agreement, Recital F and Article III.C, but-for finding and 7% interest: https://www.portwashingtonwi.gov/home/showpublisheddocument/6088/638972377962100000
+- Wisconsin DOR fact sheet 2114, qualified data center exemption: https://www.revenue.wi.gov/DOR%20Publications/2114QualifiedDataCenter.pdf
+
+### Reported criticisms
+- Sierra Club Wisconsin and Midwest Environmental Advocates sued the state natural resources department in July 2026 after it dropped a required environmental impact statement. Emails showed a department attorney said an EIS would be required, then the agency reversed after the company said an EIS would kill the project. (https://www.sierraclub.org/press-releases/2026/07/sierra-club-wisconsin-and-mea-file-lawsuit-after-state-regulators-abandon)
+- Neighbours filed an open meetings complaint with the district attorney alleging the council deliberated the agreements in closed session. The city published a point by point rebuttal calling the claims false. (https://www.wisn.com/article/port-washington-neighbors-file-complaint-over-data-center-approval-process/70424962)
+- In April 2026 more than 66 percent of Port Washington voters approved a requirement that future tax incremental districts of $10 million or more go to referendum. It does not apply to this district, and business groups have challenged it. (https://wisconsinwatch.org/2026/04/port-washington-data-center-project-voters-referendum-tif-district-wisconsin/)
+- A $1.4 billion transmission project whose stated need is this load is before the state commission, and the state utility ratepayer advocate says eastern Wisconsin customers would eventually pay for it. (https://urbanmilwaukee.com/2025/10/18/port-washington-data-center-requires-1-4-billion-transmission-line-project/)
 
 ---

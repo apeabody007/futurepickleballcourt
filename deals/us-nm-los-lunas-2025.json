@@ -1,0 +1,324 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-nm-los-lunas-2025",
+  "status": "approved",
+  "verification": "primary",
+  "short_name": "Meta",
+  "jurisdiction": {
+    "country": "US",
+    "state": "NM",
+    "locality": "Village of Los Lunas",
+    "level": "city"
+  },
+  "operator": "Meta Platforms, Inc.",
+  "developer": "Greater Kudu LLC, a Meta affiliate",
+  "project": "Greater Kudu LLC 2025 Expansion Project, 4250 Messenger Loop NW, Los Lunas",
+  "agreement_type": "tax_abatement",
+  "dates": {
+    "signed": null,
+    "approved": "2025-02-13",
+    "effective": "2025-03-01"
+  },
+  "scale": {
+    "acres": 738,
+    "mw": 346,
+    "capex_usd": 350000000,
+    "sqft": null,
+    "notes": "Acreage is the merged 738.149 acre site in the lease exhibit. The megawatt figure is the estimated peak load after this expansion, from PNM testimony, not a contract term. Capex is the binding minimum in the 2026 state and local participation agreement; Meta says it has invested far more statewide. This is the third industrial revenue bond ordinance for the same campus, after 2016 and 2021."
+  },
+  "documents": [
+    {
+      "title": "Village of Los Lunas council packet, February 13, 2025, containing adopted Ordinance 480, the Lease Agreement with the PILOT and clawback schedules, and the First Amended and Restated Water and Wastewater Service Agreement",
+      "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+      "kind": "primary",
+      "date": "2025-02-13"
+    },
+    {
+      "title": "Council packet containing the February 13, 2025 minutes, which record the 4 to 0 votes",
+      "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02272025-1228",
+      "kind": "primary",
+      "date": "2025-02-27"
+    },
+    {
+      "title": "Council packet, March 12, 2026, containing Ordinance 486 and the LEDA Project Participation Agreement",
+      "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_03122026-1292",
+      "kind": "primary",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "Council packet, December 5, 2024, containing inducement Resolution 24-27",
+      "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_12052024-1219",
+      "kind": "primary",
+      "date": "2024-12-05"
+    },
+    {
+      "title": "New Mexico Legislative Finance Committee, Policy Spotlight on Industrial Revenue Bonds, which estimates the forgone revenue and finds no state oversight of taxable IRBs",
+      "url": "https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf",
+      "kind": "analysis",
+      "date": "2026-07-22"
+    },
+    {
+      "title": "PNM 7th Revised Rate No. 36B, the special service rate under which this customer takes power",
+      "url": "https://www.pnm.com/documents/d/pnm.com/7th-revised-rate-no-36b",
+      "kind": "primary",
+      "date": null
+    },
+    {
+      "title": "Direct testimony of Julio C. Aguirre, NMPRC Case 25-00048-UT, attaching the Third Amended and Restated Special Service Contract",
+      "url": "https://www.pnm.com/documents/d/pnm.com/6-direct-testimony-of-julio-c-aguirre",
+      "kind": "primary",
+      "date": "2025-06-13"
+    },
+    {
+      "title": "Direct testimony of Stephen Jenkins, NMPRC Case 25-00048-UT, on how network upgrade costs are recovered",
+      "url": "https://www.pnm.com/documents/d/pnm.com/9-direct-testimony-of-stephen-jenkins",
+      "kind": "primary",
+      "date": "2025-06-13"
+    }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": false,
+      "amount_usd": null,
+      "cadence": null,
+      "scales_with_project": null,
+      "controlled_by": null,
+      "community_seat": false,
+      "notes": "Nothing contractual. Meta funds a community grants program and reports several million dollars given to Valencia County schools and nonprofits since 2019, but that program lives outside every instrument. The Village cannot enforce it, cannot compel it to continue, and gets no say in who receives it. A voluntary program is a good thing to have and a bad thing to count on.",
+      "sources": [
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Lease Agreement and Ordinance 480, neither of which contains a community fund provision"
+        }
+      ]
+    },
+    "clawbacks": {
+      "present": true,
+      "triggers": [
+        "operation",
+        "jobs"
+      ],
+      "proportional": true,
+      "notes": "The best clawback in this benchmark, and the first one here that actually fires if the facility stops running rather than only if a jobs number is missed. Lease Section 5.9.B is a project closure clawback: if the company ceases operation within ten years of closing it repays the abated property, gross receipts and compensating taxes on a sliding scale, 100% before March 2030 stepping down to zero after March 2035, less PILOT already paid, due in 60 days. Section 5.9.C adds a jobs clawback measured every December 31 through 2055 against a 30 full time employee target. Two real caveats. The jobs scale is oddly shaped: missing the target by 21% costs 20% while missing by 31% costs 100%, so there is a cliff rather than a slope. And Section 5.9.D caps everything at the taxes actually abated, so the public can never come out ahead, only whole. What makes it credible is enforcement: the Village keeps Section 5.9 as a reserved right rather than assigning it to the bond purchaser, which is a Meta affiliate, and can terminate the lease and put the property back on the tax rolls.",
+      "hedge": "Carve-outs excuse closure for holidays, maintenance and retooling, casualty, labor dispute, and \"short-term slack demand or similar\" not exceeding 120 days. A cured jobs shortfall is rebated.",
+      "sources": [
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Lease Agreement, Section 5.9.B, project closure clawback"
+        },
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Lease Agreement, Section 5.9.C, performance clawback and cure"
+        },
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Lease Agreement, Section 5.9.D and Section 7.4, cap and reserved rights"
+        }
+      ]
+    },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "None, and the ending is written the other way. At the end of the term the company buys the property back from the Village for one dollar under Lease Section 9.1. Nothing in any instrument addresses removal, site restoration, or abandonment. The environmental section only requires obeying laws that already exist.",
+      "sources": [
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Lease Agreement, Section 9.1, purchase option",
+          "quote": "$1.00"
+        },
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Lease Agreement, Section 5.8, environmental matters"
+        }
+      ]
+    },
+    "grid_costs": {
+      "present": true,
+      "who_pays_interconnect": "shared",
+      "minimum_bill": true,
+      "term_years": null,
+      "governed_by": "PNM Rate No. 36B with Riders 47 and 49, under a Special Service Contract approved by the New Mexico Public Regulation Commission",
+      "notes": "The most instructive grid arrangement in the benchmark, because it is the one place where you can see both halves of the bargain. In Meta's favour, and the public's: there is a real minimum bill, 10,000 kW of on-peak billable demand every month plus a 60% annual load factor floor, and a genuine early termination payment at Section 9.6 equal to the present value of every remaining year of the resources procured for this customer. That is what a take or pay looks like when someone writes one. On the customer's side of the ledger, the load-side connection is on the customer under Rate 36B, but the generator-side network upgrades for the solar and battery plants built for this customer are recovered in PNM's base rates, which every other ratepayer pays. So the honest answer to who pays for the grid is: both, and the split is only visible if you read the testimony. Worth noting separately that the renewable energy certificates go solely to the customer and are barred from counting toward New Mexico's renewable portfolio standard.",
+      "hedge": "The No Net Adverse Impact covenant sounds absolute but is tested only during a general rate case, and against a revenue requirement reduced by a production cost offset subsidy.",
+      "sources": [
+        {
+          "url": "https://www.pnm.com/documents/d/pnm.com/7th-revised-rate-no-36b",
+          "where": "Rate No. 36B, determination of monthly on-peak billable demand",
+          "quote": "in no event shall it be less than"
+        },
+        {
+          "url": "https://www.pnm.com/documents/d/pnm.com/7th-revised-rate-no-36b",
+          "where": "Rate No. 36B, substation equipment",
+          "quote": "shall be installed, paid for, owned, operated, and maintained by the customer"
+        },
+        {
+          "url": "https://www.pnm.com/documents/d/pnm.com/6-direct-testimony-of-julio-c-aguirre",
+          "where": "Third Amended and Restated Special Service Contract, Section 9.6 and Exhibit E, early termination payment"
+        },
+        {
+          "url": "https://www.pnm.com/documents/d/pnm.com/9-direct-testimony-of-stephen-jenkins",
+          "where": "Direct testimony of Stephen Jenkins, Section III, p. 9",
+          "quote": "The cost of the Network Upgrades, including station network upgrades, are recovered in base rates."
+        }
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": 3000000,
+      "reporting": false,
+      "recycling_required": false,
+      "cooling": "evaporative",
+      "notes": "Large numbers and a confidentiality clause that makes them hard to check. The amended water agreement allocates up to 500 acre feet a year of consumptive use, caps diversion at 1,000 acre feet a year, and guarantees up to 3,000,000 gallons a day, reduced from 4,500,000. For scale, the Village's own permit allows about 5.6 million gallons a day for the entire Village, so the guarantee is roughly half of everything Los Lunas may divert. Above 1.5 million gallons a day the guarantee holds for no more than five days a month, after which the Village owes only best efforts. Water shortages are excluded from force majeure and Stage 3 restrictions apply, which are real protections. Recycled effluent use is only a reasonable effort, not a volume. The company may terminate on 30 days notice; the Village has no matching right.",
+      "hedge": "Consumption data is contractually deemed confidential business information, so the Village must notify the company of any records request, give it three days to object, and redact what it designates.",
+      "sources": [
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Water and Wastewater Service Agreement, Section 4.1, water capacity guarantee"
+        },
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Water and Wastewater Service Agreement, Sections 2.1(c) and Recital T, allocation and diversion limit"
+        },
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Water and Wastewater Service Agreement, Section 11.14, confidentiality of consumption data"
+        },
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Water and Wastewater Service Agreement, Section 8, termination on 30 days notice"
+        }
+      ]
+    },
+    "noise": {
+      "present": false,
+      "limit_dba": null,
+      "measured_at": null,
+      "setback_ft": null,
+      "notes": "No number, and the lease closes the question before anyone can ask it. Section 4.7 is headed Nuisance Not Permitted and then states that data center use will not be a nuisance, and that keeping noise consistent with local limits in place as of the lease date counts as compliance. That freezes the standard at March 2025 and forecloses a future council from tightening it for this site.",
+      "hedge": "\"Data center use will not be a nuisance.\" A conclusion written into the contract in place of a limit.",
+      "sources": [
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Lease Agreement, Section 4.7, nuisance not permitted",
+          "quote": "Data center use will not be a nuisance."
+        }
+      ]
+    },
+    "jobs": {
+      "present": true,
+      "promised_permanent": 30,
+      "promised_construction": null,
+      "local_hire": false,
+      "prevailing_wage": null,
+      "enforceable": true,
+      "notes": "Small but real, which is unusual. The lease binds 30 full time employees attributable to this expansion, measured every December 31 from 2030 through 2055, with the performance clawback as the consequence. Counting the 2021 project the total contractual commitment across both is 60. Meta separately reports supporting several hundred operational roles, but only the 30 is enforceable. No local hire requirement. Whether the state prevailing wage rule for industrial revenue bond projects reaches this project is unresolved and I have not read the rule, so I am leaving it null rather than guessing.",
+      "sources": [
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Lease Agreement, Section 5.9.C and Exhibit D, employment target and annual performance report"
+        },
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_03122026-1292",
+          "where": "LEDA Project Participation Agreement, Sections 5 and 6, which set an investment minimum but no job number"
+        }
+      ]
+    },
+    "local_contracting": {
+      "present": true,
+      "local_subcontracting": false,
+      "road_repair": false,
+      "infrastructure_contribution_usd": null,
+      "notes": "Infrastructure money exists but it is public money, not the company's. Under the 2026 arrangement the Village, the county and the state each dedicate half of their gross receipts tax increment from construction for ten years to public infrastructure, which village staff estimated at $14 million to $33 million. The improvement list is real, covering highway intersections and loop roads, but the version in the packet is marked as still to be updated with priorities to discuss, and the proportionate shares are blank. The Village and county, not the company, contract for the work, and their obligation is expressly subject to appropriation. No local subcontracting requirement and no haul route repair covenant anywhere.",
+      "hedge": "The infrastructure exhibit carries the bracketed note \"[TO BE UPDATED; NEED TO DISCUSS PRIORITY]\" and the parties' cost obligation is \"expressly subject to appropriation.\"",
+      "sources": [
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_03122026-1292",
+          "where": "Ordinance 486 staff report, budget impact"
+        },
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_03122026-1292",
+          "where": "LEDA Project Participation Agreement, Exhibit A and Section 4.E"
+        }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": true,
+      "agreement_public": true,
+      "public_dashboard": false,
+      "audit_cadence": "annual",
+      "audit_independent": false,
+      "notes": "Genuinely good on the front end and quietly closed on the back end. Every instrument was published in the council packet, the hearings were open, and the minutes record each vote, which is more than most places manage. But the Village's own right to inspect is conditioned on signing non-disclosure and confidentiality agreements under Lease Section 4.13; water consumption data is contractually confidential; the only audit is an annual self-certified letter from the company reporting its own headcount, with no independent verification and no dashboard; the bond documents confer no rights on any third party, so no resident can enforce anything; and the bond purchase agreement refers to side letter agreements that were never published.",
+      "hedge": "The oversight right exists but is gated: access is subject to the company's requirements \"including, but not limited to, the execution of non-disclosure and confidentiality agreements by the Issuer.\"",
+      "sources": [
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Lease Agreement, Section 4.13, access and inspection"
+        },
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Lease Agreement, Section 5.9.C and Exhibit D, annual performance report"
+        },
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Bond Purchase Agreement, Section 8, referring to unpublished side letters"
+        },
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02272025-1228",
+          "where": "Council minutes, February 13, 2025, recording the 4 to 0 votes with no public comment"
+        }
+      ]
+    },
+    "tax": {
+      "present": true,
+      "abatement_pct": 100,
+      "duration_years": 30,
+      "pilot": true,
+      "estimated_forgone_usd": 480000000,
+      "but_for_test": false,
+      "notes": "An industrial revenue bond sale leaseback: the Village takes title, which takes the property off the tax rolls, and the company acts as the Village's agent to buy equipment free of gross receipts tax. Effectively 100% property tax abatement to March 2055. The payment in lieu of taxes is $500,000 a year until the first certificate of occupancy, then $1,500,000 escalating 2.5% every five years, roughly $45 million nominal across the term. The state's own Legislative Finance Committee estimates this expansion could receive up to $480 million in benefits. That is about 5.5 to 1 against the public, and there is no but for test anywhere in the record. The LFC found the same statewide: no mandatory reporting and no state oversight for taxable IRBs.",
+      "sources": [
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Ordinance 480, Section 6, and Lease Agreement Sections 4.4 and 4.5"
+        },
+        {
+          "url": "https://www.loslunasnm.gov/AgendaCenter/ViewFile/Agenda/_02132025-1226",
+          "where": "Lease Agreement, Section 5.9.A and Exhibit C, PILOT schedule"
+        },
+        {
+          "url": "https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf",
+          "where": "LFC Policy Spotlight, p. 10, estimate for the Los Lunas expansion"
+        },
+        {
+          "url": "https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf",
+          "where": "LFC Policy Spotlight, p. 18",
+          "quote": "there are no mandatory state reporting requirements or state oversight for IRBs"
+        }
+      ]
+    }
+  },
+  "criticisms": [
+    {
+      "summary": "Valencia County farmers and residents caravanned to the village offices over water and energy use, saying the company's efficiency claims had never been confirmed.",
+      "source": "https://cloud.sustainability.watch/explore-issues/example-a-new-mexico-community-opposes-a-data-center/"
+    },
+    {
+      "summary": "Residents have questioned the expansion and the transparency of the water figures behind it.",
+      "source": "https://www.datacenterdynamics.com/en/news/los-lunas-locals-question-facebooks-data-center-expansion-worry-about-water-use/"
+    },
+    {
+      "summary": "The state Legislative Finance Committee found industrial revenue bonds have cost state and local government $5.3 billion since 2000 with no mandatory reporting or oversight, and function as a general purpose giveaway rather than a targeted tool.",
+      "source": "https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf"
+    },
+    {
+      "summary": "A statewide moratorium on new data center construction is expected to come up in the 2027 legislative session.",
+      "source": "https://www.kob.com/new-mexico/proposed-moratorium-on-data-centers-to-come-up-in-2027-legislative-session/"
+    }
+  ],
+  "contributors": [
+    "apeabody007"
+  ],
+  "last_reviewed": "2026-09-10"
+}

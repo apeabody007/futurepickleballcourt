@@ -1,0 +1,322 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-nm-dona-ana-2025",
+  "status": "signed",
+  "verification": "primary",
+  "short_name": "Oracle and OpenAI",
+  "jurisdiction": {
+    "country": "US",
+    "state": "NM",
+    "locality": "Dona Ana County",
+    "level": "county"
+  },
+  "operator": "Oracle, running OpenAI workloads",
+  "developer": "Yucca Growth Infrastructure LLC (microgrid), Red Chiles A through D LLC (data centers), and Green Chile Ventures LLC (equipment), all Delaware entities",
+  "project": "Project Jupiter, about 819 acres of private land near Santa Teresa",
+  "agreement_type": "community_benefits_agreement",
+  "dates": {
+    "signed": "2025-11-12",
+    "approved": "2025-09-22",
+    "effective": "2025-10-23"
+  },
+  "scale": {
+    "acres": 819,
+    "mw": null,
+    "capex_usd": 50000000000,
+    "sqft": null,
+    "notes": "The community benefits agreement recites approximately 819 acres of private land; the memorandum says about 1,400 acres including easements, which is the figure usually reported. Capex is the floor the participation agreement commits to within five years. The bond ordinance authorizes up to $165 billion across three series over thirty years. No megawatt figure appears in any document; the campus runs behind the meter on its own gas and battery microgrid."
+  },
+  "documents": [
+    {
+      "title": "Ordinance 367-2025, authorizing up to $165 billion in industrial revenue bonds, adopted September 19, 2025 by a 4 to 1 vote, executed and recorded",
+      "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/Ordinance%20No.%20367-2025%20IRB%20Adoption_Executed&Recorded.pdf",
+      "kind": "primary",
+      "date": "2025-09-19"
+    },
+    {
+      "title": "Executed memorandum of understanding between Dona Ana County and Project Jupiter",
+      "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/Executed%20Memorandum%20of%20Understanding%20(MOU).pdf",
+      "kind": "primary",
+      "date": "2025-09-24"
+    },
+    {
+      "title": "LEDA Project Participation Agreement (gross receipts tax share), County, New Mexico Economic Development Department and the companies",
+      "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/LEDA%20PPA%20GRT%20Share_Executed.pdf",
+      "kind": "primary",
+      "date": "2025-10-23"
+    },
+    {
+      "title": "IRB Series 2025B, executed and recorded, containing the four Red Chiles lease agreements and, inside it, the Project Jupiter Community Benefits Agreement signed November 12, 2025",
+      "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+      "kind": "primary",
+      "date": "2025-11-12"
+    },
+    {
+      "title": "IRB Series 2025A, executed and recorded, the Yucca Growth Infrastructure microgrid lease",
+      "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025A%20-%20Executed%20&%20Recorded.pdf",
+      "kind": "primary",
+      "date": "2025-11-12"
+    },
+    {
+      "title": "IRB Series 2025C, executed and recorded, the $125 billion equipment tranche purchased by Oracle America, Inc., containing the Green Chile Ventures guaranty",
+      "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025C%20-%20Executed%20&%20Recorded.pdf",
+      "kind": "primary",
+      "date": "2025-11-12"
+    },
+    {
+      "title": "Dona Ana County economic development projects page, which publishes most but not all of the Project Jupiter documents",
+      "url": "https://www.donaana.gov/about_us/economic_development_projects.php",
+      "kind": "government_page",
+      "date": null
+    },
+    {
+      "title": "New Mexico Legislative Finance Committee, Policy Spotlight on Industrial Revenue Bonds",
+      "url": "https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf",
+      "kind": "analysis",
+      "date": "2026-07-22"
+    }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": true,
+      "amount_usd": 11400000,
+      "cadence": "mixed",
+      "scales_with_project": false,
+      "controlled_by": "Dona Ana County, at its sole discretion",
+      "community_seat": false,
+      "notes": "Real money with real deadlines, and no community hand on the tap. The community benefits agreement lists $11.4 million: $4 million for workforce development including a career and technical education facility, $1.5 million toward community facilities, $1 million for habitat restoration, $250,000 for desalination research, $150,000 for community college connectivity, and $4.5 million of county project funds standing in for waived building permit fees. A separate guaranty caps the guarantor's exposure at exactly $11,400,000. Layered on top, the participation agreement dedicates the first $50 million of the companies' gross receipts tax share back to the County for water and wastewater work in the south county, of which $10 million goes out as grants and the County has sole discretion over the rest. A citizen monitoring committee was created nine months after closing, in August 2026, with eleven members and the power to hold information forums. It does not audit, inspect, or enforce, and the resolution creating it asks the companies for cooperation rather than requiring it.",
+      "sources": [
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Community Benefits Agreement, Exhibit B, financial commitments table"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025C%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Green Chile Ventures guaranty, Section 5.5, cap on guarantor liability"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/LEDA%20PPA%20GRT%20Share_Executed.pdf",
+          "where": "LEDA Project Participation Agreement, Section 4.a, first $50 million of GRT share"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Community Benefits Agreement, Section III, sole and exclusive remedy"
+        }
+      ],
+      "hedge": "The community benefits agreement's remedy clause is the whole story: \"the County shall have no separate claim for damages or specific performance under this CBA.\""
+    },
+    "clawbacks": {
+      "present": true,
+      "triggers": [
+        "operation",
+        "investment"
+      ],
+      "proportional": true,
+      "notes": "Better than most on paper and time limited in a way that matters. Lease Section 4.16 repays abated property tax on a sliding scale if the project permanently ceases on or before November 1, 2030: 100% in the first three years, 70% in year four, 40% in year five, and zero from year six onward. So for the last twenty five years of a thirty year abatement there is no closure clawback at all. The other two triggers measure only the single year in which the failure occurs. All clawbacks are capped at cumulative abated tax less PILOT paid, and may only be assessed annually. On the gross receipts side the participation agreement threatens 100% repayment if construction investment misses $350 million by 2035, but Section 5.b waives every gross receipts clawback once investment passes $400 million after 2027, which on a project of this size happens almost immediately.",
+      "hedge": "\"Continuously\" is defined so that the company keeps operating unless it loses 75% or more of its non-construction jobs in a 90 day period. Losing 74% is not a trigger.",
+      "sources": [
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Lease Agreement, Section 4.16.D, permanent cessation sliding scale"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Lease Agreement, Section 4.20(B), cap on clawbacks"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/LEDA%20PPA%20GRT%20Share_Executed.pdf",
+          "where": "LEDA Project Participation Agreement, Section 5.b",
+          "quote": "the State and County will waive any and all Clawback penalties related to the GRT Share Distribution"
+        }
+      ]
+    },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "None. The words decommission, letter of credit, surety and escrow appear nowhere in the nine executed leases, the ordinances, the community benefits agreement, or the participation agreement. The only removal promise in the record is a fuel cell vendor's slide, which the County cannot enforce.",
+      "sources": [
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Lease agreements, full text, which contain no decommissioning provision"
+        }
+      ]
+    },
+    "grid_costs": {
+      "present": true,
+      "who_pays_interconnect": "operator",
+      "minimum_bill": null,
+      "term_years": null,
+      "governed_by": "No utility tariff and no Public Regulation Commission docket, because the project self-supplies from an on-site microgrid rather than taking regulated retail service. State law requires qualified microgrid power to be net-zero carbon by 2045.",
+      "notes": "The cleanest answer to the cost-shift question in this benchmark, and it comes from the design rather than a negotiation. The memorandum says the project powers itself with an on-site microgrid of natural gas generation and large-scale battery storage, that the project pays for the microgrid and the energy it uses, and that the campus will not affect existing customers' reliability or costs. Since approval the developers replaced gas turbines with natural-gas fuel cells. What is not resolved: whether the microgrid is fully islanded or keeps a utility connection, which is what would determine if any stranded cost could still land on other ratepayers.",
+      "sources": [
+        {
+          "url": "https://cms2.revize.com/revize/donaanacounty/Documents/About%20Us/Economic%20Development%20Projects/Community%20Benefits%20Agreement%20(CBA)%20Executed.pdf",
+          "where": "Community benefits agreement, Section 8.4, onsite microgrid"
+        },
+        "https://www.santafenewmexican.com/news/local_news/project-jupiter-developers-overhaul-data-centers-power-plan/article_d7bb0388-8382-4993-b1db-073d148379ac.html"
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": 60000,
+      "reporting": false,
+      "recycling_required": false,
+      "cooling": "closed_loop",
+      "notes": "The tightest water number in this benchmark, sitting in the one document that cannot be enforced for damages. Section 8.1 of the community benefits agreement specifies closed loop cooling and caps potable use at an average of 20,000 gallons a day with a peak of 60,000. But the word gallons appears in no operative covenant of any of the nine leases, there is no meter, no reporting cadence, and no consequence for exceeding it. Exhibit A is prefaced as subject to change so long as the change is not a material deviation. The cap has already been tested: on April 14, 2026 the commission adopted a resolution noting press comments suggesting a tenant did not intend to use closed loop cooling for the power plants, and recording that the County had received no information from any developer or tenant about it. The County's stated leverage was the building permit process.",
+      "hedge": "The cap covers potable water for the data center. The gas power blocks are a separate matter, and the county's own April 2026 resolution says it could not confirm the cooling premise still held.",
+      "sources": [
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Community Benefits Agreement, Section 8.1, potable water",
+          "quote": "an average of 20,000 gallons per day with a maximum peak use capped at 60,000 gallons per day"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Community Benefits Agreement, Exhibit A, paragraph 7",
+          "quote": "subject to change as the Project advances so long as any change does not represent a material deviation"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Lease agreements, full text, in which no gallons figure appears as a covenant"
+        }
+      ]
+    },
+    "noise": {
+      "present": false,
+      "limit_dba": null,
+      "measured_at": null,
+      "setback_ft": null,
+      "notes": "No numeric limit in any agreement. Lease Section 4.8 instead deems compliance: keeping noise consistent with whatever local limits happen to be in place during the term counts as satisfying the clause. The developer's own slides cite about 35 dBA at the nearest home, which is a claim rather than a commitment.",
+      "sources": [
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Lease Agreement, Section 4.8, nuisance not permitted"
+        }
+      ],
+      "hedge": "Lease Section 4.8 defines compliance by reference to a local ordinance rather than by a number, so the clause is only as strong as whatever the county adopts later."
+    },
+    "jobs": {
+      "present": true,
+      "promised_permanent": 175,
+      "promised_construction": 2500,
+      "local_hire": false,
+      "prevailing_wage": false,
+      "enforceable": true,
+      "notes": "The widest gap in this benchmark between the number everyone repeats and the number anyone can enforce. The community benefits agreement and the memorandum both speak of 750 full time jobs plus 50 part time at $75,000 to $100,000, and the participation agreement softens that to approximately 750 anticipated by the end of 2031. The executed leases carry the actual job targets, and they are campus wide: 37.5 by the end of 2029, 87.5 by 2030, and 175 by 2031. The consequence for missing them is not a clawback but a PILOT increase on a capped sliding scale, topping out at 60% for hiring under 30% of target, and only for the year after the cure period. Hiring nobody at all would cost roughly $7 million on a $12 million annual PILOT. There is no prevailing wage clause anywhere and local hiring is best efforts.",
+      "hedge": "Lease Section 4.18: the company \"agrees to use its best efforts\" to offer positions to qualified county applicants. Shortfalls can also be deferred for an \"Adverse Economic Event,\" and the county agrees such a request \"will not unreasonably be denied.\"",
+      "sources": [
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Lease Agreement, Section 4.20, job targets and PILOT increase schedule"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/LEDA%20PPA%20GRT%20Share_Executed.pdf",
+          "where": "LEDA Project Participation Agreement, Section 2.c",
+          "quote": "Approximately seven hundred fifty (750) total full-time employees... are anticipated as being employed"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Community Benefits Agreement, Exhibit A, paragraphs 3, 5 and 6"
+        }
+      ]
+    },
+    "local_contracting": {
+      "present": true,
+      "local_subcontracting": false,
+      "road_repair": false,
+      "infrastructure_contribution_usd": null,
+      "notes": "A publicity requirement rather than a procurement requirement. Lease Section 4.19 asks the company to coordinate with the County to publicize its needs so as to encourage participation by county vendors. No percentage, no reporting, no consequence. The companies do fund a roadway extension at the Highway 136 and Highway 9 intersection under the community benefits agreement, but no road repair or haul route agreement exists in the county's published record.",
+      "hedge": "\"to encourage participation by vendors based within Dona Ana County\" is the whole of the obligation.",
+      "sources": [
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Lease Agreement, Section 4.19, local purchasing"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Community Benefits Agreement, Section 8.3, roadway extension"
+        }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": true,
+      "agreement_public": true,
+      "public_dashboard": false,
+      "audit_cadence": "annual",
+      "audit_independent": false,
+      "notes": "The county owns the property and signed confidentiality obligations to its own tenant. Lease Section 4.14 conditions county access and inspection on the company's security policies including the execution of non disclosure agreements by the County itself, with two weeks notice. Section 4.24 requires the County, on a public records request, to cooperate at the company's expense in asserting exemptions and to produce only the minimum legally required. Section 4.23 bars the County from providing covered data to any third party including a governmental entity, and from talking to the media about a security incident without the company's written consent. The annual performance review is done by county or state staff rather than an independent auditor, and the companies need not divulge what they consider proprietary. Most of the documents are published, which is genuinely better than average, but the community benefits agreement is not among them: it is findable only inside the recorded Series 2025B bond PDF.",
+      "hedge": "Lease Section 4.24: \"Only the minimum portion of information that is legally required to be disclosed shall be produced, and all legally permissible redactions shall be applied.\"",
+      "sources": [
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Lease Agreement, Section 4.14, access and inspection"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Lease Agreement, Section 4.24(A)(iv), confidential information"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Lease Agreement, Section 4.23(A), data protection",
+          "quote": "Under no circumstances may Issuer access and/or provide such Leased Property or Covered Data to any third party"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/LEDA%20PPA%20GRT%20Share_Executed.pdf",
+          "where": "LEDA Project Participation Agreement, Section 9, annual performance review"
+        }
+      ]
+    },
+    "tax": {
+      "present": true,
+      "abatement_pct": 100,
+      "duration_years": 30,
+      "pilot": true,
+      "estimated_forgone_usd": 3300000000,
+      "but_for_test": false,
+      "notes": "A hundred percent abatement of real and personal property tax for thirty years, delivered by county title ownership under the industrial revenue bond act, with leases running to November 1, 2055. The payment in lieu of taxes is $12 million a year for thirty years, $360 million total, split among the county, three school districts and a flood district. The detail that matters: the Series 2025C tranche, the $125 billion of equipment purchased by Oracle America, carries no separate PILOT. Its lease says the combined obligation will not exceed the Series 2025B schedule, so the servers generate no incremental payment. The county's own staff report summarized the financial impact in a single sentence saying the abatement is recovered in part by the PILOT, with no forgone revenue estimate and no alternative site analysis. The state's Legislative Finance Committee produced the only number, ten months later: up to $3.3 billion in tax benefits against $360 million of PILOT, roughly nine to one.",
+      "sources": [
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/Executed%20Memorandum%20of%20Understanding%20(MOU).pdf",
+          "where": "Memorandum of understanding, Section 4.2",
+          "quote": "a full (100%) abatement of real and personal property taxes associated with the Project for a term of 30 years"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Lease Agreement, Exhibit C, PILOT schedule through September 30, 2055"
+        },
+        {
+          "url": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025C%20-%20Executed%20&%20Recorded.pdf",
+          "where": "Series 2025C Lease, Section 5.10, no incremental PILOT on the equipment tranche"
+        },
+        {
+          "url": "https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf",
+          "where": "LFC Policy Spotlight, p. 10, Dona Ana County estimate"
+        }
+      ]
+    }
+  },
+  "criticisms": [
+    {
+      "summary": "Two suits seek to invalidate the bond ordinance, disclosed in an exhibit to every bond purchase agreement. The buyers acknowledged them and closed anyway.",
+      "source": "https://www.donaana.gov/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025B%20-%20Executed%20&%20Recorded.pdf"
+    },
+    {
+      "summary": "The commission itself adopted a resolution in April 2026 noting press reports that a tenant did not intend to use closed loop cooling, and recording that no developer or tenant had told the county anything about it.",
+      "source": "https://www.donaana.gov/about_us/economic_development_projects.php"
+    },
+    {
+      "summary": "The state Legislative Finance Committee estimates up to $3.3 billion in tax benefits for this project, and found that no state entity keeps a list of active industrial revenue bond projects.",
+      "source": "https://www.nmlegis.gov/Entity/LFC/Documents/Program_Evaluation_Reports/Policy%20Spotlight%20Industrial%20Revenue%20Bonds%20July%202026.pdf"
+    },
+    {
+      "summary": "Local groups have objected on water quality grounds, citing a 2024 state finding that the local utility bypassed arsenic treatment for over a year, and called a commissioner's posting of opponents' names on social media an act of intimidation.",
+      "source": "https://www.hcn.org/articles/resistance-to-data-centers-rises-on-the-border/"
+    }
+  ],
+  "contributors": [
+    "apeabody007"
+  ],
+  "last_reviewed": "2026-09-10"
+}

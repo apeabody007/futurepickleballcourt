@@ -1,0 +1,317 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-ga-columbia-county-2026",
+  "status": "approved",
+  "verification": "primary",
+  "short_name": "Google",
+  "jurisdiction": {
+    "country": "US",
+    "state": "GA",
+    "locality": "Columbia County",
+    "level": "county"
+  },
+  "operator": "Google LLC",
+  "developer": "Kinetic Infrastructure Solutions, an Alphabet subsidiary",
+  "project": "Columbia County Data Center at White Oak Technology Park, Appling",
+  "agreement_type": "rezoning",
+  "dates": {
+    "signed": null,
+    "approved": "2026-02-03",
+    "effective": "2026-02-03"
+  },
+  "scale": {
+    "acres": 3140,
+    "mw": null,
+    "capex_usd": 17000000000,
+    "sqft": 8004000,
+    "notes": "3,140 acres rezoned in February 2026, superseding an earlier approval over about 1,945 acres. The concept plan shows 29 buildings of roughly 276,000 square feet each plus an administration building and a 12 acre substation, and the county's own staff report calls that plan nonbinding. Capex is the figure in the development authority's announcement. No megawatt number exists: the staff report notes the utility will not run a power study until the land is zoned for data centers by right."
+  },
+  "documents": [
+    {
+      "title": "Columbia County Board of Commissioners agenda packet, December 2, 2025, containing the full text of Ordinance 25-07 creating the data center zoning district, including the noise, decommissioning, buffer and utility provisions",
+      "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)",
+      "kind": "primary",
+      "date": "2025-12-02"
+    },
+    {
+      "title": "Board minutes, December 2, 2025, recording unanimous adoption of Ordinance 25-07 on second reading",
+      "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11281,plainText=false)",
+      "kind": "primary",
+      "date": "2025-12-02"
+    },
+    {
+      "title": "Board agenda packet, February 3, 2026, containing the staff report for the White Oak rezoning, the applicant narrative, the ambient sound study and citizen correspondence",
+      "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)",
+      "kind": "primary",
+      "date": "2026-02-03"
+    },
+    {
+      "title": "Board minutes, February 3, 2026, recording the rezoning approval and the conditions attached to it",
+      "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11388,plainText=false)",
+      "kind": "primary",
+      "date": "2026-02-03"
+    },
+    {
+      "title": "Columbia County news release, July 23, 2026, stating the operator will pay 100 percent of energy costs associated with the project",
+      "url": "https://www.columbiacountyga.gov/DocumentCenter/View/10095/Columbia-County-Google-and-Georgia-Power-Partner-to-Protect-Ratepayers-and-Make-Growth-Work-for-Residents",
+      "kind": "government_page",
+      "date": "2026-07-23"
+    },
+    {
+      "title": "Georgia Public Service Commission news release on the large load rule adopted January 23, 2025 in Docket 55378",
+      "url": "https://psc.ga.gov/site/assets/files/8617/media_advisory_data_centers_rule_1-23-2025.pdf",
+      "kind": "primary",
+      "date": "2025-01-23"
+    },
+    {
+      "title": "Georgia Public Service Commission data center fact sheet",
+      "url": "https://psc.ga.gov/site/downloads/datacenterfactsheet.pdf",
+      "kind": "primary",
+      "date": "2026-03-01"
+    },
+    {
+      "title": "Columbia County legislation portal, where the agenda packets and minutes are published",
+      "url": "https://columbiacoga.portal.civicclerk.com/",
+      "kind": "government_page",
+      "date": null
+    }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": false,
+      "amount_usd": null,
+      "cadence": null,
+      "scales_with_project": null,
+      "controlled_by": null,
+      "community_seat": false,
+      "notes": "No community fund in any document I can read. Local reporting describes $40 million a year to the county and $5 million a year to the development authority for seven years, first payment expected around the end of 2026, but those are payments to government, not a community controlled fund, and the memorandum of understanding that would contain them has never been published. Who disburses the money, on what criteria, and whether any resident sits anywhere near the decision, is unknown.",
+      "sources": [
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)",
+          "where": "Ordinance 25-07, full text, which creates no community fund"
+        },
+        {
+          "url": "https://columbiacoga.portal.civicclerk.com/",
+          "where": "Development authority agenda for the meeting approving the MOU, which does not list the MOU as an item"
+        }
+      ]
+    },
+    "clawbacks": {
+      "present": null,
+      "triggers": [],
+      "proportional": null,
+      "notes": "Unknown, and unknowable from the public record. The memorandum of understanding is not published, and no clawback appears in the ordinance or the rezoning conditions. Zoning conditions attach to the land, not to a performance promise, so they cannot do this work.",
+      "sources": [
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)",
+          "where": "Ordinance 25-07 and the February 3, 2026 rezoning conditions, neither of which contains a clawback"
+        }
+      ]
+    },
+    "decommissioning": {
+      "present": true,
+      "instrument": "covenant_only",
+      "amount_usd": null,
+      "notes": "The most detailed decommissioning language in this benchmark, and not a dollar behind it. The ordinance defines permanent cessation as zero electrical load to the primary use for 90 consecutive days or 180 days in any 365, requires notice to the county within 30 days, and then requires that within twelve months all structures be demolished or removed to grade and the site restored to agricultural viability, with soil tests and replanting to federal guidelines. That is a genuinely good covenant. There is no bond, no escrow and no letter of credit, so if the operator is gone or insolvent the county is holding a promise and a demolition bill. This is the clause other places should copy and then attach money to.",
+      "hedge": "The board may extend the compliance timeline \"at its sole discretion.\"",
+      "sources": [
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)",
+          "where": "Ordinance 25-07, Sec. 90-147(h)(6)q, cessation of operations",
+          "quote": "all structures on the site shall be demolished or removed to grade and the site restored to agricultural viability"
+        }
+      ]
+    },
+    "grid_costs": {
+      "present": true,
+      "who_pays_interconnect": "operator",
+      "minimum_bill": null,
+      "term_years": null,
+      "governed_by": "the Georgia Public Service Commission large load rule from Docket 55378, plus an unpublished Georgia Power service contract",
+      "notes": "The strongest published statement on ratepayer protection in this benchmark, living in the weakest kind of document. The county's news release says the operator has committed to paying 100 percent of all energy costs associated with the project and that ratepayers are safeguarded from any additional infrastructure, transmission or capacity expense. That is a press release, not an instrument. The ordinance does add a real gate: before any land disturbance or building permit, a letter from the utility must verify the developer is in compliance with the provider's policies. Behind both sits the state rule adopted in January 2025, which applies to new customers above 100 megawatts, allows minimum billing, extends contracts from five to fifteen years, requires the customer to pay upstream generation, transmission and distribution costs, and requires every such contract to go to the commission before execution. The actual contract and its minimum bill are not public, so the specific number here is unknown.",
+      "hedge": "The commitment is stated in a county news release. The instrument that would bind it, the service contract, is not published.",
+      "sources": [
+        {
+          "url": "https://www.columbiacountyga.gov/DocumentCenter/View/10095/Columbia-County-Google-and-Georgia-Power-Partner-to-Protect-Ratepayers-and-Make-Growth-Work-for-Residents",
+          "where": "County news release, July 23, 2026, p. 1",
+          "quote": "Google has committed to paying 100 percent of all energy costs associated with this project."
+        },
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)",
+          "where": "Ordinance 25-07, Sec. 90-147(h)(6)o, utility compliance letter"
+        },
+        {
+          "url": "https://psc.ga.gov/site/assets/files/8617/media_advisory_data_centers_rule_1-23-2025.pdf",
+          "where": "PSC news release on the large load rule adopted in Docket 55378"
+        },
+        {
+          "url": "https://psc.ga.gov/site/downloads/datacenterfactsheet.pdf",
+          "where": "PSC data center fact sheet, minimum billing and contract term"
+        }
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": null,
+      "reporting": true,
+      "recycling_required": false,
+      "cooling": "closed_loop",
+      "notes": "Wells are banned outright, which is rare and worth naming: the development shall not use wells to provide water for any purpose. The rezoning conditions require the developer to fund all water and sewer upgrades and, before any building permit, to file a five year water and sewer projection updated at minimum annually. That is a real reporting obligation and better than most places manage. What is missing is the number. There is no gallons per day cap anywhere. The closed loop description comes from the applicant speaking at the planning commission about a neighbouring case, not from a covenant. And the drought protection is optional by its own words.",
+      "hedge": "\"A water and sewer usage agreement and/or drought management plan may be required.\" May.",
+      "sources": [
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)",
+          "where": "Ordinance 25-07, Sec. 90-147(h)(6)c",
+          "quote": "The development shall not utilize wells to provide water for any purpose"
+        },
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11388,plainText=false)",
+          "where": "Board minutes, February 3, 2026, rezoning conditions, water and sewer"
+        },
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)",
+          "where": "Staff report and applicant narrative for the White Oak rezoning"
+        }
+      ]
+    },
+    "noise": {
+      "present": true,
+      "limit_dba": 65,
+      "measured_at": "exterior property line",
+      "setback_ft": 500,
+      "notes": "The clearest noise standard in this benchmark and the only one with a number the public argued down. The ordinance sets 70 decibels at the exterior property line, requires an ambient sound study at rezoning and a compliance study before each building's certificate of occupancy. For this site the commission then attached a stricter condition: sound from the project shall not exceed 65 decibels at the property line. Measured baseline across five locations on the site ran 36.8 to 46.9 dBA, so 65 is still well above what neighbours hear today, and residents asked for 50. Buffers are 250 feet on exterior property lines and 500 feet against residential or agricultural land, though a planted berm can halve either figure at a staff director's determination. Generator testing is limited to weekdays, 9 to 5, two hours a day, once a month, not on federal holidays.",
+      "hedge": "Buffers must remain undisturbed \"to the maximum extent practicable,\" and a berm can cut the 500 foot residential buffer to 250 at the planning director's determination.",
+      "sources": [
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11388,plainText=false)",
+          "where": "Board minutes, February 3, 2026, rezoning condition",
+          "quote": "Sound from the project shall not exceed 65 decibels at the property line"
+        },
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)",
+          "where": "Ordinance 25-07, Sec. 90-147(h)(6)c.a",
+          "quote": "Facilities may not emit noise that exceeds 70 decibels (db) measured at the exterior property line"
+        },
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)",
+          "where": "Ordinance 25-07, Sec. 90-147(h)(6)f, buffers, and (h)(6)b, generator testing"
+        },
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)",
+          "where": "Staff report, p. 3, measured ambient sound levels"
+        }
+      ]
+    },
+    "jobs": {
+      "present": false,
+      "promised_permanent": null,
+      "promised_construction": null,
+      "local_hire": false,
+      "prevailing_wage": false,
+      "enforceable": false,
+      "notes": "No job number appears in any primary document and there is no binding commitment, no local hire and no wage floor. Residents raised the limited number of jobs at the planning commission hearing. Trade press estimates exist but are tied to no instrument, so I am not carrying a number.",
+      "sources": [
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)",
+          "where": "Ordinance 25-07 and the rezoning conditions, neither of which contains a job commitment"
+        },
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)",
+          "where": "Planning commission minutes in the February 3, 2026 packet, resident objections"
+        }
+      ]
+    },
+    "local_contracting": {
+      "present": true,
+      "local_subcontracting": false,
+      "road_repair": false,
+      "infrastructure_contribution_usd": null,
+      "notes": "Real road obligations, and a notable omission. The developer must design and construct every roadway improvement identified in the June 2025 traffic impact study, including dual northbound left turns, an additional through lane, and converting a single lane interstate roundabout to multilane. Any upgrade to county owned utilities is the applicant's sole responsibility. But haul route repair was not imposed here: a post construction haul route damage evaluation condition was drafted only for a different application, which the board denied, so the roads that carry the construction traffic to this site carry no such condition. No local subcontracting or local hire requirement.",
+      "sources": [
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11388,plainText=false)",
+          "where": "Board minutes, February 3, 2026, rezoning conditions, transportation"
+        },
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)",
+          "where": "Ordinance 25-07, Sec. 90-147(h)(6)m, county utility upgrades"
+        },
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11388,plainText=false)",
+          "where": "Board minutes, February 3, 2026, showing the haul route condition attached only to the denied application"
+        }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": null,
+      "agreement_public": false,
+      "public_dashboard": false,
+      "audit_cadence": "none",
+      "audit_independent": false,
+      "notes": "The zoning is exemplary and the deal is invisible. Anyone can read the ordinance, the staff reports, the sound study, the citizen correspondence and the recorded votes, and the hearings drew fifteen speakers in November and twenty five in January. The memorandum of understanding, which is the actual agreement, is not published, and the development authority agenda for the meeting that approved it does not list it as an item; the approval vote is not public either. Residents told the planning commission the project began in 2024 under non disclosure agreements, and a letter entered into the board's record says non disclosure agreements have concealed key details from residents for months. Whether the public body itself signed one is unknown. No audit, no dashboard, and the concept plan the county approved is expressly nonbinding.",
+      "hedge": "The staff report describes what was approved as \"a nonbinding concept plan.\"",
+      "sources": [
+        {
+          "url": "https://columbiacoga.portal.civicclerk.com/",
+          "where": "Development authority agenda, August 26, 2026, which does not list the MOU"
+        },
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)",
+          "where": "Citizen correspondence in the February 3, 2026 packet",
+          "quote": "Non-disclosure agreements (NDAs) have concealed key details from residents for months"
+        },
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)",
+          "where": "Staff report for the White Oak rezoning, p. 1",
+          "quote": "a nonbinding concept plan"
+        },
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11388,plainText=false)",
+          "where": "Board minutes, February 3, 2026, recording the votes in open session"
+        }
+      ]
+    },
+    "tax": {
+      "present": true,
+      "abatement_pct": null,
+      "duration_years": null,
+      "pilot": true,
+      "estimated_forgone_usd": null,
+      "but_for_test": false,
+      "notes": "A Georgia bond for title structure through the development authority, with the company rather than the county responsible for bonds that are non recourse to both. Beyond that the numbers are not public: no abatement percentage, no duration, no payment schedule, no forgone revenue estimate. Local reporting puts the payments at $40 million a year to the county plus $5 million to the authority for seven years. What is unusual here is the downstream plan: the county drafted state legislation, signed in May 2026, letting it set aside money for a homestead tax relief fund, subject to a November 2026 referendum, with the stated goal of eliminating the county's share of property tax. That is a real and specific way of returning the money to residents, and it is worth watching whether it survives the vote. No but for analysis appears in the authority's incentives committee minutes.",
+      "sources": [
+        {
+          "url": "https://columbiacoga.portal.civicclerk.com/",
+          "where": "Development authority announcement of the bond for title structure and committee minutes containing no but-for analysis"
+        },
+        {
+          "url": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11243,plainText=false)",
+          "where": "Ordinance 25-07, which contains no tax provision, the abatement sitting instead in the unpublished MOU"
+        }
+      ]
+    }
+  },
+  "criticisms": [
+    {
+      "summary": "Fifteen residents spoke against the data center ordinance in November 2025 and twenty five against this rezoning in January 2026, raising noise, generator emissions, utility costs, well contamination, water use, limited jobs, traffic, and what happens if the AI buildout stalls.",
+      "source": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)"
+    },
+    {
+      "summary": "A letter entered into the board's record objects that non-disclosure agreements concealed key details from residents for months and that the county published no verified impact assessments for water tables, streams or wastewater capacity.",
+      "source": "https://columbiacoga.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=11363,plainText=false)"
+    },
+    {
+      "summary": "A resident sued over the White Oak and neighbouring rezonings alleging procedural defects and conflict with the comprehensive plan. Both suits were dismissed with prejudice in March 2026 and appealed to the Georgia Court of Appeals in April.",
+      "source": "https://www.wrdw.com/2026/04/16/citizen-appeals-dismissals-columbia-county-data-center-rezoning-lawsuits/"
+    },
+    {
+      "summary": "The memorandum of understanding, the actual agreement, is not published, and the agenda of the authority meeting that approved it does not list it.",
+      "source": "https://columbiacoga.portal.civicclerk.com/"
+    }
+  ],
+  "contributors": [
+    "apeabody007"
+  ],
+  "last_reviewed": "2026-09-10"
+}

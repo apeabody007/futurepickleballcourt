@@ -221,14 +221,16 @@ def findings(deals):
                     f"In none of the {n} deals does the money come back simply because the facility stops running."))
 
     mb = [d for d in deals if d["terms"]["grid_costs"].get("minimum_bill") is True]
-    if mb:
-        from_state = [d for d in mb if d["terms"]["grid_costs"].get("governed_by")]
-        if len(from_state) == len(mb):
-            places = ", ".join(sorted(d["jurisdiction"]["locality"] for d in mb))
-            out.append(("The one real protection came from regulators, not negotiators.",
-                        f"{len(mb)} of the {n} deals carry a minimum electric bill that survives the tenant leaving "
-                        f"({places}). Every one of them comes from a state utility commission, not from anything "
-                        "the city or county negotiated."))
+    # A minimum bill is the term that keeps a tenant paying after it stops drawing power. Every one
+    # of these comes from the utility's rate structure, so we say that rather than guessing at which
+    # regulator wrote it: the governing bodies differ and their names do not parse reliably.
+    if mb and all(d["terms"]["grid_costs"].get("governed_by") for d in mb):
+        places = ", ".join(sorted(d["jurisdiction"]["locality"] for d in mb))
+        out.append(("The one real protection was not negotiated locally.",
+                    f"{len(mb)} of the {n} deals carry a minimum electric bill, the term that keeps a tenant paying "
+                    f"if it stops drawing power ({places}). Every one of them comes from the utility's own rate "
+                    "structure, not from anything the city or county negotiated, and how far each survives an "
+                    "actual departure varies."))
 
     nda = count(lambda d: d["terms"]["transparency"].get("nda") is True)
     if nda:

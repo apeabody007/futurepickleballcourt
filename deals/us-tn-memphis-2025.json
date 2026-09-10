@@ -1,0 +1,325 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-tn-memphis-2025",
+  "status": "approved",
+  "verification": "primary",
+  "short_name": "xAI",
+  "jurisdiction": {
+    "country": "US",
+    "state": "TN",
+    "locality": "City of Memphis",
+    "level": "city"
+  },
+  "operator": "xAI",
+  "developer": "CTC Property LLC, an xAI subsidiary",
+  "project": "Colossus, 3231 Paul R. Lowry Road, with Colossus 2 and a paused water recycling plant",
+  "agreement_type": "other",
+  "dates": {
+    "signed": null,
+    "approved": "2025-08-19",
+    "effective": "2025-08-19"
+  },
+  "scale": {
+    "acres": null,
+    "mw": 300,
+    "capex_usd": 5000000000,
+    "sqft": null,
+    "notes": "300 MW of grid supply approved by the TVA board in two 150 MW steps, November 7, 2024 and February 11, 2026, plus on-site gas turbines permitted separately. Capex is the figure reported around the project; no capital figure appears in the city ordinance. Campus acreage and square footage are not stated in the documents I have. The ordinance identifies the site by metes and bounds in Exhibit A rather than by area."
+  },
+  "documents": [
+    {
+      "title": "Memphis City Ordinance No. 5953, allocating a portion of city property tax revenue collected on artificial intelligence property to public purposes in the surrounding area",
+      "url": "https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf",
+      "kind": "primary",
+      "date": "2025-08-19"
+    },
+    {
+      "title": "Memphis City Council minutes, August 19, 2025, recording the third and final reading vote on Ordinance 5953",
+      "url": "https://memphistn.gov/wp-content/uploads/2025/09/Minutes-08-19-2025.pdf",
+      "kind": "primary",
+      "date": "2025-08-19"
+    },
+    {
+      "title": "MLGW xAI Update, May 5, 2025, the utility's own account of what xAI pays for and what was built at whose expense",
+      "url": "https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf",
+      "kind": "primary",
+      "date": "2025-05-05"
+    },
+    {
+      "title": "MLGW xAI Project Quick Facts (2024)",
+      "url": "https://www.mlgw.com/images/content/files/pdf/2024xAI%20and%20MLGW%20Quick%20Facts%201.pdf",
+      "kind": "primary",
+      "date": null
+    },
+    {
+      "title": "MLGW xAI page, which publishes the utility's xAI documents",
+      "url": "https://www.mlgw.com/xai",
+      "kind": "government_page",
+      "date": null
+    },
+    {
+      "title": "TVA board minutes, November 7, 2024, approving 150 MW of firm power for CTC Property LLC through MLGW",
+      "url": "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/november--7-2024/2024-11072024-board-meeting-minutes-signed.pdf?sfvrsn=fde0917c_1",
+      "kind": "primary",
+      "date": "2024-11-07"
+    },
+    {
+      "title": "TVA board resolution and memorandum, November 7, 2024, greater than 100 MW firm power arrangement with CTC Property LLC (xAI)",
+      "url": "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/november--7-2024/resolutions/reading-room-11072024g-grtr-100mw-ctc-xai-reso-memo.pdf?sfvrsn=55653613_1",
+      "kind": "primary",
+      "date": "2024-11-07"
+    },
+    {
+      "title": "TVA board minutes, February 11, 2026, approving a second 150 MW on a confidential memorandum",
+      "url": "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/february--11-2026/february-11-2026-board-meeting-minutes.pdf?sfvrsn=1658d52d_1",
+      "kind": "primary",
+      "date": "2026-02-11"
+    }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": true,
+      "amount_usd": 100000000,
+      "cadence": "annual",
+      "scales_with_project": true,
+      "controlled_by": "Memphis City Council, through the annual operating budget",
+      "community_seat": false,
+      "notes": "The most interesting community fund in this benchmark, and the one that shows how much work the word \"allocate\" can do. Ordinance 5953 sets a \"Public Purpose Amount\" equal to 25% of the city property tax revenue collected on the AI property, to be spent in a five mile radius on public projects, programs, and grants to nonprofits including affordable housing. It states an intent that $100 million be allocated in the aggregate, and once that is reached the Council is directed to review whether to keep going. Three things cut against it. The money is subject to annual budgeting and appropriation, so no year's payment is owed. The amount decreases by whatever other public entities allocate to the same area that year, so a county or state contribution reduces the city's rather than adding to it. And the $100 million target is inclusive of those other entities' money, so the city's own obligation is smaller than the headline. There is no community seat, no advisory board, and no reporting or audit requirement anywhere in the ordinance.",
+      "hedge": "Section 2(a): \"Subject to annual budgeting and appropriation by Council.\" The preamble adds that the Council intends to appropriate \"so much of the Public Purpose Amount as it deems necessary and appropriate,\" \"as the Council may in its discretion approve.\"",
+      "sources": [
+        {
+          "url": "https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf",
+          "where": "Ordinance 5953, Section 2(b)",
+          "quote": "lawfully available funds of the City equal in amount to 25% of the real and personal property tax revenues collected by the City on the AI Property"
+        },
+        {
+          "url": "https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf",
+          "where": "Ordinance 5953, Section 2(b), the offset sentence",
+          "quote": "the Public Purpose Amount, as calculated above, to be allocated by the City to Public Purposes in any year shall decrease by that amount of money allocated by other public entities during such year"
+        },
+        {
+          "url": "https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf",
+          "where": "Ordinance 5953, Section 2(c)",
+          "quote": "It is the intent of the City that there be $100 million allocated in the aggregate, inclusive of the Public Purpose Amount allocated by the City and monies allocated by other public entities"
+        },
+        {
+          "url": "https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf",
+          "where": "Ordinance 5953, Section 1(f), defining the Surrounding Area",
+          "quote": "those parcels of land in the City, or portions thereof, that are located within a five (5) mile radius of the AI Property"
+        },
+        {
+          "url": "https://memphistn.gov/wp-content/uploads/2025/09/Minutes-08-19-2025.pdf",
+          "where": "Council minutes, August 19, 2025, item 20, third and final reading",
+          "quote": "APPROVED, on Third and Final Reading, as amended"
+        }
+      ]
+    },
+    "clawbacks": {
+      "present": false,
+      "triggers": [],
+      "proportional": null,
+      "notes": "Nothing to claw back and nothing that triggers. Ordinance 5953 is the city allocating its own funds, not a subsidy to xAI, so it carries no performance conditions on the company at all. If the facility closes, the AI property simply stops being AI property under Section 1(h) and the allocation stops, which protects the city's money but returns nothing to the public for what has already been spent on the company's behalf. I have not located a payment in lieu of taxes agreement or an incentive agreement between xAI and EDGE in primary form, so I cannot say whether a clawback lives in a document I have not read.",
+      "sources": [
+        {
+          "url": "https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf",
+          "where": "Ordinance 5953, Section 1(h)",
+          "quote": "such parcels shall no longer constitute AI Real Property"
+        }
+      ]
+    },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "No bond, escrow, letter of credit, or removal covenant appears in the ordinance or in the utility and TVA records.",
+      "sources": [
+        {
+          "url": "https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf",
+          "where": "Ordinance 5953, full text"
+        }
+      ]
+    },
+    "grid_costs": {
+      "present": true,
+      "who_pays_interconnect": "operator",
+      "minimum_bill": null,
+      "term_years": null,
+      "governed_by": "MLGW electric service at the prevailing industrial rate, TVA board approvals of the two 150 MW increments, and a signed curtailment agreement that has not been published",
+      "notes": "On the part that is public, this is the strongest cost allocation in the benchmark: MLGW says in its own document that the transmission upgrades and both substations were built at xAI expense, and that xAI pays the prevailing industrial rate. What is not public is the contract. TVA approved the first 150 MW on a resolution contingent on the company agreeing to \"certain demand response terms offered for similar customer loads,\" and approved the second 150 MW on February 11, 2026 on a confidential memorandum, delegating approval of the contractual, financial, and operational requirements to a single executive. So I can tell you who paid for the poles, and I cannot tell you whether there is a minimum bill, a term, or an exit charge if the load leaves.",
+      "hedge": "TVA's own resolution language is conditional: firm power was approved \"contingent on the new customer's agreement to certain demand response terms,\" with the terms themselves never described in public.",
+      "sources": [
+        {
+          "url": "https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf",
+          "where": "MLGW xAI Update, May 5, 2025, electricity",
+          "quote": "transmission system upgrades have been completed (at xAI expense), a substation to provide this power was constructed (at xAI expense)"
+        },
+        {
+          "url": "https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf",
+          "where": "MLGW xAI Update, May 5, 2025, electricity",
+          "quote": "xAI is paying the prevailing industrial rate for electricity at this facility."
+        },
+        {
+          "url": "https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf",
+          "where": "MLGW xAI Update, May 5, 2025, electricity",
+          "quote": "TVA/xAI/MLGW have a signed agreement requiring xAI to curtail their consumption of electricity from the grid when demand is high."
+        },
+        {
+          "url": "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/november--7-2024/resolutions/reading-room-11072024g-grtr-100mw-ctc-xai-reso-memo.pdf?sfvrsn=55653613_1",
+          "where": "TVA board resolution, November 7, 2024",
+          "quote": "contingent on the new customer's agreement to certain demand response terms offered for similar customer loads"
+        },
+        {
+          "url": "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/february--11-2026/february-11-2026-board-meeting-minutes.pdf?sfvrsn=1658d52d_1",
+          "where": "TVA board minutes, February 11, 2026",
+          "quote": "delegates authority to the Executive Vice President & Chief Business Officer to approve the contractual, financial, and operational requirements"
+        }
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": 1000000,
+      "reporting": false,
+      "recycling_required": false,
+      "cooling": "unknown",
+      "notes": "A number that is a capacity, not a cap. MLGW's quick facts say the site draws up to 1 million gallons a day from an existing 20 inch main and pays the prevailing commercial rate. No document I have found sets an enforceable ceiling, requires reporting, or publishes actual consumption. The recycled water plant, which would produce 13 million gallons a day for xAI, TVA, Nucor and others, was offered and to be built at xAI expense rather than required by any agreement, and it has since been paused. As late as April 29, 2026 a coalition letter to the mayors was still asking, as an open question, how much aquifer water the facility uses per day. Figures circulating between 700,000 gallons and 5 million gallons a day come from advocacy estimates and from journalists reading billing records, not from a permit or a published meter.",
+      "hedge": "Every water number in the public record is framed as capacity available or volume expected, never as a limit the operator agreed not to exceed.",
+      "sources": [
+        {
+          "url": "https://www.mlgw.com/images/content/files/pdf/2024xAI%20and%20MLGW%20Quick%20Facts%201.pdf",
+          "where": "MLGW xAI Project Quick Facts, water",
+          "quote": "Water - Up to 1 MGD from an existing 20\" water main serving the area."
+        },
+        {
+          "url": "https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf",
+          "where": "MLGW xAI Update, May 5, 2025, water",
+          "quote": "xAI pays the prevailing commercial rate for consumption."
+        },
+        {
+          "url": "https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf",
+          "where": "MLGW xAI Update, May 5, 2025, recycled wastewater plant",
+          "quote": "xAI offered to build a facility (at xAI expense) that uses discharged, treated wastewater from the Maxson Wastewater plant, to produce 13M gallons per day of recycled water"
+        },
+        "https://www.mlgw.com/xai"
+      ]
+    },
+    "noise": {
+      "present": false,
+      "limit_dba": null,
+      "measured_at": null,
+      "setback_ft": null,
+      "notes": "No noise limit, measurement point, or setback appears in the ordinance or the utility records. The contested environmental terms here are air emissions from the on-site turbines, litigated separately, not noise.",
+      "sources": [
+        {
+          "url": "https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf",
+          "where": "Ordinance 5953, full text"
+        }
+      ]
+    },
+    "jobs": {
+      "present": false,
+      "promised_permanent": null,
+      "promised_construction": null,
+      "local_hire": false,
+      "prevailing_wage": false,
+      "enforceable": false,
+      "notes": "No job commitment exists in any document I have. MLGW's quick facts forecast \"~300+ new, high paying jobs,\" which is a utility's projection of the project's effect, not a promise by the company and not enforceable by anyone. The ordinance says nothing about employment. Worth noting for context that the building itself was constructed with a 2010 state grant and a local abatement tied to an earlier tenant's job commitments, not xAI's.",
+      "hedge": "MLGW's own phrasing is a forecast: \"The project is forecast to create ~300+ new, high paying jobs.\"",
+      "sources": [
+        {
+          "url": "https://www.mlgw.com/images/content/files/pdf/2024xAI%20and%20MLGW%20Quick%20Facts%201.pdf",
+          "where": "MLGW xAI Project Quick Facts, value for MLGW customers",
+          "quote": "The project is forecast to create ~300+ new, high paying jobs."
+        },
+        {
+          "url": "https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf",
+          "where": "Ordinance 5953, full text"
+        }
+      ]
+    },
+    "local_contracting": {
+      "present": false,
+      "local_subcontracting": false,
+      "road_repair": false,
+      "infrastructure_contribution_usd": null,
+      "notes": "No local hiring or subcontracting preference and no road commitment. The one adjacent fact is that xAI paid for its own utility infrastructure, including a $1.7 million improvement to a 161 kV transmission line identified in MLGW's system impact study, which spares ratepayers but is not a contribution to the community.",
+      "sources": [
+        {
+          "url": "https://www.mlgw.com/images/content/files/pdf/2024xAI%20and%20MLGW%20Quick%20Facts%201.pdf",
+          "where": "MLGW xAI Project Quick Facts, conditions on the additional 100 MW",
+          "quote": "$1.7M of improvements to a 161kV transmission line (per the MLGW electric system impact study)"
+        },
+        {
+          "url": "https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf",
+          "where": "Ordinance 5953, full text"
+        }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": null,
+      "agreement_public": false,
+      "public_dashboard": false,
+      "audit_cadence": "none",
+      "audit_independent": false,
+      "notes": "Split down the middle, and the public half is the half that matters least. The ordinance is public, readable, and was voted on in open session with residents speaking from the audience. The power arrangement, which is where the real money and the real risk sit, is not: TVA approved the second 150 MW on a confidential memorandum and delegated the terms to an executive, and the curtailment agreement among TVA, xAI and MLGW is described in public but never published. The ordinance itself sets no reporting, no audit, and no dashboard for the Public Purpose Amount, so there is no mechanism by which a resident can check whether the 25% was calculated correctly or spent nearby.",
+      "hedge": "TVA's minutes describe the governing memorandum as containing \"information that the customer considers confidential and business sensitive.\"",
+      "sources": [
+        {
+          "url": "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/february--11-2026/february-11-2026-board-meeting-minutes.pdf?sfvrsn=1658d52d_1",
+          "where": "TVA board minutes, February 11, 2026",
+          "quote": "a memorandum, which contains information that the customer considers confidential and business sensitive"
+        },
+        {
+          "url": "https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf",
+          "where": "Ordinance 5953, Sections 2 through 5, which contain no reporting or audit provision"
+        },
+        {
+          "url": "https://memphistn.gov/wp-content/uploads/2025/09/Minutes-08-19-2025.pdf",
+          "where": "Council minutes, August 19, 2025, item 20, speakers recognized from the audience"
+        }
+      ]
+    },
+    "tax": {
+      "present": null,
+      "abatement_pct": null,
+      "duration_years": null,
+      "pilot": null,
+      "estimated_forgone_usd": null,
+      "but_for_test": null,
+      "notes": "Unresolved, and I would rather say so than guess. Ordinance 5953 assumes the city collects property tax on the AI property, since it allocates a share of that revenue, which implies the property is at least partly taxable. Separately, MLGW's own background says the building was constructed under a 2010 state grant and a 15 year local property tax abatement of 75%, but that abatement was granted to the earlier manufacturing tenant and I have not found a primary document establishing what xAI holds today. I have not located a payment in lieu of taxes agreement between xAI and EDGE. Until I read one, this clause stays unknown rather than being scored from a news summary.",
+      "sources": [
+        {
+          "url": "https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf",
+          "where": "MLGW xAI Update, background",
+          "quote": "a 15-year local property tax abatement of 75%"
+        },
+        {
+          "url": "https://memphistn.gov/wp-content/uploads/2025/07/xAI-Allocation-Ordinance47043091-1.pdf",
+          "where": "Ordinance 5953, Section 2(b), which presumes property tax revenue is collected on the AI Property"
+        }
+      ]
+    }
+  },
+  "criticisms": [
+    {
+      "summary": "Turbines ran without a permit from June 2024, at one point 35 units exceeding 420 MW, according to the NAACP appeal.",
+      "source": "https://cdn.arstechnica.net/wp-content/uploads/2025/07/NAACP-and-YGGs-xAI-Air-Permit-Appeal-7-15-2025.pdf"
+    },
+    {
+      "summary": "The permit allows 87 tons of nitrogen oxides a year in an area with ozone problems, in a historically Black neighborhood already carrying industrial pollution.",
+      "source": "https://cleanenergy.org/wp-content/uploads/SACE-SCHD-xAI-Comments-2025-04-30.pdf"
+    },
+    {
+      "summary": "The Justice Department moved to dismiss the NAACP Clean Air Act suit on national security grounds in June 2026, without disputing that the turbines lack permits.",
+      "source": "https://www.utilitydive.com/news/doj-intervenes-xai-data-center-gas-turbine-lawsuit/823267/"
+    },
+    {
+      "summary": "Boxtown residents say the tax reinvestment fund does not reach them and report fumes.",
+      "source": "https://ncrc.org/south-memphis-residents-skeptical-of-musks-xai-economic-growth-claims-as-pollution-concerns-grow/"
+    }
+  ],
+  "contributors": [
+    "apeabody007"
+  ],
+  "last_reviewed": "2026-09-09"
+}

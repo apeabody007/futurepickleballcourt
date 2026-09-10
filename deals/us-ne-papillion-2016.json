@@ -1,0 +1,306 @@
+{
+  "$schema": "../schema/deal.schema.json",
+  "id": "us-ne-papillion-2016",
+  "status": "signed",
+  "verification": "primary",
+  "short_name": "Meta",
+  "jurisdiction": {
+    "country": "US",
+    "state": "NE",
+    "locality": "City of Papillion and Sarpy County",
+    "level": "city"
+  },
+  "operator": "Meta Platforms, Inc.",
+  "developer": "Raven Northbrook LLC, a Delaware limited liability company",
+  "project": "Sarpy County Power Park West and East, the Meta Sarpy data center campus",
+  "agreement_type": "development_agreement",
+  "dates": {
+    "signed": "2016-12-20",
+    "approved": "2016-12-20",
+    "effective": "2016-12-20"
+  },
+  "scale": {
+    "acres": 290,
+    "mw": null,
+    "capex_usd": 200000000,
+    "sqft": null,
+    "notes": "290 acres across the two legal descriptions in the mixed use agreements, roughly 900 acres acquired in total with later additions. Capex is the planned investment in the state incentive agreement, not a local commitment; the company's own materials claim more than $2.5 billion. Megawatts appear in no primary document; the only figure anywhere is the 20 megawatt floor in the utility rate schedule. About four million square feet across nine buildings is reported in news coverage and appears in no agreement."
+  },
+  "documents": [
+    {
+      "title": "Sarpy County Power Park West mixed use development agreement, executed December 20, 2016, including the Exhibit C noise standards",
+      "url": "https://www.papillion.org/DocumentCenter/View/589",
+      "kind": "primary",
+      "date": "2016-12-20"
+    },
+    {
+      "title": "Sarpy County Power Park East mixed use development agreement, executed December 20, 2016",
+      "url": "https://www.papillion.org/DocumentCenter/View/586",
+      "kind": "primary",
+      "date": "2016-12-20"
+    },
+    {
+      "title": "Sarpy County Power Park West subdivision agreement",
+      "url": "https://www.papillion.org/DocumentCenter/View/591",
+      "kind": "primary",
+      "date": "2016-12-20"
+    },
+    {
+      "title": "City staff report and redlined exhibit for the 2022 amendment that changed the east campus noise ceiling to the greater of 70 decibels or whatever the code allows",
+      "url": "https://www.papillion.org/DocumentCenter/View/10549/SCPPE-MU-Amendment-Staff-Report",
+      "kind": "primary",
+      "date": "2022-08-31"
+    },
+    {
+      "title": "Sewer connection and wastewater service agreement with the Sarpy County and Cities Wastewater Agency, resolution 2021-004",
+      "url": "https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF",
+      "kind": "primary",
+      "date": "2021-03-10"
+    },
+    {
+      "title": "First amendment to the sewer agreement, resolution 2024-039, setting the industrial sewer capital cost at $13.2 million",
+      "url": "https://www.sarpy.gov/DocumentCenter/View/7266/2024-039-Approving-First-Amendment-to-Raven-Northbrook-Connection-Agreement-FINALpdf",
+      "kind": "primary",
+      "date": "2024-09-25"
+    },
+    {
+      "title": "Omaha Public Power District service regulations and rate schedules, containing Rate Schedule 261M for large high-voltage market-energy customers",
+      "url": "https://oppd.com/media/172612/oppd-rate-manual.pdf",
+      "kind": "primary",
+      "date": null
+    },
+    {
+      "title": "Nebraska tax incentives annual report 2024, which names Raven Northbrook and the credits and refunds approved",
+      "url": "https://revenue.nebraska.gov/sites/default/files/doc/incentives/annual_report/2024_Incentives_Annual_Report.pdf",
+      "kind": "primary",
+      "date": "2024-10-31"
+    }
+  ],
+  "terms": {
+    "community_fund": {
+      "present": false,
+      "amount_usd": null,
+      "cadence": null,
+      "scales_with_project": null,
+      "controlled_by": null,
+      "community_seat": false,
+      "notes": "None in any of the five local instruments. The company's own materials claim more than $5.7 million to area schools and nonprofits and 250 plus grants since 2019, all distributed through a program the company controls, with no public body choosing recipients and nothing obliging it to continue. The only agreement-based payment resembling a community contribution is $50,000 for a temporary street closure, which the city characterised partly as a device to discourage keeping the street closed.",
+      "sources": [
+        {
+          "url": "https://www.papillion.org/DocumentCenter/View/589",
+          "where": "Mixed use development agreement, full text, which contains no community fund"
+        }
+      ]
+    },
+    "clawbacks": {
+      "present": false,
+      "triggers": [],
+      "proportional": null,
+      "notes": "None, and the agreement goes further than silence. Section 12(I), headed No Obligation to Construct or Operate, says nothing creates a covenant to begin construction, begin a business, or keep operating, and then states that the developer may at its sole discretion elect not to develop the property or, if developed, cease operating. That sits beside vested development rights and a clause preventing later city zoning from superseding the agreement. Recapture exists at the state level under the incentive act, but no local trigger appears anywhere.",
+      "hedge": "Section 12(I): \"Developer may, at Developer's sole discretion, elect not to develop the Property or, if developed, cease the operation of its business on the Property.\"",
+      "sources": [
+        {
+          "url": "https://www.papillion.org/DocumentCenter/View/589",
+          "where": "Mixed use development agreement, Section 12(I), no obligation to construct or operate"
+        },
+        {
+          "url": "https://www.papillion.org/DocumentCenter/View/589",
+          "where": "Mixed use development agreement, Sections 6(A) and 6(B), vested rights and moratorium shield"
+        }
+      ]
+    },
+    "decommissioning": {
+      "present": false,
+      "instrument": "none",
+      "amount_usd": null,
+      "notes": "None for the data center, and the omission is thrown into relief by what is covered. Exhibit F gives the owner six months to decommission a rooftop solar array or a wind turbine if it generates no electricity for twelve continuous months, with turbines to be removed to thirty six inches below grade. A hypothetical solar panel carries a removal covenant. Four million square feet of data center does not. The closest equivalent is a sewer clause requiring the customer to disconnect its lateral at its own expense if use ceases, which covers a pipe.",
+      "sources": [
+        {
+          "url": "https://www.papillion.org/DocumentCenter/View/589",
+          "where": "Mixed use development agreement, Exhibit F, Sections II(A)(4) and II(B)(6), accessory solar and wind"
+        },
+        {
+          "url": "https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF",
+          "where": "Sewer agreement, Section 15, disconnection on cessation of use"
+        }
+      ]
+    },
+    "grid_costs": {
+      "present": true,
+      "who_pays_interconnect": "operator",
+      "minimum_bill": true,
+      "term_years": null,
+      "governed_by": "Omaha Public Power District Rate Schedule 261M, set by an elected utility board with no state commission review of retail rates",
+      "notes": "A genuine minimum bill, set by a board rather than a regulator, with no obligation that survives departure. Rate Schedule 261M was approved unanimously in January 2017 and designed with the customer. It applies where the customer owns its own substation, requires at least 20 megawatts at 161 kilovolts, charges a $10,000 monthly service charge and $23.91 per kilowatt of demand, passes through hourly market energy, and carries a minimum monthly bill of $488,200 at 161 kilovolts with energy on top. A 5 percent gross revenue charge goes to the local government in lieu of taxes. Two caveats matter. Nebraska has no public utility commission reviewing these retail rates, so this tariff was never adversarially tested. And the obligation is framed as running during the operation of the customer's facilities: there is no term, no take or pay surviving exit and no stranded cost provision, so the minimum bill protects ratepayers while the campus runs and not after it stops. Any individual service contract, which the regulations permit, is not public. Separately the customer prepaid $13.2 million for the industrial sewer system and is contractually shielded from ever being charged its debt service.",
+      "hedge": "The tariff frames the duty as applying \"during the operation of the Customer's facilities,\" which is the difference between a minimum bill and a commitment.",
+      "sources": [
+        {
+          "url": "https://oppd.com/media/172612/oppd-rate-manual.pdf",
+          "where": "Rate Schedule 261M, minimum monthly bill and substation ownership"
+        },
+        {
+          "url": "https://oppd.com/media/172612/oppd-rate-manual.pdf",
+          "where": "Service regulations, individual service contracts at the utility's discretion"
+        },
+        {
+          "url": "https://www.sarpy.gov/DocumentCenter/View/7266/2024-039-Approving-First-Amendment-to-Raven-Northbrook-Connection-Agreement-FINALpdf",
+          "where": "First amendment to the sewer agreement, $13,200,000 capital cost"
+        },
+        {
+          "url": "https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF",
+          "where": "Sewer agreement, Section 13.3, no debt service charged to the customer"
+        }
+      ]
+    },
+    "water": {
+      "present": true,
+      "limit_gpd": null,
+      "reporting": false,
+      "recycling_required": false,
+      "cooling": "closed_loop",
+      "notes": "No cap in gallons per day, no reporting duty to any public body, and the potable water provider is not even a party to these agreements: a separate utility district supplies the water and its service agreement is not published. Every hard number in the record is on the discharge side. The sewer agreement sizes a temporary evaporation pond for up to 22,250,000 gallons a year at a 1,250 gallon per minute peak, and reserves 2,500 gallons per minute of peak hour industrial sewer capacity out of 4,150 total. Quality reporting exists, with a constituent limits table and a right for the agency to inspect and sample. Quantity reporting does not. Actual withdrawals, disclosed by the company to a nonprofit newsroom rather than to a regulator, ran 26.7 to 37.5 million gallons a year from 2020 through 2024.",
+      "hedge": "Capacity changes require consent \"which may be granted or withheld in Customer's sole discretion,\" so the reservation cannot be trimmed without the company's agreement.",
+      "sources": [
+        {
+          "url": "https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF",
+          "where": "Sewer agreement, Section 4, temporary evaporation pond sizing"
+        },
+        {
+          "url": "https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF",
+          "where": "Sewer agreement, Sections 10.1 and 10.2, capacity reservations"
+        },
+        {
+          "url": "https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF",
+          "where": "Sewer agreement, Section 5.1(d), discharge table and sampling"
+        },
+        {
+          "url": "https://www.papillion.org/DocumentCenter/View/591",
+          "where": "Subdivision agreement, Section 1(I)(6), water distribution system built by the utility district"
+        }
+      ]
+    },
+    "noise": {
+      "present": true,
+      "limit_dba": 65,
+      "measured_at": "property line",
+      "setback_ft": null,
+      "notes": "The best documented noise term in this benchmark, and a lesson in how a good one erodes. The west campus agreement has held since 2016 at a maximum one hour average of 65 decibels from 7 a.m. to 10 p.m. and 55 decibels overnight, measured at the property line with a specified meter class. The east campus started identical. In 2022 the company applied to change the east daytime ceiling to the greater of 70 decibels or whatever the code allows, and the nighttime ceiling likewise. The city's own senior planner wrote the consequence into the staff report: a greater of approach will entitle the campus to any future sound level increase. Staff recommended approval for consistency with the existing agreement. The city had already raised its code ceiling from 65 to 70 in 2017, so the code moved first and the agreement was then amended to track it upward permanently. Emergency operations are exempt from any limit; routine generator testing is not.",
+      "hedge": "The east campus limit is now \"the greater of\" a fixed number or the code, which converts a ceiling into a floor that can only rise.",
+      "sources": [
+        {
+          "url": "https://www.papillion.org/DocumentCenter/View/589",
+          "where": "Mixed use development agreement, Exhibit C, Section 5(G), noise limits",
+          "quote": "All measurements shall be taken at the property line"
+        },
+        {
+          "url": "https://www.papillion.org/DocumentCenter/View/10549/SCPPE-MU-Amendment-Staff-Report",
+          "where": "2022 amendment staff report",
+          "quote": "Using a 'greater of' approach will entitle Sarpy County Power Park East to any future sound level increase."
+        }
+      ]
+    },
+    "jobs": {
+      "present": false,
+      "promised_permanent": null,
+      "promised_construction": null,
+      "local_hire": false,
+      "prevailing_wage": false,
+      "enforceable": false,
+      "notes": "Nothing binding locally. No employment obligation, local hire or prevailing wage appears in any of the five local agreements. The only numbers are benefit thresholds in the state incentive agreements: two 2017 agreements for this entity list $200 million of planned investment against 30 planned full time employees, and $34 million against zero. The second carries no employment requirement at all. The company claims more than 300 operational jobs supported, which is neither a headcount nor enforceable.",
+      "sources": [
+        {
+          "url": "https://www.papillion.org/DocumentCenter/View/589",
+          "where": "Mixed use development agreement, full text, which contains no employment provision"
+        },
+        {
+          "url": "https://revenue.nebraska.gov/sites/default/files/doc/incentives/annual_report/2024_Incentives_Annual_Report.pdf",
+          "where": "Nebraska tax incentives annual report 2024, agreements in effect table"
+        }
+      ]
+    },
+    "local_contracting": {
+      "present": false,
+      "local_subcontracting": false,
+      "road_repair": false,
+      "infrastructure_contribution_usd": 13200000,
+      "notes": "No local subcontracting or hiring requirement anywhere. The developer is solely responsible for privately financing the entire cost of all private and public improvements, and pays a 1 percent review fee on dedicated infrastructure, a per acre fee the city agreed to remit entirely to road improvements, watershed and connection fees, and the $13.2 million industrial sewer capital cost. On road repair the only covenant found is narrow, tied to one temporary street closure, covering dust control, repairs and snow removal in the closure area with a $5 million cap on indemnity. The broader county road agreement is a defined term in both subdivision agreements but its text is not retrievable, so haul route obligations there are unknown.",
+      "sources": [
+        {
+          "url": "https://www.papillion.org/DocumentCenter/View/591",
+          "where": "Subdivision agreement, Section 4(A), developer financing, and Section 5, fees"
+        },
+        {
+          "url": "https://www.sarpy.gov/DocumentCenter/View/7266/2024-039-Approving-First-Amendment-to-Raven-Northbrook-Connection-Agreement-FINALpdf",
+          "where": "First amendment to the sewer agreement, capital cost"
+        }
+      ]
+    },
+    "transparency": {
+      "present": true,
+      "nda": null,
+      "agreement_public": true,
+      "public_dashboard": false,
+      "audit_cadence": "none",
+      "audit_independent": false,
+      "notes": "The most quotable adverse transparency clause in this benchmark. Sewer agreement Section 21.15 lets the company designate trade secrets, then deems water usage confidential by default: data on actual or projected consumption of the reserved capacity is confidential business information with no designation needed. The agency must redact it, and on any records request must notify the company and hold the records for ten business days while the company decides whether to sue to block release, at the company's cost. A separate clause bars the agency from sharing discharge permit information with anyone but the permitting authority without written consent. State records law is acknowledged as overriding, so this is delay and redact rather than an absolute bar, but a public body contracted away its default posture on how much water a private company uses. On the other side: no non-disclosure agreement by a public body appears in anything I read, the full agreement texts are posted, and the county's bond disclosures name the entity. There is no audit and no dashboard, and Section 12(H) means no resident can enforce the noise limit or anything else.",
+      "hedge": "The agency must redact \"to the extent permitted by Applicable Law,\" which is the clause holding the state records act open.",
+      "sources": [
+        {
+          "url": "https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF",
+          "where": "Sewer agreement, Section 21.15, confidential information and the ten business day hold"
+        },
+        {
+          "url": "https://www.sarpy.gov/DocumentCenter/View/2515/2021-004-Approval-of-Raven-Northbrook-LLC-Sewer-Agreement-PDF",
+          "where": "Sewer agreement, Section 5.1(b), discharge permit information"
+        },
+        {
+          "url": "https://www.papillion.org/DocumentCenter/View/589",
+          "where": "Mixed use development agreement, Section 12(H), no third party beneficiaries"
+        }
+      ]
+    },
+    "tax": {
+      "present": false,
+      "not_applicable": true,
+      "abatement_pct": null,
+      "duration_years": null,
+      "pilot": null,
+      "estimated_forgone_usd": null,
+      "but_for_test": null,
+      "notes": "Marked not applicable because there is genuinely no local tax break to score. No increment financing, no abatement, no payment in lieu of taxes appears in any of the five local agreements, and the city's only blighted area is downtown, miles away. The company pays full property tax and is the county's single largest taxpayer at $5,629,489 in 2023. That is what a data center looks like when the locality does not give the tax away. The money moved at the state level instead: the 2024 state incentives report lists $118,544,281 of credits used and refunds approved for this entity over two years, roughly five times the next largest line, and the state does not publish the value of the personal property exemption at all. In April 2026 the legislature repealed the standalone data center sales tax exemption, though not the incentive act tier this campus sits under.",
+      "sources": [
+        {
+          "url": "https://www.papillion.org/DocumentCenter/View/589",
+          "where": "Mixed use development agreement and subdivision agreement, neither of which contains an abatement, increment or PILOT"
+        },
+        {
+          "url": "https://revenue.nebraska.gov/sites/default/files/doc/incentives/annual_report/2024_Incentives_Annual_Report.pdf",
+          "where": "Nebraska tax incentives annual report 2024, project-specific disclosure",
+          "quote": "Raven Northbrook, LLC — $118,544,281 — Papillion and Springfield"
+        }
+      ]
+    }
+  },
+  "criticisms": [
+    {
+      "summary": "Data centers were 1 percent of the public utility's electricity sold in 2018 and 21 percent in 2024, projected to reach 41 percent by 2035, while the industrial customer count fell.",
+      "source": "https://nebraskapublicmedia.org/en/news/news-articles/nebraskans-cope-with-rising-demand-prices-for-electricity/"
+    },
+    {
+      "summary": "The utility board voted 6 to 2 in December 2025 to extend coal operations at the North Omaha station. A speaker told the board it seemed to be putting data centers ahead of the health of the community, and later board minutes record eight public comments tying data centers to that plant and to environmental justice.",
+      "source": "https://www.wowt.com/2025/12/19/oppd-delays-closure-north-omaha-coal-plant-despite-community-opposition/"
+    },
+    {
+      "summary": "The utility approved 6.3 percent average rate increases for both 2025 and 2026, and concedes in its own materials that rapid load growth including from large users makes its required planning reserve margin bigger.",
+      "source": "https://www.oppdcommunityconnect.com/corporate-operating-plan-2026/widgets/108375/faqs"
+    },
+    {
+      "summary": "Nonprofit reporting found this campus withdrew 26.7 to 37.5 million gallons a year from 2020 through 2024, a figure that exists only because the company volunteered it, since its water use is contractually confidential.",
+      "source": "https://flatwaterfreepress.org/data-centers-can-guzzle-serious-water-as-some-nebraskans-worry-tech-giants-seek-solutions/"
+    }
+  ],
+  "contributors": [
+    "apeabody007"
+  ],
+  "last_reviewed": "2026-09-10"
+}
