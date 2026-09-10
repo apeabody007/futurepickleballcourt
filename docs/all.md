@@ -524,6 +524,7 @@ Floor: A but-for test before any abatement, with the forgone revenue stated
   - [press] The Gazette: city would rebate $529 million to data center: https://www.thegazette.com/news/local/government-notes-under-development-agreement-cedar-rapids-would-rebate-529-million-to-data-center/article_2f95ff70-c29c-511e-a85a-b1b72205205c.html
   - [press] The Gazette: council OKs amended QTS agreement, up to seven phases, $1.75 billion anticipated: https://www.thegazette.com/news/cedar-rapids-city-council-oks-amended-qts-development-agreement/article_37c979ab-0bdf-52bd-9e2d-9ee403f0ac36.html
   - [press] KCRG: mayor defends data center projects amid NDA questions (published July 23, 2026 CDT; URL dated July 24): https://www.kcrg.com/2026/07/24/cedar-rapids-mayor-defends-data-center-projects-amid-kickback-claims-nda-questions/
+  - [primary] Linn County and QTS road use agreement, in the Board of Supervisors work session packet of October 27, 2025 (developer signed; the county signature page is blank in the published copy): https://linncoia.portal.civicclerk.com/event/7860/files
 
 ### Community fund: FALLS SHORT
 Floor: A fund that scales with the project, with a community seat on the body that spends it
@@ -577,9 +578,11 @@ At least 15 full-time employees per completed phase, counting contractors, tenan
 
 ### Local contracting: MEETS
 Floor: Local subcontracting goals and haul-route road repair paid by the operator
-A separate Linn County road-use agreement approved October 27, 2025 covers just over $117,000 in back payment for road damage, QTS paving of Maple Grove Road and Linn-Johnson Road segments (Cherry Valley Road already done), and a bond covering repairs to Wright Brothers Boulevard and Lefebure Road, but not routine upkeep. Also a 75 percent rebate of electric franchise fees for 20 years per data center, which runs the other direction.
-- https://www.thegazette.com/local-government/qts-to-pay-for-improvements-to-rural-roads-near-cedar-rapids-data-center-development/
-- Section 6.7(a), PDF pp. 19 to 20: "75% of the electric franchise fee collected" https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf
+A separate Linn County road use agreement, approved by the Board of Supervisors on October 27, 2025, carries the strongest haul-route terms in this benchmark: $117,099.90 for damage already attributed to the developer before the agreement, roughly 2.0 miles of Maple Grove Road and 0.6 miles of Linn-Johnson Road rebuilt at the developer's sole cost, and a $2,000,000 payment and performance bond naming the county as beneficiary, posted within ten business days and held until hauling ends and the roads pass inspection. The county may draw on the bond for non-visual damage at $3.86 per trip based on quarry load counts. The county keeps its ordinary maintenance duty. Still no local-subcontracting requirement. The 75 percent franchise fee rebate in the development agreement runs the other direction.
+- Road use agreement Section 3.A, Board of Supervisors packet October 27, 2025: "Developer shall pay one hundred and seventeen thousand, ninety-nine dollars and ninety cents ($117,099.90)" https://linncoia.portal.civicclerk.com/event/7860/files
+- Road use agreement Section 3.C: "post and maintain a payment and performance bond ... in an amount equal to two million dollars ($2,000,000)" https://linncoia.portal.civicclerk.com/event/7860/files
+- Road use agreement Section 3.B, Maple and Linn-Johnson improvements: "shall be undertaken by Developer at its sole cost and expense" https://linncoia.portal.civicclerk.com/event/7860/files
+- Section 6.7, p. 20, franchise fee rebate: https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf
 
 ### Transparency: FALLS SHORT
 Floor: No NDA, the agreement is public, and an independent audit on a schedule

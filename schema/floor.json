@@ -191,7 +191,12 @@
       ],
       "strongest": {
         "deal": "us-ia-cedar-rapids-qts-2025",
-        "why": "A separate county road-use agreement covering back payment, repaving two rural roads, and a performance bond for two more."
+        "why": "A $2,000,000 payment and performance bond posted within ten business days, plus $117,099.90 for damage already done and about 2.6 miles of road rebuilt at the developer's sole cost. The county can also draw on the bond for damage it cannot see, at $3.86 per quarry truck trip.",
+        "language": {
+          "text": "Developer shall, within ten (10) business days of the Effective Date, post and maintain a payment and performance bond with a surety, and on terms, acceptable to the County in its reasonable discretion, in an amount equal to two million dollars ($2,000,000) (the “Road Repair Bond”), naming the County as a beneficiary of such bond.",
+          "cite": "Linn County and QTS Cedar Rapids I, LLC road use agreement, Section 3.C",
+          "url": "https://linncoia.portal.civicclerk.com/event/7860/files"
+        }
       }
     },
     "transparency": {

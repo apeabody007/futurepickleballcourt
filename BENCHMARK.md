@@ -77,7 +77,7 @@ The strongest version of each term that someone has actually signed, or the clos
 
 **Jobs** (Richland Parish, LA, Meta). A job ladder of 100 by 2028 rising to 500 by 2032 at 150 percent of the state average wage, secured by the state's right to raise the purchase price or take the land back. [p. 1, project description](https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn/juc2+A%3D)
 
-**Local contracting** (City of Cedar Rapids, IA, QTS). A separate county road-use agreement covering back payment, repaving two rural roads, and a performance bond for two more. [Section 6.7(a), PDF pp. 19 to 20](https://www.economicdevelopmentcr.com/wp-content/uploads/2026/07/QTS-Project-Development-Agreement.pdf)
+**Local contracting** (City of Cedar Rapids, IA, QTS). A $2,000,000 payment and performance bond posted within ten business days, plus $117,099.90 for damage already done and about 2.6 miles of road rebuilt at the developer's sole cost. The county can also draw on the bond for damage it cannot see, at $3.86 per quarry truck trip. [Road use agreement Section 3.A, Board of Supervisors packet October 27, 2025](https://linncoia.portal.civicclerk.com/event/7860/files)
 
 **Transparency** (Loudoun County, VA, Cross Mill). No NDA anywhere in the record, the whole file public, and compliance verified by outside professionals rather than self-certified. [Proffer II.E noise studies; Proffer V.A.g annual metering reports](https://loudoun.granicus.com/MetaViewer.php?view_id=89&clip_id=7984&meta_id=266768)
 

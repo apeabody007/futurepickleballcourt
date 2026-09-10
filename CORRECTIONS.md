@@ -2,6 +2,12 @@
 
 Every change to a published number or claim, newest first. A record that never posts corrections is a press release.
 
+## 2026-09-09
+
+- **Cedar Rapids, Iowa (QTS), local contracting.** Recorded only as "a separate county road-use agreement covering about $117,000 in back payment, paving of two rural roads, and a performance bond," sourced to news coverage. The executed agreement was located in the Linn County Board of Supervisors packet for October 27, 2025 and it is materially stronger than the summary: $117,099.90 for existing damage, roughly 2.6 miles of road rebuilt at the developer's sole cost, and a **$2,000,000** payment and performance bond naming the county as beneficiary, with a right to draw for non-visual damage at $3.86 per quarry truck trip. Now cited to the agreement's own sections. Note that local reporting quoted the per-trip rate as $4; the agreement says $3.86, and the agreement governs.
+- **Clause library.** The strongest-terms section described clauses instead of quoting them. Seven of the ten now carry verbatim operative text pulled from the primary document. The remaining three are blank because no signed agreement in this benchmark contains language worth copying for those terms.
+- **Scoring.** Deals that granted no tax incentive were being scored against a denominator of ten, which counted "there was nothing to claw back" as a failure. Comparisons now exclude clauses that do not apply.
+
 ## 2026-09-07
 
 Independent second-pass review of all fifteen deals against the primary documents. Everything below was wrong in an earlier version of this repository and is now fixed.
