@@ -599,7 +599,7 @@ def render_deal_page(deal, deals):
          '<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">',
          "<style>" + DEAL_CSS.strip() + "</style>",
          '</head><body><div class="page">',
-         '<div class="mast"><div><b>Exhibit A</b> &nbsp;·&nbsp; <a href="/">All 15 agreements</a></div>'
+         f'<div class="mast"><div><b>Exhibit A</b> &nbsp;·&nbsp; <a href="/">All {len(deals)} agreements</a></div>'
          f'<div>futurepickleballcourt.com &nbsp;·&nbsp; {date.today().isoformat()}</div></div>',
          f'<h1>{esc(place)}</h1>',
          f'<p class="who">{esc(who) if who else esc(deal["project"])}</p>']
@@ -684,7 +684,7 @@ def render_deal_page(deal, deals):
 
     h.append(f'<footer>Last reviewed {esc(deal["last_reviewed"])}. '
              'Prepared by <a href="https://aaronpeabody.dev">Aaron Peabody</a>.<br>'
-             'Data CC BY 4.0 · <a href="/">See all fifteen agreements side by side</a> · '
+             f'Data CC BY 4.0 · <a href="/">See all {len(deals)} agreements side by side</a> · '
              '<a href="https://github.com/apeabody007/futurepickleballcourt">Source and corrections</a><br>'
              'Something wrong here? Email deals@futurepickleballcourt.com with the document.'
              "</footer></div></body></html>")
@@ -946,7 +946,7 @@ def render_markdown(deals):
 
 
 def render_html(deals):
-    template = (ROOT / "docs" / "template.html").read_text()
+    template = (ROOT / "scripts" / "site_template.html").read_text()
     ck_note, ck_rows, ck_gaps = render_checklist_html(deals)
     for token, html in (
         ("<!--FINDINGS-->", render_findings_cards(deals)),
