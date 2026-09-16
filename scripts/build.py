@@ -1013,6 +1013,8 @@ def main():
             + "</urlset>\n"
         ),
         ROOT / "docs" / "prompt.txt": render_prompt(deals),
+        # Every deal in all.json points at ../schema/deal.schema.json, so publish it there.
+        ROOT / "docs" / "schema" / "deal.schema.json": (ROOT / "schema" / "deal.schema.json").read_text(),
         ROOT / "docs" / "all.json": json.dumps({
             "generated": date.today().isoformat(),
             "source": "https://futurepickleballcourt.com",
